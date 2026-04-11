@@ -439,8 +439,8 @@ export default function Home() {
             <FadeIn>
               <div className="w-full aspect-video border border-border overflow-hidden">
                 <iframe
-                  title="The Oxford Wellness Doctor - Oxford"
-                  src="https://maps.google.com/maps?q=John+Eccles+House+Robert+Robinson+Avenue+Oxford+OX4+4GP&output=embed"
+                  title="The Oxford Wellness Doctor - 3 Woodstock Rd, Oxford"
+                  src="https://www.google.com/maps?q=51.760189,-1.265923&z=17&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
