@@ -1,0 +1,826 @@
+═══════════════════════════════════════════════════════════════════════════════
+CRITICAL: COMPLETE ADDRESS UPDATE FOR THE OXFORD WELLNESS DOCTOR
+From: Woodstock Road → To: Oxford Science Park Location
+═══════════════════════════════════════════════════════════════════════════════
+
+URGENT: The clinic has relocated. Every single reference to the old address must
+be updated to the new address across the entire website. This is critical for:
+- Local SEO
+- Google Business Profile consistency
+- Patient navigation
+- Schema markup accuracy
+
+═══════════════════════════════════════════════════════════════════════════════
+OLD ADDRESS (REMOVE ALL REFERENCES):
+═══════════════════════════════════════════════════════════════════════════════
+
+Street: 3 Woodstock Road
+City: Oxford
+Postcode: OX2 6HA
+Area: North Oxford / Summertown area
+Coordinates: 51.7595, -1.2680
+
+REMOVE ALL MENTIONS OF:
+- "3 Woodstock Road"
+- "Woodstock Road"
+- "North Oxford" (when referring to location)
+- "Summertown" (when referring to proximity)
+- "OX2 6HA"
+- "Jericho" (when referring to proximity)
+- "near Summertown"
+- "close to Oxford University"
+- "prestigious North Oxford location"
+- "Woodstock Road, Oxford"
+- Any directions to Woodstock Road
+
+═══════════════════════════════════════════════════════════════════════════════
+NEW ADDRESS (USE EVERYWHERE):
+═══════════════════════════════════════════════════════════════════════════════
+
+Building: John Eccles House
+Street: Robert Robinson Avenue
+Area: Littlemore
+City: Oxford
+Postcode: OX4 4GP
+Location: Oxford Science Park
+Coordinates: 51.7168, -1.2164 (approximate - verify exact coordinates)
+
+FULL ADDRESS FORMAT:
+John Eccles House, Robert Robinson Avenue, Oxford Science Park, Littlemore,
+Oxford OX4 4GP
+
+SHORT FORMAT (for space-constrained areas):
+John Eccles House, Oxford Science Park, Oxford OX4 4GP
+
+═══════════════════════════════════════════════════════════════════════════════
+NEW LOCATION BENEFITS TO EMPHASIZE:
+═══════════════════════════════════════════════════════════════════════════════
+
+Use these positive descriptions throughout the site:
+
+1. "Located in the prestigious Oxford Science Park"
+2. "Professional medical environment"
+3. "Discreet, private location"
+4. "Set in a calming natural environment"
+5. "Modern, sleek treatment rooms"
+6. "Ample free parking available"
+7. "Easy access from all Oxford areas"
+8. "Established medical and scientific hub"
+9. "State-of-the-art medical facility"
+10. "Peaceful, nature-surrounded setting"
+
+KEY POSITIONING POINTS:
+- Oxford Science Park = credibility, professional, medical-aligned
+- Littlemore location = still serves all of Oxford easily
+- Discreet = privacy for patients
+- Nature setting = calming, therapeutic
+- Sleek room = modern, professional
+- Good parking = easier than North Oxford
+
+═══════════════════════════════════════════════════════════════════════════════
+SYSTEMATIC UPDATE INSTRUCTIONS:
+═══════════════════════════════════════════════════════════════════════════════
+
+STEP 1: UPDATE NAP (NAME, ADDRESS, PHONE) EVERYWHERE
+─────────────────────────────────────────────────────
+
+Find and replace the address in:
+
+✓ Footer (on every page)
+   Old: 3 Woodstock Road, Oxford, OX2 6HA
+   New: John Eccles House, Robert Robinson Avenue, Oxford Science Park,
+        Littlemore, Oxford OX4 4GP
+
+✓ Contact page - Full address block
+✓ About page - Any address mentions
+✓ Homepage - Location section
+✓ Schema markup (all instances)
+✓ Sitemap (if address is mentioned)
+✓ 404 error page
+✓ All treatment pages that mention location
+
+STEP 2: UPDATE SCHEMA MARKUP
+─────────────────────────────────────────────────────
+
+Update schema.org structured data on ALL pages:
+
+OLD SCHEMA:
+```json
+"address": {
+  "@type": "PostalAddress",
+  "streetAddress": "3 Woodstock Road",
+  "addressLocality": "Oxford",
+  "addressRegion": "Oxfordshire",
+  "postalCode": "OX2 6HA",
+  "addressCountry": "GB"
+},
+"geo": {
+  "@type": "GeoCoordinates",
+  "latitude": "51.7595",
+  "longitude": "-1.2680"
+}
+```
+
+NEW SCHEMA:
+```json
+"address": {
+  "@type": "PostalAddress",
+  "streetAddress": "John Eccles House, Robert Robinson Avenue",
+  "addressLocality": "Littlemore",
+  "addressRegion": "Oxford",
+  "postalCode": "OX4 4GP",
+  "addressCountry": "GB"
+},
+"geo": {
+  "@type": "GeoCoordinates",
+  "latitude": "51.7168",
+  "longitude": "-1.2164"
+}
+```
+
+Update in:
+- Homepage schema
+- All treatment page schemas
+- LocalBusiness schema
+- MedicalBusiness schema
+- Physician schema (if location is mentioned)
+
+STEP 3: UPDATE TITLE TAGS & META DESCRIPTIONS
+─────────────────────────────────────────────────────
+
+UPDATE any title tags or meta descriptions that mention "North Oxford" or
+"Woodstock Road"
+
+EXAMPLES OF CHANGES NEEDED:
+
+OLD: "Anti-Wrinkle Injections Oxford | Botox Treatment | Dr. Inga Taganova"
+NEW: "Anti-Wrinkle Injections Oxford | Botox Treatment | Dr. Inga Taganova"
+(No change needed - location not mentioned)
+
+OLD: "Located in prestigious North Oxford on Woodstock Road"
+NEW: "Located in the Oxford Science Park, Littlemore"
+
+OLD: "Serving North Oxford, Summertown, and Jericho"
+NEW: "Conveniently located in Oxford Science Park, serving all Oxford areas"
+
+STEP 4: UPDATE HOMEPAGE
+─────────────────────────────────────────────────────
+
+**Location Section:**
+
+Replace:
+"Conveniently Located in North Oxford"
+With:
+"Located in Oxford Science Park"
+
+Replace content like:
+"Our clinic is situated in the heart of North Oxford on Woodstock Road,
+easily accessible from Summertown, Jericho, and the city centre."
+
+With:
+"Our clinic is located in John Eccles House at the Oxford Science Park in
+Littlemore. This prestigious medical and scientific hub provides a discreet,
+professional environment set in calming natural surroundings. Our modern,
+sleek treatment rooms offer privacy and tranquility, with ample free parking
+available. Easily accessible from all Oxford areas including Headington,
+Cowley, city centre, and beyond."
+
+**Address Block:**
+John Eccles House
+Robert Robinson Avenue
+Oxford Science Park
+Littlemore
+Oxford OX4 4GP
+
+**Update Google Maps Embed:**
+- Remove old Woodstock Road map
+- Embed new map centered on: John Eccles House, Robert Robinson Avenue, Oxford OX4 4GP
+
+**Update "Areas We Serve":**
+Remove emphasis on:
+- Summertown
+- Jericho
+- North Oxford (as immediate area)
+
+Keep/Add emphasis on:
+- Oxford city centre
+- Headington
+- Cowley
+- Littlemore
+- Blackbird Leys
+- Rose Hill
+- Iffley
+- Kennington
+- Abingdon
+- Witney
+- Kidlington
+- Bicester
+- All Oxfordshire
+
+STEP 5: UPDATE CONTACT PAGE
+─────────────────────────────────────────────────────
+
+**Full Address Section:**
+```
+Visit Our Clinic
+
+The Oxford Wellness Doctor
+John Eccles House
+Robert Robinson Avenue
+Oxford Science Park
+Littlemore
+Oxford OX4 4GP
+
+Phone: 07739 309380
+Email: info@theoxfordwellnessdoctor.com
+```
+
+**Update "How to Find Us" Section:**
+
+Replace old directions with:
+
+```
+HOW TO FIND US
+
+Our clinic is located in John Eccles House within the Oxford Science Park in
+Littlemore. The Science Park is a prestigious medical and scientific hub,
+providing a discreet and professional environment for your treatments.
+
+Address: John Eccles House, Robert Robinson Avenue, Oxford Science Park,
+Littlemore, Oxford OX4 4GP
+
+PARKING
+Ample free parking is available on-site at the Oxford Science Park, making
+your visit convenient and stress-free.
+
+BY CAR FROM OXFORD CITY CENTRE (10 minutes)
+- Head east on High Street toward Magdalen Bridge
+- Continue onto Iffley Road
+- Turn right onto Littlemore Road
+- Follow signs to Oxford Science Park
+- Enter the Science Park and follow signs to John Eccles House
+
+BY CAR FROM HEADINGTON (8 minutes)
+- Head south on London Road/A4142
+- Turn right onto Littlemore Road
+- Follow signs to Oxford Science Park
+- Enter the Science Park and follow signs to John Eccles House
+
+BY CAR FROM COWLEY (5 minutes)
+- Head southwest on Oxford Road
+- Turn left onto Littlemore Road
+- Follow signs to Oxford Science Park
+- Enter the Science Park and follow signs to John Eccles House
+
+BY BUS
+- Bus routes 3, 10, and Thames Travel T1 serve Littlemore
+- Get off at Littlemore/Newman Road stop
+- 8-minute walk to Oxford Science Park
+
+BY BIKE
+- Cycle-friendly route via Iffley Road and Littlemore Road
+- Secure bike parking available at the Science Park
+
+The clinic is set in peaceful natural surroundings, offering a calming
+environment for your aesthetic treatments. Our modern, sleek treatment rooms
+ensure privacy and comfort.
+```
+
+**Remove:**
+- Any mention of "near Summertown"
+- "Bus routes 2, 7, S2"
+- "Woodstock Road"
+- "North Oxford"
+- "Near Oxford University colleges"
+
+STEP 6: UPDATE ABOUT PAGE
+─────────────────────────────────────────────────────
+
+Find any mentions of location and update:
+
+OLD: "Dr. Taganova practices from our North Oxford clinic on Woodstock Road"
+NEW: "Dr. Taganova practices from our Oxford Science Park clinic in Littlemore"
+
+Add a section about the clinic environment:
+
+```
+OUR CLINIC
+
+The Oxford Wellness Doctor is located in John Eccles House within the
+prestigious Oxford Science Park. Named after the Nobel Prize-winning
+physiologist, our location reflects our commitment to medical excellence
+and scientific rigor.
+
+The Oxford Science Park is a hub for medical research and healthcare
+innovation, providing the perfect environment for our aesthetic medicine
+and women's wellness services. Our modern, sleek treatment room offers a
+calming, private space where you can relax during your treatments.
+
+Set in natural surroundings with ample parking, our discreet location
+ensures privacy while remaining easily accessible from all Oxford areas.
+```
+
+STEP 7: UPDATE ALL TREATMENT PAGES
+─────────────────────────────────────────────────────
+
+On each treatment page, update the location reference in the booking section:
+
+OLD: "Visit us at 3 Woodstock Road, North Oxford"
+NEW: "Visit us at Oxford Science Park, Littlemore"
+
+Update the "Why Choose The Oxford Wellness Doctor?" section:
+
+OLD: "Clinic located in prestigious Woodstock Road, North Oxford"
+NEW: "Professional clinic in Oxford Science Park medical hub"
+
+Update "Book Your Consultation" sections:
+
+Replace:
+```
+Visit us at:
+3 Woodstock Road
+Oxford OX2 6HA
+```
+
+With:
+```
+Visit us at:
+John Eccles House, Robert Robinson Avenue
+Oxford Science Park, Littlemore
+Oxford OX4 4GP
+```
+
+STEP 8: UPDATE MENOPAUSE CLINIC PAGE
+─────────────────────────────────────────────────────
+
+Update location references to emphasize the medical environment:
+
+Add/Update:
+"Our menopause clinic is located in the Oxford Science Park, a prestigious
+medical and scientific hub. This professional environment reflects our
+commitment to evidence-based women's health care. The discreet, private
+setting ensures confidentiality for sensitive consultations."
+
+STEP 9: UPDATE ALL BLOG POSTS
+─────────────────────────────────────────────────────
+
+Search all blog posts for:
+- "Woodstock Road"
+- "North Oxford"
+- "3 Woodstock Road"
+- "OX2 6HA"
+- "Summertown"
+- "Jericho"
+
+Update any location references to:
+- "Oxford Science Park"
+- "Littlemore"
+- "OX4 4GP"
+
+Update author bio at bottom of blog posts:
+"Dr. Inga Taganova practices at The Oxford Wellness Doctor, located in
+Oxford Science Park, Littlemore, Oxford."
+
+STEP 10: UPDATE LOCAL SEO KEYWORDS
+─────────────────────────────────────────────────────
+
+REMOVE these location-based keywords throughout:
+- "North Oxford aesthetics"
+- "Summertown aesthetics"
+- "Jericho aesthetics"
+- "Woodstock Road doctor"
+- "near Summertown"
+- "near Oxford University"
+
+ADD these location-based keywords:
+- "Oxford Science Park aesthetics"
+- "Littlemore aesthetics clinic"
+- "medical aesthetics Oxford Science Park"
+- "Oxford Science Park doctor"
+- "Littlemore medical aesthetics"
+- "near Cowley"
+- "near Headington"
+
+UPDATE "Areas We Serve" throughout site to emphasize:
+- Headington
+- Cowley
+- Littlemore
+- Rose Hill
+- Blackbird Leys
+- Iffley
+- Oxford city centre
+- Abingdon
+- Witney
+- Kidlington
+
+STEP 11: UPDATE FAQ ANSWERS
+─────────────────────────────────────────────────────
+
+Update FAQ answers that mention location:
+
+OLD FAQ Answer:
+"We're located at 3 Woodstock Road in North Oxford, easily accessible from
+Summertown and the city centre."
+
+NEW FAQ Answer:
+"We're located in John Eccles House at the Oxford Science Park in Littlemore,
+Oxford (OX4 4GP). We have ample free parking and are easily accessible from
+all Oxford areas including Headington, Cowley, and the city centre."
+
+STEP 12: UPDATE FOOTER (EVERY PAGE)
+─────────────────────────────────────────────────────
+
+Update footer to include:
+
+```
+THE OXFORD WELLNESS DOCTOR
+
+John Eccles House
+Robert Robinson Avenue
+Oxford Science Park
+Littlemore
+Oxford OX4 4GP
+
+Phone: 07739 309380
+Email: info@theoxfordwellnessdoctor.com
+
+Opening Hours:
+Friday: 4:00 PM - 8:00 PM
+Saturday: 9:00 AM - 1:00 PM
+```
+
+STEP 13: UPDATE OPENING HOURS SCHEMA
+─────────────────────────────────────────────────────
+
+Verify opening hours are still correct and update if needed:
+
+```json
+"openingHoursSpecification": [
+  {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Friday",
+    "opens": "16:00",
+    "closes": "20:00"
+  },
+  {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Saturday",
+    "opens": "09:00",
+    "closes": "13:00"
+  }
+]
+```
+
+STEP 14: UPDATE PRICING PAGE
+─────────────────────────────────────────────────────
+
+Update location reference on pricing page:
+
+"All treatments are performed by Dr. Inga Taganova at our Oxford Science Park
+clinic in Littlemore."
+
+STEP 15: CREATE 301 REDIRECTS (IMPORTANT)
+─────────────────────────────────────────────────────
+
+If you have any location-specific URLs, set up 301 redirects:
+
+OLD: /north-oxford-clinic (if exists)
+NEW: /oxford-science-park-clinic
+
+OLD: /summertown-aesthetics (if exists)
+NEW: /oxford-aesthetics
+
+This preserves any SEO value from old URLs.
+
+═══════════════════════════════════════════════════════════════════════════════
+NEW POSITIONING STRATEGY
+═══════════════════════════════════════════════════════════════════════════════
+
+EMPHASIZE THROUGHOUT SITE:
+
+**Medical Credibility:**
+- "Located in the prestigious Oxford Science Park"
+- "Professional medical environment"
+- "Established hub for healthcare innovation"
+- "Named after Nobel Prize-winning physiologist John Eccles"
+
+**Privacy & Discretion:**
+- "Discreet, private location"
+- "Confidential consultations in a professional setting"
+- "Away from the high street for complete privacy"
+
+**Comfort & Environment:**
+- "Set in calming natural surroundings"
+- "Modern, sleek treatment rooms"
+- "Peaceful environment for your aesthetic journey"
+- "Nature-surrounded setting promotes relaxation"
+
+**Convenience:**
+- "Ample free parking"
+- "Easy access from all Oxford areas"
+- "10 minutes from Oxford city centre"
+- "5 minutes from Cowley and Headington"
+
+**Professional Setting:**
+- "State-of-the-art medical facility"
+- "Medical-grade environment"
+- "Surrounded by medical research and healthcare innovation"
+
+═══════════════════════════════════════════════════════════════════════════════
+UPDATED "ABOUT THE LOCATION" CONTENT FOR HOMEPAGE
+═══════════════════════════════════════════════════════════════════════════════
+
+Use this new content block on the homepage:
+
+```
+VISIT OUR OXFORD SCIENCE PARK CLINIC
+
+The Oxford Wellness Doctor is located in John Eccles House at the prestigious
+Oxford Science Park in Littlemore. This professional medical and scientific
+hub provides the perfect setting for your aesthetic treatments and women's
+wellness consultations.
+
+WHY OUR LOCATION MATTERS
+
+✓ Professional Medical Environment
+  Located alongside leading healthcare and research organizations
+
+✓ Discreet & Private
+  Away from the high street, ensuring complete confidentiality
+
+✓ Calming Natural Surroundings
+  Set in peaceful grounds that promote relaxation and wellbeing
+
+✓ Modern Treatment Rooms
+  Sleek, contemporary spaces designed for your comfort
+
+✓ Ample Free Parking
+  No parking stress—free parking available on-site
+
+✓ Easily Accessible
+  Just 10 minutes from Oxford city centre, 5 minutes from Headington and Cowley
+
+Our clinic combines the tranquility of a nature-surrounded setting with the
+professionalism of a state-of-the-art medical facility. Whether you're visiting
+for aesthetic treatments or women's wellness consultations, you'll experience
+care in an environment designed for privacy, comfort, and excellence.
+
+John Eccles House
+Robert Robinson Avenue
+Oxford Science Park
+Littlemore
+Oxford OX4 4GP
+
+[Book Your Consultation Button]
+[View on Google Maps Button]
+```
+
+═══════════════════════════════════════════════════════════════════════════════
+UPDATED LOCAL SEO CONTENT
+═══════════════════════════════════════════════════════════════════════════════
+
+**Serving All Oxford Areas**
+
+Replace old "areas served" content with:
+
+"The Oxford Wellness Doctor serves patients throughout Oxfordshire from our
+Oxford Science Park location. We welcome patients from:
+
+- Oxford city centre (10 minutes)
+- Headington (8 minutes)
+- Cowley (5 minutes)
+- Littlemore (2 minutes)
+- Rose Hill (5 minutes)
+- Blackbird Leys (7 minutes)
+- Iffley (8 minutes)
+- Kennington (10 minutes)
+- Abingdon (15 minutes)
+- Witney (20 minutes)
+- Kidlington (15 minutes)
+- Bicester (25 minutes)
+- And throughout Oxfordshire
+
+Our convenient Oxford Science Park location offers easy access from the A4142
+and surrounding areas, with ample free parking making your visit stress-free."
+
+═══════════════════════════════════════════════════════════════════════════════
+VERIFICATION CHECKLIST
+═══════════════════════════════════════════════════════════════════════════════
+
+After making all updates, verify:
+
+✓ NO references to "3 Woodstock Road" anywhere on site
+✓ NO references to "OX2 6HA" anywhere on site
+✓ Footer on every page shows new address
+✓ Contact page fully updated with new address and directions
+✓ Schema markup updated with new coordinates and address
+✓ Google Map embed shows new location
+✓ Meta descriptions updated where they mentioned old location
+✓ All treatment pages show new address in booking sections
+✓ Blog posts updated (author bios, location references)
+✓ FAQ answers updated with new address
+✓ Homepage location section completely rewritten
+✓ About page mentions new location
+✓ "Areas we serve" updated throughout
+✓ New location benefits emphasized (Science Park, parking, nature, discreet)
+
+═══════════════════════════════════════════════════════════════════════════════
+CRITICAL: GOOGLE BUSINESS PROFILE UPDATE
+═══════════════════════════════════════════════════════════════════════════════
+
+AFTER updating the website, you MUST update:
+
+1. **Google Business Profile**
+   - Log in to Google Business Profile
+   - Update address to: John Eccles House, Robert Robinson Avenue, Oxford
+     Science Park, Littlemore, Oxford OX4 4GP
+   - Verify new location
+   - Update business description to mention Science Park location
+   - Add new photos of the new location
+
+2. **Other Directory Listings** (update NAP everywhere):
+   - Bing Places
+   - Yell.com
+   - Thomson Local
+   - Apple Maps
+   - Facebook Business Page
+   - Instagram profile location
+   - Any medical directories you're listed in
+   - Any review sites (Trustpilot, etc.)
+
+3. **Social Media Profiles:**
+   - Update Instagram bio with new address
+   - Update Facebook page address
+   - Update any pinned posts with old address
+
+CONSISTENCY IS CRITICAL FOR LOCAL SEO!
+Every single mention of your address online must be identical.
+
+═══════════════════════════════════════════════════════════════════════════════
+SEARCH & REPLACE COMMANDS (IF POSSIBLE)
+═══════════════════════════════════════════════════════════════════════════════
+
+If your platform supports global search/replace, use these:
+
+1. Replace all: "3 Woodstock Road" → "John Eccles House, Robert Robinson Avenue"
+2. Replace all: "Woodstock Road, Oxford" → "Oxford Science Park, Littlemore"
+3. Replace all: "OX2 6HA" → "OX4 4GP"
+4. Replace all: "North Oxford location" → "Oxford Science Park location"
+5. Replace all: "near Summertown" → "easily accessible from all Oxford areas"
+6. Replace all: "51.7595" → "51.7168"
+7. Replace all: "-1.2680" → "-1.2164"
+
+THEN manually review to ensure context makes sense.
+
+═══════════════════════════════════════════════════════════════════════════════
+ADDITIONAL NEW CONTENT TO ADD
+═══════════════════════════════════════════════════════════════════════════════
+
+Consider adding a new page: /our-clinic or /location
+
+With content like:
+
+```
+OUR OXFORD SCIENCE PARK CLINIC
+
+Welcome to The Oxford Wellness Doctor, located in the heart of the Oxford
+Science Park at John Eccles House. Our location has been carefully chosen to
+provide the optimal environment for medical aesthetics and women's wellness care.
+
+ABOUT JOHN ECCLES HOUSE
+
+John Eccles House is named after Sir John Eccles, the Nobel Prize-winning
+neurophysiologist who made groundbreaking contributions to our understanding
+of the nervous system. This naming reflects our commitment to medical
+excellence and evidence-based care.
+
+THE OXFORD SCIENCE PARK
+
+The Oxford Science Park is one of the UK's most prestigious medical and
+scientific hubs, home to leading healthcare organizations, medical research
+facilities, and innovative healthcare companies. Our presence here reflects
+our commitment to cutting-edge aesthetic medicine and women's health care.
+
+OUR TREATMENT ENVIRONMENT
+
+Our clinic features:
+• Modern, sleek treatment rooms designed for comfort and privacy
+• State-of-the-art medical equipment
+• Calming, professional atmosphere
+• Surrounded by natural landscaping
+• Complete discretion and confidentiality
+
+CONVENIENCE & ACCESSIBILITY
+
+One of the key advantages of our Oxford Science Park location is accessibility:
+
+• Ample Free Parking - No parking stress or fees
+• Easy Access - Just off the A4142
+• 10 minutes from Oxford city centre
+• 5-8 minutes from Headington and Cowley
+• Discreet Location - Away from busy high streets
+• Nature Setting - Peaceful, calming environment
+
+FIND US
+
+John Eccles House
+Robert Robinson Avenue
+Oxford Science Park
+Littlemore
+Oxford OX4 4GP
+
+Phone: 07739 309380
+Email: info@theoxfordwellnessdoctor.com
+
+[Embedded Map]
+[Book Consultation Button]
+```
+
+═══════════════════════════════════════════════════════════════════════════════
+IMPORTANT NOTES
+═══════════════════════════════════════════════════════════════════════════════
+
+1. **Coordinate Verification:**
+   The coordinates I provided (51.7168, -1.2164) are approximate for Oxford
+   Science Park. Verify exact coordinates for John Eccles House using Google Maps.
+
+2. **Google Business Profile:**
+   Updating your GBP address is CRITICAL. Do this immediately after website
+   update. Google may require verification at the new address.
+
+3. **Citation Consistency:**
+   Ensure EVERY online mention of your business has the identical new address
+   format for maximum local SEO benefit.
+
+4. **Phone Number:**
+   I've kept the mobile number (07739 309380) the same. Confirm this is still
+   correct.
+
+5. **Opening Hours:**
+   Verify if opening hours are still Friday 4-8pm and Saturday 9am-1pm at the
+   new location.
+
+6. **Parking Information:**
+   Confirm parking details for the Science Park (assumed free and ample based
+   on your description).
+
+7. **Turn Negative to Positive:**
+   Some might see Littlemore as "less prestigious" than North Oxford. Counter
+   this by emphasizing: medical credibility (Science Park), privacy (discreet),
+   convenience (parking, access), and environment (nature, calm).
+
+8. **Photos:**
+   Take high-quality photos of:
+   - John Eccles House exterior
+   - The treatment room (sleek, modern)
+   - Natural surroundings
+   - Parking area
+   - Waiting area
+   Use these on website and Google Business Profile
+
+═══════════════════════════════════════════════════════════════════════════════
+FINAL IMPLEMENTATION CHECKLIST
+═══════════════════════════════════════════════════════════════════════════════
+
+PHASE 1 - IMMEDIATE (Do Today):
+✓ Update all schema markup with new address and coordinates
+✓ Update footer on every page
+✓ Update contact page completely
+✓ Update homepage location section
+✓ Update Google Business Profile
+
+PHASE 2 - WITHIN 48 HOURS:
+✓ Update all treatment pages
+✓ Update about page
+✓ Update all blog posts
+✓ Update meta descriptions that mention location
+✓ Update all FAQ answers with address
+
+PHASE 3 - WITHIN 1 WEEK:
+✓ Update all online directory listings (Yell, Bing, etc.)
+✓ Update social media profiles
+✓ Add new location photos to website and GBP
+✓ Verify Google Business Profile at new address
+✓ Submit updated sitemap to Google Search Console
+
+PHASE 4 - ONGOING:
+✓ Monitor for any missed references to old address
+✓ Update any printed materials, business cards
+✓ Notify patients of new address
+✓ Update email signature with new address
+
+═══════════════════════════════════════════════════════════════════════════════
+END OF ADDRESS UPDATE INSTRUCTIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+Complete ALL updates systematically. Missing even one reference to the old
+address can confuse patients and hurt local SEO.
+
+After completion, use browser search (Ctrl+F / Cmd+F) to search entire website
+for:
+- "Woodstock"
+- "OX2 6HA"
+- "North Oxford" (when referring to location, not general area served)
+- "Summertown" (when referring to proximity)
+
+Ensure ZERO results for old address references.

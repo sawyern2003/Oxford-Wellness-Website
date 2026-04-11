@@ -1,0 +1,68 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "tYt3dfGrAH8fMjCZiVDrD"
+uri = "file://client/src/assets/blog/doctor-led-aesthetics-credentials.png"
+type = "image"
+title = "doctor credentials"
+
+[[generated]]
+id = "7d5Y2ofnKI00KngTbiEQM"
+uri = "file://client/src/assets/blog/wegovy-mounjaro-weight-loss-consultation.png"
+type = "image"
+title = "weight loss consultation"
+
+[[generated]]
+id = "Jt2fNRAjWSrDEK6HBaowT"
+uri = "file://client/src/assets/blog/lip-filler-natural-results.png"
+type = "image"
+title = "lip filler natural"
+
+[[generated]]
+id = "1bkSm69vdKi8IUFjwubS1"
+uri = "file://client/src/assets/blog/morpheus8-treatment-device.png"
+type = "image"
+title = "morpheus8 device"
+
+[[generated]]
+id = "ZCPWzThWNaVIU8d1NTHJz"
+uri = "file://client/src/assets/blog/menopause-skin-changes-oestrogen.png"
+type = "image"
+title = "menopause skin changes"
+
+[[generated]]
+id = "g70c0ykOrHKfwmhSJILB3"
+uri = "file://client/src/assets/blog/choosing-aesthetics-clinic-oxford.png"
+type = "image"
+title = "aesthetics clinic interior"
+
+[[generated]]
+id = "3KbCU2RWuVBZ-efn0gSDI"
+uri = "file://client/src/assets/blog/botox-first-time-anti-wrinkle.png"
+type = "image"
+title = "botox first time"
+
+[[generated]]
+id = "-A7tskn_GLrL9NO30FX8u"
+uri = "file://client/src/assets/blog/aesthetic-treatments-over-50.png"
+type = "image"
+title = "aesthetic treatments over 50"
+
+[[generated]]
+id = "EhQ1rfAIhTEiBn6tBer7E"
+uri = "file://client/src/assets/blog/profhilo-vs-dermal-fillers.png"
+type = "image"
+title = "profhilo dermal fillers"
+
+[[generated]]
+id = "VmVSYK96aZfhZgrT1z-Pe"
+uri = "file://client/src/assets/blog/weight-gain-perimenopause-wellness.png"
+type = "image"
+title = "perimenopause wellness"
+
+[[generated]]
+id = "ksGRtAJCdO2bYVsJ9H6z_"
+uri = "file://client/src/assets/blog/oxford-science-park-clinic.png"
+type = "image"
+title = "science park building"

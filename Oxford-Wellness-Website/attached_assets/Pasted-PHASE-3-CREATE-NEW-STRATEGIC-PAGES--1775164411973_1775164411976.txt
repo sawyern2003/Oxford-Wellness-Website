@@ -1,0 +1,335 @@
+PHASE 3: CREATE NEW STRATEGIC PAGES
+═══════════════════════════════════════
+
+───────────────────────────────────────
+10. MENOPAUSE CLINIC PAGE (MASSIVE UNIQUE OPPORTUNITY)
+───────────────────────────────────────
+URL: /menopause-clinic-oxford
+Title: "Menopause Clinic Oxford | HRT & Women's Health | Dr. Inga Taganova"
+Meta Description: "Private menopause clinic in Oxford. HRT specialist
+Dr. Inga Taganova - former gynaecologist with 20+ years experience.
+Comprehensive women's health care. Book now."
+
+H1: "Menopause Clinic in Oxford - Expert Women's Health Care"
+
+CONTENT (1200-1500 words):
+- Opening: Dr. Taganova's unique background - gynaecologist, GP,
+  menopause specialist
+
+- Section: "A Different Approach to Menopause Care" (H2)
+  - Holistic women's health
+  - Combining HRT with aesthetic medicine
+  - Understanding how hormones affect skin, weight, mood
+  Keywords: menopause clinic Oxford, HRT Oxford, menopause doctor Oxford,
+  perimenopause Oxford
+
+- Section: "Menopause Symptoms We Treat" (H2)
+  - Hot flashes
+  - Night sweats
+  - Mood changes
+  - Sleep disturbances
+  - Weight gain
+  - Skin changes
+  - Hair thinning
+  - Vaginal dryness
+  - Low libido
+  - Brain fog
+
+- Section: "Hormone Replacement Therapy (HRT)" (H2)
+  - Body-identical HRT
+  - Different delivery methods (patches, gels, tablets)
+  - Individualized prescriptions
+  - Ongoing monitoring
+
+- Section: "Menopause and Your Skin" (H2)
+  - How estrogen decline affects collagen
+  - Combining HRT with aesthetic treatments
+  - Profhilo and menopause
+  - Medical weight loss in perimenopause
+  - Integrated approach unique to The Oxford Wellness Doctor
+
+- Section: "Why Dr. Taganova's Background Matters" (H2)
+  - Former gynaecologist
+  - Specialist menopause training
+  - 20+ years treating women's health conditions
+  - Understands hormones deeply
+  - Aesthetic medicine + hormone expertise = optimal care
+
+- Section: "The Consultation Process" (H2)
+  - Comprehensive 45-minute appointment
+  - Medical history
+  - Symptom assessment
+  - Blood tests if needed
+  - Treatment plan discussion
+
+- Section: "Perimenopause Support" (H2)
+  - Earlier symptoms in 40s
+  - Diagnosis challenges
+  - Early intervention benefits
+
+- Pricing: Initial consultation £150, Follow-up £80
+
+FAQ SECTION (12 questions):
+1. What is perimenopause vs. menopause?
+2. What are the symptoms of menopause?
+3. Is HRT safe?
+4. Can HRT help with weight gain?
+5. Will HRT improve my skin?
+6. How long should I take HRT?
+7. Can I combine HRT with aesthetic treatments?
+8. Do I need blood tests for menopause diagnosis?
+9. Can I see Dr. Taganova for menopause if I don't want aesthetics?
+10. Does Dr. Taganova prescribe body-identical HRT?
+11. How much does private menopause consultation cost in Oxford?
+12. How do I book a menopause appointment?
+
+Schema: MedicalBusiness + Physician + FAQPage + extensive markup
+
+INTERNAL LINKS:
+- Link to medical weight loss page (menopause weight gain)
+- Link to Profhilo (hormone-related skin changes)
+- Link to About page (Dr. Taganova's credentials)
+
+───────────────────────────────────────
+11. PRICING PAGE
+───────────────────────────────────────
+URL: /pricing
+Title: "Treatment Prices Oxford | The Oxford Wellness Doctor | Transparent Pricing"
+Meta Description: "Transparent pricing for medical aesthetics in Oxford.
+Anti-wrinkle injections from £150, dermal fillers from £250, Profhilo £300.
+View all treatment costs."
+
+H1: "Treatment Pricing - Transparent, Fair, No Hidden Costs"
+
+CONTENT:
+- Opening: Commitment to transparent pricing, no surprises
+- Comprehensive pricing table with all treatments
+- Payment methods accepted
+- Consultation fees (if applicable)
+- Package deals
+
+───────────────────────────────────────
+12. BLOG/RESOURCE HUB
+───────────────────────────────────────
+URL: /blog
+Title: "Medical Aesthetics Blog Oxford | Expert Advice | The Oxford Wellness Doctor"
+Meta Description: "Expert advice on medical aesthetics, women's health and
+menopause from Dr. Inga Taganova. Evidence-based information from Oxford's
+trusted GMC doctor."
+
+Create 10 FOUNDATIONAL BLOG POSTS:
+
+─────────────
+Blog Post 1:
+─────────────
+URL: /blog/wegovy-vs-mounjaro-comparison
+Title: "Wegovy vs Mounjaro: Which Weight Loss Injection Is Right for You?"
+Meta Description: "Detailed comparison of Wegovy vs Mounjaro from Oxford doctor.
+Efficacy, side effects, cost, and suitability explained."
+Content: 1500 words, comparison table, clinical data
+Keywords: Wegovy vs Mounjaro, weight loss injections comparison
+
+STRUCTURE:
+- Introduction: GLP-1 revolution
+- What is Wegovy? (detailed explanation)
+- What is Mounjaro? (detailed explanation)
+- Head-to-head comparison table
+- Who should choose Wegovy?
+- Who should choose Mounjaro?
+- Side effects comparison
+- Cost comparison
+- Dr. Taganova's recommendations
+- How to get started
+CTA: Book weight loss consultation
+
+─────────────
+Blog Post 2:
+─────────────
+URL: /blog/menopause-skin-changes
+Title: "How Menopause Affects Your Skin: What Your GP Won't Tell You"
+Meta Description: "Menopause skin changes explained by former gynaecologist.
+Treatments that actually work for aging skin during menopause."
+Content: 1200 words
+Keywords: menopause skin, perimenopause skin changes, HRT and skin
+
+STRUCTURE:
+- Why skin changes during menopause
+- The role of estrogen in skin health
+- Common skin changes (dryness, thinning, loss of elasticity)
+- How HRT can help
+- Aesthetic treatments that complement HRT
+- Profhilo for menopausal skin
+- Skincare routine for menopause
+- Dr. Taganova's integrated approach
+CTA: Book menopause consultation
+
+─────────────
+Blog Post 3:
+─────────────
+URL: /blog/botox-first-time-guide
+Title: "What to Expect from Your First Botox Appointment in Oxford"
+Meta Description: "First-time Botox guide from experienced Oxford doctor.
+Procedure, results, aftercare, and what to expect explained."
+Content: 1000 words
+Keywords: first time botox, botox oxford, what to expect botox
+
+STRUCTURE:
+- Is Botox right for you?
+- Before your appointment
+- The consultation process
+- The treatment procedure step-by-step
+- What it feels like
+- Immediate aftercare
+- Results timeline
+- When to book your next treatment
+CTA: Book anti-wrinkle consultation
+
+─────────────
+Blog Post 4:
+─────────────
+URL: /blog/profhilo-vs-dermal-fillers
+Title: "Profhilo vs. Dermal Fillers: Which Treatment Is Right for You?"
+Meta Description: "Doctor explains the difference between Profhilo and dermal
+fillers. Which is best for your concerns?"
+Content: 1200 words, comparison table
+Keywords: profhilo vs fillers, skin boosters vs fillers
+
+STRUCTURE:
+- What is Profhilo?
+- What are dermal fillers?
+- Key differences
+- Comparison table
+- When to choose Profhilo
+- When to choose fillers
+- Can they be combined?
+- Cost comparison
+CTA: Book consultation to discuss
+
+─────────────
+Blog Post 5:
+─────────────
+URL: /blog/lip-filler-natural-results
+Title: "How to Get Natural-Looking Lip Fillers: A Doctor's Guide"
+Meta Description: "Achieve natural lip enhancement. Expert tips from Oxford
+aesthetics doctor on getting beautiful, natural-looking lip fillers."
+Content: 1000 words
+Keywords: natural lip fillers, lip filler guide, oxford lip enhancement
+
+STRUCTURE:
+- The natural lip filler philosophy
+- Red flags (over-filled lips)
+- How to choose the right practitioner
+- Consultation importance
+- Gradual enhancement approach
+- Choosing the right product
+- What to expect
+- Maintenance tips
+CTA: Book lip filler consultation
+
+─────────────
+Blog Post 6:
+─────────────
+URL: /blog/doctor-vs-nurse-aesthetics
+Title: "Doctor-Led vs. Nurse-Led Aesthetics: What's the Difference?"
+Meta Description: "Why choose a GMC doctor for aesthetic treatments? Safety,
+expertise, and experience compared."
+Content: 1000 words
+Keywords: doctor led aesthetics, doctor vs nurse aesthetics oxford
+
+STRUCTURE:
+- Credentials comparison
+- Training differences
+- Anatomical knowledge
+- Complication management
+- When doctor-led matters most
+- What to look for in a practitioner
+- Questions to ask
+- Dr. Taganova's qualifications
+CTA: Book with our GMC doctor
+
+─────────────
+Blog Post 7:
+─────────────
+URL: /blog/morpheus8-results-timeline
+Title: "Morpheus8 Results: Day-by-Day Recovery and Timeline"
+Meta Description: "What to expect after Morpheus8 treatment. Recovery timeline,
+results progression, before and after guidance."
+Content: 1000 words
+Keywords: morpheus8 results, morpheus8 recovery, morpheus8 oxford
+
+STRUCTURE:
+- What happens during treatment
+- Day 1-3: Immediate aftermath
+- Week 1: Early recovery
+- Week 2-4: Continued healing
+- Month 2-3: Results emerging
+- Month 3-6: Final results
+- How to maximize results
+- When to have next treatment
+CTA: Book Morpheus8 consultation
+
+─────────────
+Blog Post 8:
+─────────────
+URL: /blog/weight-gain-perimenopause
+Title: "Weight Gain in Perimenopause: Medical Solutions That Actually Work"
+Meta Description: "Why you're gaining weight in perimenopause and what helps.
+HRT, GLP-1 injections, and lifestyle solutions from women's health expert."
+Content: 1500 words
+Keywords: perimenopause weight gain, menopause weight loss, HRT weight loss
+
+STRUCTURE:
+- Why perimenopause causes weight gain
+- Hormonal changes explained
+- The role of HRT
+- GLP-1 injections for menopausal weight gain
+- Why diets fail during menopause
+- Integrated approach at The Oxford Wellness Doctor
+- What works: Evidence-based solutions
+- Dr. Taganova's approach
+CTA: Book menopause consultation or weight loss consultation
+
+─────────────
+Blog Post 9:
+─────────────
+URL: /blog/choosing-aesthetics-clinic-oxford
+Title: "How to Choose an Aesthetics Clinic in Oxford: A Checklist"
+Meta Description: "What to look for when choosing aesthetic clinic in Oxford.
+Credentials, safety, results - expert guide."
+Content: 1200 words
+Keywords: best aesthetics clinic oxford, choosing aesthetics doctor
+
+STRUCTURE:
+- Check credentials (GMC registration)
+- Look for medical-led vs. beauty salon
+- Ask about training and experience
+- Assess consultation quality
+- Before and after galleries
+- Reviews and testimonials
+- Safety protocols
+- Red flags to avoid
+- What makes The Oxford Wellness Doctor different
+CTA: Book consultation to see the difference
+
+─────────────
+Blog Post 10:
+─────────────
+URL: /blog/aesthetic-treatments-over-50
+Title: "Best Aesthetic Treatments for Women Over 50: A Doctor's Guide"
+Meta Description: "Effective anti-ageing treatments for women 50+.
+Menopause-aware approach from Oxford women's health expert."
+Content: 1200 words
+Keywords: anti ageing treatments over 50, aesthetics for mature skin
+
+STRUCTURE:
+- How skin ages after 50
+- Menopause impact on skin
+- Best treatments for mature skin
+- Anti-wrinkle injections over 50
+- Dermal fillers for age-related volume loss
+- Profhilo for skin quality
+- Morpheus8 for skin tightening
+- Combining treatments
+- Integrated approach with HRT
+- Dr. Taganova's expertise with mature patients
+CTA: Book consultation

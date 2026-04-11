@@ -1,0 +1,356 @@
+Consultation
+Area / Variation
+Duration
+Cost
+Consultation
+Duration
+60
+Cost
+20
+Medical Form Completion Appointment
+Duration
+30
+Cost
+50
+icon for remove treatment from the menu
+Please add another variation
+Treatments for Lines and Wrinkles
+Area / Variation
+Duration
+Cost
+Sessions
+1 area
+Duration
+30
+Cost
+190
+Sessions
+1
+icon for remove treatment from the menu
+2 areas
+Duration
+30
+Cost
+250
+Sessions
+1
+icon for remove treatment from the menu
+3 areas
+Duration
+30
+Cost
+300
+Sessions
+1
+icon for remove treatment from the menu
+Bunny lines (add on)
+Duration
+30
+Cost
+50
+Sessions
+1
+icon for remove treatment from the menu
+Dimpled chin
+Duration
+30
+Cost
+150
+Sessions
+1
+icon for remove treatment from the menu
+Dimpled chin (add on)
+Duration
+30
+Cost
+50
+Sessions
+1
+icon for remove treatment from the menu
+Downturned Mouth (add on)
+Duration
+30
+Cost
+50
+Sessions
+1
+icon for remove treatment from the menu
+Excessive Sweating - Armpits/Underarm
+Duration
+30
+Cost
+500
+Sessions
+1
+icon for remove treatment from the menu
+Jaw slimming/Teeth Grinding
+Duration
+30
+Cost
+250
+Sessions
+1
+icon for remove treatment from the menu
+Please add another variation
+remove treatment
+Dermal Fillers (lip/cheek/jaw filler)
+Area / Variation
+Duration
+Cost
+Sessions
+0.7ml Lip Filler
+Duration
+60
+Cost
+200
+Sessions
+1
+icon for remove treatment from the menu
+1.0ml Dermal Filler
+Duration
+60
+Cost
+300
+Sessions
+1
+icon for remove treatment from the menu
+Please add another variation
+remove treatment
+Filler Dissolving Treatment
+Area / Variation
+Duration
+Cost
+Sessions
+Filler Dissolving
+Duration
+60
+Cost
+200
+Sessions
+1
+icon for remove treatment from the menu
+Please add another variation
+remove treatment
+Chemical Peel
+Area / Variation
+Duration
+Cost
+Sessions
+Obagi Blue Peel Radiance
+Duration
+60
+Cost
+100
+Sessions
+1
+icon for remove treatment from the menu
+Perfect Peel
+Duration
+60
+Cost
+350
+Sessions
+1
+icon for remove treatment from the menu
+Please add another variation
+remove treatment
+Skin Boosters & Remodellers (eg. Profhilo)
+Area / Variation
+Duration
+Cost
+Sessions
+Hyaluronic Acid Skinbooster
+Duration
+60
+Cost
+250
+Sessions
+1
+icon for remove treatment from the menu
+Polynucleotide Skin Boosters and Bioremodellers
+Duration
+60
+Cost
+350
+Sessions
+1
+icon for remove treatment from the menu
+Please add another variation
+remove treatment
+IPL Skin Treatments
+Area / Variation
+Duration
+Cost
+Sessions
+IPL Consultation & Patch Test
+Duration
+30
+Cost
+25
+Sessions
+1
+icon for remove treatment from the menu
+IPL Lumecca - Acne
+Duration
+30
+Cost
+150
+Sessions
+1
+icon for remove treatment from the menu
+IPL Lumecca - Acne
+Duration
+45
+Cost
+250
+Sessions
+2
+icon for remove treatment from the menu
+IPL Lumecca - Pigmentation
+Duration
+30
+Cost
+150
+Sessions
+1
+icon for remove treatment from the menu
+IPL Lumecca - Rosacea
+Duration
+45
+Cost
+223
+Sessions
+1
+icon for remove treatment from the menu
+IPL Lumecca - Spider Veins
+Duration
+45
+Cost
+223
+Sessions
+1
+icon for remove treatment from the menu
+IPL photofacial - Whole Face
+Duration
+60
+Cost
+80
+Sessions
+1
+icon for remove treatment from the menu
+Please add another variation
+remove treatment
+IV & IM Treatments
+Area / Variation
+Duration
+Cost
+Sessions
+Vit B12
+Duration
+30
+Cost
+35
+Sessions
+1
+icon for remove treatment from the menu
+Please add another variation
+remove treatment
+Medical Weight Loss
+Area / Variation
+Duration
+Cost
+Sessions
+Medical Weight Loss Consultation
+Duration
+60
+Cost
+50
+Sessions
+1
+icon for remove treatment from the menu
+Please add another variation
+remove treatment
+Skin Tightening & Contouring Treatments
+Area / Variation
+Duration
+Cost
+Sessions
+Forma Facelift
+Duration
+60
+Cost
+150
+Sessions
+1
+icon for remove treatment from the menu
+Forma Plus - Body
+Duration
+90
+Cost
+500
+Sessions
+1
+icon for remove treatment from the menu
+Inmode FX Skin Tightening & Cellulite Treatment
+Duration
+45
+Cost
+150
+Sessions
+1
+icon for remove treatment from the menu
+Morpheus8 - Eyes & Around the Mouth
+Duration
+90
+Cost
+400
+Sessions
+1
+icon for remove treatment from the menu
+Morpheus8 - Face, Neck & Décolletage
+Duration
+90
+Cost
+650
+Sessions
+1
+icon for remove treatment from the menu
+Morpheus8 - Stretch Marks / Skin Tightening (Large Area)
+Duration
+90
+Cost
+800
+Sessions
+1
+icon for remove treatment from the menu
+Morpheus8 - Tummy
+Duration
+60
+Cost
+300
+Sessions
+1
+icon for remove treatment from the menu
+Morpheus8 Resurfacing - Add On
+Duration
+60
+Cost
+300
+Sessions
+1
+icon for remove treatment from the menu
+Please add another variation
+remove treatment
+Vaginal Rejuvenation
+Area / Variation
+Duration
+Cost
+Sessions
+Neauvia N Rose Intimate Area Rejuvenation
+Duration
+45
+Cost
+350
+Sessions
+1
+icon for remove treatment from the menu

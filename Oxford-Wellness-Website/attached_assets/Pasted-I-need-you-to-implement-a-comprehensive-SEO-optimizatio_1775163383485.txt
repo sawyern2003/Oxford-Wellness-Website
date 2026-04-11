@@ -1,0 +1,55 @@
+I need you to implement a comprehensive SEO optimization for my medical aesthetics
+website theoxfordwellnessdoctor.com. This is a private clinic in Oxford, UK led by
+Dr. Inga Taganova (GMC No. 4727817), a former gynaecologist and menopause specialist.
+
+CURRENT ISSUES TO FIX:
+- All pages have duplicate title tags
+- Only 6 pages in sitemap (need 15+ pages)
+- Service pages have thin content (100-200 words, need 800-1200 words)
+- Missing critical keywords: Wegovy, Mounjaro, Botox, menopause
+- No FAQ sections with schema markup
+- No blog content
+- Weak internal linking
+
+IMPLEMENTATION PLAN:
+
+═══════════════════════════════════════
+PHASE 1: FIX CRITICAL TITLE TAGS & META DESCRIPTIONS
+═══════════════════════════════════════
+
+Update ALL pages with unique, keyword-optimized titles and descriptions:
+
+**HOMEPAGE (/)**
+Title: "Anti-Wrinkle & Dermal Fillers Oxford | The Oxford Wellness Doctor"
+Meta Description: "Expert medical aesthetics in Oxford. Anti-wrinkle injections,
+dermal fillers, Profhilo & Morpheus8 by GMC-registered Dr. Inga Taganova. Book
+your free consultation today."
+
+**ABOUT PAGE (/about)**
+Title: "Dr. Inga Taganova | GMC Doctor Oxford | Aesthetics & Menopause Expert"
+Meta Description: "Meet Dr. Inga Taganova - GMC-registered GP with 20+ years
+experience. Former gynaecologist, menopause specialist, and expert in medical
+aesthetics. Oxford's trusted women's wellness doctor."
+
+**TREATMENTS PAGE (/treatments)**
+Title: "Medical Aesthetics Treatments Oxford | The Oxford Wellness Doctor"
+Meta Description: "Comprehensive medical aesthetics treatments in Oxford.
+Anti-wrinkle, fillers, Profhilo, Morpheus8, weight loss & more. Doctor-led
+clinic. Book consultation today."
+
+**CONTACT PAGE (/contact)**
+Title: "Contact The Oxford Wellness Doctor | Book Consultation Oxford"
+Meta Description: "Book your medical aesthetics consultation in Oxford. Located
+at 3 Woodstock Road, North Oxford. Call 07739 309380 or email. Open Friday
+evenings & Saturday mornings."
+
+**AI CONSULTATION PAGE (/ai-consultation)**
+Title: "AI Consultation | The Oxford Wellness Doctor | Find Your Treatment"
+Meta Description: "Discover which aesthetic treatment is right for you with our
+AI consultation tool. Get personalized recommendations from Dr. Taganova's
+Oxford clinic."
+
+**SHOP PAGE (/shop)**
+Title: "Shop Medical-Grade Skincare | The Oxford Wellness Doctor"
+Meta Description: "Shop professional medical-grade skincare products recommended
+by Dr. Inga Taganova. Premium products to enhance your aesthetic treatments."

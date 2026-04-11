@@ -1,0 +1,150 @@
+You are an expert SEO engineer and frontend developer.
+
+I have an existing live website for a private medical and aesthetics clinic called "The Oxford Wellness Doctor". The site is already built and working. Your task is to optimise it for SEO, performance, and structure WITHOUT making it messy or adding lots of new pages.
+
+IMPORTANT PRINCIPLES:
+
+* Keep the design clean, premium, and minimal
+* Do NOT create lots of separate pages
+* Improve SEO within the existing structure
+* Focus on local SEO (Oxford, UK)
+* Maintain a medical, trustworthy tone (not salesy or spammy)
+
+---
+
+TASK 1: TECHNICAL SEO FIXES
+
+1. Add proper meta tags to every page:
+
+* Unique  including keywords and "Oxford"
+* Meta description (150–160 characters, compelling, professional)
+* Open Graph tags for sharing
+
+2. Ensure there is:
+
+* sitemap.xml generated automatically
+* robots.txt (allow indexing, include sitemap)
+
+3. Add structured data (JSON-LD schema):
+
+* LocalBusiness schema
+* MedicalBusiness or Physician schema
+  Include:
+* business name: The Oxford Wellness Doctor
+* location: Oxford, UK
+* services
+* contact details
+
+4. Ensure all pages are crawlable and indexable (no accidental noindex tags)
+
+---
+
+TASK 2: PERFORMANCE OPTIMISATION
+
+1. Optimise all images:
+
+* compress images
+* use modern formats (WebP if possible)
+* lazy loading for images
+
+2. Reduce load time:
+
+* remove unused scripts
+* minimise CSS and JS
+* avoid large libraries if unnecessary
+
+3. Ensure fast first load (avoid delays or "cold start" issues if possible)
+
+---
+
+TASK 3: PAGE STRUCTURE (VERY IMPORTANT)
+
+Do NOT create new pages.
+
+Instead, improve the existing Treatments (or Services) page by structuring it into SEO-friendly sections:
+
+Add clearly separated sections using proper headings (H2/H3):
+
+Example structure:
+
+H1: Aesthetic & Medical Treatments in Oxford
+
+H2: Anti-Wrinkle Injections in Oxford
+
+* short description
+* benefits
+* who it is for
+* FAQ (2–3 questions)
+
+H2: Lip Filler in Oxford
+
+* same structure
+
+H2: Hyperhidrosis Treatment Oxford
+
+* same structure
+
+H2: PRP / Regenerative Treatments Oxford
+
+* same structure
+
+Each section should:
+
+* naturally include "Oxford"
+* be written in a professional, medical tone
+* avoid spammy language
+
+---
+
+TASK 4: LOCAL SEO IMPROVEMENTS
+
+1. Ensure "Oxford" and "Oxfordshire" are naturally included across:
+
+* headings
+* paragraphs
+* meta tags
+
+2. Add a short section:
+   "Why choose The Oxford Wellness Doctor in Oxford"
+
+* focus on trust, expertise, discretion
+
+3. Add internal links between sections/pages where relevant
+
+---
+
+TASK 5: FAQ SCHEMA + CONTENT
+
+1. Add an FAQ section to key pages (especially treatments)
+
+2. Include 3–5 real patient-style questions per treatment
+
+3. Implement FAQ structured data (schema markup)
+
+---
+
+TASK 6: UX + CONVERSION (KEEP SUBTLE)
+
+1. Ensure each section has a clear but minimal CTA:
+
+* "Book a consultation"
+* "Enquire discreetly"
+
+2. Keep tone premium and calm (NOT aggressive marketing)
+
+---
+
+TASK 7: FINAL CHECK
+
+Make sure:
+
+* Site remains clean and elegant
+* No clutter or excessive pages added
+* SEO improvements are embedded naturally
+* Everything is production-ready
+
+---
+
+OUTPUT:
+Apply changes directly to the codebase.
+Explain briefly what was improved and where.

@@ -1,0 +1,86 @@
+PHASE 4: HOMEPAGE OPTIMIZATION
+═══════════════════════════════════════
+
+Update HOMEPAGE (/) with:
+
+**Above the fold:**
+- H1: "Oxford's Leading Medical Aesthetics & Women's Wellness Clinic"
+- Subheading: "Doctor-led aesthetic treatments by Dr. Inga Taganova -
+  GMC-registered GP, former gynaecologist, and menopause specialist.
+  Expert care in the heart of North Oxford."
+- Prominent CTA buttons:
+  - "Book Free Consultation" (primary button)
+  - "View Treatments" (secondary button)
+  - "Call 07739 309380" (phone icon button)
+- Trust badges: GMC registered, 20+ years experience
+
+**Key sections:**
+
+1. "Why Choose The Oxford Wellness Doctor?" (H2)
+   - GMC-registered doctor with 20+ years experience
+   - Former gynaecologist - unique expertise in women's health
+   - Menopause specialist - integrated approach
+   - Natural-looking results philosophy
+   - Doctor-led safety and expertise
+   - Convenient North Oxford location
+
+2. "Our Treatments" (H2)
+   - Grid layout of 9 services with images and brief descriptions
+   - Each links to dedicated service page
+   - Include: Anti-Wrinkle Injections, Dermal Fillers, Lip Fillers,
+     Profhilo, Morpheus8, Medical Weight Loss (Wegovy & Mounjaro),
+     Excessive Sweating Treatment, Chemical Peels, Skin Boosters
+   - Plus: Menopause Clinic highlighted prominently
+
+3. "Meet Dr. Inga Taganova" (H2)
+   - Professional photo
+   - GMC No. 4727817
+   - Key qualifications: GP, former gynaecologist, menopause specialist
+   - 20+ years medical experience
+   - Brief bio (150 words)
+   - "Learn More About Dr. Taganova" link to /about
+
+4. "What Our Patients Say" (H2)
+   - Google Reviews integration
+   - Display 3-5 featured reviews
+   - Star rating with aggregate rating
+   - "Read More Reviews" link
+   - Schema markup for reviews
+
+5. "Conveniently Located in North Oxford" (H2)
+   - Address: 3 Woodstock Road, Oxford OX2 6HA
+   - Embedded Google Map
+   - Parking information
+   - Public transport links
+   - "Areas We Serve" list: Oxford, Summertown, Jericho, North Oxford,
+     Headington, Cowley, Kidlington, Woodstock, Witney, Abingdon, Bicester
+
+6. "Opening Hours" (H2)
+   - Friday: 4:00 PM - 8:00 PM
+   - Saturday: 9:00 AM - 1:00 PM
+   - "Book outside these hours? Contact us"
+
+7. FAQ SECTION (H2) - Homepage FAQs with FAQ Schema
+   Add 15 questions:
+
+   1. What treatments do you offer at The Oxford Wellness Doctor?
+   2. Is Dr. Inga Taganova GMC registered?
+   3. Do you offer free consultations?
+   4. How much do treatments cost?
+   5. Where are you located in Oxford?
+   6. What are your opening hours?
+   7. Do you offer weekend appointments?
+   8. Can I book online?
+   9. Do you offer payment plans?
+   10. Are your treatments safe?
+   11. What makes you different from other clinics?
+   12. Do you treat menopause as well as aesthetics?
+   13. Can men have treatments?
+   14. What areas of Oxford do you serve?
+   15. How do I get to the clinic?
+
+8. "Latest From Our Blog" (H2)
+   - Display 3 most recent blog posts
+   - Featured image, title, excerpt
+   - "Read More" links
+   - "View All Articles" button

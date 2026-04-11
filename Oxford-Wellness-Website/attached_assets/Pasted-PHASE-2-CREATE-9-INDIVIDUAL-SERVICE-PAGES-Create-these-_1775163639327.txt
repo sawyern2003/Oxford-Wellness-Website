@@ -1,0 +1,621 @@
+PHASE 2: CREATE 9 INDIVIDUAL SERVICE PAGES
+═══════════════════════════════════════
+
+Create these pages with proper URLs, unique titles, and comprehensive content:
+
+───────────────────────────────────────
+1. ANTI-WRINKLE INJECTIONS PAGE
+───────────────────────────────────────
+URL: /treatments/anti-wrinkle-injections-oxford
+Title: "Anti-Wrinkle Injections Oxford | Botox Treatment | Dr. Inga Taganova"
+Meta Description: "Professional anti-wrinkle injections in Oxford by Dr. Inga
+Taganova. Reduce forehead lines, frown lines & crow's feet. GMC-registered
+doctor. From £150. Book now."
+
+H1: "Anti-Wrinkle Injections in Oxford - Expert Botox Treatment"
+
+CONTENT STRUCTURE (800-1200 words):
+- Opening paragraph: What are anti-wrinkle injections, who is Dr. Taganova,
+  why choose a doctor-led clinic
+
+- Section: "What Can Anti-Wrinkle Injections Treat?" (H2)
+  - Forehead lines
+  - Frown lines (glabellar lines)
+  - Crow's feet
+  - Bunny lines
+  - Gummy smile
+  Include keywords: Botox Oxford, anti-wrinkle treatment Oxford
+
+- Section: "The Procedure - What to Expect" (H2)
+  - Free consultation process
+  - Treatment takes 15-20 minutes
+  - Minimal discomfort
+  - No downtime
+
+- Section: "Results & Duration" (H2)
+  - Results visible in 3-7 days
+  - Lasts 3-4 months
+  - Maintenance recommendations
+
+- Section: "Why Choose The Oxford Wellness Doctor?" (H2)
+  - GMC-registered doctor with 20+ years experience
+  - Former gynaecologist - understands facial anatomy deeply
+  - Conservative, natural-looking results
+  - Clinic located in prestigious Woodstock Road, North Oxford
+
+- Section: "Pricing" (H2)
+  - One area: £150
+  - Two areas: £200
+  - Three areas: £250
+
+- Section: "Book Your Consultation" (H2)
+  - Call 07739 309380
+  - Email info@theoxfordwellnessdoctor.com
+  - Available Friday 4-8pm, Saturday 9am-1pm
+
+FAQ SECTION with FAQ Schema markup (Add these 10 questions):
+1. How long do anti-wrinkle injections last?
+   Answer: Anti-wrinkle injections typically last 3-4 months. Results vary
+   depending on factors like muscle strength, metabolism, and lifestyle. Regular
+   maintenance treatments help sustain results.
+
+2. Are anti-wrinkle injections painful?
+   Answer: Most patients experience minimal discomfort. The needles used are very
+   fine, and the procedure is quick. No anaesthetic is usually needed, though
+   numbing cream is available if requested.
+
+3. What's the difference between Botox and other anti-wrinkle treatments?
+   Answer: Botox is a brand name. We use premium anti-wrinkle products that work
+   by temporarily relaxing muscles that cause lines. All are safe, proven, and
+   deliver excellent results when administered by an experienced doctor.
+
+4. How much do anti-wrinkle injections cost in Oxford?
+   Answer: At The Oxford Wellness Doctor, anti-wrinkle injections start from
+   £150 for one area, £200 for two areas, and £250 for three areas. Prices
+   include full consultation and follow-up.
+
+5. What are the side effects?
+   Answer: Side effects are generally mild and temporary, including slight
+   redness, swelling, or bruising at injection sites. Rare side effects include
+   temporary drooping, which resolves naturally. Dr. Taganova's expertise
+   minimizes risks.
+
+6. Can I drive after treatment?
+   Answer: Yes, you can drive immediately after anti-wrinkle injections. There's
+   no downtime, and you can return to normal activities right away.
+
+7. How long until I see results?
+   Answer: Results typically become visible within 3-7 days, with full effects
+   apparent after 14 days. We offer a free two-week follow-up to assess results.
+
+8. Are anti-wrinkle injections safe during pregnancy?
+   Answer: Anti-wrinkle injections are not recommended during pregnancy or
+   breastfeeding as a precautionary measure, though no specific risks have been
+   proven.
+
+9. Who should not have anti-wrinkle injections?
+   Answer: Anti-wrinkle injections are not suitable for pregnant or breastfeeding
+   women, people with certain neuromuscular conditions, or those allergic to
+   treatment components. Dr. Taganova assesses suitability during consultation.
+
+10. How do I book an appointment at The Oxford Wellness Doctor?
+    Answer: Call 07739 309380, email info@theoxfordwellnessdoctor.com, or use
+    our online booking system. We're located at 3 Woodstock Road, Oxford OX2 6HA.
+
+Schema Markup: Add MedicalProcedure schema + FAQPage schema for this page
+
+───────────────────────────────────────
+2. DERMAL FILLERS PAGE
+───────────────────────────────────────
+URL: /treatments/dermal-fillers-oxford
+Title: "Dermal Fillers Oxford | Natural Volume Restoration | Expert Doctor"
+Meta Description: "Expert dermal fillers in Oxford. Restore volume to cheeks,
+nasolabial folds, marionette lines. GMC doctor-led clinic. Natural results.
+Book your consultation today."
+
+H1: "Dermal Fillers in Oxford - Expert Volume Restoration"
+
+CONTENT STRUCTURE (800-1200 words):
+- Opening paragraph: What are dermal fillers, using hyaluronic acid,
+  doctor-led expertise
+
+- Section: "What Can Dermal Fillers Treat?" (H2)
+  - Cheek volume loss
+  - Nasolabial folds (smile lines)
+  - Marionette lines
+  - Tear troughs
+  - Jawline definition
+  - Chin augmentation
+  Include keywords: dermal fillers Oxford, facial fillers Oxford, cheek fillers
+
+- Section: "Types of Dermal Fillers We Use" (H2)
+  - Juvederm
+  - Restylane
+  - Teosyal
+  - All hyaluronic acid-based, fully reversible
+
+- Section: "The Treatment Process" (H2)
+  - Comprehensive consultation
+  - Treatment time: 30-45 minutes
+  - Topical anaesthetic available
+  - Immediate results
+
+- Section: "Results & Longevity" (H2)
+  - Instant volume restoration
+  - Lasts 6-18 months depending on area
+  - Natural-looking enhancement philosophy
+
+- Section: "Why Choose a GMC Doctor for Fillers?" (H2)
+  - Advanced anatomical knowledge
+  - 20+ years medical experience
+  - Complication management expertise
+  - Conservative approach for natural results
+
+- Section: "Pricing" (H2)
+  - 1ml: £250
+  - 2ml: £450
+  - 3ml: £600
+
+FAQ SECTION (10 questions):
+1. How long do dermal fillers last?
+2. Do dermal fillers hurt?
+3. What's the difference between dermal fillers and anti-wrinkle injections?
+4. Can dermal fillers be dissolved?
+5. What are the risks of dermal fillers?
+6. How much do dermal fillers cost in Oxford?
+7. Will I look unnatural?
+8. How long is recovery after dermal fillers?
+9. Can I combine fillers with other treatments?
+10. How do I book dermal fillers at The Oxford Wellness Doctor?
+
+Schema: MedicalProcedure + FAQPage schema
+
+───────────────────────────────────────
+3. LIP FILLERS PAGE
+───────────────────────────────────────
+URL: /treatments/lip-fillers-oxford
+Title: "Lip Fillers Oxford | Natural Lip Enhancement | Dr. Inga Taganova"
+Meta Description: "Expert lip fillers in Oxford by GMC-registered doctor.
+Natural lip enhancement and definition. Hyaluronic acid fillers. From £200.
+Book your free consultation today."
+
+H1: "Lip Fillers in Oxford - Expert Lip Enhancement"
+
+CONTENT (800-1000 words):
+- What are lip fillers, natural enhancement philosophy
+
+- Section: "Lip Enhancement Options" (H2)
+  - Volume enhancement
+  - Lip definition (border enhancement)
+  - Asymmetry correction
+  - Cupid's bow definition
+  - Vertical lip lines treatment
+  Keywords: lip fillers Oxford, lip enhancement Oxford, lip augmentation
+
+- Section: "Our Approach to Lip Fillers" (H2)
+  - Natural-looking results
+  - Gradual enhancement recommended
+  - Tailored to facial proportions
+
+- Section: "The Procedure" (H2)
+  - Detailed consultation
+  - Treatment: 30 minutes
+  - Topical anaesthetic
+  - Minimal discomfort
+
+- Section: "What to Expect" (H2)
+  - Immediate results
+  - Potential swelling 24-48 hours
+  - Final results after 2 weeks
+  - Lasts 6-12 months
+
+- Section: "Doctor-Led Expertise Matters" (H2)
+  - Vascular anatomy knowledge crucial
+  - Complication prevention
+  - Natural aesthetic judgement
+
+- Pricing: From £200 (0.5ml) to £350 (1ml)
+
+FAQ SECTION (10 questions):
+1. Will my lips look natural?
+2. How long do lip fillers last?
+3. Do lip fillers hurt?
+4. Can lip fillers be dissolved?
+5. How much do lip fillers cost in Oxford?
+6. What are the side effects of lip fillers?
+7. How long does swelling last after lip fillers?
+8. Can I eat and drink after lip fillers?
+9. How old do I need to be for lip fillers?
+10. How do I book lip fillers in Oxford?
+
+Schema: MedicalProcedure + FAQPage
+
+───────────────────────────────────────
+4. PROFHILO PAGE
+───────────────────────────────────────
+URL: /treatments/profhilo-oxford
+Title: "Profhilo Oxford | Skin Booster Treatment | The Oxford Wellness Doctor"
+Meta Description: "Profhilo skin booster treatment in Oxford. Injectable
+hyaluronic acid for skin hydration, firmness & radiance. GMC doctor. From £300.
+Book your consultation."
+
+H1: "Profhilo in Oxford - Premium Skin Booster Treatment"
+
+CONTENT (800-1000 words):
+- What is Profhilo, how it differs from fillers
+
+- Section: "How Profhilo Works" (H2)
+  - Bio-remodeling technology
+  - Stimulates collagen & elastin
+  - Improves skin quality, not just volume
+  Keywords: Profhilo Oxford, skin booster Oxford, skin rejuvenation
+
+- Section: "What Profhilo Treats" (H2)
+  - Skin laxity
+  - Fine lines
+  - Dehydrated skin
+  - Loss of firmness
+  - Neck and décolletage ageing
+
+- Section: "The Treatment Protocol" (H2)
+  - Two sessions, 4 weeks apart
+  - 5 injection points (BAP technique)
+  - Minimal discomfort
+  - Treatment time: 15 minutes
+
+- Section: "Results Timeline" (H2)
+  - Visible after 4 weeks
+  - Peak results after second session
+  - Lasts 6 months
+  - Maintenance: 2x per year
+
+- Section: "Profhilo vs. Dermal Fillers vs. Anti-Wrinkle" (H2)
+  - Comparison table
+  - When to choose each treatment
+
+- Pricing: £300 per session, £550 for both sessions
+
+FAQ SECTION (8 questions):
+1. What is Profhilo?
+2. How is Profhilo different from dermal fillers?
+3. Does Profhilo hurt?
+4. How many Profhilo treatments do I need?
+5. How long does Profhilo last?
+6. How much does Profhilo cost in Oxford?
+7. What areas can be treated with Profhilo?
+8. How do I book Profhilo in Oxford?
+
+Schema: MedicalProcedure + FAQPage
+
+───────────────────────────────────────
+5. MORPHEUS8 PAGE
+───────────────────────────────────────
+URL: /treatments/morpheus8-oxford
+Title: "Morpheus8 Oxford | RF Microneedling | Skin Tightening Treatment"
+Meta Description: "Morpheus8 radiofrequency microneedling in Oxford.
+Non-surgical skin tightening for face & body. Reduces wrinkles, scars &
+improves texture. Book consultation."
+
+H1: "Morpheus8 in Oxford - Advanced RF Microneedling Treatment"
+
+CONTENT (800-1200 words):
+- What is Morpheus8, combining microneedling with radiofrequency
+
+- Section: "How Morpheus8 Works" (H2)
+  - Fractional RF energy
+  - Collagen remodeling
+  - Skin tightening mechanism
+  Keywords: Morpheus8 Oxford, RF microneedling Oxford, skin tightening Oxford
+
+- Section: "What Morpheus8 Treats" (H2)
+  - Loose skin
+  - Deep wrinkles
+  - Acne scars
+  - Large pores
+  - Skin texture irregularities
+  - Jawline definition
+  - Neck laxity
+
+- Section: "Treatment Areas" (H2)
+  - Face (full or targeted)
+  - Neck
+  - Jowls
+  - Body (abdomen, arms, thighs)
+
+- Section: "The Morpheus8 Procedure" (H2)
+  - Numbing cream applied
+  - Treatment: 30-60 minutes
+  - Tolerable discomfort
+  - Multiple depth settings for customization
+
+- Section: "Recovery & Results" (H2)
+  - Redness 2-5 days
+  - Minimal downtime
+  - Results emerge over 3-6 months
+  - Optimal: 3 sessions, 4-6 weeks apart
+  - Lasts 12+ months
+
+- Section: "Why Choose Doctor-Led Morpheus8" (H2)
+  - Medical-grade device
+  - Advanced training required
+  - Safety in medical environment
+
+- Pricing: From £400 per session
+
+FAQ SECTION (10 questions):
+1. What is Morpheus8?
+2. Does Morpheus8 hurt?
+3. How many Morpheus8 treatments do I need?
+4. What is Morpheus8 downtime?
+5. How long do Morpheus8 results last?
+6. Is Morpheus8 safe?
+7. How much does Morpheus8 cost in Oxford?
+8. Can Morpheus8 be combined with other treatments?
+9. What's the difference between Morpheus8 and microneedling?
+10. How do I book Morpheus8 in Oxford?
+
+Schema: MedicalProcedure + FAQPage
+
+───────────────────────────────────────
+6. MEDICAL WEIGHT LOSS PAGE (CRITICAL - MASSIVE OPPORTUNITY)
+───────────────────────────────────────
+URL: /treatments/medical-weight-loss-oxford
+Title: "Medical Weight Loss Oxford | Wegovy & Mounjaro | GLP-1 Injections"
+Meta Description: "Wegovy & Mounjaro weight loss injections in Oxford.
+Medically supervised GLP-1 treatment by GMC-registered doctor. Safe, effective
+weight loss. Book consultation today."
+
+H1: "Medical Weight Loss in Oxford - Wegovy, Mounjaro & GLP-1 Treatments"
+
+CONTENT (1200-1500 words) - COMPREHENSIVE:
+- Opening: GLP-1 medications revolution, doctor-led safety
+
+- Section: "What Are GLP-1 Weight Loss Injections?" (H2)
+  - How they work (GLP-1 receptor agonists)
+  - FDA/MHRA approved
+  - Clinical trial results
+  Keywords: Wegovy Oxford, Mounjaro Oxford, weight loss injections Oxford,
+  GLP-1 Oxford
+
+- Section: "Wegovy (Semaglutide)" (H2)
+  - How it works
+  - Dosing schedule (escalation protocol)
+  - Average weight loss: 15-20% body weight
+  - Suitable candidates
+
+- Section: "Mounjaro (Tirzepatide)" (H2)
+  - Dual GIP/GLP-1 agonist
+  - Dosing protocol
+  - Average weight loss: 20-25% body weight
+  - Comparison with Wegovy
+
+- Section: "Wegovy vs. Mounjaro - Which Is Right for You?" (H2)
+  - Comparison table
+  - Efficacy differences
+  - Side effect profiles
+  - Cost comparison
+
+- Section: "Who Can Have GLP-1 Weight Loss Treatment?" (H2)
+  - BMI criteria (≥30 or ≥27 with comorbidities)
+  - Medical screening required
+  - Contraindications
+  - Health conditions that benefit
+
+- Section: "The Treatment Process at The Oxford Wellness Doctor" (H2)
+  - Comprehensive medical consultation
+  - Health screening & blood tests
+  - Personalized treatment plan
+  - Monthly follow-ups
+  - Lifestyle support & guidance
+
+- Section: "What to Expect" (H2)
+  - Weekly self-injections
+  - Gradual dose escalation
+  - Common side effects (nausea, reduced appetite)
+  - Timeline to results (significant loss by 3-6 months)
+
+- Section: "Why Choose a Doctor-Led Weight Loss Clinic?" (H2)
+  - Medical supervision essential
+  - Complication management
+  - Contraindication screening
+  - Holistic health approach
+  - Dr. Taganova's 20+ years experience
+
+- Section: "Weight Loss and Women's Health" (H2)
+  - PCOS and weight management
+  - Menopause and weight gain
+  - Metabolic health in perimenopause
+  - Dr. Taganova's gynaecology background advantage
+
+- Section: "Pricing" (H2)
+  - Wegovy: £200-250/month (depending on dose)
+  - Mounjaro: £220-270/month (depending on dose)
+  - Initial consultation: £100 (redeemable against treatment)
+  - Includes: medication, consultation, follow-ups
+
+FAQ SECTION (15 questions) - EXTENSIVE:
+1. What is Wegovy?
+2. What is Mounjaro?
+3. How do GLP-1 injections work for weight loss?
+4. Which is better - Wegovy or Mounjaro?
+5. How much weight can I lose with Wegovy/Mounjaro?
+6. What are the side effects?
+7. How much do Wegovy and Mounjaro cost in Oxford?
+8. Do I need a prescription?
+9. Can I get Wegovy/Mounjaro on the NHS in Oxford?
+10. How long do I need to take the injections?
+11. Are GLP-1 injections safe?
+12. Can I take Wegovy/Mounjaro if I have diabetes/PCOS/thyroid issues?
+13. What happens when I stop taking the medication?
+14. Do I still need to diet and exercise?
+15. How do I book a weight loss consultation in Oxford?
+
+Schema: MedicalProcedure + FAQPage + extensive structured data
+
+INTERNAL LINKS:
+- Link to menopause page (see Phase 3)
+- Link to women's health content
+- Cross-link to related aesthetic treatments
+
+───────────────────────────────────────
+7. HYPERHIDROSIS/EXCESSIVE SWEATING PAGE
+───────────────────────────────────────
+URL: /treatments/excessive-sweating-treatment-oxford
+Title: "Excessive Sweating Treatment Oxford | Hyperhidrosis Botox | Stop Sweating"
+Meta Description: "Effective excessive sweating treatment in Oxford. Anti-wrinkle
+injections for underarms, hands, feet. Stop hyperhidrosis. GMC doctor. From £400.
+Book now."
+
+H1: "Excessive Sweating Treatment in Oxford - Hyperhidrosis Solutions"
+
+CONTENT (600-800 words):
+- What is hyperhidrosis
+
+- Section: "How Anti-Wrinkle Injections Treat Sweating" (H2)
+  - Blocks sweat gland activation
+  - FDA-approved for underarms
+  - Off-label for hands, feet, face
+  Keywords: hyperhidrosis treatment Oxford, excessive sweating Oxford,
+  stop sweating Oxford
+
+- Section: "Treatment Areas" (H2)
+  - Underarms (most common)
+  - Palms
+  - Feet
+  - Forehead
+
+- Section: "The Procedure" (H2)
+  - Multiple small injections
+  - Treatment time: 30 minutes
+  - Tolerable discomfort
+
+- Section: "Results" (H2)
+  - Effective within 1 week
+  - Dramatic sweat reduction (80-90%)
+  - Lasts 6-9 months
+  - Life-changing for sufferers
+
+- Pricing: Underarms £400, Palms £500
+
+FAQ SECTION (8 questions):
+1. How does Botox treat excessive sweating?
+2. How long does hyperhidrosis treatment last?
+3. Does excessive sweating treatment hurt?
+4. Is hyperhidrosis treatment safe?
+5. How much does excessive sweating treatment cost in Oxford?
+6. Can I treat other areas besides underarms?
+7. When will I see results?
+8. How do I book hyperhidrosis treatment?
+
+Schema: MedicalProcedure + FAQPage
+
+───────────────────────────────────────
+8. CHEMICAL PEELS PAGE
+───────────────────────────────────────
+URL: /treatments/chemical-peels-oxford
+Title: "Chemical Peels Oxford | Medical Grade Skin Peels | Expert Treatment"
+Meta Description: "Medical-grade chemical peels in Oxford. Improve acne,
+pigmentation, fine lines & texture. Doctor-led safety. From £150. Book your
+skin consultation today."
+
+H1: "Chemical Peels in Oxford - Medical-Grade Skin Treatments"
+
+CONTENT (600-800 words):
+- What are chemical peels, exfoliation science
+
+- Section: "Types of Chemical Peels" (H2)
+  - Superficial peels (glycolic, salicylic)
+  - Medium-depth peels (TCA)
+  - Peel selection based on concerns
+  Keywords: chemical peel Oxford, skin peel Oxford, medical peel
+
+- Section: "What Chemical Peels Treat" (H2)
+  - Acne and acne scarring
+  - Hyperpigmentation
+  - Fine lines
+  - Sun damage
+  - Uneven texture
+  - Melasma
+
+- Section: "The Treatment" (H2)
+  - Skin assessment
+  - Peel application: 15-30 minutes
+  - Tingling/warming sensation
+  - Neutralization
+
+- Section: "Recovery & Results" (H2)
+  - Peeling 3-7 days
+  - Sun protection essential
+  - Brighter, smoother skin
+  - Course of 3-6 recommended
+
+- Pricing: From £150 per peel
+
+FAQ SECTION (8 questions):
+1. What is a chemical peel?
+2. Do chemical peels hurt?
+3. How long is chemical peel recovery?
+4. How many chemical peels do I need?
+5. Can I have a chemical peel if I have active acne?
+6. What's the difference between light and deep peels?
+7. How much do chemical peels cost in Oxford?
+8. How do I book a chemical peel consultation?
+
+Schema: MedicalProcedure + FAQPage
+
+───────────────────────────────────────
+9. SKIN BOOSTERS PAGE
+───────────────────────────────────────
+URL: /treatments/skin-boosters-oxford
+Title: "Skin Boosters Oxford | Injectable Hydration | The Oxford Wellness Doctor"
+Meta Description: "Skin booster injections in Oxford. Hyaluronic acid hydration
+for glowing skin. Includes Profhilo, Seventy Hyal, Jalupro. GMC doctor. Book
+consultation."
+
+H1: "Skin Boosters in Oxford - Injectable Skin Hydration"
+
+CONTENT (600-800 words):
+- What are skin boosters, injectable hyaluronic acid
+
+- Section: "How Skin Boosters Work" (H2)
+  - Deep skin hydration
+  - Stimulates collagen
+  - Improves elasticity & glow
+  Keywords: skin boosters Oxford, skin hydration treatment Oxford
+
+- Section: "Types of Skin Boosters We Offer" (H2)
+  - Profhilo (see dedicated page)
+  - Seventy Hyal 2000
+  - Jalupro
+  - Sunekos
+
+- Section: "What Skin Boosters Treat" (H2)
+  - Dehydrated skin
+  - Dullness
+  - Fine lines
+  - Crepey texture
+  - Loss of radiance
+
+- Section: "Treatment Protocol" (H2)
+  - Usually 2-3 sessions
+  - Spaced 4 weeks apart
+  - Minimal downtime
+
+- Section: "Who Should Have Skin Boosters?" (H2)
+  - Anyone wanting prevention
+  - Patients in 20s-60s+
+  - Complement to other treatments
+
+- Pricing: From £250 per session
+
+FAQ SECTION (8 questions):
+1. What are skin boosters?
+2. How are skin boosters different from fillers?
+3. Do skin boosters hurt?
+4. How many skin booster treatments do I need?
+5. How long do skin boosters last?
+6. Can I combine skin boosters with other treatments?
+7. How much do skin boosters cost in Oxford?
+8. How do I book skin booster treatment?
+
+Schema: MedicalProcedure + FAQPage
