@@ -131,7 +131,7 @@ const homeFaqs = [
 const recentPosts = [
   { title: "Wegovy vs Mounjaro: Which Weight Loss Injection Is Right for You?", category: "Medical Weight Loss", href: "/blog/wegovy-vs-mounjaro-comparison", excerpt: "A detailed clinical comparison of both GLP-1 medications - efficacy data, side effects, cost, and how Dr. Taganova decides which to prescribe." },
   { title: "How Menopause Affects Your Skin: What Your GP Won't Tell You", category: "Menopause & Women's Health", href: "/blog/menopause-skin-changes", excerpt: "Menopause causes measurable changes to skin collagen, hydration and elasticity. Former gynaecologist Dr. Taganova explains what actually works." },
-  { title: "Doctor-Led vs. Nurse-Led Aesthetics: What's the Difference?", category: "Choosing a Clinic", href: "/blog/doctor-vs-nurse-aesthetics", excerpt: "Credentials, training, anatomical knowledge, and complication management - why the practitioner behind the needle matters more than you think." },
+  { title: "How to Choose an Aesthetics Clinic in Oxford: A Checklist", category: "Choosing a Clinic", href: "/blog/choosing-aesthetics-clinic-oxford", excerpt: "A practical checklist of credentials, red flags, and questions to ask - from a GMC doctor who knows what good looks like." },
 ];
 
 // ─── Sub-components ───────────────────────────────────────────────────────────

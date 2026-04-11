@@ -103,8 +103,8 @@ const data: BlogPostData = {
     buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
   },
   relatedPosts: [
-    { label: "Doctor-Led vs. Nurse-Led Aesthetics: What's the Difference?", href: "/blog/doctor-vs-nurse-aesthetics" },
-    { label: "What to Expect from Your First Botox Appointment", href: "/blog/botox-first-time-guide" },
+    { label: "How to Get Natural-Looking Lip Fillers: A Doctor's Guide", href: "/blog/lip-filler-natural-results" },
+    { label: "Best Aesthetic Treatments for Women Over 50", href: "/blog/aesthetic-treatments-over-50" },
   ],
   relatedTreatments: [
     { label: "About Dr. Taganova", href: "/about" },

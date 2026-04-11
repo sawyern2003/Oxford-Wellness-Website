@@ -17,10 +17,8 @@ import PostpartumRecoveryOxford from "@/pages/postpartum-recovery-oxford";
 import BlogIndex from "@/pages/blog/index";
 import BlogWegovyVsMounjaro from "@/pages/blog/wegovy-vs-mounjaro-comparison";
 import BlogMenopauseSkin from "@/pages/blog/menopause-skin-changes";
-import BlogBotoxFirstTime from "@/pages/blog/botox-first-time-guide";
 import BlogProfhiloVsFillers from "@/pages/blog/profhilo-vs-dermal-fillers";
 import BlogLipFillerNatural from "@/pages/blog/lip-filler-natural-results";
-import BlogDoctorVsNurse from "@/pages/blog/doctor-vs-nurse-aesthetics";
 import BlogMorpheus8Timeline from "@/pages/blog/morpheus8-results-timeline";
 import BlogWeightGainPeri from "@/pages/blog/weight-gain-perimenopause";
 import BlogChoosingClinic from "@/pages/blog/choosing-aesthetics-clinic-oxford";
@@ -88,10 +86,8 @@ function Router() {
       <Route path="/blog" component={BlogIndex} />
       <Route path="/blog/wegovy-vs-mounjaro-comparison" component={BlogWegovyVsMounjaro} />
       <Route path="/blog/menopause-skin-changes" component={BlogMenopauseSkin} />
-      <Route path="/blog/botox-first-time-guide" component={BlogBotoxFirstTime} />
       <Route path="/blog/profhilo-vs-dermal-fillers" component={BlogProfhiloVsFillers} />
       <Route path="/blog/lip-filler-natural-results" component={BlogLipFillerNatural} />
-      <Route path="/blog/doctor-vs-nurse-aesthetics" component={BlogDoctorVsNurse} />
       <Route path="/blog/morpheus8-results-timeline" component={BlogMorpheus8Timeline} />
       <Route path="/blog/weight-gain-perimenopause" component={BlogWeightGainPeri} />
       <Route path="/blog/choosing-aesthetics-clinic-oxford" component={BlogChoosingClinic} />

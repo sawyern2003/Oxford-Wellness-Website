@@ -85,8 +85,8 @@ const data: BlogPostData = {
     buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
   },
   relatedPosts: [
-    { label: "Doctor-Led vs. Nurse-Led Aesthetics: What's the Difference?", href: "/blog/doctor-vs-nurse-aesthetics" },
-    { label: "What to Expect from Your First Botox Appointment", href: "/blog/botox-first-time-guide" },
+    { label: "How to Choose an Aesthetics Clinic in Oxford", href: "/blog/choosing-aesthetics-clinic-oxford" },
+    { label: "Profhilo vs. Dermal Fillers: Which Is Right for You?", href: "/blog/profhilo-vs-dermal-fillers" },
   ],
   relatedTreatments: [
     { label: "Lip Fillers Oxford", href: "/treatments/lip-fillers-oxford" },

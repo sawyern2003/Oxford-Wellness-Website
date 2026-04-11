@@ -23,9 +23,9 @@ const nextSteps = [
 
 const suggestedPosts = [
   {
-    title: "What to Expect from Your First Botox Appointment",
-    href: "/blog/botox-first-time-guide",
-    category: "Aesthetics",
+    title: "How to Choose an Aesthetics Clinic in Oxford",
+    href: "/blog/choosing-aesthetics-clinic-oxford",
+    category: "Choosing a Clinic",
   },
   {
     title: "Profhilo vs. Dermal Fillers: Which Is Right for You?",
