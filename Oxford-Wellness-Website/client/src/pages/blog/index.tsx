@@ -22,14 +22,6 @@ const posts = [
     href: "/blog/menopause-skin-changes",
   },
   {
-    slug: "botox-first-time-guide",
-    title: "What to Expect from Your First Botox Appointment in Oxford",
-    excerpt: "Everything first-timers need to know - from consultation to aftercare, with an honest explanation of what it feels like.",
-    category: "Anti-Wrinkle",
-    readTime: "5 min",
-    href: "/blog/botox-first-time-guide",
-  },
-  {
     slug: "profhilo-vs-dermal-fillers",
     title: "Profhilo vs. Dermal Fillers: Which Treatment Is Right for You?",
     excerpt: "Two very different treatments that are often confused. Dr. Taganova explains the difference and when to choose each.",
@@ -44,14 +36,6 @@ const posts = [
     category: "Lip Fillers",
     readTime: "5 min",
     href: "/blog/lip-filler-natural-results",
-  },
-  {
-    slug: "doctor-vs-nurse-aesthetics",
-    title: "Doctor-Led vs. Nurse-Led Aesthetics: What's the Difference?",
-    excerpt: "Credentials, training, anatomical knowledge, and complication management - why the practitioner behind the needle matters.",
-    category: "Choosing a Clinic",
-    readTime: "5 min",
-    href: "/blog/doctor-vs-nurse-aesthetics",
   },
   {
     slug: "morpheus8-results-timeline",
