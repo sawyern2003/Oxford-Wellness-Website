@@ -255,7 +255,7 @@ export default function Contact() {
           <div className="w-full border border-border overflow-hidden" style={{ height: "400px" }}>
             <iframe
               title="The Oxford Wellness Doctor - 3 Woodstock Rd, Oxford"
-              src="https://maps.google.com/maps?q=3+Woodstock+Road,+Oxford+OX2+6HA,+UK&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=51.7602,-1.2659&t=&z=16&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
