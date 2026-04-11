@@ -44,7 +44,7 @@ const data: TreatmentPageData = {
         "GMC-registered doctor with 20+ years of clinical experience",
         "Former gynaecologist with deep understanding of facial anatomy",
         "Conservative, natural-looking philosophy - results that whisper, not shout",
-        "Professional clinic in Oxford, Littlemore - discreet medical environment",
+        "Professional clinic on Woodstock Road, Oxford - discreet medical environment",
         "Only premium, licensed botulinum toxin products used",
         "Full consultation, treatment, and two-week follow-up included in price",
       ],

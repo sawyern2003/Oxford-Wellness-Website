@@ -104,7 +104,7 @@ const testimonials = [
 ];
 
 const areasServed = [
-  "Oxford City Centre", "Headington", "Cowley", "Littlemore", "Rose Hill",
+  "Oxford City Centre", "Headington", "Cowley", "Jericho", "Summertown", "Rose Hill",
   "Blackbird Leys", "Iffley", "Kennington", "Abingdon", "Witney", "Kidlington", "Bicester",
 ];
 
@@ -122,10 +122,10 @@ const homeFaqs = [
   { q: "What makes you different from other clinics?", a: "Several things set us apart: Dr. Taganova is a fully qualified doctor (GMC No. 4727817) with a unique background as a former gynaecologist and menopause specialist; we offer integrated medical and aesthetic care in a single clinic; our philosophy is always natural-looking enhancement; and we never pressure patients into treatments they don't need." },
   { q: "Do you treat menopause as well as aesthetics?", a: "Yes - our menopause clinic is our PRIMARY service. Dr. Taganova is a specialist menopause lead and brings over 20 years of women's health expertise. She provides comprehensive menopause assessments, perimenopause support, symptom management, and treatment planning. Aesthetic treatments are available as complementary services, particularly for menopausal skin changes." },
   { q: "Can men have treatments?", a: "Absolutely. While our clinic has a particular focus on women's health and the menopause, all aesthetic treatments are available to men. Anti-wrinkle injections, dermal fillers, Morpheus8, skin treatments, and medical weight loss are popular with male patients." },
-  { q: "What areas of Oxford do you serve?", a: "We welcome patients from across Oxford and Oxfordshire, including Oxford city centre, Headington, Cowley, Littlemore, Rose Hill, Iffley, Abingdon, Witney, Kidlington, Bicester, and beyond. Our Oxford location is easily accessible from the A4142 with ample free on-site parking." },
-  { q: "How do I get to the clinic?", a: "The clinic is at 3 Woodstock Rd, Oxford OX2 6HA. We have ample free parking on-site. By car from Oxford city centre, head east on High Street, continue onto Iffley Road, then turn right onto Littlemore Road and follow signs to Oxford. The clinic is approximately 10 minutes from Oxford city centre and 5 minutes from Cowley and Headington." },
-  { q: "Is parking available at the clinic?", a: "Yes - we have ample free parking at our Oxford clinic. Unlike many central Oxford locations, there are no fees, no meters, and no parking stress. Simply follow directions to Littlemore. This is one of the genuine practical advantages of our location." },
-  { q: "Why is your clinic located at Oxford?", a: "The Oxford is one of the UK's leading medical and scientific hubs, home to healthcare organisations, research facilities, and healthcare innovators. This professional environment reflects our commitment to medical excellence and evidence-based care. The location also offers privacy away from busy high streets, calming natural surroundings, modern treatment rooms, and ample free parking - an ideal setting for both aesthetic treatments and sensitive women's health consultations." },
+  { q: "What areas of Oxford do you serve?", a: "We welcome patients from across Oxford and Oxfordshire, including Oxford city centre, Jericho, Summertown, Headington, Cowley, Rose Hill, Iffley, Abingdon, Witney, Kidlington, Bicester, and beyond. Our central Woodstock Road location is easily accessible with street parking available nearby." },
+  { q: "How do I get to the clinic?", a: "The clinic is at 3 Woodstock Rd, Oxford OX2 6HA. Street parking is available on Woodstock Road and nearby streets. By car from Oxford city centre, head north on St Giles' and continue onto Woodstock Road. The clinic is approximately 5 minutes from Oxford city centre and 10 minutes from Headington." },
+  { q: "Is parking available at the clinic?", a: "Yes - street parking is available on Woodstock Road and nearby streets. We recommend allowing a few extra minutes for parking if you're driving. The clinic is also easily accessible by bus, bike, or on foot from central Oxford." },
+  { q: "Why is your clinic located on Woodstock Road?", a: "Our Woodstock Road location offers the perfect balance of accessibility and discretion. We're close to central Oxford yet away from the busiest high streets, providing a calm, professional environment for both aesthetic treatments and sensitive women's health consultations. The location is easily accessible by car, bus, bike, or on foot, with street parking available nearby." },
 ];
 
 const recentPosts = [

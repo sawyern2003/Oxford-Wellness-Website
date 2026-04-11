@@ -326,18 +326,19 @@ export default function Contact() {
               </p>
               <div className="space-y-2.5">
                 {[
-                  { area: "Littlemore", time: "2 min" },
-                  { area: "Cowley", time: "5 min" },
-                  { area: "Rose Hill", time: "5 min" },
-                  { area: "Blackbird Leys", time: "7 min" },
-                  { area: "Headington", time: "8 min" },
-                  { area: "Iffley", time: "8 min" },
-                  { area: "Oxford City Centre", time: "10 min" },
-                  { area: "Kennington", time: "10 min" },
-                  { area: "Abingdon", time: "15 min" },
-                  { area: "Kidlington", time: "15 min" },
-                  { area: "Witney", time: "20 min" },
-                  { area: "Bicester", time: "25 min" },
+                  { area: "Oxford City Centre", time: "5 min" },
+                  { area: "Jericho", time: "2 min" },
+                  { area: "Summertown", time: "5 min" },
+                  { area: "Headington", time: "15 min" },
+                  { area: "Cowley", time: "15 min" },
+                  { area: "Rose Hill", time: "20 min" },
+                  { area: "Iffley", time: "15 min" },
+                  { area: "Blackbird Leys", time: "20 min" },
+                  { area: "Kennington", time: "15 min" },
+                  { area: "Abingdon", time: "20 min" },
+                  { area: "Kidlington", time: "10 min" },
+                  { area: "Witney", time: "25 min" },
+                  { area: "Bicester", time: "30 min" },
                 ].map(({ area, time }) => (
                   <div key={area} className="flex justify-between items-center text-sm border-b border-border/40 pb-2.5">
                     <span className="text-muted-foreground">{area}</span>

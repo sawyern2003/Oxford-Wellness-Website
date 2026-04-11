@@ -60,7 +60,7 @@ const data: BlogPostData = {
     {
       heading: "Serving All of Oxford and Oxfordshire",
       paragraphs: [
-        "Our Oxford clinic is ideally placed to serve patients from across the city and county. We regularly welcome patients from Headington, Cowley, Littlemore, Rose Hill, Iffley, Blackbird Leys, Kennington, Oxford city centre, Abingdon, Witney, Kidlington, Bicester, and throughout Oxfordshire.",
+        "Our Oxford clinic is ideally placed to serve patients from across the city and county. We regularly welcome patients from Jericho, Summertown, Headington, Cowley, Rose Hill, Iffley, Blackbird Leys, Kennington, Oxford city centre, Abingdon, Witney, Kidlington, Bicester, and throughout Oxfordshire.",
         "If you have any questions about reaching us or would like to discuss our services, please don't hesitate to get in touch on 07739 309380 or email info@theoxfordwellnessdoctor.com. We look forward to welcoming you.",
       ],
     },
