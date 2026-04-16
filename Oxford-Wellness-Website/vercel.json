@@ -3,6 +3,18 @@
   "buildCommand": "npm run build",
   "installCommand": "npm install",
   "outputDirectory": "dist/public",
+  "redirects": [
+    { "source": "/wellness", "destination": "/womens-health-oxford", "permanent": true },
+    { "source": "/lip-filler", "destination": "/treatments/lip-fillers-oxford", "permanent": true },
+    { "source": "/filler-dissolving", "destination": "/treatments/filler-dissolving-oxford", "permanent": true },
+    { "source": "/excessive-sweating-treatment", "destination": "/treatments/excessive-sweating-treatment-oxford", "permanent": true },
+    { "source": "/news-and-specials", "destination": "/blog", "permanent": true },
+    { "source": "/vitamin-b12-injection", "destination": "/treatments/vitamin-b12-injection-oxford", "permanent": true },
+    { "source": "/downturned-mouth-treatment", "destination": "/treatments/dermal-fillers-oxford", "permanent": true },
+    { "source": "/perfect-peel", "destination": "/treatments/chemical-peels-oxford", "permanent": true },
+    { "source": "/bunny-lines-treatment", "destination": "/treatments/anti-wrinkle-injections-oxford", "permanent": true },
+    { "source": "/blog/are-facials-really-important", "destination": "/blog", "permanent": true }
+  ],
   "routes": [
     { "src": "/robots.txt", "dest": "/api/robots" },
     { "src": "/sitemap.xml", "dest": "/api/sitemap" },
