@@ -36,17 +36,29 @@ export default function PreConsultForm(props: Props) {
 
     const [submitted, setSubmitted] = React.useState(false)
     const [conversationUrl, setConversationUrl] = React.useState<string>("")
+    const [consentToPreconsult, setConsentToPreconsult] = React.useState(false)
+    const [consentToMarketing, setConsentToMarketing] = React.useState(false)
+    const [consentError, setConsentError] = React.useState("")
+
+    const cleanEmail = email.trim().toLowerCase()
+    const locationIsValid =
+        !!location && (location !== "Other" || !!otherLocation.trim())
+    const isFormReady =
+        !!cleanEmail &&
+        isValidEmail(cleanEmail) &&
+        locationIsValid &&
+        consentToPreconsult
 
     async function onSubmit(e: React.FormEvent) {
         e.preventDefault()
         setStatus("")
+        setConsentError("")
 
         if (website.trim().length > 0) {
             setStatus("Error: Submission blocked.")
             return
         }
 
-        const cleanEmail = email.trim().toLowerCase()
         if (!cleanEmail) return setStatus("Please enter your email.")
         if (!isValidEmail(cleanEmail))
             return setStatus("Please enter a valid email address.")
@@ -54,9 +66,16 @@ export default function PreConsultForm(props: Props) {
         if (!location) return setStatus("Please select your location.")
         if (location === "Other" && !otherLocation.trim())
             return setStatus("Please specify your location.")
+        if (!consentToPreconsult) {
+            setConsentError(
+                "Please provide consent before starting the pre-consultation."
+            )
+            return
+        }
 
         const finalLocation =
             location === "Other" ? otherLocation.trim() : location.trim()
+        const privacyAcceptedAt = new Date().toISOString()
 
         setLoading(true)
         setStatus("Preparing your pre-consultation…")
@@ -69,6 +88,9 @@ export default function PreConsultForm(props: Props) {
                     email: cleanEmail,
                     name: name.trim(),
                     location: finalLocation,
+                    consent_to_preconsult: consentToPreconsult,
+                    consent_to_marketing: consentToMarketing,
+                    privacy_policy_accepted_at: privacyAcceptedAt,
                 }),
             })
 
@@ -91,6 +113,9 @@ export default function PreConsultForm(props: Props) {
             setEmail("")
             setLocation("")
             setOtherLocation("")
+            setConsentToPreconsult(false)
+            setConsentToMarketing(false)
+            setConsentError("")
 
             setLoading(false)
             setStatus("")
@@ -256,20 +281,128 @@ export default function PreConsultForm(props: Props) {
                         </div>
                     )}
                 </div>
+                <div
+                    style={{
+                        border: `1px solid ${borderColor}`,
+                        borderRadius: radius,
+                        background: "rgba(131, 165, 203, 0.08)",
+                        padding: "14px 14px 12px",
+                        display: "grid",
+                        gap: 8,
+                    }}
+                >
+                    <div
+                        style={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: 8,
+                            color: "#24435f",
+                            fontSize: 12,
+                            letterSpacing: "0.06em",
+                            textTransform: "uppercase",
+                            fontWeight: 700,
+                        }}
+                    >
+                        <span aria-hidden="true">🔒</span>
+                        <span>Before you begin</span>
+                    </div>
+                    <p style={{ margin: 0, fontSize: 12.5, lineHeight: 1.65, color: "#485a6c" }}>
+                        This pre-consultation is designed to help you explore treatment options and share your enquiry with the clinic before booking.
+                    </p>
+                    <p style={{ margin: 0, fontSize: 12.5, lineHeight: 1.65, color: "#485a6c" }}>
+                        Your information, including details about your concerns and treatment interests, may be processed using AI tools and securely shared with the clinic for the purpose of handling your enquiry.
+                    </p>
+                    <p style={{ margin: 0, fontSize: 12.5, lineHeight: 1.65, color: "#485a6c" }}>
+                        This service does not provide medical advice or diagnosis and does not replace consultation with a qualified clinician.
+                    </p>
+                </div>
+                <div
+                    style={{
+                        border: `1px solid ${borderColor}`,
+                        borderRadius: radius,
+                        background: "#fafbfd",
+                        padding: "12px 14px",
+                        display: "grid",
+                        gap: 10,
+                    }}
+                >
+                    <label
+                        style={{
+                            display: "flex",
+                            alignItems: "flex-start",
+                            gap: 10,
+                            fontSize: 12.5,
+                            lineHeight: 1.5,
+                            color: "#273848",
+                            cursor: loading ? "not-allowed" : "pointer",
+                        }}
+                    >
+                        <input
+                            type="checkbox"
+                            checked={consentToPreconsult}
+                            onChange={(e) => {
+                                setConsentToPreconsult(e.target.checked)
+                                if (e.target.checked) setConsentError("")
+                            }}
+                            disabled={loading}
+                            style={{ marginTop: 2 }}
+                            required
+                        />
+                        <span>
+                            I consent to my personal information and enquiry details being processed for the purpose of this pre-consultation and shared with the clinic so they can respond to my enquiry.
+                        </span>
+                    </label>
+                    <label
+                        style={{
+                            display: "flex",
+                            alignItems: "flex-start",
+                            gap: 10,
+                            fontSize: 12.5,
+                            lineHeight: 1.5,
+                            color: "#3f4c57",
+                            cursor: loading ? "not-allowed" : "pointer",
+                        }}
+                    >
+                        <input
+                            type="checkbox"
+                            checked={consentToMarketing}
+                            onChange={(e) => setConsentToMarketing(e.target.checked)}
+                            disabled={loading}
+                            style={{ marginTop: 2 }}
+                        />
+                        <span>
+                            I would like to receive updates and follow-up information from the clinic.
+                        </span>
+                    </label>
+                    <div style={{ fontSize: 11.5, color: "#5a6772", lineHeight: 1.4 }}>
+                        By continuing, you confirm that you have read the{" "}
+                        <a
+                            href="/privacy-policy"
+                            style={{ color: primaryColor, fontWeight: 600, textDecoration: "none" }}
+                        >
+                            Privacy Policy
+                        </a>.
+                    </div>
+                    {consentError ? (
+                        <div style={{ fontSize: 12, color: "#b00020" }}>
+                            {consentError}
+                        </div>
+                    ) : null}
+                </div>
                 <button
                     type="submit"
-                    disabled={loading}
+                    disabled={loading || !isFormReady}
                     style={{
                         width: "100%",
                         padding: "14px 16px",
                         borderRadius: radius,
                         border: "none",
-                        cursor: loading ? "not-allowed" : "pointer",
+                        cursor: loading || !isFormReady ? "not-allowed" : "pointer",
                         background: primaryColor,
                         color: "white",
                         fontWeight: 800,
                         fontSize: 14,
-                        opacity: loading ? 0.8 : 1,
+                        opacity: loading || !isFormReady ? 0.72 : 1,
                     }}
                 >
                     {loading ? "Starting…" : buttonText}

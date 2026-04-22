@@ -32,8 +32,18 @@ export default function AIPreConsult() {
               <p className="text-lg font-light text-muted-foreground leading-relaxed">
                 Ask questions about any treatment we offer - for free. You'll get guidance on options, suitability, pricing ranges, and next steps before booking.
               </p>
+              <div className="mt-8 grid gap-3 text-sm text-muted-foreground">
+                <div className="flex items-center gap-2">
+                  <span className="text-secondary" aria-hidden="true">•</span>
+                  <span>Secure enquiry handling for a trusted clinical response.</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-secondary" aria-hidden="true">•</span>
+                  <span>Clear consent and privacy information before you begin.</span>
+                </div>
+              </div>
             </div>
-            <div className="bg-white p-8 shadow-2xl border border-border/50">
+            <div className="bg-white/95 p-6 md:p-8 shadow-2xl border border-border/50 rounded-xl backdrop-blur-sm">
               <PreConsultForm 
                 buttonText="Start pre-consultation"
                 minutesLimitText="You’ll get up to 5 minutes. Please have your questions ready."
