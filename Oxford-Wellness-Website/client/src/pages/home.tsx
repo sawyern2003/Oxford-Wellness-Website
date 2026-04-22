@@ -341,7 +341,7 @@ export default function Home() {
             <div className="space-y-2 mb-6">
               {[
                 "GMC-Registered Doctor (No. 4727817)",
-                "Former Consultant Gynaecologist",
+                "Former Gynaecologist",
                 "Experienced GP - 20+ years in women's health",
                 "Menopause Specialist & HRT Prescriber",
                 "Qualified Aesthetic Medicine Practitioner",

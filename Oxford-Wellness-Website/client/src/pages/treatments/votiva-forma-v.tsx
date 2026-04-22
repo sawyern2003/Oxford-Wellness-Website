@@ -82,7 +82,7 @@ const data: TreatmentPageData = {
     {
       heading: "Why Choose Dr. Taganova for Votiva Forma V?",
       bullets: [
-        "Former consultant gynaecologist with specialist training in women's intimate health",
+        "Former gynaecologist with specialist training in women's intimate health",
         "GMC-registered doctor (No. 4727817) with over 20 years of clinical experience",
         "Specialist menopause lead - understands the hormonal context of vaginal changes",
         "Private, discreet clinic in Oxford with ample free parking",

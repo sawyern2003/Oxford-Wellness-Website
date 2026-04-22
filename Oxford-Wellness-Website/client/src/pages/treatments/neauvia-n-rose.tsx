@@ -27,7 +27,7 @@ const data: TreatmentPageData = {
         "Postpartum changes including dryness and discomfort",
         "Symptoms of vulvovaginal atrophy associated with perimenopause or menopause",
       ],
-      note: "Dr. Taganova's background as a former consultant gynaecologist makes her uniquely qualified to assess and treat intimate health concerns with sensitivity, discretion, and clinical precision.",
+      note: "Dr. Taganova's background as a former gynaecologist makes her uniquely qualified to assess and treat intimate health concerns with sensitivity, discretion, and clinical precision.",
     },
     {
       heading: "The Procedure - What to Expect",
@@ -47,7 +47,7 @@ const data: TreatmentPageData = {
     {
       heading: "Why Choose Dr. Taganova for This Treatment?",
       bullets: [
-        "Former consultant gynaecologist with deep expertise in intimate health",
+        "Former gynaecologist with deep expertise in intimate health",
         "GMC-registered doctor (No. 4727817) with 20+ years of clinical experience",
         "Menopause specialist - understands the hormonal context of intimate changes",
         "Completely private, discreet clinic in Oxford",
