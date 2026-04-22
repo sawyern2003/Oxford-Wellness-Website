@@ -39,6 +39,7 @@ export default function PreConsultForm(props: Props) {
     const [consentToPreconsult, setConsentToPreconsult] = React.useState(false)
     const [consentToMarketing, setConsentToMarketing] = React.useState(false)
     const [consentError, setConsentError] = React.useState("")
+    const [isPrivacyModalOpen, setIsPrivacyModalOpen] = React.useState(false)
 
     const cleanEmail = email.trim().toLowerCase()
     const locationIsValid =
@@ -125,6 +126,22 @@ export default function PreConsultForm(props: Props) {
         }
     }
 
+    React.useEffect(() => {
+        if (!isPrivacyModalOpen) return
+
+        function onKeyDown(e: KeyboardEvent) {
+            if (e.key === "Escape") setIsPrivacyModalOpen(false)
+        }
+
+        window.addEventListener("keydown", onKeyDown)
+        document.body.style.overflow = "hidden"
+
+        return () => {
+            window.removeEventListener("keydown", onKeyDown)
+            document.body.style.overflow = ""
+        }
+    }, [isPrivacyModalOpen])
+
     if (submitted) {
         return (
             <div
@@ -206,6 +223,7 @@ export default function PreConsultForm(props: Props) {
     }
 
     return (
+        <>
         <form
             onSubmit={onSubmit}
             style={{
@@ -285,41 +303,6 @@ export default function PreConsultForm(props: Props) {
                     style={{
                         border: `1px solid ${borderColor}`,
                         borderRadius: radius,
-                        background: "rgba(131, 165, 203, 0.08)",
-                        padding: "14px 14px 12px",
-                        display: "grid",
-                        gap: 8,
-                    }}
-                >
-                    <div
-                        style={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: 8,
-                            color: "#24435f",
-                            fontSize: 12,
-                            letterSpacing: "0.06em",
-                            textTransform: "uppercase",
-                            fontWeight: 700,
-                        }}
-                    >
-                        <span aria-hidden="true">🔒</span>
-                        <span>Before you begin</span>
-                    </div>
-                    <p style={{ margin: 0, fontSize: 12.5, lineHeight: 1.65, color: "#485a6c" }}>
-                        This pre-consultation is designed to help you explore treatment options and share your enquiry with the clinic before booking.
-                    </p>
-                    <p style={{ margin: 0, fontSize: 12.5, lineHeight: 1.65, color: "#485a6c" }}>
-                        Your information, including details about your concerns and treatment interests, may be processed using AI tools and securely shared with the clinic for the purpose of handling your enquiry.
-                    </p>
-                    <p style={{ margin: 0, fontSize: 12.5, lineHeight: 1.65, color: "#485a6c" }}>
-                        This service does not provide medical advice or diagnosis and does not replace consultation with a qualified clinician.
-                    </p>
-                </div>
-                <div
-                    style={{
-                        border: `1px solid ${borderColor}`,
-                        borderRadius: radius,
                         background: "#fafbfd",
                         padding: "12px 14px",
                         display: "grid",
@@ -376,12 +359,24 @@ export default function PreConsultForm(props: Props) {
                     </label>
                     <div style={{ fontSize: 11.5, color: "#5a6772", lineHeight: 1.4 }}>
                         By continuing, you confirm that you have read the{" "}
-                        <a
-                            href="/privacy-policy"
-                            style={{ color: primaryColor, fontWeight: 600, textDecoration: "none" }}
+                        <button
+                            type="button"
+                            onClick={() => setIsPrivacyModalOpen(true)}
+                            style={{
+                                color: primaryColor,
+                                fontWeight: 600,
+                                background: "none",
+                                border: "none",
+                                cursor: "pointer",
+                                textDecoration: "underline",
+                                padding: 0,
+                                fontSize: "inherit",
+                                lineHeight: "inherit",
+                                fontFamily: "inherit",
+                            }}
                         >
                             Privacy Policy
-                        </a>.
+                        </button>.
                     </div>
                     {consentError ? (
                         <div style={{ fontSize: 12, color: "#b00020" }}>
@@ -424,6 +419,120 @@ export default function PreConsultForm(props: Props) {
                 ) : null}
             </div>
         </form>
+        {isPrivacyModalOpen ? (
+            <div
+                role="dialog"
+                aria-modal="true"
+                aria-label="Privacy Policy"
+                onClick={() => setIsPrivacyModalOpen(false)}
+                style={{
+                    position: "fixed",
+                    inset: 0,
+                    background: "rgba(0, 0, 0, 0.45)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    padding: 18,
+                    zIndex: 9999,
+                }}
+            >
+                <div
+                    onClick={(e) => e.stopPropagation()}
+                    style={{
+                        width: "100%",
+                        maxWidth: 640,
+                        maxHeight: "85vh",
+                        overflowY: "auto",
+                        borderRadius: radius,
+                        background: "#ffffff",
+                        border: `1px solid ${borderColor}`,
+                        boxShadow: "0 20px 60px rgba(0, 0, 0, 0.18)",
+                        padding: "18px 18px 16px",
+                        color: "#273848",
+                    }}
+                >
+                    <div
+                        style={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "space-between",
+                            gap: 12,
+                            marginBottom: 8,
+                        }}
+                    >
+                        <h3 style={{ margin: 0, fontSize: 18, fontWeight: 800 }}>
+                            Privacy Policy
+                        </h3>
+                        <button
+                            type="button"
+                            onClick={() => setIsPrivacyModalOpen(false)}
+                            style={{
+                                border: "none",
+                                background: "transparent",
+                                cursor: "pointer",
+                                fontSize: 20,
+                                lineHeight: 1,
+                                color: "#5a6772",
+                                padding: "0 2px",
+                            }}
+                            aria-label="Close privacy policy"
+                        >
+                            ×
+                        </button>
+                    </div>
+                    <div style={{ display: "grid", gap: 10, fontSize: 13, lineHeight: 1.6 }}>
+                        <p style={{ margin: 0 }}>
+                            We collect details you submit in this form, including
+                            your contact information and enquiry content.
+                        </p>
+                        <p style={{ margin: 0 }}>
+                            This information is used to run the AI pre-consultation,
+                            create a summary, and help the clinic respond to your
+                            enquiry.
+                        </p>
+                        <p style={{ margin: 0 }}>
+                            Your data may be processed using secure third-party
+                            providers that support consultation, storage, and
+                            communication workflows.
+                        </p>
+                        <p style={{ margin: 0 }}>
+                            Information from this pre-consultation may be shared with
+                            the relevant clinic so they can contact you about next
+                            steps.
+                        </p>
+                        <p style={{ margin: 0 }}>
+                            For privacy questions, contact{" "}
+                            <a
+                                href="mailto:info@theoxfordwellnessdoctor.com"
+                                style={{
+                                    color: primaryColor,
+                                    fontWeight: 600,
+                                    textDecoration: "none",
+                                }}
+                            >
+                                info@theoxfordwellnessdoctor.com
+                            </a>.
+                        </p>
+                    </div>
+                    <div style={{ marginTop: 12 }}>
+                        <a
+                            href="/privacy-policy"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                                color: primaryColor,
+                                fontSize: 12.5,
+                                fontWeight: 600,
+                                textDecoration: "none",
+                            }}
+                        >
+                            Open full Privacy Policy in new tab
+                        </a>
+                    </div>
+                </div>
+            </div>
+        ) : null}
+        </>
     )
 }
 
