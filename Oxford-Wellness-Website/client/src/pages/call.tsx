@@ -226,7 +226,7 @@ export default function CallPage() {
       className="min-h-screen w-full relative overflow-hidden"
       style={{
         backgroundImage:
-          "linear-gradient(120deg, rgba(13,28,45,0.85) 0%, rgba(26,47,66,0.75) 45%, rgba(16,29,44,0.82) 100%), url('/clinic-background.jpg')",
+          "linear-gradient(120deg, rgba(13,28,45,0.85) 0%, rgba(26,47,66,0.75) 45%, rgba(16,29,44,0.82) 100%), url('/clinic%20background/clinic-background.jpg'), url('/clinic-background.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
