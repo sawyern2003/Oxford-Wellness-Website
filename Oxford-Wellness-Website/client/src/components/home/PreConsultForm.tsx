@@ -1,4 +1,5 @@
 import * as React from "react"
+import { useLocation } from "wouter"
 
 type Props = {
     apiBaseUrl?: string
@@ -34,9 +35,9 @@ export default function PreConsultForm(props: Props) {
 
     const [website, setWebsite] = React.useState("")
 
-    const [submitted, setSubmitted] = React.useState(false)
-    const [conversationUrl, setConversationUrl] = React.useState<string>("")
     const [consentToPreconsult, setConsentToPreconsult] = React.useState(false)
+    const [, setLocationHref] = useLocation()
+
     const [consentToMarketing, setConsentToMarketing] = React.useState(false)
     const [consentError, setConsentError] = React.useState("")
     const [isPrivacyModalOpen, setIsPrivacyModalOpen] = React.useState(false)
@@ -105,10 +106,9 @@ export default function PreConsultForm(props: Props) {
             if (!data?.conversation_url)
                 throw new Error("No conversation_url returned.")
 
-            setConversationUrl(data.conversation_url)
-            setSubmitted(true)
-
-            window.open(data.conversation_url, "_blank", "noopener,noreferrer")
+            const callPageUrl = `/call?url=${encodeURIComponent(
+                data.conversation_url
+            )}`
 
             setName("")
             setEmail("")
@@ -120,6 +120,7 @@ export default function PreConsultForm(props: Props) {
 
             setLoading(false)
             setStatus("")
+            setLocationHref(callPageUrl)
         } catch (err: any) {
             setStatus(`Error: ${err?.message || String(err)}`)
             setLoading(false)
@@ -141,86 +142,6 @@ export default function PreConsultForm(props: Props) {
             document.body.style.overflow = ""
         }
     }, [isPrivacyModalOpen])
-
-    if (submitted) {
-        return (
-            <div
-                style={{
-                    width: "100%",
-                    maxWidth: 520,
-                    fontFamily:
-                        "Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial",
-                    display: "grid",
-                    gap: 12,
-                    margin: "0 auto",
-                    padding: "20px",
-                }}
-            >
-                <div style={{ fontSize: 16, fontWeight: 800 }}>
-                    Thanks - you’re in ✅
-                </div>
-                <div style={{ fontSize: 13, opacity: 0.88, lineHeight: 1.5 }}>
-                    Your free pre-consultation is ready.
-                    <div style={{ fontSize: 12, opacity: 0.7, marginTop: 6 }}>
-                        If it didn’t open automatically, use the button below (some browsers block new tabs).
-                    </div>
-                </div>
-                <button
-                    type="button"
-                    onClick={() =>
-                        conversationUrl &&
-                        window.open(
-                            conversationUrl,
-                            "_blank",
-                            "noopener,noreferrer"
-                        )
-                    }
-                    disabled={!conversationUrl}
-                    style={{
-                        width: "100%",
-                        padding: "14px 16px",
-                        borderRadius: radius,
-                        border: "none",
-                        cursor: conversationUrl ? "pointer" : "not-allowed",
-                        background: primaryColor,
-                        color: "white",
-                        fontWeight: 800,
-                        fontSize: 14,
-                        opacity: conversationUrl ? 1 : 0.7,
-                    }}
-                >
-                    Open pre-consultation
-                </button>
-                <a
-                    href={bookingUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                        textAlign: "center",
-                        fontSize: 14,
-                        fontWeight: 800,
-                        color: primaryColor,
-                        textDecoration: "none",
-                        marginTop: 2,
-                    }}
-                >
-                    Book a consultation or treatment now →
-                </a>
-                {status ? (
-                    <div
-                        style={{
-                            fontSize: 12,
-                            color: status.startsWith("Error")
-                                ? "#b00020"
-                                : "#333",
-                        }}
-                    >
-                        {status}
-                    </div>
-                ) : null}
-            </div>
-        )
-    }
 
     return (
         <>
