@@ -239,7 +239,7 @@ export default function CallPage() {
       <div className="relative z-10 max-w-6xl mx-auto px-5 md:px-8 py-6 md:py-8 h-screen flex flex-col">
         <div className="flex items-center justify-between">
           <div className="bg-white/12 backdrop-blur-md rounded-full px-4 py-2 text-white text-sm tracking-wide">
-            Tavus AI Pre-Consultation
+            The Oxford Wellness Doctor
           </div>
           <div className="bg-white/12 backdrop-blur-md rounded-full px-4 py-2 text-white/90 text-sm">
             {status}
