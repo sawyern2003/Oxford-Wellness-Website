@@ -53,7 +53,7 @@ export default function CallPage() {
 
   React.useEffect(() => {
     if (!conversationUrl) {
-      setError("Missing Tavus conversation URL.");
+      setError("Missing consultation session URL.");
       setStatus("Unable to start call.");
       return;
     }
@@ -265,7 +265,7 @@ export default function CallPage() {
           {!remoteVideoTrack ? (
             <div className="absolute inset-0 flex items-center justify-center text-white/90 text-center px-6">
               <p className="text-sm md:text-base">
-                Waiting for Tavus video stream...
+                Waiting for consultation video stream...
               </p>
             </div>
           ) : null}
