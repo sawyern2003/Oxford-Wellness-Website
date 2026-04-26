@@ -27,6 +27,7 @@ export default function CallPage() {
   const hiddenAudioRef = React.useRef<HTMLAudioElement | null>(null);
   const canvasRef = React.useRef<HTMLCanvasElement | null>(null);
   const backgroundImageRef = React.useRef<HTMLImageElement | null>(null);
+  const keyedCanvasRef = React.useRef<HTMLCanvasElement | null>(null);
   const rafRef = React.useRef<number | null>(null);
 
   const [status, setStatus] = React.useState("Connecting...");
@@ -121,13 +122,13 @@ export default function CallPage() {
 
   React.useEffect(() => {
     const img = new Image();
-    img.src = "/clinic%20background/clinic-background.jpg";
+    img.src = "/clinic-background.jpg";
     img.onload = () => {
       backgroundImageRef.current = img;
     };
     img.onerror = () => {
       const fallback = new Image();
-      fallback.src = "/clinic-background.jpg";
+      fallback.src = "/clinic%20background/clinic-background.jpg";
       fallback.onload = () => {
         backgroundImageRef.current = fallback;
       };
@@ -182,11 +183,24 @@ export default function CallPage() {
       const videoX = (outputCanvas.width - clampedWidth) / 2;
       const videoY = Math.max(0, outputCanvas.height - clampedHeight);
 
-      // 3) Draw Tavus frame on top.
-      ctx.drawImage(sourceVideo, videoX, videoY, clampedWidth, clampedHeight);
+      // 3) Key video in an offscreen canvas, then composite onto background.
+      if (!keyedCanvasRef.current) {
+        keyedCanvasRef.current = document.createElement("canvas");
+      }
+      const keyedCanvas = keyedCanvasRef.current;
+      if (keyedCanvas.width !== clampedWidth || keyedCanvas.height !== clampedHeight) {
+        keyedCanvas.width = clampedWidth;
+        keyedCanvas.height = clampedHeight;
+      }
+      const keyedCtx = keyedCanvas.getContext("2d", { willReadFrequently: true });
+      if (!keyedCtx) {
+        rafRef.current = requestAnimationFrame(draw);
+        return;
+      }
 
-      // 4) Chroma key only the Tavus layer region.
-      const frame = ctx.getImageData(videoX, videoY, clampedWidth, clampedHeight);
+      keyedCtx.clearRect(0, 0, clampedWidth, clampedHeight);
+      keyedCtx.drawImage(sourceVideo, 0, 0, clampedWidth, clampedHeight);
+      const frame = keyedCtx.getImageData(0, 0, clampedWidth, clampedHeight);
       const pixels = frame.data;
 
       // Tavus transparent background approach: remove green pixels in real time.
@@ -206,7 +220,8 @@ export default function CallPage() {
         }
       }
 
-      ctx.putImageData(frame, videoX, videoY);
+      keyedCtx.putImageData(frame, 0, 0);
+      ctx.drawImage(keyedCanvas, videoX, videoY, clampedWidth, clampedHeight);
       rafRef.current = requestAnimationFrame(draw);
     };
 
