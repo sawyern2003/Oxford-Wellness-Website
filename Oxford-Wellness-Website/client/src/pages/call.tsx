@@ -24,9 +24,9 @@ export default function CallPage() {
   const [, setLocation] = useLocation();
   const callObjectRef = React.useRef<DailyCall | null>(null);
   const hiddenVideoRef = React.useRef<HTMLVideoElement | null>(null);
-  const previewVideoRef = React.useRef<HTMLVideoElement | null>(null);
   const hiddenAudioRef = React.useRef<HTMLAudioElement | null>(null);
   const canvasRef = React.useRef<HTMLCanvasElement | null>(null);
+  const backgroundImageRef = React.useRef<HTMLImageElement | null>(null);
   const rafRef = React.useRef<number | null>(null);
 
   const [status, setStatus] = React.useState("Connecting...");
@@ -36,7 +36,6 @@ export default function CallPage() {
   const [isLeaving, setIsLeaving] = React.useState(false);
   const [remoteVideoTrack, setRemoteVideoTrack] = React.useState<MediaStreamTrack | null>(null);
   const [remoteAudioTrack, setRemoteAudioTrack] = React.useState<MediaStreamTrack | null>(null);
-  const [localVideoTrack, setLocalVideoTrack] = React.useState<MediaStreamTrack | null>(null);
 
   const conversationUrl = React.useMemo(() => getConversationUrlFromQuery(), []);
 
@@ -44,11 +43,9 @@ export default function CallPage() {
     const participants = callObject.participants();
     const allParticipants = Object.values(participants);
     const remoteParticipant = allParticipants.find((p) => !p.local);
-    const localParticipant = allParticipants.find((p) => p.local);
 
     setRemoteVideoTrack(getPlayableTrack(remoteParticipant, "video"));
     setRemoteAudioTrack(getPlayableTrack(remoteParticipant, "audio"));
-    setLocalVideoTrack(getPlayableTrack(localParticipant, "video"));
   }, []);
 
   React.useEffect(() => {
@@ -123,11 +120,19 @@ export default function CallPage() {
   }, [remoteAudioTrack]);
 
   React.useEffect(() => {
-    const videoEl = previewVideoRef.current;
-    if (!videoEl || !localVideoTrack) return;
-    videoEl.srcObject = new MediaStream([localVideoTrack]);
-    videoEl.play().catch(() => undefined);
-  }, [localVideoTrack]);
+    const img = new Image();
+    img.src = "/clinic%20background/clinic-background.jpg";
+    img.onload = () => {
+      backgroundImageRef.current = img;
+    };
+    img.onerror = () => {
+      const fallback = new Image();
+      fallback.src = "/clinic-background.jpg";
+      fallback.onload = () => {
+        backgroundImageRef.current = fallback;
+      };
+    };
+  }, []);
 
   React.useEffect(() => {
     const sourceVideo = hiddenVideoRef.current;
@@ -146,16 +151,42 @@ export default function CallPage() {
         return;
       }
 
-      if (
-        outputCanvas.width !== sourceVideo.videoWidth ||
-        outputCanvas.height !== sourceVideo.videoHeight
-      ) {
-        outputCanvas.width = sourceVideo.videoWidth;
-        outputCanvas.height = sourceVideo.videoHeight;
+      const canvasWidth = window.innerWidth;
+      const canvasHeight = window.innerHeight;
+      if (outputCanvas.width !== canvasWidth || outputCanvas.height !== canvasHeight) {
+        outputCanvas.width = canvasWidth;
+        outputCanvas.height = canvasHeight;
       }
 
-      ctx.drawImage(sourceVideo, 0, 0, outputCanvas.width, outputCanvas.height);
-      const frame = ctx.getImageData(0, 0, outputCanvas.width, outputCanvas.height);
+      // 1) Draw clinic room background (inside the same canvas).
+      if (backgroundImageRef.current) {
+        ctx.filter = "blur(4px)";
+        ctx.drawImage(backgroundImageRef.current, 0, 0, outputCanvas.width, outputCanvas.height);
+      } else {
+        const gradient = ctx.createLinearGradient(0, 0, outputCanvas.width, outputCanvas.height);
+        gradient.addColorStop(0, "#223247");
+        gradient.addColorStop(0.5, "#2e4157");
+        gradient.addColorStop(1, "#1f3044");
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, outputCanvas.width, outputCanvas.height);
+      }
+
+      // 2) Reset filter before drawing Tavus video.
+      ctx.filter = "none";
+
+      const videoAspect = sourceVideo.videoWidth / sourceVideo.videoHeight;
+      const targetHeight = outputCanvas.height * 0.94;
+      const targetWidth = targetHeight * videoAspect;
+      const clampedWidth = Math.min(targetWidth, outputCanvas.width * 0.88);
+      const clampedHeight = clampedWidth / videoAspect;
+      const videoX = (outputCanvas.width - clampedWidth) / 2;
+      const videoY = Math.max(0, outputCanvas.height - clampedHeight);
+
+      // 3) Draw Tavus frame on top.
+      ctx.drawImage(sourceVideo, videoX, videoY, clampedWidth, clampedHeight);
+
+      // 4) Chroma key only the Tavus layer region.
+      const frame = ctx.getImageData(videoX, videoY, clampedWidth, clampedHeight);
       const pixels = frame.data;
 
       // Tavus transparent background approach: remove green pixels in real time.
@@ -175,7 +206,7 @@ export default function CallPage() {
         }
       }
 
-      ctx.putImageData(frame, 0, 0);
+      ctx.putImageData(frame, videoX, videoY);
       rafRef.current = requestAnimationFrame(draw);
     };
 
@@ -223,45 +254,24 @@ export default function CallPage() {
 
   return (
     <div
-      className="min-h-screen w-full relative overflow-hidden"
-      style={{
-        backgroundImage:
-          "linear-gradient(120deg, rgba(13,28,45,0.85) 0%, rgba(26,47,66,0.75) 45%, rgba(16,29,44,0.82) 100%), url('/clinic%20background/clinic-background.jpg'), url('/clinic-background.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className="min-h-screen w-full relative overflow-hidden bg-black"
     >
       <audio ref={hiddenAudioRef} autoPlay playsInline />
       <video ref={hiddenVideoRef} autoPlay playsInline muted className="hidden" />
 
-      <div className="absolute inset-0 bg-black/20" />
+      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-5 md:px-8 py-6 md:py-8 h-screen flex flex-col">
+      <div className="relative z-10 max-w-6xl mx-auto px-5 md:px-8 py-6 md:py-8 h-screen flex flex-col pointer-events-none">
         <div className="flex items-center justify-between">
-          <div className="bg-white/12 backdrop-blur-md rounded-full px-4 py-2 text-white text-sm tracking-wide">
+          <div className="bg-black/35 backdrop-blur-md rounded-full px-4 py-2 text-white text-sm tracking-wide">
             The Oxford Wellness Doctor
           </div>
-          <div className="bg-white/12 backdrop-blur-md rounded-full px-4 py-2 text-white/90 text-sm">
+          <div className="bg-black/35 backdrop-blur-md rounded-full px-4 py-2 text-white/90 text-sm">
             {status}
           </div>
         </div>
 
-        <div className="flex-1 mt-5 md:mt-8 rounded-2xl border border-white/25 bg-black/15 backdrop-blur-sm relative overflow-hidden">
-          <canvas
-            ref={canvasRef}
-            className="absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-auto max-w-full object-contain"
-          />
-
-          <div className="absolute left-4 bottom-4 md:left-6 md:bottom-6 w-40 md:w-52 rounded-xl overflow-hidden border border-white/20 bg-black/60 shadow-xl">
-            <video
-              ref={previewVideoRef}
-              autoPlay
-              muted
-              playsInline
-              className="w-full h-auto"
-            />
-          </div>
-
+        <div className="flex-1 mt-5 md:mt-8 relative overflow-hidden">
           {!remoteVideoTrack ? (
             <div className="absolute inset-0 flex items-center justify-center text-white/90 text-center px-6">
               <p className="text-sm md:text-base">
@@ -272,12 +282,12 @@ export default function CallPage() {
         </div>
 
         {error ? (
-          <div className="mt-4 text-sm text-red-100 bg-red-500/35 border border-red-200/40 rounded-xl px-4 py-3">
+          <div className="mt-4 text-sm text-red-100 bg-red-500/35 border border-red-200/40 rounded-xl px-4 py-3 pointer-events-auto">
             {error}
           </div>
         ) : null}
 
-        <div className="mt-5 md:mt-6 flex flex-wrap items-center gap-3">
+        <div className="mt-5 md:mt-6 flex flex-wrap items-center gap-3 pointer-events-auto">
           <button
             type="button"
             onClick={toggleMic}
