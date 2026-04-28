@@ -25,6 +25,7 @@ export default function CallPage() {
   const callObjectRef = React.useRef<DailyCall | null>(null);
   const hiddenVideoRef = React.useRef<HTMLVideoElement | null>(null);
   const hiddenAudioRef = React.useRef<HTMLAudioElement | null>(null);
+  const localPreviewRef = React.useRef<HTMLVideoElement | null>(null);
   const canvasRef = React.useRef<HTMLCanvasElement | null>(null);
   const backgroundImageRef = React.useRef<HTMLImageElement | null>(null);
   const keyedCanvasRef = React.useRef<HTMLCanvasElement | null>(null);
@@ -37,6 +38,7 @@ export default function CallPage() {
   const [isLeaving, setIsLeaving] = React.useState(false);
   const [remoteVideoTrack, setRemoteVideoTrack] = React.useState<MediaStreamTrack | null>(null);
   const [remoteAudioTrack, setRemoteAudioTrack] = React.useState<MediaStreamTrack | null>(null);
+  const [localVideoTrack, setLocalVideoTrack] = React.useState<MediaStreamTrack | null>(null);
 
   const conversationUrl = React.useMemo(() => getConversationUrlFromQuery(), []);
 
@@ -44,9 +46,11 @@ export default function CallPage() {
     const participants = callObject.participants();
     const allParticipants = Object.values(participants);
     const remoteParticipant = allParticipants.find((p) => !p.local);
+    const localParticipant = allParticipants.find((p) => p.local);
 
     setRemoteVideoTrack(getPlayableTrack(remoteParticipant, "video"));
     setRemoteAudioTrack(getPlayableTrack(remoteParticipant, "audio"));
+    setLocalVideoTrack(getPlayableTrack(localParticipant, "video"));
   }, []);
 
   React.useEffect(() => {
@@ -119,6 +123,19 @@ export default function CallPage() {
     audioEl.srcObject = new MediaStream([remoteAudioTrack]);
     audioEl.play().catch(() => undefined);
   }, [remoteAudioTrack]);
+
+  React.useEffect(() => {
+    const localVideoEl = localPreviewRef.current;
+    if (!localVideoEl) return;
+
+    if (!localVideoTrack) {
+      localVideoEl.srcObject = null;
+      return;
+    }
+
+    localVideoEl.srcObject = new MediaStream([localVideoTrack]);
+    localVideoEl.play().catch(() => undefined);
+  }, [localVideoTrack]);
 
   React.useEffect(() => {
     const img = new Image();
@@ -287,6 +304,22 @@ export default function CallPage() {
         </div>
 
         <div className="flex-1 mt-5 md:mt-8 relative overflow-hidden">
+          <div className="absolute right-4 top-4 md:right-6 md:top-6 w-44 md:w-56 aspect-[4/5] rounded-2xl overflow-hidden border border-white/40 bg-black/45 shadow-2xl pointer-events-auto">
+            {isCamOn && localVideoTrack ? (
+              <video
+                ref={localPreviewRef}
+                autoPlay
+                playsInline
+                muted
+                className="w-full h-full object-cover scale-x-[-1]"
+              />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center text-white/75 text-xs text-center px-3">
+                Camera preview off
+              </div>
+            )}
+          </div>
+
           {!remoteVideoTrack ? (
             <div className="absolute inset-0 flex items-center justify-center text-white/90 text-center px-6">
               <p className="text-sm md:text-base">
