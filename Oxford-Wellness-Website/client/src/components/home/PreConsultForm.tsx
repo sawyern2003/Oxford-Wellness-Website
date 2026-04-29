@@ -28,6 +28,7 @@ export default function PreConsultForm(props: Props) {
 
     const [name, setName] = React.useState("")
     const [email, setEmail] = React.useState("")
+    const [phone, setPhone] = React.useState("")
     const [location, setLocation] = React.useState("")
     const [otherLocation, setOtherLocation] = React.useState("")
     const [status, setStatus] = React.useState<string>("")
@@ -89,6 +90,7 @@ export default function PreConsultForm(props: Props) {
                 body: JSON.stringify({
                     email: cleanEmail,
                     name: name.trim(),
+                    phone: phone.trim(),
                     location: finalLocation,
                     consent_to_preconsult: consentToPreconsult,
                     consent_to_marketing: consentToMarketing,
@@ -112,6 +114,7 @@ export default function PreConsultForm(props: Props) {
 
             setName("")
             setEmail("")
+            setPhone("")
             setLocation("")
             setOtherLocation("")
             setConsentToPreconsult(false)
@@ -184,6 +187,20 @@ export default function PreConsultForm(props: Props) {
                         style={inputStyle(borderColor, radius)}
                         disabled={loading}
                         required
+                    />
+                </div>
+                <div>
+                    <label style={{ fontSize: 12, opacity: 0.8, display: "block" }}>
+                        Phone (optional)
+                    </label>
+                    <input
+                        type="tel"
+                        name="phone"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
+                        placeholder="Phone number (optional)"
+                        style={inputStyle(borderColor, radius)}
+                        disabled={loading}
                     />
                 </div>
                 <div>
