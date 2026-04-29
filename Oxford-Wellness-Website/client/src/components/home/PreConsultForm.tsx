@@ -44,10 +44,12 @@ export default function PreConsultForm(props: Props) {
     const [isPrivacyModalOpen, setIsPrivacyModalOpen] = React.useState(false)
 
     const cleanEmail = email.trim().toLowerCase()
+    const cleanPhone = phone.trim()
     const locationIsValid =
         !!location && (location !== "Other" || !!otherLocation.trim())
     const isFormReady =
         !!cleanEmail &&
+        !!cleanPhone &&
         isValidEmail(cleanEmail) &&
         locationIsValid &&
         consentToPreconsult
@@ -65,6 +67,7 @@ export default function PreConsultForm(props: Props) {
         if (!cleanEmail) return setStatus("Please enter your email.")
         if (!isValidEmail(cleanEmail))
             return setStatus("Please enter a valid email address.")
+        if (!cleanPhone) return setStatus("Please enter your phone number.")
 
         if (!location) return setStatus("Please select your location.")
         if (location === "Other" && !otherLocation.trim())
@@ -90,7 +93,7 @@ export default function PreConsultForm(props: Props) {
                 body: JSON.stringify({
                     email: cleanEmail,
                     name: name.trim(),
-                    phone: phone.trim(),
+                    phone: cleanPhone,
                     location: finalLocation,
                     consent_to_preconsult: consentToPreconsult,
                     consent_to_marketing: consentToMarketing,
@@ -191,16 +194,17 @@ export default function PreConsultForm(props: Props) {
                 </div>
                 <div>
                     <label style={{ fontSize: 12, opacity: 0.8, display: "block" }}>
-                        Phone (optional)
+                        Phone
                     </label>
                     <input
                         type="tel"
                         name="phone"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
-                        placeholder="Phone number (optional)"
+                        placeholder="Phone number"
                         style={inputStyle(borderColor, radius)}
                         disabled={loading}
+                        required
                     />
                 </div>
                 <div>
@@ -270,7 +274,7 @@ export default function PreConsultForm(props: Props) {
                             required
                         />
                         <span>
-                            I consent to my personal information and enquiry details being processed for the purpose of this pre-consultation and shared with the clinic so they can respond to my enquiry.
+                            I consent to my personal information and enquiry details being processed for the purpose of this pre-consultation, shared with the clinic so they can respond to my enquiry, and to being contacted by the clinic regarding my enquiry.
                         </span>
                     </label>
                     <label
