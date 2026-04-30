@@ -22,9 +22,6 @@ export default function AIPreConsult() {
           <h1 className="font-serif text-5xl md:text-6xl text-primary mb-5 text-center">
             Free 5 Minute AI Pre-Consultation
           </h1>
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-center max-w-3xl mx-auto">
-            Enter your details below to start your pre-consultation and get guidance on options, suitability, pricing ranges, and next steps before booking.
-          </p>
           <div className="text-left mt-10 md:mt-12">
             <div className="max-w-3xl mx-auto">
               <ul className="mt-2 space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed list-disc pl-6 marker:text-secondary">
