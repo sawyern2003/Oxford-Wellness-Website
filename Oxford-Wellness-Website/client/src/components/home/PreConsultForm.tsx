@@ -39,7 +39,7 @@ export default function PreConsultForm(props: Props) {
     const [consentToPreconsult, setConsentToPreconsult] = React.useState(false)
     const [, setLocationHref] = useLocation()
 
-    const [consentToMarketing, setConsentToMarketing] = React.useState(false)
+    const [marketingConsent, setMarketingConsent] = React.useState(false)
     const [consentError, setConsentError] = React.useState("")
     const [isPrivacyModalOpen, setIsPrivacyModalOpen] = React.useState(false)
 
@@ -96,7 +96,7 @@ export default function PreConsultForm(props: Props) {
                     phone: cleanPhone,
                     location: finalLocation,
                     consent_to_preconsult: consentToPreconsult,
-                    consent_to_marketing: consentToMarketing,
+                    consent_to_marketing: marketingConsent,
                     privacy_policy_accepted_at: privacyAcceptedAt,
                 }),
             })
@@ -121,7 +121,7 @@ export default function PreConsultForm(props: Props) {
             setLocation("")
             setOtherLocation("")
             setConsentToPreconsult(false)
-            setConsentToMarketing(false)
+            setMarketingConsent(false)
             setConsentError("")
 
             setLoading(false)
@@ -290,8 +290,8 @@ export default function PreConsultForm(props: Props) {
                     >
                         <input
                             type="checkbox"
-                            checked={consentToMarketing}
-                            onChange={(e) => setConsentToMarketing(e.target.checked)}
+                            checked={marketingConsent}
+                            onChange={(e) => setMarketingConsent(e.target.checked)}
                             disabled={loading}
                             style={{ marginTop: 2 }}
                         />
