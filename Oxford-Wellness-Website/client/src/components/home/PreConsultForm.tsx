@@ -155,11 +155,11 @@ export default function PreConsultForm(props: Props) {
             onSubmit={onSubmit}
             style={{
                 width: "100%",
-                maxWidth: 520,
+                maxWidth: 620,
                 fontFamily:
                     "Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial",
                 margin: "0 auto",
-                padding: "20px",
+                padding: "14px 16px",
             }}
         >
             <div style={{ display: "grid", gap: 12 }}>
