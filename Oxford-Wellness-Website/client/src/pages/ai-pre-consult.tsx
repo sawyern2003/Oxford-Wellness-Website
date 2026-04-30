@@ -27,12 +27,17 @@ export default function AIPreConsult() {
           </p>
           <div className="text-left mt-10 md:mt-12">
             <div className="max-w-3xl mx-auto">
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Ask questions about any treatment we offer through the clinic's AI representative - for free. You'll get guidance on options, suitability, pricing ranges, and next steps before booking.
-              </p>
-              <p className="mt-4 text-base md:text-lg text-muted-foreground leading-relaxed">
-                You’ll get up to 5 minutes. Please have your questions ready.
-              </p>
+              <ul className="mt-2 space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed list-disc pl-6 marker:text-secondary">
+                <li>
+                  Enter your details below to start your pre-consultation and get guidance on options, suitability, pricing ranges, and next steps before booking.
+                </li>
+                <li>
+                  Ask questions about any treatment we offer through the clinic&apos;s AI representative - for free. You&apos;ll get guidance on options, suitability, pricing ranges, and next steps before booking.
+                </li>
+                <li>
+                  You&apos;ll get up to 5 minutes. Please have your questions ready.
+                </li>
+              </ul>
             </div>
             <div className="mt-8 md:mt-10 bg-white/95 p-4 md:p-6 shadow-2xl border border-border/50 rounded-2xl backdrop-blur-sm max-w-[700px] w-full mx-auto">
               <PreConsultForm 
