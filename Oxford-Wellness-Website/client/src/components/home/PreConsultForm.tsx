@@ -274,7 +274,7 @@ export default function PreConsultForm(props: Props) {
                             required
                         />
                         <span>
-                            I consent to my personal information and enquiry details being processed for the purpose of this pre-consultation, shared with the clinic so they can respond to my enquiry, and to being contacted by the clinic regarding my enquiry.
+                            I agree to my information being used to run this pre-consultation and shared with the clinic so they can respond to my enquiry.
                         </span>
                     </label>
                     <label
@@ -296,7 +296,7 @@ export default function PreConsultForm(props: Props) {
                             style={{ marginTop: 2 }}
                         />
                         <span>
-                            I would like to receive updates and follow-up information from the clinic.
+                            I’d like to receive follow-up information and updates from the clinic.
                         </span>
                     </label>
                     <div style={{ fontSize: 11.5, color: "#5a6772", lineHeight: 1.4 }}>
