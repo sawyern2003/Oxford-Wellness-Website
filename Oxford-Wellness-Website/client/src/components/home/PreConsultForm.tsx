@@ -98,6 +98,10 @@ export default function PreConsultForm(props: Props) {
                     location: finalLocation,
                     consent_to_preconsult: !!consentToPreconsult,
                     consent_to_marketing: !!(consentToMarketing ?? marketingConsent),
+                    marketing_debug: JSON.stringify({
+                        consentToMarketing,
+                        marketingConsent,
+                    }),
                     consentToMarketing: !!marketingConsent,
                     privacy_policy_accepted_at: privacyAcceptedAt,
                 }),
