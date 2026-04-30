@@ -42,6 +42,7 @@ export default function PreConsultForm(props: Props) {
     const [marketingConsent, setMarketingConsent] = React.useState(false)
     const [consentError, setConsentError] = React.useState("")
     const [isPrivacyModalOpen, setIsPrivacyModalOpen] = React.useState(false)
+    const consentToMarketing = marketingConsent
 
     const cleanEmail = email.trim().toLowerCase()
     const cleanPhone = phone.trim()
@@ -96,7 +97,7 @@ export default function PreConsultForm(props: Props) {
                     phone: cleanPhone,
                     location: finalLocation,
                     consent_to_preconsult: !!consentToPreconsult,
-                    consent_to_marketing: !!marketingConsent,
+                    consent_to_marketing: !!(consentToMarketing ?? marketingConsent),
                     consentToMarketing: !!marketingConsent,
                     privacy_policy_accepted_at: privacyAcceptedAt,
                 }),
