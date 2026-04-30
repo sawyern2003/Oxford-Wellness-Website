@@ -296,7 +296,7 @@ export default function PreConsultForm(props: Props) {
                             style={{ marginTop: 2 }}
                         />
                         <span>
-                            I’d like to receive follow-up information and updates from the clinic.
+                            I’d like to receive occasional clinic updates, offers, and treatment information.
                         </span>
                     </label>
                     <div style={{ fontSize: 11.5, color: "#5a6772", lineHeight: 1.4 }}>

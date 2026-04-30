@@ -29,7 +29,7 @@ export default function AIPreConsult() {
                   Enter your details below to start your free pre-consultation with the clinic&apos;s AI representative and get guidance on options, suitability, pricing ranges, and next steps before booking.
                 </li>
                 <li>
-                  I&apos;d like to receive occasional clinic updates, offers, and treatment information.
+                  You&apos;ll get up to 5 minutes. Please have your questions ready.
                 </li>
               </ul>
             </div>
