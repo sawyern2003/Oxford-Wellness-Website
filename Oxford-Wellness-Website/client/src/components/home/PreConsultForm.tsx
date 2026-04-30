@@ -95,9 +95,8 @@ export default function PreConsultForm(props: Props) {
                     name: name.trim(),
                     phone: cleanPhone,
                     location: finalLocation,
-                    consent_to_preconsult: consentToPreconsult,
-                    consent_to_marketing: marketingConsent,
-                    consentToMarketing: marketingConsent,
+                    consent_to_preconsult: !!consentToPreconsult,
+                    consent_to_marketing: !!marketingConsent,
                     privacy_policy_accepted_at: privacyAcceptedAt,
                 }),
             })
