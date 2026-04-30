@@ -23,20 +23,22 @@ export default function AIPreConsult() {
           <h1 className="font-serif text-5xl md:text-6xl text-primary mb-6 text-center">
             AI Pre-Consultation
           </h1>
-          <div className="grid lg:grid-cols-[1.1fr_1fr] gap-8 lg:gap-14 text-left mt-12 lg:mt-14 items-start">
-            <div className="max-w-xl">
+          <div className="text-left mt-10 md:mt-12">
+            <div className="max-w-3xl mx-auto">
               <h2 className="text-sm uppercase tracking-wider text-muted-foreground mb-4">Enter your details below to access a</h2>
               <h3 className="font-serif text-4xl md:text-5xl text-secondary mb-5 leading-tight">
-                5 minute, free <br />pre-consultation
+                5 minute, free pre-consultation
               </h3>
-              <p className="text-lg md:text-xl font-light text-muted-foreground leading-relaxed max-w-[36ch]">
+              <p className="text-lg md:text-xl font-light text-muted-foreground leading-relaxed">
                 Ask questions about any treatment we offer - for free. You'll get guidance on options, suitability, pricing ranges, and next steps before booking.
               </p>
+              <p className="mt-4 text-sm md:text-base text-muted-foreground/90">
+                You’ll get up to 5 minutes. Please have your questions ready.
+              </p>
             </div>
-            <div className="bg-white/95 p-4 md:p-6 shadow-2xl border border-border/50 rounded-2xl backdrop-blur-sm max-w-[660px] w-full justify-self-center">
+            <div className="mt-8 md:mt-10 bg-white/95 p-4 md:p-6 shadow-2xl border border-border/50 rounded-2xl backdrop-blur-sm max-w-[700px] w-full mx-auto">
               <PreConsultForm 
                 buttonText="Start pre-consultation"
-                minutesLimitText="You’ll get up to 5 minutes. Please have your questions ready."
               />
             </div>
           </div>

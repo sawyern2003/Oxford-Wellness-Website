@@ -344,9 +344,11 @@ export default function PreConsultForm(props: Props) {
                 >
                     {loading ? "Starting…" : buttonText}
                 </button>
-                <div style={{ fontSize: 12, opacity: 0.75, lineHeight: 1.4 }}>
-                    {minutesLimitText}
-                </div>
+                {minutesLimitText ? (
+                    <div style={{ fontSize: 12, opacity: 0.75, lineHeight: 1.4 }}>
+                        {minutesLimitText}
+                    </div>
+                ) : null}
                 {status ? (
                     <div
                         style={{
