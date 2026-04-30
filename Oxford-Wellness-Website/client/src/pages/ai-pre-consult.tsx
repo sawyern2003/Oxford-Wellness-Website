@@ -26,13 +26,10 @@ export default function AIPreConsult() {
             <div className="max-w-3xl mx-auto">
               <ul className="mt-2 space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed list-disc pl-6 marker:text-secondary">
                 <li>
-                  Enter your details below to start your pre-consultation and get guidance on options, suitability, pricing ranges, and next steps before booking.
+                  Enter your details below to start your free pre-consultation with the clinic&apos;s AI representative and get guidance on options, suitability, pricing ranges, and next steps before booking.
                 </li>
                 <li>
-                  Ask questions about any treatment we offer through the clinic&apos;s AI representative - for free. You&apos;ll get guidance on options, suitability, pricing ranges, and next steps before booking.
-                </li>
-                <li>
-                  You&apos;ll get up to 5 minutes. Please have your questions ready.
+                  I&apos;d like to receive occasional clinic updates, offers, and treatment information.
                 </li>
               </ul>
             </div>
