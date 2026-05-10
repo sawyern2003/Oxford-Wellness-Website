@@ -1,6 +1,7 @@
 import * as React from "react";
 import DailyIframe, { DailyCall, DailyParticipant } from "@daily-co/daily-js";
 import { useLocation } from "wouter";
+import clinicBackgroundImage from "@/assets/clinicbackgroundnew.png";
 
 function getConversationUrlFromQuery() {
   const params = new URLSearchParams(window.location.search);
@@ -139,13 +140,13 @@ export default function CallPage() {
 
   React.useEffect(() => {
     const img = new Image();
-    img.src = "/clinic-background.jpg";
+    img.src = clinicBackgroundImage;
     img.onload = () => {
       backgroundImageRef.current = img;
     };
     img.onerror = () => {
       const fallback = new Image();
-      fallback.src = "/clinic%20background/clinic-background.jpg";
+      fallback.src = clinicBackgroundImage;
       fallback.onload = () => {
         backgroundImageRef.current = fallback;
       };
