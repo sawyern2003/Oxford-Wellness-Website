@@ -16,7 +16,7 @@ const posts = [
   {
     slug: "menopause-skin-changes",
     title: "How Menopause Affects Your Skin: What Your GP Won't Tell You",
-    excerpt: "Menopause causes measurable changes to skin collagen, hydration and elasticity. Former gynaecologist Dr. Taganova explains what works.",
+    excerpt: "Menopause causes measurable changes to skin collagen, hydration and elasticity. Formerly trained gynaecologist Dr. Taganova explains what works.",
     category: "Menopause & Women's Health",
     readTime: "6 min",
     href: "/blog/menopause-skin-changes",
@@ -148,7 +148,7 @@ export default function BlogIndex() {
               <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3">About the Author</p>
               <h2 className="font-serif text-2xl text-primary mb-4">Dr. Inga Taganova</h2>
               <p className="text-sm text-muted-foreground leading-relaxed font-light mb-6">
-                Dr. Taganova is a GMC-registered doctor (No. 4727817), former gynaecologist, experienced GP, and qualified aesthetic medicine practitioner. With over 20 years in women's health, she brings a depth of clinical knowledge to aesthetic medicine that is rarely found outside hospital settings. All articles on this blog are written personally by Dr. Taganova and reflect current evidence-based clinical practice.
+                Dr. Taganova is a GMC-registered doctor (No. 4727817), formerly trained gynaecologist, experienced GP, and qualified aesthetic medicine practitioner. With over 20 years in women's health, she brings a depth of clinical knowledge to aesthetic medicine that is rarely found outside hospital settings. All articles on this blog are written personally by Dr. Taganova and reflect current evidence-based clinical practice.
               </p>
               <Link
                 href="/about"

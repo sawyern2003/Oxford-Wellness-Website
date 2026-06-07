@@ -2,10 +2,10 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Menopause Clinic Oxford | Specialist Menopause Lead | Dr. Inga Taganova",
-  metaDescription: "Private menopause clinic in Oxford led by specialist menopause lead Dr. Inga Taganova - former gynaecologist with 20+ years experience. Expert menopause care. Book now.",
+  metaDescription: "Private menopause clinic in Oxford led by specialist menopause lead Dr. Inga Taganova - formerly trained gynaecologist with 20+ years experience. Expert menopause care. Book now.",
   canonical: "https://www.theoxfordwellnessdoctor.com/menopause-clinic-oxford",
-  h1: "Menopause Clinic in Oxford - Led by Specialist Menopause Lead & Former Gynaecologist",
-  intro: "Dr. Inga Taganova is a specialist menopause lead with extensive experience in women's health. As a former gynaecologist, experienced GP, and qualified menopause specialist, she brings unparalleled expertise to menopause care. She understands that the menopause transition affects far more than hormones - it shapes how you feel in your body, how your skin looks and feels, how your weight responds, and how you experience daily life. At The Oxford Wellness Doctor, menopause medicine and aesthetic care are integrated into a genuinely holistic approach to women's health.",
+  h1: "Menopause Clinic in Oxford - Led by Specialist Menopause Lead & Formerly Trained Gynaecologist",
+  intro: "Dr. Inga Taganova is a specialist menopause lead with extensive experience in women's health. As a formerly trained gynaecologist, experienced GP, and qualified menopause specialist, she brings unparalleled expertise to menopause care. She understands that the menopause transition affects far more than hormones - it shapes how you feel in your body, how your skin looks and feels, how your weight responds, and how you experience daily life. At The Oxford Wellness Doctor, menopause medicine and aesthetic care are integrated into a genuinely holistic approach to women's health.",
   sections: [
     {
       heading: "A Different Approach to Menopause Care",
@@ -65,7 +65,7 @@ const data: TreatmentPageData = {
       ],
       bullets: [
         "Specialist menopause lead with extensive training",
-        "Former qualified gynaecologist with hospital experience",
+        "Formerly trained gynaecologist with hospital experience",
         "GP with over 20 years of experience in women's health",
         "Specialist menopause training and ongoing CPD",
         "GMC registered (No. 4727817) with an unblemished record",
@@ -106,7 +106,7 @@ const data: TreatmentPageData = {
     },
     {
       q: "Do you prescribe HRT at your Oxford clinic?",
-      a: "While we do not currently prescribe HRT at this clinic, Dr. Taganova provides comprehensive menopause assessments and can refer you to appropriate HRT prescribers if hormone therapy is clinically indicated. Her expertise as a former gynaecologist and MoD menopause lead means she can thoroughly assess your suitability for HRT and provide specialist referrals.",
+      a: "While we do not currently prescribe HRT at this clinic, Dr. Taganova provides comprehensive menopause assessments and can refer you to appropriate HRT prescribers if hormone therapy is clinically indicated. Her expertise as a formerly trained gynaecologist and MoD menopause lead means she can thoroughly assess your suitability for HRT and provide specialist referrals.",
     },
     {
       q: "Can menopause treatment help with weight gain?",
@@ -134,7 +134,7 @@ const data: TreatmentPageData = {
     },
     {
       q: "What makes Dr. Taganova qualified as a menopause specialist?",
-      a: "Dr. Taganova is a GMC-registered GP, former gynaecologist, and specialist menopause lead. She has over 20 years of experience in women's health and holds specialist menopause qualifications. Her background uniquely combines gynecological training, general practice experience, and aesthetic medicine expertise.",
+      a: "Dr. Taganova is a GMC-registered GP, formerly trained gynaecologist, and specialist menopause lead. She has over 20 years of experience in women's health and holds specialist menopause qualifications. Her background uniquely combines gynecological training, general practice experience, and aesthetic medicine expertise.",
     },
     {
       q: "How much does a private menopause consultation cost in Oxford?",
@@ -147,7 +147,7 @@ const data: TreatmentPageData = {
   ],
   procedureSchema: {
     name: "Menopause Clinic Consultation",
-    description: "Private menopause consultation with Dr. Inga Taganova - specialist menopause lead, former gynaecologist and women's health expert - in Oxford, covering menopause symptom management, perimenopause support, and integrated aesthetic care.",
+    description: "Private menopause consultation with Dr. Inga Taganova - specialist menopause lead, formerly trained gynaecologist and women's health expert - in Oxford, covering menopause symptom management, perimenopause support, and integrated aesthetic care.",
   },
   relatedLinks: [
     { label: "Intimate Rejuvenation (Neauvia N Rose)", href: "/treatments/neauvia-n-rose-intimate-rejuvenation-oxford" },

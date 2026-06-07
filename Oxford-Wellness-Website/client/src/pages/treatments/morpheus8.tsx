@@ -5,59 +5,23 @@ const data: TreatmentPageData = {
   metaDescription: "Morpheus8 radiofrequency microneedling in Oxford. Non-surgical skin tightening for face & body. Reduces wrinkles, scars & improves texture. Book consultation.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/morpheus8-oxford",
   h1: "Morpheus8 in Oxford - Advanced RF Microneedling Treatment",
-  intro: "Morpheus8 is one of the most powerful non-surgical skin tightening and remodelling treatments available. By combining fractional microneedling with radiofrequency energy, it reaches deep into the dermis and subdermal tissue to trigger profound collagen remodelling - producing results that were previously only achievable with surgery.",
+  intro: "RF microneedling tightens skin, reduces wrinkles and scars, and remodels collagen deep in the tissue — without surgery.",
   sections: [
-    {
-      heading: "How Morpheus8 Works",
-      paragraphs: [
-        "Morpheus8 uses a matrix of fine gold-plated microneedles that penetrate the skin at precise, adjustable depths. As the needles enter the skin, they simultaneously emit radiofrequency energy into the dermis and subdermis - heating the tissue to a carefully controlled temperature.",
-        "This dual action triggers two processes: the needles create micro-injury channels that stimulate the skin's wound-healing response, while the RF energy causes collagen fibres to contract immediately and promotes new collagen and elastin synthesis over the following months.",
-      ],
-    },
     {
       heading: "What Morpheus8 Treats",
       bullets: [
-        "Loose or lax skin on face, neck, and jowls",
+        "Loose skin on face, neck, and jowls",
         "Deep wrinkles and folds",
-        "Acne scars and post-inflammatory scarring",
-        "Large pores and uneven skin texture",
-        "Loss of definition along the jawline",
-        "Neck laxity and horizontal neck lines",
-        "Stretch marks and body skin laxity",
-      ],
-    },
-    {
-      heading: "Treatment Areas",
-      paragraphs: ["Morpheus8 is exceptionally versatile and can be applied to multiple areas of the face and body:"],
-      bullets: [
-        "Full face - overall tightening, lifting, and rejuvenation",
-        "Lower face and jowls - jawline definition and lifting",
-        "Neck - tightening loose, crepey neck skin",
-        "Abdomen - skin tightening following weight loss or pregnancy",
-        "Arms and thighs - reducing skin laxity on the body",
-        "Knees - tightening loose skin around the knees",
+        "Acne scars and uneven texture",
+        "Large pores",
+        "Stretch marks and body laxity",
       ],
     },
     {
       heading: "The Morpheus8 Procedure",
       paragraphs: [
-        "A topical numbing cream is applied approximately 45–60 minutes before treatment to maximise your comfort. The Morpheus8 handpiece is then moved methodically across the treatment area.",
-        "Treatment time is 30–60 minutes depending on the area. Most patients describe a warm, prickling sensation during the procedure. The depth and intensity of the RF energy are precisely calibrated by Dr. Taganova for your specific skin concerns and goals.",
-      ],
-    },
-    {
-      heading: "Recovery & Results",
-      paragraphs: [
-        "Redness and mild swelling are expected for 2–5 days after Morpheus8 treatment. Tiny pinpoint marks from the needles typically resolve within 24–48 hours. Most patients feel comfortable returning to work and social activities within 3–5 days with appropriate skincare and SPF.",
-        "Unlike surface treatments, Morpheus8 results develop gradually as new collagen forms - typically becoming fully visible over 3–6 months. A course of three sessions, spaced 4–6 weeks apart, is recommended for optimal results, which can last 12+ months.",
-      ],
-      note: "Dr. Taganova will create a personalised aftercare plan including recommended skincare products to support healing and maximise your results.",
-    },
-    {
-      heading: "Why Choose Doctor-Led Morpheus8 in Oxford?",
-      paragraphs: [
-        "Morpheus8 is a medical-grade device that requires advanced training and a thorough understanding of skin anatomy to be used safely and effectively. In the hands of an untrained practitioner, the risks include burns, scarring, and infection.",
-        "At The Oxford Wellness Doctor, Morpheus8 is delivered exclusively by Dr. Taganova - a GMC-registered doctor with comprehensive training in energy-based devices and the medical expertise to manage any complications.",
+        "Numbing cream applied 45–60 minutes before. RF microneedling across the treatment area over 30–60 minutes.",
+        "Redness for 2–5 days; back to work in 3–5 days. Three sessions, 4–6 weeks apart recommended. Results develop over 3–6 months.",
       ],
     },
   ],

@@ -15,7 +15,7 @@ import {
 const whyChooseUs = [
   {
     number: "01",
-    title: "Specialist Menopause Lead & Former Gynaecologist",
+    title: "Specialist Menopause Lead & Formerly Trained Gynaecologist",
     desc: "Dr. Taganova serves as a specialist menopause lead with extensive experience in women's health. Her gynaecology background and specialist menopause training create truly integrated women's health and aesthetic care that no purely aesthetic clinic can offer.",
     detail: "Oxford's only aesthetic clinic led by a specialist menopause lead",
   },
@@ -78,7 +78,7 @@ const featuredTreatments = [
     name: "Dermal Fillers",
     href: "/treatments/dermal-fillers-oxford",
     label: "Facial Rejuvenation",
-    desc: "Restore lost volume and redefine facial contours with expert, anatomy-led filler placement by an ex-gynaecologist.",
+    desc: "Restore lost volume and redefine facial contours with expert, anatomy-led filler placement by a formerly trained gynaecologist.",
   },
 ];
 
@@ -109,7 +109,7 @@ const areasServed = [
 ];
 
 const homeFaqs = [
-  { q: "What treatments do you offer at The Oxford Wellness Doctor?", a: "We offer comprehensive medical aesthetics including anti-wrinkle injections, dermal fillers, lip fillers, Profhilo, Morpheus8, chemical peels, skin boosters, and excessive sweating treatment. Our specialist menopause clinic provides symptom assessment, perimenopause support, treatment planning, and women's wellness consultations. Dr. Taganova's background as a former gynaecologist and menopause specialist ensures truly integrated care." },
+  { q: "What treatments do you offer at The Oxford Wellness Doctor?", a: "We offer comprehensive medical aesthetics including anti-wrinkle injections, dermal fillers, lip fillers, Profhilo, Morpheus8, chemical peels, skin boosters, and excessive sweating treatment. Our specialist menopause clinic provides symptom assessment, perimenopause support, treatment planning, and women's wellness consultations. Dr. Taganova's background as a formerly trained gynaecologist and menopause specialist ensures truly integrated care." },
   { q: "Is Dr. Inga Taganova GMC registered?", a: "Yes. Dr. Inga Taganova holds full GMC registration - her number is 4727817. You can verify her registration at any time on the GMC's public register at gmcuk.org. She is also a registered GP and holds post-graduate qualifications in aesthetic medicine." },
   { q: "Do you offer free consultations?", a: "Yes - we offer a free initial consultation for aesthetic treatments, which is fully redeemable against your first treatment. For medical consultations (including the menopause clinic), an initial fee of £150 applies for a comprehensive 45-minute appointment." },
   { q: "How much do treatments cost?", a: "Our pricing is transparent and published on our pricing page. Anti-wrinkle injections start from £150 per area; Profhilo from £300 per session; Morpheus8 from £650; lip fillers from £200. Medical weight loss (Wegovy/Mounjaro) starts from £200 per month. Please see our full pricing page for a complete list." },
@@ -119,7 +119,7 @@ const homeFaqs = [
   { q: "Can I book online?", a: "Yes. You can book online through our Glowday booking page, which shows real-time availability and allows you to book a consultation or treatment at a time that suits you. Alternatively, you can contact us directly by phone or email." },
   { q: "Do you offer payment plans?", a: "We do not currently offer payment plans or finance. Payment is taken at the time of treatment and we accept all major credit and debit cards. We aim to keep our pricing transparent with no hidden costs." },
   { q: "Are your treatments safe?", a: "Your safety is our absolute priority. Every treatment at The Oxford Wellness Doctor is performed by Dr. Taganova herself - a GMC-registered physician with over 20 years of clinical experience. We use only MHRA-approved products from established manufacturers, maintain emergency protocols, and keep hyaluronidase on-site for filler dissolution if ever needed." },
-  { q: "What makes you different from other clinics?", a: "Several things set us apart: Dr. Taganova is a fully qualified doctor (GMC No. 4727817) with a unique background as a former gynaecologist and menopause specialist; we offer integrated medical and aesthetic care in a single clinic; our philosophy is always natural-looking enhancement; and we never pressure patients into treatments they don't need." },
+  { q: "What makes you different from other clinics?", a: "Several things set us apart: Dr. Taganova is a fully qualified doctor (GMC No. 4727817) with a unique background as a formerly trained gynaecologist and menopause specialist; we offer integrated medical and aesthetic care in a single clinic; our philosophy is always natural-looking enhancement; and we never pressure patients into treatments they don't need." },
   { q: "Do you treat menopause as well as aesthetics?", a: "Yes - our menopause clinic is our PRIMARY service. Dr. Taganova is a specialist menopause lead and brings over 20 years of women's health expertise. She provides comprehensive menopause assessments, perimenopause support, symptom management, and treatment planning. Aesthetic treatments are available as complementary services, particularly for menopausal skin changes." },
   { q: "Can men have treatments?", a: "Absolutely. While our clinic has a particular focus on women's health and the menopause, all aesthetic treatments are available to men. Anti-wrinkle injections, dermal fillers, Morpheus8, skin treatments, and medical weight loss are popular with male patients." },
   { q: "What areas of Oxford do you serve?", a: "We welcome patients from across Oxford and Oxfordshire, including Oxford city centre, Jericho, Summertown, Headington, Cowley, Rose Hill, Iffley, Abingdon, Witney, Kidlington, Bicester, and beyond. Our central Woodstock Road location is easily accessible with street parking available nearby." },
@@ -130,7 +130,7 @@ const homeFaqs = [
 
 const recentPosts = [
   { title: "Wegovy vs Mounjaro: Which Weight Loss Injection Is Right for You?", category: "Medical Weight Loss", href: "/blog/wegovy-vs-mounjaro-comparison", excerpt: "A detailed clinical comparison of both GLP-1 medications - efficacy data, side effects, cost, and how Dr. Taganova decides which to prescribe." },
-  { title: "How Menopause Affects Your Skin: What Your GP Won't Tell You", category: "Menopause & Women's Health", href: "/blog/menopause-skin-changes", excerpt: "Menopause causes measurable changes to skin collagen, hydration and elasticity. Former gynaecologist Dr. Taganova explains what actually works." },
+  { title: "How Menopause Affects Your Skin: What Your GP Won't Tell You", category: "Menopause & Women's Health", href: "/blog/menopause-skin-changes", excerpt: "Menopause causes measurable changes to skin collagen, hydration and elasticity. Formerly trained gynaecologist Dr. Taganova explains what actually works." },
   { title: "How to Choose an Aesthetics Clinic in Oxford: A Checklist", category: "Choosing a Clinic", href: "/blog/choosing-aesthetics-clinic-oxford", excerpt: "A practical checklist of credentials, red flags, and questions to ask - from a GMC doctor who knows what good looks like." },
 ];
 
@@ -341,7 +341,7 @@ export default function Home() {
             <div className="space-y-2 mb-6">
               {[
                 "GMC-Registered Doctor (No. 4727817)",
-                "Former Gynaecologist",
+                "Formerly Trained Gynaecologist",
                 "Experienced GP - 20+ years in women's health",
                 "Menopause Specialist & HRT Prescriber",
                 "Qualified Aesthetic Medicine Practitioner",
@@ -369,7 +369,7 @@ export default function Home() {
             <div className="aspect-[4/5] overflow-hidden shadow-2xl border border-secondary/20">
               <img
                 src={leadPractitioner}
-                alt="Dr. Inga Taganova GMC No. 4727817 - GP, former gynaecologist and menopause specialist at The Oxford Wellness Doctor, Oxford"
+                alt="Dr. Inga Taganova GMC No. 4727817 - GP, formerly trained gynaecologist and menopause specialist at The Oxford Wellness Doctor, Oxford"
                 className="w-full h-full object-cover"
                 loading="lazy"
                 width="600"

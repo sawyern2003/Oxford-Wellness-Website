@@ -5,48 +5,29 @@ const data: TreatmentPageData = {
   metaDescription: "Professional anti-wrinkle injections in Oxford by Dr. Inga Taganova. Reduce forehead lines, frown lines & crow's feet. GMC-registered doctor. From £190. Book now.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/anti-wrinkle-injections-oxford",
   h1: "Anti-Wrinkle Injections in Oxford - Expert Botox Treatment",
-  intro: "Anti-wrinkle injections are the UK's most popular non-surgical cosmetic treatment - and when delivered by a GMC-registered doctor with 20+ years of medical experience, they are also one of the safest. At The Oxford Wellness Doctor, Dr. Inga Taganova uses her deep clinical expertise to achieve subtle, natural-looking results that enhance rather than alter your appearance.",
+  intro: "Botulinum toxin relaxes facial muscles to smooth dynamic lines with subtle, natural-looking results.",
   sections: [
     {
       heading: "What Can Anti-Wrinkle Injections Treat?",
-      paragraphs: [
-        "Anti-wrinkle injections - commonly known by the brand name Botox - work by temporarily relaxing the facial muscles responsible for dynamic wrinkles. At our Oxford clinic, we use premium botulinum toxin products to treat a wide range of concerns:",
-      ],
       bullets: [
-        "Forehead lines - horizontal lines that appear with raised eyebrows",
-        "Frown lines (glabellar lines) - vertical lines between the brows",
-        "Crow's feet - fine lines at the outer corners of the eyes",
-        "Bunny lines - wrinkles across the nose bridge when smiling",
-        "Gummy smile - reducing excess gum visibility when smiling",
-        "Brow lift - subtle elevation of the brow arch",
-        "Lip lines - vertical lines above the upper lip",
+        "Forehead lines",
+        "Frown lines between the brows",
+        "Crow's feet",
+        "Bunny lines and gummy smile",
+        "Brow lift and lip lines",
       ],
-      note: "All anti-wrinkle treatment in Oxford at our clinic is delivered personally by Dr. Taganova, never by a nurse or non-medical practitioner.",
     },
     {
       heading: "The Procedure - What to Expect",
       paragraphs: [
-        "Your appointment begins with a thorough consultation. Dr. Taganova will assess your facial anatomy, skin quality, and muscle movement before discussing which areas to treat and what result to expect. She will never recommend treatment that she doesn't believe is appropriate for you.",
-        "The treatment itself takes just 15–20 minutes. Using ultra-fine needles, small amounts of botulinum toxin are injected precisely into the targeted muscles. Most patients describe the sensation as a mild pinch. No anaesthetic is required, though numbing cream is available if preferred.",
-        "There is no downtime. You can return to your normal day immediately, though we recommend avoiding strenuous exercise, alcohol, and lying flat for the first few hours.",
+        "Consultation to assess your facial anatomy and agree treatment areas.",
+        "15–20 minute treatment with ultra-fine needles. Mild pinch, no anaesthetic needed. No downtime.",
       ],
     },
     {
       heading: "Results & Duration",
       paragraphs: [
-        "Results from anti-wrinkle injections are not instant - the product takes 3–7 days to begin working, with full results visible at 14 days. This is why Dr. Taganova includes a complimentary two-week follow-up with every treatment, to assess the outcome and make any minor adjustments needed.",
-        "Results typically last 3–4 months. With regular, consistent treatment over time, many patients find their results extend as the targeted muscles become progressively more relaxed. Dr. Taganova will advise on the ideal maintenance schedule for your individual needs.",
-      ],
-    },
-    {
-      heading: "Why Choose The Oxford Wellness Doctor for Anti-Wrinkle Treatment?",
-      bullets: [
-        "GMC-registered doctor with 20+ years of clinical experience",
-        "Former gynaecologist with deep understanding of facial anatomy",
-        "Conservative, natural-looking philosophy - results that whisper, not shout",
-        "Professional clinic on Woodstock Road, Oxford - discreet medical environment",
-        "Only premium, licensed botulinum toxin products used",
-        "Full consultation, treatment, and two-week follow-up included in price",
+        "Results begin at 3–7 days, full effect at 14 days. Free two-week follow-up included. Lasts 3–4 months.",
       ],
     },
   ],

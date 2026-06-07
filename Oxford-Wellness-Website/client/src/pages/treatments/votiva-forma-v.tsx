@@ -2,101 +2,40 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Votiva Forma V Vaginal Tightening Oxford | Dr. Inga Taganova",
-  metaDescription: "Votiva Forma V vaginal tightening in Oxford - non-surgical radiofrequency treatment for vaginal laxity, dryness, and intimate wellness. Former gynaecologist Dr. Taganova. Book consultation.",
+  metaDescription: "Votiva Forma V vaginal tightening in Oxford - non-surgical radiofrequency treatment for vaginal laxity, dryness, and intimate wellness. Formerly trained gynaecologist Dr. Taganova. Book consultation.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/votiva-forma-v-oxford",
   h1: "Votiva Forma V Vaginal Tightening in Oxford",
-  intro: "Votiva Forma V is a non-surgical radiofrequency treatment designed to address vaginal laxity, dryness, and intimate wellness concerns. Using advanced technology to gently heat vaginal tissue, it stimulates collagen remodeling and improves tissue tone, hydration, and function. Dr. Inga Taganova - a former gynaecologist and women's health specialist - delivers this treatment with clinical precision and sensitivity in a private, professional setting in Oxford.",
+  intro: "Non-surgical radiofrequency treatment for vaginal laxity, dryness, and intimate wellness. Stimulates collagen remodeling with no downtime.",
   sections: [
     {
       heading: "What Is Votiva Forma V?",
       paragraphs: [
-        "Votiva Forma V is a clinically-proven radiofrequency (RF) device specifically designed for internal vaginal rejuvenation. The treatment uses controlled thermal energy to gently heat the deeper layers of vaginal tissue, triggering the body's natural collagen production and tissue remodeling process.",
-        "Unlike surgical options, Votiva Forma V is non-invasive, requires no anesthesia, and involves no downtime. The treatment is comfortable, typically described as a gentle warming sensation, and takes approximately 20-30 minutes.",
-        "Forma V addresses the root cause of vaginal laxity and dryness - loss of collagen and elastin - by stimulating the body's own regenerative capacity. Results improve progressively over several weeks as new collagen is formed.",
+        "An FDA-cleared radiofrequency device for internal vaginal rejuvenation. Controlled thermal energy heats vaginal tissue, stimulating collagen production. Non-invasive, no anaesthesia, typically described as a gentle warmth. Sessions take 20–30 minutes.",
       ],
     },
     {
       heading: "What Does Votiva Forma V Treat?",
-      paragraphs: [
-        "Votiva Forma V is particularly effective for women experiencing:",
-      ],
       bullets: [
-        "Vaginal laxity or looseness (often post-childbirth)",
-        "Loss of vaginal tone and tightness",
-        "Vaginal dryness and discomfort",
+        "Vaginal laxity (often post-childbirth)",
+        "Dryness and reduced lubrication",
         "Reduced sensation during intimacy",
         "Mild stress urinary incontinence",
-        "Vulvovaginal atrophy (menopause-related tissue thinning)",
-        "Reduced natural lubrication",
-        "Discomfort or pain during intercourse",
-      ],
-      note: "Many women experience these changes after childbirth, during perimenopause or menopause, or as a natural part of aging. Dr. Taganova's background as a former gynaecologist means she understands the anatomy, physiology, and emotional impact of these concerns.",
-    },
-    {
-      heading: "How Does Votiva Forma V Work?",
-      paragraphs: [
-        "Votiva Forma V uses radiofrequency energy delivered via a specialized internal handpiece. The RF energy heats the vaginal tissue to a controlled therapeutic temperature, stimulating fibroblasts (collagen-producing cells) and triggering tissue remodeling.",
-        "Over the following weeks and months, the body produces new collagen and elastin, resulting in:",
-      ],
-      bullets: [
-        "Improved vaginal tightness and tone",
-        "Enhanced tissue thickness and elasticity",
-        "Increased natural lubrication and hydration",
-        "Better blood flow to the vaginal tissues",
-        "Improved sensation and comfort during intimacy",
-        "Reduction in mild urinary leakage symptoms",
+        "Menopause-related tissue thinning",
       ],
     },
     {
       heading: "The Treatment - What to Expect",
       paragraphs: [
-        "Your first appointment begins with a comprehensive consultation. Dr. Taganova will discuss your medical history, symptoms, and treatment goals in a private, confidential setting. She will explain the treatment process in detail and answer any questions you may have.",
-        "The treatment itself is performed with you lying comfortably on a treatment bed. A small internal handpiece is gently inserted into the vagina and delivers controlled radiofrequency energy. The sensation is typically described as a gentle, tolerable warmth - not painful.",
-        "Each session takes approximately 20-30 minutes. There is no anesthesia required, and you can return to normal activities immediately afterward. We recommend avoiding sexual intercourse for 2-3 days post-treatment.",
-        "Most patients require a course of 3 treatments spaced 4 weeks apart for optimal results, with annual maintenance sessions recommended thereafter.",
+        "A private consultation to assess your symptoms and suitability, followed by the RF treatment using an internal handpiece — most patients feel only mild warmth.",
+        "Return to normal activities immediately. Avoid sexual intercourse for 2–3 days. A course of 3 treatments, 4 weeks apart, is recommended.",
       ],
     },
     {
       heading: "Results and Timeline",
       paragraphs: [
-        "Many women notice some immediate improvement in tissue hydration and comfort. However, the most significant results develop gradually over 8-12 weeks as collagen remodeling takes place.",
-        "Typical improvements include better vaginal tone and tightness, increased natural lubrication, enhanced sensation during intimacy, and improved confidence. Results vary depending on individual concerns and baseline tissue quality.",
-        "Results typically last 12-18 months. Many patients choose to have an annual maintenance session to sustain the benefits.",
+        "Some hydration improvement may be noticed early; significant results develop over 8–12 weeks as collagen remodels. Results typically last 12–18 months. Can be combined with Neauvia N Rose for hydration.",
       ],
-    },
-    {
-      heading: "Is Votiva Forma V Safe?",
-      paragraphs: [
-        "Votiva Forma V is an FDA-cleared device with an established safety and efficacy profile. It has been used successfully worldwide for vaginal rejuvenation and intimate wellness.",
-        "The treatment is non-surgical, non-invasive, and does not require anesthesia. Side effects are minimal and may include mild temporary warmth or slight swelling, which resolves within a day or two.",
-        "Dr. Taganova performs a full medical assessment before treatment to ensure suitability and safety. Treatment is not recommended during pregnancy, active infection, or certain medical conditions.",
-      ],
-    },
-    {
-      heading: "Votiva Forma V vs Other Treatments",
-      paragraphs: [
-        "Votiva Forma V is one of several options for vaginal rejuvenation. It differs from injectable treatments like Neauvia N Rose, which use hyaluronic acid to restore tissue hydration and volume. Votiva uses radiofrequency energy to stimulate the body's own collagen production.",
-        "For some women, a combination approach - such as Votiva for tissue tightening plus injectable for hydration - may provide the most comprehensive result. Dr. Taganova can assess your individual needs and recommend the most appropriate treatment or combination.",
-      ],
-    },
-    {
-      heading: "Why Choose Dr. Taganova for Votiva Forma V?",
-      bullets: [
-        "Former gynaecologist with specialist training in women's intimate health",
-        "GMC-registered doctor (No. 4727817) with over 20 years of clinical experience",
-        "Specialist menopause lead - understands the hormonal context of vaginal changes",
-        "Private, discreet clinic in Oxford with ample free parking",
-        "Compassionate, non-judgmental care in a professional medical environment",
-        "All treatments performed personally by Dr. Taganova",
-        "Comprehensive assessment and personalized treatment planning",
-      ],
-    },
-    {
-      heading: "Who Is Suitable for This Treatment?",
-      paragraphs: [
-        "Votiva Forma V is suitable for most women experiencing vaginal laxity, dryness, or intimate wellness concerns. It is particularly beneficial for women who have given birth (vaginally or by caesarean), women experiencing perimenopausal or menopausal changes, and women seeking non-surgical vaginal rejuvenation.",
-        "Treatment is not suitable during pregnancy, if you have an active pelvic infection, certain pelvic conditions, or an implanted pacemaker or metal IUD. Dr. Taganova will assess your suitability during your initial consultation.",
-      ],
+      note: "Not suitable during pregnancy, active infection, or with certain implanted devices. Full medical assessment before treatment.",
     },
   ],
   pricing: [
@@ -148,7 +87,7 @@ const data: TreatmentPageData = {
   ],
   procedureSchema: {
     name: "Votiva Forma V Vaginal Tightening Oxford",
-    description: "Non-surgical radiofrequency vaginal rejuvenation treatment to improve vaginal tone, tightness, hydration and intimate wellness. Delivered by former gynaecologist Dr. Inga Taganova in Oxford.",
+    description: "Non-surgical radiofrequency vaginal rejuvenation treatment to improve vaginal tone, tightness, hydration and intimate wellness. Delivered by formerly trained gynaecologist Dr. Inga Taganova in Oxford.",
     bodyLocation: "Vaginal/intimate area",
   },
   relatedLinks: [

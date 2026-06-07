@@ -10,7 +10,7 @@ export default function About() {
   useBreadcrumbSchema([{ name: "About Dr. Taganova", path: "/about" }]);
   useSEO({
     title: "Dr. Inga Taganova | Menopause Specialist | GMC Doctor Oxford",
-    description: "Meet Dr. Inga Taganova - specialist menopause lead, GMC-registered GP with 20+ years experience. Former gynaecologist, women's health expert, and medical aesthetics specialist. Oxford's trusted women's wellness doctor.",
+    description: "Meet Dr. Inga Taganova - specialist menopause lead, GMC-registered GP with 20+ years experience. Formerly trained gynaecologist, women's health expert, and medical aesthetics specialist. Oxford's trusted women's wellness doctor.",
     canonical: "https://www.theoxfordwellnessdoctor.com/about",
   });
   return (
@@ -46,7 +46,7 @@ export default function About() {
                 "The best aesthetic results are the ones that whisper, not shout."
               </p>
               <p>
-                Dr Inga Taganova is a GMC-registered GP and specialist menopause lead with over 20 years of experience in women's health and medical aesthetics. As a former gynaecologist trained in the UK, France and Monaco, she brings unparalleled depth to menopause care, perimenopause support, and intimate health - while also offering expert medical aesthetics informed by her understanding of hormonal influences on skin and aging.
+                Dr Inga Taganova is a GMC-registered GP and specialist menopause lead with over 20 years of experience in women's health and medical aesthetics. As a formerly trained gynaecologist in the UK, France and Monaco, she brings unparalleled depth to menopause care, perimenopause support, and intimate health - while also offering expert medical aesthetics informed by her understanding of hormonal influences on skin and aging.
               </p>
               <p>
                 She strongly believes that the best approach to providing medical procedures is to deliver tailor-made treatments that are of the highest quality and safety, based on her expert knowledge in the cosmetic and wellness field.

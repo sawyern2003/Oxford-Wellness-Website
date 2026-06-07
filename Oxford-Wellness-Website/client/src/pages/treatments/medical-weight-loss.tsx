@@ -5,65 +5,38 @@ const data: TreatmentPageData = {
   metaDescription: "Wegovy & Mounjaro weight loss injections in Oxford. Medically supervised GLP-1 treatment by GMC-registered doctor. Safe, effective weight loss. Book consultation today.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/medical-weight-loss-oxford",
   h1: "Medical Weight Loss in Oxford - Wegovy, Mounjaro & GLP-1 Treatments",
-  intro: "GLP-1 receptor agonist medications have transformed the treatment of obesity and weight management. Wegovy (semaglutide) and Mounjaro (tirzepatide) are clinically proven, MHRA-approved medications that produce levels of weight loss previously only achievable through bariatric surgery. At The Oxford Wellness Doctor, Dr. Inga Taganova delivers medically supervised GLP-1 treatment with the clinical rigour and personal care that safe prescribing demands.",
+  intro: "Medically supervised Wegovy and Mounjaro GLP-1 injections for significant, sustained weight loss under close doctor monitoring.",
   sections: [
     {
       heading: "What Are GLP-1 Weight Loss Injections?",
       paragraphs: [
-        "GLP-1 (glucagon-like peptide-1) receptor agonists are a class of medications that mimic a natural gut hormone to regulate appetite, slow gastric emptying, and improve insulin sensitivity. The result is a significant and sustained reduction in caloric intake - leading to meaningful, progressive weight loss.",
-        "Both Wegovy and Mounjaro are administered as once-weekly self-injections using a simple pre-filled pen. They are MHRA-approved in the UK for weight management in adults with obesity or overweight combined with at least one weight-related health condition.",
+        "Once-weekly self-injections that reduce appetite and slow digestion. Both Wegovy (semaglutide) and Mounjaro (tirzepatide) are MHRA-approved for adults with obesity or overweight plus a weight-related health condition.",
       ],
     },
     {
-      heading: "Wegovy (Semaglutide)",
-      paragraphs: [
-        "Wegovy is a once-weekly semaglutide injection that acts on GLP-1 receptors in the brain to reduce hunger and increase feelings of fullness. Clinical trials (STEP programme) demonstrated an average weight loss of 15–17% of body weight over 68 weeks.",
-        "The dose is gradually escalated over 16–20 weeks to minimise side effects and maximise tolerability - starting at 0.25mg and increasing to the full maintenance dose of 2.4mg.",
-      ],
-    },
-    {
-      heading: "Mounjaro (Tirzepatide)",
-      paragraphs: [
-        "Mounjaro is the first dual GIP and GLP-1 receptor agonist - acting on two different gut hormone pathways simultaneously. This dual mechanism produces even greater appetite suppression and metabolic benefits than semaglutide alone.",
-        "Clinical trials (SURMOUNT programme) showed an average weight loss of 20–25% of body weight, with some patients losing over 30%. Mounjaro is also prescribed as a once-weekly self-injection, with gradual dose escalation from 2.5mg to a maximum of 15mg.",
-      ],
-    },
-    {
-      heading: "Wegovy vs Mounjaro - Which Is Right for You?",
-      tableHeaders: ["Feature", "Wegovy", "Mounjaro"],
+      heading: "Wegovy vs Mounjaro",
+      tableHeaders: ["", "Wegovy", "Mounjaro"],
       table: [
-        { col1: "Mechanism", col2: "GLP-1 receptor agonist", col3: "Dual GIP + GLP-1 agonist" },
-        { col1: "Average weight loss", col2: "15–17% body weight", col3: "20–25% body weight" },
-        { col1: "Dosing frequency", col2: "Once weekly", col3: "Once weekly" },
-        { col1: "UK approval", col2: "MHRA approved", col3: "MHRA approved" },
-        { col1: "Best for", col2: "First-line GLP-1 treatment", col3: "Greater weight loss needed" },
+        { col1: "Mechanism", col2: "GLP-1 agonist", col3: "Dual GIP + GLP-1" },
+        { col1: "Avg. weight loss", col2: "15–17%", col3: "20–25%" },
+        { col1: "Dosing", col2: "Weekly, escalated over 16–20 weeks", col3: "Weekly, escalated to 15mg max" },
       ],
-      paragraphs: ["Dr. Taganova will assess your individual health profile, goals, and medical history to determine which medication - if either - is most appropriate for you."],
+      paragraphs: ["Dr. Taganova will recommend the most appropriate option based on your health profile and goals."],
     },
     {
-      heading: "Who Can Have GLP-1 Weight Loss Treatment?",
-      paragraphs: ["GLP-1 medications are clinically indicated for adults who meet the following criteria:"],
+      heading: "Who Is Suitable?",
       bullets: [
-        "BMI ≥30 (obesity), or BMI ≥27 with at least one weight-related health condition",
-        "Weight-related conditions include type 2 diabetes, hypertension, dyslipidaemia, obstructive sleep apnoea, or cardiovascular disease",
-        "Have not responded adequately to diet and exercise alone",
-        "Are not pregnant or breastfeeding",
-        "Do not have a personal or family history of medullary thyroid carcinoma or MEN2",
+        "BMI ≥30, or BMI ≥27 with a weight-related condition",
+        "Not responded adequately to diet and exercise alone",
+        "Not pregnant or breastfeeding",
+        "No history of medullary thyroid carcinoma or MEN2",
       ],
     },
     {
-      heading: "The Treatment Process at The Oxford Wellness Doctor",
+      heading: "The Treatment Process",
       paragraphs: [
-        "Every patient begins with a comprehensive medical consultation with Dr. Taganova. She will review your full medical history, current medications, and weight history before discussing which treatment may be appropriate.",
-        "Baseline health screening is conducted, which may include blood pressure, BMI assessment, and relevant blood tests. A personalised treatment plan is then created, including medication, lifestyle guidance, and a schedule of monthly follow-up appointments.",
-        "Dr. Taganova monitors your progress closely throughout treatment - adjusting dosing as needed, managing side effects, and providing the holistic medical support that makes the difference between short-term weight loss and sustainable, long-term change.",
-      ],
-    },
-    {
-      heading: "Weight Loss, Women's Health & Menopause",
-      paragraphs: [
-        "Dr. Taganova's background as a former gynaecologist and current menopause lead gives her a unique perspective on weight management in women. Conditions such as PCOS, perimenopause, and menopause significantly affect metabolism, body composition, and the capacity to lose weight through diet and exercise alone.",
-        "GLP-1 medications can be particularly beneficial for women experiencing weight gain associated with hormonal changes. Dr. Taganova integrates her knowledge of women's health to provide a genuinely holistic approach to weight management - one that considers the whole person, not just the scales.",
+        "Full medical consultation and baseline screening, then a personalised plan with weekly self-injection and monthly follow-ups to monitor progress, manage side effects, and adjust dosing.",
+        "Particularly beneficial for women experiencing menopause- or PCOS-related weight gain, with holistic lifestyle support alongside medication.",
       ],
     },
   ],

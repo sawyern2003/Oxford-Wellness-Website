@@ -19,11 +19,11 @@ const servicesData = [
     faqs: [
       {
         q: "What makes Dr. Taganova qualified as a menopause specialist?",
-        a: "Dr. Taganova is a GMC-registered GP, former gynaecologist, and specialist menopause lead. She has over 20 years of experience in women's health and holds specialist menopause qualifications. Her background uniquely combines gynecological training, general practice experience, and aesthetic medicine expertise."
+        a: "Dr. Taganova is a GMC-registered GP, formerly trained gynaecologist, and specialist menopause lead. She has over 20 years of experience in women's health and holds specialist menopause qualifications. Her background uniquely combines gynecological training, general practice experience, and aesthetic medicine expertise."
       },
       {
         q: "Do you prescribe HRT at your Oxford clinic?",
-        a: "While we do not currently prescribe HRT at this clinic, Dr. Taganova provides comprehensive menopause assessments and can refer you to appropriate HRT prescribers if hormone therapy is clinically indicated. Her expertise as a former gynaecologist and specialist menopause lead means she can thoroughly assess your suitability for HRT and provide specialist referrals."
+        a: "While we do not currently prescribe HRT at this clinic, Dr. Taganova provides comprehensive menopause assessments and can refer you to appropriate HRT prescribers if hormone therapy is clinically indicated. Her expertise as a formerly trained gynaecologist and specialist menopause lead means she can thoroughly assess your suitability for HRT and provide specialist referrals."
       },
       {
         q: "What is perimenopause and when should I seek support?",
@@ -38,7 +38,7 @@ const servicesData = [
         desc: "Comprehensive 45-minute menopause assessment with specialist menopause lead Dr. Taganova - symptom evaluation, treatment planning, and holistic support.",
         details: {
           involves: "Full menopause/perimenopause assessment, symptom review, medical history, and personalized treatment plan.",
-          idealCandidate: "Women experiencing menopausal symptoms or entering perimenopause who want specialist-led care from a former gynaecologist.",
+          idealCandidate: "Women experiencing menopausal symptoms or entering perimenopause who want specialist-led care from a formerly trained gynaecologist.",
           duration: "45 minutes.",
           expectations: "Clear understanding of your symptoms, treatment options, and ongoing management plan."
         }
@@ -508,7 +508,7 @@ export default function Services() {
             Aesthetic &amp; Medical Treatments in Oxford
           </h1>
           <p className="text-muted-foreground font-light text-lg leading-relaxed">
-            Bespoke medical solutions delivered by Dr Inga Taganova - GMC-registered doctor, former gynaecologist, and Oxford's leading women's wellness specialist.
+            Bespoke medical solutions delivered by Dr Inga Taganova - GMC-registered doctor, formerly trained gynaecologist, and Oxford's leading women's wellness specialist.
           </p>
         </motion.div>
 
@@ -618,7 +618,7 @@ export default function Services() {
             {[
               {
                 title: "Medical Expertise You Can Trust",
-                body: "Dr Taganova is a GMC-registered GP (No. 4727817), a former gynaecologist, and a current practising NHS doctor with over 20 years of clinical experience in Oxford and Oxfordshire. Every treatment is carried out with the same rigour as her medical practice.",
+                body: "Dr Taganova is a GMC-registered GP (No. 4727817), a formerly trained gynaecologist, and a current practising NHS doctor with over 20 years of clinical experience in Oxford and Oxfordshire. Every treatment is carried out with the same rigour as her medical practice.",
               },
               {
                 title: "A Holistic, Patient-First Approach",

@@ -5,50 +5,33 @@ const data: TreatmentPageData = {
   metaDescription: "Profhilo skin booster treatment in Oxford. Injectable hyaluronic acid for skin hydration, firmness & radiance. GMC doctor. From £300. Book your consultation.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/profhilo-oxford",
   h1: "Profhilo in Oxford - Premium Skin Booster Treatment",
-  intro: "Profhilo is one of the most innovative skin treatments available today - and it is quite different from traditional dermal fillers. Rather than adding volume, Profhilo bio-remodels the skin from within, stimulating the production of collagen and elastin for lasting improvements in skin quality, firmness, and hydration.",
+  intro: "Pure hyaluronic acid bio-remodels skin from within — stimulating collagen and elastin for lasting hydration, firmness, and radiance.",
   sections: [
-    {
-      heading: "How Profhilo Works",
-      paragraphs: [
-        "Profhilo is an injectable treatment containing one of the highest concentrations of pure hyaluronic acid available - 64mg in a 2ml solution. Unlike standard dermal fillers, it has no added chemicals or cross-linking agents.",
-        "When injected, Profhilo disperses slowly through the tissue, hydrating the skin deeply and triggering a biological response that stimulates all four types of collagen as well as elastin. This is called bio-remodeling - and the results are a genuine improvement in skin quality, not just a temporary plumping effect.",
-      ],
-    },
     {
       heading: "What Profhilo Treats",
       bullets: [
-        "Skin laxity - improving firmness and elasticity",
-        "Fine lines - particularly surface lines caused by dehydration",
-        "Dehydrated, dull skin - restoring a healthy, luminous glow",
-        "Crepey skin texture on the face, neck, and décolletage",
-        "Loss of firmness in the lower face and jowl area",
-        "Ageing hands - restoring hydration and firmness",
+        "Skin laxity and loss of firmness",
+        "Fine lines from dehydration",
+        "Dull, dehydrated skin",
+        "Crepey texture on face and neck",
+        "Ageing hands",
       ],
-      note: "Profhilo is one of Dr. Taganova's most recommended treatments for patients in their 30s, 40s, and 50s looking for a natural, restorative result without added volume.",
     },
     {
       heading: "The Treatment Protocol",
       paragraphs: [
-        "Profhilo is delivered using the BAP (Bio Aesthetic Points) technique - five precise injection points on each side of the face. This strategic placement allows the product to spread evenly across the tissue for optimal coverage.",
-        "The standard protocol is two sessions, spaced four weeks apart. Each session takes approximately 15–20 minutes. There is very little discomfort and no downtime - most patients return to normal activities immediately.",
+        "Five injection points per side of the face (BAP technique). Two sessions, four weeks apart. 15–20 minutes each, no downtime.",
+        "Improvements from 2–4 weeks; peak results 4–6 weeks after the second session. Lasts around 6 months.",
       ],
     },
     {
-      heading: "Results Timeline",
-      paragraphs: [
-        "Most patients begin to notice improvements in skin hydration and texture within 2–4 weeks of the first session. The most significant results are seen 4–6 weeks after the second session, as collagen and elastin production peaks.",
-        "Results typically last around 6 months. A maintenance programme of two sessions per year is recommended to sustain the benefits. Many patients combine Profhilo with other treatments such as anti-wrinkle injections or Morpheus8 for a comprehensive skin health approach.",
-      ],
-    },
-    {
-      heading: "Profhilo vs Dermal Fillers vs Anti-Wrinkle Injections",
+      heading: "Profhilo vs Fillers vs Anti-Wrinkle",
       tableHeaders: ["Treatment", "Mechanism", "Best For"],
       table: [
-        { col1: "Profhilo", col2: "Bio-remodeling - stimulates collagen & elastin", col3: "Skin quality, hydration, firmness" },
-        { col1: "Dermal Fillers", col2: "Adds volume and structure with HA gel", col3: "Volume loss, deep folds, contouring" },
-        { col1: "Anti-Wrinkle Injections", col2: "Relaxes muscles to smooth dynamic lines", col3: "Expression lines, frown lines, crow's feet" },
+        { col1: "Profhilo", col2: "Stimulates collagen & elastin", col3: "Skin quality & hydration" },
+        { col1: "Fillers", col2: "Adds volume with HA gel", col3: "Volume loss & contouring" },
+        { col1: "Anti-wrinkle", col2: "Relaxes muscles", col3: "Expression lines" },
       ],
-      paragraphs: ["These three treatments work in entirely different ways and are highly complementary. Dr. Taganova will advise on the best combination for your individual goals during consultation."],
     },
   ],
   pricing: [

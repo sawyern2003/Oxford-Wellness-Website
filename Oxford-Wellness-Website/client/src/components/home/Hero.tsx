@@ -43,7 +43,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-base md:text-lg text-primary/75 mb-8 max-w-lg leading-relaxed">
-            Led by Dr. Inga Taganova - specialist menopause lead, GMC-registered GP, and former gynaecologist. Expert women's health care and aesthetic treatments in Oxford.
+            Led by Dr. Inga Taganova - specialist menopause lead, GMC-registered GP, and formerly trained gynaecologist. Expert women's health care and aesthetic treatments in Oxford.
           </p>
 
           {/* CTAs */}
@@ -85,7 +85,7 @@ export default function Hero() {
             </div>
             <div className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-3 py-2 border border-border/50">
               <Award size={14} className="text-secondary" />
-              <span className="text-xs text-primary uppercase tracking-wider">Former Gynaecologist</span>
+              <span className="text-xs text-primary uppercase tracking-wider">Formerly Trained Gynaecologist</span>
             </div>
             <div className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-3 py-2 border border-border/50">
               <Shield size={14} className="text-secondary" />

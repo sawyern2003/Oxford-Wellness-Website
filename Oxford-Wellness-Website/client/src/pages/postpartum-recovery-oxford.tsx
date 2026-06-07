@@ -2,10 +2,10 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Post-Birth Recovery & Vaginal Rejuvenation Oxford | Dr. Taganova",
-  metaDescription: "Post-birth recovery and vaginal rejuvenation in Oxford. Expert care for postpartum intimate health, pelvic floor concerns, and physical recovery after childbirth from former gynaecologist Dr. Inga Taganova.",
+  metaDescription: "Post-birth recovery and vaginal rejuvenation in Oxford. Expert care for postpartum intimate health, pelvic floor concerns, and physical recovery after childbirth from formerly trained gynaecologist Dr. Inga Taganova.",
   canonical: "https://www.theoxfordwellnessdoctor.com/postpartum-recovery-oxford",
   h1: "Post-Birth Recovery & Vaginal Rejuvenation in Oxford",
-  intro: "Childbirth changes your body in profound ways - and many of these changes affect intimate health, pelvic floor function, and physical confidence. Dr. Inga Taganova, a former gynaecologist with over 20 years of experience in women's health, provides specialist post-birth recovery care, including vaginal rejuvenation, intimate health treatments, and support for the physical effects of pregnancy and childbirth that are rarely discussed openly but deeply felt.",
+  intro: "Childbirth changes your body in profound ways - and many of these changes affect intimate health, pelvic floor function, and physical confidence. Dr. Inga Taganova, a formerly trained gynaecologist with over 20 years of experience in women's health, provides specialist post-birth recovery care, including vaginal rejuvenation, intimate health treatments, and support for the physical effects of pregnancy and childbirth that are rarely discussed openly but deeply felt.",
   sections: [
     {
       heading: "Common Postpartum Changes",
@@ -42,7 +42,7 @@ const data: TreatmentPageData = {
         "Her approach is sensitive, evidence-based, and non-judgmental. She recognizes that postpartum intimate health concerns are not cosmetic issues to be dismissed - they're real physical changes that affect quality of life, relationships, and self-esteem.",
       ],
       bullets: [
-        "Former qualified gynaecologist with hospital experience",
+        "Formerly trained gynaecologist with hospital experience",
         "Over 20 years of experience in women's health",
         "Specialist understanding of pelvic anatomy and postpartum changes",
         "GMC registered (No. 4727817) with an unblemished record",
@@ -173,7 +173,7 @@ const data: TreatmentPageData = {
   ],
   procedureSchema: {
     name: "Post-Birth Recovery & Vaginal Rejuvenation Consultation",
-    description: "Specialist post-birth recovery consultation with Dr. Inga Taganova - former gynaecologist and women's health expert - in Oxford. Expert treatment for postpartum intimate health concerns, vaginal rejuvenation, and pelvic floor support.",
+    description: "Specialist post-birth recovery consultation with Dr. Inga Taganova - formerly trained gynaecologist and women's health expert - in Oxford. Expert treatment for postpartum intimate health concerns, vaginal rejuvenation, and pelvic floor support.",
   },
   relatedLinks: [
     { label: "Women's Health Hub", href: "/womens-health-oxford" },

@@ -1,10 +1,26 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, ChevronUp, ArrowRight, Phone, Mail } from "lucide-react";
+import {
+  ChevronDown,
+  ChevronUp,
+  ArrowRight,
+  Phone,
+  Mail,
+  Calendar,
+  Hourglass,
+  BedDouble,
+  ClipboardList,
+  Syringe,
+  Timer,
+  Stethoscope,
+  Briefcase,
+  type LucideIcon,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import FadeIn from "@/components/animations/FadeIn";
 import { useSEO } from "@/hooks/useSEO";
+import { getTreatmentGlance, type AtAGlanceItem, type AtAGlanceIcon } from "@/data/treatmentGlance";
 
 export interface PricingItem {
   name: string;
@@ -25,12 +41,18 @@ export interface FAQItem {
   a: string;
 }
 
+export type { AtAGlanceItem, AtAGlanceIcon };
+
 export interface TreatmentPageData {
   title: string;
   metaDescription: string;
   canonical: string;
   h1: string;
   intro: string;
+  treatmentName?: string;
+  summary?: string;
+  highlights?: string[];
+  atAGlance?: AtAGlanceItem[];
   sections: ContentSection[];
   pricing: PricingItem[];
   faqs: FAQItem[];
@@ -42,19 +64,34 @@ export interface TreatmentPageData {
   relatedLinks?: { label: string; href: string }[];
 }
 
+const GLANCE_ICONS: Record<AtAGlanceIcon, LucideIcon> = {
+  calendar: Calendar,
+  hourglass: Hourglass,
+  bed: BedDouble,
+  clipboard: ClipboardList,
+  syringe: Syringe,
+  timer: Timer,
+  stethoscope: Stethoscope,
+  briefcase: Briefcase,
+};
+
+const PROMO_SECTION = /why choose|why doctor|why a gmc|why the oxford/i;
+const BOOKING_FAQ = /how do i book/i;
+
 function FAQAccordion({ faqs }: { faqs: FAQItem[] }) {
-  const [openIdx, setOpenIdx] = useState<number | null>(null);
+  const [openIdx, setOpenIdx] = useState<number | null>(0);
+
   return (
-    <div className="divide-y divide-border border border-border">
+    <div className="divide-y divide-border">
       {faqs.map((faq, i) => (
         <div key={i}>
           <button
             data-testid={`faq-${i}`}
-            className="w-full text-left px-6 py-4 flex items-start justify-between gap-4 group"
+            className="w-full text-left py-4 flex items-start justify-between gap-4 group"
             onClick={() => setOpenIdx(openIdx === i ? null : i)}
             aria-expanded={openIdx === i}
           >
-            <span className="font-serif text-base text-primary leading-snug group-hover:text-secondary transition-colors">
+            <span className="font-serif text-base text-primary leading-snug group-hover:text-secondary transition-colors pr-4">
               {faq.q}
             </span>
             {openIdx === i ? (
@@ -69,10 +106,10 @@ function FAQAccordion({ faqs }: { faqs: FAQItem[] }) {
                 initial={{ height: 0, opacity: 0 }}
                 animate={{ height: "auto", opacity: 1 }}
                 exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.25 }}
                 className="overflow-hidden"
               >
-                <p className="px-6 pb-4 text-muted-foreground text-sm leading-relaxed">{faq.a}</p>
+                <p className="pb-4 text-muted-foreground text-sm leading-relaxed max-w-2xl">{faq.a}</p>
               </motion.div>
             )}
           </AnimatePresence>
@@ -82,7 +119,60 @@ function FAQAccordion({ faqs }: { faqs: FAQItem[] }) {
   );
 }
 
+function AtAGlanceCard({ item }: { item: AtAGlanceItem }) {
+  const Icon = GLANCE_ICONS[item.icon];
+  return (
+    <div className="border border-border bg-white p-4 flex flex-col justify-between min-h-[100px]">
+      <div>
+        <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground mb-1">
+          {item.label}
+        </p>
+        <p className="text-sm font-medium text-primary leading-snug">{item.value}</p>
+      </div>
+      <Icon size={18} className="text-primary/30 mt-3" strokeWidth={1.5} />
+    </div>
+  );
+}
+
+function extractHighlights(sections: ContentSection[]): string[] {
+  const section = sections.find(
+    (s) => s.bullets?.length && /what|treat|benefit|concern|area|who is/i.test(s.heading)
+  );
+  return section?.bullets?.slice(0, 5) ?? [];
+}
+
+function extractProcedureSteps(sections: ContentSection[]): string[] {
+  const section = sections.find((s) => /procedure|what to expect|treatment process|the treatment/i.test(s.heading));
+  if (!section) return [];
+
+  const steps: string[] = [];
+  if (section.paragraphs?.[0]) steps.push(section.paragraphs[0]);
+  if (section.paragraphs?.[1]) steps.push(section.paragraphs[1]);
+  if (steps.length < 2 && section.bullets?.length) {
+    steps.push(...section.bullets.slice(0, 3 - steps.length));
+  }
+  return steps.slice(0, 3);
+}
+
+function filterFaqs(faqs: FAQItem[]): FAQItem[] {
+  return faqs.filter((f) => !BOOKING_FAQ.test(f.q)).slice(0, 5);
+}
+
+function filterSections(sections: ContentSection[]): ContentSection[] {
+  return sections.filter((s) => !PROMO_SECTION.test(s.heading));
+}
+
 export default function TreatmentPageTemplate({ data }: { data: TreatmentPageData }) {
+  const glance = getTreatmentGlance(data.canonical);
+  const treatmentName = data.treatmentName ?? glance?.treatmentName ?? data.h1.split(" in Oxford")[0];
+  const summary = data.summary ?? glance?.summary ?? data.intro;
+  const atAGlance = data.atAGlance ?? glance?.atAGlance ?? [];
+  const highlights = (data.highlights ?? glance?.highlights ?? extractHighlights(data.sections)).slice(0, 5);
+  const procedureSteps = extractProcedureSteps(data.sections);
+  const displayFaqs = filterFaqs(data.faqs);
+  const detailSections = filterSections(data.sections);
+  const [detailsOpen, setDetailsOpen] = useState(false);
+
   useSEO({
     title: data.title,
     description: data.metaDescription,
@@ -149,125 +239,225 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
   }, [data]);
 
   return (
-    <div className="pt-32 min-h-screen bg-background">
+    <div className="pt-28 min-h-screen bg-background">
       {/* Hero */}
-      <section className="bg-primary text-primary-foreground py-20 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 transform translate-x-1/2" />
-        <div className="container mx-auto px-6 relative z-10 max-w-4xl">
+      <section className="bg-white border-b border-border">
+        <div className="container mx-auto px-6 py-10 md:py-12 max-w-4xl">
           <FadeIn direction="up">
-            <nav className="text-xs uppercase tracking-widest text-secondary/70 mb-6 flex items-center gap-2">
-              <Link href="/treatments" className="hover:text-secondary transition-colors">Treatments</Link>
+            <nav className="text-[10px] uppercase tracking-widest text-muted-foreground mb-5 flex items-center gap-2">
+              <Link href="/treatments" className="hover:text-primary transition-colors">Treatments</Link>
               <span>/</span>
-              <span className="text-secondary/50">{data.procedureSchema.name}</span>
+              <span>{treatmentName}</span>
             </nav>
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">{data.h1}</h1>
-            <p className="text-lg font-light opacity-90 leading-relaxed max-w-2xl">{data.intro}</p>
-            <div className="flex flex-col sm:flex-row gap-4 mt-8">
+
+            <h1 className="font-serif text-4xl md:text-5xl text-primary mb-4">
+              {treatmentName}
+            </h1>
+
+            <p className="text-sm text-muted-foreground mb-5">
+              Dr. Inga Taganova · GMC No. 4727817
+            </p>
+
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mb-8">
+              {summary}
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-3">
               <Button
                 data-testid="hero-book-btn"
-                className="bg-secondary text-primary hover:bg-secondary/90 rounded-none px-8 uppercase tracking-widest text-sm"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-none px-8 uppercase tracking-widest text-xs"
                 onClick={() => window.open("https://www.glowday.com/clinic/the-oxford-wellness-doctor", "_blank")}
               >
-                Book a Consultation
+                Book Consultation
               </Button>
               <Button
                 data-testid="hero-enquire-btn"
                 variant="outline"
-                className="border-white/40 text-white hover:bg-white/10 rounded-none px-8 uppercase tracking-widest text-sm"
+                className="rounded-none px-8 uppercase tracking-widest text-xs"
                 onClick={() => window.location.href = "/contact"}
               >
-                Enquire Discreetly
+                Enquire
               </Button>
             </div>
           </FadeIn>
         </div>
       </section>
 
-      {/* Main Content */}
-      <section className="py-16">
-        <div className="container mx-auto px-6 max-w-4xl">
-          <div className="space-y-14">
-            {data.sections.map((section, i) => (
-              <FadeIn key={i} direction="up" delay={i * 0.05}>
-                <div>
-                  <h2 className="font-serif text-2xl md:text-3xl text-primary mb-4">{section.heading}</h2>
-                  {section.paragraphs?.map((p, j) => (
-                    <p key={j} className="text-muted-foreground leading-relaxed mb-3">{p}</p>
-                  ))}
-                  {section.bullets && (
-                    <ul className="space-y-2 mt-3">
-                      {section.bullets.map((b, j) => (
-                        <li key={j} className="flex items-start gap-3 text-muted-foreground">
-                          <span className="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0 mt-2" />
-                          <span className="leading-relaxed">{b}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                  {section.table && (
-                    <div className="mt-4 overflow-x-auto">
-                      <table className="w-full border-collapse text-sm">
-                        {section.tableHeaders && (
-                          <thead>
-                            <tr className="bg-primary text-primary-foreground">
-                              {section.tableHeaders.map((h, j) => (
-                                <th key={j} className="px-4 py-3 text-left font-medium uppercase tracking-wider text-xs">{h}</th>
-                              ))}
-                            </tr>
-                          </thead>
-                        )}
-                        <tbody>
-                          {section.table.map((row, j) => (
-                            <tr key={j} className={j % 2 === 0 ? "bg-background" : "bg-primary/3"}>
-                              <td className="px-4 py-3 text-muted-foreground border-b border-border font-medium">{row.col1}</td>
-                              <td className="px-4 py-3 text-muted-foreground border-b border-border">{row.col2}</td>
-                              {row.col3 && <td className="px-4 py-3 text-muted-foreground border-b border-border">{row.col3}</td>}
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  )}
-                  {section.note && (
-                    <div className="mt-4 bg-primary/5 border-l-2 border-secondary px-4 py-3">
-                      <p className="text-sm text-primary/80">{section.note}</p>
-                    </div>
-                  )}
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-
-          {/* Pricing */}
-          <FadeIn direction="up" className="mt-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-primary mb-6">Pricing</h2>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-              {data.pricing.map((item, i) => (
-                <div key={i} className="border border-border p-6 text-center">
-                  <p className="text-sm text-muted-foreground uppercase tracking-widest mb-2">{item.name}</p>
-                  <p className="font-serif text-2xl italic text-primary">{item.price}</p>
-                </div>
+      {/* At a glance */}
+      {atAGlance.length > 0 && (
+        <section className="bg-muted/20 border-b border-border py-8">
+          <div className="container mx-auto px-6 max-w-4xl">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              {atAGlance.map((item, i) => (
+                <AtAGlanceCard key={i} item={item} />
               ))}
             </div>
-            <p className="text-xs text-muted-foreground mt-4">All prices include full consultation. A free two-week follow-up is included with every treatment.</p>
-          </FadeIn>
+          </div>
+        </section>
+      )}
 
-          {/* FAQ */}
-          <FadeIn direction="up" className="mt-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-primary mb-6">Frequently Asked Questions</h2>
-            <FAQAccordion faqs={data.faqs} />
-          </FadeIn>
+      {/* What it treats + pricing */}
+      <section className="py-12 md:py-14 bg-white">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <div className="grid md:grid-cols-2 gap-10">
+            {highlights.length > 0 && (
+              <FadeIn direction="up">
+                <h2 className="font-serif text-2xl text-primary mb-4">What it treats</h2>
+                <ul className="space-y-2">
+                  {highlights.map((item, i) => (
+                    <li key={i} className="flex items-start gap-2.5 text-sm text-muted-foreground">
+                      <span className="w-1 h-1 rounded-full bg-secondary flex-shrink-0 mt-2" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </FadeIn>
+            )}
 
-          {/* Related Links */}
+            {procedureSteps.length > 0 && (
+              <FadeIn direction="up" delay={0.05}>
+                <h2 className="font-serif text-2xl text-primary mb-4">What to expect</h2>
+                <ol className="space-y-3">
+                  {procedureSteps.map((step, i) => (
+                    <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed">
+                      <span className="font-serif text-secondary text-lg leading-none mt-0.5">{i + 1}.</span>
+                      {step}
+                    </li>
+                  ))}
+                </ol>
+              </FadeIn>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing */}
+      {data.pricing.length > 0 && (
+        <section className="py-10 bg-muted/20 border-y border-border">
+          <div className="container mx-auto px-6 max-w-4xl">
+            <FadeIn direction="up">
+              <h2 className="font-serif text-2xl text-primary mb-6">Pricing</h2>
+              <div className="space-y-2">
+                {data.pricing.map((item, i) => (
+                  <div key={i} className="flex justify-between items-center gap-4 py-3 border-b border-border last:border-0">
+                    <p className="text-sm text-muted-foreground">{item.name}</p>
+                    <p className="font-serif text-lg text-primary whitespace-nowrap">{item.price}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-muted-foreground mt-4">
+                Includes consultation. Free two-week follow-up with every treatment.
+              </p>
+              <Link href="/pricing" className="inline-flex items-center gap-1 text-xs text-secondary hover:text-primary mt-3 transition-colors">
+                View all pricing <ArrowRight size={12} />
+              </Link>
+            </FadeIn>
+          </div>
+        </section>
+      )}
+
+      {/* FAQs */}
+      {displayFaqs.length > 0 && (
+        <section className="py-12 md:py-14 bg-white">
+          <div className="container mx-auto px-6 max-w-4xl">
+            <FadeIn direction="up">
+              <h2 className="font-serif text-2xl text-primary mb-6">Common questions</h2>
+              <FAQAccordion faqs={displayFaqs} />
+            </FadeIn>
+          </div>
+        </section>
+      )}
+
+      {/* Collapsible detail for SEO */}
+      {detailSections.length > 0 && (
+        <section className="py-8 bg-muted/20 border-t border-border">
+          <div className="container mx-auto px-6 max-w-4xl">
+            <button
+              type="button"
+              onClick={() => setDetailsOpen(!detailsOpen)}
+              className="w-full flex items-center justify-between text-left group py-2"
+            >
+              <span className="font-serif text-lg text-primary">More about this treatment</span>
+              {detailsOpen ? (
+                <ChevronUp size={18} className="text-muted-foreground" />
+              ) : (
+                <ChevronDown size={18} className="text-muted-foreground" />
+              )}
+            </button>
+            <AnimatePresence>
+              {detailsOpen && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  className="overflow-hidden"
+                >
+                  <div className="space-y-8 pt-6">
+                    {detailSections.map((section, i) => (
+                      <div key={i}>
+                        <h3 className="font-serif text-lg text-primary mb-2">{section.heading}</h3>
+                        {section.paragraphs?.map((p, j) => (
+                          <p key={j} className="text-muted-foreground leading-relaxed mb-2 text-sm">{p}</p>
+                        ))}
+                        {section.bullets && (
+                          <ul className="space-y-1.5 mt-2">
+                            {section.bullets.map((b, j) => (
+                              <li key={j} className="flex items-start gap-2 text-muted-foreground text-sm">
+                                <span className="w-1 h-1 rounded-full bg-secondary flex-shrink-0 mt-2" />
+                                {b}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                        {section.table && (
+                          <div className="mt-3 overflow-x-auto">
+                            <table className="w-full border-collapse text-sm">
+                              {section.tableHeaders && (
+                                <thead>
+                                  <tr className="bg-primary text-primary-foreground">
+                                    {section.tableHeaders.map((h, j) => (
+                                      <th key={j} className="px-3 py-2 text-left font-medium uppercase tracking-wider text-xs">{h}</th>
+                                    ))}
+                                  </tr>
+                                </thead>
+                              )}
+                              <tbody>
+                                {section.table.map((row, j) => (
+                                  <tr key={j} className={j % 2 === 0 ? "bg-background" : "bg-primary/3"}>
+                                    <td className="px-3 py-2 text-muted-foreground border-b border-border font-medium">{row.col1}</td>
+                                    <td className="px-3 py-2 text-muted-foreground border-b border-border">{row.col2}</td>
+                                    {row.col3 && <td className="px-3 py-2 text-muted-foreground border-b border-border">{row.col3}</td>}
+                                  </tr>
+                                ))}
+                              </tbody>
+                            </table>
+                          </div>
+                        )}
+                        {section.note && (
+                          <p className="mt-3 text-sm text-primary/70 border-l-2 border-secondary pl-3">{section.note}</p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+        </section>
+      )}
+
+      {/* Related + CTA */}
+      <section className="bg-primary text-primary-foreground py-14">
+        <div className="container mx-auto px-6 max-w-4xl">
           {data.relatedLinks && data.relatedLinks.length > 0 && (
-            <FadeIn direction="up" className="mt-14">
-              <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">Related Treatments</p>
-              <div className="flex flex-wrap gap-3">
+            <FadeIn direction="up" className="mb-10">
+              <p className="text-xs uppercase tracking-widest text-primary-foreground/60 mb-3">Related</p>
+              <div className="flex flex-wrap gap-2">
                 {data.relatedLinks.map((link, i) => (
                   <Link
                     key={i}
                     href={link.href}
-                    className="inline-flex items-center gap-1.5 text-sm text-primary border border-primary/30 hover:border-primary hover:text-secondary px-4 py-2 transition-all"
+                    className="inline-flex items-center gap-1.5 text-sm border border-white/25 hover:border-secondary hover:text-secondary px-3 py-1.5 transition-all"
                   >
                     {link.label} <ArrowRight size={12} />
                   </Link>
@@ -275,39 +465,20 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
               </div>
             </FadeIn>
           )}
-        </div>
-      </section>
 
-      {/* Why Choose Us */}
-      <section className="bg-primary text-primary-foreground py-16">
-        <div className="container mx-auto px-6 max-w-5xl">
           <FadeIn direction="up">
-            <h2 className="font-serif text-3xl text-center mb-10">Why Choose The Oxford Wellness Doctor?</h2>
-          </FadeIn>
-          <div className="grid md:grid-cols-3 gap-8 mb-10">
-            {[
-              { title: "GMC-Registered Doctor", body: "Every treatment is carried out personally by Dr. Inga Taganova - a GMC-registered GP (No. 4727817) with 20+ years of medical experience. Your safety is always the priority." },
-              { title: "Medical Precision", body: "As a former gynaecologist and current NHS GP, Dr. Taganova brings exceptional anatomical knowledge and clinical rigour to every aesthetic treatment." },
-              { title: "Discreet Oxford Clinic", body: "Our private clinic in Oxford offers a calm, confidential setting in a professional medical environment. Open Friday evenings and Saturday mornings for your convenience." },
-            ].map((item, i) => (
-              <FadeIn key={i} direction="up" delay={i * 0.1}>
-                <div>
-                  <div className="w-8 h-0.5 bg-secondary mb-4" />
-                  <h3 className="font-serif text-lg mb-2">{item.title}</h3>
-                  <p className="text-primary-foreground/80 text-sm leading-relaxed font-light">{item.body}</p>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-          <div className="text-center space-y-4">
+            <h2 className="font-serif text-2xl mb-3">Book your consultation</h2>
+            <p className="text-primary-foreground/80 text-sm mb-6 max-w-lg">
+              Every treatment is delivered personally by Dr. Inga Taganova — GMC-registered doctor with 20+ years in women's health.
+            </p>
             <Button
               data-testid="footer-book-btn"
               className="bg-secondary text-primary hover:bg-secondary/90 rounded-none px-10 uppercase tracking-widest text-sm"
               onClick={() => window.open("https://www.glowday.com/clinic/the-oxford-wellness-doctor", "_blank")}
             >
-              Book Your Consultation in Oxford
+              Book Now
             </Button>
-            <div className="flex items-center justify-center gap-6 pt-4 text-sm text-primary-foreground/70">
+            <div className="flex flex-wrap items-center gap-5 pt-5 text-sm text-primary-foreground/70">
               <a href="tel:+4407739309380" className="flex items-center gap-2 hover:text-secondary transition-colors">
                 <Phone size={14} /> 07739 309380
               </a>
@@ -315,7 +486,7 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
                 <Mail size={14} /> info@theoxfordwellnessdoctor.com
               </a>
             </div>
-          </div>
+          </FadeIn>
         </div>
       </section>
     </div>

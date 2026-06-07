@@ -1,11 +1,11 @@
 import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatments/TreatmentPageTemplate";
 
 const data: TreatmentPageData = {
-  title: "Sexual Wellness & Intimate Health Oxford | Former Gynaecologist | Dr. Taganova",
-  metaDescription: "Discreet sexual wellness and intimate health care in Oxford. Expert treatment for vaginal dryness, discomfort, and intimate concerns from former gynaecologist Dr. Inga Taganova. Book confidentially.",
+  title: "Sexual Wellness & Intimate Health Oxford | Formerly Trained Gynaecologist | Dr. Taganova",
+  metaDescription: "Discreet sexual wellness and intimate health care in Oxford. Expert treatment for vaginal dryness, discomfort, and intimate concerns from formerly trained gynaecologist Dr. Inga Taganova. Book confidentially.",
   canonical: "https://www.theoxfordwellnessdoctor.com/sexual-wellness-oxford",
-  h1: "Sexual Wellness & Intimate Health in Oxford - Specialist Care from a Former Gynaecologist",
-  intro: "Sexual wellness and intimate health concerns are common during and after menopause, yet they're rarely discussed openly. Dr. Inga Taganova, a former gynaecologist and specialist menopause lead, provides expert, discreet care for women experiencing vaginal dryness, discomfort, pain during intercourse, loss of libido, and other intimate health concerns. With over 20 years of experience in women's health, she approaches these sensitive topics with empathy, clinical expertise, and effective solutions.",
+  h1: "Sexual Wellness & Intimate Health in Oxford - Specialist Care from a Formerly Trained Gynaecologist",
+  intro: "Sexual wellness and intimate health concerns are common during and after menopause, yet they're rarely discussed openly. Dr. Inga Taganova, a formerly trained gynaecologist and specialist menopause lead, provides expert, discreet care for women experiencing vaginal dryness, discomfort, pain during intercourse, loss of libido, and other intimate health concerns. With over 20 years of experience in women's health, she approaches these sensitive topics with empathy, clinical expertise, and effective solutions.",
   sections: [
     {
       heading: "Common Sexual Wellness Concerns",
@@ -66,7 +66,7 @@ const data: TreatmentPageData = {
         "Her approach is sensitive, respectful, and non-judgmental. She has spent two decades helping women with intimate health concerns and understands the physical, emotional, and psychological dimensions of these issues.",
       ],
       bullets: [
-        "Former qualified gynaecologist with hospital experience",
+        "Formerly trained gynaecologist with hospital experience",
         "Specialist menopause lead with extensive training",
         "Over 20 years of experience in women's health",
         "GMC registered (No. 4727817) with an unblemished record",
@@ -104,7 +104,7 @@ const data: TreatmentPageData = {
   faqs: [
     {
       q: "Is intimate health treatment embarrassing to discuss?",
-      a: "Not at all. Dr. Taganova is a former gynaecologist who has spent two decades discussing intimate health concerns with women. She approaches these topics with sensitivity, professionalism, and complete discretion. You won't be judged - you'll be listened to and helped.",
+      a: "Not at all. Dr. Taganova is a formerly trained gynaecologist who has spent two decades discussing intimate health concerns with women. She approaches these topics with sensitivity, professionalism, and complete discretion. You won't be judged - you'll be listened to and helped.",
     },
     {
       q: "Is Neauvia N Rose intimate rejuvenation safe?",
@@ -141,7 +141,7 @@ const data: TreatmentPageData = {
   ],
   procedureSchema: {
     name: "Sexual Wellness & Intimate Health Consultation",
-    description: "Discreet intimate health consultation with Dr. Inga Taganova - former gynaecologist and women's health specialist - in Oxford. Expert treatment for vaginal dryness, discomfort, and sexual wellness concerns.",
+    description: "Discreet intimate health consultation with Dr. Inga Taganova - formerly trained gynaecologist and women's health specialist - in Oxford. Expert treatment for vaginal dryness, discomfort, and sexual wellness concerns.",
   },
   relatedLinks: [
     { label: "Menopause Clinic", href: "/menopause-clinic-oxford" },
