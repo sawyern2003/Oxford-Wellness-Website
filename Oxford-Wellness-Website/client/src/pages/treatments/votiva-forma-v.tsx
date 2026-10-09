@@ -2,7 +2,7 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Votiva Forma V Vaginal Tightening Oxford | Dr. Inga Taganova",
-  metaDescription: "Votiva Forma V vaginal tightening in Oxford - non-surgical radiofrequency treatment for vaginal laxity, dryness, and intimate wellness. Formerly trained gynaecologist Dr. Taganova. Book consultation.",
+  metaDescription: "Votiva Forma V vaginal tightening in Oxford - non-surgical radiofrequency treatment for vaginal laxity, dryness, and intimate wellness. Formally trained gynaecologist Dr. Taganova. Book consultation.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/votiva-forma-v-oxford",
   h1: "Votiva Forma V Vaginal Tightening in Oxford",
   intro: "Non-surgical radiofrequency treatment for vaginal laxity, dryness, and intimate wellness. Stimulates collagen remodeling with no downtime.",
@@ -26,7 +26,7 @@ const data: TreatmentPageData = {
     {
       heading: "The Treatment - What to Expect",
       paragraphs: [
-        "A private consultation to assess your symptoms and suitability, followed by the RF treatment using an internal handpiece — most patients feel only mild warmth.",
+        "A private consultation to assess your symptoms and suitability, followed by the RF treatment using an internal handpiece – most patients feel only mild warmth.",
         "Return to normal activities immediately. Avoid sexual intercourse for 2–3 days. A course of 3 treatments, 4 weeks apart, is recommended.",
       ],
     },
@@ -82,12 +82,12 @@ const data: TreatmentPageData = {
     },
     {
       q: "How do I book?",
-      a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at 3 Woodstock Rd, Oxford OX2 6HA.",
+      a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ.",
     },
   ],
   procedureSchema: {
     name: "Votiva Forma V Vaginal Tightening Oxford",
-    description: "Non-surgical radiofrequency vaginal rejuvenation treatment to improve vaginal tone, tightness, hydration and intimate wellness. Delivered by formerly trained gynaecologist Dr. Inga Taganova in Oxford.",
+    description: "Non-surgical radiofrequency vaginal rejuvenation treatment to improve vaginal tone, tightness, hydration and intimate wellness. Delivered by formally trained gynaecologist Dr. Inga Taganova in Oxford.",
     bodyLocation: "Vaginal/intimate area",
   },
   relatedLinks: [

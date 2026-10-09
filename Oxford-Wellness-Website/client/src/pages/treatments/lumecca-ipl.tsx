@@ -69,7 +69,7 @@ const data: TreatmentPageData = {
     { q: "What should I avoid before and after IPL?", a: "Avoid sun exposure, tanning, and self-tan for at least 4 weeks before treatment. After treatment, use high-SPF sun protection daily. Avoid active retinoids for a week post-treatment." },
     { q: "Will my pigmentation get worse before it gets better?", a: "Yes - this is normal and expected. Pigmented lesions will darken for 3–7 days post-treatment before flaking away, revealing clearer skin beneath." },
     { q: "Can IPL be combined with other treatments?", a: "Yes. IPL pairs well with Profhilo, skin boosters, and chemical peels for a comprehensive skin rejuvenation programme. Dr. Taganova will advise on the best combination and sequencing for your goals." },
-    { q: "How do I book?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at 3 Woodstock Rd, Oxford OX2 6HA." },
+    { q: "How do I book?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ." },
   ],
   procedureSchema: {
     name: "Lumecca IPL Oxford",

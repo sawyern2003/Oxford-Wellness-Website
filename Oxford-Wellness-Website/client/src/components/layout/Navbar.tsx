@@ -1,288 +1,248 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown } from "lucide-react";
-import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
+import { isPainRoute, PAIN_BOOK_HREF, PAIN_CONTACT_HREF, SHOW_PAIN_DOCTOR } from "@/lib/brand";
+import HowCanWeHelp from "@/components/layout/HowCanWeHelp";
+import { helpPathHrefs } from "@/data/helpPaths";
 
-type NavLink = {
-  name: string;
-  href: string;
-  dropdown?: { name: string; href: string }[];
-};
-
-const mainLinks: NavLink[] = [
-  { name: "Home", href: "/" },
+const wellnessNavLinks = [
   { name: "About", href: "/about" },
-  {
-    name: "Women's Health",
-    href: "/womens-health-oxford",
-    dropdown: [
-      { name: "Women's Health Hub", href: "/womens-health-oxford" },
-      { name: "Menopause Clinic", href: "/menopause-clinic-oxford" },
-      { name: "Perimenopause Support", href: "/perimenopause-oxford" },
-      { name: "Post-Birth Recovery", href: "/postpartum-recovery-oxford" },
-      { name: "Intimate Health", href: "/sexual-wellness-oxford" },
-      { name: "Neauvia N Rose Injectable", href: "/treatments/neauvia-n-rose-intimate-rejuvenation-oxford" },
-      { name: "Votiva Forma V", href: "/treatments/votiva-forma-v-oxford" },
-    ],
-  },
-  {
-    name: "Aesthetic Treatments",
-    href: "/treatments",
-    dropdown: [
-      { name: "Anti-Wrinkle Injections", href: "/treatments/anti-wrinkle-injections-oxford" },
-      { name: "Dermal Fillers", href: "/treatments/dermal-fillers-oxford" },
-      { name: "Lip Fillers", href: "/treatments/lip-fillers-oxford" },
-      { name: "Profhilo", href: "/treatments/profhilo-oxford" },
-      { name: "Morpheus8", href: "/treatments/morpheus8-oxford" },
-      { name: "Skin Boosters", href: "/treatments/skin-boosters-oxford" },
-      { name: "Chemical Peels", href: "/treatments/chemical-peels-oxford" },
-      { name: "Forma Facelift", href: "/treatments/forma-facelift-oxford" },
-      { name: "Forma Plus Body", href: "/treatments/forma-plus-body-contouring-oxford" },
-      { name: "InMode FX", href: "/treatments/inmode-fx-skin-tightening-oxford" },
-      { name: "Lumecca IPL", href: "/treatments/lumecca-ipl-oxford" },
-      { name: "Excessive Sweating", href: "/treatments/excessive-sweating-treatment-oxford" },
-      { name: "Filler Dissolving", href: "/treatments/filler-dissolving-oxford" },
-      { name: "Jaw Slimming", href: "/treatments/jaw-slimming-teeth-grinding-oxford" },
-    ],
-  },
-  { name: "Pricing", href: "/pricing" },
-  { name: "Blog", href: "/blog" },
-  { name: "Pre-Consult", href: "/ai-consultation" },
-  { name: "Shop", href: "/shop" },
-  { name: "Contact", href: "/contact" },
+  { name: "Journal", href: "/blog" },
+  ...(SHOW_PAIN_DOCTOR ? [{ name: "Pain Doctor", href: "/oxford-pain-doctor" }] : []),
 ];
 
-const mobileLinks: NavLink[] = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  {
-    name: "Women's Health",
-    href: "/womens-health-oxford",
-    dropdown: [
-      { name: "Women's Health Hub", href: "/womens-health-oxford" },
-      { name: "Menopause Clinic", href: "/menopause-clinic-oxford" },
-      { name: "Perimenopause Support", href: "/perimenopause-oxford" },
-      { name: "Post-Birth Recovery", href: "/postpartum-recovery-oxford" },
-      { name: "Intimate Health", href: "/sexual-wellness-oxford" },
-      { name: "Neauvia N Rose Injectable", href: "/treatments/neauvia-n-rose-intimate-rejuvenation-oxford" },
-      { name: "Votiva Forma V", href: "/treatments/votiva-forma-v-oxford" },
-    ],
-  },
-  {
-    name: "Aesthetic Treatments",
-    href: "/treatments",
-    dropdown: [
-      { name: "Anti-Wrinkle Injections", href: "/treatments/anti-wrinkle-injections-oxford" },
-      { name: "Dermal Fillers", href: "/treatments/dermal-fillers-oxford" },
-      { name: "Lip Fillers", href: "/treatments/lip-fillers-oxford" },
-      { name: "Profhilo", href: "/treatments/profhilo-oxford" },
-      { name: "Morpheus8", href: "/treatments/morpheus8-oxford" },
-      { name: "Skin Boosters", href: "/treatments/skin-boosters-oxford" },
-      { name: "Chemical Peels", href: "/treatments/chemical-peels-oxford" },
-      { name: "Forma Facelift", href: "/treatments/forma-facelift-oxford" },
-      { name: "Forma Plus Body", href: "/treatments/forma-plus-body-contouring-oxford" },
-      { name: "InMode FX", href: "/treatments/inmode-fx-skin-tightening-oxford" },
-      { name: "Lumecca IPL", href: "/treatments/lumecca-ipl-oxford" },
-      { name: "Excessive Sweating", href: "/treatments/excessive-sweating-treatment-oxford" },
-      { name: "Filler Dissolving", href: "/treatments/filler-dissolving-oxford" },
-      { name: "Jaw Slimming", href: "/treatments/jaw-slimming-teeth-grinding-oxford" },
-    ],
-  },
-  { name: "Pricing", href: "/pricing" },
-  { name: "Blog", href: "/blog" },
-  { name: "Pre-Consult", href: "/ai-consultation" },
-  { name: "Shop", href: "/shop" },
-  { name: "Contact", href: "/contact" },
+const painNavLinks = [
+  { name: "About", href: "/oxford-pain-doctor/about" },
+  { name: "How We Help", href: "/oxford-pain-doctor/how-we-help" },
+  { name: "Library", href: "/oxford-pain-doctor/library" },
+  { name: "Contact", href: PAIN_CONTACT_HREF },
+  { name: "Wellness", href: "/" },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [helpOpen, setHelpOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [location] = useLocation();
+  const headerRef = useRef<HTMLElement>(null);
+  const helpCloseTimer = useRef<number | null>(null);
+  const pain = isPainRoute(location);
+  const navLinks = pain ? painNavLinks : wellnessNavLinks;
+  const helpActive =
+    !pain &&
+    (location.startsWith("/programmes") ||
+      helpPathHrefs.some((href) => location === href || location.startsWith(`${href}/`)));
+  const homeHref = pain ? "/oxford-pain-doctor" : "/";
+  const brand = pain ? "The Oxford Pain Doctor" : "The Oxford Wellness Doctor";
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
+    const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const isActive = (href: string) => {
-    if (href === "/") return location === "/";
-    return location.startsWith(href);
+  useEffect(() => {
+    setIsOpen(false);
+    setHelpOpen(false);
+  }, [location]);
+
+  const clearHelpClose = () => {
+    if (helpCloseTimer.current !== null) {
+      window.clearTimeout(helpCloseTimer.current);
+      helpCloseTimer.current = null;
+    }
   };
 
-  const isDropdownActive = (link: NavLink) => {
-    if (link.dropdown) {
-      return link.dropdown.some((item) => isActive(item.href));
-    }
-    return false;
+  const openHelp = () => {
+    clearHelpClose();
+    setHelpOpen(true);
+  };
+
+  const scheduleHelpClose = () => {
+    clearHelpClose();
+    helpCloseTimer.current = window.setTimeout(() => setHelpOpen(false), 160);
+  };
+
+  useEffect(() => () => clearHelpClose(), []);
+
+  useEffect(() => {
+    if (!helpOpen) return;
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setHelpOpen(false);
+    };
+    const onPointer = (event: MouseEvent) => {
+      if (!headerRef.current?.contains(event.target as Node)) setHelpOpen(false);
+    };
+    document.addEventListener("keydown", onKey);
+    document.addEventListener("mousedown", onPointer);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.removeEventListener("mousedown", onPointer);
+    };
+  }, [helpOpen]);
+
+  const isActive = (href: string) => {
+    if (href === "/" || href === "/oxford-pain-doctor") return location === href;
+    return location.startsWith(href);
   };
 
   return (
     <header
+      ref={headerRef}
       className={cn(
-        "fixed top-0 w-full z-50 transition-all duration-300 border-b border-transparent",
-        scrolled
-          ? "bg-background/95 backdrop-blur-md shadow-sm border-border py-3"
-          : "bg-transparent py-5"
+        "fixed top-0 w-full z-50 transition-all duration-300",
+        scrolled || helpOpen ? "bg-white/95 backdrop-blur-md border-b border-border/80 py-3" : "bg-white/80 py-4"
       )}
     >
-      <div className="container mx-auto px-6 flex items-center justify-between">
+      <div className="container-page flex items-center justify-between gap-4">
         <Link
-          href="/"
-          className="font-serif text-xl md:text-2xl font-medium tracking-tight text-secondary flex-shrink-0"
+          href={homeHref}
+          className="font-sans font-semibold text-[15px] md:text-base text-primary tracking-tight flex-shrink-0"
         >
-          The Oxford Wellness Doctor
+          {brand}
         </Link>
 
-        {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center space-x-6">
-          {mainLinks.map((link) => (
-            link.dropdown ? (
-              <div
-                key={link.name}
-                className="relative group"
-                onMouseEnter={() => setOpenDropdown(link.name)}
-                onMouseLeave={() => setOpenDropdown(null)}
-              >
-                <button
-                  data-testid={`nav-${link.name.toLowerCase().replace(/\s+/g, "-")}`}
-                  className={cn(
-                    "text-xs uppercase tracking-widest hover:text-secondary transition-colors whitespace-nowrap flex items-center gap-1 py-2",
-                    isDropdownActive(link) || isActive(link.href)
-                      ? "text-secondary font-medium border-b border-secondary"
-                      : "text-muted-foreground"
-                  )}
-                >
-                  {link.name}
-                  <ChevronDown size={12} className={cn("transition-transform", openDropdown === link.name && "rotate-180")} />
-                </button>
-                {openDropdown === link.name && (
-                  <div className="absolute top-full left-0 pt-2 z-50">
-                    <div className="w-56 bg-background border border-border shadow-lg">
-                      {link.dropdown.map((item) => (
-                        <Link
-                          key={item.href}
-                          href={item.href}
-                          className={cn(
-                            "block px-4 py-3 text-xs uppercase tracking-wider hover:bg-secondary/10 hover:text-secondary transition-colors border-b border-border/30 last:border-b-0",
-                            isActive(item.href) ? "text-secondary bg-secondary/5" : "text-muted-foreground"
-                          )}
-                        >
-                          {item.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-            ) : (
+        <nav className="hidden lg:flex items-center gap-6 [&>button]:flex-shrink-0">
+          {navLinks
+            .filter((link) => !pain && link.href === "/about")
+            .map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                data-testid={`nav-${link.name.toLowerCase().replace(/\s+/g, "-")}`}
                 className={cn(
-                  "text-xs uppercase tracking-widest hover:text-secondary transition-colors whitespace-nowrap",
-                  isActive(link.href)
-                    ? "text-secondary font-medium border-b border-secondary"
-                    : "text-muted-foreground"
+                  "text-sm whitespace-nowrap transition-colors",
+                  isActive(link.href) ? "text-primary font-medium" : "text-muted-foreground hover:text-primary"
                 )}
               >
                 {link.name}
               </Link>
-            )
+            ))}
+          {!pain ? (
+            <button
+              type="button"
+              aria-expanded={helpOpen}
+              aria-controls="how-can-we-help"
+              onClick={() => setHelpOpen((open) => !open)}
+              onMouseEnter={openHelp}
+              onMouseLeave={scheduleHelpClose}
+              className={cn(
+                "text-sm whitespace-nowrap transition-colors",
+                helpOpen || helpActive ? "text-primary font-medium" : "text-muted-foreground hover:text-primary"
+              )}
+            >
+              How can we help?
+            </button>
+          ) : null}
+          {navLinks.filter((link) => pain || link.href !== "/about").map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={cn(
+                "text-sm whitespace-nowrap transition-colors",
+                isActive(link.href) ? "text-primary font-medium" : "text-muted-foreground hover:text-primary"
+              )}
+            >
+              {link.name}
+            </Link>
           ))}
-          <Button
-            data-testid="nav-book-now"
-            className="ml-2 bg-secondary text-primary hover:bg-secondary/90 rounded-none px-5 uppercase tracking-widest text-xs"
-            onClick={() =>
-              window.open(
-                "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
-                "_blank"
-              )
-            }
-          >
-            Book Now
-          </Button>
+          {pain ? (
+            <Link href={PAIN_BOOK_HREF}>
+              <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-5 h-9 text-sm font-medium">
+                Book
+              </Button>
+            </Link>
+          ) : (
+            <>
+              <Link href="/ai-consultation">
+                <Button
+                  variant="outline"
+                  className="ml-2 rounded-full px-5 h-9 text-sm font-medium border-primary/20 text-primary hover:bg-primary/5"
+                >
+                  Pre Consult
+                </Button>
+              </Link>
+              <Link href="/book">
+                <Button
+                  className="bg-secondary text-primary hover:bg-secondary/90 rounded-full px-5 h-9 text-sm font-medium"
+                >
+                  Book
+                </Button>
+              </Link>
+            </>
+          )}
         </nav>
 
-        {/* Mobile Menu Button */}
         <button
           className="lg:hidden text-primary"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
-          data-testid="nav-mobile-toggle"
         >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
-      {/* Mobile Nav */}
+      {helpOpen && !pain ? (
+        <div
+          id="how-can-we-help"
+          className="hidden lg:block border-t border-border/80"
+          onMouseEnter={openHelp}
+          onMouseLeave={scheduleHelpClose}
+        >
+          <div className="container-page py-8">
+            <HowCanWeHelp row onNavigate={() => setHelpOpen(false)} />
+          </div>
+        </div>
+      ) : null}
+
       {isOpen && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-background border-b border-border shadow-lg p-6 flex flex-col space-y-3 animate-in slide-in-from-top-5">
-          {mobileLinks.map((link) => (
-            link.dropdown ? (
-              <div key={link.name} className="border-b border-border/30 pb-3">
-                <div
-                  className={cn(
-                    "text-lg font-serif block py-2 flex items-center justify-between cursor-pointer",
-                    isDropdownActive(link) || isActive(link.href) ? "text-secondary" : "text-muted-foreground"
-                  )}
-                  onClick={() => setOpenDropdown(openDropdown === link.name ? null : link.name)}
-                >
-                  {link.name}
-                  <ChevronDown size={16} className={cn("transition-transform", openDropdown === link.name && "rotate-180")} />
-                </div>
-                {openDropdown === link.name && (
-                  <div className="pl-4 pt-2 space-y-2">
-                    {link.dropdown.map((item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        className={cn(
-                          "block py-2 text-sm font-light",
-                          isActive(item.href) ? "text-secondary" : "text-muted-foreground"
-                        )}
-                        onClick={() => {
-                          setIsOpen(false);
-                          setOpenDropdown(null);
-                        }}
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ) : (
-              <Link
-                key={link.href}
-                href={link.href}
-                data-testid={`nav-mobile-${link.name.toLowerCase().replace(/\s+/g, "-")}`}
-                className={cn(
-                  "text-lg font-serif block py-2 border-b border-border/30",
-                  isActive(link.href) ? "text-secondary" : "text-muted-foreground"
-                )}
-                onClick={() => setIsOpen(false)}
-              >
-                {link.name}
-              </Link>
-            )
+        <div className="lg:hidden absolute top-full left-0 w-full bg-white border-b border-border px-5 py-4 flex flex-col gap-1 max-h-[calc(100vh-4.5rem)] overflow-y-auto">
+          {!pain ? (
+            <div className="pb-2 mb-1 border-b border-border/50">
+              <p className="py-3 text-base text-primary font-medium">How can we help?</p>
+              <HowCanWeHelp onNavigate={() => setIsOpen(false)} />
+            </div>
+          ) : null}
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={cn(
+                "py-3 text-base border-b border-border/50",
+                isActive(link.href) ? "text-primary font-medium" : "text-muted-foreground"
+              )}
+            >
+              {link.name}
+            </Link>
           ))}
-          <Button
-            className="w-full mt-4 rounded-none bg-secondary text-primary uppercase tracking-widest"
-            onClick={() => {
-              setIsOpen(false);
-              window.open(
-                "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
-                "_blank"
-              );
-            }}
-          >
-            Book Now
-          </Button>
+          {pain ? (
+            <Link href={PAIN_BOOK_HREF}>
+              <Button className="w-full mt-4 rounded-full bg-secondary text-secondary-foreground text-sm font-medium">
+                Book a consultation
+              </Button>
+            </Link>
+          ) : (
+            <>
+              <Link href="/ai-consultation">
+                <Button
+                  variant="outline"
+                  className="w-full mt-4 rounded-full text-sm font-medium border-primary/20 text-primary"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Pre Consult
+                </Button>
+              </Link>
+              <Link href="/book">
+                <Button
+                  className="w-full mt-2 rounded-full bg-secondary text-primary text-sm font-medium"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Book consultation
+                </Button>
+              </Link>
+            </>
+          )}
         </div>
       )}
     </header>

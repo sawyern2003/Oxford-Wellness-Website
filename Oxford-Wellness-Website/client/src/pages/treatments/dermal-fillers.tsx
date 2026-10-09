@@ -5,7 +5,7 @@ const data: TreatmentPageData = {
   metaDescription: "Expert dermal fillers in Oxford. Restore volume to cheeks, nasolabial folds, marionette lines. GMC doctor-led clinic. Natural results. Book your consultation today.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/dermal-fillers-oxford",
   h1: "Dermal Fillers in Oxford - Expert Volume Restoration",
-  intro: "Hyaluronic acid fillers restore lost volume, smooth deep lines, and contour the face — with a conservative, natural-looking approach.",
+  intro: "Hyaluronic acid fillers restore lost volume, smooth deep lines, and contour the face – with a conservative, natural-looking approach.",
   sections: [
     {
       heading: "What Can Dermal Fillers Treat?",
@@ -38,7 +38,7 @@ const data: TreatmentPageData = {
     { q: "Will I look unnatural?", a: "Dr. Taganova's philosophy is that the best results are the ones that whisper, not shout. She uses a conservative, patient-led approach focused on restoring balance and natural proportion rather than adding excessive volume." },
     { q: "How long is recovery after dermal fillers?", a: "Most patients experience minimal downtime. Mild swelling and bruising may occur for 3–5 days. Avoid strenuous exercise, alcohol, and excessive heat for 24 hours after treatment." },
     { q: "Can I combine fillers with other treatments?", a: "Yes, fillers work very well alongside anti-wrinkle injections, skin boosters, and energy-based treatments. Dr. Taganova will create a combined treatment plan tailored to your goals during your consultation." },
-    { q: "How do I book dermal fillers at The Oxford Wellness Doctor?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book via Glowday. Clinic is at 3 Woodstock Rd, Oxford OX2 6HA. Open Friday 4–8pm and Saturday 9am–1pm." },
+    { q: "How do I book dermal fillers at The Oxford Wellness Doctor?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book via Glowday. Clinic is at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ. Open Friday 4–8pm and Saturday 9am–1pm." },
   ],
   procedureSchema: {
     name: "Dermal Fillers Oxford",

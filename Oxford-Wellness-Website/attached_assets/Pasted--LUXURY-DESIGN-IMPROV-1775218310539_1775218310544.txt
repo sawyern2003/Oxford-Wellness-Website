@@ -47,7 +47,7 @@ THREE KEY DIFFERENTIATORS (consolidate from 6):
 │                                                                 │
 │  Dr. Taganova's unique background in women's health            │
 │  provides unparalleled insight into hormonal influences        │
-│  on skin, weight, and aging—creating truly integrated care.    │
+│  on skin, weight, and aging–creating truly integrated care.    │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 
@@ -117,7 +117,7 @@ NEW LAYOUT OPTION B: SPLIT HERO SECTION (MORE DRAMATIC)
 │  │                         │  management, and facial │          │
 │  │                         │  rejuvenation through   │          │
 │  │                         │  an integrated,         │          │
-│  │                         │  hormone-aware lens—    │          │
+│  │                         │  hormone-aware lens–    │          │
 │  │                         │  something no other     │          │
 │  │                         │  Oxford clinic offers.  │          │
 │  │                         │                         │          │
@@ -150,7 +150,7 @@ WHY PATIENTS CHOOSE DR. TAGANOVA
    Advanced medical training ensures your safety and exceptional results
 
 3. Natural Enhancement Philosophy
-   Sophisticated treatments that make you look like yourself—refreshed
+   Sophisticated treatments that make you look like yourself–refreshed
 
 [Each point has generous vertical spacing - 40-60px between items]
 [Subtle horizontal divider lines between points]
@@ -176,7 +176,7 @@ Show only 5-6 HERO treatments on homepage with large, beautiful cards:
 │  EXPERT MEDICAL CARE                                            │
 │  Our Signature Treatments                                       │
 │                                                                 │
-│  Every treatment is performed by Dr. Taganova herself—never     │
+│  Every treatment is performed by Dr. Taganova herself–never     │
 │  delegated to unqualified staff.                                │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
@@ -244,7 +244,7 @@ Show 1-3 treatments at a time in elegant carousel:
 │                                                             │
 │  Achieve a refreshed, natural appearance with precision    │
 │  muscle relaxation treatments. Dr. Taganova's conservative │
-│  approach ensures you look like yourself—just rested.      │
+│  approach ensures you look like yourself–just rested.      │
 │                                                             │
 │  [Discover More]                                           │
 │                                                             │
@@ -424,7 +424,7 @@ IMPROVED OPTIONS:
 
 CURRENT HEADING:
 "Our Treatments"
-"Every treatment is performed by Dr. Taganova herself—never delegated to
+"Every treatment is performed by Dr. Taganova herself–never delegated to
 unqualified staff."
 
 IMPROVED OPTIONS:
@@ -433,7 +433,7 @@ IMPROVED OPTIONS:
 3. "Treatments by Dr. Taganova" (personal touch)
 
 IMPROVED SUBHEADING:
-"Every treatment is personally performed by Dr. Taganova, never delegated—
+"Every treatment is personally performed by Dr. Taganova, never delegated–
 ensuring you receive the highest standard of care."
 
 ═══════════════════════════════════════════════════════════════════════════════
@@ -559,14 +559,14 @@ CHANGES NEEDED:
      "Why Patients Choose Dr. Taganova"
    - Heading: Change "Our Treatments" to "Signature Treatments"
    - Subheading: "Every treatment is personally performed by Dr. Taganova,
-     never delegated—ensuring you receive the highest standard of care."
+     never delegated–ensuring you receive the highest standard of care."
 
 5. RESPONSIVE DESIGN:
    - Ensure cards stack beautifully on mobile
    - Maintain generous spacing on all screen sizes
    - Optimize touch targets for mobile (minimum 44x44px)
 
-The overall aesthetic should feel like a luxury medical spa—calm, sophisticated,
+The overall aesthetic should feel like a luxury medical spa–calm, sophisticated,
 trustworthy, and premium. Think Sofitel or Four Seasons spa websites, not
 corporate medical sites.
 
@@ -665,12 +665,12 @@ FINAL NOTES
 
 REMEMBER:
 - In luxury design, less is more
-- White space is not wasted space—it's premium space
+- White space is not wasted space–it's premium space
 - Quality over quantity (3 strong reasons > 6 weak ones)
 - Images convey luxury better than text
 - Pricing comes after building desire and trust
 - Elegant typography is worth the investment
-- Consistency matters—use your design system throughout
+- Consistency matters–use your design system throughout
 
 Your website should make visitors feel:
 - Calm and reassured

@@ -49,7 +49,7 @@ const data: TreatmentPageData = {
     { q: "How much does excessive sweating treatment cost in Oxford?", a: "At The Oxford Wellness Doctor, underarm hyperhidrosis treatment is £500. This includes the treatment session and a complimentary follow-up appointment." },
     { q: "Can I treat areas other than the underarms?", a: "Yes. Dr. Taganova treats palmar (hands), plantar (feet), and facial hyperhidrosis in addition to underarms. She will assess the most appropriate approach for your specific concerns during consultation." },
     { q: "When will I see results?", a: "Most patients notice a reduction in sweating within 5–7 days, with full results visible at 2 weeks. A follow-up is included to assess the outcome and address any areas needing a top-up." },
-    { q: "How do I book hyperhidrosis treatment?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book via Glowday. We are at 3 Woodstock Rd, Oxford OX2 6HA, open Friday 4–8pm and Saturday 9am–1pm." },
+    { q: "How do I book hyperhidrosis treatment?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book via Glowday. We are at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ, open Friday 4–8pm and Saturday 9am–1pm." },
   ],
   procedureSchema: {
     name: "Excessive Sweating Treatment Oxford - Hyperhidrosis",

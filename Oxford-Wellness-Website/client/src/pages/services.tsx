@@ -8,7 +8,7 @@ import FadeIn from "@/components/animations/FadeIn";
 import { useSEO } from "@/hooks/useSEO";
 import { useBreadcrumbSchema } from "@/hooks/useBreadcrumbSchema";
 
-const categories = ["Women's Health", "Medical Aesthetics", "Regenerative Medicine"];
+const categories = ["Women's Health", "Longevity Medicine", "Medical Aesthetics", "Regenerative Medicine", "Skincare"];
 
 // href = dedicated sub-page; omit href = opens detail modal
 const servicesData = [
@@ -19,11 +19,11 @@ const servicesData = [
     faqs: [
       {
         q: "What makes Dr. Taganova qualified as a menopause specialist?",
-        a: "Dr. Taganova is a GMC-registered GP, formerly trained gynaecologist, and specialist menopause lead. She has over 20 years of experience in women's health and holds specialist menopause qualifications. Her background uniquely combines gynecological training, general practice experience, and aesthetic medicine expertise."
+        a: "Dr. Taganova is a GMC-registered GP, formally trained gynaecologist, and specialist menopause lead. She has over 20 years of experience in women's health and holds specialist menopause qualifications. Her background uniquely combines gynecological training, general practice experience, and aesthetic medicine expertise."
       },
       {
         q: "Do you prescribe HRT at your Oxford clinic?",
-        a: "While we do not currently prescribe HRT at this clinic, Dr. Taganova provides comprehensive menopause assessments and can refer you to appropriate HRT prescribers if hormone therapy is clinically indicated. Her expertise as a formerly trained gynaecologist and specialist menopause lead means she can thoroughly assess your suitability for HRT and provide specialist referrals."
+        a: "While we do not currently prescribe HRT at this clinic, Dr. Taganova provides comprehensive menopause assessments and can refer you to appropriate HRT prescribers if hormone therapy is clinically indicated. Her expertise as a formally trained gynaecologist and specialist menopause lead means she can thoroughly assess your suitability for HRT and provide specialist referrals."
       },
       {
         q: "What is perimenopause and when should I seek support?",
@@ -38,7 +38,7 @@ const servicesData = [
         desc: "Comprehensive 45-minute menopause assessment with specialist menopause lead Dr. Taganova - symptom evaluation, treatment planning, and holistic support.",
         details: {
           involves: "Full menopause/perimenopause assessment, symptom review, medical history, and personalized treatment plan.",
-          idealCandidate: "Women experiencing menopausal symptoms or entering perimenopause who want specialist-led care from a formerly trained gynaecologist.",
+          idealCandidate: "Women experiencing menopausal symptoms or entering perimenopause who want specialist-led care from a formally trained gynaecologist.",
           duration: "45 minutes.",
           expectations: "Clear understanding of your symptoms, treatment options, and ongoing management plan."
         }
@@ -157,6 +157,75 @@ const servicesData = [
           idealCandidate: "Anyone requiring a doctor's signature or medical verification for official documents.",
           duration: "30 minutes.",
           expectations: "Accurate and timely completion of necessary medical paperwork."
+        }
+      }
+    ]
+  },
+  {
+    category: "Longevity Medicine",
+    seoTitle: "Longevity Medicine & Metabolic Health in Oxford",
+    seoDescription: "Doctor-led longevity medicine in Oxford – medical weight loss, metabolic support, nutrient therapy, and regenerative care with Dr. Inga Taganova.",
+    faqs: [
+      {
+        q: "What is longevity medicine?",
+        a: "Longevity medicine focuses on healthspan – how well you function as you age. At this clinic it includes metabolic assessment, medical weight management, nutrient support, and regenerative treatments guided by a GMC-registered doctor."
+      },
+      {
+        q: "Is medical weight loss part of longevity care?",
+        a: "Yes, where clinically appropriate. Wegovy and Mounjaro can support metabolic health under close medical supervision, particularly for midlife weight changes that have not responded to lifestyle measures alone."
+      },
+      {
+        q: "Who is longevity medicine for?",
+        a: "Anyone wanting a thoughtful approach to healthy ageing – often women in their 40s and beyond navigating perimenopause, menopause, energy changes, or metabolic concerns."
+      }
+    ],
+    items: [
+      {
+        name: "Longevity Medicine Consultation",
+        price: "£150",
+        href: "/longevity-medicine-oxford",
+        desc: "A doctor-led consultation covering metabolic health, midlife wellbeing, and a clear plan for healthy ageing support.",
+        details: {
+          involves: "Full health discussion, review of goals and symptoms, and personalised recommendations across metabolic care, weight management, and regenerative options.",
+          idealCandidate: "Adults seeking preventative, doctor-led guidance on energy, body composition, and healthy ageing – especially in midlife.",
+          duration: "45 minutes.",
+          expectations: "A clear, unhurried plan with no pressure to start treatment on the day."
+        }
+      },
+      {
+        name: "Medical Weight Loss Consultation",
+        price: "£50",
+        href: "/treatments/medical-weight-loss-oxford",
+        desc: "Specialist assessment for Wegovy or Mounjaro where clinically appropriate, with ongoing medical supervision.",
+        details: {
+          involves: "Health and BMI assessment, suitability review for GLP-1 treatment, and a supervised programme if appropriate.",
+          idealCandidate: "Adults with BMI over 30 (or over 27 with co-morbidities) struggling despite diet and exercise.",
+          duration: "45 minutes.",
+          expectations: "A personalised weight management plan. Prescriptions only when clinically safe and suitable."
+        }
+      },
+      {
+        name: "Vitamin B12 Injection",
+        price: "£35",
+        href: "/treatments/vitamin-b12-injection-oxford",
+        desc: "Quick intramuscular B12 support for energy, metabolism, mood balance, and overall wellbeing.",
+        details: {
+          involves: "Intramuscular hydroxocobalamin injection for reliable absorption.",
+          idealCandidate: "Anyone feeling fatigued or looking to support metabolism and immunity.",
+          duration: "10–15 minutes.",
+          expectations: "Energy and clarity often improve within 24–48 hours. Monthly maintenance is common."
+        }
+      },
+      {
+        name: "Profhilo Skin Bio-Remodelling",
+        price: "£250",
+        href: "/treatments/profhilo-oxford",
+        desc: "Injectable bio-remodelling that supports skin quality, hydration, and collagen as part of healthy ageing care.",
+        details: {
+          involves: "High-concentration hyaluronic acid injections that stimulate collagen and elastin.",
+          idealCandidate: "Those noticing crepey, dehydrated, or ageing skin who want natural improvement without filler volume.",
+          duration: "30 minutes.",
+          expectations: "Gradual improvement in skin quality over weeks. Typically a course of two sessions."
         }
       }
     ]
@@ -362,6 +431,87 @@ const servicesData = [
         }
       }
     ]
+  },
+  {
+    category: "Skincare",
+    seoTitle: "Recommended Clinical Skincare in Oxford",
+    seoDescription: "Doctor-guided clinical skincare recommendations from Dr Inga Taganova – curated home care to support personalised treatment programmes in Oxford.",
+    faqs: [
+      {
+        q: "Is this an online skincare shop?",
+        a: "No. These are curated clinical recommendations to support your treatment journey – not a beauty storefront. Dr Inga advises what is appropriate for you during consultation."
+      },
+      {
+        q: "When should I start recommended skincare?",
+        a: "Often alongside an in-clinic programme such as Skin Health & Regeneration. Timing matters after peels, IPL or collagen-stimulating treatments, so products are introduced carefully."
+      },
+      {
+        q: "Can I buy products without a consultation?",
+        a: "Guidance is personalised. The best starting point is a consultation or the Programme Finder so recommendations match your skin, hormones and treatment plan."
+      }
+    ],
+    items: [
+      {
+        name: "Recommended Skincare",
+        price: "Doctor-guided",
+        href: "/recommended-skincare",
+        desc: "Curated clinical skincare recommendations to support your treatment journey – personalised home care, not a generic online shop.",
+        details: {
+          involves: "Doctor-led guidance on clinical skincare products that complement in-clinic treatments and programmes.",
+          idealCandidate: "Patients on skin health, regenerative, or aesthetic programmes who want home care that supports their results.",
+          duration: "Discussed during consultation.",
+          expectations: "A clear, personalised skincare plan tailored to your skin and treatment programme."
+        }
+      },
+      {
+        name: "Vitamin C Brightening Concentrate",
+        price: "SkinCeuticals",
+        href: "/recommended-skincare",
+        desc: "Supports antioxidant defence and brightness – useful alongside regenerative skin programmes.",
+        details: {
+          involves: "4–5 drops to dry face and neck each morning before moisturiser and SPF.",
+          idealCandidate: "Women addressing dullness, uneven tone or midlife skin change.",
+          duration: "Daily morning use as advised.",
+          expectations: "Brighter, more defended skin as part of a wider skin health plan."
+        }
+      },
+      {
+        name: "SPF 50+ Mineral Sunscreen",
+        price: "EltaMD",
+        href: "/recommended-skincare",
+        desc: "Essential protection after peels, IPL and collagen-stimulating treatments.",
+        details: {
+          involves: "Apply liberally each morning; reapply with outdoor exposure.",
+          idealCandidate: "All patients – especially during active treatment journeys.",
+          duration: "Daily morning use.",
+          expectations: "Reliable sun protection that supports treatment results and skin recovery."
+        }
+      },
+      {
+        name: "Hyaluronic Acid Hydrating Serum",
+        price: "Obagi",
+        href: "/recommended-skincare",
+        desc: "Supports barrier comfort and hydration between clinic visits.",
+        details: {
+          involves: "Apply to cleansed skin before moisturiser.",
+          idealCandidate: "Dry, dehydrated or post-treatment skin.",
+          duration: "Daily use as advised.",
+          expectations: "Improved comfort and hydration between appointments."
+        }
+      },
+      {
+        name: "Advanced Retinol Night Serum",
+        price: "SkinCeuticals",
+        href: "/recommended-skincare",
+        desc: "Supports overnight renewal as part of a long-term skin quality plan – introduced carefully.",
+        details: {
+          involves: "2–3 drops in the evening as advised. Always pair with morning SPF.",
+          idealCandidate: "Suitable patients under doctor guidance; not for immediate post-procedure use.",
+          duration: "Evening use as advised.",
+          expectations: "Gradual overnight renewal support within a supervised skincare plan."
+        }
+      }
+    ]
   }
 ];
 
@@ -375,7 +525,7 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
       >
-        <span className="font-serif text-base text-primary leading-snug group-hover:text-secondary transition-colors">
+        <span className="font-sans font-medium text-base text-foreground leading-snug group-hover:text-secondary transition-colors">
           {q}
         </span>
         {open ? (
@@ -413,16 +563,16 @@ function TreatmentCard({
   return (
     <div
       data-testid={`treatment-card-${index}`}
-      className="border-b border-border pb-10"
+      className="rounded-3xl bg-muted/40 p-6 mb-5"
     >
       <div className="flex justify-between items-baseline gap-4 mb-3">
-        <h3 className="font-serif text-xl text-primary leading-snug">{item.name}</h3>
-        <span className="text-muted-foreground font-serif italic text-sm whitespace-nowrap">{item.price}</span>
+        <h3 className="font-sans font-semibold text-xl text-foreground tracking-tight leading-snug">{item.name}</h3>
+        <span className="text-muted-foreground font-sans text-sm whitespace-nowrap">{item.price}</span>
       </div>
       <p className="text-muted-foreground leading-relaxed mb-3 text-[15px]">{item.desc}</p>
       {item.details?.idealCandidate && (
         <p className="text-sm text-muted-foreground mb-5">
-          <span className="font-medium text-primary/60 uppercase tracking-wide text-xs">Ideal for: </span>
+          <span className="text-primary/70">Ideal for: </span>
           {item.details.idealCandidate}
         </p>
       )}
@@ -430,17 +580,17 @@ function TreatmentCard({
         <Link
           href={item.href}
           data-testid={`treatment-guide-${index}`}
-          className="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest text-secondary hover:text-primary transition-colors font-medium"
+          className="inline-flex items-center gap-1.5 text-sm text-primary/70 hover:text-secondary transition-colors"
         >
-          View Treatment Guide <ArrowRight size={12} />
+          Read more <ArrowRight size={13} />
         </Link>
       ) : (
         <button
           data-testid={`treatment-details-${index}`}
           onClick={() => onOpen(item)}
-          className="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest text-secondary hover:text-primary transition-colors font-medium"
+          className="inline-flex items-center gap-1.5 text-sm text-primary/70 hover:text-secondary transition-colors"
         >
-          View Full Details <ArrowRight size={12} />
+          Details <ArrowRight size={13} />
         </button>
       )}
     </div>
@@ -495,34 +645,37 @@ export default function Services() {
   const activeSectionData = servicesData.find((s) => s.category === activeCategory)!;
 
   return (
-    <div className="pt-32 min-h-screen bg-background">
-      {/* Page Header */}
-      <div className="container mx-auto px-6 py-12">
+    <div className="pt-28 min-h-screen bg-white">
+      <div className="container mx-auto px-6 py-12 md:py-16">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="max-w-3xl mx-auto text-center mb-16"
+          transition={{ duration: 0.7 }}
+          className="max-w-2xl mb-12"
         >
-          <h1 className="font-serif text-5xl text-primary mb-4">
-            Aesthetic &amp; Medical Treatments in Oxford
+          <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-4 leading-snug">
+            Treatments
           </h1>
-          <p className="text-muted-foreground font-light text-lg leading-relaxed">
-            Bespoke medical solutions delivered by Dr Inga Taganova - GMC-registered doctor, formerly trained gynaecologist, and Oxford's leading women's wellness specialist.
+          <p className="text-muted-foreground text-[15px] leading-relaxed max-w-2xl">
+            Individual treatments are part of personalised programmes – not the starting point.
+            Not sure where to begin?{" "}
+            <a href="/programme-finder" className="text-secondary hover:text-primary transition-colors font-medium">
+              Use the Programme Finder
+            </a>
+            .
           </p>
         </motion.div>
 
-        {/* Filter Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-16">
+        <div className="flex flex-wrap gap-2 mb-14">
           {categories.map((cat) => (
             <button
               key={cat}
               data-testid={`category-${cat.toLowerCase().replace(/\s+/g, "-")}`}
               onClick={() => setActiveCategory(cat)}
-              className={`px-8 py-3 rounded-none border transition-all duration-300 uppercase tracking-widest text-xs font-medium ${
+              className={`px-4 py-2 text-sm rounded-full transition-colors ${
                 activeCategory === cat
-                  ? "bg-primary text-white border-primary shadow-lg"
-                  : "bg-transparent text-muted-foreground border-border hover:border-primary hover:text-primary"
+                  ? "bg-secondary text-primary font-medium"
+                  : "bg-muted text-muted-foreground hover:text-primary"
               }`}
             >
               {cat}
@@ -542,14 +695,14 @@ export default function Services() {
             >
               {/* Category intro */}
               <div className="mb-12">
-                <h2 className="font-serif text-2xl text-primary mb-2">{activeSectionData.seoTitle}</h2>
+                <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-2">{activeSectionData.seoTitle}</h2>
                 <p className="text-muted-foreground leading-relaxed font-light">
                   {activeSectionData.seoDescription}
                 </p>
               </div>
 
               {/* Treatment cards - all same layout */}
-              <div className="grid md:grid-cols-2 gap-x-16 gap-y-0">
+              <div className="grid md:grid-cols-2 gap-x-5 gap-y-0">
                 {activeSectionData.items.map((item, idx) => (
                   <TreatmentCard
                     key={idx}
@@ -563,10 +716,10 @@ export default function Services() {
               {/* FAQs */}
               <div className="mt-20">
                 <FadeIn direction="up">
-                  <h3 className="font-serif text-2xl text-primary mb-6">
+                  <h3 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-6">
                     Frequently Asked Questions - {activeCategory} in Oxford
                   </h3>
-                  <div className="divide-y divide-border border border-border px-6">
+                  <div className="rounded-3xl bg-muted/40 px-5 divide-y divide-border">
                     {activeSectionData.faqs.map((faq, idx) => (
                       <FAQItem key={idx} q={faq.q} a={faq.a} index={idx} />
                     ))}
@@ -576,26 +729,24 @@ export default function Services() {
             </motion.div>
           </AnimatePresence>
 
-          {/* CTA */}
-          <div className="mt-16 text-center">
-            <p className="text-sm text-muted-foreground mb-4 uppercase tracking-widest">
-              Ready to take the first step?
+          <div className="mt-16 rounded-3xl bg-primary text-primary-foreground p-8 md:p-10">
+            <p className="text-[15px] text-primary-foreground/75 mb-5 max-w-md">
+              Not sure where to start? A consultation is the simplest next step.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3">
               <Button
                 data-testid="btn-book-consultation"
-                className="bg-primary text-primary-foreground hover:bg-secondary hover:text-primary rounded-none px-8 uppercase tracking-widest text-sm"
-                onClick={() => window.open("https://www.glowday.com/clinic/the-oxford-wellness-doctor", "_blank")}
+                className="bg-secondary text-primary hover:bg-secondary/90 rounded-full px-8 h-11 text-sm font-medium"
+                onClick={() => window.location.assign("/book")}
               >
-                Book a Consultation
+                Book a consultation
               </Button>
               <Link href="/contact">
                 <Button
                   data-testid="btn-enquire"
-                  variant="outline"
-                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded-none px-8 uppercase tracking-widest text-sm"
+                  className="rounded-full bg-transparent border border-white/30 text-white hover:bg-white/10 px-7 h-11 text-sm"
                 >
-                  Enquire Discreetly
+                  Contact
                 </Button>
               </Link>
             </div>
@@ -603,49 +754,35 @@ export default function Services() {
         </div>
       </div>
 
-      {/* Why Choose Us */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-16 md:py-20 bg-muted/50">
         <div className="container mx-auto px-6 max-w-5xl">
           <FadeIn direction="up">
-            <span className="block text-secondary text-sm uppercase tracking-[0.2em] mb-4 text-center">
-              Oxford's Trusted Aesthetics Doctor
-            </span>
-            <h2 className="font-serif text-3xl md:text-4xl text-center mb-12 leading-tight">
-              Why Choose The Oxford Wellness Doctor?
+            <h2 className="font-sans font-semibold text-3xl text-foreground tracking-tight mb-10">
+              Why patients choose this clinic
             </h2>
           </FadeIn>
           <div className="grid md:grid-cols-3 gap-10">
             {[
               {
-                title: "Medical Expertise You Can Trust",
-                body: "Dr Taganova is a GMC-registered GP (No. 4727817), a formerly trained gynaecologist, and a current practising NHS doctor with over 20 years of clinical experience in Oxford and Oxfordshire. Every treatment is carried out with the same rigour as her medical practice.",
+                title: "Medical depth",
+                body: "GMC-registered GP, formally trained gynaecologist, and practising NHS doctor with over 20 years in women's health.",
               },
               {
-                title: "A Holistic, Patient-First Approach",
-                body: "We never recommend a treatment unless it's right for you. Dr Taganova takes the time to understand your full health picture before creating a bespoke plan - combining aesthetic goals with genuine medical care.",
+                title: "Unhurried advice",
+                body: "Nothing is recommended unless it is right for you. Treatment plans are built around your health picture, not a menu of upsells.",
               },
               {
-                title: "Complete Discretion in Oxford",
-                body: "Our private Oxford clinic offers a calm, confidential environment within a professional medical setting. Whether you're exploring options for the first time or returning for ongoing care, your privacy and comfort are always our priority.",
+                title: "Discretion",
+                body: "A calm private clinic on Woodstock Road – confidential care for women's health and aesthetic treatments alike.",
               },
             ].map((item, i) => (
-              <FadeIn key={i} direction="up" delay={i * 0.1}>
-                <div>
-                  <div className="w-8 h-0.5 bg-secondary mb-4" />
-                  <h3 className="font-serif text-xl mb-3">{item.title}</h3>
-                  <p className="text-primary-foreground/80 text-sm leading-relaxed font-light">{item.body}</p>
+              <FadeIn key={i} direction="up" delay={i * 0.08}>
+                <div className="hover-card bg-white rounded-3xl p-7 h-full">
+                  <h3 className="font-sans font-semibold text-xl text-foreground mb-3 tracking-tight">{item.title}</h3>
+                  <p className="text-muted-foreground text-[15px] leading-relaxed">{item.body}</p>
                 </div>
               </FadeIn>
             ))}
-          </div>
-          <div className="mt-14 text-center">
-            <Button
-              data-testid="btn-why-choose-cta"
-              className="bg-secondary text-primary hover:bg-secondary/90 rounded-none px-10 uppercase tracking-widest text-sm"
-              onClick={() => window.open("https://www.glowday.com/clinic/the-oxford-wellness-doctor", "_blank")}
-            >
-              Book a Consultation in Oxford
-            </Button>
           </div>
         </div>
       </section>

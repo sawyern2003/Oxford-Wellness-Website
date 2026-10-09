@@ -4,7 +4,7 @@ import scienceParkImg from "@/assets/blog/oxford-science-park-clinic.png";
 const data: BlogPostData = {
   h1: "Welcome to Our Oxford Clinic",
   title: "Oxford Medical Aesthetics & Women's Health Clinic | The Oxford Wellness Doctor",
-  metaDescription: "The Oxford Wellness Doctor is located in Oxford at 3 Woodstock Rd. Discover our professional medical aesthetics and women's health clinic with convenient parking and discreet, professional environment.",
+  metaDescription: "The Oxford Wellness Doctor is located in Oxford at Belsyre Court, 57 Woodstock Rd. Discover our professional medical aesthetics and women's health clinic with convenient parking and discreet, professional environment.",
   canonical: "https://www.theoxfordwellnessdoctor.com/blog/new-oxford-science-park-clinic",
   category: "Clinic News",
   readTime: "4 min",
@@ -32,14 +32,14 @@ const data: BlogPostData = {
     {
       heading: "The Same Doctor, the Same Excellence",
       paragraphs: [
-        "What has not changed is what matters most: Dr. Inga Taganova continues to see every patient personally. As a GMC-registered GP (No. 4727817), former NHS gynaecologist, and menopause specialist with over 20 years of clinical experience, Dr. Taganova brings exceptional depth of medical knowledge to every treatment and consultation.",
+        "What has not changed is what matters most: Dr. Inga Taganova continues to see every patient personally. As a GMC-registered GP, former NHS gynaecologist, and menopause specialist with over 20 years of clinical experience, Dr. Taganova brings exceptional depth of medical knowledge to every treatment and consultation.",
         "Our treatments - anti-wrinkle injections, dermal fillers, Profhilo, Morpheus8, lip fillers, chemical peels, skin boosters, medical weight loss, and our specialist menopause clinic - are all available at the new clinic. The standard of care remains exactly as it has always been: thorough, honest, and patient-led.",
       ],
     },
     {
       heading: "How to Find Us",
       paragraphs: [
-        "Our address is: 3 Woodstock Rd, Oxford OX2 6HA.",
+        "Our address is: Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ.",
       ],
       bullets: [
         "From Oxford city centre (5 minutes): Head north on St Giles', continue onto Woodstock Road, clinic on your left",

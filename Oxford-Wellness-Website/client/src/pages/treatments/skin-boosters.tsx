@@ -66,7 +66,7 @@ const data: TreatmentPageData = {
     { q: "How long do skin boosters last?", a: "Results from an initial course typically last 3–6 months. Regular maintenance sessions every 3–6 months help sustain the hydration and collagen-stimulating benefits." },
     { q: "Can I combine skin boosters with other treatments?", a: "Yes - skin boosters pair excellently with anti-wrinkle injections, dermal fillers, and energy-based treatments like Morpheus8. Dr. Taganova will create a combined plan suited to your goals." },
     { q: "How much do skin boosters cost in Oxford?", a: "At The Oxford Wellness Doctor, Hyaluronic Acid Skinboosters are £250 per session. Polynucleotide Skin Boosters and Bioremodellers are £350 per session. All prices include a full consultation." },
-    { q: "How do I book skin booster treatment?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book via Glowday. Located at 3 Woodstock Rd, Oxford OX2 6HA. Open Friday 4–8pm and Saturday 9am–1pm." },
+    { q: "How do I book skin booster treatment?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book via Glowday. Located at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ. Open Friday 4–8pm and Saturday 9am–1pm." },
   ],
   procedureSchema: {
     name: "Skin Boosters Oxford",

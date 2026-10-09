@@ -65,7 +65,7 @@ const data: TreatmentPageData = {
     { q: "Will I lose weight with InMode FX?", a: "InMode FX is a body contouring treatment, not a weight loss treatment. It targets localised fat, cellulite, and skin laxity in specific areas. For weight loss, we recommend our Medical Weight Loss programme." },
     { q: "How long before I see results?", a: "Some improvement may be visible after the first few sessions. The most significant results typically develop over 3–6 months following your final session as collagen remodelling continues." },
     { q: "Can InMode FX be combined with other treatments?", a: "Yes. InMode FX pairs particularly well with Forma Plus for skin tightening, or with Morpheus8 for deeper remodelling. Dr. Taganova will advise on the best combination for your goals." },
-    { q: "How do I book?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at 3 Woodstock Rd, Oxford OX2 6HA." },
+    { q: "How do I book?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ." },
   ],
   procedureSchema: {
     name: "InMode FX Skin Tightening & Body Contouring Oxford",

@@ -11,45 +11,46 @@ export default function CookiePolicy() {
   });
 
   return (
-    <div className="pt-24 min-h-screen bg-muted/20">
+    <div className="pt-28 min-h-screen bg-white">
       <div className="container mx-auto px-6 py-16 max-w-3xl">
         <div className="mb-12">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">Legal</p>
-          <h1 className="font-serif text-4xl md:text-5xl text-primary mb-4">Cookie Policy</h1>
+          <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">Legal</p>
+          <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-4">Cookie Policy</h1>
           <p className="text-sm text-muted-foreground">Last updated: January 2025</p>
         </div>
 
         <div className="prose prose-sm max-w-none space-y-8 text-muted-foreground leading-relaxed">
 
           <section>
-            <h2 className="font-serif text-2xl text-primary mb-4">1. What Are Cookies?</h2>
+            <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">1. What Are Cookies?</h2>
             <p>Cookies are small text files that are placed on your device when you visit a website. They are widely used to make websites work more efficiently, to improve user experience, and to provide information to website owners about how the site is being used.</p>
             <p className="mt-3">Cookies can be "session" cookies (which are deleted when you close your browser) or "persistent" cookies (which remain on your device for a set period or until you delete them).</p>
           </section>
 
           <section>
-            <h2 className="font-serif text-2xl text-primary mb-4">2. Cookies We Use</h2>
+            <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">2. Cookies We Use</h2>
             <p>Our website uses the following categories of cookies:</p>
 
             <div className="mt-4 space-y-4">
-              <div className="bg-white border border-border p-5">
+              <div className="bg-muted/40 rounded-2xl p-5">
                 <h3 className="font-semibold text-primary mb-2">Strictly Necessary Cookies</h3>
                 <p className="text-sm">These cookies are essential for the website to function and cannot be switched off. They are usually set in response to actions you take, such as filling in forms or setting your privacy preferences. These cookies do not require your consent.</p>
                 <p className="text-sm mt-2"><strong>Examples:</strong> Session management, security tokens, form submission handling.</p>
               </div>
 
-              <div className="bg-white border border-border p-5">
+              <div className="bg-muted/40 rounded-2xl p-5">
                 <h3 className="font-semibold text-primary mb-2">Analytics Cookies <span className="text-xs font-normal text-muted-foreground ml-1">(Requires Consent)</span></h3>
                 <p className="text-sm">These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. We use this data to improve the site experience.</p>
                 <p className="text-sm mt-2"><strong>Provider:</strong> Google Analytics / similar analytics service.</p>
                 <p className="text-sm mt-2"><strong>Data collected:</strong> Pages visited, time on site, geographic region (country/city level), device type, referral source. No personally identifiable information is collected.</p>
               </div>
 
-              <div className="bg-white border border-border p-5">
+              <div className="bg-muted/40 rounded-2xl p-5">
                 <h3 className="font-semibold text-primary mb-2">Third-Party Cookies <span className="text-xs font-normal text-muted-foreground ml-1">(Requires Consent)</span></h3>
                 <p className="text-sm">Our website embeds content from third-party services that may set their own cookies:</p>
                 <ul className="list-disc pl-5 mt-2 text-sm space-y-1">
                   <li><strong>Glowday</strong> - embedded booking widget on the Contact page. Subject to Glowday's own cookie and privacy policies.</li>
+                  <li><strong>Calendly</strong> - embedded booking calendar for The Oxford Pain Doctor. Subject to Calendly's own cookie and privacy policies.</li>
                   <li><strong>Google Maps</strong> - embedded map on the Contact page. Subject to Google's privacy policy.</li>
                 </ul>
               </div>
@@ -57,7 +58,7 @@ export default function CookiePolicy() {
           </section>
 
           <section>
-            <h2 className="font-serif text-2xl text-primary mb-4">3. Managing Cookies</h2>
+            <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">3. Managing Cookies</h2>
             <p>You can control and manage cookies in the following ways:</p>
 
             <h3 className="font-semibold text-primary mt-4 mb-2">Browser Settings</h3>
@@ -78,12 +79,12 @@ export default function CookiePolicy() {
           </section>
 
           <section>
-            <h2 className="font-serif text-2xl text-primary mb-4">4. Changes to This Policy</h2>
+            <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">4. Changes to This Policy</h2>
             <p>We may update this Cookie Policy from time to time to reflect changes in the cookies we use or to comply with new regulations. Any updates will be published on this page with a revised date.</p>
           </section>
 
           <section>
-            <h2 className="font-serif text-2xl text-primary mb-4">5. Contact Us</h2>
+            <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">5. Contact Us</h2>
             <p>If you have any questions about our use of cookies, please contact us:</p>
             <p className="mt-3">Email: <a href="mailto:info@theoxfordwellnessdoctor.com" className="text-primary hover:underline">info@theoxfordwellnessdoctor.com</a><br />Phone: <a href="tel:+4407739309380" className="text-primary hover:underline">07739 309380</a></p>
           </section>

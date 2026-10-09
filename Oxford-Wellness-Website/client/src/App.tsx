@@ -1,5 +1,5 @@
-import { Switch, Route } from "wouter";
-import { useLocation } from "wouter";
+import { Switch, Route, useLocation, Redirect } from "wouter";
+import { useEffect } from "react";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -9,10 +9,18 @@ import About from "@/pages/about";
 import Contact from "@/pages/contact";
 import AIPreConsult from "@/pages/ai-pre-consult";
 import Shop from "@/pages/shop";
+import RecommendedSkincare from "@/pages/recommended-skincare";
+import HowWeHelp from "@/pages/how-we-help";
+import SymptomsAndTreatments from "@/pages/symptoms-and-treatments";
+import ProgrammeFinder from "@/pages/programme-finder";
+import SkinHealthProgramme from "@/pages/programmes/skin-health-regeneration";
+import WeightBodyProgramme from "@/pages/programmes/weight-body-confidence";
+import IntimateWellnessProgramme from "@/pages/programmes/intimate-wellness";
 import Pricing from "@/pages/pricing";
 import MenopauseClinic from "@/pages/menopause-clinic";
 import PerimenopauseOxford from "@/pages/perimenopause-oxford";
 import WomensHealthOxford from "@/pages/womens-health-oxford";
+import LongevityMedicineOxford from "@/pages/longevity-medicine-oxford";
 import SexualWellnessOxford from "@/pages/sexual-wellness-oxford";
 import PostpartumRecoveryOxford from "@/pages/postpartum-recovery-oxford";
 import BlogIndex from "@/pages/blog/index";
@@ -49,16 +57,32 @@ import CookiePolicy from "@/pages/cookie-policy";
 import TermsAndConditions from "@/pages/terms-and-conditions";
 import ThankYou from "@/pages/thank-you";
 import CallPage from "@/pages/call";
+import Book from "@/pages/book";
 import NotFound from "@/pages/not-found";
+import OxfordPainDoctorHome from "@/pages/pain/home";
+import PainBook from "@/pages/pain/book";
+import AboutDrRichard from "@/pages/pain/about";
+import PainHowWeHelp from "@/pages/pain/how-we-help";
+import PainLibrary from "@/pages/pain/library";
+import PainLibraryArticle from "@/pages/pain/library-article";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import FloatingButtons from "@/components/layout/FloatingButtons";
+import PainDoctorBanner from "@/components/layout/PainDoctorBanner";
+import { isPainRoute, PAIN_BOOK_HREF, SHOW_PAIN_DOCTOR } from "@/lib/brand";
+import { cn } from "@/lib/utils";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
+      <Route path="/how-we-help" component={HowWeHelp} />
+      <Route path="/symptoms-and-treatments" component={SymptomsAndTreatments} />
+      <Route path="/programme-finder" component={ProgrammeFinder} />
+      <Route path="/programmes/skin-health-regeneration" component={SkinHealthProgramme} />
+      <Route path="/programmes/weight-body-confidence" component={WeightBodyProgramme} />
+      <Route path="/programmes/intimate-wellness" component={IntimateWellnessProgramme} />
       <Route path="/treatments" component={Services} />
       <Route path="/treatments/anti-wrinkle-injections-oxford" component={AntiWrinkle} />
       <Route path="/treatments/dermal-fillers-oxford" component={DermalFillers} />
@@ -82,6 +106,7 @@ function Router() {
       <Route path="/menopause-clinic-oxford" component={MenopauseClinic} />
       <Route path="/perimenopause-oxford" component={PerimenopauseOxford} />
       <Route path="/womens-health-oxford" component={WomensHealthOxford} />
+      <Route path="/longevity-medicine-oxford" component={LongevityMedicineOxford} />
       <Route path="/sexual-wellness-oxford" component={SexualWellnessOxford} />
       <Route path="/postpartum-recovery-oxford" component={PostpartumRecoveryOxford} />
       <Route path="/pricing" component={Pricing} />
@@ -97,7 +122,35 @@ function Router() {
       <Route path="/blog/new-oxford-science-park-clinic" component={BlogSciencePark} />
       <Route path="/ai-consultation" component={AIPreConsult} />
       <Route path="/call" component={CallPage} />
+      <Route path="/book" component={Book} />
+      <Route path="/oxford-pain-doctor">
+        {SHOW_PAIN_DOCTOR ? <OxfordPainDoctorHome /> : <Redirect to="/" />}
+      </Route>
+      <Route path="/oxford-pain-doctor/about">
+        {SHOW_PAIN_DOCTOR ? <AboutDrRichard /> : <Redirect to="/" />}
+      </Route>
+      <Route path="/oxford-pain-doctor/how-we-help">
+        {SHOW_PAIN_DOCTOR ? <PainHowWeHelp /> : <Redirect to="/" />}
+      </Route>
+      <Route path="/oxford-pain-doctor/library/:slug">
+        {(params) =>
+          SHOW_PAIN_DOCTOR ? <PainLibraryArticle slug={params.slug} /> : <Redirect to="/" />
+        }
+      </Route>
+      <Route path="/oxford-pain-doctor/library">
+        {SHOW_PAIN_DOCTOR ? <PainLibrary /> : <Redirect to="/" />}
+      </Route>
+      <Route path="/oxford-pain-doctor/contact">
+        {SHOW_PAIN_DOCTOR ? <Contact /> : <Redirect to="/" />}
+      </Route>
+      <Route path="/oxford-pain-doctor/book">
+        {SHOW_PAIN_DOCTOR ? <PainBook /> : <Redirect to="/" />}
+      </Route>
+      <Route path="/oxford-pain-doctor/*">
+        {SHOW_PAIN_DOCTOR ? <NotFound /> : <Redirect to="/" />}
+      </Route>
       <Route path="/contact" component={Contact} />
+      <Route path="/recommended-skincare" component={RecommendedSkincare} />
       <Route path="/shop" component={Shop} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/cookie-policy" component={CookiePolicy} />
@@ -111,16 +164,28 @@ function Router() {
 function App() {
   const [location] = useLocation();
   const isCallPage = location === "/call";
+  const isBookPage = location === "/book" || location === PAIN_BOOK_HREF;
+  const pain = isPainRoute(location);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="min-h-screen flex flex-col bg-background font-sans text-foreground selection:bg-secondary selection:text-secondary-foreground">
+      <div
+        className={cn(
+          "min-h-screen flex flex-col bg-background font-sans text-foreground selection:bg-primary/15 selection:text-foreground",
+          pain && "theme-pain"
+        )}
+      >
         {!isCallPage ? <Navbar /> : null}
         <main className="flex-grow">
           <Router />
         </main>
+        {SHOW_PAIN_DOCTOR && !isCallPage && !pain && !isBookPage ? <PainDoctorBanner /> : null}
         {!isCallPage ? <Footer /> : null}
-        {!isCallPage ? <FloatingButtons /> : null}
+        {!isCallPage && !isBookPage ? <FloatingButtons /> : null}
         <Toaster />
       </div>
     </QueryClientProvider>

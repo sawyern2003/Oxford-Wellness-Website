@@ -44,47 +44,59 @@
 }
 
 :root {
-  /* HSL Values - Space Separated */
-  
-  /* Background: Very soft greyish off-white */
-  --background: 210 10% 98%;
-  /* Foreground: Deep Navy */
-  --foreground: 215 35% 15%;
+  --background: 0 0% 100%;
+  --foreground: 215 25% 18%;
 
-  /* Card: Pure White */
   --card: 0 0% 100%;
-  --card-foreground: 215 35% 15%;
+  --card-foreground: 215 25% 18%;
 
-  /* Popover */
   --popover: 0 0% 100%;
-  --popover-foreground: 215 35% 15%;
+  --popover-foreground: 215 25% 18%;
 
-  /* Navy Blue - Used for structure and dividers */
   --primary: 215 35% 25%;
-  --primary-foreground: 210 10% 98%;
+  --primary-foreground: 0 0% 100%;
 
-  /* Brand Blue: #83a5cb -> HSL(211, 44%, 65%) - Used for text accents and logo */
   --secondary: 211 44% 65%;
   --secondary-foreground: 215 35% 15%;
 
-  /* Muted: Subtle Grey */
-  --muted: 210 10% 94%;
-  --muted-foreground: 210 10% 40%;
+  --muted: 210 20% 97%;
+  --muted-foreground: 215 12% 42%;
 
-  /* Accent: Light version of brand blue */
-  --accent: 211 44% 90%;
-  --accent-foreground: 211 44% 40%;
+  --accent: 211 44% 94%;
+  --accent-foreground: 211 40% 35%;
 
-  /* Destructive */
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
 
-  /* Borders & Inputs - Kept as Navy for structure */
-  --border: 215 35% 25% / 0.15;
-  --input: 215 35% 25% / 0.15;
+  --border: 215 20% 90%;
+  --input: 215 20% 90%;
   --ring: 211 44% 65%;
 
-  --radius: 0.25rem;
+  --radius: 1rem;
+}
+
+/* Sister brand: The Oxford Pain Doctor – same structure, warmer red palette */
+.theme-pain {
+  --foreground: 355 22% 16%;
+
+  --card-foreground: 355 22% 16%;
+  --popover-foreground: 355 22% 16%;
+
+  --primary: 355 38% 26%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 4 62% 47%;
+  --secondary-foreground: 0 0% 100%;
+
+  --muted: 12 28% 97%;
+  --muted-foreground: 355 10% 40%;
+
+  --accent: 8 50% 94%;
+  --accent-foreground: 355 35% 32%;
+
+  --border: 12 18% 90%;
+  --input: 12 18% 90%;
+  --ring: 4 62% 47%;
 }
 
 .dark {
@@ -117,28 +129,157 @@
   --ring: 211 44% 65%;
 }
 
+/*
+ * Page width system.
+ * container-page  — standard content, 1200px
+ * container-wide  — editorial and image-led sections, 1400px
+ * Padding sits inside the max-width, so neither box can overflow the viewport.
+ */
+.container-page,
+.container-wide {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.container-page {
+  max-width: 1200px;
+}
+
+.container-wide {
+  max-width: 1400px;
+}
+
+@media (min-width: 768px) {
+  .container-page,
+  .container-wide {
+    padding-inline: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-page,
+  .container-wide {
+    padding-inline: 48px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-page,
+  .container-wide {
+    padding-inline: 64px;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply font-sans antialiased bg-background text-foreground;
   }
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
-/* Subtle Grain Texture Overlay */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 9999;
-  opacity: 0.4;
+.type-caret {
+  display: inline-block;
+  width: 2px;
+  height: 0.85em;
+  margin-left: 3px;
+  background: currentColor;
+  vertical-align: -0.08em;
+  animation: type-caret 0.9s step-end infinite;
 }
+
+@keyframes type-caret {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .type-caret {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+.hover-card {
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.45s ease,
+    background-color 0.35s ease,
+    border-color 0.35s ease;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .hover-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 22px 44px -22px hsl(215 35% 25% / 0.16);
+  }
+
+  .theme-pain .hover-card:hover {
+    box-shadow: 0 22px 44px -22px hsl(355 38% 26% / 0.2);
+  }
+
+  button.rounded-full:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* About page: portrait pill that opens to full-bleed on scroll (sized by PortraitReveal) */
+.about-reveal {
+  position: relative;
+  height: 185svh;
+}
+
+.about-reveal[data-static] {
+  height: 100svh;
+}
+
+.about-reveal-stage {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.about-reveal-frame {
+  position: absolute;
+  top: 6rem;
+  left: 50%;
+  width: min(20rem, 80vw);
+  aspect-ratio: 1 / 1.4;
+  overflow: hidden;
+  border-radius: 9999px;
+  background: #fdfdfd;
+  transform: translateX(-50%);
+  will-change: width, height, top, border-radius;
+}
+
+/* Height-fitted, plus a capped --zoom, so opening the frame reveals backdrop rather than cropping to cover */
+.about-reveal-frame img {
+  position: absolute;
+  top: calc((1 - var(--zoom, 1)) * 15%);
+  left: 50%;
+  display: block;
+  width: auto;
+  max-width: none;
+  height: calc(100% * var(--zoom, 1));
+  transform: translateX(-50%);
+  mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+}
+

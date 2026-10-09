@@ -60,7 +60,7 @@ const data: TreatmentPageData = {
     { q: "Can I have a chemical peel if I have active acne?", a: "Yes - certain peels, particularly salicylic acid, are specifically beneficial for acne-prone skin. Dr. Taganova will select the appropriate formulation based on your skin condition." },
     { q: "What's the difference between light and deep peels?", a: "Light peels work on the skin surface, causing minimal downtime. Deeper peels penetrate further into the skin for more significant results but require more recovery time. Dr. Taganova will recommend the appropriate depth for your goals." },
     { q: "How much do chemical peels cost in Oxford?", a: "At The Oxford Wellness Doctor, the Obagi Blue Peel Radiance is £100 and the Perfect Peel is £350. Both prices include full consultation and aftercare guidance." },
-    { q: "How do I book a chemical peel consultation?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book via Glowday. Located at 3 Woodstock Rd, Oxford OX2 6HA. Open Friday 4–8pm and Saturday 9am–1pm." },
+    { q: "How do I book a chemical peel consultation?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book via Glowday. Located at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ. Open Friday 4–8pm and Saturday 9am–1pm." },
   ],
   procedureSchema: {
     name: "Chemical Peels Oxford",

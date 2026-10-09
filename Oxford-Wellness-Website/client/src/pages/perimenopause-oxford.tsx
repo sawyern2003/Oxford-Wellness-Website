@@ -5,7 +5,7 @@ const data: TreatmentPageData = {
   metaDescription: "Perimenopause support in Oxford from specialist menopause lead Dr. Inga Taganova. Expert care for women in their 40s experiencing early menopause symptoms. Book consultation.",
   canonical: "https://www.theoxfordwellnessdoctor.com/perimenopause-oxford",
   h1: "Perimenopause Support in Oxford - When Symptoms Start in Your 40s",
-  intro: "Perimenopause is the transition phase leading to menopause, and for many women, it's the most symptom-heavy and disruptive period of their entire hormonal journey. Dr. Inga Taganova, a specialist menopause lead and formerly trained gynaecologist, provides expert assessment and management for women experiencing perimenopause - often starting in their early-to-mid 40s, sometimes earlier.",
+  intro: "Perimenopause is the transition phase leading to menopause, and for many women, it's the most symptom-heavy and disruptive period of their entire hormonal journey. Dr. Inga Taganova, a specialist menopause lead and formally trained gynaecologist, provides expert assessment and management for women experiencing perimenopause - often starting in their early-to-mid 40s, sometimes earlier.",
   sections: [
     {
       heading: "What Is Perimenopause?",
@@ -70,14 +70,14 @@ const data: TreatmentPageData = {
     {
       heading: "Why Dr. Taganova's Background Matters",
       paragraphs: [
-        "As a formerly trained gynaecologist and specialist menopause lead, Dr. Taganova understands perimenopause at a level that most aesthetic practitioners - and even many GPs - simply don't. She recognizes the complexity of hormonal changes and how they affect every system in your body.",
+        "As a formally trained gynaecologist and specialist menopause lead, Dr. Taganova understands perimenopause at a level that most aesthetic practitioners - and even many GPs - simply don't. She recognizes the complexity of hormonal changes and how they affect every system in your body.",
         "Her training means she can distinguish between perimenopause symptoms and other medical conditions that can present similarly (thyroid disorders, diabetes, cardiovascular issues). She also understands the emotional and psychological impact of hormonal changes and approaches care with empathy and respect.",
       ],
       bullets: [
         "Specialist menopause lead with extensive training",
-        "Formerly trained gynaecologist with hospital experience",
+        "Formally trained gynaecologist with hospital experience",
         "GP with over 20 years of experience in women's health",
-        "GMC registered (No. 4727817) with an unblemished record",
+        "GMC-registered doctor with an unblemished record",
         "Aesthetic medicine expertise for treating physical manifestations",
         "Experience treating hundreds of perimenopausal women",
       ],
@@ -131,9 +131,10 @@ const data: TreatmentPageData = {
   ],
   procedureSchema: {
     name: "Perimenopause Consultation",
-    description: "Comprehensive perimenopause assessment with Dr. Inga Taganova - specialist menopause lead and formerly trained gynaecologist - in Oxford. Expert symptom evaluation, treatment planning, and holistic support for women in their 40s.",
+    description: "Comprehensive perimenopause assessment with Dr. Inga Taganova - specialist menopause lead and formally trained gynaecologist - in Oxford. Expert symptom evaluation, treatment planning, and holistic support for women in their 40s.",
   },
   relatedLinks: [
+    { label: "Symptoms & Treatment Guide", href: "/symptoms-and-treatments" },
     { label: "Menopause Clinic", href: "/menopause-clinic-oxford" },
     { label: "Intimate Rejuvenation (Neauvia N Rose)", href: "/treatments/neauvia-n-rose-intimate-rejuvenation-oxford" },
     { label: "Profhilo Skin Treatment", href: "/treatments/profhilo-oxford" },

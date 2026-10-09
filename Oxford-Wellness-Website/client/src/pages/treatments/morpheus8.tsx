@@ -5,7 +5,7 @@ const data: TreatmentPageData = {
   metaDescription: "Morpheus8 radiofrequency microneedling in Oxford. Non-surgical skin tightening for face & body. Reduces wrinkles, scars & improves texture. Book consultation.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/morpheus8-oxford",
   h1: "Morpheus8 in Oxford - Advanced RF Microneedling Treatment",
-  intro: "RF microneedling tightens skin, reduces wrinkles and scars, and remodels collagen deep in the tissue — without surgery.",
+  intro: "RF microneedling tightens skin, reduces wrinkles and scars, and remodels collagen deep in the tissue – without surgery.",
   sections: [
     {
       heading: "What Morpheus8 Treats",
@@ -42,7 +42,7 @@ const data: TreatmentPageData = {
     { q: "How much does Morpheus8 cost in Oxford?", a: "Morpheus8 at The Oxford Wellness Doctor is priced by area: £300 for the tummy, £400 for eyes and around the mouth, £650 for the full face, neck and décolletage, and £800 for stretch marks and large areas. A resurfacing add-on is £300." },
     { q: "Can Morpheus8 be combined with other treatments?", a: "Yes - Morpheus8 pairs very well with skin booster injections, Profhilo, and anti-wrinkle injections. Dr. Taganova will create a combined treatment plan for the best possible outcomes." },
     { q: "What's the difference between Morpheus8 and standard microneedling?", a: "Standard microneedling works at the skin's surface. Morpheus8 combines microneedling with radiofrequency energy delivered deep into the dermis and subdermis - producing significantly more powerful collagen remodelling and skin tightening." },
-    { q: "How do I book Morpheus8 in Oxford?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book via Glowday. Located at 3 Woodstock Rd, Oxford OX2 6HA. Open Friday 4–8pm and Saturday 9am–1pm." },
+    { q: "How do I book Morpheus8 in Oxford?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book via Glowday. Located at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ. Open Friday 4–8pm and Saturday 9am–1pm." },
   ],
   procedureSchema: {
     name: "Morpheus8 RF Microneedling Oxford",

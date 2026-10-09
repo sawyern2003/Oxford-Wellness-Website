@@ -62,7 +62,7 @@ const data: TreatmentPageData = {
     { q: "How long does swelling last after lip fillers?", a: "Swelling is most noticeable in the first 24–48 hours. Most patients find it has fully settled by 7–14 days, at which point the final result is visible." },
     { q: "Can I eat and drink after lip fillers?", a: "Yes, but avoid very hot drinks and spicy food for the first few hours after treatment. Normal eating and drinking can resume shortly after the appointment." },
     { q: "How old do I need to be for lip fillers?", a: "You must be 18 or over to receive lip filler treatment at The Oxford Wellness Doctor. Dr. Taganova will always verify age and assess suitability during consultation." },
-    { q: "How do I book lip fillers in Oxford?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. We are at 3 Woodstock Rd, Oxford OX2 6HA, open Friday 4–8pm and Saturday 9am–1pm." },
+    { q: "How do I book lip fillers in Oxford?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. We are at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ, open Friday 4–8pm and Saturday 9am–1pm." },
   ],
   procedureSchema: {
     name: "Lip Fillers Oxford",

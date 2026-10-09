@@ -67,7 +67,7 @@ const data: TreatmentPageData = {
     { q: "Will my jaw feel weak?", a: "You will not experience weakness in normal activities. The injections reduce excessive muscle force without affecting your ability to chew, speak, or perform everyday jaw functions." },
     { q: "Can this treatment help with headaches?", a: "Yes. Jaw clenching and teeth grinding are a common cause of tension headaches. Many patients report a significant reduction in headache frequency and severity following masseter injections." },
     { q: "How does this differ from jaw filler?", a: "Jaw slimming injections reduce the masseter muscle bulk to narrow the jaw. Jaw filler adds structure and definition to the jaw angle and chin. They achieve different results - Dr. Taganova will advise which (or what combination) is appropriate for you." },
-    { q: "How do I book?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at 3 Woodstock Rd, Oxford OX2 6HA." },
+    { q: "How do I book?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ." },
   ],
   procedureSchema: {
     name: "Jaw Slimming & Teeth Grinding Treatment Oxford",

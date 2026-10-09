@@ -2,6 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { buildRobotsTxt, buildSitemapXml } from "./seo-static";
 import { submitContactJson } from "./contact-submit";
+import { submitProgrammeFinderJson } from "./programme-finder-submit";
 
 export async function registerRoutes(
   httpServer: Server,
@@ -19,6 +20,11 @@ export async function registerRoutes(
 
   app.post("/api/contact", async (req, res) => {
     const { status, json } = await submitContactJson(req.body);
+    res.status(status).json(json);
+  });
+
+  app.post("/api/programme-finder", async (req, res) => {
+    const { status, json } = await submitProgrammeFinderJson(req.body);
     res.status(status).json(json);
   });
 

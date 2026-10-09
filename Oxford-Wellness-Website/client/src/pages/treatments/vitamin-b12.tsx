@@ -44,7 +44,7 @@ const data: TreatmentPageData = {
         "Full medical history taken before treatment",
         "Sterile, professional clinic environment in Oxford",
         "Combined with other wellness treatments if appropriate",
-        "GMC-registered physician (No. 4727817) with 20+ years experience",
+        "GMC-registered physician with 20+ years experience",
       ],
     },
   ],
@@ -59,7 +59,7 @@ const data: TreatmentPageData = {
     { q: "Are there any side effects?", a: "B12 injections are very safe. Occasionally, mild redness or tenderness at the injection site may occur. Allergic reactions are extremely rare." },
     { q: "Can I have a B12 injection if I'm on medication?", a: "B12 is generally safe to combine with most medications. Dr. Taganova will review your health history and current medications before treatment." },
     { q: "How quickly will I feel the effects?", a: "Most patients notice improved energy and mental clarity within 24–48 hours. For those with significant deficiency, the full effect may take several injections." },
-    { q: "How do I book?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at 3 Woodstock Rd, Oxford OX2 6HA." },
+    { q: "How do I book?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ." },
   ],
   procedureSchema: {
     name: "Vitamin B12 Injection Oxford",

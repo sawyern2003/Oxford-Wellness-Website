@@ -27,10 +27,10 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="font-serif text-4xl font-medium text-primary mb-4">Curated Treatments</h2>
+          <h2 className="font-sans font-semibold text-3xl text-foreground tracking-tight mb-4">Curated Treatments</h2>
           <p className="text-muted-foreground font-light">
             Our medical experts combine cutting-edge technology with artistic precision to deliver exceptional results.
           </p>
@@ -39,12 +39,12 @@ export default function ServicesSection() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <Link key={index} href="/services">
-              <Card className="group cursor-pointer border-none shadow-none bg-muted/30 hover:bg-white hover:shadow-lg transition-all duration-300 rounded-none h-full">
+              <Card className="group cursor-pointer border-none shadow-none bg-muted/30 hover:bg-white hover:shadow-lg transition-all duration-300 rounded-3xl h-full">
                 <CardHeader>
                   <div className="w-12 h-12 bg-secondary/20 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                     <service.icon strokeWidth={1.5} size={24} />
                   </div>
-                  <CardTitle className="font-serif text-xl text-primary">{service.title}</CardTitle>
+                  <CardTitle className="font-sans font-semibold text-xl text-foreground tracking-tight">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-muted-foreground leading-relaxed mb-6">

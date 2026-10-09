@@ -43,7 +43,7 @@ export default function TreatmentModal({ isOpen, onClose, treatment }: Treatment
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl bg-white p-0 z-50 shadow-2xl rounded-none overflow-hidden max-h-[90vh] flex flex-col"
+            className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl bg-white p-0 z-50 shadow-2xl rounded-3xl overflow-hidden max-h-[90vh] flex flex-col"
           >
             {/* Header */}
             <div className="bg-primary text-primary-foreground p-6 md:p-8 relative">
@@ -53,13 +53,13 @@ export default function TreatmentModal({ isOpen, onClose, treatment }: Treatment
               >
                 <X size={24} />
               </button>
-              <h2 className="font-serif text-3xl md:text-4xl pr-8">{treatment.name}</h2>
-              <p className="font-serif italic text-lg opacity-90 mt-2">{treatment.price}</p>
+              <h2 className="font-sans font-semibold text-2xl md:text-3xl tracking-tight pr-8">{treatment.name}</h2>
+              <p className="text-lg text-primary-foreground/80 mt-2">{treatment.price}</p>
             </div>
 
             {/* Content */}
             <div className="p-6 md:p-8 overflow-y-auto custom-scrollbar">
-              <p className="text-lg text-muted-foreground font-normal mb-8 leading-relaxed">
+              <p className="text-base text-muted-foreground mb-8 leading-relaxed">
                 {treatment.desc}
               </p>
 
@@ -70,8 +70,8 @@ export default function TreatmentModal({ isOpen, onClose, treatment }: Treatment
                     <Stethoscope className="text-secondary" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-serif text-xl text-primary mb-2">What it involves</h4>
-                    <p className="text-muted-foreground font-normal leading-relaxed">
+                    <h4 className="font-sans font-semibold text-lg text-foreground tracking-tight mb-2">What it involves</h4>
+                    <p className="text-muted-foreground leading-relaxed">
                       {treatment.details?.involves || "Contact us for detailed procedure information."}
                     </p>
                   </div>
@@ -83,8 +83,8 @@ export default function TreatmentModal({ isOpen, onClose, treatment }: Treatment
                     <UserCheck className="text-secondary" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-serif text-xl text-primary mb-2">Who it's for</h4>
-                    <p className="text-muted-foreground font-normal leading-relaxed">
+                    <h4 className="font-sans font-semibold text-lg text-foreground tracking-tight mb-2">Who it's for</h4>
+                    <p className="text-muted-foreground leading-relaxed">
                       {treatment.details?.idealCandidate || "Suitable for most patients. A consultation is recommended."}
                     </p>
                   </div>
@@ -96,8 +96,8 @@ export default function TreatmentModal({ isOpen, onClose, treatment }: Treatment
                     <Clock className="text-secondary" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-serif text-xl text-primary mb-2">Duration</h4>
-                    <p className="text-muted-foreground font-normal leading-relaxed">
+                    <h4 className="font-sans font-semibold text-lg text-foreground tracking-tight mb-2">Duration</h4>
+                    <p className="text-muted-foreground leading-relaxed">
                       {treatment.details?.duration || "Varies by treatment plan."}
                     </p>
                   </div>
@@ -109,8 +109,8 @@ export default function TreatmentModal({ isOpen, onClose, treatment }: Treatment
                     <Heart className="text-secondary" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-serif text-xl text-primary mb-2">What to expect</h4>
-                    <p className="text-muted-foreground font-normal leading-relaxed">
+                    <h4 className="font-sans font-semibold text-lg text-foreground tracking-tight mb-2">What to expect</h4>
+                    <p className="text-muted-foreground leading-relaxed">
                       {treatment.details?.expectations || "Results and recovery times vary by individual."}
                     </p>
                   </div>
@@ -118,14 +118,14 @@ export default function TreatmentModal({ isOpen, onClose, treatment }: Treatment
               </div>
 
               <div className="mt-10 pt-6 border-t border-border flex flex-col md:flex-row gap-4 justify-between items-center">
-                 <p className="text-sm text-muted-foreground italic">
+                 <p className="text-sm text-muted-foreground">
                    * Results may vary. A consultation is required prior to treatment.
                  </p>
                  <Button 
-                   className="bg-primary text-white hover:bg-primary/90 rounded-none px-8 w-full md:w-auto"
-                   onClick={() => window.open('https://www.glowday.com/clinic/the-oxford-wellness-doctor', '_blank')}
+                   className="bg-secondary text-primary hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium w-full md:w-auto"
+                   onClick={() => window.location.assign("/book")}
                  >
-                   Book Consultation
+                   Book consultation
                  </Button>
               </div>
             </div>

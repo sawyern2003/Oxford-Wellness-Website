@@ -50,7 +50,7 @@ const data: TreatmentPageData = {
     { q: "How long until I see results?", a: "Results typically become visible within 3–7 days, with full effects apparent after 14 days. We include a free two-week follow-up appointment to assess your results." },
     { q: "Are anti-wrinkle injections safe during pregnancy?", a: "Anti-wrinkle injections are not recommended during pregnancy or breastfeeding as a precautionary measure. Dr. Taganova will discuss your medical history fully during consultation." },
     { q: "Who should not have anti-wrinkle injections?", a: "Anti-wrinkle injections are not suitable for pregnant or breastfeeding women, people with certain neuromuscular conditions, or those with known allergy to botulinum toxin. Dr. Taganova assesses your suitability thoroughly during consultation." },
-    { q: "How do I book an appointment at The Oxford Wellness Doctor?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. We are located at 3 Woodstock Rd, Oxford OX2 6HA, open Friday 4–8pm and Saturday 9am–1pm." },
+    { q: "How do I book an appointment at The Oxford Wellness Doctor?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. We are located at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ, open Friday 4–8pm and Saturday 9am–1pm." },
   ],
   procedureSchema: {
     name: "Anti-Wrinkle Injections Oxford",

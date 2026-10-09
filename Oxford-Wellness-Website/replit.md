@@ -39,7 +39,7 @@ Professional medical aesthetics clinic website for The Oxford Wellness Doctor, l
 - `useSEO` hook (`client/src/hooks/useSEO.ts`) sets unique title, description, OG tags, and canonical per page
 - `useBreadcrumbSchema` hook (`client/src/hooks/useBreadcrumbSchema.ts`) injects BreadcrumbList JSON-LD on all internal pages
 - JSON-LD structured data in `index.html`: `MedicalBusiness` + `LocalBusiness` + `Physician` @graph with `areaServed` (12 locations) and `medicalSpecialty`
-- `robots.txt` and `sitemap.xml` served dynamically from Express (`server/routes.ts`) — 30 pages in sitemap
+- `robots.txt` and `sitemap.xml` served dynamically from Express (`server/routes.ts`) – 30 pages in sitemap
 - Treatments hub page (`/treatments`) has H1/H2/H3 hierarchy, FAQ accordion per category, "Why Choose Us" section, FAQ JSON-LD schema, and internal links to all 9 sub-pages
 - 9 individual treatment sub-pages in `client/src/pages/treatments/` using shared `TreatmentPageTemplate` component
 - Each treatment sub-page injects @graph with: `MedicalProcedure` (with bodyLocation, preparation, followUp), `FAQPage`, and `BreadcrumbList` (3-level: Home > Treatments > [Name])
@@ -58,7 +58,7 @@ Professional medical aesthetics clinic website for The Oxford Wellness Doctor, l
 - Comprehensive descriptive alt text on every image (includes clinic name, location, treatment type, Dr. Taganova's name/GMC number where relevant)
 - Two `ImageObject` schema entries added to the @graph in index.html: hero image + Dr. Taganova portrait
 
-## Exact Pricing (Price Sheet — Phase 11)
+## Exact Pricing (Price Sheet – Phase 11)
 All prices corrected site-wide to match the official price sheet. No "from £X" used where an exact price exists.
 - Anti-Wrinkle: £190 (1 area), £250 (2 areas), £300 (3 areas); add-ons £50; Dimpled Chin £150
 - Jaw Slimming: £250 | Excessive Sweating (armpits): £500 | Filler Dissolving: £200
@@ -74,13 +74,13 @@ All prices corrected site-wide to match the official price sheet. No "from £X" 
 All treatment sub-pages, services.tsx, and pricing.tsx updated to reflect exact prices.
 
 ## Phase 10 Additions
-- **FloatingButtons** (`client/src/components/layout/FloatingButtons.tsx`) — global sticky CTA + WhatsApp buttons, appear after 300px scroll; expandable menu (Book Online + phone); WhatsApp links to wa.me/447739309380
-- **Trust badges strip** in Footer — GMC Registered (No. 4727817), Fully Insured, 20+ Years Clinical Experience — rendered above main footer grid (3 badges)
+- **FloatingButtons** (`client/src/components/layout/FloatingButtons.tsx`) – global sticky CTA + WhatsApp buttons, appear after 300px scroll; expandable menu (Book Online + phone); WhatsApp links to wa.me/447739309380
+- **Trust badges strip** in Footer – GMC Registered (No. 4727817), Fully Insured, 20+ Years Clinical Experience – rendered above main footer grid (3 badges)
 - **New pages**: `/privacy-policy`, `/cookie-policy`, `/terms-and-conditions`, `/thank-you`, custom 404 (`not-found.tsx`) all styled to match brand
 - **Contact form**: GDPR consent checkbox added (required); submit button disabled until consent given; redirects to `/thank-you` on success
 - **Home page**: Google Reviews trust strip added between testimonials and location sections (Google logo, 5★ 47 reviews, 2 snippet cards, "See All Reviews" CTA)
 - **Sitemap**: 3 legal pages added (priority 0.3, yearly); 9 new treatment sub-pages added; now 42 pages total
-- **Treatments page**: Unified single card layout — all 18 treatments display consistently with name, price, description, "ideal for", and "View Treatment Guide" link to their dedicated sub-page
+- **Treatments page**: Unified single card layout – all 18 treatments display consistently with name, price, description, "ideal for", and "View Treatment Guide" link to their dedicated sub-page
 
 ## Important Notes
 - SendGrid requires verified sender identity for info@theoxfordwellnessdoctor.com

@@ -25,7 +25,7 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/anti-wrinkle-injections-oxford": {
     treatmentName: "Anti-Wrinkle Injections",
     summary:
-      "Botulinum toxin relaxes facial muscles to smooth dynamic lines — forehead, frown, and crow's feet — with natural-looking results from a GMC-registered doctor.",
+      "Botulinum toxin relaxes facial muscles to smooth dynamic lines – forehead, frown, and crow's feet – with natural-looking results from a GMC-registered doctor.",
     highlights: [
       "Forehead lines",
       "Frown lines between the brows",
@@ -43,7 +43,7 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/dermal-fillers-oxford": {
     treatmentName: "Dermal Fillers",
     summary:
-      "Hyaluronic acid fillers restore lost volume, soften deep lines, and contour the face — delivered with a conservative, natural-looking approach.",
+      "Hyaluronic acid fillers restore lost volume, soften deep lines, and contour the face – delivered with a conservative, natural-looking approach.",
     highlights: [
       "Cheek volume and contour",
       "Nasolabial and marionette lines",
@@ -61,7 +61,7 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/lip-fillers-oxford": {
     treatmentName: "Lip Fillers",
     summary:
-      "Premium hyaluronic acid adds subtle volume, definition, and hydration — never an overfilled look.",
+      "Premium hyaluronic acid adds subtle volume, definition, and hydration – never an overfilled look.",
     highlights: [
       "Natural volume and fullness",
       "Cupid's bow and border definition",
@@ -79,7 +79,7 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/profhilo-oxford": {
     treatmentName: "Profhilo",
     summary:
-      "Pure hyaluronic acid bio-remodels skin from within — stimulating collagen and elastin for lasting hydration, firmness, and radiance.",
+      "Pure hyaluronic acid bio-remodels skin from within – stimulating collagen and elastin for lasting hydration, firmness, and radiance.",
     highlights: [
       "Skin laxity and loss of firmness",
       "Fine lines from dehydration",
@@ -97,7 +97,7 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/morpheus8-oxford": {
     treatmentName: "Morpheus8",
     summary:
-      "RF microneedling tightens skin, reduces wrinkles and scars, and remodels collagen deep in the tissue — without surgery.",
+      "RF microneedling tightens skin, reduces wrinkles and scars, and remodels collagen deep in the tissue – without surgery.",
     highlights: [
       "Loose skin on face, neck, and jowls",
       "Deep wrinkles and folds",
@@ -119,8 +119,8 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
     highlights: [
       "Obesity or overweight with related health conditions",
       "Appetite reduction and improved fullness",
-      "Wegovy — avg. 15–17% body weight loss",
-      "Mounjaro — avg. 20–25% body weight loss",
+      "Wegovy – avg. 15–17% body weight loss",
+      "Mounjaro – avg. 20–25% body weight loss",
       "Support for menopause-related weight gain",
     ],
     atAGlance: [
@@ -151,7 +151,7 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/chemical-peels-oxford": {
     treatmentName: "Chemical Peels",
     summary:
-      "Medical-grade peels resurface skin to improve acne, pigmentation, fine lines, and dullness — applied by a GMC doctor.",
+      "Medical-grade peels resurface skin to improve acne, pigmentation, fine lines, and dullness – applied by a GMC doctor.",
     highlights: [
       "Acne and breakouts",
       "Hyperpigmentation and sun damage",
@@ -169,7 +169,7 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/skin-boosters-oxford": {
     treatmentName: "Skin Boosters",
     summary:
-      "Injectable hyaluronic acid deeply hydrates skin, improving elasticity, glow, and texture — without adding volume.",
+      "Injectable hyaluronic acid deeply hydrates skin, improving elasticity, glow, and texture – without adding volume.",
     highlights: [
       "Dehydrated, dull skin",
       "Fine surface lines",
@@ -187,7 +187,7 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/neauvia-n-rose-intimate-rejuvenation-oxford": {
     treatmentName: "Neauvia N Rose",
     summary:
-      "Medical-grade hyaluronic acid restores hydration, comfort, and tissue integrity in the intimate area — especially for menopause-related changes.",
+      "Medical-grade hyaluronic acid restores hydration, comfort, and tissue integrity in the intimate area – especially for menopause-related changes.",
     highlights: [
       "Vaginal dryness and discomfort",
       "Reduced sensitivity during intimacy",
@@ -223,7 +223,7 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/vitamin-b12-injection-oxford": {
     treatmentName: "Vitamin B12 Injection",
     summary:
-      "Intramuscular B12 bypasses digestion for fast absorption — boosting energy, mood, immunity, and metabolic function.",
+      "Intramuscular B12 bypasses digestion for fast absorption – boosting energy, mood, immunity, and metabolic function.",
     highlights: [
       "Persistent fatigue",
       "Brain fog and poor concentration",
@@ -259,7 +259,7 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/forma-facelift-oxford": {
     treatmentName: "Forma Facelift",
     summary:
-      "Non-invasive radiofrequency tightens and lifts facial skin with zero downtime — immediate firmness plus long-term collagen stimulation.",
+      "Non-invasive radiofrequency tightens and lifts facial skin with zero downtime – immediate firmness plus long-term collagen stimulation.",
     highlights: [
       "Forehead lifting",
       "Cheeks and mid-face",
@@ -277,7 +277,7 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/forma-plus-body-contouring-oxford": {
     treatmentName: "Forma Plus Body",
     summary:
-      "Non-invasive radiofrequency firms loose body skin on arms, abdomen, thighs, and knees — with zero downtime.",
+      "Non-invasive radiofrequency firms loose body skin on arms, abdomen, thighs, and knees – with zero downtime.",
     highlights: [
       "Inner arm laxity",
       "Abdominal skin post-pregnancy",
@@ -349,7 +349,7 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/jaw-slimming-teeth-grinding-oxford": {
     treatmentName: "Jaw Slimming & Teeth Grinding",
     summary:
-      "Masseter botulinum toxin injections slim a wide jawline and relieve teeth grinding — quick, minimally invasive, progressive results.",
+      "Masseter botulinum toxin injections slim a wide jawline and relieve teeth grinding – quick, minimally invasive, progressive results.",
     highlights: [
       "Wide or square jawline",
       "Teeth grinding (bruxism)",

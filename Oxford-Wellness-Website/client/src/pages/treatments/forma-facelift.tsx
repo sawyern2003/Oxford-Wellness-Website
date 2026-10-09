@@ -67,7 +67,7 @@ const data: TreatmentPageData = {
     { q: "Is Forma safe for dark skin tones?", a: "Yes. Forma uses radiofrequency rather than light-based energy, making it safe for all skin tones, including darker skin types that may not be suitable for laser or IPL treatments." },
     { q: "How is Forma different from other skin tightening treatments?", a: "Forma's real-time temperature monitoring ensures consistent results and safety. Unlike many handheld or spa-grade RF devices, the InMode Forma platform is a medical-grade technology with substantial clinical evidence." },
     { q: "Can Forma be combined with other treatments?", a: "Yes. Forma works well alongside injectables, skin boosters, and Morpheus8. Dr. Taganova will advise on the optimal combination and sequencing during your consultation." },
-    { q: "How do I book?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at 3 Woodstock Rd, Oxford OX2 6HA." },
+    { q: "How do I book?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ." },
   ],
   procedureSchema: {
     name: "Forma Facelift Oxford",

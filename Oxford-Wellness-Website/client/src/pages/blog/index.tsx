@@ -16,7 +16,7 @@ const posts = [
   {
     slug: "menopause-skin-changes",
     title: "How Menopause Affects Your Skin: What Your GP Won't Tell You",
-    excerpt: "Menopause causes measurable changes to skin collagen, hydration and elasticity. Formerly trained gynaecologist Dr. Taganova explains what works.",
+    excerpt: "Menopause causes measurable changes to skin collagen, hydration and elasticity. Formally trained gynaecologist Dr. Taganova explains what works.",
     category: "Menopause & Women's Health",
     readTime: "6 min",
     href: "/blog/menopause-skin-changes",
@@ -72,7 +72,7 @@ const posts = [
   {
     slug: "new-oxford-science-park-clinic",
     title: "Welcome to Our Oxford Clinic",
-    excerpt: "Our clinic is located in Oxford at 3 Woodstock Rd - a professional medical environment providing expert women's health and aesthetic care with convenient access from all Oxford areas.",
+    excerpt: "Our clinic is located in Oxford at Belsyre Court, 57 Woodstock Rd - a professional medical environment providing expert women's health and aesthetic care with convenient access from all Oxford areas.",
     category: "Clinic News",
     readTime: "4 min",
     href: "/blog/new-oxford-science-park-clinic",
@@ -89,15 +89,15 @@ export default function BlogIndex() {
   });
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white">
       {/* Hero */}
-      <div className="relative bg-muted/30 text-foreground py-32 px-6 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-muted/40 to-background/95"></div>
+      <div className="pt-28 pb-12 px-6">
         <FadeIn>
-          <div className="relative max-w-4xl mx-auto text-center">
-            <h1 className="font-serif text-4xl md:text-6xl mb-6 text-primary">Doctor's Notes</h1>
-            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed text-base md:text-lg font-light">
-              It's more than skin deep with our knowledge. Doctor's Notes is where we share expert advice, personal insights and guidance you can trust.
+          <div className="max-w-3xl mx-auto">
+            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">Journal</p>
+            <h1 className="font-sans font-semibold text-4xl md:text-5xl mb-5 text-foreground tracking-tight">Doctor&apos;s Notes</h1>
+            <p className="text-muted-foreground max-w-2xl leading-relaxed text-[15px]">
+              Expert advice and calm guidance from Dr Inga – written to help you understand your options, not sell a treatment.
             </p>
           </div>
         </FadeIn>
@@ -120,17 +120,17 @@ export default function BlogIndex() {
               <Link
                 href={post.href}
                 data-testid={`blog-card-${idx}`}
-                className="block group"
+                className="hover-card block group rounded-3xl"
               >
-                <div className="relative bg-muted/20 aspect-[4/3] mb-4 overflow-hidden">
+                <div className="relative bg-muted/40 aspect-[4/3] mb-4 overflow-hidden rounded-3xl">
                   <div className="absolute inset-0 bg-gradient-to-br from-muted/40 to-muted/60 group-hover:opacity-75 transition-opacity"></div>
                   <div className="absolute top-4 left-4">
-                    <span className="bg-background text-foreground text-[10px] px-3 py-1.5 uppercase tracking-widest font-medium">
+                    <span className="bg-white text-foreground text-[10px] px-3 py-1.5 rounded-full font-medium">
                       {post.category}
                     </span>
                   </div>
                 </div>
-                <h2 className="font-serif text-xl text-primary leading-tight mb-3 group-hover:text-secondary transition-colors">
+                <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight leading-tight mb-3 group-hover:text-secondary transition-colors">
                   {post.title}
                 </h2>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-3 font-light">
@@ -143,18 +143,18 @@ export default function BlogIndex() {
 
         {/* Author Bio */}
         <FadeIn>
-          <div className="mt-20 py-12 border-t border-border">
+          <div className="mt-20 rounded-3xl bg-muted/50 p-8 md:p-12">
             <div className="max-w-3xl mx-auto text-center">
-              <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3">About the Author</p>
-              <h2 className="font-serif text-2xl text-primary mb-4">Dr. Inga Taganova</h2>
-              <p className="text-sm text-muted-foreground leading-relaxed font-light mb-6">
-                Dr. Taganova is a GMC-registered doctor (No. 4727817), formerly trained gynaecologist, experienced GP, and qualified aesthetic medicine practitioner. With over 20 years in women's health, she brings a depth of clinical knowledge to aesthetic medicine that is rarely found outside hospital settings. All articles on this blog are written personally by Dr. Taganova and reflect current evidence-based clinical practice.
+              <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-3">About the author</p>
+              <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-4">Dr Inga Taganova</h2>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+                Dr Taganova is a GMC-registered doctor, formally trained gynaecologist, experienced GP, and qualified aesthetic medicine practitioner. With over 20 years in women&apos;s health, she brings a depth of clinical knowledge to aesthetic medicine that is rarely found outside hospital settings. All articles are written personally by Dr Taganova and reflect current evidence-based clinical practice.
               </p>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary transition-colors uppercase tracking-wider"
+                className="inline-flex items-center gap-1.5 text-sm text-secondary hover:text-primary transition-colors font-medium"
               >
-                Learn more about Dr. Taganova <ArrowRight size={11} />
+                Learn more about Dr Taganova <ArrowRight size={14} />
               </Link>
             </div>
           </div>

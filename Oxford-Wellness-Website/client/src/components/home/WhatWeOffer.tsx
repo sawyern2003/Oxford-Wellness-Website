@@ -33,8 +33,8 @@ export default function WhatWeOffer() {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-6">
         <FadeIn className="max-w-2xl mb-16">
-          <span className="block text-primary text-sm uppercase tracking-[0.2em] mb-4">Our Specialisms</span>
-          <h2 className="font-serif text-4xl md:text-5xl">What We Offer</h2>
+          <span className="block text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">Our Specialisms</span>
+          <h2 className="font-sans font-semibold text-3xl md:text-4xl text-foreground tracking-tight">What We Offer</h2>
         </FadeIn>
 
         <div className="grid md:grid-cols-3 gap-12">
@@ -51,7 +51,7 @@ export default function WhatWeOffer() {
                     height="500"
                   />
                 </div>
-                <h3 className="font-serif text-2xl text-secondary mb-4 group-hover:text-primary transition-colors duration-300">
+                <h3 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4 group-hover:text-primary transition-colors duration-300">
                   {item.title}
                 </h3>
                 <p className="text-muted-foreground font-light leading-relaxed mb-8 flex-grow">
@@ -59,7 +59,7 @@ export default function WhatWeOffer() {
                 </p>
                 <Link
                   href={item.href}
-                  className="text-sm uppercase tracking-widest text-primary font-medium hover:tracking-[0.2em] transition-all duration-300 flex items-center"
+                  className="text-sm text-secondary font-medium transition-colors flex items-center"
                 >
                   Learn More <span className="ml-2">→</span>
                 </Link>

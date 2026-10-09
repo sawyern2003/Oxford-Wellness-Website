@@ -49,7 +49,7 @@ export interface BlogPostData {
 function FAQSection({ faqs }: { faqs: { q: string; a: string }[] }) {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
   return (
-    <div className="divide-y divide-border border border-border">
+    <div className="divide-y divide-border rounded-3xl bg-muted/40 overflow-hidden">
       {faqs.map((faq, i) => (
         <div key={i}>
           <button
@@ -58,7 +58,7 @@ function FAQSection({ faqs }: { faqs: { q: string; a: string }[] }) {
             onClick={() => setOpenIdx(openIdx === i ? null : i)}
             aria-expanded={openIdx === i}
           >
-            <span className="font-serif text-base text-primary leading-snug group-hover:text-secondary transition-colors">
+            <span className="font-sans font-medium text-base text-foreground leading-snug group-hover:text-secondary transition-colors">
               {faq.q}
             </span>
             {openIdx === i ? (
@@ -92,7 +92,7 @@ function SectionImage({ image }: { image: NonNullable<BlogSection["image"]> }) {
       <img
         src={image.src}
         alt={image.alt}
-        className="w-full object-cover rounded-sm"
+        className="w-full object-cover rounded-3xl"
         loading="lazy"
       />
       {image.caption && (
@@ -107,7 +107,7 @@ function SectionImage({ image }: { image: NonNullable<BlogSection["image"]> }) {
 function SectionContent({ section }: { section: BlogSection }) {
   return (
     <>
-      <h2 className="font-serif text-xl text-primary mb-4">{section.heading}</h2>
+      <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">{section.heading}</h2>
       {section.paragraphs?.map((p, i) => (
         <p key={i} className="text-muted-foreground leading-relaxed mb-3 text-sm">{p}</p>
       ))}
@@ -204,20 +204,20 @@ export default function BlogPostTemplate({ data }: { data: BlogPostData }) {
   }, [data]);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white">
       {/* Hero Header */}
-      <div className="bg-primary text-primary-foreground py-20 px-6">
+      <div className="bg-primary text-primary-foreground pt-28 pb-16 px-6">
         <FadeIn>
           <div className="max-w-3xl mx-auto">
-            <p className="text-xs uppercase tracking-widest text-primary-foreground/60 mb-3">
+            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-primary-foreground/60 mb-3">
               {data.category}
             </p>
-            <h1 className="font-serif text-3xl md:text-4xl leading-tight mb-6">{data.h1}</h1>
+            <h1 className="font-sans font-semibold text-3xl md:text-4xl leading-tight mb-6 tracking-tight text-primary-foreground">{data.h1}</h1>
             <div className="flex items-center gap-6 text-xs text-primary-foreground/60">
               <span className="flex items-center gap-1.5">
                 <User size={12} />
                 <Link href="/about" className="hover:text-primary-foreground/80 transition-colors">
-                  Dr. Inga Taganova
+                  Dr Inga Taganova
                 </Link>
               </span>
               <span className="flex items-center gap-1.5">
@@ -246,7 +246,7 @@ export default function BlogPostTemplate({ data }: { data: BlogPostData }) {
         {/* Hero Image */}
         {data.heroImage && (
           <FadeIn>
-            <figure className="mb-10 overflow-hidden rounded-sm shadow-md">
+            <figure className="mb-10 overflow-hidden rounded-3xl">
               <img
                 src={data.heroImage.src}
                 alt={data.heroImage.alt}
@@ -276,7 +276,7 @@ export default function BlogPostTemplate({ data }: { data: BlogPostData }) {
               <section className="mb-10">
                 {/* Full-width image above section */}
                 {img?.position === "full" && (
-                  <div className="mb-6 overflow-hidden rounded-sm shadow-sm">
+                  <div className="mb-6 overflow-hidden rounded-2xl">
                     <SectionImage image={img} />
                   </div>
                 )}
@@ -287,7 +287,7 @@ export default function BlogPostTemplate({ data }: { data: BlogPostData }) {
                     <div className="flex-1 min-w-0">
                       <SectionContent section={section} />
                     </div>
-                    <div className="w-full md:w-48 lg:w-52 flex-shrink-0 overflow-hidden rounded-sm shadow-sm">
+                    <div className="w-full md:w-48 lg:w-52 flex-shrink-0 overflow-hidden rounded-2xl">
                       <SectionImage image={img} />
                     </div>
                   </div>
@@ -302,17 +302,20 @@ export default function BlogPostTemplate({ data }: { data: BlogPostData }) {
 
         {/* CTA Box */}
         <FadeIn>
-          <div className="mt-12 bg-primary text-primary-foreground p-8 text-center">
-            <h2 className="font-serif text-2xl mb-3">{data.cta.heading}</h2>
+          <div className="mt-12 bg-primary text-primary-foreground p-8 md:p-10 text-center rounded-3xl">
+            <h2 className="font-sans font-semibold text-2xl mb-3 tracking-tight">{data.cta.heading}</h2>
             <p className="text-primary-foreground/80 text-sm mb-6 max-w-md mx-auto">{data.cta.text}</p>
             <Button
               data-testid="blog-cta-btn"
-              className="bg-secondary text-primary hover:bg-secondary/90 rounded-none px-8 uppercase tracking-widest text-sm"
+              className="bg-secondary text-primary hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium"
               onClick={() => {
-                if (data.cta.buttonExternal) {
-                  window.open(data.cta.buttonHref || "https://www.glowday.com/clinic/the-oxford-wellness-doctor", "_blank");
+                const href = data.cta.buttonHref || "/book";
+                if (href.includes("glowday.com") || href === "/book") {
+                  window.location.href = "/book";
+                } else if (data.cta.buttonExternal) {
+                  window.open(href, "_blank");
                 } else {
-                  window.location.href = data.cta.buttonHref || "/contact";
+                  window.location.href = href;
                 }
               }}
             >
@@ -327,7 +330,7 @@ export default function BlogPostTemplate({ data }: { data: BlogPostData }) {
             <div className="mt-14 border-t border-border pt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
               {data.relatedPosts && data.relatedPosts.length > 0 && (
                 <div>
-                  <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3">Related Articles</p>
+                  <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-3">Related articles</p>
                   <ul className="space-y-2">
                     {data.relatedPosts.map((p) => (
                       <li key={p.href}>
@@ -344,7 +347,7 @@ export default function BlogPostTemplate({ data }: { data: BlogPostData }) {
               )}
               {data.relatedTreatments && data.relatedTreatments.length > 0 && (
                 <div>
-                  <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3">Related Treatments</p>
+                  <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-3">Related treatments</p>
                   <ul className="space-y-2">
                     {data.relatedTreatments.map((t) => (
                       <li key={t.href}>

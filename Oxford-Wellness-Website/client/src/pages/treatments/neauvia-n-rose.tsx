@@ -5,7 +5,7 @@ const data: TreatmentPageData = {
   metaDescription: "Intimate area rejuvenation in Oxford with Neauvia N Rose - a regenerative injectable treatment for dryness, discomfort, and loss of volume. GMC-registered doctor. £350. Book now.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/neauvia-n-rose-intimate-rejuvenation-oxford",
   h1: "Neauvia N Rose Intimate Area Rejuvenation in Oxford",
-  intro: "Medical-grade hyaluronic acid restores hydration, comfort, and tissue integrity in the intimate area — especially for menopause-related changes.",
+  intro: "Medical-grade hyaluronic acid restores hydration, comfort, and tissue integrity in the intimate area – especially for menopause-related changes.",
   sections: [
     {
       heading: "Who Is This Treatment For?",
@@ -21,7 +21,7 @@ const data: TreatmentPageData = {
       heading: "The Procedure - What to Expect",
       paragraphs: [
         "Private consultation and medical history review. Topical anaesthetic applied; treatment takes 30–45 minutes with mild, brief discomfort.",
-        "Minimal downtime — abstain from sexual activity for a few days. Hydration improves within days; results last 9–12 months.",
+        "Minimal downtime – abstain from sexual activity for a few days. Hydration improves within days; results last 9–12 months.",
       ],
     },
   ],
@@ -37,11 +37,11 @@ const data: TreatmentPageData = {
     { q: "Is this the same as HRT?", a: "No. Neauvia N Rose is a local, injectable treatment for the intimate area and is not a substitute for systemic HRT. Dr. Taganova can discuss both options during consultation and may recommend a combination approach." },
     { q: "Can this be combined with HRT?", a: "Yes - many patients benefit from both HRT for systemic symptoms and local intimate rejuvenation. Dr. Taganova, as a menopause specialist, can advise on the most appropriate combined approach." },
     { q: "Who is not suitable for this treatment?", a: "This treatment is not suitable during pregnancy or if there is an active infection or inflammation in the area. A full medical assessment is always carried out before treatment." },
-    { q: "How do I book?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at 3 Woodstock Rd, Oxford OX2 6HA." },
+    { q: "How do I book?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ." },
   ],
   procedureSchema: {
     name: "Neauvia N Rose Intimate Area Rejuvenation Oxford",
-    description: "Injectable hyaluronic acid treatment to restore hydration, comfort, and tissue integrity to the intimate area. Delivered by GMC-registered Dr. Inga Taganova, formerly trained gynaecologist, in Oxford.",
+    description: "Injectable hyaluronic acid treatment to restore hydration, comfort, and tissue integrity to the intimate area. Delivered by GMC-registered Dr. Inga Taganova, formally trained gynaecologist, in Oxford.",
     bodyLocation: "Intimate/vulvovaginal area",
   },
   relatedLinks: [

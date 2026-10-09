@@ -8,7 +8,7 @@ const data: BlogPostData = {
   h1: "Best Aesthetic Treatments for Women Over 50: A Doctor's Guide",
   category: "Age-Appropriate Aesthetics",
   readTime: "6 min",
-  intro: "Aesthetic medicine for women in their 50s and beyond requires a fundamentally different approach to treating younger patients. The skin changes of post-menopause are driven by specific hormonal and structural factors - and the most effective treatment plans address these underlying causes as well as the visible signs. Dr. Inga Taganova - a formerly trained gynaecologist with specialist expertise in both women's health and aesthetic medicine - explains which treatments work best for mature skin, and why the integrated approach she offers at The Oxford Wellness Doctor produces results that neither aesthetics nor medicine alone can achieve.",
+  intro: "Aesthetic medicine for women in their 50s and beyond requires a fundamentally different approach to treating younger patients. The skin changes of post-menopause are driven by specific hormonal and structural factors - and the most effective treatment plans address these underlying causes as well as the visible signs. Dr. Inga Taganova - a formally trained gynaecologist with specialist expertise in both women's health and aesthetic medicine - explains which treatments work best for mature skin, and why the integrated approach she offers at The Oxford Wellness Doctor produces results that neither aesthetics nor medicine alone can achieve.",
   heroImage: {
     src: over50Img,
     alt: "Elegant woman over 50 with radiant confident natural beauty - aesthetic treatments for mature skin at The Oxford Wellness Doctor at The Oxford Wellness Doctor, Oxford - personalised treatment planning",

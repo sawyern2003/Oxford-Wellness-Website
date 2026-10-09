@@ -2,15 +2,15 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Women's Health Clinic Oxford | Specialist Menopause Lead | Dr. Taganova",
-  metaDescription: "Oxford's leading women's health clinic. Specialist menopause care, perimenopause support, intimate health & hormonal wellness from formerly trained gynaecologist Dr. Inga Taganova. Book today.",
+  metaDescription: "Oxford's leading women's health clinic. Specialist menopause care, perimenopause support, intimate health & hormonal wellness from formally trained gynaecologist Dr. Inga Taganova. Book today.",
   canonical: "https://www.theoxfordwellnessdoctor.com/womens-health-oxford",
-  h1: "Women's Health Clinic in Oxford - Expert Care from a Formerly Trained Gynaecologist",
-  intro: "The Oxford Wellness Doctor is Oxford's leading women's health clinic, providing specialist menopause care, perimenopause support, intimate health treatments, and integrated aesthetic medicine. Led by Dr. Inga Taganova - a specialist menopause lead, formerly trained gynaecologist, and GMC-registered GP with over 20 years of experience - we offer truly comprehensive women's health care that combines clinical expertise with a deep understanding of how hormones affect every aspect of your wellbeing.",
+  h1: "Women's Health Clinic in Oxford - Expert Care from a Formally Trained Gynaecologist",
+  intro: "The Oxford Wellness Doctor is Oxford's leading women's health clinic, providing specialist menopause care, perimenopause support, intimate health treatments, and integrated aesthetic medicine. Led by Dr. Inga Taganova - a specialist menopause lead, formally trained gynaecologist, and GMC-registered GP with over 20 years of experience - we offer truly comprehensive women's health care that combines clinical expertise with a deep understanding of how hormones affect every aspect of your wellbeing.",
   sections: [
     {
-      heading: "Why Choose a Formerly Trained Gynaecologist for Women's Health?",
+      heading: "Why Choose a Formally Trained Gynaecologist for Women's Health?",
       paragraphs: [
-        "Dr. Taganova's background sets our clinic apart. As a formerly trained gynaecologist in the UK, France, and Monaco, she brings a level of expertise in women's health that is rarely found in private aesthetics or wellness clinics.",
+        "Dr. Taganova's background sets our clinic apart. As a formally trained gynaecologist in the UK, France, and Monaco, she brings a level of expertise in women's health that is rarely found in private aesthetics or wellness clinics.",
         "Her gynecological training means she understands the endocrine system at a deep level - the interplay between oestrogen, progesterone, testosterone, cortisol, thyroid hormones, and insulin that shapes women's health through every life stage. She recognizes how hormonal changes affect not just reproductive health, but also skin, weight, mood, sleep, intimate health, and overall quality of life.",
         "When you consult a specialist with this background, you're not just getting symptom management - you're getting comprehensive care from someone who truly understands women's bodies and the complexity of hormonal transitions.",
       ],
@@ -65,8 +65,8 @@ const data: TreatmentPageData = {
       ],
       bullets: [
         "Specialist menopause lead with extensive training",
-        "Formerly trained gynaecologist with hospital experience",
-        "GMC-registered GP (No. 4727817) with over 20 years of experience",
+        "Formally trained gynaecologist with hospital experience",
+        "GMC-registered GP with over 20 years of experience",
         "Specialist menopause training and ongoing CPD",
         "Qualified aesthetic medicine practitioner",
         "Trained in the UK, France, and Monaco",
@@ -87,7 +87,7 @@ const data: TreatmentPageData = {
         "Our patients consistently tell us they feel understood, respected, and genuinely listened to - something that's often missing in rushed NHS appointments or clinics without specialist women's health expertise.",
       ],
       bullets: [
-        "Led by a formerly trained gynaecologist and specialist menopause lead",
+        "Led by a formally trained gynaecologist and specialist menopause lead",
         "Comprehensive 45-minute consultations with no rush",
         "Integrated approach combining hormonal health and aesthetic care",
         "Discreet, professional environment in Oxford",
@@ -106,7 +106,7 @@ const data: TreatmentPageData = {
   faqs: [
     {
       q: "What women's health concerns can you help with?",
-      a: "We specialize in menopause, perimenopause, hormonal imbalances, intimate health concerns (vaginal dryness, discomfort), sexual wellness, weight changes related to hormones, and skin changes caused by declining oestrogen. Dr. Taganova's background as a formerly trained gynaecologist means she can address the full spectrum of women's health concerns.",
+      a: "We specialize in menopause, perimenopause, hormonal imbalances, intimate health concerns (vaginal dryness, discomfort), sexual wellness, weight changes related to hormones, and skin changes caused by declining oestrogen. Dr. Taganova's background as a formally trained gynaecologist means she can address the full spectrum of women's health concerns.",
     },
     {
       q: "Do you prescribe HRT?",
@@ -118,7 +118,7 @@ const data: TreatmentPageData = {
     },
     {
       q: "What makes Dr. Taganova different from other menopause specialists?",
-      a: "Dr. Taganova is a specialist menopause lead, formerly trained gynaecologist, and GMC-registered GP with over 20 years of experience in women's health. Her unique combination of gynecological training, menopause expertise, and aesthetic medicine knowledge allows her to provide truly integrated care that addresses both hormonal and physical manifestations of aging.",
+      a: "Dr. Taganova is a specialist menopause lead, formally trained gynaecologist, and GMC-registered GP with over 20 years of experience in women's health. Her unique combination of gynecological training, menopause expertise, and aesthetic medicine knowledge allows her to provide truly integrated care that addresses both hormonal and physical manifestations of aging.",
     },
     {
       q: "Can you help with intimate health concerns?",
@@ -139,9 +139,10 @@ const data: TreatmentPageData = {
   ],
   procedureSchema: {
     name: "Women's Health Consultation",
-    description: "Comprehensive women's health consultation with Dr. Inga Taganova - specialist menopause lead and formerly trained gynaecologist - in Oxford. Expert menopause care, perimenopause support, intimate health, and hormonal wellness.",
+    description: "Comprehensive women's health consultation with Dr. Inga Taganova - specialist menopause lead and formally trained gynaecologist - in Oxford. Expert menopause care, perimenopause support, intimate health, and hormonal wellness.",
   },
   relatedLinks: [
+    { label: "Symptoms & Treatment Guide", href: "/symptoms-and-treatments" },
     { label: "Menopause Clinic", href: "/menopause-clinic-oxford" },
     { label: "Perimenopause Support", href: "/perimenopause-oxford" },
     { label: "Intimate Rejuvenation (Neauvia N Rose)", href: "/treatments/neauvia-n-rose-intimate-rejuvenation-oxford" },

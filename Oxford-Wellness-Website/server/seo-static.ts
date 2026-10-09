@@ -2,13 +2,39 @@
 
 export const SITE_URL = "https://www.theoxfordwellnessdoctor.com";
 
-export const SITEMAP_PAGES = [
+/** Keep in sync with client/src/lib/brand.ts SHOW_PAIN_DOCTOR */
+const SHOW_PAIN_DOCTOR = true;
+
+const ALL_SITEMAP_PAGES = [
   { path: "/", priority: "1.0", changefreq: "weekly" },
+  { path: "/how-we-help", priority: "1.0", changefreq: "monthly" },
+  { path: "/symptoms-and-treatments", priority: "1.0", changefreq: "monthly" },
+  { path: "/programme-finder", priority: "1.0", changefreq: "monthly" },
+  { path: "/programmes/skin-health-regeneration", priority: "0.95", changefreq: "monthly" },
+  { path: "/programmes/weight-body-confidence", priority: "0.95", changefreq: "monthly" },
+  { path: "/programmes/intimate-wellness", priority: "0.95", changefreq: "monthly" },
   { path: "/about", priority: "0.9", changefreq: "monthly" },
+  { path: "/oxford-pain-doctor", priority: "1.0", changefreq: "monthly" },
+  { path: "/oxford-pain-doctor/about", priority: "0.9", changefreq: "monthly" },
+  { path: "/oxford-pain-doctor/how-we-help", priority: "0.9", changefreq: "monthly" },
+  { path: "/oxford-pain-doctor/library", priority: "0.8", changefreq: "monthly" },
+  { path: "/oxford-pain-doctor/library/where-pain-is-shaped-in-the-brain", priority: "0.7", changefreq: "monthly" },
+  { path: "/oxford-pain-doctor/library/biopsychosocial-approach", priority: "0.7", changefreq: "monthly" },
+  { path: "/oxford-pain-doctor/library/exercise-and-chronic-pain", priority: "0.7", changefreq: "monthly" },
+  { path: "/oxford-pain-doctor/library/sleep-stress-mood-and-pain", priority: "0.7", changefreq: "monthly" },
+  { path: "/oxford-pain-doctor/library/integrative-pain-care-plan", priority: "0.7", changefreq: "monthly" },
+  { path: "/oxford-pain-doctor/library/mindfulness-yoga-evidence", priority: "0.7", changefreq: "monthly" },
+  { path: "/oxford-pain-doctor/library/when-injections-are-useful", priority: "0.7", changefreq: "monthly" },
+  { path: "/oxford-pain-doctor/library/understanding-nerve-pain", priority: "0.7", changefreq: "monthly" },
+  { path: "/oxford-pain-doctor/library/digital-technology-and-pain", priority: "0.7", changefreq: "monthly" },
+  { path: "/oxford-pain-doctor/contact", priority: "0.8", changefreq: "monthly" },
+  { path: "/oxford-pain-doctor/book", priority: "0.9", changefreq: "monthly" },
   { path: "/contact", priority: "0.9", changefreq: "monthly" },
+  { path: "/book", priority: "0.95", changefreq: "monthly" },
   { path: "/pricing", priority: "0.9", changefreq: "monthly" },
-  { path: "/ai-consultation", priority: "0.8", changefreq: "monthly" },
-  { path: "/shop", priority: "0.7", changefreq: "weekly" },
+  { path: "/recommended-skincare", priority: "0.8", changefreq: "monthly" },
+  { path: "/ai-consultation", priority: "0.7", changefreq: "monthly" },
+  { path: "/shop", priority: "0.5", changefreq: "monthly" },
   { path: "/menopause-clinic-oxford", priority: "1.0", changefreq: "monthly" },
   { path: "/perimenopause-oxford", priority: "1.0", changefreq: "monthly" },
   { path: "/womens-health-oxford", priority: "1.0", changefreq: "monthly" },
@@ -49,8 +75,13 @@ export const SITEMAP_PAGES = [
   { path: "/terms-and-conditions", priority: "0.3", changefreq: "yearly" },
 ] as const;
 
+export const SITEMAP_PAGES = ALL_SITEMAP_PAGES.filter(
+  (page) => SHOW_PAIN_DOCTOR || !page.path.startsWith("/oxford-pain-doctor"),
+);
+
 export function buildRobotsTxt(): string {
-  return `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`;
+  const hidePain = SHOW_PAIN_DOCTOR ? "" : "Disallow: /oxford-pain-doctor\n";
+  return `User-agent: *\nAllow: /\n${hidePain}Sitemap: ${SITE_URL}/sitemap.xml\n`;
 }
 
 export function buildSitemapXml(): string {

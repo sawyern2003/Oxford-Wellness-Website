@@ -61,7 +61,7 @@ const data: TreatmentPageData = {
     { q: "Can Forma Plus help after weight loss?", a: "Yes. Forma Plus is particularly beneficial for skin laxity following significant weight loss, where loose skin has been left behind. It helps to improve firmness and tone without surgery." },
     { q: "Is Forma Plus safe for darker skin tones?", a: "Yes. Radiofrequency energy does not target pigment, making Forma Plus safe for all skin tones." },
     { q: "Can I combine Forma Plus with other treatments?", a: "Yes. Forma Plus pairs well with InMode FX for combined fat reduction and skin tightening, or with Morpheus8 for deeper remodelling. Dr. Taganova will advise on the optimal combination for your goals." },
-    { q: "How do I book?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at 3 Woodstock Rd, Oxford OX2 6HA." },
+    { q: "How do I book?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ." },
   ],
   procedureSchema: {
     name: "Forma Plus Body Contouring Oxford",

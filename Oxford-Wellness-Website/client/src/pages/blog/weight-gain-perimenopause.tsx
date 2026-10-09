@@ -8,7 +8,7 @@ const data: BlogPostData = {
   h1: "Weight Gain in Perimenopause: Medical Solutions That Actually Work",
   category: "Menopause & Women's Health",
   readTime: "7 min",
-  intro: "One of the most frustrating experiences during perimenopause is doing everything right - eating carefully, exercising regularly - and watching the scales climb anyway. This is not a failure of willpower. It is the predictable physiological consequence of significant hormonal change. Dr. Inga Taganova - a formerly trained gynaecologist and women's health specialist - explains exactly why perimenopausal weight gain happens, why conventional dieting so often fails during this life stage, and which medical interventions produce real results.",
+  intro: "One of the most frustrating experiences during perimenopause is doing everything right - eating carefully, exercising regularly - and watching the scales climb anyway. This is not a failure of willpower. It is the predictable physiological consequence of significant hormonal change. Dr. Inga Taganova - a formally trained gynaecologist and women's health specialist - explains exactly why perimenopausal weight gain happens, why conventional dieting so often fails during this life stage, and which medical interventions produce real results.",
   sections: [
     {
       heading: "Why Perimenopause Causes Weight Gain",

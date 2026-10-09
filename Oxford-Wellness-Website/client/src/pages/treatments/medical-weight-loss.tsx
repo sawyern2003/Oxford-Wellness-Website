@@ -59,7 +59,7 @@ const data: TreatmentPageData = {
     { q: "Can I take these if I have diabetes, PCOS, or thyroid issues?", a: "Many patients with type 2 diabetes and PCOS benefit greatly from GLP-1 medications. Certain thyroid conditions are contraindications. Dr. Taganova will assess your full medical history during consultation." },
     { q: "What happens when I stop taking the medication?", a: "Studies show that weight tends to return gradually when GLP-1 medications are discontinued without lifestyle changes in place. Dr. Taganova will support you in building the habits needed for sustained results." },
     { q: "Do I still need to diet and exercise?", a: "Yes. GLP-1 medications work best alongside a healthy diet and regular physical activity. Dr. Taganova provides lifestyle guidance as part of your personalised weight management plan." },
-    { q: "How do I book a weight loss consultation in Oxford?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book via Glowday. Clinic at 3 Woodstock Rd, Oxford OX2 6HA. Open Friday 4–8pm and Saturday 9am–1pm." },
+    { q: "How do I book a weight loss consultation in Oxford?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book via Glowday. Clinic at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ. Open Friday 4–8pm and Saturday 9am–1pm." },
   ],
   procedureSchema: {
     name: "Medical Weight Loss Oxford - Wegovy & Mounjaro",

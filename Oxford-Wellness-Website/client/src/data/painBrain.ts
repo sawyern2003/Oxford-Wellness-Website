@@ -1,0 +1,172 @@
+export interface BrainRegion {
+  id: string;
+  short: string;
+  name: string;
+  /** What this area does, in ordinary language. */
+  role: string;
+  /** How it can change the experience of pain. */
+  pain: string;
+  cx: number;
+  cy: number;
+  rx: number;
+  ry: number;
+  rotate?: number;
+}
+
+/** Regions that talk to each other in the pain network. Used to draw the signal when one is selected. */
+export const brainLinks: Record<string, string[]> = {
+  pfc: ["acc", "ins", "pag"],
+  acc: ["pfc", "ins", "am", "thal"],
+  ins: ["acc", "thal", "am", "s2"],
+  thal: ["ins", "s2", "m1s1", "pag"],
+  hthal: ["am", "lc", "pag"],
+  am: ["acc", "ins", "hthal"],
+  m1s1: ["s2", "thal", "pfc"],
+  s2: ["m1s1", "thal", "ins"],
+  visual: ["m1s1", "s2"],
+  pag: ["pfc", "thal", "lc", "rvm"],
+  lc: ["pag", "rvm", "hthal"],
+  rvm: ["pag", "lc"],
+};
+
+export const brainRegions: BrainRegion[] = [
+  {
+    id: "pfc",
+    short: "PFC",
+    name: "Prefrontal cortex",
+    role: "Plans, pays attention, and decides what an experience means.",
+    pain: "Pain feels louder when attention stays locked on it, and quieter when this area can put the sensation in context. Worry and the story attached to pain act here. In persistent pain that regulating role is often weaker, which is one reason education, pacing and psychological work can change the pain itself.",
+    cx: 188,
+    cy: 248,
+    rx: 92,
+    ry: 112,
+    rotate: -4,
+  },
+  {
+    id: "acc",
+    short: "ACC",
+    name: "Anterior cingulate cortex",
+    role: "Registers how unpleasant something is, and the urge to do something about it.",
+    pain: "Two people can have a similar sensation and a very different level of distress. The anterior cingulate is heavily involved in that difference – the suffering, the frustration, and how motivating the pain feels.",
+    cx: 400,
+    cy: 188,
+    rx: 132,
+    ry: 36,
+    rotate: -16,
+  },
+  {
+    id: "ins",
+    short: "Ins",
+    name: "Insula",
+    role: "Builds the feeling of what is happening inside the body.",
+    pain: "The insula joins sensation to emotion, so pain is experienced as a bodily state rather than a simple signal. When it is sensitised, ordinary feelings in the body can be read as intense or threatening.",
+    cx: 355,
+    cy: 292,
+    rx: 64,
+    ry: 34,
+    rotate: -20,
+  },
+  {
+    id: "thal",
+    short: "Thal",
+    name: "Thalamus",
+    role: "The relay that sensory signals pass through on the way to the cortex.",
+    pain: "It does not only forward pain signals. It filters them. In persistent pain that filter can stay open, so more of the signal reaches awareness than the injury itself would suggest.",
+    cx: 500,
+    cy: 330,
+    rx: 76,
+    ry: 48,
+    rotate: -6,
+  },
+  {
+    id: "hthal",
+    short: "HThal",
+    name: "Hypothalamus",
+    role: "Links the brain to hormones, sleep, appetite and the stress response.",
+    pain: "This is one reason pain, broken sleep and feeling wired travel together. A stress response that will not switch off keeps the body in a state where pain is harder to settle.",
+    cx: 418,
+    cy: 378,
+    rx: 48,
+    ry: 22,
+    rotate: -18,
+  },
+  {
+    id: "am",
+    short: "Am",
+    name: "Amygdala",
+    role: "Learns what feels threatening, and sounds the alarm.",
+    pain: "If a movement, a place or a memory has become paired with pain, the amygdala can trigger protection before you have decided anything. Fear of the pain keeps this circuit switched on.",
+    cx: 388,
+    cy: 428,
+    rx: 36,
+    ry: 24,
+    rotate: -10,
+  },
+  {
+    id: "m1s1",
+    short: "M1-S1",
+    name: "Primary motor and sensory cortex",
+    role: "S1 maps where a sensation is and what it feels like. M1 prepares movement.",
+    pain: "Pain can blur this map. The sore area may feel larger, less precise, or unsafe to move. Graded movement is used because it retrains the map, not only because it strengthens muscle.",
+    cx: 630,
+    cy: 118,
+    rx: 86,
+    ry: 58,
+  },
+  {
+    id: "s2",
+    short: "S2",
+    name: "Secondary somatosensory cortex",
+    role: "Recognises a sensation and links it to attention and memory.",
+    pain: "S1 answers where a feeling is. S2 helps answer what it is. Close attention to pain recruits this area and can increase how intense the pain feels.",
+    cx: 608,
+    cy: 210,
+    rx: 38,
+    ry: 26,
+    rotate: 10,
+  },
+  {
+    id: "visual",
+    short: "Visual",
+    name: "Visual cortex",
+    role: "Builds what you see. It is not a pain centre, but vision changes pain.",
+    pain: "The brain uses sight to update its map of the body. Seeing the painful part, watching movement, or the visual tricks used in rehabilitation can alter pain. Mirror therapy depends on this link.",
+    cx: 830,
+    cy: 268,
+    rx: 74,
+    ry: 90,
+  },
+  {
+    id: "pag",
+    short: "PAG",
+    name: "Periaqueductal grey",
+    role: "A control centre for the brain’s own system for turning pain up or down.",
+    pain: "From here, pathways run to the spinal cord that can reduce pain signals – or, in some states, increase them. Safety, expectation and some medicines act partly through this system.",
+    cx: 545,
+    cy: 488,
+    rx: 36,
+    ry: 50,
+  },
+  {
+    id: "lc",
+    short: "LC",
+    name: "Locus coeruleus",
+    role: "A small brainstem nucleus that sets arousal through noradrenaline.",
+    pain: "When it is overactive the nervous system stays on watch. Sleep is lighter, startle is easier, and pain is treated as urgent. This is part of why sleep and stress are clinical issues, not side notes.",
+    cx: 542,
+    cy: 572,
+    rx: 32,
+    ry: 34,
+  },
+  {
+    id: "rvm",
+    short: "RVM",
+    name: "Rostral ventromedial medulla",
+    role: "The last brainstem relay before pain control reaches the spinal cord.",
+    pain: "It has cells that dampen pain signals and cells that amplify them. In persistent pain the balance can tip toward amplification, so the spinal cord stays sensitive after the original injury has healed.",
+    cx: 538,
+    cy: 650,
+    rx: 34,
+    ry: 34,
+  },
+];

@@ -65,7 +65,7 @@ const data: TreatmentPageData = {
     { q: "Is a patch test always needed?", a: "Yes. A patch test is always performed at least 30 minutes before treatment to check for allergic reaction. This is a mandatory safety requirement." },
     { q: "Can I have new filler straight after dissolving?", a: "It is generally recommended to wait 4–6 weeks after dissolving before having new filler placed, to allow the tissues to fully settle and for Dr. Taganova to accurately assess the baseline." },
     { q: "Do you dissolve filler placed by other clinics?", a: "Yes. Dr. Taganova will assess and dissolve filler regardless of where it was originally placed, without judgement." },
-    { q: "How do I book?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at 3 Woodstock Rd, Oxford OX2 6HA." },
+    { q: "How do I book?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ." },
   ],
   procedureSchema: {
     name: "Filler Dissolving Oxford",

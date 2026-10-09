@@ -91,7 +91,7 @@ function FAQAccordion({ faqs }: { faqs: FAQItem[] }) {
             onClick={() => setOpenIdx(openIdx === i ? null : i)}
             aria-expanded={openIdx === i}
           >
-            <span className="font-serif text-base text-primary leading-snug group-hover:text-secondary transition-colors pr-4">
+            <span className="font-sans font-medium text-base text-foreground leading-snug group-hover:text-secondary transition-colors pr-4">
               {faq.q}
             </span>
             {openIdx === i ? (
@@ -122,14 +122,10 @@ function FAQAccordion({ faqs }: { faqs: FAQItem[] }) {
 function AtAGlanceCard({ item }: { item: AtAGlanceItem }) {
   const Icon = GLANCE_ICONS[item.icon];
   return (
-    <div className="border border-border bg-white p-4 flex flex-col justify-between min-h-[100px]">
-      <div>
-        <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground mb-1">
-          {item.label}
-        </p>
-        <p className="text-sm font-medium text-primary leading-snug">{item.value}</p>
-      </div>
-      <Icon size={18} className="text-primary/30 mt-3" strokeWidth={1.5} />
+    <div className="rounded-2xl bg-muted/60 p-4 min-h-[96px]">
+      <p className="text-xs text-muted-foreground mb-1">{item.label}</p>
+      <p className="text-sm font-medium text-foreground leading-snug">{item.value}</p>
+      <Icon size={16} className="text-secondary mt-3" strokeWidth={1.5} />
     </div>
   );
 }
@@ -204,7 +200,7 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
           "procedureType": "TherapeuticProcedure",
           "status": "ActiveNotRecruiting",
           "bodyLocation": data.procedureSchema.bodyLocation || "Face",
-          "preparation": "Initial consultation with Dr. Inga Taganova at The Oxford Wellness Doctor, 3 Woodstock Rd, Oxford OX2 6HA.",
+          "preparation": "Initial consultation with Dr. Inga Taganova at The Oxford Wellness Doctor, Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ.",
           "followUp": "Two-week follow-up assessment included. Aftercare instructions provided.",
           "performer": {
             "@type": "Physician",
@@ -239,53 +235,54 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
   }, [data]);
 
   return (
-    <div className="pt-28 min-h-screen bg-background">
-      {/* Hero */}
-      <section className="bg-white border-b border-border">
-        <div className="container mx-auto px-6 py-10 md:py-12 max-w-4xl">
+    <div className="pt-28 min-h-screen bg-white">
+      <section className="bg-white">
+        <div className="container mx-auto px-6 py-12 md:py-16 max-w-4xl">
           <FadeIn direction="up">
-            <nav className="text-[10px] uppercase tracking-widest text-muted-foreground mb-5 flex items-center gap-2">
-              <Link href="/treatments" className="hover:text-primary transition-colors">Treatments</Link>
+            <nav className="text-sm text-muted-foreground mb-5 flex items-center gap-2">
+              <Link href="/treatments" className="hover:text-secondary transition-colors">Treatments</Link>
               <span>/</span>
               <span>{treatmentName}</span>
             </nav>
 
-            <h1 className="font-serif text-4xl md:text-5xl text-primary mb-4">
+            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
+              Part of a personalised programme
+            </p>
+            <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-4 leading-snug">
               {treatmentName}
             </h1>
 
-            <p className="text-sm text-muted-foreground mb-5">
-              Dr. Inga Taganova · GMC No. 4727817
+            <p className="text-[15px] text-muted-foreground leading-relaxed max-w-2xl mb-4">
+              This treatment is commonly incorporated into our personalised treatment programmes.
             </p>
 
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mb-8">
+            <p className="text-base text-muted-foreground leading-relaxed max-w-2xl mb-8">
               {summary}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3">
               <Button
                 data-testid="hero-book-btn"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-none px-8 uppercase tracking-widest text-xs"
-                onClick={() => window.open("https://www.glowday.com/clinic/the-oxford-wellness-doctor", "_blank")}
+                className="bg-secondary text-primary hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium"
+                onClick={() => window.location.assign("/book")}
               >
-                Book Consultation
+                Book consultation
               </Button>
               <Button
-                data-testid="hero-enquire-btn"
+                data-testid="hero-programme-finder-btn"
                 variant="outline"
-                className="rounded-none px-8 uppercase tracking-widest text-xs"
-                onClick={() => window.location.href = "/contact"}
+                className="rounded-full px-7 h-11 text-sm border-border bg-white"
+                onClick={() => window.location.href = "/programme-finder"}
               >
-                Enquire
+                Programme Finder
               </Button>
             </div>
           </FadeIn>
         </div>
       </section>
 
-      {/* At a glance */}
       {atAGlance.length > 0 && (
-        <section className="bg-muted/20 border-b border-border py-8">
+        <section className="bg-muted/50 py-10">
           <div className="container mx-auto px-6 max-w-4xl">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               {atAGlance.map((item, i) => (
@@ -296,17 +293,16 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
         </section>
       )}
 
-      {/* What it treats + pricing */}
-      <section className="py-12 md:py-14 bg-white">
+      <section className="py-14 md:py-16 bg-white">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="grid md:grid-cols-2 gap-10">
             {highlights.length > 0 && (
               <FadeIn direction="up">
-                <h2 className="font-serif text-2xl text-primary mb-4">What it treats</h2>
-                <ul className="space-y-2">
+                <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-4">What it treats</h2>
+                <ul className="space-y-2.5">
                   {highlights.map((item, i) => (
                     <li key={i} className="flex items-start gap-2.5 text-sm text-muted-foreground">
-                      <span className="w-1 h-1 rounded-full bg-secondary flex-shrink-0 mt-2" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0 mt-2" />
                       {item}
                     </li>
                   ))}
@@ -316,11 +312,11 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
 
             {procedureSteps.length > 0 && (
               <FadeIn direction="up" delay={0.05}>
-                <h2 className="font-serif text-2xl text-primary mb-4">What to expect</h2>
+                <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-4">What to expect</h2>
                 <ol className="space-y-3">
                   {procedureSteps.map((step, i) => (
                     <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed">
-                      <span className="font-serif text-secondary text-lg leading-none mt-0.5">{i + 1}.</span>
+                      <span className="font-sans font-semibold text-secondary text-sm leading-none mt-0.5">{String(i + 1).padStart(2, "0")}</span>
                       {step}
                     </li>
                   ))}
@@ -331,24 +327,23 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
         </div>
       </section>
 
-      {/* Pricing */}
       {data.pricing.length > 0 && (
-        <section className="py-10 bg-muted/20 border-y border-border">
+        <section className="py-12 bg-muted/50">
           <div className="container mx-auto px-6 max-w-4xl">
             <FadeIn direction="up">
-              <h2 className="font-serif text-2xl text-primary mb-6">Pricing</h2>
-              <div className="space-y-2">
+              <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-6">Pricing</h2>
+              <div className="bg-white rounded-3xl p-6 space-y-1">
                 {data.pricing.map((item, i) => (
                   <div key={i} className="flex justify-between items-center gap-4 py-3 border-b border-border last:border-0">
                     <p className="text-sm text-muted-foreground">{item.name}</p>
-                    <p className="font-serif text-lg text-primary whitespace-nowrap">{item.price}</p>
+                    <p className="font-sans font-semibold text-base text-foreground whitespace-nowrap">{item.price}</p>
                   </div>
                 ))}
               </div>
               <p className="text-xs text-muted-foreground mt-4">
                 Includes consultation. Free two-week follow-up with every treatment.
               </p>
-              <Link href="/pricing" className="inline-flex items-center gap-1 text-xs text-secondary hover:text-primary mt-3 transition-colors">
+              <Link href="/pricing" className="inline-flex items-center gap-1 text-sm text-secondary hover:text-primary mt-3 transition-colors">
                 View all pricing <ArrowRight size={12} />
               </Link>
             </FadeIn>
@@ -356,28 +351,26 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
         </section>
       )}
 
-      {/* FAQs */}
       {displayFaqs.length > 0 && (
-        <section className="py-12 md:py-14 bg-white">
+        <section className="py-14 md:py-16 bg-white">
           <div className="container mx-auto px-6 max-w-4xl">
             <FadeIn direction="up">
-              <h2 className="font-serif text-2xl text-primary mb-6">Common questions</h2>
+              <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-6">Common questions</h2>
               <FAQAccordion faqs={displayFaqs} />
             </FadeIn>
           </div>
         </section>
       )}
 
-      {/* Collapsible detail for SEO */}
       {detailSections.length > 0 && (
-        <section className="py-8 bg-muted/20 border-t border-border">
+        <section className="py-10 bg-muted/50">
           <div className="container mx-auto px-6 max-w-4xl">
             <button
               type="button"
               onClick={() => setDetailsOpen(!detailsOpen)}
               className="w-full flex items-center justify-between text-left group py-2"
             >
-              <span className="font-serif text-lg text-primary">More about this treatment</span>
+              <span className="font-sans font-semibold text-lg text-foreground">More about this treatment</span>
               {detailsOpen ? (
                 <ChevronUp size={18} className="text-muted-foreground" />
               ) : (
@@ -395,7 +388,7 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
                   <div className="space-y-8 pt-6">
                     {detailSections.map((section, i) => (
                       <div key={i}>
-                        <h3 className="font-serif text-lg text-primary mb-2">{section.heading}</h3>
+                        <h3 className="font-sans font-semibold text-lg text-foreground mb-2">{section.heading}</h3>
                         {section.paragraphs?.map((p, j) => (
                           <p key={j} className="text-muted-foreground leading-relaxed mb-2 text-sm">{p}</p>
                         ))}
@@ -446,18 +439,17 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
         </section>
       )}
 
-      {/* Related + CTA */}
-      <section className="bg-primary text-primary-foreground py-14">
+      <section className="bg-primary text-primary-foreground py-16">
         <div className="container mx-auto px-6 max-w-4xl">
           {data.relatedLinks && data.relatedLinks.length > 0 && (
             <FadeIn direction="up" className="mb-10">
-              <p className="text-xs uppercase tracking-widest text-primary-foreground/60 mb-3">Related</p>
-              <div className="flex flex-wrap gap-2">
+              <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-primary-foreground/60 mb-3">Related</p>
+              <div className="flex flex-wrap gap-x-5 gap-y-2">
                 {data.relatedLinks.map((link, i) => (
                   <Link
                     key={i}
                     href={link.href}
-                    className="inline-flex items-center gap-1.5 text-sm border border-white/25 hover:border-secondary hover:text-secondary px-3 py-1.5 transition-all"
+                    className="inline-flex items-center gap-1.5 text-sm text-primary-foreground/85 hover:text-secondary transition-colors"
                   >
                     {link.label} <ArrowRight size={12} />
                   </Link>
@@ -467,18 +459,27 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
           )}
 
           <FadeIn direction="up">
-            <h2 className="font-serif text-2xl mb-3">Book your consultation</h2>
-            <p className="text-primary-foreground/80 text-sm mb-6 max-w-lg">
-              Every treatment is delivered personally by Dr. Inga Taganova — GMC-registered doctor with 20+ years in women's health.
+            <h2 className="font-sans font-semibold text-2xl md:text-3xl tracking-tight mb-3">Not sure which treatment is right for you?</h2>
+            <p className="text-primary-foreground/75 text-[15px] mb-6 max-w-lg leading-relaxed">
+              Complete our Programme Finder to begin with what has changed – then confirm suitability in consultation with Dr Inga.
             </p>
-            <Button
-              data-testid="footer-book-btn"
-              className="bg-secondary text-primary hover:bg-secondary/90 rounded-none px-10 uppercase tracking-widest text-sm"
-              onClick={() => window.open("https://www.glowday.com/clinic/the-oxford-wellness-doctor", "_blank")}
-            >
-              Book Now
-            </Button>
-            <div className="flex flex-wrap items-center gap-5 pt-5 text-sm text-primary-foreground/70">
+            <div className="flex flex-col sm:flex-row gap-3 mb-8">
+              <Button
+                data-testid="footer-finder-btn"
+                className="rounded-full bg-secondary text-primary hover:bg-secondary/90 px-7 h-11 text-sm font-medium"
+                onClick={() => window.location.href = "/programme-finder"}
+              >
+                Find my programme
+              </Button>
+              <Button
+                data-testid="footer-book-btn"
+                className="rounded-full bg-transparent border border-white/30 text-white hover:bg-white/10 px-7 h-11 text-sm"
+                onClick={() => window.location.assign("/book")}
+              >
+                Book consultation
+              </Button>
+            </div>
+            <div className="flex flex-wrap items-center gap-5 text-sm text-primary-foreground/70">
               <a href="tel:+4407739309380" className="flex items-center gap-2 hover:text-secondary transition-colors">
                 <Phone size={14} /> 07739 309380
               </a>

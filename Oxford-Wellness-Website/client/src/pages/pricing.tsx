@@ -152,19 +152,17 @@ export default function Pricing() {
   });
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white">
       {/* Hero */}
-      <div className="bg-primary text-primary-foreground py-20 px-6">
+      <div className="pt-28 pb-12 px-6">
         <FadeIn>
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-xs uppercase tracking-widest text-primary-foreground/60 mb-4">
-              No Hidden Costs
-            </p>
-            <h1 className="font-serif text-3xl md:text-5xl mb-6">
-              Treatment Pricing - Transparent, Fair, No Surprises
+          <div className="max-w-3xl mx-auto">
+            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">Investment</p>
+            <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-4">
+              Pricing
             </h1>
-            <p className="text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed">
-              At The Oxford Wellness Doctor, we believe transparent pricing is part of respectful patient care. All fees are listed below. Consultation fees are redeemable against treatment where applicable.
+            <p className="text-muted-foreground leading-relaxed max-w-xl text-[15px]">
+              Clear fees with no surprises. Consultation fees are redeemable against treatment where applicable.
             </p>
           </div>
         </FadeIn>
@@ -185,10 +183,10 @@ export default function Pricing() {
           {pricingCategories.map((cat) => (
             <FadeIn key={cat.category}>
               <section>
-                <h2 className="font-serif text-xl text-primary mb-4 pb-2 border-b border-border">
+                <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">
                   {cat.category}
                 </h2>
-                <div className="divide-y divide-border border border-border">
+                <div className="divide-y divide-border bg-muted/40 rounded-3xl px-5">
                   {cat.items.map((item) => (
                     <div
                       key={item.name}
@@ -206,9 +204,9 @@ export default function Pricing() {
                   <div className="mt-3">
                     <Link
                       href={cat.link.href}
-                      className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary transition-colors uppercase tracking-wider"
+                      className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
                     >
-                      {cat.link.label} <ArrowRight size={11} />
+                      {cat.link.label} <ArrowRight size={12} />
                     </Link>
                   </div>
                 )}
@@ -219,8 +217,8 @@ export default function Pricing() {
 
         {/* Payment & Notes */}
         <FadeIn>
-          <div className="mt-16 border border-border p-8 bg-muted/20">
-            <h2 className="font-serif text-xl text-primary mb-4">Payment & Booking Information</h2>
+          <div className="mt-16 rounded-3xl bg-muted/50 p-8">
+            <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">Payment & Booking Information</h2>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>Payment is taken at the time of treatment. We accept all major credit and debit cards.</li>
               <li>A £50 consultation fee applies for new patients - this is fully redeemable against the cost of your first treatment.</li>
@@ -228,21 +226,21 @@ export default function Pricing() {
               <li>We do not offer finance or payment plans at this time.</li>
               <li>Cancellations with less than 24 hours' notice may incur a cancellation fee.</li>
             </ul>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Button
                 data-testid="pricing-book-btn"
-                className="bg-primary text-primary-foreground hover:bg-secondary hover:text-primary rounded-none px-8 uppercase tracking-widest text-sm"
-                onClick={() => window.open("https://www.glowday.com/clinic/the-oxford-wellness-doctor", "_blank")}
+                className="bg-secondary text-primary hover:bg-secondary/90 rounded-full px-8 text-sm"
+                onClick={() => window.location.assign("/book")}
               >
-                Book a Consultation
+                Book a consultation
               </Button>
               <Link href="/contact">
                 <Button
                   data-testid="pricing-contact-btn"
                   variant="outline"
-                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded-none px-8 uppercase tracking-widest text-sm"
+                  className="border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground rounded-full px-7 h-11 text-sm"
                 >
-                  Contact Us
+                  Contact
                 </Button>
               </Link>
             </div>

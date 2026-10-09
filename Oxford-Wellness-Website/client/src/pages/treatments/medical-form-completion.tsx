@@ -5,7 +5,7 @@ const data: TreatmentPageData = {
   metaDescription: "GMC-registered GP in Oxford available to complete medical forms, sign certifications, and provide medical verification for official documents. From £50. Book appointment today.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/medical-form-completion-oxford",
   h1: "Medical Form Completion in Oxford - GP Signature & Medical Certification",
-  intro: "Dr. Inga Taganova is a fully GMC-registered GP (No. 4727817) available to complete, review, and sign a range of medical forms and official documents. Whether you need a medical certificate, a GP signature for an application, or clinical verification for insurance or legal purposes, appointments are available at our private clinic in Oxford on Fridays and Saturdays.",
+  intro: "Dr. Inga Taganova is a fully GMC-registered GP available to complete, review, and sign a range of medical forms and official documents. Whether you need a medical certificate, a GP signature for an application, or clinical verification for insurance or legal purposes, appointments are available at our private clinic in Oxford on Fridays and Saturdays.",
   sections: [
     {
       heading: "What Types of Forms Can Dr. Taganova Complete?",
@@ -49,7 +49,7 @@ const data: TreatmentPageData = {
       heading: "Why Choose a Private GP for Form Completion?",
       bullets: [
         "Fast, convenient appointments - no long NHS waiting lists",
-        "Fully GMC-registered GP (No. 4727817) - accepted by all major organisations",
+        "Fully GMC-registered GP - accepted by all major organisations",
         "Private, discreet clinic in Oxford with free parking",
         "Appointments available Fridays 4–8pm and Saturdays 9am–1pm",
         "Friendly, professional service with same-week availability",
@@ -66,7 +66,7 @@ const data: TreatmentPageData = {
     { q: "How quickly can I get an appointment?", a: "We typically have availability within the same week. Appointments are available on Fridays 4–8pm and Saturdays 9am–1pm in Oxford." },
     { q: "Is this appointment confidential?", a: "Yes. All appointments are fully confidential and handled in accordance with GMC guidelines and UK data protection legislation." },
     { q: "Can I have a consultation for something else at the same appointment?", a: "Please mention any additional concerns when booking. If time allows, Dr. Taganova may be able to discuss other matters, or she can book you a separate appointment." },
-    { q: "How do I book?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at 3 Woodstock Rd, Oxford OX2 6HA." },
+    { q: "How do I book?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. Our clinic is at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ." },
   ],
   procedureSchema: {
     name: "Medical Form Completion Oxford",
