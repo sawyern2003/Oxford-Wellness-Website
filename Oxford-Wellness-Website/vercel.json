@@ -4,6 +4,7 @@
   "installCommand": "npm install",
   "outputDirectory": "dist/public",
   "routes": [
+    { "src": "^/belsyre/?$", "dest": "/api/belsyre" },
     { "src": "/robots.txt", "dest": "/api/robots" },
     { "src": "/sitemap.xml", "dest": "/api/sitemap" },
     { "src": "/wellness", "status": 301, "headers": { "Location": "/womens-health-oxford" } },

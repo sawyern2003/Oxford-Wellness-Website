@@ -89,9 +89,25 @@ export function loadGoogleAnalytics() {
   document.head.appendChild(script);
 }
 
+const CAMPAIGN_PARAMS = ["utm_source", "utm_medium", "utm_campaign"] as const;
+const CAMPAIGN_VALUE = /^[a-z0-9_-]{1,64}$/i;
+
+/** Keeps the poster campaign parameters and drops every other query value. */
+function campaignQuery(): string {
+  const incoming = new URLSearchParams(window.location.search);
+  const kept = new URLSearchParams();
+  for (const key of CAMPAIGN_PARAMS) {
+    const value = incoming.get(key);
+    if (value && CAMPAIGN_VALUE.test(value)) kept.set(key, value);
+  }
+  const query = kept.toString();
+  return query ? `?${query}` : "";
+}
+
 /**
- * Sends a page view without the query string or hash, so names, email
- * addresses, form fields, and consultation links in the URL are not sent.
+ * Sends a page view without the hash or unrelated query string, so names,
+ * email addresses, form fields, and consultation links are not sent.
+ * Campaign parameters from the stairwell poster are kept for attribution.
  */
 export function trackSanitizedPageView() {
   if (readAnalyticsConsent() !== "accepted") return;
@@ -102,7 +118,7 @@ export function trackSanitizedPageView() {
   const path = window.location.pathname || "/";
   window.gtag("event", "page_view", {
     page_path: path,
-    page_location: `${window.location.origin}${path}`,
+    page_location: `${window.location.origin}${path}${campaignQuery()}`,
     page_title: document.title,
   });
 }

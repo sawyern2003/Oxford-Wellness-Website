@@ -4,6 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 import { metaImagesPlugin } from "./vite-plugin-meta-images";
+import { belsyreRedirectLocation } from "./shared/belsyre-qr";
 
 export default defineConfig({
   plugins: [
@@ -11,6 +12,22 @@ export default defineConfig({
     runtimeErrorOverlay(),
     tailwindcss(),
     metaImagesPlugin(),
+    {
+      name: "belsyre-qr-redirect",
+      configureServer(server) {
+        server.middlewares.use((req, res, next) => {
+          const pathOnly = req.url?.split("?")[0];
+          if (pathOnly !== "/belsyre" && pathOnly !== "/belsyre/") {
+            next();
+            return;
+          }
+          res.statusCode = 302;
+          res.setHeader("Location", belsyreRedirectLocation());
+          res.setHeader("Cache-Control", "no-store");
+          res.end();
+        });
+      },
+    },
     ...(process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined
       ? [

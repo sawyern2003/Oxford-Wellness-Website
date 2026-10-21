@@ -3,11 +3,25 @@ import { createServer, type Server } from "http";
 import { buildRobotsTxt, buildSitemapXml } from "./seo-static";
 import { submitContactJson } from "./contact-submit";
 import { submitProgrammeFinderJson } from "./programme-finder-submit";
+import { belsyreRedirectLocation, isLikelyBot } from "../shared/belsyre-qr";
 
 export async function registerRoutes(
   httpServer: Server,
   app: Express,
 ): Promise<Server> {
+  app.get(["/belsyre", "/belsyre/"], (req, res) => {
+    if (!isLikelyBot(req.get("user-agent"))) {
+      console.log(
+        JSON.stringify({
+          qr: "belsyre",
+          day: new Date().toISOString().slice(0, 10),
+        }),
+      );
+    }
+    res.setHeader("Cache-Control", "no-store");
+    res.redirect(302, belsyreRedirectLocation());
+  });
+
   app.get("/robots.txt", (_req, res) => {
     res.type("text/plain");
     res.send(buildRobotsTxt());
