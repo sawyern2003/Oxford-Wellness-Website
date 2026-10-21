@@ -1,6 +1,7 @@
 import { useSEO } from "@/hooks/useSEO";
 import { useBreadcrumbSchema } from "@/hooks/useBreadcrumbSchema";
 import { Link } from "wouter";
+import { openCookieSettings } from "@/lib/analytics";
 
 export default function CookiePolicy() {
   useBreadcrumbSchema([{ name: "Cookie Policy", path: "/cookie-policy" }]);
@@ -16,7 +17,7 @@ export default function CookiePolicy() {
         <div className="mb-12">
           <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">Legal</p>
           <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-4">Cookie Policy</h1>
-          <p className="text-sm text-muted-foreground">Last updated: January 2025</p>
+          <p className="text-sm text-muted-foreground">Last updated: October 2026</p>
         </div>
 
         <div className="prose prose-sm max-w-none space-y-8 text-muted-foreground leading-relaxed">
@@ -41,8 +42,8 @@ export default function CookiePolicy() {
               <div className="bg-muted/40 rounded-2xl p-5">
                 <h3 className="font-semibold text-primary mb-2">Analytics Cookies <span className="text-xs font-normal text-muted-foreground ml-1">(Requires Consent)</span></h3>
                 <p className="text-sm">These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. We use this data to improve the site experience.</p>
-                <p className="text-sm mt-2"><strong>Provider:</strong> Google Analytics / similar analytics service.</p>
-                <p className="text-sm mt-2"><strong>Data collected:</strong> Pages visited, time on site, geographic region (country/city level), device type, referral source. No personally identifiable information is collected.</p>
+                <p className="text-sm mt-2"><strong>Provider:</strong> Google Analytics 4.</p>
+                <p className="text-sm mt-2"><strong>Data collected:</strong> Pages visited, time on site, geographic region (country/city level), device type, referral source. The analytics tag is not loaded unless you accept analytics cookies. Query strings are not sent, so names, email addresses, and information typed into forms are not included in the page address passed to Google Analytics.</p>
               </div>
 
               <div className="bg-muted/40 rounded-2xl p-5">
@@ -60,6 +61,16 @@ export default function CookiePolicy() {
           <section>
             <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">3. Managing Cookies</h2>
             <p>You can control and manage cookies in the following ways:</p>
+
+            <h3 className="font-semibold text-primary mt-4 mb-2">On this website</h3>
+            <p>You can reject analytics cookies, or change that choice later.</p>
+            <button
+              type="button"
+              onClick={openCookieSettings}
+              className="mt-3 h-11 rounded-full border border-border bg-white px-5 text-sm font-medium text-foreground hover:text-primary"
+            >
+              Cookie settings
+            </button>
 
             <h3 className="font-semibold text-primary mt-4 mb-2">Browser Settings</h3>
             <p>Most web browsers allow you to manage cookies through your browser settings. You can typically:</p>

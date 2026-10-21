@@ -1,6 +1,19 @@
 import { Link, useLocation } from "wouter";
 import { Facebook, Instagram } from "lucide-react";
 import { isPainRoute, PAIN_CONTACT_HREF, SHOW_PAIN_DOCTOR } from "@/lib/brand";
+import { openCookieSettings } from "@/lib/analytics";
+
+function CookieChoices() {
+  return (
+    <p className="text-xs text-muted-foreground">
+      <Link href="/cookie-policy" className="hover:text-secondary">Cookie policy</Link>
+      <span aria-hidden="true"> · </span>
+      <button type="button" className="hover:text-secondary" onClick={openCookieSettings}>
+        Cookie settings
+      </button>
+    </p>
+  );
+}
 
 export default function Footer() {
   const [location] = useLocation();
@@ -52,6 +65,7 @@ export default function Footer() {
             <p className="text-xs text-muted-foreground">
               © {new Date().getFullYear()} The Oxford Pain Doctor. Dr Richard Sawyer, GMC No. 03640384. Part of The Oxford Wellness Doctor.
             </p>
+            <CookieChoices />
             <p className="text-xs text-muted-foreground">Website Designed by Nicholas Sawyer</p>
           </div>
         </div>
@@ -113,6 +127,7 @@ export default function Footer() {
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} The Oxford Wellness Doctor. Dr Inga Taganova, GMC No. 4727817.{SHOW_PAIN_DOCTOR ? " Dr Richard Sawyer, GMC No. 03640384." : ""}
           </p>
+          <CookieChoices />
           <p className="text-xs text-muted-foreground">Website Designed by Nicholas Sawyer</p>
         </div>
       </div>

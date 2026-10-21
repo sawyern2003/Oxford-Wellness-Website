@@ -70,6 +70,7 @@ import Footer from "@/components/layout/Footer";
 import FloatingButtons from "@/components/layout/FloatingButtons";
 import PainDoctorBanner from "@/components/layout/PainDoctorBanner";
 import { isPainRoute, PAIN_BOOK_HREF, SHOW_PAIN_DOCTOR } from "@/lib/brand";
+import CookieConsent from "@/components/analytics/CookieConsent";
 import { cn } from "@/lib/utils";
 
 function Router() {
@@ -186,6 +187,7 @@ function App() {
         {SHOW_PAIN_DOCTOR && !isCallPage && !pain && !isBookPage ? <PainDoctorBanner /> : null}
         {!isCallPage ? <Footer /> : null}
         {!isCallPage && !isBookPage ? <FloatingButtons /> : null}
+        <CookieConsent />
         <Toaster />
       </div>
     </QueryClientProvider>
