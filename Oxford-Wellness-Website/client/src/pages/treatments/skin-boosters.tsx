@@ -55,8 +55,9 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Hyaluronic Acid Skinbooster", price: "£250" },
-    { name: "Polynucleotide Skin Boosters & Bioremodellers", price: "£350" },
+    { name: "Hyaluronic acid skin booster", price: "£250" },
+    { name: "Polynucleotides — single session", price: "£350" },
+    { name: "Polynucleotides — course of 3", price: "£900" },
   ],
   faqs: [
     { q: "What are skin boosters?", a: "Skin boosters are injectable hyaluronic acid treatments that deeply hydrate the skin from within, improve elasticity, stimulate collagen, and restore a healthy, luminous complexion." },
@@ -65,7 +66,7 @@ const data: TreatmentPageData = {
     { q: "How many skin booster treatments do I need?", a: "An initial course of 2–3 sessions, spaced 3–4 weeks apart, is recommended. Maintenance every 3–6 months helps sustain results." },
     { q: "How long do skin boosters last?", a: "Results from an initial course typically last 3–6 months. Regular maintenance sessions every 3–6 months help sustain the hydration and collagen-stimulating benefits." },
     { q: "Can I combine skin boosters with other treatments?", a: "Yes - skin boosters pair excellently with anti-wrinkle injections, dermal fillers, and energy-based treatments like Morpheus8. Dr. Taganova will create a combined plan suited to your goals." },
-    { q: "How much do skin boosters cost in Oxford?", a: "At The Oxford Wellness Doctor, Hyaluronic Acid Skinboosters are £250 per session. Polynucleotide Skin Boosters and Bioremodellers are £350 per session. All prices include a full consultation." },
+    { q: "How much do skin boosters cost in Oxford?", a: "A hyaluronic acid skin booster is £250. Polynucleotides are £350 for a single session and £900 for a course of three. A consultation is booked separately and the fee is not redeemable against treatment." },
     { q: "How do I book skin booster treatment?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book via Glowday. Located at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ. Open Friday 4–8pm and Saturday 9am–1pm." },
   ],
   procedureSchema: {

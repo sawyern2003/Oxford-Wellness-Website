@@ -190,7 +190,7 @@ export const programmes: Programme[] = [
       "Ongoing review rather than a one-off intervention",
     ],
     timeline: "Often 3–6 months for a foundational journey, then maintenance.",
-    investment: "From £50 consultation; programme pricing discussed individually",
+    investment: "From £95 consultation; programme pricing discussed individually",
     duration: "3–6 months + maintenance",
     includesSummary: "Consultation, medical plan, monitoring, optional adjunct treatments",
     faqs: [

@@ -41,8 +41,8 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Medical Weight Loss Consultation", price: "£50" },
-    { name: "Wegovy / Mounjaro (monthly, dose-dependent)", price: "Price at consultation" },
+    { name: "Medical Weight Management Consultation — Initial", price: "£95" },
+    { name: "Medical Weight Management — Follow-up", price: "£55" },
   ],
   faqs: [
     { q: "What is Wegovy?", a: "Wegovy is a once-weekly injectable medication containing semaglutide, a GLP-1 receptor agonist that reduces appetite and supports significant weight loss. It is MHRA-approved in the UK for obesity treatment." },
@@ -51,7 +51,7 @@ const data: TreatmentPageData = {
     { q: "Which is better - Wegovy or Mounjaro?", a: "Mounjaro (tirzepatide) produces greater average weight loss in clinical trials. However, 'better' depends on your individual health profile, goals, and tolerability. Dr. Taganova will advise during your consultation." },
     { q: "How much weight can I lose with Wegovy or Mounjaro?", a: "Clinical trials show average weight loss of 15–17% with Wegovy and 20–25% with Mounjaro over approximately 18 months. Individual results vary based on adherence, lifestyle, and starting weight." },
     { q: "What are the side effects?", a: "The most common side effects are nausea, vomiting, and reduced appetite - particularly during dose escalation. These typically improve as your body adjusts. Dr. Taganova manages dose escalation carefully to minimise discomfort." },
-    { q: "How much do Wegovy and Mounjaro cost in Oxford?", a: "The initial Medical Weight Loss Consultation at The Oxford Wellness Doctor is £50. The cost of medication (Wegovy or Mounjaro) varies by dose and is discussed at your consultation. All programmes include ongoing medical support." },
+    { q: "How much do Wegovy and Mounjaro cost in Oxford?", a: "The initial Medical Weight Management Consultation is £95, and a weight-management follow-up is £55. The cost of any prescribed medicine varies by dose and is discussed at your consultation. Consultation fees are not redeemable against treatment." },
     { q: "Do I need a prescription?", a: "Yes. Wegovy and Mounjaro are prescription-only medications that require a full medical assessment before prescribing. Dr. Taganova will conduct a thorough consultation and prescribe only if clinically appropriate." },
     { q: "Can I get Wegovy or Mounjaro on the NHS in Oxford?", a: "NHS access to these medications is currently limited and subject to strict criteria via specialist weight management services. Private prescribing through Dr. Taganova offers faster access with ongoing personal medical supervision." },
     { q: "How long do I need to take the injections?", a: "GLP-1 medications are most effective as a long-term treatment. Weight regain is common when medication is stopped, so Dr. Taganova will discuss a long-term plan - including lifestyle modifications - during your ongoing care." },

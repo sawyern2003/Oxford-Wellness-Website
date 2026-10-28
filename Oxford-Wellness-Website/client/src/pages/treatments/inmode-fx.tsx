@@ -56,7 +56,8 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "InMode FX Skin Tightening & Cellulite Treatment", price: "£150" },
+    { name: "InMode FX — single session", price: "£175" },
+    { name: "InMode FX — course of 6", price: "£850" },
   ],
   faqs: [
     { q: "Is InMode FX painful?", a: "Most patients find the treatment comfortable - a warm, vacuum-like sensation. The device's temperature control ensures it stays within the safe therapeutic range throughout." },

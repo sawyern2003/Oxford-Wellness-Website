@@ -10,7 +10,7 @@ export default function Pricing() {
   useSEO({
     title: "Prices & Booking | The Oxford Wellness Doctor",
     description:
-      "Consultations and treatment fees at The Oxford Wellness Doctor, Belsyre Court, Oxford. Fees still to be confirmed are shown as price on consultation.",
+      "Consultations and treatment fees at The Oxford Wellness Doctor, Belsyre Court, Oxford. A small number of treatments are shown as price on consultation.",
     canonical: "https://www.theoxfordwellnessdoctor.com/pricing",
   });
 
@@ -26,7 +26,7 @@ export default function Pricing() {
               Prices &amp; Booking
             </h1>
             <p className="text-muted-foreground leading-relaxed max-w-xl text-[15px]">
-              Fees are confirmed with you before treatment. Where a figure has not yet been approved for this page, it is shown as price on consultation.
+              Clear, transparent pricing for our consultations and treatments. All treatments are subject to clinical suitability, with your personalised treatment plan and final fees confirmed before proceeding.
             </p>
           </div>
         </FadeIn>

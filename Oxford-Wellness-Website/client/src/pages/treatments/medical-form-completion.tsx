@@ -58,7 +58,7 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Medical Form Completion Appointment (30 min)", price: "£50" },
+    { name: "Medical form completion", price: "Price on consultation" },
   ],
   faqs: [
     { q: "Can Dr. Taganova sign any type of medical form?", a: "Dr. Taganova can sign a wide range of medical forms as a fully GMC-registered GP. If you are unsure whether your specific form is within scope, please contact us before booking." },

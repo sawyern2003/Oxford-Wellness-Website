@@ -52,7 +52,8 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Forma Plus - Body (per session)", price: "£500" },
+    { name: "Forma Plus — single session", price: "£225" },
+    { name: "Forma Plus — course of 6", price: "£1,100" },
   ],
   faqs: [
     { q: "Is Forma Plus painful?", a: "No. The treatment is generally described as comfortable and warm - similar to a hot stone massage. The device's temperature monitoring keeps the treatment within a safe, effective range throughout." },

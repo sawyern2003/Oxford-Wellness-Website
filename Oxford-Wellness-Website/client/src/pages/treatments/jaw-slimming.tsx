@@ -51,13 +51,12 @@ const data: TreatmentPageData = {
         "Precise, conservative technique - achieving balance and relief without an overdone result",
         "Dual approach - addresses both cosmetic and therapeutic goals",
         "Private, professional clinic in Oxford",
-        "Full consultation, treatment, and two-week follow-up included",
+        "Assessment, treatment and review are planned with you before you proceed",
       ],
     },
   ],
   pricing: [
-    { name: "Jaw Slimming & Bruxism Treatment (both sides)", price: "£250" },
-    { name: "Two-Week Follow-Up", price: "Complimentary" },
+    { name: "Masseter / jaw treatment", price: "£275" },
   ],
   faqs: [
     { q: "How long until I see jaw slimming results?", a: "Visible slimming of the jaw contour develops gradually over 4–6 weeks as the masseter muscle reduces in bulk. The effect becomes more pronounced with successive treatments." },

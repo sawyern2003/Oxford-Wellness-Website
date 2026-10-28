@@ -97,9 +97,8 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Initial Intimate Health Consultation (45 min)", price: "Price on consultation" },
-    { name: "Neauvia N Rose Intimate Rejuvenation", price: "Price on consultation" },
-    { name: "Follow-up Consultation (30 min)", price: "Price on consultation" },
+    { name: "Intimate Health Consultation", price: "£150" },
+    { name: "Intimate hyaluronic acid treatment", price: "Price on consultation" },
   ],
   faqs: [
     {

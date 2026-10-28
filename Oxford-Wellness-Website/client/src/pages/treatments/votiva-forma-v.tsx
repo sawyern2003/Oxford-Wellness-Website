@@ -39,9 +39,8 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Initial Votiva Forma V Consultation", price: "£150" },
-    { name: "Single Votiva Forma V Treatment Session", price: "£400" },
-    { name: "Course of 3 Votiva Forma V Sessions", price: "£1,050 (save £150)" },
+    { name: "Forma V — single session", price: "£350" },
+    { name: "Forma V — course of 3", price: "£950" },
   ],
   faqs: [
     {

@@ -56,8 +56,8 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Single Forma Facelift Session", price: "£150" },
-    { name: "Course of 6 Sessions", price: "£800" },
+    { name: "Forma — face, single session", price: "£175" },
+    { name: "Forma — face, course of 6", price: "£850" },
   ],
   faqs: [
     { q: "Is Forma painful?", a: "No. Most patients find the treatment comfortable and relaxing - often described as a warm, deep massage. The device's real-time temperature monitoring ensures you stay within the safe therapeutic range at all times." },

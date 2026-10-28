@@ -81,7 +81,7 @@ const data: BlogPostData = {
     {
       heading: "Cost Comparison",
       paragraphs: [
-        "At The Oxford Wellness Doctor, Profhilo treatment starts from £300 per session (a course of two is recommended, from £550). Dermal fillers start from £250–£350 per syringe depending on the area treated.",
+        "At The Oxford Wellness Doctor, Profhilo is £295 for a single session and £550 for a course of two. Dermal filler is £220 for 0.5ml, £320 for 1ml, and £590 for 2ml.",
         "When combining both treatments, many patients find that the investment in skin quality improvement from Profhilo means they need less filler to achieve their goals - as the improved skin quality itself contributes to a more youthful appearance.",
       ],
     },

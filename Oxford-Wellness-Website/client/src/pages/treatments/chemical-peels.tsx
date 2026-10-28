@@ -49,8 +49,8 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Obagi Blue Peel Radiance", price: "£100" },
-    { name: "Perfect Peel", price: "£350" },
+    { name: "Obagi Blue Peel Radiance", price: "£150" },
+    { name: "Perfect Peel", price: "Price on consultation" },
   ],
   faqs: [
     { q: "What is a chemical peel?", a: "A chemical peel uses an acid solution to exfoliate and remove the outer layers of skin. This triggers cell renewal, revealing smoother, brighter, more even-toned skin underneath." },
@@ -59,7 +59,7 @@ const data: TreatmentPageData = {
     { q: "How many chemical peels do I need?", a: "For most concerns, a course of 3–6 peels spaced 4 weeks apart produces the best results. Some patients benefit from a single peel for maintenance or a one-off brightening treatment." },
     { q: "Can I have a chemical peel if I have active acne?", a: "Yes - certain peels, particularly salicylic acid, are specifically beneficial for acne-prone skin. Dr. Taganova will select the appropriate formulation based on your skin condition." },
     { q: "What's the difference between light and deep peels?", a: "Light peels work on the skin surface, causing minimal downtime. Deeper peels penetrate further into the skin for more significant results but require more recovery time. Dr. Taganova will recommend the appropriate depth for your goals." },
-    { q: "How much do chemical peels cost in Oxford?", a: "At The Oxford Wellness Doctor, the Obagi Blue Peel Radiance is £100 and the Perfect Peel is £350. Both prices include full consultation and aftercare guidance." },
+    { q: "How much do chemical peels cost in Oxford?", a: "The Obagi Blue Peel Radiance is £150. The Perfect Peel is priced on consultation." },
     { q: "How do I book a chemical peel consultation?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book via Glowday. Located at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ. Open Friday 4–8pm and Saturday 9am–1pm." },
   ],
   procedureSchema: {

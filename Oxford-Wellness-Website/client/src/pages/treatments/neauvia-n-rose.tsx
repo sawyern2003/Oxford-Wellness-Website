@@ -26,8 +26,7 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Neauvia N Rose Intimate Area Rejuvenation", price: "£350" },
-    { name: "Follow-up Consultation", price: "Complimentary" },
+    { name: "Intimate hyaluronic acid treatment", price: "Price on consultation" },
   ],
   faqs: [
     { q: "Is intimate area rejuvenation painful?", a: "Topical anaesthetic cream is applied before the treatment to ensure your comfort. Most patients experience only mild, brief discomfort during the procedure." },

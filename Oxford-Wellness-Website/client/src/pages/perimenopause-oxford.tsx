@@ -126,7 +126,7 @@ const data: TreatmentPageData = {
     },
     {
       q: "How do I book a perimenopause consultation?",
-      a: "You can book via the Glowday booking system linked from this website, or contact us directly by phone (07739 309380) or email (info@theoxfordwellnessdoctor.com). The initial consultation is £150 for 45 minutes.",
+      a: "You can book via the Glowday booking system linked from this website, or contact us directly by phone (07739 309380) or email (info@theoxfordwellnessdoctor.com). A Menopause & Women's Health Consultation, which covers perimenopause, is £195 initially and £95 for follow-up.",
     },
   ],
   procedureSchema: {

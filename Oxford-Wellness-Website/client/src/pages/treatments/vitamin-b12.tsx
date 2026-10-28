@@ -26,7 +26,7 @@ const data: TreatmentPageData = {
       heading: "The Procedure",
       paragraphs: [
         "The injection is quick, straightforward, and takes just 10–15 minutes in total. Dr. Taganova uses Hydroxocobalamin, the preferred clinical form of B12 that remains active in the body for longer than cyanocobalamin.",
-        "A brief consultation is included to confirm suitability and discuss your symptoms and health history. The injection is given into the upper arm or gluteal muscle with a fine needle. There is no downtime and you can resume normal activities immediately.",
+        "Suitability is confirmed before the injection. It is given into the upper arm or gluteal muscle with a fine needle. There is no downtime and you can resume normal activities immediately.",
       ],
     },
     {
@@ -49,8 +49,7 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Single Vitamin B12 Injection", price: "£35" },
-    { name: "Course of 4 Injections", price: "£120" },
+    { name: "Vitamin B12 injection", price: "£35" },
   ],
   faqs: [
     { q: "How often should I have a B12 injection?", a: "For maintenance, once a month is typical. If you have a diagnosed deficiency, Dr. Taganova may initially recommend more frequent injections - usually weekly for 4 weeks - before moving to monthly maintenance." },

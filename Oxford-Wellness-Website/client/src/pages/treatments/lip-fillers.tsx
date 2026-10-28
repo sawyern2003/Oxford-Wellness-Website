@@ -2,7 +2,7 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Lip Fillers Oxford | Natural Lip Enhancement | Dr. Inga Taganova",
-  metaDescription: "Expert lip fillers in Oxford by GMC-registered doctor. Natural lip enhancement and definition. Hyaluronic acid fillers. Book your free consultation today.",
+  metaDescription: "Expert lip fillers in Oxford by GMC-registered doctor. Natural lip enhancement and definition. Hyaluronic acid fillers. Book a consultation.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/lip-fillers-oxford",
   h1: "Lip Fillers in Oxford - Expert Lip Enhancement",
   intro: "Lip filler treatment at The Oxford Wellness Doctor is guided by one principle: natural enhancement. Dr. Inga Taganova uses premium hyaluronic acid fillers to add subtle definition, hydration, and proportion to the lips - never the overfilled, artificial look that has become associated with less careful treatment.",
@@ -37,7 +37,7 @@ const data: TreatmentPageData = {
     {
       heading: "What to Expect After Treatment",
       paragraphs: [
-        "Results are immediate, though swelling is normal for 24–48 hours after lip filler treatment. The final, settled result is best assessed at 2 weeks, which is why a complimentary follow-up appointment is included.",
+        "Results are immediate, though swelling is normal for 24–48 hours after lip filler treatment. The final, settled result is best assessed at 2 weeks.",
         "Lip fillers typically last 6–12 months. The lips have high blood flow and movement, which means filler metabolises more quickly here than in other facial areas. Regular maintenance is recommended to preserve results.",
       ],
     },
@@ -50,14 +50,14 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "0.7ml Lip Filler", price: "£200" },
+    { name: "Lip filler — 0.7ml", price: "£320" },
   ],
   faqs: [
     { q: "Will my lips look natural?", a: "Yes - if that is your goal. Dr. Taganova's philosophy is natural enhancement that complements your features. She will never place more filler than she believes is appropriate, and always prioritises your long-term lip health." },
     { q: "How long do lip fillers last?", a: "Lip fillers typically last 6–12 months. The lips have high movement and vascularity, which causes filler to metabolise relatively quickly. Regular maintenance helps sustain results." },
     { q: "Do lip fillers hurt?", a: "Discomfort is minimal. A topical anaesthetic cream is applied before treatment, and the filler itself contains lidocaine. Most patients describe the sensation as mild pressure or a slight pinch." },
     { q: "Can lip fillers be dissolved?", a: "Yes. Hyaluronic acid lip fillers are fully reversible using hyaluronidase enzyme. Results can be partially or completely dissolved quickly and safely if needed." },
-    { q: "How much do lip fillers cost in Oxford?", a: "Lip fillers at The Oxford Wellness Doctor are £200 for 0.7ml. This includes a full consultation and complimentary two-week review." },
+    { q: "How much do lip fillers cost in Oxford?", a: "Lip filler is £320 for 0.7ml. A consultation is booked separately and the fee is not redeemable against treatment." },
     { q: "What are the side effects of lip fillers?", a: "Common side effects include swelling, bruising, and tenderness, typically resolving within 3–5 days. Rare complications include lumps, asymmetry, or vascular issues, all of which are managed safely by Dr. Taganova as a qualified doctor." },
     { q: "How long does swelling last after lip fillers?", a: "Swelling is most noticeable in the first 24–48 hours. Most patients find it has fully settled by 7–14 days, at which point the final result is visible." },
     { q: "Can I eat and drink after lip fillers?", a: "Yes, but avoid very hot drinks and spicy food for the first few hours after treatment. Normal eating and drinking can resume shortly after the appointment." },

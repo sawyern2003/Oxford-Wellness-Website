@@ -39,14 +39,14 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Excessive Sweating - Armpits/Underarm", price: "£500" },
+    { name: "Excessive sweating treatment", price: "£450" },
   ],
   faqs: [
     { q: "How does botulinum toxin treat excessive sweating?", a: "Botulinum toxin blocks the nerve signals that activate sweat glands. When injected into the affected area, it prevents the glands from responding to stimulation, dramatically reducing sweat production for 6–9 months." },
     { q: "How long does hyperhidrosis treatment last?", a: "Results typically last 6–9 months. Many patients return for maintenance treatment twice a year to keep sweating consistently under control." },
     { q: "Does the treatment hurt?", a: "Underarm treatment is generally very well-tolerated as the skin is not particularly sensitive. A topical anaesthetic can be used for palmar (hand) treatment. Most patients describe minimal discomfort." },
     { q: "Is hyperhidrosis treatment safe?", a: "Yes. Botulinum toxin treatment for hyperhidrosis is FDA and MHRA approved and has an excellent long-term safety record. When administered by a GMC-registered doctor, risks are minimal." },
-    { q: "How much does excessive sweating treatment cost in Oxford?", a: "At The Oxford Wellness Doctor, underarm hyperhidrosis treatment is £500. This includes the treatment session and a complimentary follow-up appointment." },
+    { q: "How much does excessive sweating treatment cost in Oxford?", a: "Excessive sweating treatment is £450. A consultation is booked separately and the fee is not redeemable against treatment." },
     { q: "Can I treat areas other than the underarms?", a: "Yes. Dr. Taganova treats palmar (hands), plantar (feet), and facial hyperhidrosis in addition to underarms. She will assess the most appropriate approach for your specific concerns during consultation." },
     { q: "When will I see results?", a: "Most patients notice a reduction in sweating within 5–7 days, with full results visible at 2 weeks. A follow-up is included to assess the outcome and address any areas needing a top-up." },
     { q: "How do I book hyperhidrosis treatment?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book via Glowday. We are at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ, open Friday 4–8pm and Saturday 9am–1pm." },

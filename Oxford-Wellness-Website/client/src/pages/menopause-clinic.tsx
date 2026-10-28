@@ -91,9 +91,8 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Initial Menopause Consultation (45 min)", price: "Price on consultation" },
-    { name: "Follow-up Consultation (30 min)", price: "Price on consultation" },
-    { name: "Combined Menopause & Skin Consultation", price: "Price on consultation" },
+    { name: "Menopause & Women's Health Consultation — Initial", price: "£195" },
+    { name: "Menopause & Women's Health — Follow-up", price: "£95" },
   ],
   faqs: [
     {
@@ -138,7 +137,7 @@ const data: TreatmentPageData = {
     },
     {
       q: "How much does a private menopause consultation cost in Oxford?",
-      a: "The initial 45-minute menopause consultation with Dr. Taganova is £150. Follow-up appointments are £80. If you would like a combined menopause and aesthetic skin consultation, this is available for £200.",
+      a: "A Menopause & Women's Health Consultation is £195 for the initial appointment and £95 for follow-up. Consultation fees are not redeemable against treatment.",
     },
     {
       q: "How do I book a menopause appointment?",

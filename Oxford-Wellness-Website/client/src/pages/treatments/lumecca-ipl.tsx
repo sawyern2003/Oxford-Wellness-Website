@@ -54,13 +54,11 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "IPL Consultation & Patch Test", price: "£25" },
-    { name: "IPL Photofacial - Whole Face", price: "£80" },
-    { name: "IPL Lumecca - Acne (1 session)", price: "£150" },
-    { name: "IPL Lumecca - Acne (2 sessions)", price: "£250" },
-    { name: "IPL Lumecca - Pigmentation", price: "£150" },
-    { name: "IPL Lumecca - Rosacea", price: "£223" },
-    { name: "IPL Lumecca - Spider Veins", price: "£223" },
+    { name: "Lumecca IPL — hands", price: "£150" },
+    { name: "Lumecca IPL — small area", price: "£150" },
+    { name: "Lumecca IPL — medium area", price: "£225" },
+    { name: "Lumecca IPL — full face", price: "£225" },
+    { name: "Lumecca IPL — face and neck", price: "£300" },
   ],
   faqs: [
     { q: "Is IPL safe for all skin tones?", a: "IPL works best on lighter skin tones (Fitzpatrick I–III) and requires careful assessment before treating medium or darker skin. A patch test is always performed to confirm suitability and calibrate the correct settings." },

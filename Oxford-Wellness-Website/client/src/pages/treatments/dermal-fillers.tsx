@@ -26,7 +26,9 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "1.0ml Dermal Filler", price: "£300" },
+    { name: "Dermal filler — 0.5ml", price: "£220" },
+    { name: "Dermal filler — 1ml", price: "£320" },
+    { name: "Dermal filler — 2ml", price: "£590" },
   ],
   faqs: [
     { q: "How long do dermal fillers last?", a: "Longevity depends on the area treated and the product used. Cheek and jawline filler typically lasts 12–18 months; lip and tear trough filler lasts 6–12 months. Your metabolism and lifestyle also affect duration." },
@@ -34,7 +36,7 @@ const data: TreatmentPageData = {
     { q: "What's the difference between dermal fillers and anti-wrinkle injections?", a: "Anti-wrinkle injections relax muscles to smooth dynamic lines. Dermal fillers add volume and structure using hyaluronic acid. The two treatments work differently and are often complementary - Dr. Taganova will advise on the best approach for your concerns." },
     { q: "Can dermal fillers be dissolved?", a: "Yes. Hyaluronic acid fillers can be dissolved quickly and safely using an enzyme called hyaluronidase. This is one of the key reasons hyaluronic acid fillers are the gold standard - they are fully reversible." },
     { q: "What are the risks of dermal fillers?", a: "Common risks include temporary swelling, bruising, and tenderness. Rare but serious complications include vascular occlusion. These risks are significantly minimised when treatment is performed by a medically trained doctor with advanced anatomical knowledge." },
-    { q: "How much do dermal fillers cost in Oxford?", a: "Dermal fillers at The Oxford Wellness Doctor are £300 for 1.0ml. All prices include a full consultation and complimentary follow-up appointment." },
+    { q: "How much do dermal fillers cost in Oxford?", a: "Dermal filler is £220 for 0.5ml, £320 for 1ml, and £590 for 2ml. A consultation is booked separately and the fee is not redeemable against treatment." },
     { q: "Will I look unnatural?", a: "Dr. Taganova's philosophy is that the best results are the ones that whisper, not shout. She uses a conservative, patient-led approach focused on restoring balance and natural proportion rather than adding excessive volume." },
     { q: "How long is recovery after dermal fillers?", a: "Most patients experience minimal downtime. Mild swelling and bruising may occur for 3–5 days. Avoid strenuous exercise, alcohol, and excessive heat for 24 hours after treatment." },
     { q: "Can I combine fillers with other treatments?", a: "Yes, fillers work very well alongside anti-wrinkle injections, skin boosters, and energy-based treatments. Dr. Taganova will create a combined treatment plan tailored to your goals during your consultation." },

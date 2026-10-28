@@ -35,7 +35,7 @@ export default function TermsAndConditions() {
 
           <section>
             <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">3. Consultations</h2>
-            <p>An initial aesthetic consultation is provided at no charge and is fully redeemable against your first treatment. For medical consultations (including the Menopause Clinic), a consultation fee applies - currently £150 for a comprehensive 45-minute appointment.</p>
+            <p>Consultation fees are published on the Prices &amp; Booking page and are not redeemable against treatment. An Aesthetic &amp; Skin Consultation is £75. A Menopause &amp; Women's Health Consultation is £195 initially and £95 for follow-up. An Intimate Health Consultation is £150. A Medical Weight Management Consultation is £95 initially and £55 for follow-up. A general medical follow-up is £75.</p>
             <p className="mt-3">Consultations are provided in good faith to assess your suitability for treatment. Dr. Taganova reserves the right to decline to perform any treatment that she considers clinically inappropriate or unsuitable for the individual patient, in accordance with her professional and ethical obligations as a GMC-registered physician.</p>
           </section>
 

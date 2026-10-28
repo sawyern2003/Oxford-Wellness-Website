@@ -54,8 +54,7 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Filler Dissolving (includes patch test)", price: "£200" },
-    { name: "Follow-up Assessment (2 weeks)", price: "Complimentary" },
+    { name: "Filler dissolving", price: "£200" },
   ],
   faqs: [
     { q: "Is filler dissolving painful?", a: "There is mild stinging from the injection and the area may feel tender and swollen for 24–48 hours post-treatment. Topical anaesthetic can be applied beforehand to improve comfort." },
