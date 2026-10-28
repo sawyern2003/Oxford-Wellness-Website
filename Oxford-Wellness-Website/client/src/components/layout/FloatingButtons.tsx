@@ -32,7 +32,7 @@ export default function FloatingButtons() {
     <a
       href="/book"
       aria-label="Book a consultation"
-      className="fixed bottom-6 right-6 z-50 inline-flex items-center rounded-full bg-secondary text-primary px-5 py-3 text-sm font-medium shadow-md hover:bg-secondary/90 transition-colors"
+      className="fixed bottom-6 right-6 z-50 inline-flex items-center rounded-full bg-secondary text-white px-5 py-3 text-sm font-medium shadow-md hover:bg-secondary/90 transition-colors"
     >
       Book
     </a>

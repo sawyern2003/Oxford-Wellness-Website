@@ -2,7 +2,7 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Filler Dissolving Oxford | Hyaluronidase Treatment | Dr. Inga Taganova",
-  metaDescription: "Filler dissolving in Oxford using hyaluronidase - safe removal of unwanted, migrated, or overfilled dermal filler by a GMC-registered doctor. £200. Book today.",
+  metaDescription: "Filler dissolving in Oxford using hyaluronidase - safe removal of unwanted, migrated, or overfilled dermal filler by a GMC-registered doctor. Book today.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/filler-dissolving-oxford",
   h1: "Filler Dissolving in Oxford - Hyaluronidase Treatment",
   intro: "Filler dissolving is a medical procedure in which hyaluronidase - an enzyme that breaks down hyaluronic acid - is injected to dissolve unwanted, migrated, or poorly placed dermal filler. Whether you are unhappy with previous filler results, experiencing complications, or simply want a fresh start, Dr. Inga Taganova offers safe, precise filler dissolving at our private Oxford clinic.",

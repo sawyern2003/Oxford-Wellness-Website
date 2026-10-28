@@ -1,8 +1,10 @@
 import { useSEO } from "@/hooks/useSEO";
 import { useBreadcrumbSchema } from "@/hooks/useBreadcrumbSchema";
-import { GLOWDAY_EMBED_SRC } from "@/lib/booking";
+import { CONSULTATION_LABELS, GLOWDAY_EMBED_SRC } from "@/lib/booking";
 
 export default function Book() {
+  const requested = new URLSearchParams(window.location.search).get("consultation");
+  const consultationName = requested ? CONSULTATION_LABELS[requested] : null;
   useBreadcrumbSchema([{ name: "Book", path: "/book" }]);
   useSEO({
     title: "Book a Consultation | The Oxford Wellness Doctor",
@@ -14,13 +16,15 @@ export default function Book() {
   return (
     <div className="pt-28 min-h-screen bg-white">
       <div className="container mx-auto px-6 py-10 md:py-12 max-w-5xl">
-        <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
-          Appointments
-        </p>
-        <h1 className="font-sans font-semibold text-3xl md:text-4xl text-foreground tracking-tight mb-8">
-          Book a consultation
+        <h1 className="font-sans font-semibold text-3xl md:text-4xl text-foreground tracking-tight mb-3">
+          {consultationName ?? "Book an appointment"}
         </h1>
-        <div className="overflow-hidden rounded-3xl border border-border bg-muted/30">
+        <p className="text-[15px] text-foreground/75 max-w-2xl mb-8">
+          {consultationName
+            ? `Select ${consultationName} in the calendar if it is listed. Otherwise book the nearest general appointment and say what you need.`
+            : "Choose the consultation that matches your enquiry. Aesthetic, menopause and weight consultations are separate appointments."}
+        </p>
+        <div className="overflow-hidden border border-border bg-muted/30">
           <iframe
             src={GLOWDAY_EMBED_SRC}
             title="Book a consultation with Dr Inga Taganova"

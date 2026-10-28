@@ -50,9 +50,9 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Longevity / metabolic consultation", price: "£150" },
-    { name: "Medical weight loss consultation", price: "£50" },
-    { name: "Vitamin B12 injection", price: "£35" },
+    { name: "Longevity / metabolic consultation", price: "Price on consultation" },
+    { name: "Medical weight loss consultation", price: "Price on consultation" },
+    { name: "Vitamin B12 injection", price: "Price on consultation" },
     { name: "Wegovy / Mounjaro programme", price: "Discussed at consultation" },
   ],
   faqs: [

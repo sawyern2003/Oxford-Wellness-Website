@@ -2,7 +2,7 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Profhilo Oxford | Skin Booster Treatment | The Oxford Wellness Doctor",
-  metaDescription: "Profhilo skin booster treatment in Oxford. Injectable hyaluronic acid for skin hydration, firmness & radiance. GMC doctor. From £300. Book your consultation.",
+  metaDescription: "Profhilo skin booster treatment in Oxford. Injectable hyaluronic acid for skin hydration, firmness & radiance. GMC doctor. Book your consultation.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/profhilo-oxford",
   h1: "Profhilo in Oxford - Premium Skin Booster Treatment",
   intro: "Pure hyaluronic acid bio-remodels skin from within – stimulating collagen and elastin for lasting hydration, firmness, and radiance.",

@@ -1,81 +1,73 @@
-import { useEffect, useState } from 'react';
-import { motion, useSpring } from 'framer-motion';
+import { useEffect, useRef } from "react";
 
-function isTouchDevice() {
-  return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-}
+const INTERACTIVE = 'a, button, [role="button"], label[for], summary, select, [data-cursor="hover"]';
+const TEXT_ENTRY = 'input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="submit"]):not([type="button"]), textarea, [contenteditable="true"]';
 
 export default function CustomCursor() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isHovering, setIsHovering] = useState(false);
-  const [isTouch, setIsTouch] = useState(false);
+  const dotRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (isTouchDevice()) {
-      setIsTouch(true);
-      return;
-    }
+    const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const dot = dotRef.current;
+    if (!dot || !finePointer.matches) return;
 
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
+    const root = document.documentElement;
+    root.classList.add("has-custom-cursor");
+
+    let x = -100;
+    let y = -100;
+    let targetX = -100;
+    let targetY = -100;
+    let raf = 0;
+
+    const render = () => {
+      const ease = reduceMotion.matches ? 1 : 0.32;
+      x += (targetX - x) * ease;
+      y += (targetY - y) * ease;
+      dot.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+      raf = Math.abs(targetX - x) > 0.1 || Math.abs(targetY - y) > 0.1 ? requestAnimationFrame(render) : 0;
     };
 
-    const handleMouseOver = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-      if (
-        target.tagName === 'BUTTON' ||
-        target.tagName === 'A' ||
-        target.closest('button') ||
-        target.closest('a') ||
-        target.style.cursor === 'pointer'
-      ) {
-        setIsHovering(true);
-      } else {
-        setIsHovering(false);
+    const onMove = (e: PointerEvent) => {
+      if (e.pointerType !== "mouse") return;
+      targetX = e.clientX;
+      targetY = e.clientY;
+      if (!("visible" in dot.dataset)) {
+        x = targetX;
+        y = targetY;
+        dot.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+        dot.dataset.visible = "";
       }
+      const target = e.target instanceof Element ? e.target : null;
+      dot.dataset.state = target?.closest(TEXT_ENTRY) ? "text" : target?.closest(INTERACTIVE) ? "hover" : "";
+      if (!raf) raf = requestAnimationFrame(render);
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('mouseover', handleMouseOver);
+    const onLeave = (e: MouseEvent) => {
+      if (!e.relatedTarget) delete dot.dataset.visible;
+    };
+    const onDown = () => (dot.dataset.pressed = "");
+    const onUp = () => delete dot.dataset.pressed;
+
+    window.addEventListener("pointermove", onMove, { passive: true });
+    document.addEventListener("mouseout", onLeave);
+    window.addEventListener("pointerdown", onDown);
+    window.addEventListener("pointerup", onUp);
 
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('mouseover', handleMouseOver);
+      cancelAnimationFrame(raf);
+      root.classList.remove("has-custom-cursor");
+      window.removeEventListener("pointermove", onMove);
+      document.removeEventListener("mouseout", onLeave);
+      window.removeEventListener("pointerdown", onDown);
+      window.removeEventListener("pointerup", onUp);
     };
   }, []);
 
-  const springConfig = { damping: 20, stiffness: 400, mass: 0.5 };
-  const cursorX = useSpring(mousePosition.x - 6, springConfig);
-  const cursorY = useSpring(mousePosition.y - 6, springConfig);
-
-  if (isTouch) return null;
-
   return (
-    <>
-      <style>{`
-        body, a, button, [role="button"], select, input, textarea {
-          cursor: none !important;
-        }
-      `}</style>
-      <motion.div
-        className="fixed top-0 left-0 w-3 h-3 bg-white rounded-full pointer-events-none z-[9999] mix-blend-difference"
-        style={{
-          x: cursorX,
-          y: cursorY,
-          scale: 1,
-          opacity: 0.8,
-        }}
-      />
-      <motion.div
-        className="fixed top-0 left-0 w-3 h-3 border border-white rounded-full pointer-events-none z-[9999] mix-blend-difference"
-        animate={{
-          x: mousePosition.x - 6,
-          y: mousePosition.y - 6,
-          scale: 1,
-          opacity: 0.5,
-        }}
-        transition={{ type: 'tween', duration: 0 }}
-      />
-    </>
+    <div ref={dotRef} className="custom-cursor" aria-hidden>
+      <span />
+    </div>
   );
 }

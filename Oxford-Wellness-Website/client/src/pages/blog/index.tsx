@@ -94,7 +94,7 @@ export default function BlogIndex() {
       <div className="pt-28 pb-12 px-6">
         <FadeIn>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">Journal</p>
+            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">Blog</p>
             <h1 className="font-sans font-semibold text-4xl md:text-5xl mb-5 text-foreground tracking-tight">Doctor&apos;s Notes</h1>
             <p className="text-muted-foreground max-w-2xl leading-relaxed text-[15px]">
               Expert advice and calm guidance from Dr Inga – written to help you understand your options, not sell a treatment.

@@ -124,12 +124,12 @@ export default function RecommendedSkincare() {
               Want a routine matched to your programme?
             </h2>
             <p className="text-primary-foreground/75 text-[15px] mb-6 max-w-xl">
-              Begin with the Programme Finder, then confirm home care during your consultation.
+              Confirm home care during your consultation.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/programme-finder">
-                <Button className="bg-secondary text-primary hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium w-full sm:w-auto">
-                  Find my programme
+              <Link href="/book?consultation=aesthetic-skin">
+                <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium w-full sm:w-auto">
+                  Book an Aesthetic &amp; Skin Consultation
                 </Button>
               </Link>
               <Link href="/how-we-help">

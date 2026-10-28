@@ -88,11 +88,11 @@ export default function Footer() {
           <div>
             <p className="text-xs font-medium tracking-wide uppercase text-muted-foreground mb-3">Care</p>
             <ul className="space-y-2 text-sm text-foreground/80">
-              <li><Link href="/how-we-help" className="hover:text-secondary">How We Help</Link></li>
-              <li><Link href="/symptoms-and-treatments" className="hover:text-secondary">Symptoms &amp; Treatment</Link></li>
-              <li><Link href="/programme-finder" className="hover:text-secondary">Programme Finder</Link></li>
               <li><Link href="/treatments" className="hover:text-secondary">Treatments</Link></li>
-              <li><Link href="/ai-consultation" className="hover:text-secondary">Pre Consult</Link></li>
+              <li><Link href="/pricing" className="hover:text-secondary">Prices &amp; Booking</Link></li>
+              <li><Link href="/symptoms-and-treatments" className="hover:text-secondary">How we can help</Link></li>
+              <li><Link href="/personalised-treatment-plans" className="hover:text-secondary">Treatment plans</Link></li>
+              <li><Link href="/shop" className="hover:text-secondary">Shop</Link></li>
             </ul>
           </div>
           <div>

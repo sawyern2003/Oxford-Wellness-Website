@@ -1,5 +1,5 @@
 import { Link, useLocation } from "wouter";
-import { helpPaths, programmeFinderPath } from "@/data/helpPaths";
+import { helpPaths } from "@/data/helpPaths";
 import { cn } from "@/lib/utils";
 
 function PathLink({
@@ -53,7 +53,7 @@ export default function HowCanWeHelp({
   row?: boolean;
 }) {
   const Title = heading === "h1" ? "h1" : "p";
-  const paths = row ? [...helpPaths, programmeFinderPath] : helpPaths;
+  const paths = helpPaths;
 
   return (
     <div>
@@ -67,11 +67,6 @@ export default function HowCanWeHelp({
           <PathLink key={path.href} {...path} onNavigate={onNavigate} />
         ))}
       </div>
-      {row ? null : (
-        <div className="mt-6 pt-6 border-t border-border">
-          <PathLink {...programmeFinderPath} onNavigate={onNavigate} />
-        </div>
-      )}
     </div>
   );
 }

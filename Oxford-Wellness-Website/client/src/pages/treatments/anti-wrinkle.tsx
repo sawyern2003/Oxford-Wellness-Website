@@ -2,7 +2,7 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Anti-Wrinkle Injections Oxford | Botox Treatment | Dr. Inga Taganova",
-  metaDescription: "Professional anti-wrinkle injections in Oxford by Dr. Inga Taganova. Reduce forehead lines, frown lines & crow's feet. GMC-registered doctor. From £190. Book now.",
+  metaDescription: "Professional anti-wrinkle injections in Oxford by Dr. Inga Taganova. Reduce forehead lines, frown lines & crow's feet. GMC-registered doctor. Book now.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/anti-wrinkle-injections-oxford",
   h1: "Anti-Wrinkle Injections in Oxford - Expert Botox Treatment",
   intro: "Botulinum toxin relaxes facial muscles to smooth dynamic lines with subtle, natural-looking results.",

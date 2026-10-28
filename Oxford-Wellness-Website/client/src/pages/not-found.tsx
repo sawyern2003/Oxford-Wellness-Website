@@ -31,7 +31,7 @@ export default function NotFound() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Button
-              className="bg-secondary text-primary hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium"
+              className="bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium"
               onClick={() => (window.location.href = "/")}
               data-testid="btn-go-home"
             >

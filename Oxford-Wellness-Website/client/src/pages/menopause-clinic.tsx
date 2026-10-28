@@ -91,9 +91,9 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Initial Menopause Consultation (45 min)", price: "£150" },
-    { name: "Follow-up Consultation (30 min)", price: "£80" },
-    { name: "Combined Menopause & Skin Consultation", price: "£200" },
+    { name: "Initial Menopause Consultation (45 min)", price: "Price on consultation" },
+    { name: "Follow-up Consultation (30 min)", price: "Price on consultation" },
+    { name: "Combined Menopause & Skin Consultation", price: "Price on consultation" },
   ],
   faqs: [
     {

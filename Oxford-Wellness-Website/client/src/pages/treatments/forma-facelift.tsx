@@ -2,7 +2,7 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Forma Facelift Oxford | Non-Surgical RF Skin Tightening | Dr. Inga Taganova",
-  metaDescription: "Forma non-surgical facelift in Oxford - radiofrequency skin tightening with zero downtime. Lift, firm, and contour without surgery. £150 per session. Book today.",
+  metaDescription: "Forma non-surgical facelift in Oxford - radiofrequency skin tightening with zero downtime. Lift, firm, and contour without surgery. Book today.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/forma-facelift-oxford",
   h1: "Forma Facelift in Oxford - Non-Surgical Radiofrequency Skin Tightening",
   intro: "The Forma Facelift is a non-invasive, clinically proven treatment that uses advanced bipolar radiofrequency energy to tighten, lift, and contour the face - with zero downtime and no needles. Often called the 'lunchtime facelift', it delivers immediate visible results and is safe for all skin types. At The Oxford Wellness Doctor, this treatment is performed personally by Dr. Inga Taganova using the InMode Forma technology.",

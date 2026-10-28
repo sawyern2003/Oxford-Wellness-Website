@@ -2,7 +2,7 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Neauvia N Rose Intimate Area Rejuvenation Oxford | Dr. Inga Taganova",
-  metaDescription: "Intimate area rejuvenation in Oxford with Neauvia N Rose - a regenerative injectable treatment for dryness, discomfort, and loss of volume. GMC-registered doctor. £350. Book now.",
+  metaDescription: "Intimate area rejuvenation in Oxford with Neauvia N Rose - a regenerative injectable treatment for dryness, discomfort, and loss of volume. GMC-registered doctor. Book now.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/neauvia-n-rose-intimate-rejuvenation-oxford",
   h1: "Neauvia N Rose Intimate Area Rejuvenation in Oxford",
   intro: "Medical-grade hyaluronic acid restores hydration, comfort, and tissue integrity in the intimate area – especially for menopause-related changes.",

@@ -57,7 +57,7 @@ export default function CookieConsent() {
           </button>
           <button
             type="button"
-            className="h-11 rounded-full bg-secondary px-5 text-sm font-medium text-primary hover:bg-secondary/90"
+            className="h-11 rounded-full bg-secondary px-5 text-sm font-medium text-secondary-foreground hover:bg-secondary/90"
             onClick={() => choose("accepted")}
           >
             Accept analytics

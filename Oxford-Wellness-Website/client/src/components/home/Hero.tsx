@@ -42,12 +42,12 @@ export default function Hero() {
               Doctor-led care for women experiencing changes in their skin, body confidence and intimate wellbeing – now in our new clinic at Belsyre Court, in the centre of Oxford.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/programme-finder">
+              <Link href="/treatments">
                 <Button
-                  data-testid="hero-programme-finder-btn"
-                  className="bg-secondary text-primary hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium w-full sm:w-auto"
+                  data-testid="hero-treatments-btn"
+                  className="bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium w-full sm:w-auto"
                 >
-                  Find my programme
+                  View treatments
                 </Button>
               </Link>
               <Link href="/book">

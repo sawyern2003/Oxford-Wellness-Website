@@ -2,7 +2,7 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Vitamin B12 Injection Oxford | Energy Boost Treatment | Dr. Inga Taganova",
-  metaDescription: "Vitamin B12 injections in Oxford - a fast, effective energy boost administered by a GMC-registered doctor. Supports metabolism, immunity, and wellbeing. £35. Book today.",
+  metaDescription: "Vitamin B12 injections in Oxford - a fast, effective energy boost administered by a GMC-registered doctor. Supports metabolism, immunity, and wellbeing. Book today.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/vitamin-b12-injection-oxford",
   h1: "Vitamin B12 Injection in Oxford - Energy & Wellbeing Treatment",
   intro: "A Vitamin B12 injection is one of the simplest, most effective wellness treatments available. Delivered directly into the muscle, it bypasses the digestive system entirely for near-instant absorption - providing a reliable boost to energy, mood, immunity, and metabolic function. At The Oxford Wellness Doctor, all injections are administered personally by Dr. Inga Taganova, a GMC-registered physician with over 20 years of clinical experience.",

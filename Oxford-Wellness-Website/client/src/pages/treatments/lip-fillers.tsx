@@ -2,7 +2,7 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Lip Fillers Oxford | Natural Lip Enhancement | Dr. Inga Taganova",
-  metaDescription: "Expert lip fillers in Oxford by GMC-registered doctor. Natural lip enhancement and definition. Hyaluronic acid fillers. From £200. Book your free consultation today.",
+  metaDescription: "Expert lip fillers in Oxford by GMC-registered doctor. Natural lip enhancement and definition. Hyaluronic acid fillers. Book your free consultation today.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/lip-fillers-oxford",
   h1: "Lip Fillers in Oxford - Expert Lip Enhancement",
   intro: "Lip filler treatment at The Oxford Wellness Doctor is guided by one principle: natural enhancement. Dr. Inga Taganova uses premium hyaluronic acid fillers to add subtle definition, hydration, and proportion to the lips - never the overfilled, artificial look that has become associated with less careful treatment.",

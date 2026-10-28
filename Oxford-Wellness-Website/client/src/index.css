@@ -43,6 +43,15 @@
   --color-ring: hsl(var(--ring));
 }
 
+.la-belle-aurore-regular {
+  font-family: "La Belle Aurore", cursive !important;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(211 44% 50%);
+  -webkit-text-stroke: 0.35px currentColor;
+  paint-order: stroke fill;
+}
+
 :root {
   --background: 0 0% 100%;
   --foreground: 215 25% 18%;
@@ -57,7 +66,7 @@
   --primary-foreground: 0 0% 100%;
 
   --secondary: 211 44% 65%;
-  --secondary-foreground: 215 35% 15%;
+  --secondary-foreground: 0 0% 100%;
 
   --muted: 210 20% 97%;
   --muted-foreground: 215 12% 42%;
@@ -176,16 +185,42 @@
     @apply border-border;
   }
   html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
   }
   body {
     @apply font-sans antialiased bg-background text-foreground;
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
+@media (prefers-reduced-motion: no-preference) {
+  .treatment-menu {
+    animation: treatment-menu-in 0.34s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+}
+
+@keyframes treatment-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .supplier-marquee-track {
+    animation: supplier-marquee 36s linear infinite;
+  }
+}
+
+@keyframes supplier-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
 
@@ -240,46 +275,70 @@
   }
 }
 
-/* About page: portrait pill that opens to full-bleed on scroll (sized by PortraitReveal) */
-.about-reveal {
-  position: relative;
-  height: 185svh;
+/* Desktop cursor: a solid dot that opens to a soft ring over links and buttons */
+html.has-custom-cursor,
+html.has-custom-cursor * {
+  cursor: none !important;
 }
 
-.about-reveal[data-static] {
-  height: 100svh;
+html.has-custom-cursor :is(input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="submit"]):not([type="button"]), textarea, [contenteditable="true"]) {
+  cursor: text !important;
 }
 
-.about-reveal-stage {
-  position: sticky;
+.custom-cursor {
+  position: fixed;
   top: 0;
-  height: 100svh;
-  overflow: hidden;
+  left: 0;
+  z-index: 10000;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 
-.about-reveal-frame {
+.custom-cursor[data-visible] {
+  opacity: 1;
+}
+
+.custom-cursor span {
   position: absolute;
-  top: 6rem;
-  left: 50%;
-  width: min(20rem, 80vw);
-  aspect-ratio: 1 / 1.4;
-  overflow: hidden;
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
   border-radius: 9999px;
-  background: #fdfdfd;
-  transform: translateX(-50%);
-  will-change: width, height, top, border-radius;
+  background: hsl(var(--primary));
+  border: 1px solid hsl(var(--primary) / 0);
+  box-shadow: 0 0 0 1.5px hsl(0 0% 100% / 0.85);
+  transform: scale(0.25);
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-/* Height-fitted, plus a capped --zoom, so opening the frame reveals backdrop rather than cropping to cover */
-.about-reveal-frame img {
-  position: absolute;
-  top: calc((1 - var(--zoom, 1)) * 15%);
-  left: 50%;
-  display: block;
-  width: auto;
-  max-width: none;
-  height: calc(100% * var(--zoom, 1));
-  transform: translateX(-50%);
-  mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+.custom-cursor[data-state="hover"] span {
+  transform: scale(1);
+  background: hsl(var(--primary) / 0.08);
+  border-color: hsl(var(--primary) / 0.45);
+  box-shadow: none;
+}
+
+.custom-cursor[data-state="text"] span {
+  transform: scale(0);
+}
+
+.custom-cursor[data-pressed] span {
+  transform: scale(0.2);
+}
+
+.custom-cursor[data-state="hover"][data-pressed] span {
+  transform: scale(0.85);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .custom-cursor span {
+    transition: none;
+  }
 }
 

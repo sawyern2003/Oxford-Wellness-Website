@@ -2,7 +2,7 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "InMode FX Body Contouring Oxford | Cellulite & Skin Tightening | Dr. Inga Taganova",
-  metaDescription: "InMode FX non-invasive body contouring in Oxford - reduce cellulite, tighten skin, and contour stubborn fat areas. From £150. No surgery, no downtime. Book now.",
+  metaDescription: "InMode FX non-invasive body contouring in Oxford - reduce cellulite, tighten skin, and contour stubborn fat areas. No surgery, no downtime. Book now.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/inmode-fx-skin-tightening-oxford",
   h1: "InMode FX Skin Tightening & Body Contouring in Oxford",
   intro: "InMode FX (BodyFX) is a non-invasive body contouring treatment that combines radiofrequency energy, deep tissue heating, and suction negative pressure to target stubborn fat, reduce the appearance of cellulite, and firm loose skin. It is a clinically proven, comfortable, and effective alternative to surgical procedures - with zero downtime and no recovery period.",

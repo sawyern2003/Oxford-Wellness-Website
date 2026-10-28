@@ -10,7 +10,7 @@ import journeyDoorway from "@/assets/journey-doorway.png";
 const steps = [
   {
     title: "Choose where to begin",
-    body: "Explore treatments, concerns and Signature Plans – or use our Treatment Finder if you're unsure.",
+    body: "Explore treatments, concerns and prices, or book if you already know what you need.",
     image: journeyNotebook,
     width: "w-[6.75rem] @[1100px]:w-[8.75rem] @[1240px]:w-[9.5rem]",
     nudge: "@[920px]:-translate-y-2",
@@ -24,7 +24,7 @@ const steps = [
   },
   {
     title: "Care designed around you",
-    body: "From a single treatment or course to a complete Signature Plan, recommendations are based on your goals and what is appropriate for you.",
+    body: "A single treatment or a personalised plan is recommended only when it is appropriate for you.",
     image: journeyBotanical,
     width: "w-[6.5rem] @[1100px]:w-[8.25rem] @[1240px]:w-[8.75rem]",
     nudge: "@[920px]:-translate-y-1",

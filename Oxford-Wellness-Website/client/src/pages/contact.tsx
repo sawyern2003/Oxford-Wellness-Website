@@ -347,7 +347,7 @@ export default function Contact() {
             </Button>
           ) : (
             <Button
-              className="bg-secondary text-primary hover:bg-secondary/90 rounded-full px-8 h-11 text-sm font-medium"
+              className="bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-8 h-11 text-sm font-medium"
               onClick={() => window.location.assign("/book")}
             >
               Book a consultation

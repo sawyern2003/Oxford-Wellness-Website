@@ -2,7 +2,7 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Chemical Peels Oxford | Medical Grade Skin Peels | Expert Treatment",
-  metaDescription: "Medical-grade chemical peels in Oxford. Improve acne, pigmentation, fine lines & texture. Doctor-led safety. From £150. Book your skin consultation today.",
+  metaDescription: "Medical-grade chemical peels in Oxford. Improve acne, pigmentation, fine lines & texture. Doctor-led safety. Book your skin consultation today.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/chemical-peels-oxford",
   h1: "Chemical Peels in Oxford - Medical-Grade Skin Treatments",
   intro: "Chemical peels are one of the most effective evidence-based treatments for improving skin quality, clarity, and texture. At The Oxford Wellness Doctor in Oxford, Dr. Inga Taganova uses medical-grade peeling agents to resurface the skin safely and precisely - targeting specific concerns from acne and pigmentation to fine lines and dullness.",

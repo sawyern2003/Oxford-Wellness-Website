@@ -2,7 +2,7 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Excessive Sweating Treatment Oxford | Hyperhidrosis | Stop Sweating",
-  metaDescription: "Effective excessive sweating treatment in Oxford. Botulinum toxin injections for underarms to stop hyperhidrosis. GMC-registered doctor. £500. Book now.",
+  metaDescription: "Effective excessive sweating treatment in Oxford. Botulinum toxin injections for underarms to stop hyperhidrosis. GMC-registered doctor. Book now.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/excessive-sweating-treatment-oxford",
   h1: "Excessive Sweating Treatment in Oxford - Hyperhidrosis Solutions",
   intro: "Hyperhidrosis - excessive sweating that goes beyond the body's normal thermoregulation - affects millions of people and can have a significant impact on confidence and quality of life. At The Oxford Wellness Doctor, Dr. Inga Taganova offers a highly effective, medically proven solution using botulinum toxin injections to dramatically reduce sweating and restore confidence.",

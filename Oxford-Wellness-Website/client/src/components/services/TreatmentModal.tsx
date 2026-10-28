@@ -122,7 +122,7 @@ export default function TreatmentModal({ isOpen, onClose, treatment }: Treatment
                    * Results may vary. A consultation is required prior to treatment.
                  </p>
                  <Button 
-                   className="bg-secondary text-primary hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium w-full md:w-auto"
+                   className="bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium w-full md:w-auto"
                    onClick={() => window.location.assign("/book")}
                  >
                    Book consultation

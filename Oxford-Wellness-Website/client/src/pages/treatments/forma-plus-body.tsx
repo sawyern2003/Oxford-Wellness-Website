@@ -2,7 +2,7 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Forma Plus Body Contouring Oxford | RF Skin Tightening | Dr. Inga Taganova",
-  metaDescription: "Forma Plus non-invasive body contouring in Oxford - radiofrequency skin tightening and firming for arms, abdomen, knees, and more. From £500. Zero downtime. Book now.",
+  metaDescription: "Forma Plus non-invasive body contouring in Oxford - radiofrequency skin tightening and firming for arms, abdomen, knees, and more. Zero downtime. Book now.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/forma-plus-body-contouring-oxford",
   h1: "Forma Plus Body Contouring in Oxford - Non-Invasive Radiofrequency Skin Tightening",
   intro: "Forma Plus is the body contouring version of the Forma facelift - using the same clinically validated radiofrequency platform from InMode, but with a larger handpiece designed to treat areas of skin laxity on the body. It is non-invasive, requires no downtime, and is ideal for patients who want to firm and tighten loose skin without surgery.",

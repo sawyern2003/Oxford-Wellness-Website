@@ -31,7 +31,11 @@ export type IconName =
   | "sleep"
   | "intimate"
   | "skin"
-  | "testing";
+  | "testing"
+  | "ageing"
+  | "spinal"
+  | "nerve"
+  | "complex";
 
 const tint = "fill-secondary";
 const solid = "fill-primary";
@@ -261,6 +265,42 @@ const SHAPES: Record<IconName, ReactNode> = {
     <>
       <circle cx="17" cy="17" r="13" className={tint} />
       <rect x="25" y="22" width="14" height="5.5" rx="2.75" className={solid} transform="rotate(45 25 22)" />
+    </>
+  ),
+  // A horizon, with what remains held in the centre.
+  ageing: (
+    <>
+      <path d="M5 27a15 15 0 0 1 30 0" className={lineTint} strokeWidth="3.4" strokeLinecap="round" />
+      <circle cx="20" cy="25" r="6" className={solid} />
+    </>
+  ),
+  // Stacked forms, broadening toward the base.
+  spinal: (
+    <>
+      <rect x="16" y="3" width="8" height="8" rx="4" className={tint} />
+      <rect x="14.5" y="13.5" width="11" height="9" rx="4.5" className={tint} />
+      <rect x="13" y="25" width="14" height="11" rx="5.5" className={solid} />
+    </>
+  ),
+  // A signal travelling outward.
+  nerve: (
+    <>
+      <path
+        d="M7 30c8-2 10-10 14-14s8-6 14-8"
+        className={lineTint}
+        strokeWidth="3.2"
+        strokeLinecap="round"
+      />
+      <path d="M9 34c7-7 9-9 13-8" className={line} strokeWidth="3.2" strokeLinecap="round" />
+      <circle cx="8" cy="29" r="4.5" className={solid} />
+    </>
+  ),
+  // Several things occupying the same place.
+  complex: (
+    <>
+      <circle cx="15" cy="16" r="11" className={tint} />
+      <circle cx="25" cy="24" r="10" className={line} strokeWidth="3.2" />
+      <circle cx="25" cy="24" r="4" className={solid} />
     </>
   ),
 };

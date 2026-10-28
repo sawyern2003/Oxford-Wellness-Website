@@ -1,5 +1,4 @@
 import { Switch, Route, useLocation, Redirect } from "wouter";
-import { useEffect } from "react";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -17,6 +16,7 @@ import SkinHealthProgramme from "@/pages/programmes/skin-health-regeneration";
 import WeightBodyProgramme from "@/pages/programmes/weight-body-confidence";
 import IntimateWellnessProgramme from "@/pages/programmes/intimate-wellness";
 import Pricing from "@/pages/pricing";
+import PersonalisedTreatmentPlans from "@/pages/personalised-treatment-plans";
 import MenopauseClinic from "@/pages/menopause-clinic";
 import PerimenopauseOxford from "@/pages/perimenopause-oxford";
 import WomensHealthOxford from "@/pages/womens-health-oxford";
@@ -71,6 +71,8 @@ import FloatingButtons from "@/components/layout/FloatingButtons";
 import PainDoctorBanner from "@/components/layout/PainDoctorBanner";
 import { isPainRoute, PAIN_BOOK_HREF, SHOW_PAIN_DOCTOR } from "@/lib/brand";
 import CookieConsent from "@/components/analytics/CookieConsent";
+import CustomCursor from "@/components/ui/CustomCursor";
+import SmoothScroll from "@/components/layout/SmoothScroll";
 import { cn } from "@/lib/utils";
 
 function Router() {
@@ -111,6 +113,7 @@ function Router() {
       <Route path="/sexual-wellness-oxford" component={SexualWellnessOxford} />
       <Route path="/postpartum-recovery-oxford" component={PostpartumRecoveryOxford} />
       <Route path="/pricing" component={Pricing} />
+      <Route path="/personalised-treatment-plans" component={PersonalisedTreatmentPlans} />
       <Route path="/blog" component={BlogIndex} />
       <Route path="/blog/wegovy-vs-mounjaro-comparison" component={BlogWegovyVsMounjaro} />
       <Route path="/blog/menopause-skin-changes" component={BlogMenopauseSkin} />
@@ -168,12 +171,9 @@ function App() {
   const isBookPage = location === "/book" || location === PAIN_BOOK_HREF;
   const pain = isPainRoute(location);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
-
   return (
     <QueryClientProvider client={queryClient}>
+      <SmoothScroll>
       <div
         className={cn(
           "min-h-screen flex flex-col bg-background font-sans text-foreground selection:bg-primary/15 selection:text-foreground",
@@ -189,7 +189,9 @@ function App() {
         {!isCallPage && !isBookPage ? <FloatingButtons /> : null}
         <CookieConsent />
         <Toaster />
+        <CustomCursor />
       </div>
+      </SmoothScroll>
     </QueryClientProvider>
   );
 }

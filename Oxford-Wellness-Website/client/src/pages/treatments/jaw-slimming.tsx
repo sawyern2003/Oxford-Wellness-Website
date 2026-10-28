@@ -2,7 +2,7 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Jaw Slimming & Teeth Grinding Treatment Oxford | Masseter Botox | Dr. Inga Taganova",
-  metaDescription: "Jaw slimming and bruxism treatment in Oxford - masseter botulinum toxin injections to slim the jaw and relieve teeth grinding. GMC-registered doctor. £250. Book now.",
+  metaDescription: "Jaw slimming and bruxism treatment in Oxford - masseter botulinum toxin injections to slim the jaw and relieve teeth grinding. GMC-registered doctor. Book now.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/jaw-slimming-teeth-grinding-oxford",
   h1: "Jaw Slimming & Teeth Grinding Treatment in Oxford - Masseter Injections",
   intro: "Masseter botulinum toxin injections are a highly effective, minimally invasive treatment that targets the masseter muscles - the large muscles at the sides of the jaw - to achieve two distinct benefits: a slimmer, more oval facial contour, and significant relief from teeth grinding (bruxism) and jaw clenching. The treatment is quick, comfortable, and delivers progressive results over 4–6 weeks.",

@@ -2,7 +2,7 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Lumecca IPL Oxford | Pigmentation, Rosacea & Skin Rejuvenation | Dr. Inga Taganova",
-  metaDescription: "Lumecca intense pulsed light treatment in Oxford - clear pigmentation, sun damage, rosacea, spider veins, and acne. GMC-registered doctor. From £80. Book today.",
+  metaDescription: "Lumecca intense pulsed light treatment in Oxford - clear pigmentation, sun damage, rosacea, spider veins, and acne. GMC-registered doctor. Book today.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/lumecca-ipl-oxford",
   h1: "Lumecca IPL in Oxford - Intense Pulsed Light for Clearer, Brighter Skin",
   intro: "Lumecca is one of the most powerful and effective intense pulsed light (IPL) devices available - delivering up to three times the energy of standard IPL systems. At The Oxford Wellness Doctor, it is used to treat a wide range of skin concerns including sun damage, pigmentation, rosacea, thread veins, and acne - achieving remarkable clarity and rejuvenation in just a small number of sessions.",

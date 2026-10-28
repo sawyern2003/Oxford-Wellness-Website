@@ -142,7 +142,7 @@ export const programmes: Programme[] = [
       },
       {
         q: "Do I need a GP referral?",
-        a: "No. You can begin with the Programme Finder or book a consultation directly.",
+        a: "No. You can book a consultation directly and discuss whether a plan is appropriate.",
       },
       {
         q: "Can this be combined with menopause support?",

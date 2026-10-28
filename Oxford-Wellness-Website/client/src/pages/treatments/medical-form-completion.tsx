@@ -2,7 +2,7 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Medical Form Completion Oxford | GP Signature & Certification | Dr. Inga Taganova",
-  metaDescription: "GMC-registered GP in Oxford available to complete medical forms, sign certifications, and provide medical verification for official documents. From £50. Book appointment today.",
+  metaDescription: "GMC-registered GP in Oxford available to complete medical forms, sign certifications, and provide medical verification for official documents. Book appointment today.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/medical-form-completion-oxford",
   h1: "Medical Form Completion in Oxford - GP Signature & Medical Certification",
   intro: "Dr. Inga Taganova is a fully GMC-registered GP available to complete, review, and sign a range of medical forms and official documents. Whether you need a medical certificate, a GP signature for an application, or clinical verification for insurance or legal purposes, appointments are available at our private clinic in Oxford on Fridays and Saturdays.",

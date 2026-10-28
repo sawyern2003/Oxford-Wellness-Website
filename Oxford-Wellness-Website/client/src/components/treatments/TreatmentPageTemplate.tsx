@@ -4,8 +4,6 @@ import {
   ChevronDown,
   ChevronUp,
   ArrowRight,
-  Phone,
-  Mail,
   Calendar,
   Hourglass,
   BedDouble,
@@ -16,11 +14,12 @@ import {
   Briefcase,
   type LucideIcon,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
 import FadeIn from "@/components/animations/FadeIn";
 import { useSEO } from "@/hooks/useSEO";
 import { getTreatmentGlance, type AtAGlanceItem, type AtAGlanceIcon } from "@/data/treatmentGlance";
+import { itemsForPath, publicPrice } from "@/data/catalogue";
 
 export interface PricingItem {
   name: string;
@@ -77,6 +76,7 @@ const GLANCE_ICONS: Record<AtAGlanceIcon, LucideIcon> = {
 
 const PROMO_SECTION = /why choose|why doctor|why a gmc|why the oxford/i;
 const BOOKING_FAQ = /how do i book/i;
+const PRICE_FAQ = /how much|cost|price|fee/i;
 
 function FAQAccordion({ faqs }: { faqs: FAQItem[] }) {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
@@ -151,7 +151,7 @@ function extractProcedureSteps(sections: ContentSection[]): string[] {
 }
 
 function filterFaqs(faqs: FAQItem[]): FAQItem[] {
-  return faqs.filter((f) => !BOOKING_FAQ.test(f.q)).slice(0, 5);
+  return faqs.filter((f) => !BOOKING_FAQ.test(f.q) && !PRICE_FAQ.test(f.q)).slice(0, 5);
 }
 
 function filterSections(sections: ContentSection[]): ContentSection[] {
@@ -160,6 +160,12 @@ function filterSections(sections: ContentSection[]): ContentSection[] {
 
 export default function TreatmentPageTemplate({ data }: { data: TreatmentPageData }) {
   const glance = getTreatmentGlance(data.canonical);
+  const detailPath = data.canonical.replace("https://www.theoxfordwellnessdoctor.com", "");
+  const cataloguePrices = itemsForPath(detailPath);
+  const priceRows = cataloguePrices.length
+    ? cataloguePrices.map((item) => ({ name: item.name, price: publicPrice(item) }))
+    : [{ name: data.treatmentName ?? data.h1, price: "Price on consultation" }];
+  const bookingHref = cataloguePrices[0]?.bookingUrl ?? "/book";
   const treatmentName = data.treatmentName ?? glance?.treatmentName ?? data.h1.split(" in Oxford")[0];
   const summary = data.summary ?? glance?.summary ?? data.intro;
   const atAGlance = data.atAGlance ?? glance?.atAGlance ?? [];
@@ -245,37 +251,23 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
               <span>{treatmentName}</span>
             </nav>
 
-            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
-              Part of a personalised programme
-            </p>
             <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-4 leading-snug">
               {treatmentName}
             </h1>
-
-            <p className="text-[15px] text-muted-foreground leading-relaxed max-w-2xl mb-4">
-              This treatment is commonly incorporated into our personalised treatment programmes.
-            </p>
 
             <p className="text-base text-muted-foreground leading-relaxed max-w-2xl mb-8">
               {summary}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Button
-                data-testid="hero-book-btn"
-                className="bg-secondary text-primary hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium"
-                onClick={() => window.location.assign("/book")}
-              >
-                Book consultation
-              </Button>
-              <Button
-                data-testid="hero-programme-finder-btn"
-                variant="outline"
-                className="rounded-full px-7 h-11 text-sm border-border bg-white"
-                onClick={() => window.location.href = "/programme-finder"}
-              >
-                Programme Finder
-              </Button>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+              <Link href={bookingHref}>
+                <Button className="bg-secondary text-white hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium">
+                  Book a consultation
+                </Button>
+              </Link>
+              <Link href="/pricing" className="text-sm font-medium text-primary underline underline-offset-4">
+                View prices
+              </Link>
             </div>
           </FadeIn>
         </div>
@@ -327,21 +319,21 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
         </div>
       </section>
 
-      {data.pricing.length > 0 && (
+      {priceRows.length > 0 && (
         <section className="py-12 bg-muted/50">
           <div className="container mx-auto px-6 max-w-4xl">
             <FadeIn direction="up">
               <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-6">Pricing</h2>
-              <div className="bg-white rounded-3xl p-6 space-y-1">
-                {data.pricing.map((item, i) => (
-                  <div key={i} className="flex justify-between items-center gap-4 py-3 border-b border-border last:border-0">
-                    <p className="text-sm text-muted-foreground">{item.name}</p>
-                    <p className="font-sans font-semibold text-base text-foreground whitespace-nowrap">{item.price}</p>
+              <div className="border-t border-border">
+                {priceRows.map((item) => (
+                  <div key={item.name} className="flex justify-between items-baseline gap-4 py-3 border-b border-border">
+                    <p className="text-[15px] text-foreground">{item.name}</p>
+                    <p className="text-[15px] text-foreground tabular-nums whitespace-nowrap">{item.price}</p>
                   </div>
                 ))}
               </div>
-              <p className="text-xs text-muted-foreground mt-4">
-                Includes consultation. Free two-week follow-up with every treatment.
+              <p className="text-sm text-foreground/70 mt-4">
+                Fees are confirmed before treatment. A consultation is booked separately.
               </p>
               <Link href="/pricing" className="inline-flex items-center gap-1 text-sm text-secondary hover:text-primary mt-3 transition-colors">
                 View all pricing <ArrowRight size={12} />
@@ -439,57 +431,6 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
         </section>
       )}
 
-      <section className="bg-primary text-primary-foreground py-16">
-        <div className="container mx-auto px-6 max-w-4xl">
-          {data.relatedLinks && data.relatedLinks.length > 0 && (
-            <FadeIn direction="up" className="mb-10">
-              <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-primary-foreground/60 mb-3">Related</p>
-              <div className="flex flex-wrap gap-x-5 gap-y-2">
-                {data.relatedLinks.map((link, i) => (
-                  <Link
-                    key={i}
-                    href={link.href}
-                    className="inline-flex items-center gap-1.5 text-sm text-primary-foreground/85 hover:text-secondary transition-colors"
-                  >
-                    {link.label} <ArrowRight size={12} />
-                  </Link>
-                ))}
-              </div>
-            </FadeIn>
-          )}
-
-          <FadeIn direction="up">
-            <h2 className="font-sans font-semibold text-2xl md:text-3xl tracking-tight mb-3">Not sure which treatment is right for you?</h2>
-            <p className="text-primary-foreground/75 text-[15px] mb-6 max-w-lg leading-relaxed">
-              Complete our Programme Finder to begin with what has changed – then confirm suitability in consultation with Dr Inga.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 mb-8">
-              <Button
-                data-testid="footer-finder-btn"
-                className="rounded-full bg-secondary text-primary hover:bg-secondary/90 px-7 h-11 text-sm font-medium"
-                onClick={() => window.location.href = "/programme-finder"}
-              >
-                Find my programme
-              </Button>
-              <Button
-                data-testid="footer-book-btn"
-                className="rounded-full bg-transparent border border-white/30 text-white hover:bg-white/10 px-7 h-11 text-sm"
-                onClick={() => window.location.assign("/book")}
-              >
-                Book consultation
-              </Button>
-            </div>
-            <div className="flex flex-wrap items-center gap-5 text-sm text-primary-foreground/70">
-              <a href="tel:+4407739309380" className="flex items-center gap-2 hover:text-secondary transition-colors">
-                <Phone size={14} /> 07739 309380
-              </a>
-              <a href="mailto:info@theoxfordwellnessdoctor.com" className="flex items-center gap-2 hover:text-secondary transition-colors">
-                <Mail size={14} /> info@theoxfordwellnessdoctor.com
-              </a>
-            </div>
-          </FadeIn>
-        </div>
-      </section>
     </div>
   );
 }

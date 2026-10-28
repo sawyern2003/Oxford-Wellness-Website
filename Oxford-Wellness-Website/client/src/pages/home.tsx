@@ -10,12 +10,36 @@ import ParallaxImage from "@/components/animations/ParallaxImage";
 import { useSEO } from "@/hooks/useSEO";
 import { programmes } from "@/data/programmes";
 import PatientJourney from "@/components/home/PatientJourney";
+import SupplierLogos from "@/components/home/SupplierLogos";
+
+const programmeImage = (id: string) => programmes.find((item) => item.id === id)?.image ?? "";
+
+const serviceAreas = [
+  {
+    title: "Women's Health & Menopause",
+    href: "/treatments#womens-health",
+    image: programmeImage("intimate-wellness"),
+    body: "Menopause, perimenopause and intimate health, with treatment considered after assessment.",
+  },
+  {
+    title: "Skin & Aesthetics",
+    href: "/treatments#skin",
+    image: programmeImage("skin-health-regeneration"),
+    body: "Injectables, skin boosters and rejuvenation treatments carried out by Dr Inga.",
+  },
+  {
+    title: "Weight & Body",
+    href: "/treatments#weight",
+    image: programmeImage("weight-body-confidence"),
+    body: "Medical weight management and body contouring, planned around your health.",
+  },
+];
 
 export default function Home() {
   useSEO({
     title: "Doctor-Led Women's Midlife Care Oxford | The Oxford Wellness Doctor",
     description:
-      "Private midlife care with Dr Inga Taganova – now at Belsyre Court in the centre of Oxford. Programmes for skin health, body confidence and intimate wellness.",
+      "Private midlife care with Dr Inga Taganova at Belsyre Court in Oxford. Women's health, skin, weight and body care.",
     canonical: "https://www.theoxfordwellnessdoctor.com/",
   });
 
@@ -75,21 +99,19 @@ export default function Home() {
           </FadeIn>
 
           <div className="grid md:grid-cols-3 gap-5 md:gap-6">
-            {programmes.map((p, i) => (
-              <FadeIn key={p.id} delay={i * 0.07}>
+            {serviceAreas.map((area, i) => (
+              <FadeIn key={area.href} delay={i * 0.07}>
                 <Link
-                  href={p.href}
+                  href={area.href}
                   className="hover-card group block h-full bg-white rounded-3xl overflow-hidden"
                 >
-                  <ParallaxImage src={p.image} alt="" className="aspect-[4/3]" />
+                  <ParallaxImage src={area.image} alt="" className="aspect-[4/3]" />
                   <div className="p-7 md:p-8">
                     <h3 className="font-sans font-semibold text-xl text-primary mb-3 tracking-tight group-hover:text-secondary transition-colors">
-                      {p.id === "weight-body-confidence" ? "Body & Confidence" : p.name}
+                      {area.title}
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                      {p.id === "weight-body-confidence"
-                        ? "Care for body confidence, skin quality and physical changes through midlife."
-                        : p.shortDesc}
+                      {area.body}
                     </p>
                     <span className="text-sm font-medium text-primary inline-flex items-center gap-1">
                       Learn more
@@ -105,6 +127,8 @@ export default function Home() {
 
       <PatientJourney />
 
+      <SupplierLogos />
+
       <ClinicMoveNote />
 
       {/* Final CTA */}
@@ -116,19 +140,19 @@ export default function Home() {
               When you are ready
             </h2>
             <p className="text-primary-foreground/75 text-[15px] mb-8 leading-relaxed">
-              Book an online consultation with Dr Inga – or use the Programme Finder to see where to start.
+              Book a consultation with Dr Inga, or look through treatments and fees first.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link href="/book">
                 <Button
-                  className="rounded-full bg-secondary text-primary hover:bg-secondary/90 px-8 h-11 text-sm font-medium"
+                  className="rounded-full bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 h-11 text-sm font-medium"
                 >
                   Book consultation
                 </Button>
               </Link>
-              <Link href="/programme-finder">
+              <Link href="/pricing">
                 <Button className="rounded-full bg-transparent border border-white/30 text-white hover:bg-white/10 px-8 h-11 text-sm w-full sm:w-auto">
-                  Find my programme
+                  Prices &amp; booking
                 </Button>
               </Link>
             </div>

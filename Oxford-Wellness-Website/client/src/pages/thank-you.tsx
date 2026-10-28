@@ -127,7 +127,7 @@ export default function ThankYou() {
         <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-primary-foreground/60 mb-4">Or book directly</p>
         <h2 className="font-sans font-semibold text-2xl tracking-tight mb-6">Book online via Glowday</h2>
         <Button
-          className="bg-secondary text-primary hover:bg-secondary/90 rounded-full px-8 h-11 text-sm font-medium"
+          className="bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-8 h-11 text-sm font-medium"
           onClick={() => window.location.assign("/book")}
           data-testid="thankyou-book-btn"
         >

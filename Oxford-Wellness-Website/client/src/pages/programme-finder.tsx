@@ -70,7 +70,7 @@ function OptionCard({
           multi ? "rounded-md" : "rounded-full"
         } ${
           selected
-            ? "bg-secondary border-secondary text-primary"
+            ? "bg-secondary border-secondary text-secondary-foreground"
             : "bg-muted border-border"
         }`}
       >
@@ -321,7 +321,7 @@ export default function ProgrammeFinder() {
                 <span
                   className={`mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-md border transition-colors ${
                     lead.consent
-                      ? "bg-secondary border-secondary text-primary"
+                      ? "bg-secondary border-secondary text-secondary-foreground"
                       : "bg-white border-border"
                   }`}
                 >
@@ -367,7 +367,7 @@ export default function ProgrammeFinder() {
           <FadeIn>
             <div className="rounded-3xl bg-secondary/15 p-5 md:p-6 mb-5">
               <div className="flex items-start gap-3 mb-5">
-                <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-secondary text-primary">
+                <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-secondary text-secondary-foreground">
                   <Check size={20} strokeWidth={2.5} />
                 </span>
                 <div>

@@ -41,19 +41,19 @@ export default function ProgrammePage({ programme }: { programme: Programme }) {
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button
-                className="bg-secondary text-primary hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium"
+                className="bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium"
                 onClick={() =>
                   window.location.assign("/book")
                 }
               >
                 Book consultation
               </Button>
-              <Link href="/programme-finder">
+              <Link href="/personalised-treatment-plans">
                 <Button
                   variant="outline"
                   className="rounded-full border-border bg-white px-7 h-11 text-sm w-full sm:w-auto"
                 >
-                  Find my programme
+                  Discuss a treatment plan
                 </Button>
               </Link>
             </div>
@@ -146,7 +146,7 @@ export default function ProgrammePage({ programme }: { programme: Programme }) {
           </FadeIn>
           <FadeIn delay={0.05}>
             <div className="rounded-3xl bg-muted/60 p-7">
-              <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">Timeline & investment</h2>
+              <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">Timeline</h2>
               <p className="text-[15px] text-muted-foreground mb-3">
                 <span className="font-medium text-foreground">Timeline: </span>
                 {programme.timeline}
@@ -156,8 +156,7 @@ export default function ProgrammePage({ programme }: { programme: Programme }) {
                 {programme.duration}
               </p>
               <p className="text-[15px] text-muted-foreground">
-                <span className="font-medium text-foreground">Investment: </span>
-                {programme.investment}
+                Fees are confirmed after consultation. Fixed package prices are not published here.
               </p>
             </div>
           </FadeIn>
@@ -189,16 +188,16 @@ export default function ProgrammePage({ programme }: { programme: Programme }) {
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button
-                className="bg-secondary text-primary hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium"
+                className="bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium"
                 onClick={() =>
                   window.location.assign("/book")
                 }
               >
                 Book consultation
               </Button>
-              <Link href="/programme-finder">
+              <Link href="/pricing">
                 <Button className="rounded-full bg-transparent border border-white/30 text-white hover:bg-white/10 px-7 h-11 text-sm">
-                  Programme Finder
+                  Prices &amp; booking
                 </Button>
               </Link>
             </div>

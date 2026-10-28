@@ -307,7 +307,7 @@ export default function BlogPostTemplate({ data }: { data: BlogPostData }) {
             <p className="text-primary-foreground/80 text-sm mb-6 max-w-md mx-auto">{data.cta.text}</p>
             <Button
               data-testid="blog-cta-btn"
-              className="bg-secondary text-primary hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium"
+              className="bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium"
               onClick={() => {
                 const href = data.cta.buttonHref || "/book";
                 if (href.includes("glowday.com") || href === "/book") {

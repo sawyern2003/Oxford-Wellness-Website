@@ -20,9 +20,9 @@ export const helpPaths: HelpPath[] = [
   },
   {
     title: "I'm looking for a more complete approach",
-    body: "Discover doctor-designed treatment programmes combining treatments around your goals.",
-    action: "Explore programmes",
-    href: "/how-we-help",
+    body: "Some concerns are better addressed with a coordinated plan after consultation.",
+    action: "Personalised treatment plans",
+    href: "/personalised-treatment-plans",
   },
 ];
 
