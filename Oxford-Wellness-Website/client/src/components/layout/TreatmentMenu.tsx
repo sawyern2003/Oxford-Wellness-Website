@@ -1,38 +1,44 @@
 import { Link } from "wouter";
-import womensHealth from "@/assets/treatments/menu-womens-health.jpg";
-import skinAesthetics from "@/assets/treatments/menu-skin-aesthetics.jpg";
-import weightBody from "@/assets/treatments/menu-weight-body.jpg";
+import womensHealth from "@/assets/treatments/menu-womens-health-figure.jpg";
+import skinAesthetics from "@/assets/treatments/menu-skincare-portrait.jpg";
+import weightBody from "@/assets/treatments/menu-weight-scale.jpg";
 
 const treatmentCategories = [
   {
     name: "Women's Health & Menopause",
     href: "/treatments#womens-health",
     image: womensHealth,
-    alt: "Watercolour still life of a silk scarf and perfume atomiser",
+    width: 1024,
+    height: 1024,
+    alt: "Watercolour of a female figure entwined with autumn vine leaves",
   },
   {
     name: "Skin & Aesthetics",
     href: "/treatments#skin",
     image: skinAesthetics,
-    alt: "Watercolour still life with an ornate hand mirror",
+    width: 1024,
+    height: 1024,
+    alt: "Watercolour portrait of a woman with her eyes closed and head tilted back",
   },
   {
     name: "Weight & Body",
     href: "/treatments#weight",
     image: weightBody,
-    alt: "Watercolour of a vintage brass weighing scale with olive branches",
+    width: 1024,
+    height: 935,
+    alt: "Watercolour of a brass balance scale holding a pomegranate and a lemon",
   },
 ];
 
 const viewAllTreatments = { name: "View All Treatments", href: "/treatments" };
 
-function CategoryImage({ src, alt }: { src: string; alt: string }) {
+function CategoryImage({ src, alt, width, height }: { src: string; alt: string; width: number; height: number }) {
   return (
     <img
       src={src}
       alt={alt}
-      width={1024}
-      height={682}
+      width={width}
+      height={height}
       className="h-20 w-auto shrink-0 object-contain transition-transform duration-500 ease-out motion-safe:group-hover:scale-[1.06] motion-safe:group-focus-visible:scale-[1.06]"
     />
   );
@@ -54,7 +60,7 @@ export function TreatmentMenuPanel({ onNavigate }: { onNavigate: (href: string) 
             onClick={() => onNavigate(link.href)}
             className="group flex min-w-0 flex-1 items-center gap-3 rounded-md px-2 py-1 text-sm text-foreground transition-colors duration-300 hover:bg-accent hover:text-primary focus-visible:bg-accent focus-visible:text-primary focus-visible:outline-none"
           >
-            <CategoryImage src={link.image} alt={link.alt} />
+            <CategoryImage src={link.image} alt={link.alt} width={link.width} height={link.height} />
             <span className="leading-snug">{link.name}</span>
           </Link>
         ))}
@@ -82,7 +88,7 @@ export function TreatmentMenuMobile({ onNavigate }: { onNavigate: (href: string)
           onClick={() => onNavigate(link.href)}
           className="group flex items-center gap-3 rounded-md py-1.5 pl-3 pr-2 text-sm text-muted-foreground transition-colors duration-300 hover:bg-accent hover:text-primary"
         >
-          <CategoryImage src={link.image} alt={link.alt} />
+          <CategoryImage src={link.image} alt={link.alt} width={link.width} height={link.height} />
           {link.name}
         </Link>
       ))}
