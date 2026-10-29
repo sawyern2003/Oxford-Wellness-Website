@@ -6,7 +6,14 @@ interface SEOProps {
   canonical?: string;
 }
 
+/** Captures the page's metadata while prerendering, where effects never run. */
+export const ssrHead: { current: SEOProps | null } = { current: null };
+
 export function useSEO({ title, description, canonical }: SEOProps) {
+  if (typeof document === "undefined") {
+    ssrHead.current = { title, description, canonical };
+  }
+
   useEffect(() => {
     document.title = title;
 

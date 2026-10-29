@@ -10,10 +10,12 @@ export function serveStatic(app: Express) {
     );
   }
 
-  app.use(express.static(distPath));
+  app.use(express.static(distPath, { redirect: false }));
 
-  // fall through to index.html if the file doesn't exist
-  app.use("/{*path}", (_req, res) => {
-    res.sendFile(path.resolve(distPath, "index.html"));
+  // serve the prerendered page when there is one, otherwise the empty SPA shell
+  app.use((req, res) => {
+    const page = path.join(distPath, req.path, "index.html");
+    const hasPage = page.startsWith(distPath + path.sep) && fs.existsSync(page);
+    res.sendFile(hasPage ? page : path.resolve(distPath, "spa.html"));
   });
 }

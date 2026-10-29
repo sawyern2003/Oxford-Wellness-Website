@@ -23,6 +23,6 @@
     { "src": "/dimpled-chin-treatment", "status": 301, "headers": { "Location": "/treatments/anti-wrinkle-injections-oxford" } },
     { "src": "/body", "status": 301, "headers": { "Location": "/treatments/forma-plus-body-contouring-oxford" } },
     { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "/(.*)", "dest": "/spa.html" }
   ]
 }
