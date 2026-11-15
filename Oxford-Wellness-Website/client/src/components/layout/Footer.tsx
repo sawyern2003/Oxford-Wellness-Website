@@ -56,7 +56,7 @@ export default function Footer() {
                 57 Woodstock Rd<br />
                 Oxford OX2 6HJ
               </p>
-              <a href="tel:+4407739309380" className="block text-sm text-foreground/80 mt-3 hover:text-secondary">
+              <a href="tel:+44-7739-309380" className="block text-sm text-foreground/80 mt-3 hover:text-secondary">
                 07739 309380
               </a>
             </div>
@@ -114,7 +114,7 @@ export default function Footer() {
               57 Woodstock Rd<br />
               Oxford OX2 6HJ
             </p>
-            <a href="tel:+4407739309380" className="block text-sm text-foreground/80 mt-3 hover:text-secondary">
+            <a href="tel:+44-7739-309380" className="block text-sm text-foreground/80 mt-3 hover:text-secondary">
               07739 309380
             </a>
             <div className="flex gap-4 mt-4 text-muted-foreground">

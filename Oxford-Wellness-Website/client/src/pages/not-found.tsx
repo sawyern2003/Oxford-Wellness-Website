@@ -78,7 +78,7 @@ export default function NotFound() {
         <h2 className="font-sans font-semibold text-2xl tracking-tight mb-6">Get in touch directly</h2>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <a
-            href="tel:+4407739309380"
+            href="tel:+44-7739-309380"
             className="flex items-center gap-2 text-primary-foreground/80 hover:text-white transition-colors"
             data-testid="link-404-phone"
           >

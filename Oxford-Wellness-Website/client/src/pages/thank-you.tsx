@@ -87,7 +87,7 @@ export default function ThankYou() {
             <div>
               <Phone className="mx-auto text-secondary mb-3" size={20} />
               <h3 className="font-sans font-semibold text-sm text-foreground mb-1">Phone</h3>
-              <a href="tel:+4407739309380" className="text-xs text-muted-foreground hover:text-primary transition-colors">07739 309380</a>
+              <a href="tel:+44-7739-309380" className="text-xs text-muted-foreground hover:text-primary transition-colors">07739 309380</a>
             </div>
             <div>
               <Clock className="mx-auto text-secondary mb-3" size={20} />

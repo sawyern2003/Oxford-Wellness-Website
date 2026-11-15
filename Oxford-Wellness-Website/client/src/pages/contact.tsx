@@ -260,7 +260,7 @@ export default function Contact() {
                   <Phone className="text-secondary mt-1" />
                   <div>
                     <h3 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-2">Call Us</h3>
-                    <a href="tel:+4407739309380" className="text-muted-foreground hover:text-primary transition-colors">07739 309380</a>
+                    <a href="tel:+44-7739-309380" className="text-muted-foreground hover:text-primary transition-colors">07739 309380</a>
                   </div>
                 </div>
 
@@ -307,7 +307,7 @@ export default function Contact() {
                 <div>
                   <h2 className="font-sans font-semibold text-lg text-foreground tracking-tight">Call</h2>
                   <p className="mt-2 text-sm leading-relaxed">
-                    <a href="tel:+447739309380" className="text-muted-foreground hover:text-primary">07739 309380</a>
+                    <a href="tel:+44-7739-309380" className="text-muted-foreground hover:text-primary">07739 309380</a>
                   </p>
                 </div>
                 <div>

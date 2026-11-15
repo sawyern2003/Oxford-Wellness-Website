@@ -1,11 +1,11 @@
 import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatments/TreatmentPageTemplate";
 
 const data: TreatmentPageData = {
-  title: "Medical Weight Loss Oxford | Wegovy & Mounjaro | GLP-1 Injections",
-  metaDescription: "Wegovy & Mounjaro weight loss injections in Oxford. Medically supervised GLP-1 treatment by GMC-registered doctor. Safe, effective weight loss. Book consultation today.",
+  title: "Medical Weight Management Oxford | Doctor-Led GLP-1 Treatment | Dr. Inga Taganova",
+  metaDescription: "Doctor-led medical weight management in Oxford. Medically supervised GLP-1 treatment by GMC-registered doctor. Safe, effective weight loss. Book consultation today.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/medical-weight-loss-oxford",
-  h1: "Medical Weight Loss in Oxford - Wegovy, Mounjaro & GLP-1 Treatments",
-  intro: "Medically supervised Wegovy and Mounjaro GLP-1 injections for significant, sustained weight loss under close doctor monitoring.",
+  h1: "Medical Weight Management in Oxford - Doctor-Led GLP-1 Treatment",
+  intro: "Medically supervised GLP-1 injections for significant, sustained weight loss under close doctor monitoring. Treatment options discussed after full clinical assessment.",
   sections: [
     {
       heading: "What Are GLP-1 Weight Loss Injections?",

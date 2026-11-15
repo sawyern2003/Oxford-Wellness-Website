@@ -27,17 +27,15 @@ export default function Hero() {
               The Oxford Wellness Doctor
             </p>
             <h1 className="font-sans font-semibold text-[2.15rem] sm:text-4xl md:text-[2.75rem] leading-[1.15] text-foreground tracking-tight mb-5">
-              <span className="sr-only">
-                Get care today for symptoms of menopause, fatigue, skin changes, body confidence and intimate wellness.
-              </span>
-              <span aria-hidden="true" className="block">
-                Get care today for
-                <TypewriterPhrase
-                  phrases={heroPhrases}
-                  className="relative block text-secondary"
-                />
-              </span>
+              Doctor-led women's health, menopause and longevity care in Oxford
             </h1>
+            <p className="font-sans font-medium text-lg text-secondary mb-3" aria-hidden="true">
+              Get care today for
+              <TypewriterPhrase
+                phrases={heroPhrases}
+                className="relative block"
+              />
+            </p>
             <p className="text-[15px] text-muted-foreground leading-relaxed mb-8 max-w-md">
               Doctor-led care for women experiencing changes in their skin, body confidence and intimate wellbeing – now in our new clinic at Belsyre Court, in the centre of Oxford.
             </p>

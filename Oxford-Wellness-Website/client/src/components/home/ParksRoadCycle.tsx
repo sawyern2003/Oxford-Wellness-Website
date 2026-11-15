@@ -53,12 +53,12 @@ export const MOBILE_ROAD_PATH: RoadPoint[] = [
 ];
 
 const CYCLIST_FRAMES = [
-  "/cyclist-frame-1.png",
-  "/cyclist-frame-2.png",
-  "/cyclist-frame-3.png",
-  "/cyclist-frame-4.png",
-  "/cyclist-frame-5.png",
-  "/cyclist-frame-6.png",
+  "/cyclist-frame-1.webp",
+  "/cyclist-frame-2.webp",
+  "/cyclist-frame-3.webp",
+  "/cyclist-frame-4.webp",
+  "/cyclist-frame-5.webp",
+  "/cyclist-frame-6.webp",
 ] as const;
 
 const SCENE_RATIO = "2171 / 724";
@@ -215,11 +215,12 @@ export default function ParksRoadCycle() {
       <div className="parks-road-frame sticky top-16 md:top-20 flex items-center overflow-x-clip">
         <div ref={stageRef} className="parks-road-stage relative w-full overflow-hidden">
           <img
-            src="/parks-road-background.png"
+            src="/parks-road-background.webp"
             alt=""
             width={2171}
             height={724}
             draggable={false}
+            loading="lazy"
             className="absolute inset-0 h-full w-full object-cover object-[68%_center] md:object-center"
           />
           <motion.div

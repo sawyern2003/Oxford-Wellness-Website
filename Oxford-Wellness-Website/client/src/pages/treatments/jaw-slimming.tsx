@@ -1,7 +1,7 @@
 import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatments/TreatmentPageTemplate";
 
 const data: TreatmentPageData = {
-  title: "Jaw Slimming & Teeth Grinding Treatment Oxford | Masseter Botox | Dr. Inga Taganova",
+  title: "Jaw Slimming & Teeth Grinding Treatment Oxford | Masseter Injections | Dr. Inga Taganova",
   metaDescription: "Jaw slimming and bruxism treatment in Oxford - masseter botulinum toxin injections to slim the jaw and relieve teeth grinding. GMC-registered doctor. Book now.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/jaw-slimming-teeth-grinding-oxford",
   h1: "Jaw Slimming & Teeth Grinding Treatment in Oxford - Masseter Injections",

@@ -37,9 +37,9 @@ const serviceAreas = [
 
 export default function Home() {
   useSEO({
-    title: "Doctor-Led Women's Midlife Care Oxford | The Oxford Wellness Doctor",
+    title: "Women's Health, Menopause & Longevity Clinic Oxford | The Oxford Wellness Doctor",
     description:
-      "Private midlife care with Dr Inga Taganova at Belsyre Court in Oxford. Women's health, skin, weight and body care.",
+      "Doctor-led women's health, menopause and longevity clinic in Oxford. Expert menopause care, intimate health and aesthetic treatments by Dr. Inga Taganova at The Oxford Wellness Doctor.",
     canonical: "https://www.theoxfordwellnessdoctor.com/",
   });
 
