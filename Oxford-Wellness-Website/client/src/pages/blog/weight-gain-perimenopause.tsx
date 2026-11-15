@@ -3,7 +3,7 @@ import perimenopauseImg from "@/assets/blog/weight-gain-perimenopause-wellness.p
 
 const data: BlogPostData = {
   title: "Weight Gain in Perimenopause: Medical Solutions That Actually Work",
-  metaDescription: "Why you're gaining weight in perimenopause and what helps. HRT, GLP-1 injections, and lifestyle solutions from women's health expert Dr. Inga Taganova in Oxford.",
+  metaDescription: "Why you're gaining weight in perimenopause and what helps. HRT, medical weight management, and lifestyle solutions from women's health expert Dr. Inga Taganova in Oxford.",
   canonical: "https://www.theoxfordwellnessdoctor.com/blog/weight-gain-perimenopause",
   h1: "Weight Gain in Perimenopause: Medical Solutions That Actually Work",
   category: "Menopause & Women's Health",
@@ -35,7 +35,7 @@ const data: BlogPostData = {
     },
     {
       heading: "Why Diets Fail During Menopause",
-      image: { src: perimenopauseImg, alt: "Women's wellness and menopause weight management consultation at The Oxford Wellness Doctor, Oxford - specialist perimenopause support including HRT and GLP-1 injections", position: "right" as const },
+      image: { src: perimenopauseImg, alt: "Women's wellness and menopause weight management consultation at The Oxford Wellness Doctor, Oxford - specialist perimenopause support including HRT and medical weight management", position: "right" as const },
       paragraphs: [
         "The same calorie deficit that produced weight loss in your 30s frequently produces little or no loss in perimenopause. This is not imagined. Research has demonstrated that women in perimenopause have a lower metabolic rate than pre-menopausal women of similar age and body composition - and that the standard calorie deficit guidance underestimates the impact of hormonal change.",
         "Additionally, the chronic stress response that many women experience during perimenopause (often compounded by life pressures of the mid-life phase) elevates cortisol - which directly counteracts weight loss efforts by promoting fat storage and triggering cravings for calorie-dense foods.",
@@ -57,12 +57,12 @@ const data: BlogPostData = {
       note: "HRT is not a weight loss treatment. However, for women whose weight gain is primarily driven by hormonal change, it can be the most important single intervention - removing the metabolic headwinds that made weight management so difficult.",
     },
     {
-      heading: "GLP-1 Injections for Menopausal Weight Gain",
+      heading: "Medical Weight Management for Menopausal Weight Gain",
       paragraphs: [
-        "For women who need more significant weight loss - or whose BMI and health status qualifies them for prescription weight management treatment - GLP-1 receptor agonists (Wegovy or Mounjaro) offer a clinically proven solution that works powerfully even in the hormonal environment of perimenopause.",
-        "These medications work by mimicking the gut hormone GLP-1, which signals satiety to the brain, slows gastric emptying, and improves insulin sensitivity. They address directly several of the mechanisms that drive perimenopausal weight gain - insulin resistance, appetite dysregulation, and the altered brain response to food cues.",
-        "In clinical trials, women in perimenopause and post-menopause have shown similar or greater responses to GLP-1 medications compared to pre-menopausal women - suggesting that the hormonal environment of menopause does not blunt the efficacy of these treatments.",
-        "At The Oxford Wellness Doctor, Dr. Taganova can prescribe Wegovy or Mounjaro for eligible patients alongside HRT - providing an integrated approach to both the hormonal and metabolic dimensions of perimenopausal weight management.",
+        "For women who need more significant weight loss - or whose BMI and health status qualifies them for prescription weight management treatment - evidence-based prescription medications offer a clinically proven solution that works powerfully even in the hormonal environment of perimenopause.",
+        "These treatments work by addressing the appetite regulation and metabolic mechanisms that drive perimenopausal weight gain - insulin resistance, appetite dysregulation, and altered satiety signalling.",
+        "In clinical trials, women in perimenopause and post-menopause have shown excellent responses to medical weight management treatments - suggesting that the hormonal environment of menopause does not blunt their efficacy.",
+        "At The Oxford Wellness Doctor, Dr. Taganova can prescribe evidence-based weight management treatment for eligible patients alongside HRT - providing an integrated approach to both the hormonal and metabolic dimensions of perimenopausal weight management.",
       ],
     },
     {
@@ -74,14 +74,14 @@ const data: BlogPostData = {
         "Adequate protein intake - supports muscle maintenance; most perimenopausal women benefit from more protein than standard dietary guidance suggests",
         "Consistent, moderate caloric deficit - rather than extreme restriction that triggers muscle loss and metabolic adaptation",
         "Quality sleep - prioritising sleep duration and quality has measurable effects on appetite hormones and weight",
-        "GLP-1 medications (where clinically appropriate) - Wegovy or Mounjaro for eligible patients needing more significant intervention",
+        "Medical weight management (where clinically appropriate) - prescription treatment for eligible patients needing more significant intervention",
         "Stress management - chronic cortisol elevation is a direct driver of abdominal fat accumulation",
       ],
     },
     {
       heading: "Dr. Taganova's Integrated Approach",
       paragraphs: [
-        "At The Oxford Wellness Doctor, weight management in perimenopause is approached as the multifactorial medical challenge that it genuinely is. Rather than advising a calorie deficit and hoping for the best, Dr. Taganova assesses the hormonal, metabolic, and lifestyle factors contributing to your weight and develops a personalised plan that may include HRT, GLP-1 medication where appropriate, and targeted lifestyle guidance.",
+        "At The Oxford Wellness Doctor, weight management in perimenopause is approached as the multifactorial medical challenge that it genuinely is. Rather than advising a calorie deficit and hoping for the best, Dr. Taganova assesses the hormonal, metabolic, and lifestyle factors contributing to your weight and develops a personalised plan that may include HRT, medical weight management treatment where appropriate, and targeted lifestyle guidance.",
         "For women with perimenopausal weight gain, Dr. Taganova often recommends beginning with a comprehensive menopause consultation to assess and address the hormonal picture before considering additional weight management interventions. Getting the hormonal foundation right makes every other intervention more effective.",
       ],
     },
@@ -94,12 +94,12 @@ const data: BlogPostData = {
     buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
   },
   relatedPosts: [
-    { label: "Wegovy vs Mounjaro: Which Weight Loss Injection Is Right for You?", href: "/blog/wegovy-vs-mounjaro-comparison" },
     { label: "How Menopause Affects Your Skin", href: "/blog/menopause-skin-changes" },
+    { label: "Profhilo vs. Dermal Fillers", href: "/blog/profhilo-vs-dermal-fillers" },
   ],
   relatedTreatments: [
     { label: "Menopause Clinic Oxford", href: "/menopause-clinic-oxford" },
-    { label: "Medical Weight Loss (Wegovy & Mounjaro)", href: "/treatments/medical-weight-loss-oxford" },
+    { label: "Medical Weight Management", href: "/treatments/medical-weight-loss-oxford" },
   ],
 };
 

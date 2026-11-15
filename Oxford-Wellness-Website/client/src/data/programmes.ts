@@ -168,7 +168,7 @@ export const programmes: Programme[] = [
       "Anyone who wants discreet, doctor-led guidance",
     ],
     doctorOverview:
-      "Dr Inga approaches body confidence as a medical and personal journey. Where GLP-1 medication or adjunct treatments are suitable, they are prescribed and monitored carefully – never as a quick fix.",
+      "Dr Inga approaches body confidence as a medical and personal journey. Where prescription weight management treatment or adjunct treatments are suitable, they are prescribed and monitored carefully – never as a quick fix.",
     journey: [
       "Online consultation and medical suitability assessment",
       "Personalised metabolic and body confidence plan",
@@ -195,8 +195,8 @@ export const programmes: Programme[] = [
     includesSummary: "Consultation, medical plan, monitoring, optional adjunct treatments",
     faqs: [
       {
-        q: "Do you prescribe Wegovy or Mounjaro?",
-        a: "Where clinically appropriate, yes – with careful assessment and ongoing medical supervision.",
+        q: "Do you offer prescription weight management treatment?",
+        a: "Where clinically appropriate, yes – with careful assessment and ongoing medical supervision. Treatment options are discussed during your consultation.",
       },
       {
         q: "Is this only about medication?",

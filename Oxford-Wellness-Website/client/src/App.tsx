@@ -24,7 +24,6 @@ import LongevityMedicineOxford from "@/pages/longevity-medicine-oxford";
 import SexualWellnessOxford from "@/pages/sexual-wellness-oxford";
 import PostpartumRecoveryOxford from "@/pages/postpartum-recovery-oxford";
 import BlogIndex from "@/pages/blog/index";
-import BlogWegovyVsMounjaro from "@/pages/blog/wegovy-vs-mounjaro-comparison";
 import BlogMenopauseSkin from "@/pages/blog/menopause-skin-changes";
 import BlogProfhiloVsFillers from "@/pages/blog/profhilo-vs-dermal-fillers";
 import BlogLipFillerNatural from "@/pages/blog/lip-filler-natural-results";
@@ -115,7 +114,6 @@ function Router() {
       <Route path="/pricing" component={Pricing} />
       <Route path="/personalised-treatment-plans" component={PersonalisedTreatmentPlans} />
       <Route path="/blog" component={BlogIndex} />
-      <Route path="/blog/wegovy-vs-mounjaro-comparison" component={BlogWegovyVsMounjaro} />
       <Route path="/blog/menopause-skin-changes" component={BlogMenopauseSkin} />
       <Route path="/blog/profhilo-vs-dermal-fillers" component={BlogProfhiloVsFillers} />
       <Route path="/blog/lip-filler-natural-results" component={BlogLipFillerNatural} />

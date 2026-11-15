@@ -2,10 +2,10 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Jaw Slimming & Teeth Grinding Treatment Oxford | Masseter Injections | Dr. Inga Taganova",
-  metaDescription: "Jaw slimming and bruxism treatment in Oxford - masseter botulinum toxin injections to slim the jaw and relieve teeth grinding. GMC-registered doctor. Book now.",
+  metaDescription: "Jaw slimming and bruxism treatment in Oxford - masseter muscle-relaxing injections to slim the jaw and relieve teeth grinding. GMC-registered doctor. Book now.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/jaw-slimming-teeth-grinding-oxford",
   h1: "Jaw Slimming & Teeth Grinding Treatment in Oxford - Masseter Injections",
-  intro: "Masseter botulinum toxin injections are a highly effective, minimally invasive treatment that targets the masseter muscles - the large muscles at the sides of the jaw - to achieve two distinct benefits: a slimmer, more oval facial contour, and significant relief from teeth grinding (bruxism) and jaw clenching. The treatment is quick, comfortable, and delivers progressive results over 4–6 weeks.",
+  intro: "Masseter muscle-relaxing injections are a highly effective, minimally invasive treatment that targets the masseter muscles - the large muscles at the sides of the jaw - to achieve two distinct benefits: a slimmer, more oval facial contour, and significant relief from teeth grinding (bruxism) and jaw clenching. The treatment is quick, comfortable, and delivers progressive results over 4–6 weeks.",
   sections: [
     {
       heading: "Who Is This Treatment For?",
@@ -23,7 +23,7 @@ const data: TreatmentPageData = {
     {
       heading: "How It Works",
       paragraphs: [
-        "Botulinum toxin is injected directly into the masseter muscles on each side of the jaw. By partially reducing the activity of these muscles, the treatment achieves two effects:",
+        "Prescription muscle-relaxing injections are placed directly into the masseter muscles on each side of the jaw. By partially reducing the activity of these muscles, the treatment achieves two effects:",
         "For jawline contouring: over-active or naturally large masseter muscles are a common cause of a wide, square jaw. As the muscle gradually reduces in bulk over 4–6 weeks following treatment, the lower face becomes narrower and more oval - a subtle but significant improvement in facial balance.",
         "For bruxism: reduced muscle activity means significantly less grinding force during sleep and clenching during the day. Most patients notice relief from jaw pain and associated headaches within 2–4 weeks of treatment.",
       ],
@@ -70,7 +70,7 @@ const data: TreatmentPageData = {
   ],
   procedureSchema: {
     name: "Jaw Slimming & Teeth Grinding Treatment Oxford",
-    description: "Botulinum toxin injections into the masseter muscles to slim the jawline and relieve teeth grinding (bruxism). Delivered by GMC-registered Dr. Inga Taganova in Oxford.",
+    description: "Prescription muscle-relaxing injections into the masseter muscles to slim the jawline and relieve teeth grinding (bruxism). Delivered by GMC-registered Dr. Inga Taganova in Oxford.",
     bodyLocation: "Masseter muscles, jaw",
   },
   relatedLinks: [

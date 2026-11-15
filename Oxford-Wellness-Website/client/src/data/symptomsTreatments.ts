@@ -155,7 +155,7 @@ export const symptoms: Symptom[] = [
       {
         name: "Medical weight management",
         href: "/treatments/medical-weight-loss-oxford",
-        why: "UK-licensed GLP-1 treatment where clinically suitable, prescribed and monitored monthly by a GP.",
+        why: "UK-licensed prescription treatment where clinically suitable, prescribed and monitored monthly by a GP.",
       },
       {
         name: "Weight & Body Confidence programme",
@@ -401,7 +401,7 @@ export const treatmentApproaches: TreatmentApproach[] = [
     title: "Medical Weight Management",
     icon: "weight-management",
     description:
-      "UK-licensed GLP-1 treatment where clinically suitable, prescribed and monitored by a GMC-registered doctor with monthly review, always alongside nutrition and muscle work.",
+      "UK-licensed prescription treatment where clinically suitable, prescribed and monitored by a GMC-registered doctor with monthly review, always alongside nutrition and muscle work.",
   },
   {
     id: "movement-sleep",

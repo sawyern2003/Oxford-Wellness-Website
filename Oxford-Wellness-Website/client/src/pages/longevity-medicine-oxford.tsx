@@ -21,7 +21,7 @@ const data: TreatmentPageData = {
     {
       heading: "What we can help with",
       bullets: [
-        "Medical weight management with Wegovy or Mounjaro where clinically appropriate",
+        "Medical weight management with evidence-based treatment where clinically appropriate",
         "Metabolic and lifestyle guidance alongside treatment",
         "Vitamin B12 support for energy and wellbeing",
         "Regenerative skin treatments that support collagen and tissue quality",
@@ -29,9 +29,9 @@ const data: TreatmentPageData = {
       ],
     },
     {
-      heading: "Medical weight loss as part of longevity care",
+      heading: "Medical weight management as part of longevity care",
       paragraphs: [
-        "For some patients, medically supervised GLP-1 treatment is an important part of restoring metabolic health. Wegovy and Mounjaro are considered carefully, monitored closely, and never offered as a standalone quick fix.",
+        "For some patients, medically supervised prescription weight management treatment is an important part of restoring metabolic health. Treatment options are considered carefully, monitored closely, and never offered as a standalone quick fix.",
         "This is particularly relevant for women experiencing perimenopause or menopause-related weight change, where appetite, insulin sensitivity, and body composition can shift despite consistent effort.",
       ],
     },
@@ -64,8 +64,8 @@ const data: TreatmentPageData = {
       a: "No. Many people begin longevity-focused care in their 40s and 50s, particularly during perimenopause and menopause, when metabolic and hormonal changes become more noticeable.",
     },
     {
-      q: "Do you offer Wegovy and Mounjaro?",
-      a: "Yes, where clinically appropriate. Medical weight loss is doctor-supervised, with suitability assessed carefully and follow-up built into the plan.",
+      q: "Do you offer medical weight management treatment?",
+      a: "Yes, where clinically appropriate. Medical weight management is doctor-supervised, with suitability assessed carefully and follow-up built into the plan. Treatment options are discussed during your consultation.",
     },
     {
       q: "How is this different from a standard aesthetics consultation?",

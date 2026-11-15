@@ -5,7 +5,7 @@ const data: TreatmentPageData = {
   metaDescription: "Professional anti-wrinkle injections in Oxford by Dr. Inga Taganova. Reduce forehead lines, frown lines & crow's feet. GMC-registered doctor. Book now.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/anti-wrinkle-injections-oxford",
   h1: "Anti-Wrinkle Injections in Oxford - Expert Treatment",
-  intro: "Botulinum toxin relaxes facial muscles to smooth dynamic lines with subtle, natural-looking results.",
+  intro: "Prescription muscle-relaxing injections to smooth dynamic lines with subtle, natural-looking results. Treatment is discussed and prescribed after consultation.",
   sections: [
     {
       heading: "What Can Anti-Wrinkle Injections Treat?",
@@ -43,18 +43,18 @@ const data: TreatmentPageData = {
   faqs: [
     { q: "How long do anti-wrinkle injections last?", a: "Anti-wrinkle injections typically last 3–4 months. Results vary depending on factors like muscle strength, metabolism, and lifestyle. Regular maintenance treatments help sustain results, and many patients find their results extend over time." },
     { q: "Are anti-wrinkle injections painful?", a: "Most patients experience minimal discomfort. The needles used are very fine, and the procedure is quick. No anaesthetic is usually needed, though numbing cream is available on request." },
-    { q: "What's the difference between Botox and other anti-wrinkle treatments?", a: "Botox is a brand name for botulinum toxin type A. We use premium anti-wrinkle products that work by temporarily relaxing the muscles that cause lines. All products are safe, licensed, and deliver excellent results when administered by an experienced doctor." },
+    { q: "How do anti-wrinkle injections work?", a: "Anti-wrinkle injections work by temporarily relaxing the muscles that cause dynamic lines. The treatment is safe, licensed, and delivers excellent results when administered by an experienced doctor. Dr. Taganova will explain the specific treatment during your consultation." },
     { q: "How much do anti-wrinkle injections cost in Oxford?", a: "One area is £210, two areas are £270, and three areas are £330. A standalone dimpled chin treatment is £150. Bunny lines, dimpled chin, or a downturned mouth added to another area are £50 each. A separate consultation fee is not redeemable against treatment." },
     { q: "What are the side effects?", a: "Side effects are generally mild and temporary, including slight redness, swelling, or bruising at injection sites. Rare side effects include temporary eyelid drooping, which resolves naturally. Dr. Taganova's medical expertise and precise technique minimise all risks." },
     { q: "Can I drive after treatment?", a: "Yes, you can drive immediately after anti-wrinkle injections. There is no downtime, and you can return to normal activities right away." },
     { q: "How long until I see results?", a: "Results typically become visible within 3–7 days, with full effects apparent after 14 days. We include a free two-week follow-up appointment to assess your results." },
     { q: "Are anti-wrinkle injections safe during pregnancy?", a: "Anti-wrinkle injections are not recommended during pregnancy or breastfeeding as a precautionary measure. Dr. Taganova will discuss your medical history fully during consultation." },
-    { q: "Who should not have anti-wrinkle injections?", a: "Anti-wrinkle injections are not suitable for pregnant or breastfeeding women, people with certain neuromuscular conditions, or those with known allergy to botulinum toxin. Dr. Taganova assesses your suitability thoroughly during consultation." },
+    { q: "Who should not have anti-wrinkle injections?", a: "Anti-wrinkle injections are not suitable for pregnant or breastfeeding women, or people with certain neuromuscular conditions. Dr. Taganova assesses your suitability thoroughly during consultation and will discuss any contraindications." },
     { q: "How do I book an appointment at The Oxford Wellness Doctor?", a: "Call 07739 309380, email info@theoxfordwellnessdoctor.com, or book online via Glowday. We are located at Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ, open Friday 4–8pm and Saturday 9am–1pm." },
   ],
   procedureSchema: {
     name: "Anti-Wrinkle Injections Oxford",
-    description: "Botulinum toxin injections to reduce dynamic facial wrinkles including forehead lines, frown lines, and crow's feet. Delivered by GMC-registered Dr. Inga Taganova in Oxford.",
+    description: "Prescription muscle-relaxing injections to reduce dynamic facial wrinkles including forehead lines, frown lines, and crow's feet. Delivered by GMC-registered Dr. Inga Taganova in Oxford.",
   },
   relatedLinks: [
     { label: "Dermal Fillers", href: "/treatments/dermal-fillers-oxford" },

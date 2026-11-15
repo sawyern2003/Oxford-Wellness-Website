@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import womensWellnessImg from "@/assets/womens-wellness-menopause-clinic-oxford.webp";
 import regenerativeImg from "@/assets/regenerative-medicine-profhilo-skin-booster-oxford.webp";
-import aestheticsImg from "@/assets/medical-aesthetics-botox-dermal-fillers-oxford.webp";
+import aestheticsImg from "@/assets/medical-aesthetics-treatments-oxford.webp";
 import FadeIn from "@/components/animations/FadeIn";
 
 const treatments = [

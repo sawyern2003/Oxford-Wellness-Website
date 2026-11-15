@@ -51,7 +51,6 @@ const SITEMAP_PAGES = [
   { path: "/treatments/filler-dissolving-oxford", priority: "0.9", changefreq: "monthly" },
   { path: "/treatments/jaw-slimming-teeth-grinding-oxford", priority: "0.9", changefreq: "monthly" },
   { path: "/blog", priority: "0.9", changefreq: "weekly" },
-  { path: "/blog/wegovy-vs-mounjaro-comparison", priority: "0.7", changefreq: "monthly" },
   { path: "/blog/menopause-skin-changes", priority: "0.7", changefreq: "monthly" },
   { path: "/blog/profhilo-vs-dermal-fillers", priority: "0.7", changefreq: "monthly" },
   { path: "/blog/lip-filler-natural-results", priority: "0.7", changefreq: "monthly" },

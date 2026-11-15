@@ -6,14 +6,6 @@ import { ArrowRight } from "lucide-react";
 
 const posts = [
   {
-    slug: "wegovy-vs-mounjaro-comparison",
-    title: "Wegovy vs Mounjaro: Which Weight Loss Injection Is Right for You?",
-    excerpt: "A detailed comparison of both GLP-1 medications - efficacy data, side effects, cost, and how Dr. Taganova decides which to prescribe.",
-    category: "Medical Weight Loss",
-    readTime: "8 min",
-    href: "/blog/wegovy-vs-mounjaro-comparison",
-  },
-  {
     slug: "menopause-skin-changes",
     title: "How Menopause Affects Your Skin: What Your GP Won't Tell You",
     excerpt: "Menopause causes measurable changes to skin collagen, hydration and elasticity. Formally trained gynaecologist Dr. Taganova explains what works.",
