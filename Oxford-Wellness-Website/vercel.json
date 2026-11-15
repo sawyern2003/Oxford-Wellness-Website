@@ -22,6 +22,7 @@
     { "src": "/about-us", "status": 301, "headers": { "Location": "/about" } },
     { "src": "/dimpled-chin-treatment", "status": 301, "headers": { "Location": "/treatments/anti-wrinkle-injections-oxford" } },
     { "src": "/body", "status": 301, "headers": { "Location": "/treatments/forma-plus-body-contouring-oxford" } },
+    { "src": "/blog/wegovy-vs-mounjaro-comparison", "status": 301, "headers": { "Location": "/treatments/medical-weight-loss-oxford" } },
     { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "/spa.html" }
   ]

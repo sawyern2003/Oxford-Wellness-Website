@@ -3,7 +3,9 @@ import { useBreadcrumbSchema } from "@/hooks/useBreadcrumbSchema";
 import { CONSULTATION_LABELS, GLOWDAY_EMBED_SRC } from "@/lib/booking";
 
 export default function Book() {
-  const requested = new URLSearchParams(window.location.search).get("consultation");
+  const requested = typeof window !== 'undefined' 
+    ? new URLSearchParams(window.location.search).get("consultation")
+    : null;
   const consultationName = requested ? CONSULTATION_LABELS[requested] : null;
   useBreadcrumbSchema([{ name: "Book", path: "/book" }]);
   useSEO({
