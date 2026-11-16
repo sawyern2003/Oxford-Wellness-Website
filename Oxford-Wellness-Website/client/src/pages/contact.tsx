@@ -281,8 +281,7 @@ export default function Contact() {
                   <Clock className="text-secondary mt-1" />
                   <div>
                     <h3 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-2">Hours</h3>
-                    <p className="text-muted-foreground text-sm mb-2">Open Monday, Thursday, Friday, Saturday and Sunday 9am – 6pm</p>
-                    <p className="text-muted-foreground text-sm italic">Please note: Exact hours to be confirmed by Nicholas</p>
+                    <p className="text-muted-foreground text-sm">Open Monday, Thursday, Friday, Saturday and Sunday 9am – 6pm</p>
                   </div>
                 </div>
               </CardContent>
@@ -321,7 +320,6 @@ export default function Contact() {
                 <div>
                   <h2 className="font-sans font-semibold text-lg text-foreground tracking-tight">Hours</h2>
                   <p className="mt-2 text-sm text-muted-foreground">Open Monday, Thursday, Friday, Saturday and Sunday 9am – 6pm</p>
-                  <p className="mt-1 text-sm text-muted-foreground italic">Exact hours to be confirmed</p>
                 </div>
               </div>
             )
