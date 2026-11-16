@@ -8,6 +8,7 @@ const data: BlogPostData = {
   canonical: "https://www.theoxfordwellnessdoctor.com/blog/new-oxford-science-park-clinic",
   category: "Clinic News",
   readTime: "4 min",
+  datePublished: "2024-08-10",
   intro: "We are delighted to welcome patients to our clinic in Oxford. This location has been carefully chosen to provide the finest possible environment for medical aesthetics and women's wellness care - combining professional medical credentials with privacy, convenience, and a calm clinical atmosphere.",
   sections: [
     {

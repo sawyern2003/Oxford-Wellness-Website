@@ -8,6 +8,7 @@ const data: BlogPostData = {
   h1: "How to Get Natural-Looking Lip Fillers: A Doctor's Guide",
   category: "Lip Fillers",
   readTime: "5 min",
+  datePublished: "2024-08-10",
   intro: "Lip fillers have a reputation problem. Years of images showing overfilled, duck-shaped lips have left many patients unsure whether subtle, beautiful lip enhancement is even achievable. It absolutely is - but the outcome depends enormously on the practitioner's aesthetic judgement, technical skill, and the philosophy they bring to the treatment. Dr. Inga Taganova, who treats lips with a surgeon's precision and an artist's eye, explains what natural lip filler actually looks like and how to achieve it.",
   sections: [
     {

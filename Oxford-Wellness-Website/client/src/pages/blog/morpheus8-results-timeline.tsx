@@ -8,6 +8,7 @@ const data: BlogPostData = {
   h1: "Morpheus8 Results: Day-by-Day Recovery and Timeline",
   category: "Morpheus8",
   readTime: "5 min",
+  datePublished: "2024-08-10",
   intro: "Morpheus8 is one of the most effective non-surgical skin rejuvenation treatments available - combining radiofrequency energy with microneedling to stimulate deep dermal remodelling and collagen production. But it is also a treatment with a recovery period, and understanding what to expect after your session is essential for a smooth experience and optimal results. Dr. Inga Taganova walks you through the Morpheus8 recovery and results timeline in detail.",
   sections: [
     {

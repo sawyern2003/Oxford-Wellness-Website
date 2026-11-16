@@ -8,6 +8,7 @@ const data: BlogPostData = {
   h1: "Profhilo vs. Dermal Fillers: Which Treatment Is Right for You?",
   category: "Skin Treatments",
   readTime: "6 min",
+  datePublished: "2024-08-10",
   intro: "Profhilo and dermal fillers are two of the most popular injectable skin treatments available - and they are frequently confused with each other. Both involve injecting hyaluronic acid. Both can improve the appearance of ageing skin. But they work in fundamentally different ways, address different concerns, and produce quite different results. Dr. Inga Taganova explains the distinction and helps you understand which treatment - or which combination - is most appropriate for your specific concerns.",
   sections: [
     {

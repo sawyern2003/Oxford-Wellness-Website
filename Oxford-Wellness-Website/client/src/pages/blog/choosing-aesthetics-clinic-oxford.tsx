@@ -8,6 +8,7 @@ const data: BlogPostData = {
   h1: "How to Choose an Aesthetics Clinic in Oxford: A Checklist",
   category: "Choosing a Clinic",
   readTime: "6 min",
+  datePublished: "2024-08-10",
   intro: "Choosing an aesthetics clinic is one of the most important decisions in your aesthetic journey - and one of the most confusing. Oxford has a growing number of clinics and practitioners offering injectable treatments, energy devices, and wellness services. The quality, safety standards, and clinical expertise vary enormously. Dr. Inga Taganova shares the checklist she would use if she were a patient choosing a practitioner - because the standards she holds herself to are the same standards every patient deserves.",
   sections: [
     {

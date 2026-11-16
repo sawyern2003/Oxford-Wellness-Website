@@ -8,6 +8,7 @@ const data: BlogPostData = {
   h1: "How Menopause Affects Your Skin: What Your GP Won't Tell You",
   category: "Menopause & Women's Health",
   readTime: "6 min",
+  datePublished: "2024-09-22",
   intro: "If you have noticed that your skin has changed in your 40s or 50s - becoming drier, thinner, less plump, or more prone to lines - you are not imagining it. These changes are real, measurable, and directly linked to the hormonal shifts of the menopause transition. As a formally trained gynaecologist who now practises aesthetic medicine, Dr. Inga Taganova is in a unique position to explain what is actually happening to your skin during menopause - and, more importantly, what genuinely helps.",
   sections: [
     {
