@@ -9,7 +9,7 @@ const data: BlogPostData = {
   category: "Choosing a Clinic",
   readTime: "6 min",
   datePublished: "2024-08-10",
-  intro: "Choosing an aesthetics clinic is one of the most important decisions in your aesthetic journey - and one of the most confusing. Oxford has a growing number of clinics and practitioners offering injectable treatments, energy devices, and wellness services. The quality, safety standards, and clinical expertise vary enormously. Dr. Inga Taganova shares the checklist she would use if she were a patient choosing a practitioner - because the standards she holds herself to are the same standards every patient deserves.",
+  intro: "Choosing an aesthetics clinic is one of the most important decisions you will make about your appearance—and one of the most confusing. Oxford has a growing number of clinics and practitioners offering injectable treatments, energy devices, and wellness services. The quality, safety standards, and clinical expertise vary enormously. Dr. Inga Taganova shares the checklist she would use if she were a patient choosing a practitioner—because the standards she holds herself to are the same standards every patient deserves.",
   sections: [
     {
       heading: "Check Credentials First - Before Anything Else",
@@ -91,7 +91,7 @@ const data: BlogPostData = {
     {
       heading: "What Makes The Oxford Wellness Doctor Different",
       paragraphs: [
-        "At The Oxford Wellness Doctor, every element of the patient journey is designed around the standards we believe every patient deserves - not the minimum regulatory requirement. Dr. Taganova is GMC-registered, medically trained across gynaecology, general practice, and aesthetic medicine, and brings over 20 years of clinical experience to every patient interaction.",
+        "At The Oxford Wellness Doctor, every element of patient care is designed around the standards we believe every patient deserves—not the minimum regulatory requirement. Dr. Taganova is GMC-registered, medically trained across gynaecology, general practice, and aesthetic medicine, and brings over 20 years of clinical experience to every patient interaction.",
         "Every new patient receives a full consultation before any treatment. Hyaluronidase is always available. Treatments are only recommended where Dr. Taganova believes they will genuinely benefit the patient. And patients are never pressured - if she doesn't think a treatment is right for you, she will tell you honestly.",
       ],
     },
