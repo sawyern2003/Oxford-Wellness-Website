@@ -1,27 +1,83 @@
 import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatments/TreatmentPageTemplate";
 
 const data: TreatmentPageData = {
-  title: "Morpheus8 Oxford | RF Microneedling | Skin Tightening Treatment",
-  metaDescription: "Morpheus8 radiofrequency microneedling in Oxford. Non-surgical skin tightening for face & body. Reduces wrinkles, scars & improves texture. Book consultation.",
+  title: "Morpheus8 Oxford | Radiofrequency Microneedling | Dr Inga Taganova",
+  metaDescription: "Morpheus8 radiofrequency microneedling in Oxford by GMC-registered Dr Inga Taganova. Non-surgical skin tightening for face, neck and body at Belsyre Court, Woodstock Road.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/morpheus8-oxford",
-  h1: "Morpheus8 in Oxford - Advanced RF Microneedling Treatment",
-  intro: "RF microneedling tightens skin, reduces wrinkles and scars, and remodels collagen deep in the tissue – without surgery.",
+  h1: "Morpheus8 in Oxford",
+  intro: "Morpheus8 is an advanced radiofrequency microneedling treatment that tightens skin, reduces wrinkles and scars, and remodels collagen deep within the tissue. Performed by Dr Inga Taganova at our clinic on Woodstock Road in central Oxford, Morpheus8 provides non-surgical skin rejuvenation for face, neck and body.",
   sections: [
     {
-      heading: "What Morpheus8 Treats",
-      bullets: [
-        "Loose skin on face, neck, and jowls",
-        "Deep wrinkles and folds",
-        "Acne scars and uneven texture",
-        "Large pores",
-        "Stretch marks and body laxity",
+      heading: "What is Morpheus8",
+      paragraphs: [
+        "Morpheus8 combines fractional microneedling with radiofrequency energy to create a powerful skin tightening and rejuvenation treatment. Ultra-fine needles penetrate the skin to depths of up to 4mm, delivering controlled radiofrequency energy directly into the deeper layers of the dermis and subdermal tissue where collagen remodelling occurs.",
+        "This deep delivery of heat energy triggers the skin's natural healing response, stimulating new collagen and elastin production while tightening existing collagen fibres. The result is firmer, smoother, more youthful skin with improvements that continue to develop over several months as new collagen is laid down.",
+        "Morpheus8 is one of the most effective non-surgical treatments for skin tightening and is particularly popular among patients who want significant improvements in skin laxity but are not ready for surgical procedures such as a facelift. It is FDA-approved, clinically proven, and produces results that are visible and long-lasting.",
       ],
     },
     {
-      heading: "The Morpheus8 Procedure",
+      heading: "What Morpheus8 can treat",
       paragraphs: [
-        "Numbing cream applied 45–60 minutes before. RF microneedling across the treatment area over 30–60 minutes.",
-        "Redness for 2–5 days; back to work in 3–5 days. Three sessions, 4–6 weeks apart recommended. Results develop over 3–6 months.",
+        "Morpheus8 is highly versatile and can be used to treat a wide range of skin concerns on both face and body:",
+      ],
+      bullets: [
+        "Skin laxity and sagging – particularly on the face, neck, jowls and jawline",
+        "Deep wrinkles, lines and folds",
+        "Acne scars and other depressed scarring",
+        "Large pores and uneven skin texture",
+        "Stretch marks on abdomen, thighs, arms and breasts",
+        "Crepey skin on the neck, décolletage and body",
+        "Post-pregnancy loose skin on the abdomen",
+        "Upper arm skin laxity",
+        "Thigh and buttock skin tightening",
+        "Overall skin quality and texture improvements",
+      ],
+    },
+    {
+      heading: "Who is suitable for Morpheus8",
+      paragraphs: [
+        "Morpheus8 is suitable for adults of any age who have visible skin laxity, wrinkles, scarring or textural concerns that have not responded adequately to topical skincare or less intensive treatments. It is particularly effective for patients in their 40s, 50s and 60s who are experiencing age-related collagen loss and skin sagging but want to avoid surgery.",
+        "The treatment is also highly effective for younger patients with acne scarring or stretch marks, as well as postpartum patients seeking to tighten loose abdominal skin without surgery. Morpheus8 can be used on all skin types and tones, including darker skin that may not be suitable for laser treatments.",
+        "Morpheus8 is not suitable during pregnancy or breastfeeding, or for people with active skin infections, keloid scarring tendency, or certain medical conditions. Dr Taganova will assess your suitability during your consultation and discuss whether Morpheus8 is the most appropriate treatment for your concerns.",
+      ],
+    },
+    {
+      heading: "The Morpheus8 treatment process",
+      paragraphs: [
+        "Your Morpheus8 treatment begins with the application of a topical numbing cream 45–60 minutes before the procedure. This ensures maximum comfort during treatment, as the microneedles penetrate deeper layers of the skin. Once the numbing has taken effect, Dr Taganova will cleanse the treatment area and begin the Morpheus8 procedure.",
+        "The Morpheus8 device is passed systematically across the treatment area, with the microneedles creating controlled micro-injuries while simultaneously delivering radiofrequency energy to the deeper tissue. Most patients describe the sensation as a warm prickling or vibrating feeling. Dr Taganova adjusts the depth and intensity based on the area being treated and your individual tolerance.",
+        "The treatment takes 30–60 minutes depending on the size of the area. Afterwards, a soothing serum and SPF are applied. You will experience redness and mild swelling for 2–5 days, similar to moderate sunburn. Most patients return to work within 3–5 days, though this varies depending on skin sensitivity and treatment intensity.",
+      ],
+    },
+    {
+      heading: "Results and how long they last",
+      paragraphs: [
+        "Morpheus8 results develop gradually over 3–6 months as your skin produces new collagen and elastin in response to the treatment. Initial improvements in skin texture and tone may be visible within 2–4 weeks, but the full skin tightening and contouring effects become apparent once the collagen remodelling process is complete.",
+        "Most patients benefit from a course of three treatments spaced 4–6 weeks apart to achieve optimal results. Some patients achieve their goals with one or two sessions, while others with more significant concerns may benefit from additional treatments. Dr Taganova will recommend the most appropriate protocol during your consultation based on your skin condition and goals.",
+        "The results from Morpheus8 typically last 12–18 months, after which annual maintenance treatments are recommended to sustain collagen production and maintain skin tightness. Because Morpheus8 stimulates your body's own collagen production rather than simply injecting temporary fillers, the improvements look natural and age gracefully over time.",
+      ],
+    },
+    {
+      heading: "Morpheus8 vs other skin tightening treatments",
+      paragraphs: [
+        "Morpheus8 is more intensive than non-invasive skin tightening treatments such as ultrasound or RF-only devices, but less invasive than surgical facelifts. It occupies a valuable middle ground for patients who want significant improvements without surgery or lengthy downtime.",
+        "Compared to standard microneedling, Morpheus8 penetrates much deeper (up to 4mm vs 0.5–2mm) and delivers radiofrequency energy that standard microneedling cannot. This produces more dramatic collagen remodelling and skin tightening, particularly for moderate to advanced skin laxity.",
+        "Morpheus8 can be combined with other treatments such as Profhilo, skin boosters, anti-wrinkle injections and dermal fillers for comprehensive facial rejuvenation. Many patients use Morpheus8 to tighten and resurface the skin, then add injectables to address specific volume loss or dynamic wrinkles.",
+      ],
+    },
+    {
+      heading: "Why choose a doctor for Morpheus8",
+      paragraphs: [
+        "Morpheus8 is an energy-based medical device that requires specialist training, anatomical knowledge, and clinical judgement to perform safely and effectively. Incorrect depth settings, inappropriate energy levels, or poor technique can result in burns, scarring, hyperpigmentation, or suboptimal results.",
+        "Dr Taganova is a GMC-registered doctor with advanced training in aesthetic medicine and energy-based devices. She has the medical expertise to assess your skin type, determine appropriate treatment parameters, and manage complications if they arise. Her conservative approach ensures safe, natural-looking results that enhance rather than alter your appearance.",
+        "Patients in Oxford choose The Oxford Wellness Doctor because they value medical expertise, proper clinical oversight, and the reassurance of treatment performed by a qualified doctor in a medical environment.",
+      ],
+    },
+    {
+      heading: "The clinic in central Oxford",
+      paragraphs: [
+        "The Oxford Wellness Doctor is located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ. We are in central Oxford, easily accessible from North Oxford, Summertown, Jericho and the surrounding areas. On-street parking is available nearby and the clinic is well-served by local bus routes.",
+        "All Morpheus8 treatments are performed personally by Dr Taganova in a calm, private medical setting with proper safety protocols and emergency equipment on-site. You will see the same doctor for consultation, treatment and follow-up, ensuring continuity of care and consistent results.",
       ],
     },
   ],

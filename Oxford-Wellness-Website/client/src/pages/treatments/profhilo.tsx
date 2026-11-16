@@ -1,36 +1,87 @@
 import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatments/TreatmentPageTemplate";
 
 const data: TreatmentPageData = {
-  title: "Profhilo Oxford | Skin Booster Treatment | The Oxford Wellness Doctor",
-  metaDescription: "Profhilo skin booster treatment in Oxford. Injectable hyaluronic acid for skin hydration, firmness & radiance. GMC doctor. Book your consultation.",
+  title: "Profhilo Oxford | Bio-Remodelling Skin Treatment | Dr Inga Taganova",
+  metaDescription: "Profhilo bio-remodelling treatment in Oxford. Ultra-pure hyaluronic acid for skin hydration, firmness and radiance by GMC-registered Dr Inga Taganova at Belsyre Court, Woodstock Road.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/profhilo-oxford",
-  h1: "Profhilo in Oxford - Premium Skin Booster Treatment",
-  intro: "Pure hyaluronic acid bio-remodels skin from within – stimulating collagen and elastin for lasting hydration, firmness, and radiance.",
+  h1: "Profhilo in Oxford",
+  intro: "Profhilo is an injectable bio-remodelling treatment that uses ultra-pure hyaluronic acid to stimulate collagen and elastin production from within the skin. Performed by Dr Inga Taganova at our clinic on Woodstock Road in central Oxford, Profhilo improves skin hydration, firmness and quality without adding volume or changing facial shape.",
   sections: [
     {
-      heading: "What Profhilo Treats",
-      bullets: [
-        "Skin laxity and loss of firmness",
-        "Fine lines from dehydration",
-        "Dull, dehydrated skin",
-        "Crepey texture on face and neck",
-        "Ageing hands",
-      ],
-    },
-    {
-      heading: "The Treatment Protocol",
+      heading: "What is Profhilo",
       paragraphs: [
-        "Five injection points per side of the face (BAP technique). Two sessions, four weeks apart. 15–20 minutes each, no downtime.",
-        "Improvements from 2–4 weeks; peak results 4–6 weeks after the second session. Lasts around 6 months.",
+        "Profhilo is not a dermal filler and it is not a conventional skin booster. It is a unique bio-remodelling treatment that uses the highest concentration of hyaluronic acid available in an injectable product – 64mg per 2ml – in a patented formula that spreads evenly through the skin tissue rather than staying in one localised area.",
+        "Once injected, Profhilo spreads through the dermal layers, attracting water molecules to hydrate the skin deeply while simultaneously stimulating fibroblasts – the cells responsible for producing collagen and elastin. This triggers a biological remodelling process that strengthens the skin's structural support from within, producing gradual, natural improvements in skin quality, firmness and radiance.",
+        "The treatment is particularly effective for skin that has lost elasticity, firmness and hydration due to ageing, sun damage, or hormonal changes such as menopause. It is one of the most requested treatments at our Oxford clinic, especially among women in their 40s, 50s and 60s who are experiencing visible skin quality decline.",
       ],
     },
     {
-      heading: "Profhilo vs Fillers vs Anti-Wrinkle",
-      tableHeaders: ["Treatment", "Mechanism", "Best For"],
+      heading: "What Profhilo can treat",
+      paragraphs: [
+        "Profhilo is designed to improve overall skin quality rather than target specific wrinkles or volume loss. It is particularly effective for:",
+      ],
+      bullets: [
+        "Loss of skin firmness and elasticity",
+        "Crepey, thinning skin on the face, neck and décolletage",
+        "Dull, dehydrated skin lacking radiance",
+        "Fine lines caused by dehydration and collagen loss",
+        "Skin laxity and early signs of sagging",
+        "Menopausal skin changes – thinning, dryness, loss of plumpness",
+        "Ageing hands with visible tendons and loss of volume",
+        "Inner arm skin laxity",
+      ],
+    },
+    {
+      heading: "Who is suitable for Profhilo",
+      paragraphs: [
+        "Profhilo is suitable for adults of any age who are concerned about skin quality decline, though it is most popular with patients aged 35–65 who are noticing loss of firmness, hydration or radiance. Many patients seek Profhilo because they want to improve their skin quality without the artificial look that fillers can sometimes produce.",
+        "The treatment is particularly beneficial for women experiencing perimenopause or menopause, when declining oestrogen levels cause rapid collagen loss, skin thinning, and dehydration. Profhilo addresses these changes at a structural level by actively stimulating the skin's own collagen and elastin production.",
+        "Profhilo is not suitable during pregnancy or breastfeeding, or for people with allergies to hyaluronic acid (extremely rare). Dr Taganova will assess your suitability during your consultation and discuss whether Profhilo or another treatment would be more appropriate for your concerns.",
+      ],
+    },
+    {
+      heading: "The Profhilo treatment protocol",
+      paragraphs: [
+        "Profhilo is administered using a specific injection technique called the Bio-Aesthetic Points (BAP) technique. Dr Taganova injects five precise points on each side of the face, strategically positioned to allow the hyaluronic acid to spread evenly through the tissue. This technique minimises the number of injection points while maximising coverage and results.",
+        "Each treatment session takes 15–20 minutes. Most patients describe the sensation as a brief pinch or pressure as the product is injected. No anaesthetic is required, though numbing cream is available if you are particularly sensitive. There is no downtime – you can return to normal activities immediately, though minor swelling or redness at the injection sites is normal for a few hours.",
+        "The standard Profhilo protocol consists of two sessions, four weeks apart. This is the minimum course required to achieve full bio-remodelling results. Some patients benefit from a third session if skin quality is significantly depleted, though this is determined during your initial consultation.",
+      ],
+    },
+    {
+      heading: "Results and how long they last",
+      paragraphs: [
+        "Results from Profhilo develop gradually as the skin's natural remodelling process takes place. Most patients begin to notice improvements in skin hydration and texture within 2–4 weeks after the first treatment. The full effects – improved firmness, elasticity, and radiance – become apparent 4–6 weeks after the second session, once collagen and elastin production has been fully stimulated.",
+        "The results typically last 6–9 months, after which a maintenance course of two sessions is recommended to sustain the bio-remodelling effects. Many patients find that with regular maintenance, their skin quality continues to improve cumulatively over time rather than simply returning to baseline between treatments.",
+        "Patients often describe Profhilo as the treatment that made them look like a healthier, more rested version of themselves – not younger, necessarily, but with better skin quality and a natural glow that reflects how they feel internally.",
+      ],
+    },
+    {
+      heading: "Profhilo vs dermal fillers vs anti-wrinkle injections",
+      paragraphs: [
+        "Profhilo, dermal fillers and anti-wrinkle injections are often confused, but they work in completely different ways and are suited to different concerns:",
+      ],
+      tableHeaders: ["Treatment", "How It Works", "Best For"],
       table: [
-        { col1: "Profhilo", col2: "Stimulates collagen & elastin", col3: "Skin quality & hydration" },
-        { col1: "Fillers", col2: "Adds volume with HA gel", col3: "Volume loss & contouring" },
-        { col1: "Anti-wrinkle", col2: "Relaxes muscles", col3: "Expression lines" },
+        { col1: "Profhilo", col2: "Stimulates collagen & elastin production", col3: "Overall skin quality, firmness & hydration" },
+        { col1: "Dermal Fillers", col2: "Adds volume with cross-linked HA gel", col3: "Volume loss, facial contouring, lip enhancement" },
+        { col1: "Anti-Wrinkle", col2: "Relaxes facial muscles", col3: "Dynamic expression lines (forehead, frown, crow's feet)" },
+      ],
+      paragraphs: [
+        "Profhilo does not add volume or change facial shape. It improves the skin's structural quality from within. Dermal fillers restore volume and can reshape or contour specific areas. Anti-wrinkle injections smooth lines caused by muscle movement. Many patients combine these treatments for comprehensive facial rejuvenation.",
+      ],
+    },
+    {
+      heading: "Why choose a doctor for Profhilo",
+      paragraphs: [
+        "Profhilo is a prescription injectable treatment that requires precise anatomical knowledge, sterile technique, and clinical judgement. While the BAP injection technique appears simple, incorrect placement, inappropriate dosage, or poor injection technique can produce suboptimal results or complications such as bruising, asymmetry, or product migration.",
+        "Dr Taganova is a GMC-registered doctor with advanced training in aesthetic medicine. She understands facial anatomy in detail, can assess whether Profhilo is the most appropriate treatment for your concerns, and has the medical expertise to manage complications if they arise. Her conservative approach ensures natural-looking results that enhance rather than alter your appearance.",
+      ],
+    },
+    {
+      heading: "The clinic in central Oxford",
+      paragraphs: [
+        "The Oxford Wellness Doctor is located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ. We are in central Oxford, easily accessible from North Oxford, Summertown, Jericho and the surrounding areas. On-street parking is available nearby and the clinic is well-served by local bus routes.",
+        "All treatments are performed personally by Dr Taganova in a calm, private medical setting. You will see the same doctor for consultation, treatment and follow-up, ensuring continuity of care and consistent results.",
       ],
     },
   ],

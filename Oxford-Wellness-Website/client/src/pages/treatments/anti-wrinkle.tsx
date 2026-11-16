@@ -1,33 +1,74 @@
 import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatments/TreatmentPageTemplate";
 
 const data: TreatmentPageData = {
-  title: "Anti-Wrinkle Injections Oxford | Expert Treatment | Dr. Inga Taganova",
-  metaDescription: "Professional anti-wrinkle injections in Oxford by Dr. Inga Taganova. Reduce forehead lines, frown lines & crow's feet. GMC-registered doctor. Book now.",
+  title: "Anti-Wrinkle Injections Oxford | Doctor-Led Treatment | Dr Inga Taganova",
+  metaDescription: "Expert anti-wrinkle injections in Oxford by GMC-registered Dr Inga Taganova. Natural-looking results for forehead lines, frown lines and crow's feet at Belsyre Court, Woodstock Road.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/anti-wrinkle-injections-oxford",
-  h1: "Anti-Wrinkle Injections in Oxford - Expert Treatment",
-  intro: "Prescription muscle-relaxing injections to smooth dynamic lines with subtle, natural-looking results. Treatment is discussed and prescribed after consultation.",
+  h1: "Anti-Wrinkle Injections in Oxford",
+  intro: "Doctor-led anti-wrinkle injections to smooth forehead lines, frown lines and crow's feet with natural-looking results. Performed personally by GMC-registered Dr Inga Taganova at our clinic on Woodstock Road in central Oxford.",
   sections: [
     {
-      heading: "What Can Anti-Wrinkle Injections Treat?",
+      heading: "About anti-wrinkle injections",
+      paragraphs: [
+        "Anti-wrinkle injections use prescription medicine to temporarily relax the facial muscles that cause dynamic lines – the wrinkles that appear when you smile, frown, or raise your eyebrows. The treatment is quick, requires no downtime, and produces natural-looking results that soften expression lines without freezing your face.",
+        "The treatment works by blocking the nerve signals that cause muscles to contract. When these muscles relax, the overlying skin smooths out, reducing the appearance of lines and preventing them from deepening further. This is why anti-wrinkle injections are particularly effective as a preventative treatment in your 30s and 40s, before lines become permanently etched into the skin.",
+        "At The Oxford Wellness Doctor, all anti-wrinkle treatments are performed by Dr Inga Taganova personally. She is a GMC-registered doctor with advanced training in aesthetic medicine, meaning you receive medical expertise, precise technique, and a conservative approach that prioritises natural results over dramatic changes.",
+      ],
+    },
+    {
+      heading: "What can anti-wrinkle injections treat?",
+      paragraphs: [
+        "Anti-wrinkle injections are FDA-approved and licensed for treating dynamic facial lines caused by repeated muscle movement. The most commonly treated areas include:",
+      ],
       bullets: [
-        "Forehead lines",
-        "Frown lines between the brows",
-        "Crow's feet",
-        "Bunny lines and gummy smile",
-        "Brow lift and lip lines",
+        "Forehead lines – horizontal lines across the forehead that appear when raising your eyebrows",
+        "Frown lines (glabellar lines) – vertical lines between the brows that create an angry or tired appearance",
+        "Crow's feet – lines that radiate from the outer corners of the eyes when smiling or squinting",
+        "Bunny lines – diagonal wrinkles across the nose that appear when scrunching the face",
+        "Gummy smile – when too much gum shows when smiling, caused by overactive upper lip muscles",
+        "Brow lift – subtle elevation of the brow position by relaxing muscles that pull downward",
+        "Lip lines – fine vertical lines around the mouth, though dermal fillers are often more effective here",
+        "Downturned mouth – relaxing muscles that pull the corners of the mouth downward",
+        "Dimpled chin – smoothing the 'orange peel' texture caused by overactive chin muscles",
       ],
     },
     {
-      heading: "The Procedure - What to Expect",
+      heading: "Who is suitable for treatment",
       paragraphs: [
-        "Consultation to assess your facial anatomy and agree treatment areas.",
-        "15–20 minute treatment with ultra-fine needles. Mild pinch, no anaesthetic needed. No downtime.",
+        "Anti-wrinkle injections are suitable for adults aged 18–65 who have visible dynamic lines and are looking for a non-surgical way to soften their appearance. The treatment is particularly popular with patients in their 30s, 40s and 50s who want to prevent lines from deepening, as well as older patients seeking to reduce established wrinkles.",
+        "You might consider anti-wrinkle injections if you notice that your forehead lines, frown lines or crow's feet are becoming more prominent, or if these lines remain visible even when your face is at rest. Many patients seek treatment because they feel their expression lines make them look tired, angry or older than they feel.",
+        "The treatment is not suitable during pregnancy or breastfeeding, or for people with certain neuromuscular conditions. Dr Taganova will assess your suitability during your consultation and discuss any medical considerations.",
       ],
     },
     {
-      heading: "Results & Duration",
+      heading: "Why choose a doctor for anti-wrinkle injections",
       paragraphs: [
-        "Results begin at 3–7 days, full effect at 14 days. Lasts 3–4 months.",
+        "Anti-wrinkle injections are prescription medicines that require medical expertise to administer safely and effectively. Many high-street clinics are staffed by non-medical practitioners with minimal training and no clinical oversight. When complications arise – such as vascular occlusion, asymmetry, or adverse reactions – they lack the medical knowledge to manage them.",
+        "Dr Taganova is a GMC-registered doctor with over 20 years of medical experience. She understands facial anatomy in detail, recognises complications early, and has the clinical training to respond appropriately if problems occur. Her conservative approach means she will advise against treatment if it is not suitable for you, and she prioritises natural-looking results over aggressive interventions.",
+        "Patients in Oxford choose The Oxford Wellness Doctor because they value medical expertise, honest advice, and the reassurance of seeing a qualified doctor rather than a beautician or nurse working without proper supervision.",
+      ],
+    },
+    {
+      heading: "The consultation and treatment process",
+      paragraphs: [
+        "Your initial consultation with Dr Taganova involves a thorough assessment of your facial anatomy, discussion of your concerns and aesthetic goals, and a clear explanation of what anti-wrinkle injections can realistically achieve. She will examine the areas you are concerned about, assess muscle activity, and recommend which areas would benefit most from treatment.",
+        "Treatment itself takes 15–20 minutes. Dr Taganova uses ultra-fine needles to inject small amounts of the muscle-relaxing medicine into specific facial muscles. Most patients describe the sensation as a brief pinch or mild pressure. No anaesthetic is needed, though numbing cream is available if you are particularly sensitive.",
+        "There is no downtime after treatment. You can return to work and normal activities immediately, though we recommend avoiding strenuous exercise, alcohol, and lying flat for the first 4 hours to minimise bruising and allow the medicine to settle in the correct position.",
+      ],
+    },
+    {
+      heading: "Results and how long they last",
+      paragraphs: [
+        "Results from anti-wrinkle injections begin to appear within 3–7 days as the muscles gradually relax. The full effect is visible at 14 days, which is when your complimentary follow-up appointment is scheduled. At this appointment, Dr Taganova will assess your results and make any minor adjustments if needed.",
+        "The effects typically last 3–4 months, though this varies between individuals based on factors such as muscle strength, metabolism, lifestyle, and how long you have been having treatment. Many patients find that with regular treatments, the results last progressively longer as the muscles become trained to relax.",
+        "Maintenance treatments are recommended every 3–4 months to sustain results. Some patients prefer to let the treatment wear off completely between sessions, while others prefer to maintain a consistent level of relaxation with slightly more frequent treatments.",
+      ],
+    },
+    {
+      heading: "The clinic in central Oxford",
+      paragraphs: [
+        "The Oxford Wellness Doctor is located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ. We are in central Oxford, easily accessible from North Oxford, Summertown, Jericho and the surrounding areas. On-street parking is available nearby and the clinic is well-served by local bus routes.",
+        "The clinic environment is calm, private and professional. All treatments are performed personally by Dr Taganova in a medical setting, with proper safety protocols and emergency equipment on-site. You will see the same doctor for consultation, treatment and follow-up, ensuring continuity of care and consistent results.",
       ],
     },
   ],
