@@ -7,7 +7,7 @@ const data: BlogPostData = {
   h1: "InMode FX for Body Skin Tightening and Cellulite",
   category: "Skin",
   readTime: "7 min",
-  datePublished: "2024-11-16",
+  datePublished: "2026-11-16",
   heroImage: {
     src: "/blog-inmode-fx.webp",
     alt: "Woman in athletic wear showing confidence, representing body contouring results",

@@ -7,7 +7,7 @@ const data: BlogPostData = {
   h1: "What to Expect at an HRT Consultation",
   category: "Menopause",
   readTime: "7 min",
-  datePublished: "2024-11-16",
+  datePublished: "2026-11-16",
   heroImage: {
     src: "/blog-hrt-consultation.webp",
     alt: "Doctor consultation room with natural light, representing professional medical care",

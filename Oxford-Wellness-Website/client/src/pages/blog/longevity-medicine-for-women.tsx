@@ -7,7 +7,7 @@ const data: BlogPostData = {
   h1: "Longevity Medicine for Women: Healthy Ageing Beyond Fifty",
   category: "Longevity",
   readTime: "9 min",
-  datePublished: "2024-11-16",
+  datePublished: "2026-11-16",
   heroImage: {
     src: "/blog-longevity.webp",
     alt: "Confident woman in her 50s outdoors, representing vitality and healthy ageing",

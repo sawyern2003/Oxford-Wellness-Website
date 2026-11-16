@@ -7,7 +7,7 @@ const data: BlogPostData = {
   h1: "Intimate Health Changes During Menopause: Symptoms and Treatment",
   category: "Intimate Health",
   readTime: "7 min",
-  datePublished: "2024-11-16",
+  datePublished: "2026-11-16",
   heroImage: {
     src: "/blog-intimate-health.webp",
     alt: "Peaceful spa-like setting representing comfort and wellness",

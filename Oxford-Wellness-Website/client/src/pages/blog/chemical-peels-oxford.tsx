@@ -7,7 +7,7 @@ const data: BlogPostData = {
   h1: "Chemical Peels for Skin Texture and Pigmentation",
   category: "Skin",
   readTime: "7 min",
-  datePublished: "2024-11-16",
+  datePublished: "2026-11-16",
   heroImage: {
     src: "/blog-chemical-peels.webp",
     alt: "Close-up of smooth, glowing skin representing chemical peel results",

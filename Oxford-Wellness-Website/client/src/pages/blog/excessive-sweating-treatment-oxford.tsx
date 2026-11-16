@@ -7,7 +7,7 @@ const data: BlogPostData = {
   h1: "Excessive Sweating Treatment: How Anti-Wrinkle Injections Work",
   category: "Skin",
   readTime: "6 min",
-  datePublished: "2024-11-16",
+  datePublished: "2026-11-16",
   heroImage: {
     src: "/blog-sweating-treatment.webp",
     alt: "Confident professional woman, representing freedom from excessive sweating concerns",

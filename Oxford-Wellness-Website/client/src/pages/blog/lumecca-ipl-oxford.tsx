@@ -7,7 +7,7 @@ const data: BlogPostData = {
   h1: "Lumecca IPL for Pigmentation and Redness",
   category: "Skin",
   readTime: "7 min",
-  datePublished: "2024-11-16",
+  datePublished: "2026-11-16",
   heroImage: {
     src: "/blog-lumecca-ipl.webp",
     alt: "Woman with clear, even-toned skin representing IPL treatment results",

@@ -82,6 +82,15 @@ const posts: BlogPost[] = [
     image: "/blog-longevity.webp",
   },
   {
+    slug: "anti-wrinkle-injections-oxford",
+    title: "Anti-Wrinkle Injections Explained: What They Treat and What to Expect",
+    excerpt: "Anti-wrinkle treatment explained by an Oxford GP. How they work, what they treat, results timeline, and natural-looking outcomes.",
+    category: "Skin",
+    readTime: "8 min",
+    href: "/blog/anti-wrinkle-injections-oxford",
+    image: "/blog-anti-wrinkle.webp",
+  },
+  {
     slug: "profhilo-vs-dermal-fillers",
     title: "Profhilo vs. Dermal Fillers: Which Treatment Is Right for You?",
     excerpt: "Two very different treatments that are often confused. Dr. Taganova explains the difference and when to choose each.",
@@ -89,6 +98,15 @@ const posts: BlogPost[] = [
     readTime: "6 min",
     href: "/blog/profhilo-vs-dermal-fillers",
     image: "/blog-profhilo-fillers.webp",
+  },
+  {
+    slug: "postpartum-recovery-oxford",
+    title: "Postpartum Recovery: Body Confidence and Intimate Health After Childbirth",
+    excerpt: "Postpartum recovery support from an Oxford gynaecologist and GP. Body changes after childbirth and evidence-based treatments.",
+    category: "Women's Health",
+    readTime: "8 min",
+    href: "/blog/postpartum-recovery-oxford",
+    image: "/blog-postpartum.webp",
   },
   {
     slug: "lip-filler-natural-results",

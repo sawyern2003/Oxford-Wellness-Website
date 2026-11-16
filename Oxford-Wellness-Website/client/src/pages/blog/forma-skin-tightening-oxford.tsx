@@ -7,7 +7,7 @@ const data: BlogPostData = {
   h1: "Forma Skin Tightening: Non-Surgical Face Lift",
   category: "Skin",
   readTime: "7 min",
-  datePublished: "2024-11-16",
+  datePublished: "2026-11-16",
   heroImage: {
     src: "/blog-forma.webp",
     alt: "Woman receiving comfortable facial treatment, representing non-surgical skin tightening",

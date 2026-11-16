@@ -7,7 +7,7 @@ const data: BlogPostData = {
   h1: "Women's Health Checks: What to Include and When",
   category: "Women's Health",
   readTime: "8 min",
-  datePublished: "2024-11-16",
+  datePublished: "2026-11-16",
   heroImage: {
     src: "/blog-womens-health.webp",
     alt: "Calm medical consultation setting representing preventive healthcare",

@@ -7,7 +7,7 @@ const data: BlogPostData = {
   h1: "Jaw Slimming and Teeth Grinding Treatment",
   category: "Skin",
   readTime: "7 min",
-  datePublished: "2024-11-16",
+  datePublished: "2026-11-16",
   heroImage: {
     src: "/blog-jaw-treatment.webp",
     alt: "Side profile showing elegant jawline, representing facial aesthetics",

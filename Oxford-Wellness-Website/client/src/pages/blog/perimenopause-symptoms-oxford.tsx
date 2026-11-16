@@ -7,7 +7,7 @@ const data: BlogPostData = {
   h1: "Perimenopause Symptoms: What to Expect and When to Seek Help",
   category: "Menopause",
   readTime: "8 min",
-  datePublished: "2024-11-16",
+  datePublished: "2026-11-16",
   heroImage: {
     src: "/blog-perimenopause-symptoms.webp",
     alt: "Woman in her 40s looking thoughtful, representing perimenopause awareness",
