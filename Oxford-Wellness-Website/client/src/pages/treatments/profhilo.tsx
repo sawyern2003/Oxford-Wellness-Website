@@ -66,9 +66,7 @@ const data: TreatmentPageData = {
         { col1: "Dermal Fillers", col2: "Adds volume with cross-linked HA gel", col3: "Volume loss, facial contouring, lip enhancement" },
         { col1: "Anti-Wrinkle", col2: "Relaxes facial muscles", col3: "Dynamic expression lines (forehead, frown, crow's feet)" },
       ],
-      paragraphs: [
-        "Profhilo does not add volume or change facial shape. It improves the skin's structural quality from within. Dermal fillers restore volume and can reshape or contour specific areas. Anti-wrinkle injections smooth lines caused by muscle movement. Many patients combine these treatments for comprehensive facial rejuvenation.",
-      ],
+      note: "Profhilo does not add volume or change facial shape. It improves the skin's structural quality from within. Dermal fillers restore volume and can reshape or contour specific areas. Anti-wrinkle injections smooth lines caused by muscle movement. Many patients combine these treatments for comprehensive facial rejuvenation.",
     },
     {
       heading: "Why choose a doctor for Profhilo",
