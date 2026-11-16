@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Home, Phone, Calendar, ArrowRight } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
+import { useEffect } from "react";
 
 const quickLinks = [
   { label: "Anti-Wrinkle Injections", href: "/treatments/anti-wrinkle-injections-oxford" },
@@ -19,6 +20,18 @@ export default function NotFound() {
     title: "Page Not Found | The Oxford Wellness Doctor",
     description: "The page you're looking for doesn't exist. Find what you need at The Oxford Wellness Doctor - medical aesthetics and women's wellness in Oxford.",
   });
+
+  useEffect(() => {
+    const metaRobots = document.querySelector('meta[name="robots"]');
+    if (!metaRobots) {
+      const meta = document.createElement('meta');
+      meta.name = 'robots';
+      meta.content = 'noindex, nofollow';
+      document.head.appendChild(meta);
+    } else {
+      metaRobots.setAttribute('content', 'noindex, nofollow');
+    }
+  }, []);
 
   return (
     <div className="min-h-screen pt-28 bg-white">
