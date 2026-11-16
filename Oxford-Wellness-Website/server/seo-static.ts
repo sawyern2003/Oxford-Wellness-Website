@@ -41,6 +41,8 @@ const ALL_SITEMAP_PAGES = [
   { path: "/sexual-wellness-oxford", priority: "1.0", changefreq: "monthly", lastmod: "2024-11-10" },
   { path: "/postpartum-recovery-oxford", priority: "1.0", changefreq: "monthly", lastmod: "2024-10-20" },
   { path: "/longevity-medicine-oxford", priority: "1.0", changefreq: "monthly", lastmod: "2024-11-16" },
+  { path: "/skin-clinic-oxford", priority: "1.0", changefreq: "monthly", lastmod: "2024-11-16" },
+  { path: "/menopause-skin", priority: "1.0", changefreq: "monthly", lastmod: "2024-11-16" },
   { path: "/treatments", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },
   { path: "/treatments/anti-wrinkle-injections-oxford", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },
   { path: "/treatments/dermal-fillers-oxford", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },

@@ -23,6 +23,8 @@ import WomensHealthOxford from "@/pages/womens-health-oxford";
 import LongevityMedicineOxford from "@/pages/longevity-medicine-oxford";
 import SexualWellnessOxford from "@/pages/sexual-wellness-oxford";
 import PostpartumRecoveryOxford from "@/pages/postpartum-recovery-oxford";
+import SkinClinicOxford from "@/pages/skin-clinic-oxford";
+import MenopauseSkin from "@/pages/menopause-skin";
 import BlogIndex from "@/pages/blog/index";
 import BlogMenopauseSkin from "@/pages/blog/menopause-skin-changes";
 import BlogProfhiloVsFillers from "@/pages/blog/profhilo-vs-dermal-fillers";
@@ -111,6 +113,8 @@ function Router() {
       <Route path="/longevity-medicine-oxford" component={LongevityMedicineOxford} />
       <Route path="/sexual-wellness-oxford" component={SexualWellnessOxford} />
       <Route path="/postpartum-recovery-oxford" component={PostpartumRecoveryOxford} />
+      <Route path="/skin-clinic-oxford" component={SkinClinicOxford} />
+      <Route path="/menopause-skin" component={MenopauseSkin} />
       <Route path="/pricing" component={Pricing} />
       <Route path="/personalised-treatment-plans" component={PersonalisedTreatmentPlans} />
       <Route path="/blog" component={BlogIndex} />
