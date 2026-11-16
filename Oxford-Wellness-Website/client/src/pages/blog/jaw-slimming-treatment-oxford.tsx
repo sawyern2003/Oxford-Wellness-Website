@@ -68,8 +68,6 @@ const data: BlogPostData = {
         "You grind your teeth or clench your jaw, particularly at night",
         "You have jaw pain, tension headaches, or TMJ symptoms related to overactive masseters",
         "Your dentist has raised concerns about tooth wear or broken dental work",
-      ],
-      paragraphs: [
         "Treatment is not suitable if you are pregnant or breastfeeding, if you have certain neuromuscular conditions, or if you have an active infection in the treatment area. A full assessment is always done before proceeding.",
       ],
     },

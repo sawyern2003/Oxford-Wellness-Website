@@ -1,4 +1,4 @@
-import BlogPostTemplate, { BlogPostData } from "@/components/blog/BlogPostData";
+import BlogPostTemplate, { BlogPostData } from "@/components/blog/BlogPostTemplate";
 
 const data: BlogPostData = {
   title: "Women's Health Checks: What to Include and When | Oxford GP Advice",

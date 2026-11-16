@@ -40,9 +40,6 @@ const data: BlogPostData = {
         "Cellulite and uneven skin texture",
         "General loss of firmness and tone",
       ],
-      paragraphs: [
-        "FX does not remove fat and is not a weight loss treatment. It tightens and firms the skin. If you have significant excess fat, other treatments such as medical weight management or body-contouring procedures may be more appropriate.",
-      ],
     },
     {
       heading: "How InMode FX Works",
@@ -98,9 +95,6 @@ const data: BlogPostData = {
         "Medical weight management to reduce fat before or during treatment",
         "Forma Plus for additional skin tightening and contouring",
         "Body Morpheus8 for deeper collagen remodelling in areas with more significant laxity or scarring",
-      ],
-      paragraphs: [
-        "A layered approach addressing both fat reduction and skin tightening often produces the best body contouring results.",
       ],
     },
     {

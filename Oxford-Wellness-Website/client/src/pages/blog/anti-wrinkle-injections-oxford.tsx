@@ -88,9 +88,6 @@ const data: BlogPostData = {
         "You understand that results are temporary and repeat treatments are needed",
         "You have realistic expectations about what the treatment can and cannot do",
       ],
-      paragraphs: [
-        "Anti-wrinkle treatment is not suitable if you are pregnant or breastfeeding, if you have certain neuromuscular conditions (such as myasthenia gravis), or if you are allergic to any component of the product. A full medical history is taken before treatment.",
-      ],
     },
     {
       heading: "Risks and Side Effects",

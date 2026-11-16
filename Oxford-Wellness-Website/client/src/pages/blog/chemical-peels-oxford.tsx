@@ -41,9 +41,6 @@ const data: BlogPostData = {
         "Enlarged pores",
         "Early signs of photoageing",
       ],
-      paragraphs: [
-        "Peels do not treat deep wrinkles, skin laxity, or significant volume loss. For those concerns, other treatments such as dermal fillers, anti-wrinkle injections, or radiofrequency are more appropriate.",
-      ],
     },
     {
       heading: "Types of Chemical Peels",
@@ -107,9 +104,6 @@ const data: BlogPostData = {
         "Avoid harsh skincare, exfoliants, retinoids, and active ingredients until your clinician advises otherwise",
         "Avoid picking or pulling at peeling skin",
         "Avoid hot showers, saunas, swimming pools, and strenuous exercise for several days",
-      ],
-      paragraphs: [
-        "Your clinician will provide detailed aftercare instructions tailored to the peel you have had. Following these instructions carefully ensures the best result and minimises the risk of complications.",
       ],
     },
     {

@@ -67,10 +67,7 @@ const data: BlogPostData = {
         "You sweat excessively from your underarms even when cool and at rest",
         "Sweating interferes with your daily life, confidence, or clothing choices",
         "You have tried strong antiperspirants without adequate relief",
-        "You are not pregnant or breastfeeding",
-      ],
-      paragraphs: [
-        "A medical assessment is always done to ensure there is no underlying cause for the sweating, such as thyroid disease or medication side effects.",
+        "You are not pregnant or breastfeeding. A medical assessment is always done to ensure there is no underlying cause for the sweating, such as thyroid disease or medication side effects.",
       ],
     },
     {

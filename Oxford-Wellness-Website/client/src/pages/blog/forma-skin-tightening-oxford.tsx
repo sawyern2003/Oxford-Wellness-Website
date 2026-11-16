@@ -40,9 +40,6 @@ const data: BlogPostData = {
         "Fine lines and wrinkles caused by loss of skin structure",
         "Overall loss of skin firmness and tone",
       ],
-      paragraphs: [
-        "Forma is not suitable for severe skin laxity, which requires surgical intervention. It also does not address volume loss or deep wrinkles, which are better treated with dermal fillers or anti-wrinkle injections.",
-      ],
     },
     {
       heading: "How Forma Works",
@@ -98,9 +95,6 @@ const data: BlogPostData = {
         "Dermal fillers to restore volume in the mid-face and temples",
         "Morpheus8 for more intensive collagen remodelling and textural improvement",
         "IPL or chemical peels to address pigmentation and tone",
-      ],
-      paragraphs: [
-        "A layered treatment approach addresses multiple concerns—laxity, volume loss, lines, pigmentation—for a more complete result than any single treatment can achieve.",
       ],
     },
     {

@@ -88,9 +88,6 @@ const data: BlogPostData = {
         "Scar treatments (laser, micro-needling, or silicone-based therapies) to improve the appearance of caesarean or other surgical scars",
         "Vaginal rejuvenation treatments (radiofrequency or hyaluronic acid) for intimate concerns",
       ],
-      paragraphs: [
-        "These treatments are not a substitute for a healthy lifestyle, and they are not appropriate for everyone. But for women who are otherwise at a stable weight, who have completed their family, and who have specific concerns that affect their confidence, they can be helpful.",
-      ],
     },
     {
       heading: "Medical Weight Management After Pregnancy",
@@ -119,9 +116,6 @@ const data: BlogPostData = {
         "You have significant abdominal separation that is not improving with exercises",
         "You are distressed by the appearance of scars, loose skin, or other body changes",
         "You are struggling with your body confidence and it is affecting your mental health",
-      ],
-      paragraphs: [
-        "Do not wait. Do not assume symptoms will improve on their own. And do not accept dismissive reassurance that 'this is normal after having a baby' when you are in pain or distress.",
       ],
     },
     {

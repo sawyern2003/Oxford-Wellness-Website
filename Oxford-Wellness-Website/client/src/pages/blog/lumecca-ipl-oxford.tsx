@@ -41,9 +41,6 @@ const data: BlogPostData = {
         "Uneven skin tone",
         "Post-inflammatory pigmentation",
       ],
-      paragraphs: [
-        "IPL is less effective for deep wrinkles, skin laxity, or very dark pigmentation. It is not suitable for treating melasma, which can worsen with IPL.",
-      ],
     },
     {
       heading: "How Lumecca IPL Works",
@@ -89,9 +86,6 @@ const data: BlogPostData = {
         "Avoid hot showers, saunas, swimming pools, and strenuous exercise for 48 hours",
         "Keep the skin well moisturised with gentle, fragrance-free products",
         "Do not pick or scrub at darkened pigment—let it shed naturally",
-      ],
-      paragraphs: [
-        "Failing to protect your skin from the sun after IPL can result in new pigmentation and poor results.",
       ],
     },
     {
