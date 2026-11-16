@@ -29,6 +29,8 @@ export interface BlogPostData {
   category: string;
   readTime: string;
   intro: string;
+  datePublished: string;
+  dateModified?: string;
   heroImage?: {
     src: string;
     alt: string;
@@ -67,19 +69,14 @@ function FAQSection({ faqs }: { faqs: { q: string; a: string }[] }) {
               <ChevronDown size={16} className="text-muted-foreground flex-shrink-0 mt-1" />
             )}
           </button>
-          <AnimatePresence>
-            {openIdx === i && (
-              <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: "auto", opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.3 }}
-                className="overflow-hidden"
-              >
-                <p className="px-6 pb-4 text-muted-foreground text-sm leading-relaxed">{faq.a}</p>
-              </motion.div>
-            )}
-          </AnimatePresence>
+          <motion.div
+            initial={false}
+            animate={{ height: openIdx === i ? "auto" : 0, opacity: openIdx === i ? 1 : 0 }}
+            transition={{ duration: 0.3 }}
+            className="overflow-hidden"
+          >
+            <p className="px-6 pb-4 text-muted-foreground text-sm leading-relaxed">{faq.a}</p>
+          </motion.div>
         </div>
       ))}
     </div>
@@ -165,20 +162,29 @@ export default function BlogPostTemplate({ data }: { data: BlogPostData }) {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "Article",
+          "@type": "BlogPosting",
           "headline": data.h1,
           "description": data.metaDescription,
           "author": {
-            "@type": "Physician",
-            "name": "Dr. Inga Taganova",
+            "@type": "Person",
+            "name": "Dr Inga Taganova",
             "url": `${BASE}/about`,
           },
           "publisher": {
-            "@type": "MedicalBusiness",
+            "@type": "Organization",
             "name": "The Oxford Wellness Doctor",
             "url": BASE,
+            "logo": {
+              "@type": "ImageObject",
+              "url": `${BASE}/logo.png`
+            }
           },
-          "mainEntityOfPage": data.canonical,
+          "datePublished": data.datePublished,
+          "dateModified": data.dateModified || data.datePublished,
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": data.canonical
+          },
           ...(data.heroImage ? { "image": data.heroImage.src } : {}),
         },
         {

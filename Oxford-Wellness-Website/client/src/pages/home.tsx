@@ -8,6 +8,7 @@ import FadeIn from "@/components/animations/FadeIn";
 import RevealSection from "@/components/animations/RevealSection";
 import ParallaxImage from "@/components/animations/ParallaxImage";
 import { useSEO } from "@/hooks/useSEO";
+import { useJsonLdSchema, createMedicalClinicSchema } from "@/hooks/useJsonLdSchema";
 import { programmes } from "@/data/programmes";
 import PatientJourney from "@/components/home/PatientJourney";
 import SupplierLogos from "@/components/home/SupplierLogos";
@@ -42,6 +43,8 @@ export default function Home() {
       "Doctor-led women's health, menopause and longevity clinic in Oxford. Expert menopause care, intimate health and aesthetic treatments by Dr. Inga Taganova at The Oxford Wellness Doctor.",
     canonical: "https://www.theoxfordwellnessdoctor.com/",
   });
+
+  useJsonLdSchema(createMedicalClinicSchema(), "medical-clinic-schema");
 
   return (
     <>

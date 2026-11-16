@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { useLocation } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
 import { useBreadcrumbSchema } from "@/hooks/useBreadcrumbSchema";
+import { useJsonLdSchema, createMedicalClinicSchema } from "@/hooks/useJsonLdSchema";
 import { isPainRoute } from "@/lib/brand";
 import JotformEmbed from "@/components/contact/JotformEmbed";
 import ParkingMap from "@/components/contact/ParkingMap";
@@ -38,6 +39,10 @@ export default function Contact() {
           canonical: "https://www.theoxfordwellnessdoctor.com/contact",
         }
   );
+
+  if (!pain) {
+    useJsonLdSchema(createMedicalClinicSchema(), "medical-clinic-schema");
+  }
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -276,11 +281,8 @@ export default function Contact() {
                   <Clock className="text-secondary mt-1" />
                   <div>
                     <h3 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-2">Hours</h3>
-                    <ul className="text-muted-foreground space-y-1">
-                      <li className="flex justify-between w-48"><span>Friday</span> <span>4pm - 8pm</span></li>
-                      <li className="flex justify-between w-48"><span>Saturday</span> <span>9am - 1pm</span></li>
-                      <li className="flex justify-between w-48"><span>Sun - Thu</span> <span>Closed</span></li>
-                    </ul>
+                    <p className="text-muted-foreground text-sm mb-2">Open Monday, Thursday, Friday, Saturday and Sunday 9am – 6pm</p>
+                    <p className="text-muted-foreground text-sm italic">Please note: Exact hours to be confirmed by Nicholas</p>
                   </div>
                 </div>
               </CardContent>
@@ -318,11 +320,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h2 className="font-sans font-semibold text-lg text-foreground tracking-tight">Hours</h2>
-                  <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-                    <li className="flex justify-between gap-6"><span>Friday</span> <span>4pm – 8pm</span></li>
-                    <li className="flex justify-between gap-6"><span>Saturday</span> <span>9am – 1pm</span></li>
-                    <li className="flex justify-between gap-6"><span>Sun – Thu</span> <span>Closed</span></li>
-                  </ul>
+                  <p className="mt-2 text-sm text-muted-foreground">Open Monday, Thursday, Friday, Saturday and Sunday 9am – 6pm</p>
+                  <p className="mt-1 text-sm text-muted-foreground italic">Exact hours to be confirmed</p>
                 </div>
               </div>
             )
