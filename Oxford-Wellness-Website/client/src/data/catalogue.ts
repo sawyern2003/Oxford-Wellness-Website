@@ -432,6 +432,14 @@ export const catalogue: CatalogueItem[] = [
     detailUrl: "/treatments/chemical-peels-oxford",
   }),
   fee({
+    id: "weight-management-consultation",
+    name: "Weight Management Consultation",
+    category: "body",
+    amount: "Price confirmed at booking", // TODO: Confirm actual price
+    booking: "weight",
+    detailUrl: "/treatments/weight-loss-consultation-oxford",
+  }),
+  fee({
     id: "forma-plus",
     name: "Forma Plus — single session",
     category: "body",

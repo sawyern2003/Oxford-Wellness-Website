@@ -29,10 +29,10 @@ const serviceAreas = [
     body: "Injectables, skin boosters and skin treatments carried out by Dr Inga.",
   },
   {
-    title: "Body",
+    title: "Weight & Body",
     href: "/treatments#body",
     image: programmeImage("weight-body-confidence"),
-    body: "Non-surgical body contouring and skin tightening treatments for improved body confidence.",
+    body: "Doctor-led weight loss consultation and non-surgical body contouring for improved confidence and wellbeing.",
   },
 ];
 
