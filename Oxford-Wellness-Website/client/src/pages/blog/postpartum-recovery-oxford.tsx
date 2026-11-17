@@ -9,8 +9,8 @@ const data: BlogPostData = {
   readTime: "8 min",
   datePublished: "2026-11-16",
   heroImage: {
-    src: "/blog-postpartum.webp",
-    alt: "Woman in peaceful moment representing postpartum recovery and self-care",
+    src: "/blog-postpartum-recovery-oxford.webp",
+    alt: "Young mother resting peacefully with newborn in white bedding",
   },
   intro: "The physical changes of pregnancy and childbirth are profound. Your body has grown and birthed a child—an extraordinary feat. But the aftermath can be challenging. Many women feel unprepared for the recovery period, the persistent changes to their body, and the loss of confidence that can follow. As a GP with a background in obstetrics and gynaecology, I see women months and sometimes years after childbirth, still struggling with concerns they assumed would resolve on their own.",
   keyPoints: [

@@ -9,8 +9,8 @@ const data: BlogPostData = {
   readTime: "9 min",
   datePublished: "2026-11-16",
   heroImage: {
-    src: "/blog-longevity.webp",
-    alt: "Confident woman in her 50s outdoors, representing vitality and healthy ageing",
+    src: "/blog-longevity-medicine-for-women.webp",
+    alt: "Grey-haired woman in cream turtleneck reading by a window",
   },
   intro: "Longevity medicine is not about chasing eternal youth or buying expensive supplements based on wishful thinking. It is the application of evidence-based preventive strategies to extend healthspan—the years you live in good health, free from chronic disease and loss of function. For women, this means addressing the specific changes that occur after menopause and taking proactive steps to protect cardiovascular, metabolic, cognitive and musculoskeletal health.",
   keyPoints: [

@@ -9,8 +9,8 @@ const data: BlogPostData = {
   readTime: "8 min",
   datePublished: "2026-11-16",
   heroImage: {
-    src: "/blog-perimenopause-symptoms.webp",
-    alt: "Woman in her 40s looking thoughtful, representing perimenopause awareness",
+    src: "/blog-perimenopause-symptoms-oxford.webp",
+    alt: "Woman around 60 in plaid sweater looking thoughtfully out of a window",
   },
   intro: "Most women expect menopause to arrive with some fanfare in their early fifties. Far fewer recognise that the transition often begins much earlier—sometimes in the late thirties, more commonly in the mid-forties—with symptoms that can be baffling, disruptive and easily mistaken for something else entirely.",
   keyPoints: [

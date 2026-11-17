@@ -9,8 +9,8 @@ const data: BlogPostData = {
   readTime: "7 min",
   datePublished: "2026-11-16",
   heroImage: {
-    src: "/blog-lumecca-ipl.webp",
-    alt: "Woman with clear, even-toned skin representing IPL treatment results",
+    src: "/blog-lumecca-ipl-oxford.webp",
+    alt: "White flowers arranged in a clear glass vase",
   },
   intro: "Sun damage, pigmentation, redness, and broken capillaries are amongst the most common skin concerns I see in women over forty. They are also amongst the most treatable. Lumecca IPL—intense pulsed light—is one of the most effective technologies for improving these concerns, often producing dramatic results with minimal downtime.",
   keyPoints: [

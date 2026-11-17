@@ -9,8 +9,8 @@ const data: BlogPostData = {
   readTime: "7 min",
   datePublished: "2026-11-16",
   heroImage: {
-    src: "/blog-inmode-fx.webp",
-    alt: "Woman in athletic wear showing confidence, representing body contouring results",
+    src: "/blog-inmode-fx-body-contouring-oxford.webp",
+    alt: "Midlife woman in silk slip sitting at a vanity",
   },
   intro: "Loose skin and cellulite on the abdomen, arms, and thighs are common concerns after weight loss, pregnancy, or simply as a result of ageing. InMode FX is a non-surgical radiofrequency treatment that tightens and firms the skin on the body, improves the appearance of cellulite, and enhances overall skin quality—all without incisions, downtime, or significant discomfort.",
   keyPoints: [

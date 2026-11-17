@@ -13,7 +13,7 @@ const data: BlogPostData = {
   sections: [
     {
       heading: "What Happens During a Morpheus8 Treatment",
-      image: { src: morpheus8DeviceImg, alt: "Morpheus8 radiofrequency microneedling skin tightening treatment being performed at The Oxford Wellness Doctor clinic, Oxford - by GMC-registered Dr. Inga Taganova", position: "full" as const },
+      image: { src: morpheus8DeviceImg, alt: "Midlife woman in profile with soft light on jaw and neck", position: "full" as const },
       paragraphs: [
         "Morpheus8 uses an array of gold-tipped microneedles to deliver precise radiofrequency energy deep into the dermis and subdermal tissue. The combination of physical needling (which creates controlled micro-injuries that trigger healing) and thermal energy (which contracts existing collagen and stimulates new collagen formation) produces a depth of skin remodelling that surface-level treatments cannot match.",
         "The treatment is performed under topical anaesthetic cream, applied 45–60 minutes before the procedure begins. Most patients describe a warm, prickling sensation during treatment rather than acute pain. A full face treatment takes approximately 45 minutes; face and neck together takes around 60–75 minutes.",

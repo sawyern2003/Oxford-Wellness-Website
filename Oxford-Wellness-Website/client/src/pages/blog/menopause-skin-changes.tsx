@@ -13,7 +13,7 @@ const data: BlogPostData = {
   sections: [
     {
       heading: "Why Skin Changes During Menopause",
-      image: { src: menopauseSkinImg, alt: "Women's wellness and menopause care at The Oxford Wellness Doctor, Oxford - specialist HRT, perimenopause support, and skin treatments for menopausal women", position: "right" as const },
+      image: { src: menopauseSkinImg, alt: "Midlife woman with silver-brown hair and soft expression looking at camera", position: "right" as const },
       paragraphs: [
         "Oestrogen is a powerful hormone with receptors throughout the body - including in the skin. Throughout your reproductive years, oestrogen has been stimulating collagen production, maintaining skin hydration, supporting the formation of new skin cells, and keeping blood vessels healthy and responsive.",
         "When oestrogen levels decline - whether during the perimenopause transition or after menopause - all of these processes slow down. The effects are not gradual and invisible; research shows that skin loses up to 30% of its collagen in the first 5 years after menopause. That is a significant structural change, and it shows.",

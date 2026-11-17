@@ -35,7 +35,7 @@ const data: BlogPostData = {
     },
     {
       heading: "How to Choose the Right Practitioner",
-      image: { src: lipFillerImg, alt: "Dr. Inga Taganova consulting with a patient about lip filler options and natural-looking results at The Oxford Wellness Doctor, Oxford", position: "left" as const },
+      image: { src: lipFillerImg, alt: "Soft close-up of natural lips in gentle light", position: "left" as const },
       paragraphs: [
         "For lip fillers - one of the most technically demanding facial aesthetic treatments - the practitioner's qualifications and experience matter more than almost anywhere else. The lips are a complex, dynamic structure with significant blood supply, and complications (though rare with experienced practitioners) can be serious.",
         "Look for:",

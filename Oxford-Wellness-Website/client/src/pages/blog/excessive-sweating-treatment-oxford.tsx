@@ -9,8 +9,8 @@ const data: BlogPostData = {
   readTime: "6 min",
   datePublished: "2026-11-16",
   heroImage: {
-    src: "/blog-sweating-treatment.webp",
-    alt: "Confident professional woman, representing freedom from excessive sweating concerns",
+    src: "/blog-excessive-sweating-treatment-oxford.webp",
+    alt: "Cream silk blouse detail at the shoulder in natural light",
   },
   intro: "Excessive underarm sweating—medically termed axillary hyperhidrosis—is more than an inconvenience. It is socially isolating, professionally limiting, and profoundly affects confidence. Many people who sweat excessively have tried every antiperspirant on the market with little effect. Anti-wrinkle injections offer a highly effective, well-tolerated solution that stops excessive sweating for months at a time.",
   keyPoints: [

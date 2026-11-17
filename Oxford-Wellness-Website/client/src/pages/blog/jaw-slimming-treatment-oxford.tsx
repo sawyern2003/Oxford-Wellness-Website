@@ -9,8 +9,8 @@ const data: BlogPostData = {
   readTime: "7 min",
   datePublished: "2026-11-16",
   heroImage: {
-    src: "/blog-jaw-treatment.webp",
-    alt: "Side profile showing elegant jawline, representing facial aesthetics",
+    src: "/blog-jaw-slimming-treatment-oxford.webp",
+    alt: "Grey-haired woman in profile drinking coffee by a window",
   },
   intro: "Jaw treatment with anti-wrinkle injections serves two distinct purposes: slimming an overly prominent or square jawline for aesthetic reasons, and treating bruxism—chronic teeth grinding or jaw clenching that causes pain, headaches, and dental damage. Both concerns are addressed with the same technique, injecting the masseter muscles to reduce their size and activity.",
   keyPoints: [

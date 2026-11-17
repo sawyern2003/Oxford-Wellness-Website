@@ -9,8 +9,8 @@ const data: BlogPostData = {
   readTime: "7 min",
   datePublished: "2026-11-16",
   heroImage: {
-    src: "/blog-chemical-peels.webp",
-    alt: "Close-up of smooth, glowing skin representing chemical peel results",
+    src: "/blog-chemical-peels-oxford.webp",
+    alt: "Stack of folded beige towels on white stool",
   },
   intro: "Chemical peels have been used for decades to improve skin texture, reduce pigmentation, and stimulate collagen production. When performed correctly with medical-grade products, they can produce significant and lasting improvement in skin quality—particularly for sun damage, uneven tone, fine lines, and mild acne scarring.",
   keyPoints: [

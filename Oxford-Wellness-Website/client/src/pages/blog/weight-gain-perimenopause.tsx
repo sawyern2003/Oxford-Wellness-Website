@@ -36,7 +36,7 @@ const data: BlogPostData = {
     },
     {
       heading: "Why Diets Fail During Menopause",
-      image: { src: perimenopauseImg, alt: "Women's wellness and menopause weight management consultation at The Oxford Wellness Doctor, Oxford - specialist perimenopause support including HRT and medical weight management", position: "right" as const },
+      image: { src: perimenopauseImg, alt: "Midlife woman in camel tee sitting in an armchair by a window", position: "right" as const },
       paragraphs: [
         "The same calorie deficit that produced weight loss in your 30s frequently produces little or no loss in perimenopause. This is not imagined. Research has demonstrated that women in perimenopause have a lower metabolic rate than pre-menopausal women of similar age and body composition - and that the standard calorie deficit guidance underestimates the impact of hormonal change.",
         "Additionally, the chronic stress response that many women experience during perimenopause (often compounded by life pressures of the mid-life phase) elevates cortisol - which directly counteracts weight loss efforts by promoting fat storage and triggering cravings for calorie-dense foods.",

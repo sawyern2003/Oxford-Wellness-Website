@@ -1,45 +1,46 @@
 # Blog Image Credits
 
 All hero images sourced from Pexels.com with free commercial use licences (Pexels License).
-Images selected to match the site's warm, natural editorial aesthetic with consistent colour temperature and mature, calm subjects appropriate to the content.
+Hand-picked curated set selected for visual cohesion, appropriate subjects, and warm editorial aesthetic.
 
 ## Images
 
 ### Menopause & Women's Health
-- **blog-menopause-skin.webp**: Mature woman in natural light by [Mikhail Nilov](https://www.pexels.com/photo/8159657/) – warm, thoughtful portrait
-- **blog-perimenopause-symptoms.webp**: Mature woman by [Mikhail Nilov](https://www.pexels.com/photo/5473184/) – calm, editorial style
-- **blog-hrt-consultation.webp**: Consultation setting by [Mikhail Nilov](https://www.pexels.com/photo/5473177/) – warm professional environment
-- **blog-perimenopause-weight.webp**: Woman wellness moment by [Tima Miroshnichenko](https://www.pexels.com/photo/6869638/) – natural setting
-- **blog-intimate-health.webp**: Private wellness by [Anna Shvets](https://www.pexels.com/photo/6303760/) – calm, respectful
-- **blog-womens-health.webp**: Healthcare moment by [Mikhail Nilov](https://www.pexels.com/photo/5473186/) – professional, warm
-- **blog-longevity.webp**: Active mature woman by [Marcus Aurelius](https://www.pexels.com/photo/7180690/) – outdoor wellness
-- **blog-postpartum.webp**: Peaceful mother by [William Fortunato](https://www.pexels.com/photo/3993212/) – gentle, natural
+
+- **blog-menopause-skin-changes.webp**: Woman in white collared shirt smiling by [cottonbro studio](https://www.pexels.com/photo/woman-in-white-collared-shirt-smiling-6923485/)
+- **blog-perimenopause-symptoms-oxford.webp**: Pondering mature woman looking out window by [Teona Swift](https://www.pexels.com/photo/pondering-mature-woman-looking-out-window-6874383/)
+- **blog-hrt-consultation-what-to-expect.webp**: Woman drinking tea while reading book at home by [Teona Swift](https://www.pexels.com/photo/woman-drinking-tea-while-reading-book-at-home-6874091/)
+- **blog-weight-gain-perimenopause.webp**: Portrait of a woman sitting in an armchair by [Teona Swift](https://www.pexels.com/photo/portrait-of-a-woman-sitting-in-an-armchair-6874433/)
+- **blog-intimate-health-changes-menopause.webp**: Close-up shot of white flowers by [Tima Miroshnichenko](https://www.pexels.com/photo/close-up-shot-of-white-flowers-7608283/)
+- **blog-womens-health-check-oxford.webp**: Woman sitting and thinking by [Timur Weber](https://www.pexels.com/photo/woman-sitting-and-thinking-8560800/)
+- **blog-longevity-medicine-for-women.webp**: An elderly woman sitting on a chair and reading a magazine by [cottonbro studio](https://www.pexels.com/photo/an-elderly-woman-sitting-on-a-chair-and-reading-a-magazine-7225780/)
+- **blog-postpartum-recovery-oxford.webp**: Mother sleeping with newborn baby in bedroom by [Sarah Chai](https://www.pexels.com/photo/mother-sleeping-with-newborn-baby-in-bedroom-7282484/)
 
 ### Aesthetic Treatments
-- **blog-profhilo-fillers.webp**: Natural skin texture by [Anna Shvets](https://www.pexels.com/photo/6663314/) – close-up, warm light
-- **blog-lip-filler.webp**: Natural beauty by [Andrea Piacquadio](https://www.pexels.com/photo/3985329/) – soft portrait
-- **blog-morpheus8.webp**: Spa wellness by [Anna Shvets](https://www.pexels.com/photo/5069398/) – calm treatment setting
-- **blog-jaw-treatment.webp**: Profile portrait by [Andrea Piacquadio](https://www.pexels.com/photo/3785706/) – natural, editorial
-- **blog-sweating-treatment.webp**: Confident woman by [Anna Shvets](https://www.pexels.com/photo/6663368/) – professional portrait
-- **blog-chemical-peels.webp**: Skin wellness by [Andrea Piacquadio](https://www.pexels.com/photo/3985327/) – soft focus
-- **blog-lumecca-ipl.webp**: Clear natural skin by [Anna Shvets](https://www.pexels.com/photo/5069396/) – warm, calm
-- **blog-forma.webp**: Facial wellness by [Anna Shvets](https://www.pexels.com/photo/5069383/) – gentle, respectful
-- **blog-inmode-fx.webp**: Body wellness by [Andrea Piacquadio](https://www.pexels.com/photo/3823063/) – natural light
-- **blog-anti-wrinkle.webp**: Calm portrait by [Andrea Piacquadio](https://www.pexels.com/photo/3762630/) – soft, warm
+
+- **blog-profhilo-vs-dermal-fillers.webp**: Woman holding cosmetic product by [Ron Lach](https://www.pexels.com/photo/woman-holding-cosmetic-product-10221853/)
+- **blog-lip-filler-natural-results.webp**: Close-up of soft and gentle lips in natural light by [Alexander Mass](https://www.pexels.com/photo/close-up-of-soft-and-gentle-lips-in-natural-light-36329113/)
+- **blog-morpheus8-results-timeline.webp**: Beautiful elderly woman in white shirt by [Ron Lach](https://www.pexels.com/photo/beautiful-elderly-woman-in-white-shirt-8624590/)
+- **blog-jaw-slimming-treatment-oxford.webp**: A woman drinking coffee while sitting beside the glass window by [cottonbro studio](https://www.pexels.com/photo/a-woman-drinking-coffee-while-sitting-beside-the-glass-window-6944207/)
+- **blog-excessive-sweating-treatment-oxford.webp**: Person wearing linen pajamas by [Eugenia Remark](https://www.pexels.com/photo/person-wearing-linen-pajamas-15764812/)
+- **blog-chemical-peels-oxford.webp**: Stack of fresh gray towels on white stool by [Karolina Grabowska](https://www.pexels.com/photo/stack-of-fresh-gray-towels-on-white-stool-4210376/)
+- **blog-lumecca-ipl-oxford.webp**: White flowers in the glass vase by [Hanna Pad](https://www.pexels.com/photo/white-flowers-in-the-glass-vase-7552689/)
+- **blog-forma-skin-tightening-oxford.webp**: Close-up of woman's bare shoulder in natural light by [Alena Evseenko](https://www.pexels.com/photo/close-up-of-woman-s-bare-shoulder-in-natural-light-34352247/)
+- **blog-inmode-fx-body-contouring-oxford.webp**: Woman in beige dress seated on a wooden chair by [Ron Lach](https://www.pexels.com/photo/woman-in-beige-dress-seated-on-a-wooden-chair-8625555/)
+- **blog-anti-wrinkle-injections-oxford.webp**: Woman in white dress shirt by [cottonbro studio](https://www.pexels.com/photo/woman-in-white-dress-shirt-4936357/)
 
 ### Clinic & Editorial
-- **blog-choosing-clinic.webp**: Medical space by [Pixabay](https://www.pexels.com/photo/4269274/) – modern, calm
-- **blog-over-50.webp**: Elegant mature woman by [Andrea Piacquadio](https://www.pexels.com/photo/3768997/) – confident, natural
-- **blog-science-park.webp**: Modern clinic by [Pixabay](https://www.pexels.com/photo/4269274/) – professional space
+
+- **blog-aesthetic-treatments-over-50.webp**: Woman wearing a blazer by [Darina Belonogova](https://www.pexels.com/photo/woman-wearing-a-blazer-7959652/)
+- **blog-choosing-aesthetics-clinic-oxford.webp**: Modern waiting room with large glass windows by [Jan van der Wolf](https://www.pexels.com/photo/modern-waiting-room-with-large-glass-windows-40012713/)
 
 ## Cohesion Notes
 
-All images selected to create a cohesive visual family:
-- **Colour palette**: Warm natural light, cream/sage/neutral tones matching site aesthetic
-- **Subjects**: Mature women (40–65) where appropriate to content, calm editorial style
-- **Mood**: Relaxed, professional, non-clinical
-- **Photography style**: Natural light, soft focus, editorial portraiture from Mikhail Nilov, Anna Shvets, and Andrea Piacquadio series
-- **Consistent treatment**: 1600px width (or 1400–1500px for larger files), WebP optimised, all under 200KB
+All images hand-selected for:
+- **Visual cohesion**: Consistent warm natural light, neutral/cream/white tones
+- **Appropriate subjects**: Mature women for menopause/longevity content, natural beauty for aesthetics, calm spaces and botanical details
+- **Editorial style**: Soft focus, natural moments, no clinical settings or procedures
+- **Consistent format**: 1600x1000px, WebP optimised, all under 200KB
 
 ## License
 
@@ -48,6 +49,6 @@ All images are used under the Pexels License, which allows free use for commerci
 ## Technical Specifications
 
 - Format: WebP
-- Hero images: 1400–1600px wide
+- Dimensions: 1600x1000px (16:10 aspect ratio)
 - Optimised for web delivery (all <200KB)
-- Alt text provided in each blog post file
+- Alt text describes actual image content in each blog post file

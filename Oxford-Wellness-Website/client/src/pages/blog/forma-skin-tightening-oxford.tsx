@@ -9,8 +9,8 @@ const data: BlogPostData = {
   readTime: "7 min",
   datePublished: "2026-11-16",
   heroImage: {
-    src: "/blog-forma.webp",
-    alt: "Woman receiving comfortable facial treatment, representing non-surgical skin tightening",
+    src: "/blog-forma-skin-tightening-oxford.webp",
+    alt: "Close-up of woman's neck and collarbone in natural light",
   },
   intro: "Skin laxity—the gradual loosening and sagging of facial skin—is one of the most visible signs of ageing. For many years, the only effective solution was surgical facelift. Now, radiofrequency treatments such as Forma offer a non-surgical alternative that tightens and firms the skin with no downtime, no incisions, and results that develop gradually and naturally.",
   keyPoints: [

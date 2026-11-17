@@ -9,8 +9,8 @@ const data: BlogPostData = {
   readTime: "8 min",
   datePublished: "2026-11-16",
   heroImage: {
-    src: "/blog-anti-wrinkle.webp",
-    alt: "Woman with natural, refreshed appearance representing subtle anti-wrinkle results",
+    src: "/blog-anti-wrinkle-injections-oxford.webp",
+    alt: "Midlife blonde woman with natural skin and calm expression",
   },
   intro: "Anti-wrinkle injections are the most commonly performed aesthetic treatment worldwide, yet many people considering them remain uncertain about what they actually do, how they work, and what realistic results look like. The gap between expectation and reality is often wide—fuelled by social media filters, celebrity denials, and clinics that promise more than the treatment can deliver.",
   keyPoints: [

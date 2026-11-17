@@ -13,7 +13,7 @@ const data: BlogPostData = {
   sections: [
     {
       heading: "What is Profhilo?",
-      image: { src: profhiloImg, alt: "Profhilo skin booster and regenerative medicine treatment being administered at The Oxford Wellness Doctor, Oxford - by GMC-registered Dr. Inga Taganova", position: "right" as const },
+      image: { src: profhiloImg, alt: "Midlife woman in profile holding a skincare spray product", position: "right" as const },
       paragraphs: [
         "Profhilo is a highly concentrated, ultra-pure hyaluronic acid injectable treatment - but it is not a filler. It contains no added chemicals, no lidocaine, and no cross-linking agents. It is one of the most biocompatible injectables available.",
         "Unlike traditional fillers, Profhilo does not sit in one place. It is a 'bioremodeller' - it spreads through the skin tissues and stimulates fibroblasts (the cells that produce collagen and elastin) to rebuild the skin's structural matrix. The result is improved skin quality: better hydration, more elasticity, improved texture, and a more radiant appearance.",

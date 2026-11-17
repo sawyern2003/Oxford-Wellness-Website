@@ -13,7 +13,7 @@ const data: BlogPostData = {
   sections: [
     {
       heading: "Check Credentials First - Before Anything Else",
-      image: { src: clinicInteriorImg, alt: "The Oxford Wellness Doctor clinic on Woodstock Road, Oxford - a professional medical environment for aesthetic treatments in Oxford", position: "left" as const },
+      image: { src: clinicInteriorImg, alt: "Calm modern waiting room with large windows and natural light", position: "left" as const },
       paragraphs: [
         "The single most important step in choosing an aesthetics clinic is verifying the qualifications of the person who will be treating you. This is non-negotiable.",
       ],

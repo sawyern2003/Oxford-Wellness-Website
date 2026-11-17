@@ -9,8 +9,8 @@ const data: BlogPostData = {
   readTime: "8 min",
   datePublished: "2026-11-16",
   heroImage: {
-    src: "/blog-womens-health.webp",
-    alt: "Calm medical consultation setting representing preventive healthcare",
+    src: "/blog-womens-health-check-oxford.webp",
+    alt: "Midlife blonde woman in white shirt with thoughtful expression",
   },
   intro: "Preventive healthcare is consistently underprioritised by women. Between work, family, and the dozens of small tasks that somehow become your responsibility, your own health screening slips down the list. Many women only see a doctor when something is wrong. But regular health checks catch problems early—when they are easier to treat—and provide reassurance when results are normal.",
   keyPoints: [

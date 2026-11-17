@@ -9,8 +9,8 @@ const data: BlogPostData = {
   readTime: "7 min",
   datePublished: "2026-11-16",
   heroImage: {
-    src: "/blog-intimate-health.webp",
-    alt: "Peaceful spa-like setting representing comfort and wellness",
+    src: "/blog-intimate-health-changes-menopause.webp",
+    alt: "Baby's-breath flowers and linen in soft natural light",
   },
   intro: "Intimate symptoms related to menopause are common, distressing, and rarely discussed openly—even in medical consultations. Many women endure discomfort, pain or loss of confidence for years before seeking help, often because they assume nothing can be done or because the subject feels too private to raise. In fact, effective treatments exist, and these symptoms do not have to be tolerated.",
   keyPoints: [

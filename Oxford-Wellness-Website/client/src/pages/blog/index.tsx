@@ -24,7 +24,7 @@ const posts: BlogPost[] = [
     category: "Menopause",
     readTime: "6 min",
     href: "/blog/menopause-skin-changes",
-    image: "/blog-menopause-skin.webp",
+    image: "/blog-menopause-skin-changes.webp",
     featured: true,
   },
   {
@@ -34,7 +34,7 @@ const posts: BlogPost[] = [
     category: "Menopause",
     readTime: "8 min",
     href: "/blog/perimenopause-symptoms-oxford",
-    image: "/blog-perimenopause-symptoms.webp",
+    image: "/blog-perimenopause-symptoms-oxford.webp",
   },
   {
     slug: "hrt-consultation-what-to-expect",
@@ -43,7 +43,7 @@ const posts: BlogPost[] = [
     category: "Menopause",
     readTime: "7 min",
     href: "/blog/hrt-consultation-what-to-expect",
-    image: "/blog-hrt-consultation.webp",
+    image: "/blog-hrt-consultation-what-to-expect.webp",
   },
   {
     slug: "weight-gain-perimenopause",
@@ -52,7 +52,7 @@ const posts: BlogPost[] = [
     category: "Menopause",
     readTime: "7 min",
     href: "/blog/weight-gain-perimenopause",
-    image: "/blog-perimenopause-weight.webp",
+    image: "/blog-weight-gain-perimenopause.webp",
   },
   {
     slug: "intimate-health-changes-menopause",
@@ -61,7 +61,7 @@ const posts: BlogPost[] = [
     category: "Intimate Health",
     readTime: "7 min",
     href: "/blog/intimate-health-changes-menopause",
-    image: "/blog-intimate-health.webp",
+    image: "/blog-intimate-health-changes-menopause.webp",
   },
   {
     slug: "womens-health-check-oxford",
@@ -70,7 +70,7 @@ const posts: BlogPost[] = [
     category: "Women's Health",
     readTime: "8 min",
     href: "/blog/womens-health-check-oxford",
-    image: "/blog-womens-health.webp",
+    image: "/blog-womens-health-check-oxford.webp",
   },
   {
     slug: "longevity-medicine-for-women",
@@ -79,7 +79,7 @@ const posts: BlogPost[] = [
     category: "Longevity",
     readTime: "9 min",
     href: "/blog/longevity-medicine-for-women",
-    image: "/blog-longevity.webp",
+    image: "/blog-longevity-medicine-for-women.webp",
   },
   {
     slug: "anti-wrinkle-injections-oxford",
@@ -88,7 +88,7 @@ const posts: BlogPost[] = [
     category: "Skin",
     readTime: "8 min",
     href: "/blog/anti-wrinkle-injections-oxford",
-    image: "/blog-anti-wrinkle.webp",
+    image: "/blog-anti-wrinkle-injections-oxford.webp",
   },
   {
     slug: "profhilo-vs-dermal-fillers",
@@ -97,7 +97,7 @@ const posts: BlogPost[] = [
     category: "Skin",
     readTime: "6 min",
     href: "/blog/profhilo-vs-dermal-fillers",
-    image: "/blog-profhilo-fillers.webp",
+    image: "/blog-profhilo-vs-dermal-fillers.webp",
   },
   {
     slug: "postpartum-recovery-oxford",
@@ -106,7 +106,7 @@ const posts: BlogPost[] = [
     category: "Women's Health",
     readTime: "8 min",
     href: "/blog/postpartum-recovery-oxford",
-    image: "/blog-postpartum.webp",
+    image: "/blog-postpartum-recovery-oxford.webp",
   },
   {
     slug: "lip-filler-natural-results",
@@ -115,7 +115,7 @@ const posts: BlogPost[] = [
     category: "Skin",
     readTime: "5 min",
     href: "/blog/lip-filler-natural-results",
-    image: "/blog-lip-filler.webp",
+    image: "/blog-lip-filler-natural-results.webp",
   },
   {
     slug: "morpheus8-results-timeline",
@@ -124,7 +124,7 @@ const posts: BlogPost[] = [
     category: "Skin",
     readTime: "5 min",
     href: "/blog/morpheus8-results-timeline",
-    image: "/blog-morpheus8.webp",
+    image: "/blog-morpheus8-results-timeline.webp",
   },
   {
     slug: "jaw-slimming-treatment-oxford",
@@ -133,7 +133,7 @@ const posts: BlogPost[] = [
     category: "Skin",
     readTime: "7 min",
     href: "/blog/jaw-slimming-treatment-oxford",
-    image: "/blog-jaw-treatment.webp",
+    image: "/blog-jaw-slimming-treatment-oxford.webp",
   },
   {
     slug: "excessive-sweating-treatment-oxford",
@@ -142,7 +142,7 @@ const posts: BlogPost[] = [
     category: "Skin",
     readTime: "6 min",
     href: "/blog/excessive-sweating-treatment-oxford",
-    image: "/blog-sweating-treatment.webp",
+    image: "/blog-excessive-sweating-treatment-oxford.webp",
   },
   {
     slug: "chemical-peels-oxford",
@@ -151,7 +151,7 @@ const posts: BlogPost[] = [
     category: "Skin",
     readTime: "7 min",
     href: "/blog/chemical-peels-oxford",
-    image: "/blog-chemical-peels.webp",
+    image: "/blog-chemical-peels-oxford.webp",
   },
   {
     slug: "lumecca-ipl-oxford",
@@ -160,7 +160,7 @@ const posts: BlogPost[] = [
     category: "Skin",
     readTime: "7 min",
     href: "/blog/lumecca-ipl-oxford",
-    image: "/blog-lumecca-ipl.webp",
+    image: "/blog-lumecca-ipl-oxford.webp",
   },
   {
     slug: "forma-skin-tightening-oxford",
@@ -169,7 +169,7 @@ const posts: BlogPost[] = [
     category: "Skin",
     readTime: "7 min",
     href: "/blog/forma-skin-tightening-oxford",
-    image: "/blog-forma.webp",
+    image: "/blog-forma-skin-tightening-oxford.webp",
   },
   {
     slug: "inmode-fx-body-contouring-oxford",
@@ -178,7 +178,7 @@ const posts: BlogPost[] = [
     category: "Skin",
     readTime: "7 min",
     href: "/blog/inmode-fx-body-contouring-oxford",
-    image: "/blog-inmode-fx.webp",
+    image: "/blog-inmode-fx-body-contouring-oxford.webp",
   },
   {
     slug: "choosing-aesthetics-clinic-oxford",
@@ -187,7 +187,7 @@ const posts: BlogPost[] = [
     category: "Women's Health",
     readTime: "6 min",
     href: "/blog/choosing-aesthetics-clinic-oxford",
-    image: "/blog-choosing-clinic.webp",
+    image: "/blog-choosing-aesthetics-clinic-oxford.webp",
   },
   {
     slug: "aesthetic-treatments-over-50",
@@ -196,7 +196,7 @@ const posts: BlogPost[] = [
     category: "Longevity",
     readTime: "6 min",
     href: "/blog/aesthetic-treatments-over-50",
-    image: "/blog-over-50.webp",
+    image: "/blog-aesthetic-treatments-over-50.webp",
   },
 ];
 

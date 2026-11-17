@@ -9,8 +9,8 @@ const data: BlogPostData = {
   readTime: "7 min",
   datePublished: "2026-11-16",
   heroImage: {
-    src: "/blog-hrt-consultation.webp",
-    alt: "Doctor consultation room with natural light, representing professional medical care",
+    src: "/blog-hrt-consultation-what-to-expect.webp",
+    alt: "Woman in camel knit sweater holding a mug by a window",
   },
   intro: "Many women delay booking a menopause consultation because they are unsure what to expect, whether they will be pressured into treatment, or whether their symptoms are 'bad enough' to warrant assessment. This article walks you through the process—what will be discussed, what questions you should ask, and how treatment decisions are actually made.",
   keyPoints: [
