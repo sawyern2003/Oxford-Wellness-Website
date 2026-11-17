@@ -2,7 +2,7 @@ import BlogPostTemplate, { BlogPostData } from "@/components/blog/BlogPostTempla
 
 const data: BlogPostData = {
   title: "What to Expect at an HRT Consultation | Oxford GP Explains",
-  metaDescription: "What happens at a menopause and HRT consultation with a specialist GP. Dr Inga Taganova explains the assessment process, questions asked, and how treatment decisions are made.",
+  metaDescription: "What happens at a menopause and HRT consultation. Dr Inga Taganova explains the assessment process, questions asked, and how treatment decisions are made.",
   canonical: "https://www.theoxfordwellnessdoctor.com/blog/hrt-consultation-what-to-expect",
   h1: "What to Expect at an HRT Consultation",
   category: "Menopause",
@@ -12,7 +12,7 @@ const data: BlogPostData = {
     src: "/blog-hrt-consultation.webp",
     alt: "Doctor consultation room with natural light, representing professional medical care",
   },
-  intro: "Many women delay booking a menopause consultation because they are unsure what to expect, whether they will be pressured into treatment, or whether their symptoms are 'bad enough' to warrant specialist input. This article walks you through the process—what will be discussed, what questions you should ask, and how treatment decisions are actually made.",
+  intro: "Many women delay booking a menopause consultation because they are unsure what to expect, whether they will be pressured into treatment, or whether their symptoms are 'bad enough' to warrant assessment. This article walks you through the process—what will be discussed, what questions you should ask, and how treatment decisions are actually made.",
   keyPoints: [
     "Consultations typically last 30-45 minutes and are unhurried",
     "You will be asked about your symptoms, medical history, and any concerns",
@@ -112,7 +112,7 @@ const data: BlogPostData = {
       heading: "Making a Decision",
       paragraphs: [
         "You do not have to decide immediately. Some women leave the consultation wanting to think things over. That is entirely reasonable. Others feel ready to start treatment the same day.",
-        "If you choose to start HRT, the clinician will prescribe an initial regimen and explain how to use it, what to expect in the first few weeks, and when to book a follow-up review. Most specialists recommend a review after three months, then annually once your treatment is stable.",
+        "If you choose to start HRT, the clinician will prescribe an initial regimen and explain how to use it, what to expect in the first few weeks, and when to book a follow-up review. Most clinicians recommend a review after three months, then annually once your treatment is stable.",
       ],
     },
     {
@@ -132,7 +132,7 @@ const data: BlogPostData = {
     {
       heading: "Consultations at The Oxford Wellness Doctor",
       paragraphs: [
-        "Dr Inga Taganova is a GMC-registered GP, formally trained gynaecologist, and British Menopause Society-accredited specialist. Consultations take place at Belsyre Court in Oxford and are designed to be calm, thorough, and collaborative.",
+        "Dr Inga Taganova is a GMC-registered GP with a background in obstetrics and gynaecology. Consultations take place at Belsyre Court in Oxford and are designed to be calm, thorough, and collaborative.",
         "If you decide to proceed with treatment, prescriptions are issued on the day where appropriate. Follow-up consultations can be arranged in person or remotely, depending on your preference and clinical need.",
       ],
     },

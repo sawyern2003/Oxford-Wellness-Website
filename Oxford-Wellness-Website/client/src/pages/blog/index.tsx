@@ -20,7 +20,7 @@ const posts: BlogPost[] = [
   {
     slug: "menopause-skin-changes",
     title: "How Menopause Affects Your Skin: What Your GP Won't Tell You",
-    excerpt: "Menopause causes measurable changes to skin collagen, hydration and elasticity. Formally trained gynaecologist Dr. Taganova explains what works.",
+    excerpt: "Menopause causes measurable changes to skin collagen, hydration and elasticity. Dr Inga explains what works.",
     category: "Menopause",
     readTime: "6 min",
     href: "/blog/menopause-skin-changes",
@@ -39,7 +39,7 @@ const posts: BlogPost[] = [
   {
     slug: "hrt-consultation-what-to-expect",
     title: "What to Expect at an HRT Consultation",
-    excerpt: "What happens at a menopause and HRT consultation with a specialist GP. Questions asked, assessment process, and how treatment decisions are made.",
+    excerpt: "What happens at a menopause and HRT consultation. Questions asked, assessment process, and how treatment decisions are made.",
     category: "Menopause",
     readTime: "7 min",
     href: "/blog/hrt-consultation-what-to-expect",
@@ -57,7 +57,7 @@ const posts: BlogPost[] = [
   {
     slug: "intimate-health-changes-menopause",
     title: "Intimate Health Changes During Menopause: Symptoms and Treatment",
-    excerpt: "Vaginal dryness, discomfort and intimate changes during menopause explained by a gynaecologist. Effective treatments that work.",
+    excerpt: "Vaginal dryness, discomfort and intimate changes during menopause. Effective treatments that work.",
     category: "Intimate Health",
     readTime: "7 min",
     href: "/blog/intimate-health-changes-menopause",
@@ -102,7 +102,7 @@ const posts: BlogPost[] = [
   {
     slug: "postpartum-recovery-oxford",
     title: "Postpartum Recovery: Body Confidence and Intimate Health After Childbirth",
-    excerpt: "Postpartum recovery support from an Oxford gynaecologist and GP. Body changes after childbirth and evidence-based treatments.",
+    excerpt: "Postpartum recovery support from an Oxford GP. Body changes after childbirth and evidence-based treatments.",
     category: "Women's Health",
     readTime: "8 min",
     href: "/blog/postpartum-recovery-oxford",
@@ -356,7 +356,7 @@ export default function BlogIndex() {
               <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-3">About the author</p>
               <h2 className="font-sans font-semibold text-3xl text-foreground tracking-tight mb-4">Dr Inga Taganova</h2>
               <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                Dr Taganova is a GMC-registered doctor, formally trained gynaecologist, experienced GP, and qualified aesthetic medicine practitioner. With over 20 years in women&apos;s health, she brings a depth of clinical knowledge to aesthetic medicine that is rarely found outside hospital settings. All articles are written personally by Dr Taganova and reflect current evidence-based clinical practice.
+                Dr Inga Taganova is a practising GP with more than two decades of medical experience, a background in obstetrics and gynaecology and a longstanding interest in women&apos;s health. She is a qualified aesthetic medicine practitioner. All articles are written personally by Dr Inga and reflect current evidence-based clinical practice.
               </p>
               <Link
                 href="/about"

@@ -91,7 +91,7 @@ const data: BlogPostData = {
     {
       heading: "Breast Screening",
       paragraphs: [
-        "NHS breast screening (mammography) begins at fifty and is offered every three years. If you have a strong family history of breast cancer—particularly if relatives were diagnosed young—you may be eligible for earlier or more frequent screening. Discuss this with your GP or a specialist.",
+        "NHS breast screening (mammography) begins at fifty and is offered every three years. If you have a strong family history of breast cancer—particularly if relatives were diagnosed young—you may be eligible for earlier or more frequent screening. Discuss this with your GP.",
       ],
     },
     {

@@ -2,7 +2,7 @@ import BlogPostTemplate, { BlogPostData } from "@/components/blog/BlogPostTempla
 
 const data: BlogPostData = {
   title: "Postpartum Recovery: Body Confidence and Intimate Health After Childbirth | Oxford",
-  metaDescription: "Postpartum recovery support in Oxford. Dr Inga Taganova, a gynaecologist and GP, explains body changes after childbirth and evidence-based treatments that help.",
+  metaDescription: "Postpartum recovery support in Oxford. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology, explains body changes after childbirth and evidence-based treatments that help.",
   canonical: "https://www.theoxfordwellnessdoctor.com/blog/postpartum-recovery-oxford",
   h1: "Postpartum Recovery: Body Confidence and Intimate Health After Childbirth",
   category: "Women's Health",
@@ -12,7 +12,7 @@ const data: BlogPostData = {
     src: "/blog-postpartum.webp",
     alt: "Woman in peaceful moment representing postpartum recovery and self-care",
   },
-  intro: "The physical changes of pregnancy and childbirth are profound. Your body has grown and birthed a child—an extraordinary feat. But the aftermath can be challenging. Many women feel unprepared for the recovery period, the persistent changes to their body, and the loss of confidence that can follow. As a formally trained gynaecologist and GP, I see women months and sometimes years after childbirth, still struggling with concerns they assumed would resolve on their own.",
+  intro: "The physical changes of pregnancy and childbirth are profound. Your body has grown and birthed a child—an extraordinary feat. But the aftermath can be challenging. Many women feel unprepared for the recovery period, the persistent changes to their body, and the loss of confidence that can follow. As a GP with a background in obstetrics and gynaecology, I see women months and sometimes years after childbirth, still struggling with concerns they assumed would resolve on their own.",
   keyPoints: [
     "Physical recovery after childbirth takes months, not weeks",
     "Common concerns include abdominal laxity, pelvic floor weakness, intimate discomfort, and scarring",
@@ -57,7 +57,7 @@ const data: BlogPostData = {
       heading: "Intimate Discomfort and Scarring",
       paragraphs: [
         "Tears, episiotomy, and vaginal stretching during childbirth can cause persistent discomfort. Some women experience pain during intercourse (dyspareunia), sensitivity, or tightness at the site of old scarring. Others describe a feeling of looseness or reduced sensation.",
-        "Scar tissue can be massaged and stretched to improve comfort and flexibility. Pelvic floor physiotherapy helps. If discomfort persists, further assessment by a gynaecologist or specialist women's health physiotherapist is warranted.",
+        "Scar tissue can be massaged and stretched to improve comfort and flexibility. Pelvic floor physiotherapy helps. If discomfort persists, further assessment by a women's health physiotherapist or GP is warranted.",
         "Treatments such as hyaluronic acid vaginal fillers or radiofrequency therapy can improve vaginal tone, hydration, and sensitivity. These are not cosmetic vanity treatments—they address real functional concerns that affect quality of life and intimacy.",
       ],
     },
@@ -121,7 +121,7 @@ const data: BlogPostData = {
     {
       heading: "Postpartum Support at The Oxford Wellness Doctor",
       paragraphs: [
-        "Dr Inga Taganova is a formally trained gynaecologist and GP with over twenty years of experience in women's health. Postpartum consultations are unhurried, compassionate, and evidence-based.",
+        "Dr Inga Taganova is a GP with a background in obstetrics and gynaecology and over twenty years of experience in women's health. Postpartum consultations are unhurried, compassionate, and evidence-based.",
         "The focus is on understanding your specific concerns, assessing what has changed, and providing realistic options. Pelvic floor rehabilitation is always the foundation. Aesthetic or medical interventions are considered only when appropriate, safe, and desired.",
         "Consultations take place at Belsyre Court in Oxford. You do not need a GP referral.",
       ],

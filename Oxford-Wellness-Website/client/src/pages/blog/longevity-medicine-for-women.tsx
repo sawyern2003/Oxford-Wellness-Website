@@ -114,7 +114,7 @@ const data: BlogPostData = {
     {
       heading: "Longevity Consultations at The Oxford Wellness Doctor",
       paragraphs: [
-        "Dr Inga Taganova offers longevity-focused consultations for women in midlife and beyond. As a menopause specialist and GP with over twenty years of experience in women's health, she brings a depth of understanding to the specific challenges women face after menopause.",
+        "Dr Inga Taganova offers longevity-focused consultations for women in midlife and beyond. As a GP with over twenty years of experience in women's health, she brings a depth of understanding to the specific challenges women face after menopause.",
         "Consultations take place at Belsyre Court in Oxford and are designed to be thorough, evidence-based, and practical. The aim is not to sell supplements or unproven interventions but to implement the strategies that genuinely affect long-term health and quality of life.",
       ],
     },

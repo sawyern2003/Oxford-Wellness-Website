@@ -3,13 +3,13 @@ import menopauseSkinImg from "@/assets/blog/menopause-skin-changes-oestrogen.png
 
 const data: BlogPostData = {
   title: "How Menopause Affects Your Skin: What Your GP Won't Tell You",
-  metaDescription: "Menopause skin changes explained by formally trained gynaecologist. Treatments that actually work for aging skin during menopause - from Dr. Inga Taganova in Oxford.",
+  metaDescription: "Menopause skin changes explained by Dr Inga Taganova. Treatments that actually work for aging skin during menopause - from a GP in Oxford.",
   canonical: "https://www.theoxfordwellnessdoctor.com/blog/menopause-skin-changes",
   h1: "How Menopause Affects Your Skin: What Your GP Won't Tell You",
   category: "Menopause & Women's Health",
   readTime: "6 min",
   datePublished: "2024-09-22",
-  intro: "If you have noticed that your skin has changed in your 40s or 50s - becoming drier, thinner, less plump, or more prone to lines - you are not imagining it. These changes are real, measurable, and directly linked to the hormonal shifts of the menopause transition. As a formally trained gynaecologist who now practises aesthetic medicine, Dr. Inga Taganova is in a unique position to explain what is actually happening to your skin during menopause - and, more importantly, what genuinely helps.",
+  intro: "If you have noticed that your skin has changed in your 40s or 50s - becoming drier, thinner, less plump, or more prone to lines - you are not imagining it. These changes are real, measurable, and directly linked to the hormonal shifts of the menopause transition. As a GP with a background in obstetrics and gynaecology who now practises aesthetic medicine, Dr Inga Taganova is in a position to explain what is actually happening to your skin during menopause - and, more importantly, what genuinely helps.",
   sections: [
     {
       heading: "Why Skin Changes During Menopause",
@@ -92,7 +92,7 @@ const data: BlogPostData = {
     {
       heading: "Dr. Taganova's Integrated Approach",
       paragraphs: [
-        "The Oxford Wellness Doctor is one of the very few clinics in Oxfordshire where you can receive HRT and aesthetic skin treatments from the same doctor, in the same appointment, guided by a specialist who understands the deep connection between your hormones and your skin.",
+        "The Oxford Wellness Doctor is one of the very few clinics in Oxfordshire where you can receive HRT and aesthetic skin treatments from the same doctor, in the same appointment, guided by a GP who understands the deep connection between your hormones and your skin.",
         "Rather than treating your fine lines and your menopause symptoms as entirely separate problems to be managed by different practitioners, Dr. Taganova takes an integrated view: addressing the hormonal root causes while also treating the structural and textural changes that have already occurred. For many of her patients, this combined approach produces transformative results.",
       ],
     },
