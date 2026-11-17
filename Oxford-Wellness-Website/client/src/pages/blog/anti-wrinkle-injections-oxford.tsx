@@ -39,7 +39,7 @@ const data: BlogPostData = {
         "Frown lines (vertical lines between the eyebrows, often called 'elevens')",
         "Crow's feet (lines radiating from the outer corners of the eyes when you smile or squint)",
       ],
-      paragraphs: [
+      paragraphs2: [
         "These three areas—often treated together as 'the three areas'—are where anti-wrinkle treatment produces the most predictable, natural-looking results.",
         "Beyond the standard areas, the treatment can also be used for brow lifting, softening a gummy smile, treating platysmal bands in the neck, reducing a downturned mouth, and slimming the jaw (masseter treatment). These are more advanced applications and require precise technique.",
         "Anti-wrinkle treatment does not effectively treat static lines—wrinkles that are visible at rest, caused by volume loss, skin laxity, or sun damage. For those concerns, other treatments such as fillers, skin tightening, or resurfacing are more appropriate.",

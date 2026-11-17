@@ -1,11 +1,11 @@
 import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatments/TreatmentPageTemplate";
 
 const data: TreatmentPageData = {
-  title: "Perimenopause Support Oxford | Early Menopause Specialist | Dr. Taganova",
-  metaDescription: "Perimenopause support in Oxford from specialist menopause lead Dr. Inga Taganova. Expert care for women in their 40s experiencing early menopause symptoms. Book consultation.",
+  title: "Perimenopause Support Oxford | Women's Health GP | Dr Taganova",
+  metaDescription: "Perimenopause support in Oxford from Dr Inga Taganova, GP with a background in obstetrics and gynaecology. Expert care for women in their 40s experiencing early menopause symptoms. Book consultation.",
   canonical: "https://www.theoxfordwellnessdoctor.com/perimenopause-oxford",
   h1: "Perimenopause Support in Oxford - When Symptoms Start in Your 40s",
-  intro: "Perimenopause is the transition phase leading to menopause, and for many women, it's the most symptom-heavy and disruptive period of their entire hormonal journey. Dr. Inga Taganova, a specialist menopause lead and formally trained gynaecologist, provides expert assessment and management for women experiencing perimenopause - often starting in their early-to-mid 40s, sometimes earlier.",
+  intro: "Perimenopause is the transition phase leading to menopause, and for many women, it's the most symptom-heavy and disruptive period of their entire hormonal journey. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology, provides expert assessment and management for women experiencing perimenopause - often starting in their early-to-mid 40s, sometimes earlier.",
   sections: [
     {
       heading: "What Is Perimenopause?",
@@ -18,7 +18,7 @@ const data: TreatmentPageData = {
     {
       heading: "Common Perimenopause Symptoms",
       paragraphs: [
-        "The symptoms of perimenopause are diverse and often dismissed by healthcare providers unfamiliar with the full spectrum of hormonal effects. Dr. Taganova's background as a gynaecologist means she recognizes the full range of presentations.",
+        "The symptoms of perimenopause are diverse and often dismissed by healthcare providers unfamiliar with the full spectrum of hormonal effects. Dr Taganova's background in obstetrics and gynaecology means she recognizes the full range of presentations.",
       ],
       bullets: [
         "Irregular periods - heavier, lighter, longer, shorter, or skipped entirely",
@@ -68,15 +68,14 @@ const data: TreatmentPageData = {
       ],
     },
     {
-      heading: "Why Dr. Taganova's Background Matters",
+      heading: "Why Dr Taganova's Background Matters",
       paragraphs: [
-        "As a formally trained gynaecologist and specialist menopause lead, Dr. Taganova understands perimenopause at a level that most aesthetic practitioners - and even many GPs - simply don't. She recognizes the complexity of hormonal changes and how they affect every system in your body.",
+        "As a GP with a background in obstetrics and gynaecology, Dr Taganova understands perimenopause at a level that most aesthetic practitioners - and even many GPs - simply don't. She recognizes the complexity of hormonal changes and how they affect every system in your body.",
         "Her training means she can distinguish between perimenopause symptoms and other medical conditions that can present similarly (thyroid disorders, diabetes, cardiovascular issues). She also understands the emotional and psychological impact of hormonal changes and approaches care with empathy and respect.",
       ],
       bullets: [
-        "Specialist menopause lead with extensive training",
-        "Formally trained gynaecologist with hospital experience",
-        "GP with over 20 years of experience in women's health",
+        "GP with a background in obstetrics and gynaecology",
+        "Over 20 years of clinical experience in women's health",
         "GMC-registered doctor with an unblemished record",
         "Aesthetic medicine expertise for treating physical manifestations",
         "Experience treating hundreds of perimenopausal women",
@@ -131,7 +130,7 @@ const data: TreatmentPageData = {
   ],
   procedureSchema: {
     name: "Perimenopause Consultation",
-    description: "Comprehensive perimenopause assessment with Dr. Inga Taganova - specialist menopause lead and formally trained gynaecologist - in Oxford. Expert symptom evaluation, treatment planning, and holistic support for women in their 40s.",
+    description: "Comprehensive perimenopause assessment with Dr Inga Taganova - GP with a background in obstetrics and gynaecology - in Oxford. Expert symptom evaluation, treatment planning, and holistic support for women in their 40s.",
   },
   relatedLinks: [
     { label: "Symptoms & Treatment Guide", href: "/symptoms-and-treatments" },

@@ -293,13 +293,13 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
               <p className="text-base text-muted-foreground leading-relaxed">
                 {data.downtime.description}
               </p>
-            </FadeIn>
+            </div>
           </div>
         </section>
 
         <section className="py-14 md:py-16 bg-white">
           <div className="container mx-auto px-6 max-w-4xl">
-            <FadeIn direction="up">
+            <div>
               <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-6">
                 {data.trust.heading}
               </h2>

@@ -2,10 +2,10 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Post-Birth Recovery & Vaginal Rejuvenation Oxford | Dr. Taganova",
-  metaDescription: "Post-birth recovery and vaginal rejuvenation in Oxford. Expert care for postpartum intimate health, pelvic floor concerns, and physical recovery after childbirth from formally trained gynaecologist Dr. Inga Taganova.",
+  metaDescription: "Post-birth recovery and vaginal rejuvenation in Oxford. Expert care for postpartum intimate health, pelvic floor concerns, and physical recovery after childbirth from Dr Inga Taganova, GP with a background in obstetrics and gynaecology.",
   canonical: "https://www.theoxfordwellnessdoctor.com/postpartum-recovery-oxford",
   h1: "Post-Birth Recovery & Vaginal Rejuvenation in Oxford",
-  intro: "Childbirth changes your body in profound ways - and many of these changes affect intimate health, pelvic floor function, and physical confidence. Dr. Inga Taganova, a formally trained gynaecologist with over 20 years of experience in women's health, provides specialist post-birth recovery care, including vaginal rejuvenation, intimate health treatments, and support for the physical effects of pregnancy and childbirth that are rarely discussed openly but deeply felt.",
+  intro: "Childbirth changes your body in profound ways - and many of these changes affect intimate health, pelvic floor function, and physical confidence. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology and over 20 years of experience in women's health, provides expert post-birth recovery care, including vaginal rejuvenation, intimate health treatments, and support for the physical effects of pregnancy and childbirth that are rarely discussed openly but deeply felt.",
   sections: [
     {
       heading: "Common Postpartum Changes",
@@ -38,11 +38,11 @@ const data: TreatmentPageData = {
     {
       heading: "Why Dr. Taganova's Background Matters",
       paragraphs: [
-        "Dr. Taganova's training as a gynaecologist means she understands postpartum recovery at a level that most aesthetic practitioners simply cannot. She has spent years working with women's reproductive anatomy, pelvic floor function, and the physical effects of childbirth.",
+        "Dr Taganova's background in obstetrics and gynaecology means she understands postpartum recovery at a level that most aesthetic practitioners simply cannot. She has spent years working with women's reproductive anatomy, pelvic floor function, and the physical effects of childbirth.",
         "Her approach is sensitive, evidence-based, and non-judgmental. She recognizes that postpartum intimate health concerns are not cosmetic issues to be dismissed - they're real physical changes that affect quality of life, relationships, and self-esteem.",
       ],
       bullets: [
-        "Formally trained gynaecologist with hospital experience",
+        "GP with a background in obstetrics and gynaecology",
         "Over 20 years of experience in women's health",
         "Specialist understanding of pelvic anatomy and postpartum changes",
         "GMC-registered doctor with an unblemished record",
@@ -173,7 +173,7 @@ const data: TreatmentPageData = {
   ],
   procedureSchema: {
     name: "Post-Birth Recovery & Vaginal Rejuvenation Consultation",
-    description: "Specialist post-birth recovery consultation with Dr. Inga Taganova - formally trained gynaecologist and women's health expert - in Oxford. Expert treatment for postpartum intimate health concerns, vaginal rejuvenation, and pelvic floor support.",
+    description: "Expert post-birth recovery consultation with Dr Inga Taganova - GP with a background in obstetrics and gynaecology - in Oxford. Expert treatment for postpartum intimate health concerns, vaginal rejuvenation, and pelvic floor support.",
   },
   relatedLinks: [
     { label: "Women's Health Hub", href: "/womens-health-oxford" },
