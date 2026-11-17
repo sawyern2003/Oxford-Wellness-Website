@@ -161,7 +161,7 @@ const sections: Section[] = [
     bg: "bg-white",
     treatments: [
       {
-        name: "Weight Management Consultation",
+        name: "Weight Loss Consultation",
         description: "Doctor-led assessment and personalised advice on nutrition, activity and lifestyle for adults.",
         href: "/treatments/weight-loss-consultation-oxford",
         price: "Price confirmed at booking",

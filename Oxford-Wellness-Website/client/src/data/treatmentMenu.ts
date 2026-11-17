@@ -227,7 +227,7 @@ export const treatmentMenuColumns: MenuGroup[][] = [
     {
       title: "Weight & body",
       items: [
-        { name: "Weight management consultation", href: "/treatments/weight-loss-consultation-oxford" },
+        { name: "Weight loss consultation", href: "/treatments/weight-loss-consultation-oxford" },
         { name: "Forma Plus", href: "/treatments/forma-plus-body-contouring-oxford" },
         { name: "InMode FX", href: "/treatments/inmode-fx-skin-tightening-oxford" },
       ],

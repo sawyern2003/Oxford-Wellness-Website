@@ -3,10 +3,10 @@ import { TreatmentLandingPageData } from "@/components/treatments/TreatmentLandi
 export const weightLossConsultationData: TreatmentLandingPageData = {
   slug: "weight-loss-consultation",
   bookingUrl: "https://oxfordwellnessdoctor.glowday.com/offer/category/womens-health",
-  h1: "Weight Management Consultation in Oxford",
-  title: "Weight Management Consultation Oxford | The Oxford Wellness Doctor",
+  h1: "Weight Loss Consultation in Oxford",
+  title: "Weight Loss Consultation Oxford | The Oxford Wellness Doctor",
   metaDescription:
-    "Doctor-led weight management consultation at our Oxford clinic. In-person assessment, lifestyle and nutrition advice, and a personalised plan with Dr Inga Taganova.",
+    "Doctor-led weight loss consultation at our Oxford clinic. In-person assessment, lifestyle and nutrition advice, and a personalised plan with Dr Inga Taganova.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/weight-loss-consultation-oxford",
 
   // TODO: Confirm price - currently showing as TBC at booking
@@ -79,7 +79,7 @@ export const weightLossConsultationData: TreatmentLandingPageData = {
 
   pricing: [
     {
-      name: "Weight Management Consultation",
+      name: "Weight Loss Consultation",
       price: "Price confirmed at booking", // TODO: Confirm actual price
     },
     {
@@ -91,8 +91,8 @@ export const weightLossConsultationData: TreatmentLandingPageData = {
   consultation: undefined,
 
   procedureSchema: {
-    name: "Weight Management Consultation",
+    name: "Weight Loss Consultation",
     description:
-      "Doctor-led weight management consultation providing in-person assessment, personalised nutrition and lifestyle guidance, and ongoing support for adults seeking evidence-based weight management advice.",
+      "Doctor-led weight loss consultation providing in-person assessment, personalised nutrition and lifestyle guidance, and ongoing support for adults seeking evidence-based advice.",
   },
 };
