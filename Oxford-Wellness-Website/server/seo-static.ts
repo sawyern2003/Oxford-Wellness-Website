@@ -62,6 +62,7 @@ const ALL_SITEMAP_PAGES = [
   { path: "/treatments/lumecca-ipl-oxford", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },
   { path: "/treatments/filler-dissolving-oxford", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },
   { path: "/treatments/jaw-slimming-teeth-grinding-oxford", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },
+  { path: "/treatments/weight-loss-consultation-oxford", priority: "0.9", changefreq: "monthly", lastmod: "2026-11-17" },
   { path: "/blog", priority: "0.9", changefreq: "weekly", lastmod: "2026-11-16" },
   { path: "/blog/menopause-skin-changes", priority: "0.7", changefreq: "monthly", lastmod: "2024-08-10" },
   { path: "/blog/profhilo-vs-dermal-fillers", priority: "0.7", changefreq: "monthly", lastmod: "2024-08-10" },
