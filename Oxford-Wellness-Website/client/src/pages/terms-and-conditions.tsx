@@ -36,7 +36,7 @@ export default function TermsAndConditions() {
           <section>
             <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">3. Consultations</h2>
             <p>Consultation fees are published on the Prices &amp; Booking page and are not redeemable against treatment. An Aesthetic &amp; Skin Consultation is £75. A Menopause &amp; Women's Health Consultation is £195 initially and £95 for follow-up. An Intimate Health Consultation is £150. A general medical follow-up is £75.</p>
-            <p className="mt-3">Consultations are provided in good faith to assess your suitability for treatment. Dr. Taganova reserves the right to decline to perform any treatment that she considers clinically inappropriate or unsuitable for the individual patient, in accordance with her professional and ethical obligations as a GMC-registered physician.</p>
+            <p className="mt-3">Consultations are provided in good faith to assess your suitability for treatment. Dr Inga Taganova reserves the right to decline to perform any treatment that she considers clinically inappropriate or unsuitable for the individual patient, in accordance with her professional and ethical obligations as a GMC-registered physician.</p>
           </section>
 
           <section>
@@ -69,7 +69,7 @@ export default function TermsAndConditions() {
             <ul className="list-disc pl-6 mt-3 space-y-1.5">
               <li>Providing accurate and complete medical history and information at consultation</li>
               <li>Disclosing all current medications, supplements, and known allergies</li>
-              <li>Following all pre- and post-treatment instructions provided by Dr. Taganova</li>
+              <li>Following all pre- and post-treatment instructions provided by Dr Inga Taganova</li>
               <li>Notifying us of any changes in your health status before treatment</li>
               <li>Attending follow-up appointments as recommended</li>
               <li>Contacting us promptly if you experience any adverse effects following treatment</li>

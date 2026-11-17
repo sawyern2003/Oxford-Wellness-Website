@@ -101,7 +101,7 @@ const data: TreatmentPageData = {
     },
     {
       q: "Do I need blood tests?",
-      a: "Not always at the first visit. Dr. Taganova will advise if investigations are useful based on your history and goals.",
+      a: "Not always at the first visit. Dr Inga Taganova will advise if investigations are useful based on your history and goals.",
     },
   ],
   procedureSchema: {

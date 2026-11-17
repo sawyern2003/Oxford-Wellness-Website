@@ -48,14 +48,14 @@ const data: TreatmentPageData = {
       heading: "How Perimenopause Is Diagnosed",
       paragraphs: [
         "Diagnosing perimenopause is primarily clinical - based on your age, symptom pattern, and menstrual history. Blood tests for hormone levels are rarely helpful during perimenopause because hormones fluctuate so dramatically from day to day.",
-        "The British Menopause Society guidelines support this approach: in women over 45 with typical perimenopausal symptoms, diagnosis can be made without blood tests. Dr. Taganova uses a thorough clinical assessment to understand your experience and create an appropriate management plan.",
+        "The British Menopause Society guidelines support this approach: in women over 45 with typical perimenopausal symptoms, diagnosis can be made without blood tests. Dr Inga Taganova uses a thorough clinical assessment to understand your experience and create an appropriate management plan.",
         "In younger women (under 45) or when there's diagnostic uncertainty, blood tests may be arranged to rule out other causes or assess specific hormone levels, but they're not routinely required.",
       ],
     },
     {
       heading: "Treatment and Management Options",
       paragraphs: [
-        "Dr. Taganova provides comprehensive perimenopause assessments and creates personalized management plans. While we do not currently prescribe HRT at this clinic, Dr. Taganova can assess your suitability for hormone therapy and provide specialist referrals if HRT is clinically indicated.",
+        "Dr Inga Taganova provides comprehensive perimenopause assessments and creates personalized management plans. While we do not currently prescribe HRT at this clinic, Dr Inga Taganova can assess your suitability for hormone therapy and provide specialist referrals if HRT is clinically indicated.",
         "Our approach focuses on holistic symptom management, lifestyle interventions, and complementary treatments that address the full spectrum of perimenopausal changes.",
       ],
       bullets: [
@@ -85,7 +85,7 @@ const data: TreatmentPageData = {
       heading: "When to Seek Help",
       paragraphs: [
         "You don't need to wait until symptoms become unbearable. If you're in your 40s and noticing changes in your periods, mood, sleep, or body, it's worth having a conversation with a specialist who understands perimenopause.",
-        "Early intervention can make a significant difference. Many women suffer unnecessarily for years before realizing that their symptoms are hormonal and manageable. Dr. Taganova provides thorough assessments and evidence-based guidance to help you navigate this transition with confidence.",
+        "Early intervention can make a significant difference. Many women suffer unnecessarily for years before realizing that their symptoms are hormonal and manageable. Dr Inga Taganova provides thorough assessments and evidence-based guidance to help you navigate this transition with confidence.",
       ],
     },
   ],
@@ -113,15 +113,15 @@ const data: TreatmentPageData = {
     },
     {
       q: "Can perimenopause cause anxiety and depression?",
-      a: "Yes. Hormonal fluctuations during perimenopause can significantly affect mood, causing anxiety, low mood, irritability, and even panic attacks. These symptoms are real and hormonal in origin - not a sign of weakness or mental illness. Dr. Taganova understands the connection between hormones and mood and can help address both.",
+      a: "Yes. Hormonal fluctuations during perimenopause can significantly affect mood, causing anxiety, low mood, irritability, and even panic attacks. These symptoms are real and hormonal in origin - not a sign of weakness or mental illness. Dr Inga Taganova understands the connection between hormones and mood and can help address both.",
     },
     {
       q: "Will treatment help with perimenopausal weight gain?",
-      a: "Weight gain during perimenopause is common and driven by hormonal changes, metabolism shifts, and changes in fat distribution. Dr. Taganova can provide guidance on lifestyle strategies and assess whether treatment options might help address the underlying hormonal factors contributing to weight changes.",
+      a: "Weight gain during perimenopause is common and driven by hormonal changes, metabolism shifts, and changes in fat distribution. Dr Inga Taganova can provide guidance on lifestyle strategies and assess whether treatment options might help address the underlying hormonal factors contributing to weight changes.",
     },
     {
       q: "Can you treat perimenopausal skin changes?",
-      a: "Absolutely. Dr. Taganova's dual expertise in women's health and aesthetic medicine means she can address perimenopausal skin changes with targeted treatments like Profhilo, Morpheus8, and skin boosters, which actively stimulate collagen production to restore skin quality affected by hormonal decline.",
+      a: "Absolutely. Dr Inga Taganova's dual expertise in women's health and aesthetic medicine means she can address perimenopausal skin changes with targeted treatments like Profhilo, Morpheus8, and skin boosters, which actively stimulate collagen production to restore skin quality affected by hormonal decline.",
     },
     {
       q: "How do I book a perimenopause consultation?",
@@ -138,7 +138,7 @@ const data: TreatmentPageData = {
     { label: "Intimate Health Treatment (Neauvia N Rose)", href: "/treatments/neauvia-n-rose-intimate-rejuvenation-oxford" },
     { label: "Profhilo Skin Treatment", href: "/treatments/profhilo-oxford" },
     { label: "Morpheus8 Skin Tightening", href: "/treatments/morpheus8-oxford" },
-    { label: "About Dr. Taganova", href: "/about" },
+    { label: "About Dr Inga Taganova", href: "/about" },
   ],
 };
 

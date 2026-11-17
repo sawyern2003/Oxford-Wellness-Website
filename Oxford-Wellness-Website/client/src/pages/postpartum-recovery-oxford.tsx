@@ -36,7 +36,7 @@ const data: TreatmentPageData = {
       ],
     },
     {
-      heading: "Why Dr. Taganova's Background Matters",
+      heading: "Why Dr Inga Taganova's Background Matters",
       paragraphs: [
         "Dr Taganova's background in obstetrics and gynaecology means she understands postpartum recovery at a level that most aesthetic practitioners simply cannot. She has spent years working with women's reproductive anatomy, pelvic floor function, and the physical effects of childbirth.",
         "Her approach is sensitive, evidence-based, and non-judgmental. She recognizes that postpartum intimate health concerns are not cosmetic issues to be dismissed - they're real physical changes that affect quality of life, relationships, and self-esteem.",
@@ -74,7 +74,7 @@ const data: TreatmentPageData = {
     {
       heading: "Comprehensive Assessment & Pelvic Floor Guidance",
       paragraphs: [
-        "During your consultation, Dr. Taganova will take a full history of your pregnancy, birth experience, and current symptoms. She'll assess your intimate health concerns and discuss all available treatment options, including pelvic floor physiotherapy referrals, lifestyle modifications, and medical interventions where appropriate.",
+        "During your consultation, Dr Inga Taganova will take a full history of your pregnancy, birth experience, and current symptoms. She'll assess your intimate health concerns and discuss all available treatment options, including pelvic floor physiotherapy referrals, lifestyle modifications, and medical interventions where appropriate.",
         "While intimate health treatments can improve tissue quality, pelvic floor physiotherapy is often the gold standard for addressing urinary incontinence and prolapse symptoms. Dr Taganova can provide specialist referrals to ensure you receive comprehensive care.",
       ],
     },
@@ -89,13 +89,13 @@ const data: TreatmentPageData = {
       heading: "Frequently Asked Questions About Timing",
       paragraphs: [
         "Many women wonder when it's safe to consider intimate health treatment after childbirth. Generally, we recommend waiting at least 6–12 months after delivery to allow natural healing and hormonal stabilization. If you're breastfeeding, treatment is often most effective after you've stopped, as breastfeeding naturally suppresses oestrogen and affects tissue quality.",
-        "Dr. Taganova will assess your individual circumstances during your consultation and advise on the optimal timing for treatment.",
+        "Dr Inga Taganova will assess your individual circumstances during your consultation and advise on the optimal timing for treatment.",
       ],
     },
     {
       heading: "What to Expect at Your Consultation",
       paragraphs: [
-        "Your post-birth recovery consultation is conducted in a private, discreet setting at our Oxford clinic. Dr. Taganova will discuss your birth experience, symptoms, and treatment goals in detail. A physical examination may be performed if appropriate and consented to.",
+        "Your post-birth recovery consultation is conducted in a private, discreet setting at our Oxford clinic. Dr Inga Taganova will discuss your birth experience, symptoms, and treatment goals in detail. A physical examination may be performed if appropriate and consented to.",
         "You will leave with a clear understanding of your options and a personalized treatment plan that may include intimate health treatments, pelvic floor physiotherapy referrals, lifestyle recommendations, or other interventions tailored to your needs.",
       ],
     },
@@ -118,7 +118,7 @@ const data: TreatmentPageData = {
     {
       heading: "Beyond the Physical: Emotional Recovery",
       paragraphs: [
-        "Dr. Taganova understands that postpartum changes affect more than physical function - they affect self-esteem, relationships, and emotional wellbeing. Many women feel embarrassed or isolated by these concerns, but they're common, treatable, and nothing to be ashamed of.",
+        "Dr Inga Taganova understands that postpartum changes affect more than physical function - they affect self-esteem, relationships, and emotional wellbeing. Many women feel embarrassed or isolated by these concerns, but they're common, treatable, and nothing to be ashamed of.",
         "Addressing intimate health concerns is an important part of postpartum recovery and self-care. You deserve to feel comfortable, confident, and pain-free in your body.",
       ],
     },
@@ -131,7 +131,7 @@ const data: TreatmentPageData = {
   faqs: [
     {
       q: "How long after giving birth should I wait before considering intimate health treatment?",
-      a: "We generally recommend waiting at least 6–12 months after delivery to allow natural healing and hormonal stabilization. If you're breastfeeding, treatment is often most effective after you've stopped, as breastfeeding suppresses oestrogen and affects tissue quality. Dr. Taganova will assess your individual circumstances during consultation.",
+      a: "We generally recommend waiting at least 6–12 months after delivery to allow natural healing and hormonal stabilization. If you're breastfeeding, treatment is often most effective after you've stopped, as breastfeeding suppresses oestrogen and affects tissue quality. Dr Inga Taganova will assess your individual circumstances during consultation.",
     },
     {
       q: "Can intimate health treatment help with stress incontinence?",
@@ -159,15 +159,15 @@ const data: TreatmentPageData = {
     },
     {
       q: "Can you help with scarring from episiotomy or tearing?",
-      a: "Dr. Taganova can assess episiotomy or tear scarring during consultation and discuss treatment options. While Neauvia N Rose primarily addresses tissue quality and hydration, she can advise on other interventions for scar tissue if appropriate.",
+      a: "Dr Inga Taganova can assess episiotomy or tear scarring during consultation and discuss treatment options. While Neauvia N Rose primarily addresses tissue quality and hydration, she can advise on other interventions for scar tissue if appropriate.",
     },
     {
       q: "Do I need a referral from my GP or midwife?",
-      a: "No referral is needed. You can book directly via Glowday or contact us by phone (07739 309380) or email (info@theoxfordwellnessdoctor.com). Dr. Taganova will conduct a thorough assessment during your consultation.",
+      a: "No referral is needed. You can book directly via Glowday or contact us by phone (07739 309380) or email (info@theoxfordwellnessdoctor.com). Dr Inga Taganova will conduct a thorough assessment during your consultation.",
     },
     {
       q: "Is the consultation confidential and discreet?",
-      a: "Absolutely. All consultations are completely confidential and conducted in a private, professional environment. Dr. Taganova's approach is sensitive, respectful, and non-judgmental. You won't feel embarrassed or dismissed - you'll feel heard and helped.",
+      a: "Absolutely. All consultations are completely confidential and conducted in a private, professional environment. Dr Inga Taganova's approach is sensitive, respectful, and non-judgmental. You won't feel embarrassed or dismissed - you'll feel heard and helped.",
     },
   ],
   procedureSchema: {
@@ -179,7 +179,7 @@ const data: TreatmentPageData = {
     { label: "Sexual Wellness & Intimate Health", href: "/sexual-wellness-oxford" },
     { label: "Neauvia N Rose Treatment", href: "/treatments/neauvia-n-rose-intimate-rejuvenation-oxford" },
     { label: "Menopause Clinic", href: "/menopause-clinic-oxford" },
-    { label: "About Dr. Taganova", href: "/about" },
+    { label: "About Dr Inga Taganova", href: "/about" },
   ],
 };
 

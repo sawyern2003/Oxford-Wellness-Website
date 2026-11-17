@@ -12,12 +12,12 @@ const nextSteps = [
   {
     step: "02",
     title: "We'll Be in Touch",
-    desc: "Dr. Taganova or her team will respond to your enquiry within 24 hours during clinic days (Friday and Saturday).",
+    desc: "Dr Inga Taganova or her team will respond to your enquiry within 24 hours during clinic days (Friday and Saturday).",
   },
   {
     step: "03",
     title: "Your Consultation",
-    desc: "At your initial consultation, Dr. Taganova will discuss your goals, medical history, and the most appropriate treatment options for you - with no obligation.",
+    desc: "At your initial consultation, Dr Inga Taganova will discuss your goals, medical history, and the most appropriate treatment options for you - with no obligation.",
   },
 ];
 
