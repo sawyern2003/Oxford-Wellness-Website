@@ -14,7 +14,7 @@ export const lumeccaIPLData: TreatmentLandingPageData = {
   trust: { heading: "Why choose The Oxford Wellness Doctor", items: ["Doctor-led clinic: Dr Inga Taganova, GMC-registered GP", "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ", "More than two decades of medical experience", "Lumecca - up to 3x more powerful than standard IPL", "Safe, effective treatments"] },
   faqs: [
     { q: "Does IPL hurt?", a: "You'll feel a warm snapping sensation during treatment. Most patients tolerate this well. Cooling gel helps with comfort." },
-    { q: "How many treatments do I need?", a: "1–2 sessions for most concerns. More resistant pigmentation may need 3 sessions. Dr Taganova will advise during consultation." },
+    { q: "How many treatments do I need?", a: "1–2 sessions for most concerns. More resistant pigmentation may need 3 sessions. Dr Inga Taganova will advise during consultation." },
     { q: "Can IPL be combined with other treatments?", a: "Yes. IPL pairs well with Profhilo, skin boosters, and chemical peels for comprehensive skin rejuvenation." },
     { q: "Who is not suitable for IPL?", a: "IPL is not suitable for very dark skin tones or tanned skin. A skin assessment is required before treatment." }
   ],

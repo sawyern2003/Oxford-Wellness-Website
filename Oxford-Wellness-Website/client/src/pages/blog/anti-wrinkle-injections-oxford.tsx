@@ -124,14 +124,14 @@ const data: BlogPostData = {
     {
       heading: "Anti-Wrinkle Treatment at The Oxford Wellness Doctor",
       paragraphs: [
-        "Dr Inga Taganova offers anti-wrinkle treatment at Belsyre Court in Oxford. Consultations are thorough and unhurried. Dr Taganova assesses your facial anatomy, discusses your goals, and explains what is realistic.",
+        "Dr Inga Taganova offers anti-wrinkle treatment at Belsyre Court in Oxford. Consultations are thorough and unhurried. Dr Inga Taganova assesses your facial anatomy, discusses your goals, and explains what is realistic.",
         "Treatment is conservative and individualised. The aim is always natural improvement—softening lines whilst preserving your expressions. Follow-up is included to ensure you are happy with the result.",
       ],
     },
   ],
   cta: {
     heading: "Book an Anti-Wrinkle Consultation",
-    text: "Discuss anti-wrinkle treatment with Dr Taganova in Oxford. Honest advice, natural results.",
+    text: "Discuss anti-wrinkle treatment with Dr Inga Taganova in Oxford. Honest advice, natural results.",
     buttonLabel: "Book a Consultation",
     buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
     buttonExternal: true,

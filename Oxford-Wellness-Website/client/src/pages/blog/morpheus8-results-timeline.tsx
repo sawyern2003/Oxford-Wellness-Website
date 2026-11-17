@@ -92,23 +92,23 @@ const data: BlogPostData = {
       bullets: [
         "Use SPF 30+ every day throughout the recovery and results phase - UV damage is the primary enemy of collagen",
         "Stay well-hydrated and maintain a nutritious diet that supports collagen synthesis (vitamin C, protein, zinc)",
-        "Follow Dr. Taganova's post-treatment skincare protocol precisely",
+        "Follow Dr Inga Taganova's post-treatment skincare protocol precisely",
         "Avoid smoking - it significantly impairs collagen production and wound healing",
         "Consider combining Morpheus8 with Profhilo 6–8 weeks after treatment for skin quality enhancement",
-        "Attend your follow-up appointment so Dr. Taganova can assess your results and plan any further treatment",
+        "Attend your follow-up appointment so Dr Inga Taganova can assess your results and plan any further treatment",
       ],
     },
     {
       heading: "When to Have Your Next Treatment",
       paragraphs: [
         "Morpheus8 is typically recommended as a course of 3 treatments, spaced 4–6 weeks apart. This allows the skin to recover between sessions while building progressive collagen stimulation.",
-        "After completing a course of 3, most patients maintain results with a single annual maintenance treatment. Dr. Taganova will advise based on your individual results and skin condition.",
+        "After completing a course of 3, most patients maintain results with a single annual maintenance treatment. Dr Inga Taganova will advise based on your individual results and skin condition.",
       ],
     },
   ],
   cta: {
     heading: "Book a Morpheus8 Consultation in Oxford",
-    text: "Discuss your skin concerns with Dr. Taganova and find out whether Morpheus8 is the right treatment for your goals.",
+    text: "Discuss your skin concerns with Dr Inga Taganova and find out whether Morpheus8 is the right treatment for your goals.",
     buttonLabel: "Book a Morpheus8 Consultation",
     buttonExternal: true,
     buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",

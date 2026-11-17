@@ -42,7 +42,7 @@ export const votivaFormaVData: TreatmentLandingPageData = {
     items: [
       "Doctor-led clinic: Dr Inga Taganova is a GMC-registered GP with a background in obstetrics and gynaecology",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ",
-      "Over 20 years of experience in women's health",
+      "more than two decades of medical experience",
       "FDA-cleared, non-invasive treatment",
       "Discreet, professional, and empathetic approach"
     ]
@@ -55,7 +55,7 @@ export const votivaFormaVData: TreatmentLandingPageData = {
     },
     {
       q: "How many sessions do I need?",
-      a: "A course of 3 treatments spaced 4 weeks apart is recommended. Some patients achieve their goals with 2 sessions; others benefit from a fourth. Dr Taganova will tailor the plan to your response."
+      a: "A course of 3 treatments spaced 4 weeks apart is recommended. Some patients achieve their goals with 2 sessions; others benefit from a fourth. Dr Inga Taganova will tailor the plan to your response."
     },
     {
       q: "Is Votiva safe?",
@@ -63,7 +63,7 @@ export const votivaFormaVData: TreatmentLandingPageData = {
     },
     {
       q: "Will this help with urinary symptoms?",
-      a: "Votiva FormaV may help with mild symptoms by stimulating tissue remodelling. More severe concerns are typically better addressed with pelvic floor physiotherapy. Dr Taganova will assess your symptoms and advise on the most appropriate treatment or combination."
+      a: "Votiva FormaV may help with mild symptoms by stimulating tissue remodelling. More severe concerns are typically better addressed with pelvic floor physiotherapy. Dr Inga Taganova will assess your symptoms and advise on the most appropriate treatment or combination."
     },
     {
       q: "Is it suitable after C-section?",
@@ -75,7 +75,7 @@ export const votivaFormaVData: TreatmentLandingPageData = {
     },
     {
       q: "Can Votiva be combined with other treatments?",
-      a: "Yes. Votiva can be combined with injectable treatments like Neauvia N Rose for comprehensive intimate wellness care. Dr Taganova will assess your needs and recommend the most appropriate treatment or combination."
+      a: "Yes. Votiva can be combined with injectable treatments like Neauvia N Rose for comprehensive intimate wellness care. Dr Inga Taganova will assess your needs and recommend the most appropriate treatment or combination."
     }
   ],
   

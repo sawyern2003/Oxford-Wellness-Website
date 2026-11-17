@@ -58,7 +58,7 @@ const data: BlogPostData = {
       paragraphs: [
         "Tears, episiotomy, and vaginal stretching during childbirth can cause persistent discomfort. Some women experience pain during intercourse (dyspareunia), sensitivity, or tightness at the site of old scarring. Others describe a feeling of looseness or reduced sensation.",
         "Scar tissue can be massaged and stretched to improve comfort and flexibility. Pelvic floor physiotherapy helps. If discomfort persists, further assessment by a women's health physiotherapist or GP is warranted.",
-        "Treatments such as hyaluronic acid vaginal fillers or radiofrequency therapy can improve vaginal tone, hydration, and sensitivity. These are not cosmetic vanity treatments—they address real functional concerns that affect quality of life and intimacy.",
+        "Treatments such as hyaluronic acid or radiofrequency therapy may help with symptoms such as dryness or discomfort. These are not cosmetic vanity treatments—they address real concerns that affect quality of life and intimacy.",
       ],
     },
     {
@@ -121,7 +121,7 @@ const data: BlogPostData = {
     {
       heading: "Postpartum Support at The Oxford Wellness Doctor",
       paragraphs: [
-        "Dr Inga Taganova is a GP with a background in obstetrics and gynaecology and over twenty years of experience in women's health. Postpartum consultations are unhurried, compassionate, and evidence-based.",
+        "Dr Inga Taganova is a GP with a background in obstetrics and gynaecology and more than two decades of medical experience. Postpartum consultations are unhurried, compassionate, and evidence-based.",
         "The focus is on understanding your specific concerns, assessing what has changed, and providing realistic options. Pelvic floor rehabilitation is always the foundation. Aesthetic or medical interventions are considered only when appropriate, safe, and desired.",
         "Consultations take place at Belsyre Court in Oxford. You do not need a GP referral.",
       ],
@@ -129,7 +129,7 @@ const data: BlogPostData = {
   ],
   cta: {
     heading: "Book a Postpartum Recovery Consultation",
-    text: "Discuss your postpartum concerns with Dr Taganova in a compassionate, unhurried consultation.",
+    text: "Discuss your postpartum concerns with Dr Inga Taganova in a compassionate, unhurried consultation.",
     buttonLabel: "Book a Consultation",
     buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
     buttonExternal: true,

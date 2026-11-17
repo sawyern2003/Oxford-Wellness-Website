@@ -26,7 +26,7 @@ export const neauviaNRoseData: TreatmentLandingPageData = {
     heading: "How it works",
     intro: "Neauvia N Rose is medical-grade hyaluronic acid specifically designed for intimate health. It restores hydration, comfort, and tissue integrity.",
     steps: [
-      "Private consultation and medical history review with Dr Taganova.",
+      "Private consultation and medical history review with Dr Inga Taganova.",
       "Topical anaesthetic applied. Treatment takes 30–45 minutes with mild, brief discomfort.",
       "Minimal downtime – abstain from sexual activity for a few days. Hydration improves within days."
     ],
@@ -43,7 +43,7 @@ export const neauviaNRoseData: TreatmentLandingPageData = {
     items: [
       "Doctor-led clinic: Dr Inga Taganova is a GMC-registered GP with a background in obstetrics and gynaecology",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ",
-      "Over 20 years of experience in women's health",
+      "more than two decades of medical experience",
       "Discreet, empathetic, and professional approach to intimate health concerns",
       "Calm, private consultation rooms"
     ]
@@ -72,7 +72,7 @@ export const neauviaNRoseData: TreatmentLandingPageData = {
     },
     {
       q: "Can this be combined with HRT?",
-      a: "Yes – many patients benefit from both HRT for systemic symptoms and local intimate health treatments. Dr Taganova, a GP with a background in obstetrics and gynaecology, can advise on the most appropriate combined approach."
+      a: "Yes – many patients benefit from both HRT for systemic symptoms and local intimate health treatments. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology, can advise on the most appropriate combined approach."
     }
   ],
   

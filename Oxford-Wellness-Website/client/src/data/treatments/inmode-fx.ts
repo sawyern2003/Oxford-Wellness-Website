@@ -14,7 +14,7 @@ export const inmodeFXData: TreatmentLandingPageData = {
   trust: { heading: "Why choose The Oxford Wellness Doctor", items: ["Doctor-led clinic: Dr Inga Taganova, GMC-registered GP", "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ", "More than two decades of medical experience", "InMode FX - clinically proven body technology", "Non-invasive, no surgery, no downtime"] },
   faqs: [
     { q: "Does InMode FX hurt?", a: "No. The treatment is comfortable with a warm massage sensation. No pain, no needles, no anaesthetic." },
-    { q: "How many sessions do I need?", a: "6 weekly sessions recommended for optimal results. Dr Taganova will advise during consultation." },
+    { q: "How many sessions do I need?", a: "6 weekly sessions recommended for optimal results. Dr Inga Taganova will advise during consultation." },
     { q: "When will I see results?", a: "Some improvement after 2–3 sessions. Best results develop over 2–3 months as collagen remodels and fat cells reduce." },
     { q: "Which areas can be treated?", a: "Abdomen, flanks, thighs, buttocks, arms, and knees. Any area with stubborn fat or loose skin." }
   ],

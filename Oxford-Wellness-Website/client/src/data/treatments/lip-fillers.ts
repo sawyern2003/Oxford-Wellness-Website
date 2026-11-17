@@ -23,7 +23,7 @@ export const lipFillersData: TreatmentLandingPageData = {
   
   howItWorks: {
     heading: "How it works",
-    intro: "Lip filler uses hyaluronic acid to add volume, shape, and hydration to the lips. Dr Taganova uses a conservative approach focused on natural-looking results.",
+    intro: "Lip filler uses hyaluronic acid to add volume, shape, and hydration to the lips. Dr Inga Taganova uses a conservative approach focused on natural-looking results.",
     steps: [
       "Consultation to discuss your goals and assess lip anatomy.",
       "Topical anaesthetic cream applied. Treatment takes 20–30 minutes using a fine needle or cannula.",
@@ -51,7 +51,7 @@ export const lipFillersData: TreatmentLandingPageData = {
   faqs: [
     {
       q: "Will my lips look natural?",
-      a: "Yes. Dr Taganova's philosophy is that the best results are subtle and balanced. She uses a conservative approach focused on enhancing your natural lip shape rather than creating an overfilled appearance."
+      a: "Yes. Dr Inga Taganova's philosophy is that the best results are subtle and balanced. She uses a conservative approach focused on enhancing your natural lip shape rather than creating an overfilled appearance."
     },
     {
       q: "Does lip filler hurt?",
@@ -67,7 +67,7 @@ export const lipFillersData: TreatmentLandingPageData = {
     },
     {
       q: "What if I don't like the result?",
-      a: "Hyaluronic acid filler is fully reversible. If you're unhappy with the result, it can be dissolved. However, Dr Taganova's conservative approach minimises this risk by building volume gradually."
+      a: "Hyaluronic acid filler is fully reversible. If you're unhappy with the result, it can be dissolved. However, Dr Inga Taganova's conservative approach minimises this risk by building volume gradually."
     }
   ],
   

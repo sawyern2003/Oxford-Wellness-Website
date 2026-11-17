@@ -34,7 +34,7 @@ const data: BlogPostData = {
     },
     {
       heading: "Common Skin Changes During Menopause",
-      paragraphs: ["The skin changes that Dr. Taganova most commonly addresses in her menopausal patients include:"],
+      paragraphs: ["The skin changes that Dr Inga Taganova most commonly addresses in her menopausal patients include:"],
       bullets: [
         "Increased dryness and flaking, even in women who previously had oily or combination skin",
         "Fine lines and wrinkles appearing or deepening more rapidly",
@@ -60,7 +60,7 @@ const data: BlogPostData = {
         "HRT addresses the hormonal root cause of menopausal skin changes. Aesthetic treatments can target the structural and textural changes that have already occurred - producing results that neither approach achieves alone.",
       ],
       bullets: [
-        "Profhilo: An ultra-pure hyaluronic acid treatment that stimulates collagen and elastin production from within the dermis. Particularly well-suited to the skin quality changes of menopause - improving texture, radiance, and elasticity rather than adding volume. Dr. Taganova frequently recommends Profhilo as the first aesthetic treatment for menopausal patients.",
+        "Profhilo: An ultra-pure hyaluronic acid treatment that stimulates collagen and elastin production from within the dermis. Particularly well-suited to the skin quality changes of menopause - improving texture, radiance, and elasticity rather than adding volume. Dr Inga Taganova frequently recommends Profhilo as the first aesthetic treatment for menopausal patients.",
         "Anti-wrinkle injections: Address the dynamic lines (forehead, frown, crow's feet) that become more pronounced as skin loses elasticity. Can be combined with HRT for maximum effect.",
         "Dermal fillers: Restore the volume lost from the mid-face and temples - structural changes that HRT cannot reverse.",
         "Morpheus8: Radiofrequency microneedling that stimulates deep dermal remodelling and collagen production - particularly effective for skin laxity along the jawline and neck.",
@@ -72,13 +72,13 @@ const data: BlogPostData = {
       paragraphs: [
         "Of all the aesthetic treatments available, Profhilo is perhaps the most naturally suited to the skin of menopausal women. Unlike traditional fillers that add volume in specific areas, Profhilo spreads through the tissue and stimulates the fibroblasts - the same cells that oestrogen was previously activating - to produce new collagen and elastin.",
         "The results are a visible improvement in skin quality: better hydration, improved texture, increased 'springiness', and a more youthful radiance. Because it stimulates your own biology rather than replacing it, the results look and feel completely natural.",
-        "A standard Profhilo course consists of two treatments one month apart, with results lasting 6–9 months. Many of Dr. Taganova's menopausal patients combine Profhilo with HRT and find the combination produces results significantly better than either treatment alone.",
+        "A standard Profhilo course consists of two treatments one month apart, with results lasting 6–9 months. Many of Dr Inga Taganova's menopausal patients combine Profhilo with HRT and find the combination produces results significantly better than either treatment alone.",
       ],
     },
     {
       heading: "Skincare Routines for Menopausal Skin",
       paragraphs: [
-        "Alongside medical and aesthetic treatments, a well-chosen skincare routine makes a meaningful difference to menopausal skin. Dr. Taganova's general guidance for her menopausal patients includes:",
+        "Alongside medical and aesthetic treatments, a well-chosen skincare routine makes a meaningful difference to menopausal skin. Dr Inga Taganova's general guidance for her menopausal patients includes:",
       ],
       bullets: [
         "Gentle, fragrance-free cleansers that don't strip the skin's natural barrier",
@@ -90,16 +90,16 @@ const data: BlogPostData = {
       ],
     },
     {
-      heading: "Dr. Taganova's Integrated Approach",
+      heading: "Dr Inga Taganova's Integrated Approach",
       paragraphs: [
         "The Oxford Wellness Doctor is one of the very few clinics in Oxfordshire where you can receive HRT and aesthetic skin treatments from the same doctor, in the same appointment, guided by a GP who understands the deep connection between your hormones and your skin.",
-        "Rather than treating your fine lines and your menopause symptoms as entirely separate problems to be managed by different practitioners, Dr. Taganova takes an integrated view: addressing the hormonal root causes while also treating the structural and textural changes that have already occurred. For many of her patients, this combined approach produces transformative results.",
+        "Rather than treating your fine lines and your menopause symptoms as entirely separate problems to be managed by different practitioners, Dr Inga Taganova takes an integrated view: addressing the hormonal root causes while also treating the structural and textural changes that have already occurred. For many of her patients, this combined approach produces transformative results.",
       ],
     },
   ],
   cta: {
     heading: "Book a Menopause & Skin Consultation",
-    text: "Discuss your skin concerns and menopausal symptoms with Dr. Taganova in a single, comprehensive appointment.",
+    text: "Discuss your skin concerns and menopausal symptoms with Dr Inga Taganova in a single, comprehensive appointment.",
     buttonLabel: "Book a Consultation",
     buttonExternal: true,
     buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",

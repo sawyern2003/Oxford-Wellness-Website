@@ -59,7 +59,7 @@ export const dermalFillersData: TreatmentLandingPageData = {
     },
     {
       q: "What's the difference between dermal fillers and anti-wrinkle injections?",
-      a: "Anti-wrinkle injections relax muscles to smooth dynamic lines. Dermal fillers add volume and structure using hyaluronic acid. The two treatments work differently and are often complementary – Dr Taganova will advise on the best approach for your concerns."
+      a: "Anti-wrinkle injections relax muscles to smooth dynamic lines. Dermal fillers add volume and structure using hyaluronic acid. The two treatments work differently and are often complementary – Dr Inga Taganova will advise on the best approach for your concerns."
     },
     {
       q: "Can dermal fillers be dissolved?",
@@ -67,7 +67,7 @@ export const dermalFillersData: TreatmentLandingPageData = {
     },
     {
       q: "Will I look unnatural?",
-      a: "Dr Taganova's philosophy is that the best results are the ones that whisper, not shout. She uses a conservative, patient-led approach focused on restoring balance and natural proportion rather than adding excessive volume."
+      a: "Dr Inga Taganova's philosophy is that the best results are the ones that whisper, not shout. She uses a conservative, patient-led approach focused on restoring balance and natural proportion rather than adding excessive volume."
     }
   ],
   

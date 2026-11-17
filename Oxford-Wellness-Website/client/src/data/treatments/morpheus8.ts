@@ -54,11 +54,11 @@ export const morpheus8Data: TreatmentLandingPageData = {
     },
     {
       q: "Does Morpheus8 hurt?",
-      a: "A numbing cream is applied 45–60 minutes before treatment. Most patients describe a warm prickling sensation during the procedure, which is well-tolerated. Dr Taganova adjusts intensity based on your comfort."
+      a: "A numbing cream is applied 45–60 minutes before treatment. Most patients describe a warm prickling sensation during the procedure, which is well-tolerated. Dr Inga Taganova adjusts intensity based on your comfort."
     },
     {
       q: "How many Morpheus8 treatments do I need?",
-      a: "A course of three sessions, spaced 4–6 weeks apart, is recommended for optimal results. Some patients achieve their goals in one or two sessions – Dr Taganova will advise during your consultation."
+      a: "A course of three sessions, spaced 4–6 weeks apart, is recommended for optimal results. Some patients achieve their goals in one or two sessions – Dr Inga Taganova will advise during your consultation."
     },
     {
       q: "How long do Morpheus8 results last?",
@@ -66,7 +66,7 @@ export const morpheus8Data: TreatmentLandingPageData = {
     },
     {
       q: "Can Morpheus8 be combined with other treatments?",
-      a: "Yes – Morpheus8 pairs very well with skin booster injections, Profhilo, and anti-wrinkle injections. Dr Taganova will create a combined treatment plan for the best possible outcomes."
+      a: "Yes – Morpheus8 pairs very well with skin booster injections, Profhilo, and anti-wrinkle injections. Dr Inga Taganova will create a combined treatment plan for the best possible outcomes."
     }
   ],
   

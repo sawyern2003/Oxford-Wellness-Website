@@ -3,7 +3,7 @@ import { TreatmentLandingPageData } from "@/components/treatments/TreatmentLandi
 export const skinBoostersData: TreatmentLandingPageData = {
   slug: "skin-boosters-oxford",
   h1: "Skin Boosters in Oxford",
-  title: "Skin Boosters Oxford | Hyaluronic Acid & Polynucleotides | Dr Taganova",
+  title: "Skin Boosters Oxford | Hyaluronic Acid & Polynucleotides | Dr Inga Taganova",
   metaDescription: "Skin boosters in Oxford. Injectable hyaluronic acid and polynucleotides for hydration and skin quality. GMC doctor. Book consultation.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/skin-boosters-oxford",
   

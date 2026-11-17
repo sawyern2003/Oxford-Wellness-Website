@@ -52,29 +52,29 @@ const data: BlogPostData = {
     {
       heading: "The Consultation: The Most Important Part",
       paragraphs: [
-        "A thorough consultation is the single most important factor in getting a good lip filler result. Dr. Taganova's lip consultations assess the resting and animated proportions of the lips, the relationship between the lips and the surrounding facial structure, whether the concern is volume, definition, symmetry, or hydration, the appropriate product choice (different fillers have different textures and flow properties), and the volume of product needed - which for many first-time patients is as little as 0.5ml.",
-        "This is also where Dr. Taganova will be honest with you if she thinks the result you want is unlikely to look natural on your anatomy, or if a different treatment might better achieve your goals.",
+        "A thorough consultation is the single most important factor in getting a good lip filler result. Dr Inga Taganova's lip consultations assess the resting and animated proportions of the lips, the relationship between the lips and the surrounding facial structure, whether the concern is volume, definition, symmetry, or hydration, the appropriate product choice (different fillers have different textures and flow properties), and the volume of product needed - which for many first-time patients is as little as 0.5ml.",
+        "This is also where Dr Inga Taganova will be honest with you if she thinks the result you want is unlikely to look natural on your anatomy, or if a different treatment might better achieve your goals.",
       ],
     },
     {
       heading: "A Gradual Enhancement Approach",
       paragraphs: [
-        "For first-time lip filler patients, Dr. Taganova strongly advocates a conservative, graduated approach: start with less than you think you want, assess the result after 2 weeks when the swelling has fully settled, and decide whether you would like more at your next appointment.",
-        "This approach protects you from the over-filled outcome that most patients dread. It also gives both you and Dr. Taganova the information you need to refine the treatment plan for future sessions. Most first-time patients are treated with 0.5–1ml of filler - sometimes less.",
+        "For first-time lip filler patients, Dr Inga Taganova strongly advocates a conservative, graduated approach: start with less than you think you want, assess the result after 2 weeks when the swelling has fully settled, and decide whether you would like more at your next appointment.",
+        "This approach protects you from the over-filled outcome that most patients dread. It also gives both you and Dr Inga Taganova the information you need to refine the treatment plan for future sessions. Most first-time patients are treated with 0.5–1ml of filler - sometimes less.",
       ],
     },
     {
       heading: "Choosing the Right Product",
       paragraphs: [
         "Not all lip fillers are the same. The consistency, longevity, and behaviour of the product must be matched to the specific treatment goal and the individual patient's lip anatomy. Soft, fluid products are best for adding hydration and a subtle natural fullness; firmer products provide better definition and structure.",
-        "Dr. Taganova uses only MHRA-approved, CE-marked hyaluronic acid products from established manufacturers. She selects the specific product for each patient based on the treatment goals discussed in consultation - not based on what is available or discounted.",
+        "Dr Inga Taganova uses only MHRA-approved, CE-marked hyaluronic acid products from established manufacturers. She selects the specific product for each patient based on the treatment goals discussed in consultation - not based on what is available or discounted.",
       ],
     },
     {
       heading: "Maintenance: How Often Do Lip Fillers Need Topping Up?",
       paragraphs: [
         "Lip fillers are metabolised more quickly than fillers in other areas of the face - partly because the lips are highly mobile and metabolically active. Most patients find their lip filler lasts 6–9 months, with some patients maintaining results for up to 12 months.",
-        "With repeat treatments over time, some patients find they need less filler to maintain their result, as repeated treatment can improve the lip's own structure. Dr. Taganova will advise the optimal treatment interval based on your individual response.",
+        "With repeat treatments over time, some patients find they need less filler to maintain their result, as repeated treatment can improve the lip's own structure. Dr Inga Taganova will advise the optimal treatment interval based on your individual response.",
       ],
     },
   ],

@@ -63,8 +63,7 @@ const data: TreatmentPageData = {
         "The treatment is performed in-clinic and takes 30–45 minutes. It's minimally invasive, with immediate results and continued improvement over the following weeks as the hyaluronic acid stimulates natural collagen production.",
       ],
       bullets: [
-        "Restores vaginal tightness and tone",
-        "Improves natural lubrication and hydration",
+        "May help with symptoms such as dryness or discomfort",
         "Addresses discomfort and painful intercourse",
         "Enhances sensation during intimacy",
         "Improves tissue thickness and elasticity",

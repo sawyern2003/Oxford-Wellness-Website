@@ -15,7 +15,7 @@ export const fillerDissolvingData: TreatmentLandingPageData = {
   faqs: [
     { q: "Does filler dissolving hurt?", a: "You'll feel brief pinches during injection. Most patients tolerate this well. Ice packs help with comfort." },
     { q: "How quickly does filler dissolve?", a: "Filler begins breaking down within minutes. Full breakdown visible within 24–48 hours." },
-    { q: "Will all filler be removed?", a: "Hyaluronidase only dissolves hyaluronic acid-based fillers. Other filler types cannot be dissolved this way. Dr Taganova will advise during consultation." },
+    { q: "Will all filler be removed?", a: "Hyaluronidase only dissolves hyaluronic acid-based fillers. Other filler types cannot be dissolved this way. Dr Inga Taganova will advise during consultation." },
     { q: "Can I have new filler after dissolving?", a: "Yes. Once swelling settles (usually 2 weeks), new filler can be placed." }
   ],
   pricing: [{ name: "Filler dissolving (hyaluronidase)", price: "From £150" }],

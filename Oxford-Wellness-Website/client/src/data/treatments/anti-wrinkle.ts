@@ -50,7 +50,7 @@ export const antiWrinkleData: TreatmentLandingPageData = {
   },
   
   faqs: [
-    { q: "Will I look frozen?", a: "No. Dr Taganova uses a conservative approach to preserve natural facial movement while smoothing lines. The goal is to look refreshed, not frozen." },
+    { q: "Will I look frozen?", a: "No. Dr Inga Taganova uses a conservative approach to preserve natural facial movement while smoothing lines. The goal is to look refreshed, not frozen." },
     { q: "Does it hurt?", a: "Most patients report only mild discomfort. The needles are very fine, and the procedure is quick." },
     { q: "How long do results last?", a: "Results typically last 3–4 months. With regular treatments, some patients find results last slightly longer." },
     { q: "When will I see results?", a: "You'll notice improvement within 3–5 days, with full results visible at 2 weeks." },

@@ -27,19 +27,19 @@ export const menopauseClinicData: TreatmentLandingPageData = {
   
   howItWorks: {
     heading: "Your menopause consultation",
-    intro: "Dr Taganova provides comprehensive menopause assessments and creates personalised treatment plans based on your symptoms, medical history, and preferences.",
+    intro: "Dr Inga Taganova provides comprehensive menopause assessments and creates personalised treatment plans based on your symptoms, medical history, and preferences.",
     steps: [
       "Full symptom assessment and medical history review.",
       "Discussion of treatment options, including lifestyle interventions and specialist referrals.",
       "Personalised treatment plan tailored to your needs.",
       "Follow-up appointments (£95) to monitor progress and adjust your plan."
     ],
-    sessionsInfo: "Dr Taganova is a GP with a background in obstetrics and gynaecology and over 20 years of experience in women's health."
+    sessionsInfo: "Dr Inga Taganova is a GP with a background in obstetrics and gynaecology and more than two decades of medical experience."
   },
   
   downtime: {
     heading: "Treatment approach",
-    description: "While we do not currently prescribe HRT at this clinic, Dr Taganova can assess your suitability for hormone therapy and provide specialist referrals if HRT is clinically indicated. Our clinic focuses on holistic symptom management, lifestyle interventions, and complementary treatments that address the full spectrum of menopausal changes."
+    description: "While we do not currently prescribe HRT at this clinic, Dr Inga Taganova can assess your suitability for hormone therapy and provide specialist referrals if HRT is clinically indicated. Our clinic focuses on holistic symptom management, lifestyle interventions, and complementary treatments that address the full spectrum of menopausal changes."
   },
   
   trust: {
@@ -47,7 +47,7 @@ export const menopauseClinicData: TreatmentLandingPageData = {
     items: [
       "Doctor-led clinic: Dr Inga Taganova is a GMC-registered GP with a background in obstetrics and gynaecology",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ",
-      "Over 20 years of experience in women's health",
+      "more than two decades of medical experience",
       "Comprehensive approach to menopause care",
       "Calm, private consultation rooms"
     ]
@@ -56,11 +56,11 @@ export const menopauseClinicData: TreatmentLandingPageData = {
   faqs: [
     {
       q: "What happens at a menopause consultation?",
-      a: "Dr Taganova will take a full history of your symptoms, assess the underlying causes, and discuss all available treatment options. She will create a personalised treatment plan based on your symptoms, medical history, and preferences."
+      a: "Dr Inga Taganova will take a full history of your symptoms, assess the underlying causes, and discuss all available treatment options. She will create a personalised treatment plan based on your symptoms, medical history, and preferences."
     },
     {
-      q: "Can Dr Taganova prescribe HRT?",
-      a: "While we do not currently prescribe HRT at this clinic, Dr Taganova can assess your suitability for hormone therapy and provide specialist referrals if HRT is clinically indicated."
+      q: "Can Dr Inga Taganova prescribe HRT?",
+      a: "While we do not currently prescribe HRT at this clinic, Dr Inga Taganova can assess your suitability for hormone therapy and provide specialist referrals if HRT is clinically indicated."
     },
     {
       q: "How long is a menopause consultation?",
@@ -72,7 +72,7 @@ export const menopauseClinicData: TreatmentLandingPageData = {
     },
     {
       q: "Can menopause affect my skin?",
-      a: "Yes. Oestrogen plays a critical role in maintaining skin collagen, hydration, and elasticity. In the years surrounding menopause, skin can lose up to 30% of its collagen. Dr Taganova can recommend targeted aesthetic treatments that address the physical manifestations of oestrogen decline."
+      a: "Yes. Oestrogen plays a critical role in maintaining skin collagen, hydration, and elasticity. In the years surrounding menopause, skin can lose up to 30% of its collagen. Dr Inga Taganova can recommend targeted aesthetic treatments that address the physical manifestations of oestrogen decline."
     }
   ],
   
