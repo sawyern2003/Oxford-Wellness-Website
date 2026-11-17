@@ -1,10 +1,10 @@
 import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatments/TreatmentPageTemplate";
 
 const data: TreatmentPageData = {
-  title: "Neauvia N Rose Intimate Area Rejuvenation Oxford | Dr. Inga Taganova",
-  metaDescription: "Intimate area rejuvenation in Oxford with Neauvia N Rose - a regenerative injectable treatment for dryness, discomfort, and loss of volume. GMC-registered doctor. Book now.",
+  title: "Neauvia N Rose Intimate Health Treatment Oxford | Dr Inga Taganova",
+  metaDescription: "Intimate health treatment in Oxford with Neauvia N Rose - a hyaluronic acid treatment for dryness, discomfort, and intimate wellness. GMC-registered doctor. Book now.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/neauvia-n-rose-intimate-rejuvenation-oxford",
-  h1: "Neauvia N Rose Intimate Area Rejuvenation in Oxford",
+  h1: "Neauvia N Rose Intimate Health Treatment in Oxford",
   intro: "Medical-grade hyaluronic acid restores hydration, comfort, and tissue integrity in the intimate area – especially for menopause-related changes.",
   sections: [
     {
@@ -40,7 +40,7 @@ const data: TreatmentPageData = {
   ],
   procedureSchema: {
     name: "Neauvia N Rose Intimate Area Rejuvenation Oxford",
-    description: "Injectable hyaluronic acid treatment to restore hydration, comfort, and tissue integrity to the intimate area. Delivered by GMC-registered Dr. Inga Taganova, formally trained gynaecologist, in Oxford.",
+    description: "Injectable hyaluronic acid treatment to restore hydration, comfort, and tissue integrity to the intimate area. Delivered by GMC-registered Dr Inga Taganova, GP with a background in obstetrics and gynaecology, in Oxford.",
     bodyLocation: "Intimate/vulvovaginal area",
   },
   relatedLinks: [

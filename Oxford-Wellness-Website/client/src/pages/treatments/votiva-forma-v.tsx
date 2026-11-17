@@ -1,25 +1,25 @@
 import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatments/TreatmentPageTemplate";
 
 const data: TreatmentPageData = {
-  title: "Votiva Forma V Vaginal Tightening Oxford | Dr. Inga Taganova",
-  metaDescription: "Votiva Forma V vaginal tightening in Oxford - non-surgical radiofrequency treatment for vaginal laxity, dryness, and intimate wellness. Formally trained gynaecologist Dr. Taganova. Book consultation.",
+  title: "Votiva Forma V Intimate Wellness Oxford | Dr Inga Taganova",
+  metaDescription: "Votiva Forma V intimate wellness treatment in Oxford - non-surgical radiofrequency treatment for dryness, discomfort, and intimate health. GP Dr Taganova. Book consultation.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/votiva-forma-v-oxford",
-  h1: "Votiva Forma V Vaginal Tightening in Oxford",
-  intro: "Non-surgical radiofrequency treatment for vaginal laxity, dryness, and intimate wellness. Stimulates collagen remodeling with no downtime.",
+  h1: "Votiva Forma V Intimate Wellness in Oxford",
+  intro: "Non-surgical radiofrequency treatment for intimate wellness concerns such as dryness, discomfort, and symptoms related to hormonal changes. Stimulates collagen production with no downtime.",
   sections: [
     {
       heading: "What Is Votiva Forma V?",
       paragraphs: [
-        "An FDA-cleared radiofrequency device for internal vaginal rejuvenation. Controlled thermal energy heats vaginal tissue, stimulating collagen production. Non-invasive, no anaesthesia, typically described as a gentle warmth. Sessions take 20–30 minutes.",
+        "An FDA-cleared radiofrequency device for intimate wellness. Controlled thermal energy gently heats intimate tissue, stimulating collagen production. Non-invasive, no anaesthesia, typically described as a gentle warmth. Sessions take 20–30 minutes.",
       ],
     },
     {
-      heading: "What Does Votiva Forma V Treat?",
+      heading: "What Does Votiva Forma V Help With?",
       bullets: [
-        "Vaginal laxity (often post-childbirth)",
         "Dryness and reduced lubrication",
-        "Reduced sensation during intimacy",
-        "Mild stress urinary incontinence",
+        "Discomfort during intimacy",
+        "Reduced sensation",
+        "Symptoms of mild urinary frequency",
         "Menopause-related tissue thinning",
       ],
     },
@@ -85,9 +85,9 @@ const data: TreatmentPageData = {
     },
   ],
   procedureSchema: {
-    name: "Votiva Forma V Vaginal Tightening Oxford",
-    description: "Non-surgical radiofrequency vaginal rejuvenation treatment to improve vaginal tone, tightness, hydration and intimate wellness. Delivered by formally trained gynaecologist Dr. Inga Taganova in Oxford.",
-    bodyLocation: "Vaginal/intimate area",
+    name: "Votiva Forma V Intimate Wellness Treatment Oxford",
+    description: "Non-surgical radiofrequency intimate wellness treatment to help with dryness, discomfort, and symptoms related to hormonal changes. Delivered by GP Dr Inga Taganova with a background in obstetrics and gynaecology in Oxford.",
+    bodyLocation: "Intimate area",
   },
   relatedLinks: [
     { label: "Women's Health Hub", href: "/womens-health-oxford" },
