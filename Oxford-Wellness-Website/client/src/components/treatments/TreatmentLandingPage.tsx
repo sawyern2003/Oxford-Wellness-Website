@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { Link } from "wouter";
 import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import FadeIn from "@/components/animations/FadeIn";
 import { useSEO } from "@/hooks/useSEO";
 import { cn } from "@/lib/utils";
 
@@ -233,13 +232,13 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
                   </Button>
                 </a>
               </div>
-            </FadeIn>
+            </div>
           </div>
         </section>
 
         <section className="py-14 md:py-16 bg-muted/50">
           <div className="container mx-auto px-6 max-w-4xl">
-            <FadeIn direction="up">
+            <div>
               <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-6">
                 {data.whoIsFor.heading}
               </h2>
@@ -251,13 +250,13 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
                   </li>
                 ))}
               </ul>
-            </FadeIn>
+            </div>
           </div>
         </section>
 
         <section className="py-14 md:py-16 bg-white">
           <div className="container mx-auto px-6 max-w-4xl">
-            <FadeIn direction="up">
+            <div>
               <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-6">
                 {data.howItWorks.heading}
               </h2>
@@ -281,13 +280,13 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
                   {data.howItWorks.sessionsInfo}
                 </p>
               )}
-            </FadeIn>
+            </div>
           </div>
         </section>
 
         <section className="py-14 md:py-16 bg-muted/50">
           <div className="container mx-auto px-6 max-w-4xl">
-            <FadeIn direction="up">
+            <div>
               <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-4">
                 {data.downtime.heading}
               </h2>
@@ -312,13 +311,13 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
                   </li>
                 ))}
               </ul>
-            </FadeIn>
+            </div>
           </div>
         </section>
 
         <section className="py-12 bg-muted/50">
           <div className="container mx-auto px-6 max-w-4xl">
-            <FadeIn direction="up">
+            <div>
               <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-6">
                 Pricing
               </h2>
@@ -343,13 +342,13 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
               <p className="text-sm text-foreground/70 mt-4">
                 Fees are confirmed before treatment. A consultation is booked separately.
               </p>
-            </FadeIn>
+            </div>
           </div>
         </section>
 
         <section className="py-14 md:py-16 bg-white">
           <div className="container mx-auto px-6 max-w-4xl">
-            <FadeIn direction="up">
+            <div>
               <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-6">
                 Frequently asked questions
               </h2>
@@ -365,13 +364,13 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
                   </div>
                 ))}
               </div>
-            </FadeIn>
+            </div>
           </div>
         </section>
 
         <section className="py-14 md:py-16 bg-muted/50">
           <div className="container mx-auto px-6 max-w-4xl text-center">
-            <FadeIn direction="up">
+            <div>
               <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-4">
                 Ready to book your consultation?
               </h2>
@@ -414,7 +413,7 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
                   </Button>
                 </a>
               </div>
-            </FadeIn>
+            </div>
           </div>
         </section>
       </div>
