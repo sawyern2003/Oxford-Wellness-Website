@@ -1,7 +1,7 @@
 import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatments/TreatmentPageTemplate";
 
 const data: TreatmentPageData = {
-  title: "Perimenopause Support Oxford | Women's Health GP | Dr Taganova",
+  title: "Perimenopause Support Oxford | Women's Health GP | Dr Inga Taganova",
   metaDescription: "Perimenopause support in Oxford from Dr Inga Taganova, GP with a background in obstetrics and gynaecology. Expert care for women in their 40s experiencing early menopause symptoms. Book consultation.",
   canonical: "https://www.theoxfordwellnessdoctor.com/perimenopause-oxford",
   h1: "Perimenopause Support in Oxford - When Symptoms Start in Your 40s",

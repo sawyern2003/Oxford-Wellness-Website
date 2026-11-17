@@ -25,7 +25,7 @@ export const womensHealthData: TreatmentLandingPageData = {
   
   howItWorks: {
     heading: "Your women's health consultation",
-    intro: "Dr Inga Taganova is a GP with a background in obstetrics and gynaecology who provides expert women's health consultations at her clinic in central Oxford. With over 20 years of experience, she understands that menopause and women's health transitions affect far more than hormones – they shape how you feel in your body, your skin, your mood, and your daily life.",
+    intro: "Dr Inga Taganova is a GP with a background in obstetrics and gynaecology who provides expert women's health consultations at her clinic in central Oxford. With more than two decades of medical experience, she understands that menopause and women's health transitions affect far more than hormones – they shape how you feel in your body, your skin, your mood, and your daily life.",
     steps: [
       "Full symptom assessment and medical history review. Dr Inga Taganova takes time to understand your experience.",
       "Discussion of all available treatment options, including lifestyle interventions, non-hormonal approaches, and specialist referrals if HRT is clinically appropriate.",

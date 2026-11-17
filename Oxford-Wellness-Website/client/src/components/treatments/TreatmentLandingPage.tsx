@@ -1,9 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useSEO } from "@/hooks/useSEO";
 import { cn } from "@/lib/utils";
+import { readAnalyticsConsent } from "@/lib/analytics";
 
 export interface TreatmentLandingPageData {
   slug: string;
@@ -65,6 +66,16 @@ interface StickyBarProps {
 }
 
 function StickyBar({ slug, bookingUrl }: StickyBarProps) {
+  const [cookieConsentGiven, setCookieConsentGiven] = useState(() => readAnalyticsConsent() !== null);
+
+  useEffect(() => {
+    const checkConsent = () => setCookieConsentGiven(readAnalyticsConsent() !== null);
+    const interval = setInterval(checkConsent, 500);
+    return () => clearInterval(interval);
+  }, []);
+
+  if (!cookieConsentGiven) return null;
+
   return (
     <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-border shadow-lg z-[45] safe-area-pb">
       <div className="px-4 py-3 flex items-center gap-2">

@@ -1,11 +1,11 @@
 import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatments/TreatmentPageTemplate";
 
 const data: TreatmentPageData = {
-  title: "Post-Birth Recovery & Intimate Health Oxford | Dr Taganova",
+  title: "Post-Birth Recovery & Intimate Health Oxford | Dr Inga Taganova",
   metaDescription: "Post-birth recovery and intimate health in Oxford. Expert care for postpartum concerns, pelvic floor support, and physical recovery after childbirth from Dr Inga Taganova, GP with a background in obstetrics and gynaecology.",
   canonical: "https://www.theoxfordwellnessdoctor.com/postpartum-recovery-oxford",
   h1: "Post-Birth Recovery & Intimate Health in Oxford",
-  intro: "Childbirth changes your body in profound ways - and many of these changes affect intimate health, pelvic floor function, and physical confidence. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology and over 20 years of experience in women's health, provides expert post-birth recovery care, including intimate health treatments and support for the physical effects of pregnancy and childbirth that are rarely discussed openly but deeply felt.",
+  intro: "Childbirth changes your body in profound ways - and many of these changes affect intimate health, pelvic floor function, and physical confidence. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology and more than two decades of medical experience, provides expert post-birth recovery care, including intimate health treatments and support for the physical effects of pregnancy and childbirth that are rarely discussed openly but deeply felt.",
   sections: [
     {
       heading: "Common Postpartum Changes",
@@ -75,7 +75,7 @@ const data: TreatmentPageData = {
       heading: "Comprehensive Assessment & Pelvic Floor Guidance",
       paragraphs: [
         "During your consultation, Dr Inga Taganova will take a full history of your pregnancy, birth experience, and current symptoms. She'll assess your intimate health concerns and discuss all available treatment options, including pelvic floor physiotherapy referrals, lifestyle modifications, and medical interventions where appropriate.",
-        "While intimate health treatments can improve tissue quality, pelvic floor physiotherapy is often the gold standard for addressing urinary incontinence and prolapse symptoms. Dr Taganova can provide specialist referrals to ensure you receive comprehensive care.",
+        "While intimate health treatments can improve tissue quality, pelvic floor physiotherapy is often the gold standard for addressing urinary incontinence and prolapse symptoms. Dr Inga Taganova can provide specialist referrals to ensure you receive comprehensive care.",
       ],
     },
     {
@@ -135,7 +135,7 @@ const data: TreatmentPageData = {
     },
     {
       q: "Can intimate health treatment help with stress incontinence?",
-      a: "Intimate health treatments primarily address tissue quality, hydration, and elasticity. While some women notice improvement in mild urinary symptoms, stress incontinence is typically best treated with pelvic floor physiotherapy. Dr Taganova can assess your symptoms and provide appropriate referrals for comprehensive care.",
+      a: "Intimate health treatments primarily address tissue quality, hydration, and elasticity. While some women notice improvement in mild urinary symptoms, stress incontinence is typically best treated with pelvic floor physiotherapy. Dr Inga Taganova can assess your symptoms and provide appropriate referrals for comprehensive care.",
     },
     {
       q: "Will intimate health treatment affect future pregnancies?",
