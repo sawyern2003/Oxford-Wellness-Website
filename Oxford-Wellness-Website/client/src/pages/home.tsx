@@ -10,6 +10,7 @@ import ParallaxImage from "@/components/animations/ParallaxImage";
 import { useSEO } from "@/hooks/useSEO";
 import { useJsonLdSchema, createMedicalClinicSchema } from "@/hooks/useJsonLdSchema";
 import { programmes } from "@/data/programmes";
+import { featuredTreatments } from "@/data/treatmentsNav";
 import PatientJourney from "@/components/home/PatientJourney";
 import SupplierLogos from "@/components/home/SupplierLogos";
 
@@ -102,28 +103,47 @@ export default function Home() {
           </FadeIn>
 
           <div className="grid md:grid-cols-3 gap-5 md:gap-6">
-            {serviceAreas.map((area, i) => (
-              <FadeIn key={area.href} delay={i * 0.07}>
-                <Link
-                  href={area.href}
-                  className="hover-card group block h-full bg-white rounded-3xl overflow-hidden"
-                >
-                  <ParallaxImage src={area.image} alt="" className="aspect-[4/3]" />
-                  <div className="p-7 md:p-8">
-                    <h3 className="font-sans font-semibold text-xl text-primary mb-3 tracking-tight group-hover:text-secondary transition-colors">
-                      {area.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                      {area.body}
-                    </p>
-                    <span className="text-sm font-medium text-primary inline-flex items-center gap-1">
-                      Learn more
-                      <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                    </span>
+            {serviceAreas.map((area, i) => {
+              const treatmentLinks = i === 0 ? featuredTreatments.womensHealth : i === 1 ? featuredTreatments.skin : featuredTreatments.body;
+              return (
+                <FadeIn key={area.href} delay={i * 0.07}>
+                  <div className="bg-white rounded-3xl overflow-hidden h-full flex flex-col">
+                    <Link
+                      href={area.href}
+                      className="hover-card group block"
+                    >
+                      <ParallaxImage src={area.image} alt="" className="aspect-[4/3]" />
+                      <div className="p-7 md:p-8 pb-4">
+                        <h3 className="font-sans font-semibold text-xl text-primary mb-3 tracking-tight group-hover:text-secondary transition-colors">
+                          {area.title}
+                        </h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+                          {area.body}
+                        </p>
+                        <span className="text-sm font-medium text-primary inline-flex items-center gap-1">
+                          Learn more
+                          <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                        </span>
+                      </div>
+                    </Link>
+                    <div className="px-7 md:px-8 pb-7 md:pb-8 border-t border-border/50 pt-4 mt-auto">
+                      <ul className="space-y-2">
+                        {treatmentLinks.map((treatment) => (
+                          <li key={treatment.href}>
+                            <Link
+                              href={treatment.href}
+                              className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              {treatment.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                </Link>
-              </FadeIn>
-            ))}
+                </FadeIn>
+              );
+            })}
           </div>
         </div>
       </RevealSection>

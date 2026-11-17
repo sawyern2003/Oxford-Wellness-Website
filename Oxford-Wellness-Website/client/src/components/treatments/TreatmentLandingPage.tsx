@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useSEO } from "@/hooks/useSEO";
 import { cn } from "@/lib/utils";
 import { readAnalyticsConsent } from "@/lib/analytics";
+import RelatedTreatments from "./RelatedTreatments";
 
 export interface TreatmentLandingPageData {
   slug: string;
@@ -428,6 +429,8 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
           </div>
         </section>
       </div>
+
+      <RelatedTreatments currentSlug={data.slug} />
 
       <StickyBar slug={data.slug} bookingUrl={bookingUrl} />
     </>

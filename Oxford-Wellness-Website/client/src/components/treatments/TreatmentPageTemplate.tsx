@@ -20,6 +20,7 @@ import FadeIn from "@/components/animations/FadeIn";
 import { useSEO } from "@/hooks/useSEO";
 import { getTreatmentGlance, type AtAGlanceItem, type AtAGlanceIcon } from "@/data/treatmentGlance";
 import { itemsForPath, publicPrice } from "@/data/catalogue";
+import RelatedTreatments from "./RelatedTreatments";
 
 export interface PricingItem {
   name: string;
@@ -425,6 +426,8 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
           </div>
         </section>
       )}
+
+      <RelatedTreatments currentSlug={detailPath.replace(/^\//, "").replace(/\//g, "-")} />
 
     </div>
   );

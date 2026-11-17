@@ -88,7 +88,7 @@ export const weightLossConsultationData: TreatmentLandingPageData = {
     },
   ],
 
-  consultation: undefined,
+  consultation: null,
 
   procedureSchema: {
     name: "Weight Loss Consultation",
