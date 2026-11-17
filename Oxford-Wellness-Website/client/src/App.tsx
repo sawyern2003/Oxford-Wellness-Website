@@ -52,7 +52,6 @@ import DermalFillers from "@/pages/treatments/dermal-fillers";
 import LipFillers from "@/pages/treatments/lip-fillers";
 import Profhilo from "@/pages/treatments/profhilo";
 import Morpheus8 from "@/pages/treatments/morpheus8";
-import MedicalWeightLoss from "@/pages/treatments/medical-weight-loss";
 import ExcessiveSweating from "@/pages/treatments/excessive-sweating";
 import ChemicalPeels from "@/pages/treatments/chemical-peels";
 import SkinBoosters from "@/pages/treatments/skin-boosters";
@@ -106,7 +105,6 @@ function Router() {
       <Route path="/treatments/lip-fillers-oxford" component={LipFillers} />
       <Route path="/treatments/profhilo-oxford" component={Profhilo} />
       <Route path="/treatments/morpheus8-oxford" component={Morpheus8} />
-      <Route path="/treatments/medical-weight-loss-oxford" component={MedicalWeightLoss} />
       <Route path="/treatments/excessive-sweating-treatment-oxford" component={ExcessiveSweating} />
       <Route path="/treatments/chemical-peels-oxford" component={ChemicalPeels} />
       <Route path="/treatments/skin-boosters-oxford" component={SkinBoosters} />

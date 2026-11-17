@@ -49,7 +49,6 @@ const ALL_SITEMAP_PAGES = [
   { path: "/treatments/lip-fillers-oxford", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },
   { path: "/treatments/profhilo-oxford", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },
   { path: "/treatments/morpheus8-oxford", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },
-  { path: "/treatments/medical-weight-loss-oxford", priority: "0.3", changefreq: "monthly", lastmod: "2024-10-15" },
   { path: "/treatments/excessive-sweating-treatment-oxford", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },
   { path: "/treatments/chemical-peels-oxford", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },
   { path: "/treatments/skin-boosters-oxford", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },

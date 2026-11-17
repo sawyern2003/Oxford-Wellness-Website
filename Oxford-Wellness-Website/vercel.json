@@ -23,7 +23,7 @@
     { "src": "/about-us", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/about" } },
     { "src": "/dimpled-chin-treatment", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/anti-wrinkle-injections-oxford" } },
     { "src": "/body", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/forma-plus-body-contouring-oxford" } },
-    { "src": "/blog/wegovy-vs-mounjaro-comparison", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/medical-weight-loss-oxford" } },
+    { "src": "/blog/wegovy-vs-mounjaro-comparison", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/womens-health-oxford" } },
     { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "/spa.html", "status": 404 }
   ],
