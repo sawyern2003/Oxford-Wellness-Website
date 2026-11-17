@@ -155,18 +155,12 @@ export const treatmentTypes: TreatmentType[] = [
     ],
   },
   {
-    id: "weight",
-    title: "Weight & Body",
-    intro: "Medical weight management and body treatments, planned around your health rather than a set package.",
+    id: "body",
+    title: "Body Treatments",
+    intro: "Radiofrequency and energy-based body treatments for skin firming and texture improvement.",
     image: weightBody,
     imageAlt: "Watercolour of an olive branch",
     items: [
-      {
-        name: "Medical weight management consultation",
-        description:
-          "Assessment of weight-related concerns and discussion of medically appropriate options.",
-        href: "/treatments/medical-weight-loss-oxford",
-      },
       {
         name: "Forma Plus",
         description: "Radiofrequency body treatment used to firm skin on areas such as the abdomen and arms.",
@@ -230,9 +224,8 @@ export const treatmentMenuColumns: MenuGroup[][] = [
       ],
     },
     {
-      title: "Weight & body",
+      title: "Body treatments",
       items: [
-        { name: "Medical weight management", href: "/treatments/medical-weight-loss-oxford" },
         { name: "Forma Plus", href: "/treatments/forma-plus-body-contouring-oxford" },
         { name: "InMode FX", href: "/treatments/inmode-fx-skin-tightening-oxford" },
       ],
