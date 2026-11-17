@@ -2,10 +2,10 @@ import BlogPostTemplate, { BlogPostData } from "@/components/blog/BlogPostTempla
 import menopauseSkinImg from "@/assets/blog/menopause-skin-changes-oestrogen.png";
 
 const data: BlogPostData = {
-  title: "How Menopause Affects Your Skin: What Your GP Won't Tell You",
+  title: "How Menopause Changes Your Skin, and What Helps",
   metaDescription: "Menopause skin changes explained by Dr Inga Taganova. Treatments that actually work for aging skin during menopause - from a GP in Oxford.",
   canonical: "https://www.theoxfordwellnessdoctor.com/blog/menopause-skin-changes",
-  h1: "How Menopause Affects Your Skin: What Your GP Won't Tell You",
+  h1: "How Menopause Changes Your Skin, and What Helps",
   category: "Menopause & Women's Health",
   readTime: "6 min",
   datePublished: "2024-09-22",

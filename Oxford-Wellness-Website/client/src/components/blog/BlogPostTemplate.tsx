@@ -239,14 +239,14 @@ export default function BlogPostTemplate({ data }: { data: BlogPostData }) {
     <div className="min-h-screen bg-white">
       {/* Hero Image - Full Width */}
       {data.heroImage && (
-        <div className="relative w-full h-[50vh] md:h-[60vh] lg:h-[70vh] overflow-hidden">
+        <div className="relative w-full h-[400px] md:h-[480px] lg:h-[520px] max-h-[520px] overflow-hidden">
           <img
             src={data.heroImage.src}
             alt={data.heroImage.alt}
             className="w-full h-full object-cover"
             loading="eager"
             width="1600"
-            height="900"
+            height="1000"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 to-transparent"></div>
           {data.heroImage.credit && (

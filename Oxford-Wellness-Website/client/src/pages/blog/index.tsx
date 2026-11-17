@@ -19,7 +19,7 @@ export interface BlogPost {
 const posts: BlogPost[] = [
   {
     slug: "menopause-skin-changes",
-    title: "How Menopause Affects Your Skin: What Your GP Won't Tell You",
+    title: "How Menopause Changes Your Skin, and What Helps",
     excerpt: "Menopause causes measurable changes to skin collagen, hydration and elasticity. Dr Inga explains what works.",
     category: "Menopause",
     readTime: "6 min",
@@ -30,7 +30,7 @@ const posts: BlogPost[] = [
   {
     slug: "perimenopause-symptoms-oxford",
     title: "Perimenopause Symptoms: What to Expect and When to Seek Help",
-    excerpt: "Recognising perimenopause symptoms in your 40s. Dr Taganova explains the signs, timeline and when assessment helps.",
+    excerpt: "Recognising perimenopause symptoms in your 40s. Dr Inga explains the signs, timeline and when assessment helps.",
     category: "Menopause",
     readTime: "8 min",
     href: "/blog/perimenopause-symptoms-oxford",
@@ -93,7 +93,7 @@ const posts: BlogPost[] = [
   {
     slug: "profhilo-vs-dermal-fillers",
     title: "Profhilo vs. Dermal Fillers: Which Treatment Is Right for You?",
-    excerpt: "Two very different treatments that are often confused. Dr. Taganova explains the difference and when to choose each.",
+    excerpt: "Two very different treatments that are often confused. Dr Inga explains the difference and when to choose each.",
     category: "Skin",
     readTime: "6 min",
     href: "/blog/profhilo-vs-dermal-fillers",
@@ -209,7 +209,7 @@ export default function BlogIndex() {
   useBreadcrumbSchema([{ name: "Blog", path: "/blog" }]);
   useSEO({
     title: "Medical Aesthetics Blog Oxford | Expert Advice | The Oxford Wellness Doctor",
-    description: "Expert advice on medical aesthetics, women's health and menopause from Dr. Inga Taganova. Evidence-based information from Oxford's trusted GMC doctor.",
+    description: "Expert advice on medical aesthetics, women's health and menopause from Dr Inga Taganova. Evidence-based information from Oxford's trusted GMC doctor.",
     canonical: "https://www.theoxfordwellnessdoctor.com/blog",
   });
 
@@ -362,7 +362,7 @@ export default function BlogIndex() {
                 href="/about"
                 className="inline-flex items-center gap-1.5 text-sm text-secondary hover:text-primary transition-colors font-medium"
               >
-                Learn more about Dr Taganova <ArrowRight size={14} />
+                Learn more about Dr Inga <ArrowRight size={14} />
               </Link>
             </div>
           </div>
