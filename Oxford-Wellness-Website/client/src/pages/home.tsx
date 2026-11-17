@@ -32,7 +32,7 @@ const serviceAreas = [
     title: "Weight & Body",
     href: "/treatments#weight",
     image: programmeImage("weight-body-confidence"),
-    body: "Medical weight management and body contouring, planned around your health.",
+    body: "Non-surgical body contouring and skin tightening treatments for improved body confidence.",
   },
 ];
 

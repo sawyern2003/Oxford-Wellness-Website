@@ -1,11 +1,11 @@
 import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatments/TreatmentPageTemplate";
 
 const data: TreatmentPageData = {
-  title: "Post-Birth Recovery & Vaginal Rejuvenation Oxford | Dr. Taganova",
-  metaDescription: "Post-birth recovery and vaginal rejuvenation in Oxford. Expert care for postpartum intimate health, pelvic floor concerns, and physical recovery after childbirth from Dr Inga Taganova, GP with a background in obstetrics and gynaecology.",
+  title: "Post-Birth Recovery & Intimate Health Oxford | Dr Taganova",
+  metaDescription: "Post-birth recovery and intimate health in Oxford. Expert care for postpartum concerns, pelvic floor support, and physical recovery after childbirth from Dr Inga Taganova, GP with a background in obstetrics and gynaecology.",
   canonical: "https://www.theoxfordwellnessdoctor.com/postpartum-recovery-oxford",
-  h1: "Post-Birth Recovery & Vaginal Rejuvenation in Oxford",
-  intro: "Childbirth changes your body in profound ways - and many of these changes affect intimate health, pelvic floor function, and physical confidence. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology and over 20 years of experience in women's health, provides expert post-birth recovery care, including vaginal rejuvenation, intimate health treatments, and support for the physical effects of pregnancy and childbirth that are rarely discussed openly but deeply felt.",
+  h1: "Post-Birth Recovery & Intimate Health in Oxford",
+  intro: "Childbirth changes your body in profound ways - and many of these changes affect intimate health, pelvic floor function, and physical confidence. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology and over 20 years of experience in women's health, provides expert post-birth recovery care, including intimate health treatments and support for the physical effects of pregnancy and childbirth that are rarely discussed openly but deeply felt.",
   sections: [
     {
       heading: "Common Postpartum Changes",
@@ -46,7 +46,7 @@ const data: TreatmentPageData = {
         "Over 20 years of experience in women's health",
         "Specialist understanding of pelvic anatomy and postpartum changes",
         "GMC-registered doctor with an unblemished record",
-        "Trained in intimate health treatments and vaginal rejuvenation",
+        "Trained in intimate health treatments",
         "Discreet, empathetic, and professional approach",
       ],
     },
@@ -57,9 +57,9 @@ const data: TreatmentPageData = {
       ],
     },
     {
-      heading: "Neauvia N Rose Vaginal Rejuvenation",
+      heading: "Neauvia N Rose Intimate Health Treatment",
       paragraphs: [
-        "Neauvia N Rose is a medical-grade hyaluronic acid treatment specifically designed for vaginal rejuvenation. It restores hydration, volume, and elasticity to vaginal tissue that has been affected by childbirth - addressing dryness, laxity, and loss of sensation.",
+        "Neauvia N Rose is a medical-grade hyaluronic acid treatment specifically designed for intimate health. It restores hydration, volume, and elasticity to intimate tissue that has been affected by childbirth - addressing dryness and discomfort.",
         "The treatment is performed in-clinic and takes 30–45 minutes. It's minimally invasive, with immediate results and continued improvement over the following weeks as the hyaluronic acid stimulates natural collagen production.",
       ],
       bullets: [
@@ -76,7 +76,7 @@ const data: TreatmentPageData = {
       heading: "Comprehensive Assessment & Pelvic Floor Guidance",
       paragraphs: [
         "During your consultation, Dr. Taganova will take a full history of your pregnancy, birth experience, and current symptoms. She'll assess your intimate health concerns and discuss all available treatment options, including pelvic floor physiotherapy referrals, lifestyle modifications, and medical interventions where appropriate.",
-        "While vaginal rejuvenation can improve tissue quality and sensation, pelvic floor physiotherapy is often the gold standard for addressing urinary incontinence and prolapse symptoms. Dr. Taganova can provide specialist referrals to ensure you receive comprehensive care.",
+        "While intimate health treatments can improve tissue quality, pelvic floor physiotherapy is often the gold standard for addressing urinary incontinence and prolapse symptoms. Dr Taganova can provide specialist referrals to ensure you receive comprehensive care.",
       ],
     },
     {
@@ -89,7 +89,7 @@ const data: TreatmentPageData = {
     {
       heading: "Frequently Asked Questions About Timing",
       paragraphs: [
-        "Many women wonder when it's safe to consider vaginal rejuvenation after childbirth. Generally, we recommend waiting at least 6–12 months after delivery to allow natural healing and hormonal stabilization. If you're breastfeeding, treatment is often most effective after you've stopped, as breastfeeding naturally suppresses oestrogen and affects tissue quality.",
+        "Many women wonder when it's safe to consider intimate health treatment after childbirth. Generally, we recommend waiting at least 6–12 months after delivery to allow natural healing and hormonal stabilization. If you're breastfeeding, treatment is often most effective after you've stopped, as breastfeeding naturally suppresses oestrogen and affects tissue quality.",
         "Dr. Taganova will assess your individual circumstances during your consultation and advise on the optimal timing for treatment.",
       ],
     },
@@ -97,7 +97,7 @@ const data: TreatmentPageData = {
       heading: "What to Expect at Your Consultation",
       paragraphs: [
         "Your post-birth recovery consultation is conducted in a private, discreet setting at our Oxford clinic. Dr. Taganova will discuss your birth experience, symptoms, and treatment goals in detail. A physical examination may be performed if appropriate and consented to.",
-        "You will leave with a clear understanding of your options and a personalized treatment plan that may include vaginal rejuvenation, pelvic floor physiotherapy referrals, lifestyle recommendations, or other interventions tailored to your needs.",
+        "You will leave with a clear understanding of your options and a personalized treatment plan that may include intimate health treatments, pelvic floor physiotherapy referrals, lifestyle recommendations, or other interventions tailored to your needs.",
       ],
     },
     {
@@ -126,29 +126,29 @@ const data: TreatmentPageData = {
   ],
   pricing: [
     { name: "Initial Post-Birth Recovery Consultation (45 min)", price: "Price on consultation" },
-    { name: "Neauvia N Rose Vaginal Rejuvenation", price: "Price on consultation" },
+    { name: "Neauvia N Rose Intimate Health Treatment", price: "Price on consultation" },
     { name: "Follow-up Consultation (30 min)", price: "Price on consultation" },
   ],
   faqs: [
     {
-      q: "How long after giving birth should I wait before considering vaginal rejuvenation?",
+      q: "How long after giving birth should I wait before considering intimate health treatment?",
       a: "We generally recommend waiting at least 6–12 months after delivery to allow natural healing and hormonal stabilization. If you're breastfeeding, treatment is often most effective after you've stopped, as breastfeeding suppresses oestrogen and affects tissue quality. Dr. Taganova will assess your individual circumstances during consultation.",
     },
     {
-      q: "Can vaginal rejuvenation help with stress incontinence?",
-      a: "Vaginal rejuvenation primarily addresses tissue quality, hydration, and elasticity. While some women notice improvement in mild urinary symptoms, stress incontinence is typically best treated with pelvic floor physiotherapy. Dr. Taganova can assess your symptoms and provide appropriate referrals for comprehensive care.",
+      q: "Can intimate health treatment help with stress incontinence?",
+      a: "Intimate health treatments primarily address tissue quality, hydration, and elasticity. While some women notice improvement in mild urinary symptoms, stress incontinence is typically best treated with pelvic floor physiotherapy. Dr Taganova can assess your symptoms and provide appropriate referrals for comprehensive care.",
     },
     {
-      q: "Will vaginal rejuvenation affect future pregnancies?",
-      a: "Neauvia N Rose is a temporary treatment (lasting 9–12 months) and does not permanently alter vaginal anatomy. It will not affect your ability to conceive or deliver vaginally in the future. However, subsequent pregnancies and deliveries may create new changes that require additional treatment.",
+      q: "Will intimate health treatment affect future pregnancies?",
+      a: "Neauvia N Rose is a temporary treatment (lasting 9–12 months) and does not permanently alter intimate anatomy. It will not affect your ability to conceive or deliver vaginally in the future. However, subsequent pregnancies and deliveries may create new changes that require additional treatment.",
     },
     {
       q: "Is the treatment painful?",
       a: "Most patients report minimal discomfort during the treatment. A topical numbing cream can be applied beforehand if needed. The procedure takes 30–45 minutes and involves small injections of hyaluronic acid into the vaginal tissue. Any mild tenderness typically resolves within 24–48 hours.",
     },
     {
-      q: "Can I have vaginal rejuvenation if I had a caesarean section?",
-      a: "Yes. While caesarean delivery avoids vaginal stretching, pregnancy itself affects pelvic floor tone and hormonal changes still impact vaginal tissue. Many women who've had caesarean births experience vaginal dryness, discomfort, or changes that can be addressed with rejuvenation treatment.",
+      q: "Can I have intimate health treatment if I had a caesarean section?",
+      a: "Yes. While caesarean delivery avoids vaginal stretching, pregnancy itself affects pelvic floor tone and hormonal changes still impact intimate tissue. Many women who've had caesarean births experience dryness, discomfort, or changes that can be addressed with intimate health treatment.",
     },
     {
       q: "Will my partner notice any changes?",
@@ -172,8 +172,8 @@ const data: TreatmentPageData = {
     },
   ],
   procedureSchema: {
-    name: "Post-Birth Recovery & Vaginal Rejuvenation Consultation",
-    description: "Expert post-birth recovery consultation with Dr Inga Taganova - GP with a background in obstetrics and gynaecology - in Oxford. Expert treatment for postpartum intimate health concerns, vaginal rejuvenation, and pelvic floor support.",
+    name: "Post-Birth Recovery & Intimate Health Consultation",
+    description: "Expert post-birth recovery consultation with Dr Inga Taganova - GP with a background in obstetrics and gynaecology - in Oxford. Expert treatment for postpartum intimate health concerns and pelvic floor support.",
   },
   relatedLinks: [
     { label: "Women's Health Hub", href: "/womens-health-oxford" },
