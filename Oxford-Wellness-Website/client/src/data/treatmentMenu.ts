@@ -217,8 +217,9 @@ export const treatmentMenuColumns: MenuGroup[][] = [
     {
       title: "Women's health",
       items: [
-        { name: "Menopause consultations", href: "/menopause-clinic-oxford" },
-        { name: "Intimate health", href: "/sexual-wellness-oxford" },
+        { name: "Menopause consultation", href: "/menopause-clinic-oxford" },
+        { name: "Perimenopause consultation", href: "/perimenopause-oxford" },
+        { name: "Intimate health consultation", href: "/sexual-wellness-oxford" },
         { name: "Forma V", href: "/treatments/votiva-forma-v-oxford" },
         { name: "Neauvia N Rose", href: "/treatments/neauvia-n-rose-intimate-rejuvenation-oxford" },
       ],

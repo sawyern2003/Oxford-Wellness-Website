@@ -27,14 +27,14 @@ const sections: Section[] = [
     bg: "bg-white",
     treatments: [
       {
-        name: "Menopause Clinic",
-        description: "Individual assessment of menopausal symptoms and guidance on appropriate treatment options.",
+        name: "Menopause Consultation",
+        description: "Assessment of your symptoms and guidance on treatment options, including whether HRT is appropriate.",
         href: "/menopause-clinic-oxford",
         price: "from £195",
       },
       {
-        name: "Perimenopause Support",
-        description: "Expert care for women in their 40s experiencing early menopause symptoms.",
+        name: "Perimenopause Consultation",
+        description: "Consultation for women in their 40s experiencing irregular periods, mood changes, or other early symptoms.",
         href: "/perimenopause-oxford",
         price: "from £195",
       },
