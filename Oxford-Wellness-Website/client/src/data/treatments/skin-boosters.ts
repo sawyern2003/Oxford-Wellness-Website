@@ -42,7 +42,7 @@ export const skinBoostersData: TreatmentLandingPageData = {
     items: [
       "Doctor-led clinic: Dr Inga Taganova, GMC-registered GP",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ",
-      "Over 20 years of clinical experience",
+      "More than two decades of medical experience",
       "Premium products (hyaluronic acid, polynucleotides)",
       "Calm, private consultation rooms"
     ]

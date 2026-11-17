@@ -26,7 +26,7 @@ const serviceAreas = [
     title: "Skin & Aesthetics",
     href: "/treatments#skin",
     image: programmeImage("skin-health-regeneration"),
-    body: "Injectables, skin boosters and rejuvenation treatments carried out by Dr Inga.",
+    body: "Injectables, skin boosters and skin treatments carried out by Dr Inga.",
   },
   {
     title: "Weight & Body",

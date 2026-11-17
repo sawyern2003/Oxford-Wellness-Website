@@ -135,7 +135,7 @@ const data: TreatmentPageData = {
   relatedLinks: [
     { label: "Symptoms & Treatment Guide", href: "/symptoms-and-treatments" },
     { label: "Menopause Clinic", href: "/menopause-clinic-oxford" },
-    { label: "Intimate Rejuvenation (Neauvia N Rose)", href: "/treatments/neauvia-n-rose-intimate-rejuvenation-oxford" },
+    { label: "Intimate Health Treatment (Neauvia N Rose)", href: "/treatments/neauvia-n-rose-intimate-rejuvenation-oxford" },
     { label: "Profhilo Skin Treatment", href: "/treatments/profhilo-oxford" },
     { label: "Morpheus8 Skin Tightening", href: "/treatments/morpheus8-oxford" },
     { label: "About Dr. Taganova", href: "/about" },

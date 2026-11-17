@@ -3,7 +3,7 @@ import { TreatmentLandingPageData } from "@/components/treatments/TreatmentLandi
 export const morpheus8Data: TreatmentLandingPageData = {
   slug: "morpheus8-oxford",
   h1: "Morpheus8 in Oxford",
-  title: "Morpheus8 Oxford | RF Microneedling | Skin Tightening Treatment",
+  title: "Morpheus8 Oxford | RF Microneedling | The Oxford Wellness Doctor",
   metaDescription: "Morpheus8 radiofrequency microneedling in Oxford. Non-surgical skin tightening for face & body. Reduces wrinkles, scars & improves texture. Book consultation.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/morpheus8-oxford",
   
@@ -40,10 +40,9 @@ export const morpheus8Data: TreatmentLandingPageData = {
   trust: {
     heading: "Why choose The Oxford Wellness Doctor",
     items: [
-      "Doctor-led clinic: all treatments performed by Dr Inga Taganova, a GMC-registered GP",
+      "Doctor-led clinic: all treatments performed by Dr Inga Taganova, GMC-registered GP",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ",
-      "Specialist training in energy-based aesthetic devices",
-      "Over 20 years of clinical experience",
+      "More than two decades of medical experience",
       "Calm, private consultation rooms"
     ]
   },

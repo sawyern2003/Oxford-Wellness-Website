@@ -42,7 +42,7 @@ export const lipFillersData: TreatmentLandingPageData = {
     items: [
       "Doctor-led clinic: all treatments performed by Dr Inga Taganova, a GMC-registered GP",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ",
-      "Over 20 years of clinical experience",
+      "More than two decades of medical experience",
       "Conservative, natural-looking approach – no overfilled or unnatural results",
       "Premium, fully reversible hyaluronic acid fillers"
     ]

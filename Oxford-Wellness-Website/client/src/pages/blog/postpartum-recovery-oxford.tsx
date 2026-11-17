@@ -86,15 +86,15 @@ const data: BlogPostData = {
         "Skin tightening treatments (radiofrequency, such as Forma or InMode FX) for loose abdominal or breast skin",
         "Body contouring to address stubborn areas of fat that have not responded to diet and exercise",
         "Scar treatments (laser, micro-needling, or silicone-based therapies) to improve the appearance of caesarean or other surgical scars",
-        "Vaginal rejuvenation treatments (radiofrequency or hyaluronic acid) for intimate concerns",
+        "Intimate health treatments that may help with symptoms such as dryness or discomfort",
       ],
     },
     {
-      heading: "Medical Weight Management After Pregnancy",
+      heading: "Managing Body Changes After Pregnancy",
       paragraphs: [
-        "Weight retention after pregnancy is common. The combination of hormonal changes, sleep deprivation, altered eating patterns, and reduced activity makes weight loss challenging.",
-        "If you are struggling to return to your pre-pregnancy weight despite diet and exercise, medical weight management may be an option. This is not about rapid weight loss or extreme measures. It is about medically supervised support—reviewing your metabolic health, addressing barriers, and where appropriate, considering prescription options.",
-        "Medical weight management is not suitable whilst breastfeeding and should not be considered until at least six months postpartum. It is not a cosmetic service—it is a medical intervention for people with a BMI above certain thresholds who have struggled with conventional approaches.",
+        "Weight retention and body composition changes after pregnancy are common. The combination of hormonal changes, sleep deprivation, altered eating patterns, and reduced activity all contribute to postpartum body changes.",
+        "Many women find that their body shape and weight change permanently after pregnancy. This is a normal physiological response and not a sign of failure. Focus on sustainable, gentle approaches to health rather than rapid interventions.",
+        "If you have concerns about postpartum health, metabolic function, or persistent symptoms, discuss them with your GP. Any medical interventions are generally not suitable whilst breastfeeding and should not be considered until at least six months postpartum.",
       ],
     },
     {

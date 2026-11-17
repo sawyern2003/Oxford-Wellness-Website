@@ -43,7 +43,7 @@ export const antiWrinkleData: TreatmentLandingPageData = {
     items: [
       "Doctor-led clinic: all treatments performed by Dr Inga Taganova, a GMC-registered GP",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ",
-      "Over 20 years of clinical experience",
+      "More than two decades of medical experience",
       "Natural-looking results – no frozen or overdone appearance",
       "Calm, private consultation rooms"
     ]
