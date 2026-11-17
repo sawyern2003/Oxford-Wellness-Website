@@ -67,7 +67,7 @@ interface StickyBarProps {
 
 function StickyBar({ slug, bookingUrl }: StickyBarProps) {
   return (
-    <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-border shadow-lg z-40 safe-area-pb">
+    <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-border shadow-lg z-[45] safe-area-pb">
       <div className="px-4 py-3 flex items-center gap-2">
         <a
           href={bookingUrl}
@@ -75,7 +75,7 @@ function StickyBar({ slug, bookingUrl }: StickyBarProps) {
           className="js-book-cta flex-1"
           data-treatment={slug}
         >
-          <Button className="w-full bg-secondary text-white hover:bg-secondary/90 rounded-full h-10 text-sm font-medium">
+          <Button className="w-full bg-primary text-white hover:bg-primary/90 rounded-full h-10 text-sm font-medium">
             Book consultation
           </Button>
         </a>
@@ -179,13 +179,13 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
       <div className="pt-28 min-h-screen bg-white pb-24 md:pb-8">
         <section className="bg-white">
           <div className="container mx-auto px-6 py-12 md:py-16 max-w-4xl">
-            <FadeIn direction="up">
+            <div>
               <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-6 leading-snug">
                 {data.h1}
               </h1>
 
               <div className="mb-6">
-                <p className="text-3xl font-semibold text-secondary mb-2">
+                <p className="text-3xl font-semibold text-primary mb-2">
                   {data.priceValue}
                 </p>
                 <p className="text-sm text-muted-foreground">
@@ -204,7 +204,7 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
                   className="js-book-cta"
                   data-treatment={data.slug}
                 >
-                  <Button className="bg-secondary text-white hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium w-full sm:w-auto">
+                  <Button className="bg-primary text-white hover:bg-primary/90 rounded-full px-7 h-11 text-sm font-medium w-full sm:w-auto">
                     Book consultation
                   </Button>
                 </a>
@@ -385,7 +385,7 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
                   className="js-book-cta"
                   data-treatment={data.slug}
                 >
-                  <Button className="bg-secondary text-white hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium w-full sm:w-auto">
+                  <Button className="bg-primary text-white hover:bg-primary/90 rounded-full px-7 h-11 text-sm font-medium w-full sm:w-auto">
                     Book consultation
                   </Button>
                 </a>

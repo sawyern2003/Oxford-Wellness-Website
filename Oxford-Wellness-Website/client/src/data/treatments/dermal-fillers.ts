@@ -74,6 +74,7 @@ export const dermalFillersData: TreatmentLandingPageData = {
   pricing: [
     { name: "Dermal filler — 0.5ml", price: "£220" },
     { name: "Dermal filler — 1ml", price: "£320" },
+    { name: "Lip filler — 0.7ml", price: "£320" },
     { name: "Dermal filler — 2ml", price: "£590" }
   ],
   
