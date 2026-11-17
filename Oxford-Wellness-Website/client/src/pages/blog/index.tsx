@@ -227,7 +227,7 @@ export default function BlogIndex() {
         <FadeIn>
           <div className="max-w-7xl mx-auto">
             <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">The Journal</p>
-            <h1 className="font-serif font-normal text-5xl md:text-6xl lg:text-7xl mb-6 text-foreground tracking-tight leading-[1.1]">
+            <h1 className="font-sans font-semibold text-5xl md:text-6xl lg:text-7xl mb-6 text-foreground tracking-tight leading-[1.1]">
               Doctor&apos;s Notes
             </h1>
             <p className="text-muted-foreground max-w-2xl leading-relaxed text-base">
@@ -266,7 +266,7 @@ export default function BlogIndex() {
                 <span className="inline-block bg-white/95 text-foreground text-[10px] px-3 py-1.5 rounded-full font-medium mb-4 uppercase tracking-wider">
                   {featuredPost.category}
                 </span>
-                <h2 className="font-serif font-normal text-3xl md:text-4xl lg:text-5xl text-white mb-4 tracking-tight leading-tight max-w-4xl group-hover:text-secondary transition-colors">
+                <h2 className="font-sans font-semibold text-3xl md:text-4xl lg:text-5xl text-white mb-4 tracking-tight leading-tight max-w-4xl group-hover:text-secondary transition-colors">
                   {featuredPost.title}
                 </h2>
                 <p className="text-white/90 text-base md:text-lg leading-relaxed max-w-3xl mb-4">
@@ -334,7 +334,7 @@ export default function BlogIndex() {
                     </span>
                   </div>
                 </div>
-                <h2 className="font-serif font-normal text-2xl text-foreground tracking-tight leading-tight mb-3 group-hover:text-secondary transition-colors">
+                <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight leading-tight mb-3 group-hover:text-secondary transition-colors">
                   {post.title}
                 </h2>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-3">
@@ -354,7 +354,7 @@ export default function BlogIndex() {
           <div className="mt-20 rounded-3xl bg-muted/30 p-8 md:p-12 border border-border/50">
             <div className="max-w-3xl mx-auto text-center">
               <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-3">About the author</p>
-              <h2 className="font-serif font-normal text-3xl text-foreground tracking-tight mb-4">Dr Inga Taganova</h2>
+              <h2 className="font-sans font-semibold text-3xl text-foreground tracking-tight mb-4">Dr Inga Taganova</h2>
               <p className="text-sm text-muted-foreground leading-relaxed mb-6">
                 Dr Taganova is a GMC-registered doctor, formally trained gynaecologist, experienced GP, and qualified aesthetic medicine practitioner. With over 20 years in women&apos;s health, she brings a depth of clinical knowledge to aesthetic medicine that is rarely found outside hospital settings. All articles are written personally by Dr Taganova and reflect current evidence-based clinical practice.
               </p>

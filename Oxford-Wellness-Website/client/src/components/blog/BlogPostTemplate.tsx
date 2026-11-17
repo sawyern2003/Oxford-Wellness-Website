@@ -107,13 +107,13 @@ function SectionImage({ image }: { image: NonNullable<BlogSection["image"]> }) {
 function SectionContent({ section }: { section: BlogSection }) {
   return (
     <>
-      <h2 className="font-serif font-normal text-2xl md:text-3xl text-foreground tracking-tight mb-5 leading-snug">{section.heading}</h2>
+      <h2 className="font-sans font-semibold text-2xl md:text-3xl text-foreground tracking-tight mb-5 leading-snug">{section.heading}</h2>
       {section.paragraphs?.map((p, i) => (
         <p key={i} className="text-muted-foreground leading-relaxed mb-4 text-base">{p}</p>
       ))}
       {section.pullQuote && (
         <blockquote className="my-6 pl-6 border-l-4 border-secondary">
-          <p className="font-serif text-lg md:text-xl text-foreground italic leading-relaxed">{section.pullQuote}</p>
+          <p className="font-sans text-lg md:text-xl text-foreground italic leading-relaxed">{section.pullQuote}</p>
         </blockquote>
       )}
       {section.bullets && (
@@ -271,7 +271,7 @@ export default function BlogPostTemplate({ data }: { data: BlogPostData }) {
           <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
             {data.category}
           </p>
-          <h1 className="font-serif font-normal text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 tracking-tight text-foreground">
+          <h1 className="font-sans font-semibold text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 tracking-tight text-foreground">
             {data.h1}
           </h1>
           <div className="flex items-center gap-6 text-sm text-muted-foreground mb-8 flex-wrap">
@@ -355,7 +355,7 @@ export default function BlogPostTemplate({ data }: { data: BlogPostData }) {
         {/* CTA Box */}
         <FadeIn>
           <div className="mt-14 bg-gradient-to-br from-primary to-primary/90 text-primary-foreground p-10 md:p-12 text-center rounded-3xl">
-            <h2 className="font-serif font-normal text-3xl mb-4 tracking-tight">{data.cta.heading}</h2>
+            <h2 className="font-sans font-semibold text-3xl mb-4 tracking-tight">{data.cta.heading}</h2>
             <p className="text-primary-foreground/90 text-base mb-8 max-w-xl mx-auto leading-relaxed">{data.cta.text}</p>
             <Button
               data-testid="blog-cta-btn"
@@ -409,7 +409,7 @@ export default function BlogPostTemplate({ data }: { data: BlogPostData }) {
         {data.relatedPosts && data.relatedPosts.length > 0 && (
           <FadeIn>
             <div className="mt-14 pt-10 border-t border-border">
-              <h3 className="font-serif font-normal text-2xl text-foreground mb-6">Further Reading</h3>
+              <h3 className="font-sans font-semibold text-2xl text-foreground mb-6">Further Reading</h3>
               <ul className="space-y-3">
                 {data.relatedPosts.map((p) => (
                   <li key={p.href}>
