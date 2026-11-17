@@ -341,32 +341,6 @@ export default function Services() {
           </Link>
         </div>
       </section>
-
-      {/* The Oxford Pain Doctor */}
-      <section className="bg-white py-12 md:py-16">
-        <div className="container-page max-w-2xl">
-          <h2 className="font-sans text-3xl font-semibold leading-snug tracking-tight text-foreground md:text-4xl">
-            The Oxford Pain Doctor
-          </h2>
-          <p className="mt-4 max-w-[62ch] text-[15px] leading-relaxed text-muted-foreground">
-            Dr Richard Sawyer provides a separate specialist pain service at the same location. Patients are
-            seen by Dr Sawyer for chronic pain conditions, not Dr Inga.
-          </p>
-          <a
-            href="https://theoxfordpaindoctor.co.uk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-6 inline-block"
-          >
-            <Button
-              variant="outline"
-              className="h-11 rounded-full border-border px-7 text-sm font-medium hover:bg-secondary/5"
-            >
-              Visit The Oxford Pain Doctor
-            </Button>
-          </a>
-        </div>
-      </section>
     </div>
   );
 }
