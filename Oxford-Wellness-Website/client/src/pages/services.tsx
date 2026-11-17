@@ -111,10 +111,10 @@ const sections: Section[] = [
         price: "from £300",
       },
       {
-        name: "Skin Boosters (Hyaluronic Acid)",
-        description: "Injectable hyaluronic acid used to improve skin hydration and firmness.",
+        name: "Profhilo",
+        description: "Injectable hyaluronic acid that bio-remodels skin, stimulating collagen and elastin production.",
         href: "/treatments/profhilo-oxford",
-        price: "from £250",
+        price: "from £295",
       },
       {
         name: "Skin Boosters (Polynucleotides)",
