@@ -1,60 +1,9 @@
-// Comprehensive treatment navigation data organized by theme
+// Treatment navigation data for homepage featured links and related treatments cross-linking
 
 export interface TreatmentLink {
   name: string;
   href: string;
 }
-
-export interface TreatmentTheme {
-  id: string;
-  title: string;
-  treatments: TreatmentLink[];
-}
-
-export const treatmentsByTheme: TreatmentTheme[] = [
-  {
-    id: "womens-health",
-    title: "Women's Health & Menopause",
-    treatments: [
-      { name: "Menopause Consultation", href: "/menopause-clinic-oxford" },
-      { name: "Perimenopause Consultation", href: "/perimenopause-oxford" },
-      { name: "Women's Health Consultation", href: "/womens-health-oxford" },
-      { name: "Intimate Health Consultation", href: "/sexual-wellness-oxford" },
-      { name: "Post-Birth Recovery", href: "/postpartum-recovery-oxford" },
-      { name: "Forma V", href: "/treatments/votiva-forma-v-oxford" },
-      { name: "Neauvia N Rose", href: "/treatments/neauvia-n-rose-intimate-rejuvenation-oxford" },
-      { name: "Vitamin B12 Injection", href: "/treatments/vitamin-b12-injection-oxford" },
-      { name: "Medical Form Completion", href: "/treatments/medical-form-completion-oxford" },
-    ],
-  },
-  {
-    id: "skin",
-    title: "Skin & Aesthetics",
-    treatments: [
-      { name: "Anti-Wrinkle Injections", href: "/treatments/anti-wrinkle-injections-oxford" },
-      { name: "Dermal Fillers", href: "/treatments/dermal-fillers-oxford" },
-      { name: "Lip Fillers", href: "/treatments/lip-fillers-oxford" },
-      { name: "Filler Dissolving", href: "/treatments/filler-dissolving-oxford" },
-      { name: "Jaw Treatment", href: "/treatments/jaw-slimming-teeth-grinding-oxford" },
-      { name: "Profhilo", href: "/treatments/profhilo-oxford" },
-      { name: "Skin Boosters (Polynucleotides)", href: "/treatments/skin-boosters-oxford" },
-      { name: "Morpheus8", href: "/treatments/morpheus8-oxford" },
-      { name: "Forma Facelift", href: "/treatments/forma-facelift-oxford" },
-      { name: "Lumecca IPL", href: "/treatments/lumecca-ipl-oxford" },
-      { name: "Chemical Peels", href: "/treatments/chemical-peels-oxford" },
-      { name: "Excessive Sweating Treatment", href: "/treatments/excessive-sweating-treatment-oxford" },
-    ],
-  },
-  {
-    id: "body",
-    title: "Weight & Body",
-    treatments: [
-      { name: "Weight Loss Consultation", href: "/treatments/weight-loss-consultation-oxford" },
-      { name: "Forma Plus", href: "/treatments/forma-plus-body-contouring-oxford" },
-      { name: "InMode FX", href: "/treatments/inmode-fx-skin-tightening-oxford" },
-    ],
-  },
-];
 
 // Key treatments to feature on homepage
 export const featuredTreatments = {
