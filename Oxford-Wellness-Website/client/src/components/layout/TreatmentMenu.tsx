@@ -1,25 +1,28 @@
 import { Link } from "wouter";
-import imgSkin from "@/assets/lifestyle-window-earring.jpg";
-import imgBody from "@/assets/lifestyle-street-coffee-flip.jpg";
-import imgIntimate from "@/assets/lifestyle-loafers.jpg";
+import womensHealthIllustration from "@/assets/treatments/menu-womens-health-figure.jpg";
+import skinAestheticsIllustration from "@/assets/treatments/menu-skincare-portrait.jpg";
+import weightBodyIllustration from "@/assets/treatments/menu-weight-scale.jpg";
 
 const treatmentThemes = [
   {
     title: "Women's Health & Menopause",
     href: "/treatments#womens-health",
-    image: imgIntimate,
+    image: womensHealthIllustration,
+    alt: "Watercolour of a female figure entwined with autumn vine leaves",
     description: "Menopause, perimenopause and intimate health, with treatment considered after assessment.",
   },
   {
     title: "Skin & Aesthetics",
     href: "/treatments#skin",
-    image: imgSkin,
+    image: skinAestheticsIllustration,
+    alt: "Watercolour portrait of a woman with her eyes closed and head tilted back",
     description: "Injectables, skin boosters and skin treatments carried out by Dr Inga.",
   },
   {
     title: "Weight & Body",
     href: "/treatments#body",
-    image: imgBody,
+    image: weightBodyIllustration,
+    alt: "Watercolour of a brass balance scale holding a pomegranate and a lemon",
     description: "Doctor-led weight loss consultation and non-surgical body contouring for improved confidence and wellbeing.",
   },
 ];
@@ -56,16 +59,16 @@ export function TreatmentMenuPanel({ onNavigate }: { onNavigate: (href: string) 
               href={theme.href}
               role="menuitem"
               onClick={() => handleClick(theme.href)}
-              className="group block rounded-lg overflow-hidden bg-white border border-border hover:border-primary transition-all duration-300 hover:shadow-md"
+              className="group block rounded-lg overflow-hidden bg-muted/30 hover:bg-white border border-border hover:border-primary transition-all duration-300 hover:shadow-md"
             >
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="aspect-square overflow-hidden bg-white flex items-center justify-center p-4">
                 <img
                   src={theme.image}
-                  alt=""
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  alt={theme.alt}
+                  className="h-20 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="p-4">
+              <div className="p-4 bg-white">
                 <h3 className="font-sans font-semibold text-base text-primary mb-2 group-hover:text-secondary transition-colors">
                   {theme.title}
                 </h3>
@@ -108,11 +111,13 @@ export function TreatmentMenuMobile({ onNavigate }: { onNavigate: (href: string)
             onClick={() => handleClick(theme.href)}
             className="group flex items-center gap-3 rounded-md py-2 pl-3 pr-2 text-sm transition-colors hover:bg-accent"
           >
-            <img
-              src={theme.image}
-              alt=""
-              className="h-12 w-12 shrink-0 rounded object-cover"
-            />
+            <div className="h-12 w-12 shrink-0 rounded bg-muted/50 flex items-center justify-center p-1.5">
+              <img
+                src={theme.image}
+                alt={theme.alt}
+                className="h-full w-auto object-contain"
+              />
+            </div>
             <span className="font-medium text-foreground group-hover:text-primary">
               {theme.title}
             </span>
