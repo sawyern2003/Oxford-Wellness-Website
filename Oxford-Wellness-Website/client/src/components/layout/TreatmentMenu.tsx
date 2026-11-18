@@ -59,13 +59,13 @@ export function TreatmentMenuPanel({ onNavigate }: { onNavigate: (href: string) 
               href={theme.href}
               role="menuitem"
               onClick={() => handleClick(theme.href)}
-              className="group block rounded-lg overflow-hidden bg-muted/30 hover:bg-white border border-border hover:border-primary transition-all duration-300 hover:shadow-md"
+              className="group block rounded-lg overflow-hidden bg-white border border-border hover:border-primary transition-all duration-300 hover:shadow-md"
             >
-              <div className="aspect-square overflow-hidden bg-white flex items-center justify-center p-4">
+              <div className="h-44 overflow-hidden bg-[#FDFCFB] flex items-center justify-center">
                 <img
                   src={theme.image}
                   alt={theme.alt}
-                  className="h-20 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+                  className="h-[160px] w-auto max-w-[90%] object-contain transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="p-4 bg-white">
@@ -111,11 +111,11 @@ export function TreatmentMenuMobile({ onNavigate }: { onNavigate: (href: string)
             onClick={() => handleClick(theme.href)}
             className="group flex items-center gap-3 rounded-md py-2 pl-3 pr-2 text-sm transition-colors hover:bg-accent"
           >
-            <div className="h-12 w-12 shrink-0 rounded bg-muted/50 flex items-center justify-center p-1.5">
+            <div className="h-16 w-16 shrink-0 rounded bg-[#FDFCFB] flex items-center justify-center">
               <img
                 src={theme.image}
                 alt={theme.alt}
-                className="h-full w-auto object-contain"
+                className="h-14 w-auto max-w-[90%] object-contain"
               />
             </div>
             <span className="font-medium text-foreground group-hover:text-primary">
