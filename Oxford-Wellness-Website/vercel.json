@@ -7,22 +7,37 @@
     { "src": "^/belsyre/?$", "dest": "/api/belsyre" },
     { "src": "/robots.txt", "dest": "/api/robots" },
     { "src": "/sitemap.xml", "dest": "/api/sitemap" },
-    { "src": "/wellness", "status": 301, "headers": { "Location": "/womens-health-oxford" } },
-    { "src": "/lip-filler", "status": 301, "headers": { "Location": "/treatments/lip-fillers-oxford" } },
-    { "src": "/filler-dissolving", "status": 301, "headers": { "Location": "/treatments/filler-dissolving-oxford" } },
-    { "src": "/excessive-sweating-treatment", "status": 301, "headers": { "Location": "/treatments/excessive-sweating-treatment-oxford" } },
-    { "src": "/news-and-specials", "status": 301, "headers": { "Location": "/blog" } },
-    { "src": "/vitamin-b12-injection", "status": 301, "headers": { "Location": "/treatments/vitamin-b12-injection-oxford" } },
-    { "src": "/downturned-mouth-treatment", "status": 301, "headers": { "Location": "/treatments/dermal-fillers-oxford" } },
-    { "src": "/perfect-peel", "status": 301, "headers": { "Location": "/treatments/chemical-peels-oxford" } },
-    { "src": "/bunny-lines-treatment", "status": 301, "headers": { "Location": "/treatments/anti-wrinkle-injections-oxford" } },
-    { "src": "/blog/are-facials-really-important", "status": 301, "headers": { "Location": "/blog" } },
-    { "src": "/medical-form-completion-appointment", "status": 301, "headers": { "Location": "/treatments/medical-form-completion-oxford" } },
-    { "src": "/hyaluronic-acid-skinbooster", "status": 301, "headers": { "Location": "/treatments/skin-boosters-oxford" } },
-    { "src": "/about-us", "status": 301, "headers": { "Location": "/about" } },
-    { "src": "/dimpled-chin-treatment", "status": 301, "headers": { "Location": "/treatments/anti-wrinkle-injections-oxford" } },
-    { "src": "/body", "status": 301, "headers": { "Location": "/treatments/forma-plus-body-contouring-oxford" } },
+    { "src": "/treatments/medical-weight-loss-oxford", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/weight-loss-consultation-oxford" } },
+    { "src": "/wellness", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/womens-health-oxford" } },
+    { "src": "/lip-filler", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/lip-fillers-oxford" } },
+    { "src": "/filler-dissolving", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/filler-dissolving-oxford" } },
+    { "src": "/excessive-sweating-treatment", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/excessive-sweating-treatment-oxford" } },
+    { "src": "/news-and-specials", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/blog" } },
+    { "src": "/vitamin-b12-injection", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/vitamin-b12-injection-oxford" } },
+    { "src": "/downturned-mouth-treatment", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/dermal-fillers-oxford" } },
+    { "src": "/perfect-peel", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/chemical-peels-oxford" } },
+    { "src": "/bunny-lines-treatment", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/anti-wrinkle-injections-oxford" } },
+    { "src": "/blog/are-facials-really-important", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/blog" } },
+    { "src": "/medical-form-completion-appointment", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/medical-form-completion-oxford" } },
+    { "src": "/hyaluronic-acid-skinbooster", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/skin-boosters-oxford" } },
+    { "src": "/about-us", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/about" } },
+    { "src": "/dimpled-chin-treatment", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/anti-wrinkle-injections-oxford" } },
+    { "src": "/body", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/forma-plus-body-contouring-oxford" } },
+    { "src": "/blog/wegovy-vs-mounjaro-comparison", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/womens-health-oxford" } },
     { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/spa.html" }
+    { "src": "/(.*)", "dest": "/spa.html", "status": 404 }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "theoxfordwellnessdoctor.com"
+        }
+      ],
+      "destination": "https://www.theoxfordwellnessdoctor.com/:path*",
+      "permanent": true
+    }
   ]
 }

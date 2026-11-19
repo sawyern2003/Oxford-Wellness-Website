@@ -8,11 +8,12 @@ const data: BlogPostData = {
   h1: "Morpheus8 Results: Day-by-Day Recovery and Timeline",
   category: "Morpheus8",
   readTime: "5 min",
+  datePublished: "2024-08-10",
   intro: "Morpheus8 is one of the most effective non-surgical skin rejuvenation treatments available - combining radiofrequency energy with microneedling to stimulate deep dermal remodelling and collagen production. But it is also a treatment with a recovery period, and understanding what to expect after your session is essential for a smooth experience and optimal results. Dr. Inga Taganova walks you through the Morpheus8 recovery and results timeline in detail.",
   sections: [
     {
       heading: "What Happens During a Morpheus8 Treatment",
-      image: { src: morpheus8DeviceImg, alt: "Morpheus8 radiofrequency microneedling skin tightening treatment being performed at The Oxford Wellness Doctor clinic, Oxford - by GMC-registered Dr. Inga Taganova", position: "full" as const },
+      image: { src: morpheus8DeviceImg, alt: "Midlife woman in profile with soft light on jaw and neck", position: "full" as const },
       paragraphs: [
         "Morpheus8 uses an array of gold-tipped microneedles to deliver precise radiofrequency energy deep into the dermis and subdermal tissue. The combination of physical needling (which creates controlled micro-injuries that trigger healing) and thermal energy (which contracts existing collagen and stimulates new collagen formation) produces a depth of skin remodelling that surface-level treatments cannot match.",
         "The treatment is performed under topical anaesthetic cream, applied 45–60 minutes before the procedure begins. Most patients describe a warm, prickling sensation during treatment rather than acute pain. A full face treatment takes approximately 45 minutes; face and neck together takes around 60–75 minutes.",
@@ -91,23 +92,23 @@ const data: BlogPostData = {
       bullets: [
         "Use SPF 30+ every day throughout the recovery and results phase - UV damage is the primary enemy of collagen",
         "Stay well-hydrated and maintain a nutritious diet that supports collagen synthesis (vitamin C, protein, zinc)",
-        "Follow Dr. Taganova's post-treatment skincare protocol precisely",
+        "Follow Dr Inga Taganova's post-treatment skincare protocol precisely",
         "Avoid smoking - it significantly impairs collagen production and wound healing",
         "Consider combining Morpheus8 with Profhilo 6–8 weeks after treatment for skin quality enhancement",
-        "Attend your follow-up appointment so Dr. Taganova can assess your results and plan any further treatment",
+        "Attend your follow-up appointment so Dr Inga Taganova can assess your results and plan any further treatment",
       ],
     },
     {
       heading: "When to Have Your Next Treatment",
       paragraphs: [
         "Morpheus8 is typically recommended as a course of 3 treatments, spaced 4–6 weeks apart. This allows the skin to recover between sessions while building progressive collagen stimulation.",
-        "After completing a course of 3, most patients maintain results with a single annual maintenance treatment. Dr. Taganova will advise based on your individual results and skin condition.",
+        "After completing a course of 3, most patients maintain results with a single annual maintenance treatment. Dr Inga Taganova will advise based on your individual results and skin condition.",
       ],
     },
   ],
   cta: {
     heading: "Book a Morpheus8 Consultation in Oxford",
-    text: "Discuss your skin concerns with Dr. Taganova and find out whether Morpheus8 is the right treatment for your goals.",
+    text: "Discuss your skin concerns with Dr Inga Taganova and find out whether Morpheus8 is the right treatment for your goals.",
     buttonLabel: "Book a Morpheus8 Consultation",
     buttonExternal: true,
     buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",

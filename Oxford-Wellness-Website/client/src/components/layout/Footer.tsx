@@ -56,7 +56,7 @@ export default function Footer() {
                 57 Woodstock Rd<br />
                 Oxford OX2 6HJ
               </p>
-              <a href="tel:+4407739309380" className="block text-sm text-foreground/80 mt-3 hover:text-secondary">
+              <a href="tel:+44-7739-309380" className="block text-sm text-foreground/80 mt-3 hover:text-secondary">
                 07739 309380
               </a>
             </div>
@@ -86,13 +86,23 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <p className="text-xs font-medium tracking-wide uppercase text-muted-foreground mb-3">Care</p>
+            <p className="text-xs font-medium tracking-wide uppercase text-muted-foreground mb-3">Women's Health</p>
             <ul className="space-y-2 text-sm text-foreground/80">
-              <li><Link href="/treatments" className="hover:text-secondary">Treatments</Link></li>
-              <li><Link href="/pricing" className="hover:text-secondary">Prices &amp; Booking</Link></li>
-              <li><Link href="/symptoms-and-treatments" className="hover:text-secondary">How we can help</Link></li>
-              <li><Link href="/personalised-treatment-plans" className="hover:text-secondary">Treatment plans</Link></li>
-              <li><Link href="/shop" className="hover:text-secondary">Shop</Link></li>
+              <li><Link href="/menopause-clinic-oxford" className="hover:text-secondary">Menopause Clinic</Link></li>
+              <li><Link href="/perimenopause-oxford" className="hover:text-secondary">Perimenopause</Link></li>
+              <li><Link href="/womens-health-oxford" className="hover:text-secondary">Women's Health</Link></li>
+              <li><Link href="/sexual-wellness-oxford" className="hover:text-secondary">Intimate Health</Link></li>
+              <li><Link href="/longevity-medicine-oxford" className="hover:text-secondary">Longevity Medicine</Link></li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs font-medium tracking-wide uppercase text-muted-foreground mb-3">Skin & Aesthetics</p>
+            <ul className="space-y-2 text-sm text-foreground/80">
+              <li><Link href="/skin-clinic-oxford" className="hover:text-secondary">Skin Clinic</Link></li>
+              <li><Link href="/menopause-skin" className="hover:text-secondary">Menopause Skin</Link></li>
+              <li><Link href="/treatments/anti-wrinkle-injections-oxford" className="hover:text-secondary">Anti-Wrinkle Injections</Link></li>
+              <li><Link href="/treatments/profhilo-oxford" className="hover:text-secondary">Profhilo</Link></li>
+              <li><Link href="/treatments/morpheus8-oxford" className="hover:text-secondary">Morpheus8</Link></li>
             </ul>
           </div>
           <div>
@@ -114,7 +124,7 @@ export default function Footer() {
               57 Woodstock Rd<br />
               Oxford OX2 6HJ
             </p>
-            <a href="tel:+4407739309380" className="block text-sm text-foreground/80 mt-3 hover:text-secondary">
+            <a href="tel:+44-7739-309380" className="block text-sm text-foreground/80 mt-3 hover:text-secondary">
               07739 309380
             </a>
             <div className="flex gap-4 mt-4 text-muted-foreground">

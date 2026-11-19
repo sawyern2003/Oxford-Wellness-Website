@@ -20,6 +20,7 @@ import FadeIn from "@/components/animations/FadeIn";
 import { useSEO } from "@/hooks/useSEO";
 import { getTreatmentGlance, type AtAGlanceItem, type AtAGlanceIcon } from "@/data/treatmentGlance";
 import { itemsForPath, publicPrice } from "@/data/catalogue";
+import RelatedTreatments from "./RelatedTreatments";
 
 export interface PricingItem {
   name: string;
@@ -100,19 +101,14 @@ function FAQAccordion({ faqs }: { faqs: FAQItem[] }) {
               <ChevronDown size={16} className="text-muted-foreground flex-shrink-0 mt-1" />
             )}
           </button>
-          <AnimatePresence>
-            {openIdx === i && (
-              <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: "auto", opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.25 }}
-                className="overflow-hidden"
-              >
-                <p className="pb-4 text-muted-foreground text-sm leading-relaxed max-w-2xl">{faq.a}</p>
-              </motion.div>
-            )}
-          </AnimatePresence>
+          <motion.div
+            initial={false}
+            animate={{ height: openIdx === i ? "auto" : 0, opacity: openIdx === i ? 1 : 0 }}
+            transition={{ duration: 0.25 }}
+            className="overflow-hidden"
+          >
+            <p className="pb-4 text-muted-foreground text-sm leading-relaxed max-w-2xl">{faq.a}</p>
+          </motion.div>
         </div>
       ))}
     </div>
@@ -430,6 +426,8 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
           </div>
         </section>
       )}
+
+      <RelatedTreatments currentSlug={detailPath.replace(/^\//, "").replace(/\//g, "-")} />
 
     </div>
   );

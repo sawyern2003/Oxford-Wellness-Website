@@ -155,7 +155,7 @@ export const symptoms: Symptom[] = [
       {
         name: "Medical weight management",
         href: "/treatments/medical-weight-loss-oxford",
-        why: "UK-licensed GLP-1 treatment where clinically suitable, prescribed and monitored monthly by a GP.",
+        why: "UK-licensed prescription treatment where clinically suitable, prescribed and monitored monthly by a GP.",
       },
       {
         name: "Weight & Body Confidence programme",
@@ -287,7 +287,7 @@ export const symptoms: Symptom[] = [
       {
         name: "Specialist menopause consultation",
         href: "/menopause-clinic-oxford",
-        why: "Examination by a formally trained gynaecologist, then cyclical tenderness managed within your wider plan.",
+        why: "Examination by a GP with a background in obstetrics and gynaecology, then cyclical tenderness managed within your wider plan.",
       },
       {
         name: "Women's health assessment",
@@ -380,7 +380,7 @@ export const treatmentApproaches: TreatmentApproach[] = [
     title: "Specialist Menopause Assessment",
     icon: "assessment",
     description:
-      "A 45-minute assessment with a formally trained gynaecologist and specialist menopause lead. Where hormone therapy is clinically appropriate, Dr Inga confirms your suitability and arranges specialist prescribing.",
+      "A 45-minute assessment with a GP with a background in obstetrics and gynaecology and GP with experience in menopause care. Where hormone therapy is clinically appropriate, Dr Inga confirms your suitability and arranges specialist prescribing.",
   },
   {
     id: "non-hormonal",
@@ -401,7 +401,7 @@ export const treatmentApproaches: TreatmentApproach[] = [
     title: "Medical Weight Management",
     icon: "weight-management",
     description:
-      "UK-licensed GLP-1 treatment where clinically suitable, prescribed and monitored by a GMC-registered doctor with monthly review, always alongside nutrition and muscle work.",
+      "UK-licensed prescription treatment where clinically suitable, prescribed and monitored by a GMC-registered doctor with monthly review, always alongside nutrition and muscle work.",
   },
   {
     id: "movement-sleep",
@@ -415,7 +415,7 @@ export const treatmentApproaches: TreatmentApproach[] = [
     title: "Intimate & Vaginal Health",
     icon: "intimate",
     description:
-      "Discreet, gynaecologist-led care for dryness, discomfort and laxity – including regenerative hyaluronic acid and non-surgical radiofrequency, delivered personally by Dr Inga.",
+      "Discreet, doctor-led care for dryness, discomfort and laxity – including regenerative hyaluronic acid and non-surgical radiofrequency, delivered personally by Dr Inga.",
   },
   {
     id: "skin-health",

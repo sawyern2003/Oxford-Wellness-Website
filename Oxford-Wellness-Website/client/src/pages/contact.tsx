@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { useLocation } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
 import { useBreadcrumbSchema } from "@/hooks/useBreadcrumbSchema";
+import { useJsonLdSchema, createMedicalClinicSchema } from "@/hooks/useJsonLdSchema";
 import { isPainRoute } from "@/lib/brand";
 import JotformEmbed from "@/components/contact/JotformEmbed";
 import ParkingMap from "@/components/contact/ParkingMap";
@@ -34,10 +35,14 @@ export default function Contact() {
       : {
           title: "Contact The Oxford Wellness Doctor | Book Consultation Oxford",
           description:
-            "Book your women's health & medical aesthetics consultation in Oxford. Now at Belsyre Court. Call 07739 309380 or email. Open Friday evenings & Saturday mornings.",
+            "Book your women's health & medical aesthetics consultation in Oxford. Now at Belsyre Court. Call 07739 309380 or email. Open every day except Tuesday and Wednesday.",
           canonical: "https://www.theoxfordwellnessdoctor.com/contact",
         }
   );
+
+  if (!pain) {
+    useJsonLdSchema(createMedicalClinicSchema(), "medical-clinic-schema");
+  }
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -260,7 +265,7 @@ export default function Contact() {
                   <Phone className="text-secondary mt-1" />
                   <div>
                     <h3 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-2">Call Us</h3>
-                    <a href="tel:+4407739309380" className="text-muted-foreground hover:text-primary transition-colors">07739 309380</a>
+                    <a href="tel:+44-7739-309380" className="text-muted-foreground hover:text-primary transition-colors">07739 309380</a>
                   </div>
                 </div>
 
@@ -276,11 +281,7 @@ export default function Contact() {
                   <Clock className="text-secondary mt-1" />
                   <div>
                     <h3 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-2">Hours</h3>
-                    <ul className="text-muted-foreground space-y-1">
-                      <li className="flex justify-between w-48"><span>Friday</span> <span>4pm - 8pm</span></li>
-                      <li className="flex justify-between w-48"><span>Saturday</span> <span>9am - 1pm</span></li>
-                      <li className="flex justify-between w-48"><span>Sun - Thu</span> <span>Closed</span></li>
-                    </ul>
+                    <p className="text-muted-foreground text-sm">Open every day except Tuesday and Wednesday</p>
                   </div>
                 </div>
               </CardContent>
@@ -307,7 +308,7 @@ export default function Contact() {
                 <div>
                   <h2 className="font-sans font-semibold text-lg text-foreground tracking-tight">Call</h2>
                   <p className="mt-2 text-sm leading-relaxed">
-                    <a href="tel:+447739309380" className="text-muted-foreground hover:text-primary">07739 309380</a>
+                    <a href="tel:+44-7739-309380" className="text-muted-foreground hover:text-primary">07739 309380</a>
                   </p>
                 </div>
                 <div>
@@ -318,11 +319,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h2 className="font-sans font-semibold text-lg text-foreground tracking-tight">Hours</h2>
-                  <ul className="mt-2 space-y-1 text-sm text-muted-foreground">
-                    <li className="flex justify-between gap-6"><span>Friday</span> <span>4pm – 8pm</span></li>
-                    <li className="flex justify-between gap-6"><span>Saturday</span> <span>9am – 1pm</span></li>
-                    <li className="flex justify-between gap-6"><span>Sun – Thu</span> <span>Closed</span></li>
-                  </ul>
+                  <p className="mt-2 text-sm text-muted-foreground">Open every day except Tuesday and Wednesday</p>
                 </div>
               </div>
             )

@@ -97,7 +97,7 @@ export default function CookiePolicy() {
           <section>
             <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">5. Contact Us</h2>
             <p>If you have any questions about our use of cookies, please contact us:</p>
-            <p className="mt-3">Email: <a href="mailto:info@theoxfordwellnessdoctor.com" className="text-primary hover:underline">info@theoxfordwellnessdoctor.com</a><br />Phone: <a href="tel:+4407739309380" className="text-primary hover:underline">07739 309380</a></p>
+            <p className="mt-3">Email: <a href="mailto:info@theoxfordwellnessdoctor.com" className="text-primary hover:underline">info@theoxfordwellnessdoctor.com</a><br />Phone: <a href="tel:+44-7739-309380" className="text-primary hover:underline">07739 309380</a></p>
           </section>
 
         </div>

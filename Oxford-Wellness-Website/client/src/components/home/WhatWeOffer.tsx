@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import womensWellnessImg from "@/assets/womens-wellness-menopause-clinic-oxford.webp";
 import regenerativeImg from "@/assets/regenerative-medicine-profhilo-skin-booster-oxford.webp";
-import aestheticsImg from "@/assets/medical-aesthetics-botox-dermal-fillers-oxford.webp";
+import aestheticsImg from "@/assets/medical-aesthetics-treatments-oxford.webp";
 import FadeIn from "@/components/animations/FadeIn";
 
 const treatments = [
@@ -24,7 +24,7 @@ const treatments = [
     description: "Ethical, subtle enhancements performed by medical experts to reveal your natural radiance through science-backed precision.",
     href: "/treatments?filter=Medical Aesthetics",
     image: aestheticsImg,
-    alt: "Medical aesthetics treatments including Botox, dermal fillers, and Morpheus8 at The Oxford Wellness Doctor clinic, Oxford"
+    alt: "Medical aesthetics treatments including anti-wrinkle injections, dermal fillers, and Morpheus8 at The Oxford Wellness Doctor clinic, Oxford"
   }
 ];
 

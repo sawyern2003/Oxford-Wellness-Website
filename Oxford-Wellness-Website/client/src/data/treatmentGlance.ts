@@ -25,7 +25,7 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/anti-wrinkle-injections-oxford": {
     treatmentName: "Anti-Wrinkle Injections",
     summary:
-      "Botulinum toxin relaxes facial muscles to smooth dynamic lines – forehead, frown, and crow's feet – with natural-looking results from a GMC-registered doctor.",
+      "Prescription muscle-relaxing injections smooth dynamic lines – forehead, frown, and crow's feet – with natural-looking results from a GMC-registered doctor.",
     highlights: [
       "Forehead lines",
       "Frown lines between the brows",
@@ -115,12 +115,12 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/medical-weight-loss-oxford": {
     treatmentName: "Medical Weight Loss",
     summary:
-      "Medically supervised Wegovy and Mounjaro GLP-1 injections for significant, sustained weight loss under close doctor monitoring.",
+      "Medically supervised weight management consultation with a focus on personalised assessment, medical history, and tailored treatment planning.",
     highlights: [
       "Obesity or overweight with related health conditions",
       "Appetite reduction and improved fullness",
-      "Wegovy – avg. 15–17% body weight loss",
-      "Mounjaro – avg. 20–25% body weight loss",
+      "Full medical assessment and screening",
+      "Personalised treatment plan discussed",
       "Support for menopause-related weight gain",
     ],
     atAGlance: [
@@ -133,7 +133,7 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/excessive-sweating-treatment-oxford": {
     treatmentName: "Excessive Sweating",
     summary:
-      "Botulinum toxin blocks sweat gland signals, dramatically reducing hyperhidrosis in underarms, hands, feet, and face.",
+      "Prescription injections block sweat gland signals, dramatically reducing hyperhidrosis in underarms, hands, feet, and face.",
     highlights: [
       "Underarm hyperhidrosis",
       "Palmar (hand) sweating",
@@ -349,7 +349,7 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/jaw-slimming-teeth-grinding-oxford": {
     treatmentName: "Jaw Slimming & Teeth Grinding",
     summary:
-      "Masseter botulinum toxin injections slim a wide jawline and relieve teeth grinding – quick, minimally invasive, progressive results.",
+      "Masseter muscle-relaxing injections slim a wide jawline and relieve teeth grinding – quick, minimally invasive, progressive results.",
     highlights: [
       "Wide or square jawline",
       "Teeth grinding (bruxism)",

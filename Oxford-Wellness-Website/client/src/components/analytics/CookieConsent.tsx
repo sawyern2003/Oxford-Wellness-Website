@@ -38,29 +38,29 @@ export default function CookieConsent() {
     <div
       role="region"
       aria-label="Cookie choices"
-      className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-white"
+      className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-white shadow-lg"
     >
-      <div className="container-page flex flex-col gap-4 py-4 md:flex-row md:items-center md:justify-between md:py-5">
-        <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground">
-          Analytics cookies stay off unless you accept them. They tell us which pages are visited. They are not used for names, email addresses, or information typed into forms.{" "}
+      <div className="container-page flex flex-col gap-3 py-3 md:flex-row md:items-center md:justify-between md:py-4">
+        <p className="max-w-2xl text-xs md:text-sm leading-relaxed text-muted-foreground">
+          Analytics cookies stay off unless you accept them.{" "}
           <Link href="/cookie-policy" className="text-primary underline decoration-primary/30 underline-offset-4 hover:text-secondary">
             Cookie policy
           </Link>
         </p>
-        <div className="flex shrink-0 flex-wrap gap-3">
+        <div className="flex shrink-0 flex-wrap gap-2">
           <button
             type="button"
-            className="h-11 rounded-full border border-border bg-white px-5 text-sm font-medium text-foreground hover:text-primary"
+            className="h-9 md:h-10 rounded-full border border-border bg-white px-4 text-xs md:text-sm font-medium text-foreground hover:text-primary"
             onClick={() => choose("rejected")}
           >
-            Reject analytics
+            Reject
           </button>
           <button
             type="button"
-            className="h-11 rounded-full bg-secondary px-5 text-sm font-medium text-secondary-foreground hover:bg-secondary/90"
+            className="h-9 md:h-10 rounded-full bg-secondary px-4 text-xs md:text-sm font-medium text-secondary-foreground hover:bg-secondary/90"
             onClick={() => choose("accepted")}
           >
-            Accept analytics
+            Accept
           </button>
         </div>
       </div>

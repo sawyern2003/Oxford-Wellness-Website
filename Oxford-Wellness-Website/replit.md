@@ -15,7 +15,7 @@ Professional medical aesthetics clinic website for The Oxford Wellness Doctor, l
 - Treatments (`/treatments`) - 18+ treatment cards with detail modals + links to 9 sub-pages
 - Menopause Clinic (`/menopause-clinic-oxford`) - HRT, perimenopause, women's health (1,500 words, 12 FAQs)
 - Pricing (`/pricing`) - Transparent pricing tables for all treatments by category
-- Blog (`/blog`) - Hub page + 11 long-form posts (Wegovy vs Mounjaro, menopause skin, Botox first time, Oxford Science Park clinic, etc.)
+- Blog (`/blog`) - Hub page + 10 long-form posts (menopause skin changes, anti-wrinkle treatment guide, Oxford Science Park clinic, etc.)
 - Pre-Consultation (`/ai-consultation`) - AI-powered pre-consultation tool
 - Contact (`/contact`) - Contact form (SendGrid), info, Glowday booking iframe
 
@@ -52,7 +52,7 @@ Professional medical aesthetics clinic website for The Oxford Wellness Doctor, l
 ## Image Optimization (Phase 9)
 - All images converted to WebP format with SEO-friendly keyword-rich filenames
 - `attached_assets/`: `dr-taganova-patient-consultation-oxford-clinic.webp`, `dr-inga-taganova-gmc-doctor-oxford.webp`, `oxford-wellness-doctor-branding.webp`, `morpheus8-skin-tightening-treatment-oxford.webp`
-- `client/src/assets/`: `oxford-aesthetics-clinic-oxford-science-park.webp` (hero), `womens-wellness-menopause-clinic-oxford.webp`, `regenerative-medicine-profhilo-skin-booster-oxford.webp`, `medical-aesthetics-botox-dermal-fillers-oxford.webp`
+- `client/src/assets/`: `oxford-aesthetics-clinic-oxford-science-park.webp` (hero), `womens-wellness-menopause-clinic-oxford.webp`, `regenerative-medicine-profhilo-skin-booster-oxford.webp`, `medical-aesthetics-treatments-oxford.webp`
 - Compression results: hero 1.7MB→160KB (91% ↓), consultation photo 2.6MB→80KB (97% ↓), WhatWeOffer images ~1.2MB→20-72KB (94-98% ↓)
 - All below-the-fold `<img>` tags have `loading="lazy"` + explicit `width`/`height` attributes; hero image uses `fetchPriority="high"`
 - Comprehensive descriptive alt text on every image (includes clinic name, location, treatment type, Dr. Taganova's name/GMC number where relevant)

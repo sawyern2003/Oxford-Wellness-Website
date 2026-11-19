@@ -8,7 +8,9 @@ import FadeIn from "@/components/animations/FadeIn";
 import RevealSection from "@/components/animations/RevealSection";
 import ParallaxImage from "@/components/animations/ParallaxImage";
 import { useSEO } from "@/hooks/useSEO";
+import { useJsonLdSchema, createMedicalClinicSchema } from "@/hooks/useJsonLdSchema";
 import { programmes } from "@/data/programmes";
+import { featuredTreatments } from "@/data/treatmentsNav";
 import PatientJourney from "@/components/home/PatientJourney";
 import SupplierLogos from "@/components/home/SupplierLogos";
 
@@ -25,23 +27,25 @@ const serviceAreas = [
     title: "Skin & Aesthetics",
     href: "/treatments#skin",
     image: programmeImage("skin-health-regeneration"),
-    body: "Injectables, skin boosters and rejuvenation treatments carried out by Dr Inga.",
+    body: "Injectables, skin boosters and skin treatments carried out by Dr Inga.",
   },
   {
     title: "Weight & Body",
-    href: "/treatments#weight",
+    href: "/treatments#body",
     image: programmeImage("weight-body-confidence"),
-    body: "Medical weight management and body contouring, planned around your health.",
+    body: "Doctor-led weight loss consultation and non-surgical body contouring for improved confidence and wellbeing.",
   },
 ];
 
 export default function Home() {
   useSEO({
-    title: "Doctor-Led Women's Midlife Care Oxford | The Oxford Wellness Doctor",
+    title: "Women's Health, Menopause & Longevity Clinic Oxford | The Oxford Wellness Doctor",
     description:
-      "Private midlife care with Dr Inga Taganova at Belsyre Court in Oxford. Women's health, skin, weight and body care.",
+      "Doctor-led women's health, menopause and longevity clinic in Oxford. Expert menopause care, intimate health and aesthetic treatments by Dr. Inga Taganova at The Oxford Wellness Doctor.",
     canonical: "https://www.theoxfordwellnessdoctor.com/",
   });
+
+  useJsonLdSchema(createMedicalClinicSchema(), "medical-clinic-schema");
 
   return (
     <>
@@ -69,7 +73,7 @@ export default function Home() {
                 Meet Dr Inga
               </h2>
               <p className="text-[15px] text-muted-foreground leading-relaxed mb-4 max-w-xl">
-                A private GP and menopause specialist who takes time to understand what has changed – then builds a plan grounded in clinical judgement and natural-looking results.
+                A private GP with a background in obstetrics and gynaecology who takes time to understand what has changed – then builds a plan grounded in clinical judgement and natural-looking results.
               </p>
               <p className="text-[15px] text-muted-foreground leading-relaxed mb-8 max-w-xl">
                 She sees every patient herself. Consultations and treatments take place at our new clinic at Belsyre Court, in the centre of Oxford.
@@ -99,28 +103,47 @@ export default function Home() {
           </FadeIn>
 
           <div className="grid md:grid-cols-3 gap-5 md:gap-6">
-            {serviceAreas.map((area, i) => (
-              <FadeIn key={area.href} delay={i * 0.07}>
-                <Link
-                  href={area.href}
-                  className="hover-card group block h-full bg-white rounded-3xl overflow-hidden"
-                >
-                  <ParallaxImage src={area.image} alt="" className="aspect-[4/3]" />
-                  <div className="p-7 md:p-8">
-                    <h3 className="font-sans font-semibold text-xl text-primary mb-3 tracking-tight group-hover:text-secondary transition-colors">
-                      {area.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                      {area.body}
-                    </p>
-                    <span className="text-sm font-medium text-primary inline-flex items-center gap-1">
-                      Learn more
-                      <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                    </span>
+            {serviceAreas.map((area, i) => {
+              const treatmentLinks = i === 0 ? featuredTreatments.womensHealth : i === 1 ? featuredTreatments.skin : featuredTreatments.body;
+              return (
+                <FadeIn key={area.href} delay={i * 0.07}>
+                  <div className="bg-white rounded-3xl overflow-hidden h-full flex flex-col">
+                    <Link
+                      href={area.href}
+                      className="hover-card group block"
+                    >
+                      <ParallaxImage src={area.image} alt="" className="aspect-[4/3]" />
+                      <div className="p-7 md:p-8 pb-4">
+                        <h3 className="font-sans font-semibold text-xl text-primary mb-3 tracking-tight group-hover:text-secondary transition-colors">
+                          {area.title}
+                        </h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+                          {area.body}
+                        </p>
+                        <span className="text-sm font-medium text-primary inline-flex items-center gap-1">
+                          Learn more
+                          <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                        </span>
+                      </div>
+                    </Link>
+                    <div className="px-7 md:px-8 pb-7 md:pb-8 border-t border-border/50 pt-4 mt-auto">
+                      <ul className="space-y-2">
+                        {treatmentLinks.map((treatment) => (
+                          <li key={treatment.href}>
+                            <Link
+                              href={treatment.href}
+                              className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                            >
+                              {treatment.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                </Link>
-              </FadeIn>
-            ))}
+                </FadeIn>
+              );
+            })}
           </div>
         </div>
       </RevealSection>
