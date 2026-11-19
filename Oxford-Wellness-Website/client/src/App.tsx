@@ -34,12 +34,24 @@ import BlogWeightGainPeri from "@/pages/blog/weight-gain-perimenopause";
 import BlogChoosingClinic from "@/pages/blog/choosing-aesthetics-clinic-oxford";
 import BlogOver50 from "@/pages/blog/aesthetic-treatments-over-50";
 import BlogSciencePark from "@/pages/blog/new-oxford-science-park-clinic";
+import BlogPerimenopauseSymptoms from "@/pages/blog/perimenopause-symptoms-oxford";
+import BlogHRTConsultation from "@/pages/blog/hrt-consultation-what-to-expect";
+import BlogIntimateHealth from "@/pages/blog/intimate-health-changes-menopause";
+import BlogWomensHealthCheck from "@/pages/blog/womens-health-check-oxford";
+import BlogLongevityMedicine from "@/pages/blog/longevity-medicine-for-women";
+import BlogJawSlimming from "@/pages/blog/jaw-slimming-treatment-oxford";
+import BlogExcessiveSweating from "@/pages/blog/excessive-sweating-treatment-oxford";
+import BlogChemicalPeels from "@/pages/blog/chemical-peels-oxford";
+import BlogLumeccaIPL from "@/pages/blog/lumecca-ipl-oxford";
+import BlogFormaSkinTightening from "@/pages/blog/forma-skin-tightening-oxford";
+import BlogInModeFX from "@/pages/blog/inmode-fx-body-contouring-oxford";
+import BlogAntiWrinkleInjections from "@/pages/blog/anti-wrinkle-injections-oxford";
+import BlogPostpartumRecovery from "@/pages/blog/postpartum-recovery-oxford";
 import AntiWrinkle from "@/pages/treatments/anti-wrinkle";
 import DermalFillers from "@/pages/treatments/dermal-fillers";
 import LipFillers from "@/pages/treatments/lip-fillers";
 import Profhilo from "@/pages/treatments/profhilo";
 import Morpheus8 from "@/pages/treatments/morpheus8";
-import MedicalWeightLoss from "@/pages/treatments/medical-weight-loss";
 import ExcessiveSweating from "@/pages/treatments/excessive-sweating";
 import ChemicalPeels from "@/pages/treatments/chemical-peels";
 import SkinBoosters from "@/pages/treatments/skin-boosters";
@@ -53,6 +65,7 @@ import InModeFX from "@/pages/treatments/inmode-fx";
 import LumeccaIPL from "@/pages/treatments/lumecca-ipl";
 import FillerDissolving from "@/pages/treatments/filler-dissolving";
 import JawSlimming from "@/pages/treatments/jaw-slimming";
+import WeightLossConsultation from "@/pages/treatments/weight-loss-consultation";
 import PrivacyPolicy from "@/pages/privacy-policy";
 import CookiePolicy from "@/pages/cookie-policy";
 import TermsAndConditions from "@/pages/terms-and-conditions";
@@ -93,7 +106,6 @@ function Router() {
       <Route path="/treatments/lip-fillers-oxford" component={LipFillers} />
       <Route path="/treatments/profhilo-oxford" component={Profhilo} />
       <Route path="/treatments/morpheus8-oxford" component={Morpheus8} />
-      <Route path="/treatments/medical-weight-loss-oxford" component={MedicalWeightLoss} />
       <Route path="/treatments/excessive-sweating-treatment-oxford" component={ExcessiveSweating} />
       <Route path="/treatments/chemical-peels-oxford" component={ChemicalPeels} />
       <Route path="/treatments/skin-boosters-oxford" component={SkinBoosters} />
@@ -107,6 +119,7 @@ function Router() {
       <Route path="/treatments/lumecca-ipl-oxford" component={LumeccaIPL} />
       <Route path="/treatments/filler-dissolving-oxford" component={FillerDissolving} />
       <Route path="/treatments/jaw-slimming-teeth-grinding-oxford" component={JawSlimming} />
+      <Route path="/treatments/weight-loss-consultation-oxford" component={WeightLossConsultation} />
       <Route path="/menopause-clinic-oxford" component={MenopauseClinic} />
       <Route path="/perimenopause-oxford" component={PerimenopauseOxford} />
       <Route path="/womens-health-oxford" component={WomensHealthOxford} />
@@ -126,6 +139,19 @@ function Router() {
       <Route path="/blog/choosing-aesthetics-clinic-oxford" component={BlogChoosingClinic} />
       <Route path="/blog/aesthetic-treatments-over-50" component={BlogOver50} />
       <Route path="/blog/new-oxford-science-park-clinic" component={BlogSciencePark} />
+      <Route path="/blog/perimenopause-symptoms-oxford" component={BlogPerimenopauseSymptoms} />
+      <Route path="/blog/hrt-consultation-what-to-expect" component={BlogHRTConsultation} />
+      <Route path="/blog/intimate-health-changes-menopause" component={BlogIntimateHealth} />
+      <Route path="/blog/womens-health-check-oxford" component={BlogWomensHealthCheck} />
+      <Route path="/blog/longevity-medicine-for-women" component={BlogLongevityMedicine} />
+      <Route path="/blog/jaw-slimming-treatment-oxford" component={BlogJawSlimming} />
+      <Route path="/blog/excessive-sweating-treatment-oxford" component={BlogExcessiveSweating} />
+      <Route path="/blog/chemical-peels-oxford" component={BlogChemicalPeels} />
+      <Route path="/blog/lumecca-ipl-oxford" component={BlogLumeccaIPL} />
+      <Route path="/blog/forma-skin-tightening-oxford" component={BlogFormaSkinTightening} />
+      <Route path="/blog/inmode-fx-body-contouring-oxford" component={BlogInModeFX} />
+      <Route path="/blog/anti-wrinkle-injections-oxford" component={BlogAntiWrinkleInjections} />
+      <Route path="/blog/postpartum-recovery-oxford" component={BlogPostpartumRecovery} />
       <Route path="/ai-consultation" component={AIPreConsult} />
       <Route path="/call" component={CallPage} />
       <Route path="/book" component={Book} />

@@ -9,11 +9,11 @@ const data: BlogPostData = {
   category: "Choosing a Clinic",
   readTime: "6 min",
   datePublished: "2024-08-10",
-  intro: "Choosing an aesthetics clinic is one of the most important decisions in your aesthetic journey - and one of the most confusing. Oxford has a growing number of clinics and practitioners offering injectable treatments, energy devices, and wellness services. The quality, safety standards, and clinical expertise vary enormously. Dr. Inga Taganova shares the checklist she would use if she were a patient choosing a practitioner - because the standards she holds herself to are the same standards every patient deserves.",
+  intro: "Choosing an aesthetics clinic is one of the most important decisions you will make about your appearance—and one of the most confusing. Oxford has a growing number of clinics and practitioners offering injectable treatments, energy devices, and wellness services. The quality, safety standards, and clinical expertise vary enormously. Dr. Inga Taganova shares the checklist she would use if she were a patient choosing a practitioner—because the standards she holds herself to are the same standards every patient deserves.",
   sections: [
     {
       heading: "Check Credentials First - Before Anything Else",
-      image: { src: clinicInteriorImg, alt: "The Oxford Wellness Doctor clinic on Woodstock Road, Oxford - a professional medical environment for aesthetic treatments in Oxford", position: "left" as const },
+      image: { src: clinicInteriorImg, alt: "Calm modern waiting room with large windows and natural light", position: "left" as const },
       paragraphs: [
         "The single most important step in choosing an aesthetics clinic is verifying the qualifications of the person who will be treating you. This is non-negotiable.",
       ],
@@ -91,8 +91,8 @@ const data: BlogPostData = {
     {
       heading: "What Makes The Oxford Wellness Doctor Different",
       paragraphs: [
-        "At The Oxford Wellness Doctor, every element of the patient journey is designed around the standards we believe every patient deserves - not the minimum regulatory requirement. Dr. Taganova is GMC-registered, medically trained across gynaecology, general practice, and aesthetic medicine, and brings over 20 years of clinical experience to every patient interaction.",
-        "Every new patient receives a full consultation before any treatment. Hyaluronidase is always available. Treatments are only recommended where Dr. Taganova believes they will genuinely benefit the patient. And patients are never pressured - if she doesn't think a treatment is right for you, she will tell you honestly.",
+        "At The Oxford Wellness Doctor, every element of patient care is designed around the standards we believe every patient deserves—not the minimum regulatory requirement. Dr Inga Taganova is GMC-registered, medically trained across gynaecology, general practice, and aesthetic medicine, and brings more than two decades of medical experience to every patient interaction.",
+        "Every new patient receives a full consultation before any treatment. Hyaluronidase is always available. Treatments are only recommended where Dr Inga Taganova believes they will genuinely benefit the patient. And patients are never pressured - if she doesn't think a treatment is right for you, she will tell you honestly.",
       ],
     },
   ],
@@ -108,7 +108,7 @@ const data: BlogPostData = {
     { label: "Best Aesthetic Treatments for Women Over 50", href: "/blog/aesthetic-treatments-over-50" },
   ],
   relatedTreatments: [
-    { label: "About Dr. Taganova", href: "/about" },
+    { label: "About Dr Inga Taganova", href: "/about" },
     { label: "All Treatments in Oxford", href: "/treatments" },
   ],
 };

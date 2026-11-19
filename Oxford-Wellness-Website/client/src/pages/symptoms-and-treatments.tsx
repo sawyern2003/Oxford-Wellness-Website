@@ -18,12 +18,6 @@ const areas = [
     action: "Explore Intimate Health",
   },
   {
-    title: "Weight & Metabolic Health",
-    body: "Changes in weight and body composition can be frustrating, particularly during midlife. Our medical approach focuses on individual assessment, realistic goals and appropriate ongoing support.",
-    href: "/treatments/medical-weight-loss-oxford",
-    action: "Explore Weight Management",
-  },
-  {
     title: "Skin, Hair & Ageing",
     body: "Changes in skin texture, firmness and hydration are common over time. We offer a range of doctor-led treatments and personalised advice for patients seeking to improve skin health and appearance.",
     href: "/treatments#skin",

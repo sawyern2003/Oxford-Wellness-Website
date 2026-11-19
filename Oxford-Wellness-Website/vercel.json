@@ -7,6 +7,7 @@
     { "src": "^/belsyre/?$", "dest": "/api/belsyre" },
     { "src": "/robots.txt", "dest": "/api/robots" },
     { "src": "/sitemap.xml", "dest": "/api/sitemap" },
+    { "src": "/treatments/medical-weight-loss-oxford", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/weight-loss-consultation-oxford" } },
     { "src": "/wellness", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/womens-health-oxford" } },
     { "src": "/lip-filler", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/lip-fillers-oxford" } },
     { "src": "/filler-dissolving", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/filler-dissolving-oxford" } },
@@ -22,7 +23,7 @@
     { "src": "/about-us", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/about" } },
     { "src": "/dimpled-chin-treatment", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/anti-wrinkle-injections-oxford" } },
     { "src": "/body", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/forma-plus-body-contouring-oxford" } },
-    { "src": "/blog/wegovy-vs-mounjaro-comparison", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/treatments/medical-weight-loss-oxford" } },
+    { "src": "/blog/wegovy-vs-mounjaro-comparison", "status": 301, "headers": { "Location": "https://www.theoxfordwellnessdoctor.com/womens-health-oxford" } },
     { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "/spa.html", "status": 404 }
   ],

@@ -155,18 +155,12 @@ export const treatmentTypes: TreatmentType[] = [
     ],
   },
   {
-    id: "weight",
-    title: "Weight & Body",
-    intro: "Medical weight management and body treatments, planned around your health rather than a set package.",
+    id: "body",
+    title: "Body Treatments",
+    intro: "Radiofrequency and energy-based body treatments for skin firming and texture improvement.",
     image: weightBody,
     imageAlt: "Watercolour of an olive branch",
     items: [
-      {
-        name: "Medical weight management consultation",
-        description:
-          "Assessment of weight-related concerns and discussion of medically appropriate options.",
-        href: "/treatments/medical-weight-loss-oxford",
-      },
       {
         name: "Forma Plus",
         description: "Radiofrequency body treatment used to firm skin on areas such as the abdomen and arms.",
@@ -223,8 +217,9 @@ export const treatmentMenuColumns: MenuGroup[][] = [
     {
       title: "Women's health",
       items: [
-        { name: "Menopause consultations", href: "/menopause-clinic-oxford" },
-        { name: "Intimate health", href: "/sexual-wellness-oxford" },
+        { name: "Menopause consultation", href: "/menopause-clinic-oxford" },
+        { name: "Perimenopause consultation", href: "/perimenopause-oxford" },
+        { name: "Intimate health consultation", href: "/sexual-wellness-oxford" },
         { name: "Forma V", href: "/treatments/votiva-forma-v-oxford" },
         { name: "Neauvia N Rose", href: "/treatments/neauvia-n-rose-intimate-rejuvenation-oxford" },
       ],
@@ -232,7 +227,7 @@ export const treatmentMenuColumns: MenuGroup[][] = [
     {
       title: "Weight & body",
       items: [
-        { name: "Medical weight management", href: "/treatments/medical-weight-loss-oxford" },
+        { name: "Weight loss consultation", href: "/treatments/weight-loss-consultation-oxford" },
         { name: "Forma Plus", href: "/treatments/forma-plus-body-contouring-oxford" },
         { name: "InMode FX", href: "/treatments/inmode-fx-skin-tightening-oxford" },
       ],

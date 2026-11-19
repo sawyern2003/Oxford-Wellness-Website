@@ -3,11 +3,11 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 const data: TreatmentPageData = {
   title: "Menopause Skin Treatments Oxford | Skin Changes in Menopause | Dr Taganova",
   metaDescription:
-    "Expert menopause skin treatments in Oxford. Profhilo, Morpheus8 and skin boosters for menopausal skin changes by formally trained gynaecologist Dr Inga Taganova at Belsyre Court, Woodstock Road.",
+    "Expert menopause skin treatments in Oxford. Profhilo, Morpheus8 and skin boosters for menopausal skin changes by GP with a background in obstetrics and gynaecology Dr Inga Taganova at Belsyre Court, Woodstock Road.",
   canonical: "https://www.theoxfordwellnessdoctor.com/menopause-skin",
   h1: "Menopause Skin Treatments in Oxford",
   intro:
-    "Menopause causes profound changes in skin quality – thinning, dryness, loss of elasticity and collagen decline. Dr Inga Taganova, a formally trained gynaecologist and aesthetic medicine specialist, understands these changes at a hormonal level and offers targeted treatments at our Oxford clinic on Woodstock Road.",
+    "Menopause causes profound changes in skin quality – thinning, dryness, loss of elasticity and collagen decline. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology and aesthetic medicine specialist, understands these changes at a hormonal level and offers targeted treatments at our Oxford clinic on Woodstock Road.",
   summary:
     "Doctor-led menopause skin treatments in Oxford: Profhilo, Morpheus8, skin boosters and aesthetic treatments designed specifically for hormonally-driven skin changes during perimenopause and menopause.",
   sections: [
@@ -22,7 +22,7 @@ const data: TreatmentPageData = {
     {
       heading: "Why Dr Inga's background matters",
       paragraphs: [
-        "Dr Inga Taganova is uniquely qualified to treat menopause skin concerns. She is a formally trained gynaecologist and specialist menopause lead, meaning she understands the hormonal changes of menopause at a deep clinical level. She is also an aesthetic medicine specialist, meaning she understands which treatments genuinely work for hormonally-depleted skin.",
+        "Dr Inga Taganova is uniquely qualified to treat menopause skin concerns. She is a GP with a background in obstetrics and gynaecology and GP with experience in menopause care, meaning she understands the hormonal changes of menopause at a deep clinical level. She is also an aesthetic medicine specialist, meaning she understands which treatments genuinely work for hormonally-depleted skin.",
         "This combination is rare. Most aesthetic practitioners have no training in gynaecology or women's health and do not understand the hormonal mechanisms driving skin changes in menopause. Most GPs lack aesthetic training and cannot advise on treatments beyond basic skincare. Dr Taganova can assess your skin changes in the context of your broader menopausal health, creating an integrated treatment plan that addresses the underlying hormonal causes alongside the visible symptoms.",
       ],
     },
@@ -126,7 +126,7 @@ const data: TreatmentPageData = {
   procedureSchema: {
     name: "Menopause Skin Treatment Consultation",
     description:
-      "Menopause skin treatment consultation with formally trained gynaecologist Dr Inga Taganova in Oxford, covering Profhilo, Morpheus8, skin boosters and aesthetic treatments for hormonally-driven skin changes.",
+      "Menopause skin treatment consultation with GP with a background in obstetrics and gynaecology Dr Inga Taganova in Oxford, covering Profhilo, Morpheus8, skin boosters and aesthetic treatments for hormonally-driven skin changes.",
     bodyLocation: "Face",
   },
   relatedLinks: [

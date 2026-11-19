@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatments/TreatmentPageTemplate";
 
 const data: TreatmentPageData = {
@@ -113,7 +114,11 @@ const data: TreatmentPageData = {
     { label: "All Treatments", href: "/treatments" },
   ],
 };
+=======
+import TreatmentLandingPage from "@/components/treatments/TreatmentLandingPage";
+import { morpheus8Data } from "@/data/treatments/morpheus8";
+>>>>>>> origin/main
 
 export default function Morpheus8Page() {
-  return <TreatmentPageTemplate data={data} />;
+  return <TreatmentLandingPage data={morpheus8Data} />;
 }

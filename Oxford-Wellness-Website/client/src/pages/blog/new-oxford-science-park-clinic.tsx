@@ -33,7 +33,7 @@ const data: BlogPostData = {
     {
       heading: "The Same Doctor, the Same Excellence",
       paragraphs: [
-        "What has not changed is what matters most: Dr. Inga Taganova continues to see every patient personally. As a GMC-registered GP, former NHS gynaecologist, and menopause specialist with over 20 years of clinical experience, Dr. Taganova brings exceptional depth of medical knowledge to every treatment and consultation.",
+        "What has not changed is what matters most: Dr Inga Taganova continues to see every patient personally. As a GMC-registered GP with a background in obstetrics and gynaecology and more than two decades of medical experience, Dr Inga brings exceptional depth of medical knowledge to every treatment and consultation.",
         "Our treatments - anti-wrinkle injections, dermal fillers, Profhilo, Morpheus8, lip fillers, chemical peels, skin boosters, medical weight loss, and our specialist menopause clinic - are all available at the new clinic. The standard of care remains exactly as it has always been: thorough, honest, and patient-led.",
       ],
     },
@@ -55,7 +55,7 @@ const data: BlogPostData = {
       heading: "Getting Here",
       paragraphs: [
         "Our Oxford location offers convenient access from throughout the city. Street parking is available on Woodstock Road and surrounding streets. We recommend allowing a few extra minutes for parking if you're driving.",
-        "We know that ease of access matters. Whether you're visiting for a 30-minute skin booster treatment or a 45-minute menopause consultation, our central Oxford location is easily reached by car, bus, bike, or on foot.",
+        "We know that ease of access matters. A 30-minute skin booster treatment or a 45-minute menopause consultation—our central Oxford location is easily reached by car, bus, bike, or on foot.",
       ],
     },
     {
