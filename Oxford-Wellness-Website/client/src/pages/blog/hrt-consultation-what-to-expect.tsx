@@ -139,7 +139,7 @@ const data: BlogPostData = {
   ],
   cta: {
     heading: "Book a Menopause Consultation",
-    text: "Discuss your symptoms, concerns and treatment options in a confidential consultation with Dr Taganova.",
+    text: "Discuss your symptoms, concerns and treatment options in a confidential consultation with Dr Inga Taganova.",
     buttonLabel: "Book Now",
     buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
     buttonExternal: true,

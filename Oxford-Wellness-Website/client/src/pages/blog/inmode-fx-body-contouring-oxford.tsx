@@ -92,7 +92,6 @@ const data: BlogPostData = {
         "FX can be combined with other body treatments for more comprehensive results. It is often paired with:",
       ],
       bullets: [
-        "Medical weight management to reduce fat before or during treatment",
         "Forma Plus for additional skin tightening and contouring",
         "Body Morpheus8 for deeper collagen remodelling in areas with more significant laxity or scarring",
       ],
@@ -108,7 +107,7 @@ const data: BlogPostData = {
       heading: "Realistic Expectations",
       paragraphs: [
         "FX produces gradual, natural improvement in skin quality and firmness. It is not a substitute for surgery. If you have severe skin laxity or large amounts of excess skin, surgical body contouring (abdominoplasty, brachioplasty) will produce more dramatic results.",
-        "FX is best thought of as a maintenance and optimisation treatment—improving what is already reasonably good or preserving what you have achieved through weight management and exercise.",
+        "FX is best thought of as a maintenance and optimisation treatment—improving what is already reasonably good or preserving what you have achieved through diet and exercise.",
       ],
     },
     {
@@ -121,7 +120,7 @@ const data: BlogPostData = {
   ],
   cta: {
     heading: "Book an InMode FX Body Treatment Consultation",
-    text: "Discuss body skin tightening and cellulite treatment with Dr Taganova in Oxford.",
+    text: "Discuss body skin tightening and cellulite treatment with Dr Inga Taganova in Oxford.",
     buttonLabel: "Book a Consultation",
     buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
     buttonExternal: true,
@@ -133,7 +132,6 @@ const data: BlogPostData = {
   relatedTreatments: [
     { label: "InMode FX Oxford", href: "/treatments/inmode-fx-skin-tightening-oxford" },
     { label: "Forma Plus Body Contouring", href: "/treatments/forma-plus-body-contouring-oxford" },
-    { label: "Medical Weight Management", href: "/treatments/medical-weight-loss-oxford" },
   ],
 };
 

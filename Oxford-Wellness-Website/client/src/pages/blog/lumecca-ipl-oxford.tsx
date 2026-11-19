@@ -127,7 +127,7 @@ const data: BlogPostData = {
   ],
   cta: {
     heading: "Book a Lumecca IPL Consultation",
-    text: "Discuss pigmentation and redness treatment with Dr Taganova in Oxford.",
+    text: "Discuss pigmentation and redness treatment with Dr Inga Taganova in Oxford.",
     buttonLabel: "Book a Consultation",
     buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
     buttonExternal: true,

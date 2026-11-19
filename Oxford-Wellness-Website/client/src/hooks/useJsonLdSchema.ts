@@ -64,14 +64,15 @@ export function createMedicalClinicSchema() {
     },
     "telephone": "+447739309380",
     "priceRange": "££-£££",
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "09:00",
-        "closes": "18:00"
-      }
-    ],
+    // TODO: Add openingHoursSpecification with opens/closes times once confirmed
+    // "openingHoursSpecification": [
+    //   {
+    //     "@type": "OpeningHoursSpecification",
+    //     "dayOfWeek": ["Monday", "Thursday", "Friday", "Saturday", "Sunday"],
+    //     "opens": "09:00",
+    //     "closes": "18:00"
+    //   }
+    // ],
     "medicalSpecialty": ["Gynecology", "GeneralPractice"],
     "availableService": [
       {

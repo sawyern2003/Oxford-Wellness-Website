@@ -114,7 +114,7 @@ const data: BlogPostData = {
   ],
   cta: {
     heading: "Book a Forma Skin Tightening Consultation",
-    text: "Discuss non-surgical skin tightening with Dr Taganova in Oxford.",
+    text: "Discuss non-surgical skin tightening with Dr Inga Taganova in Oxford.",
     buttonLabel: "Book a Consultation",
     buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
     buttonExternal: true,

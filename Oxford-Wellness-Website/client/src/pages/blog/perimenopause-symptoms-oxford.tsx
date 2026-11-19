@@ -131,7 +131,7 @@ const data: BlogPostData = {
   ],
   cta: {
     heading: "Book a Perimenopause Assessment",
-    text: "Discuss your symptoms and treatment options with Dr Taganova in a confidential consultation at Belsyre Court, Oxford.",
+    text: "Discuss your symptoms and treatment options with Dr Inga Taganova in a confidential consultation at Belsyre Court, Oxford.",
     buttonLabel: "Book a Consultation",
     buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
     buttonExternal: true,

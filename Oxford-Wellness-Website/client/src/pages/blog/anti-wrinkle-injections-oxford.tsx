@@ -39,7 +39,7 @@ const data: BlogPostData = {
         "Frown lines (vertical lines between the eyebrows, often called 'elevens')",
         "Crow's feet (lines radiating from the outer corners of the eyes when you smile or squint)",
       ],
-      paragraphs: [
+      paragraphs2: [
         "These three areas—often treated together as 'the three areas'—are where anti-wrinkle treatment produces the most predictable, natural-looking results.",
         "Beyond the standard areas, the treatment can also be used for brow lifting, softening a gummy smile, treating platysmal bands in the neck, reducing a downturned mouth, and slimming the jaw (masseter treatment). These are more advanced applications and require precise technique.",
         "Anti-wrinkle treatment does not effectively treat static lines—wrinkles that are visible at rest, caused by volume loss, skin laxity, or sun damage. For those concerns, other treatments such as fillers, skin tightening, or resurfacing are more appropriate.",
@@ -124,14 +124,14 @@ const data: BlogPostData = {
     {
       heading: "Anti-Wrinkle Treatment at The Oxford Wellness Doctor",
       paragraphs: [
-        "Dr Inga Taganova offers anti-wrinkle treatment at Belsyre Court in Oxford. Consultations are thorough and unhurried. Dr Taganova assesses your facial anatomy, discusses your goals, and explains what is realistic.",
+        "Dr Inga Taganova offers anti-wrinkle treatment at Belsyre Court in Oxford. Consultations are thorough and unhurried. Dr Inga Taganova assesses your facial anatomy, discusses your goals, and explains what is realistic.",
         "Treatment is conservative and individualised. The aim is always natural improvement—softening lines whilst preserving your expressions. Follow-up is included to ensure you are happy with the result.",
       ],
     },
   ],
   cta: {
     heading: "Book an Anti-Wrinkle Consultation",
-    text: "Discuss anti-wrinkle treatment with Dr Taganova in Oxford. Honest advice, natural results.",
+    text: "Discuss anti-wrinkle treatment with Dr Inga Taganova in Oxford. Honest advice, natural results.",
     buttonLabel: "Book a Consultation",
     buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
     buttonExternal: true,

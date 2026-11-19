@@ -105,13 +105,13 @@ const data: BlogPostData = {
       heading: "Consultations at The Oxford Wellness Doctor",
       paragraphs: [
         "Dr Inga Taganova offers masseter treatment at Belsyre Court in Oxford. Consultations begin with a detailed assessment of your jaw anatomy, your concerns, and your goals. If treatment is suitable, it can often be done on the same day.",
-        "Dr Taganova's approach is conservative and individualised. The aim is always natural improvement, not overcorrection. Follow-up is included to ensure you are happy with the result.",
+        "Dr Inga Taganova's approach is conservative and individualised. The aim is always natural improvement, not overcorrection. Follow-up is included to ensure you are happy with the result.",
       ],
     },
   ],
   cta: {
     heading: "Book a Jaw Treatment Consultation",
-    text: "Discuss jaw slimming or teeth grinding treatment with Dr Taganova in Oxford.",
+    text: "Discuss jaw slimming or teeth grinding treatment with Dr Inga Taganova in Oxford.",
     buttonLabel: "Book a Consultation",
     buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
     buttonExternal: true,

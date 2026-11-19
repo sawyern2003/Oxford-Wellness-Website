@@ -76,7 +76,7 @@ const data: BlogPostData = {
       paragraphs: [
         "Absolutely - and this combination is one of the most popular approaches at The Oxford Wellness Doctor. Dermal fillers address the structural elements: restoring cheek volume, lifting the mid-face, defining the jawline. Profhilo then works on the skin quality overlying and surrounding those areas - improving hydration, texture, and elasticity.",
         "The result is a comprehensive rejuvenation that looks genuinely natural: not filled, not frozen, but like a healthier and more rested version of you.",
-        "Dr. Taganova typically recommends treating the structural concerns with fillers first, then starting Profhilo to improve the skin quality around and above the treated areas. Both treatments can sometimes be performed at the same appointment, depending on the extent of treatment.",
+        "Dr Inga Taganova typically recommends treating the structural concerns with fillers first, then starting Profhilo to improve the skin quality around and above the treated areas. Both treatments can sometimes be performed at the same appointment, depending on the extent of treatment.",
       ],
     },
     {
@@ -89,7 +89,7 @@ const data: BlogPostData = {
   ],
   cta: {
     heading: "Not Sure Which Treatment Is Right for You?",
-    text: "Book a consultation and Dr. Taganova will give you an honest, personalised assessment - with no obligation to proceed.",
+    text: "Book a consultation and Dr Inga Taganova will give you an honest, personalised assessment - with no obligation to proceed.",
     buttonLabel: "Book a Consultation",
     buttonExternal: true,
     buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",

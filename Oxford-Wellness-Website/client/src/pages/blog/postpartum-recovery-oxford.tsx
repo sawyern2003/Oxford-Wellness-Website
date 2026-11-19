@@ -58,7 +58,7 @@ const data: BlogPostData = {
       paragraphs: [
         "Tears, episiotomy, and vaginal stretching during childbirth can cause persistent discomfort. Some women experience pain during intercourse (dyspareunia), sensitivity, or tightness at the site of old scarring. Others describe a feeling of looseness or reduced sensation.",
         "Scar tissue can be massaged and stretched to improve comfort and flexibility. Pelvic floor physiotherapy helps. If discomfort persists, further assessment by a women's health physiotherapist or GP is warranted.",
-        "Treatments such as hyaluronic acid vaginal fillers or radiofrequency therapy can improve vaginal tone, hydration, and sensitivity. These are not cosmetic vanity treatments—they address real functional concerns that affect quality of life and intimacy.",
+        "Treatments such as hyaluronic acid or radiofrequency therapy may help with symptoms such as dryness or discomfort. These are not cosmetic vanity treatments—they address real concerns that affect quality of life and intimacy.",
       ],
     },
     {
@@ -86,15 +86,15 @@ const data: BlogPostData = {
         "Skin tightening treatments (radiofrequency, such as Forma or InMode FX) for loose abdominal or breast skin",
         "Body contouring to address stubborn areas of fat that have not responded to diet and exercise",
         "Scar treatments (laser, micro-needling, or silicone-based therapies) to improve the appearance of caesarean or other surgical scars",
-        "Vaginal rejuvenation treatments (radiofrequency or hyaluronic acid) for intimate concerns",
+        "Intimate health treatments that may help with symptoms such as dryness or discomfort",
       ],
     },
     {
-      heading: "Medical Weight Management After Pregnancy",
+      heading: "Managing Body Changes After Pregnancy",
       paragraphs: [
-        "Weight retention after pregnancy is common. The combination of hormonal changes, sleep deprivation, altered eating patterns, and reduced activity makes weight loss challenging.",
-        "If you are struggling to return to your pre-pregnancy weight despite diet and exercise, medical weight management may be an option. This is not about rapid weight loss or extreme measures. It is about medically supervised support—reviewing your metabolic health, addressing barriers, and where appropriate, considering prescription options.",
-        "Medical weight management is not suitable whilst breastfeeding and should not be considered until at least six months postpartum. It is not a cosmetic service—it is a medical intervention for people with a BMI above certain thresholds who have struggled with conventional approaches.",
+        "Weight retention and body composition changes after pregnancy are common. The combination of hormonal changes, sleep deprivation, altered eating patterns, and reduced activity all contribute to postpartum body changes.",
+        "Many women find that their body shape and weight change permanently after pregnancy. This is a normal physiological response and not a sign of failure. Focus on sustainable, gentle approaches to health rather than rapid interventions.",
+        "If you have concerns about postpartum health, metabolic function, or persistent symptoms, discuss them with your GP. Any medical interventions are generally not suitable whilst breastfeeding and should not be considered until at least six months postpartum.",
       ],
     },
     {
@@ -121,7 +121,7 @@ const data: BlogPostData = {
     {
       heading: "Postpartum Support at The Oxford Wellness Doctor",
       paragraphs: [
-        "Dr Inga Taganova is a GP with a background in obstetrics and gynaecology and over twenty years of experience in women's health. Postpartum consultations are unhurried, compassionate, and evidence-based.",
+        "Dr Inga Taganova is a GP with a background in obstetrics and gynaecology and more than two decades of medical experience. Postpartum consultations are unhurried, compassionate, and evidence-based.",
         "The focus is on understanding your specific concerns, assessing what has changed, and providing realistic options. Pelvic floor rehabilitation is always the foundation. Aesthetic or medical interventions are considered only when appropriate, safe, and desired.",
         "Consultations take place at Belsyre Court in Oxford. You do not need a GP referral.",
       ],
@@ -129,7 +129,7 @@ const data: BlogPostData = {
   ],
   cta: {
     heading: "Book a Postpartum Recovery Consultation",
-    text: "Discuss your postpartum concerns with Dr Taganova in a compassionate, unhurried consultation.",
+    text: "Discuss your postpartum concerns with Dr Inga Taganova in a compassionate, unhurried consultation.",
     buttonLabel: "Book a Consultation",
     buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
     buttonExternal: true,

@@ -152,13 +152,13 @@ const data: BlogPostData = {
       heading: "Health Checks at The Oxford Wellness Doctor",
       paragraphs: [
         "Dr Inga Taganova offers comprehensive women's health assessments at Belsyre Court in Oxford. Consultations are unhurried and cover your full medical history, current symptoms, and preventive health needs. Blood tests can be arranged on the same day, and results are reviewed in a follow-up consultation with clear, actionable recommendations.",
-        "Because Dr Taganova specialises in women's health and menopause, the assessment includes discussion of hormonal health, menopause status, and age-appropriate screening—areas that are often rushed or overlooked in standard NHS consultations.",
+        "Because Dr Inga Taganova specialises in women's health and menopause, the assessment includes discussion of hormonal health, menopause status, and age-appropriate screening—areas that are often rushed or overlooked in standard NHS consultations.",
       ],
     },
   ],
   cta: {
     heading: "Book a Women's Health Check",
-    text: "Comprehensive health assessment with Dr Taganova at Belsyre Court, Oxford.",
+    text: "Comprehensive health assessment with Dr Inga Taganova at Belsyre Court, Oxford.",
     buttonLabel: "Book a Consultation",
     buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
     buttonExternal: true,

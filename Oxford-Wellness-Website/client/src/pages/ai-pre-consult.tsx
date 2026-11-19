@@ -7,7 +7,7 @@ export default function AIPreConsult() {
   useBreadcrumbSchema([{ name: "Pre-Consultation", path: "/ai-consultation" }]);
   useSEO({
     title: "AI Consultation | The Oxford Wellness Doctor | Find Your Treatment",
-    description: "Discover which aesthetic treatment is right for you with our AI consultation tool. Get personalized recommendations from Dr. Taganova's Oxford clinic.",
+    description: "Discover which aesthetic treatment is right for you with our AI consultation tool. Get personalized recommendations from Dr Inga Taganova's Oxford clinic.",
     canonical: "https://www.theoxfordwellnessdoctor.com/ai-consultation",
   });
   return (
