@@ -39,7 +39,7 @@ export const inmodeFXData: TreatmentLandingPageData = {
   trust: {
     heading: "Why choose The Oxford Wellness Doctor",
     items: [
-      "Doctor-led clinic: Dr Inga Taganova, GMC-registered doctor",
+      "Doctor-led clinic: Dr Inga Taganova, GMC-registered GP",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ",
       "More than two decades of medical experience",
       "InMode FX delivered as part of a considered body-skin plan",
