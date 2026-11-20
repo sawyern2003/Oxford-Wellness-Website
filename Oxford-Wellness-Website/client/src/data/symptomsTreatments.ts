@@ -153,14 +153,14 @@ export const symptoms: Symptom[] = [
       "Falling oestrogen shifts where the body stores fat – from hips and thighs towards the abdomen – while muscle mass and insulin sensitivity decline. The same diet and exercise that worked at 35 stops working at 48.",
     recommended: [
       {
-        name: "Medical weight management",
-        href: "/treatments/medical-weight-loss-oxford",
-        why: "UK-licensed prescription treatment where clinically suitable, prescribed and monitored monthly by a GP.",
+        name: "Menopause & women's health consultation",
+        href: "/menopause-clinic-oxford",
+        why: "Assesses whether hormonal change is driving midlife weight and body-composition shifts.",
       },
       {
-        name: "Weight & Body Confidence programme",
-        href: "/programmes/weight-body-confidence",
-        why: "Combines medical oversight with nutrition and muscle work, so the change holds.",
+        name: "Longevity medicine",
+        href: "/longevity-medicine-oxford",
+        why: "Looks at metabolic health, energy and body composition as part of healthy ageing.",
       },
       {
         name: "Forma Plus Body",
@@ -359,9 +359,9 @@ export const symptoms: Symptom[] = [
         why: "Excludes the causes that need excluding before anything is attributed to hormones.",
       },
       {
-        name: "Weight & Body Confidence programme",
-        href: "/programmes/weight-body-confidence",
-        why: "Practical work on meal composition, fibre, protein and timing rather than an elimination diet.",
+        name: "Longevity medicine",
+        href: "/longevity-medicine-oxford",
+        why: "Practical work on meal composition, fibre, protein and metabolic health rather than an elimination diet.",
       },
     ],
   },
@@ -395,13 +395,6 @@ export const treatmentApproaches: TreatmentApproach[] = [
     icon: "nutrition",
     description:
       "Protein, fibre, insulin sensitivity, bone and cardiovascular protection – nutrition guidance built for the decades after menopause rather than a short-term diet.",
-  },
-  {
-    id: "weight-management",
-    title: "Medical Weight Management",
-    icon: "weight-management",
-    description:
-      "UK-licensed prescription treatment where clinically suitable, prescribed and monitored by a GMC-registered doctor with monthly review, always alongside nutrition and muscle work.",
   },
   {
     id: "movement-sleep",

@@ -156,16 +156,10 @@ const sections: Section[] = [
   },
   {
     id: "body",
-    title: "Weight & Body",
-    intro: "Doctor-led weight loss consultation and non-surgical body contouring treatments for improved confidence and wellbeing.",
+    title: "Body",
+    intro: "Non-surgical body treatments for skin firming, texture and contour.",
     bg: "bg-white",
     treatments: [
-      {
-        name: "Weight Loss Consultation",
-        description: "Doctor-led assessment and personalised advice on nutrition, activity and lifestyle for adults.",
-        href: "/treatments/weight-loss-consultation-oxford",
-        price: "Price confirmed at booking",
-      },
       {
         name: "Forma Plus",
         description: "Radiofrequency body treatment used to firm skin on areas such as the abdomen and arms.",

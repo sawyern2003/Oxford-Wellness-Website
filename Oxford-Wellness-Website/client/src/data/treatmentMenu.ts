@@ -200,7 +200,7 @@ export const treatmentMenuExtras: TreatmentLink[] = [
 ];
 
 export const treatmentsIntro =
-  "Dr Inga Taganova sees patients for women's health, skin and medical aesthetics, and weight and body concerns at Belsyre Court in Oxford.";
+  "Dr Inga Taganova sees patients for women's health, skin and medical aesthetics, and body treatments at Belsyre Court in Oxford.";
 
 export type MenuItem = {
   name: string;
@@ -225,9 +225,8 @@ export const treatmentMenuColumns: MenuGroup[][] = [
       ],
     },
     {
-      title: "Weight & body",
+      title: "Body",
       items: [
-        { name: "Weight loss consultation", href: "/treatments/weight-loss-consultation-oxford" },
         { name: "Forma Plus", href: "/treatments/forma-plus-body-contouring-oxford" },
         { name: "InMode FX", href: "/treatments/inmode-fx-skin-tightening-oxford" },
       ],

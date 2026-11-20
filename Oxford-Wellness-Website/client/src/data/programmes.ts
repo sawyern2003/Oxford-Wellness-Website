@@ -150,6 +150,10 @@ export const programmes: Programme[] = [
       },
     ],
   },
+];
+
+/** Kept for restore after CQC registration — not listed or routed. */
+export const archivedProgrammes: Programme[] = [
   {
     id: "weight-body-confidence",
     name: "Body Contouring & Confidence",
@@ -209,9 +213,9 @@ export const programmes: Programme[] = [
 ];
 
 export function getProgrammeById(id: string): Programme | undefined {
-  return programmes.find((p) => p.id === id);
+  return programmes.find((p) => p.id === id) ?? archivedProgrammes.find((p) => p.id === id);
 }
 
 export function getProgrammeBySlug(slug: string): Programme | undefined {
-  return programmes.find((p) => p.slug === slug);
+  return programmes.find((p) => p.slug === slug) ?? archivedProgrammes.find((p) => p.slug === slug);
 }

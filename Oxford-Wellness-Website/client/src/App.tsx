@@ -13,7 +13,6 @@ import HowWeHelp from "@/pages/how-we-help";
 import SymptomsAndTreatments from "@/pages/symptoms-and-treatments";
 import ProgrammeFinder from "@/pages/programme-finder";
 import SkinHealthProgramme from "@/pages/programmes/skin-health-regeneration";
-import WeightBodyProgramme from "@/pages/programmes/weight-body-confidence";
 import IntimateWellnessProgramme from "@/pages/programmes/intimate-wellness";
 import Pricing from "@/pages/pricing";
 import PersonalisedTreatmentPlans from "@/pages/personalised-treatment-plans";
@@ -65,7 +64,6 @@ import InModeFX from "@/pages/treatments/inmode-fx";
 import LumeccaIPL from "@/pages/treatments/lumecca-ipl";
 import FillerDissolving from "@/pages/treatments/filler-dissolving";
 import JawSlimming from "@/pages/treatments/jaw-slimming";
-import WeightLossConsultation from "@/pages/treatments/weight-loss-consultation";
 import PrivacyPolicy from "@/pages/privacy-policy";
 import CookiePolicy from "@/pages/cookie-policy";
 import TermsAndConditions from "@/pages/terms-and-conditions";
@@ -98,7 +96,6 @@ function Router() {
       <Route path="/symptoms-and-treatments" component={SymptomsAndTreatments} />
       <Route path="/programme-finder" component={ProgrammeFinder} />
       <Route path="/programmes/skin-health-regeneration" component={SkinHealthProgramme} />
-      <Route path="/programmes/weight-body-confidence" component={WeightBodyProgramme} />
       <Route path="/programmes/intimate-wellness" component={IntimateWellnessProgramme} />
       <Route path="/treatments" component={Services} />
       <Route path="/treatments/anti-wrinkle-injections-oxford" component={AntiWrinkle} />
@@ -119,7 +116,6 @@ function Router() {
       <Route path="/treatments/lumecca-ipl-oxford" component={LumeccaIPL} />
       <Route path="/treatments/filler-dissolving-oxford" component={FillerDissolving} />
       <Route path="/treatments/jaw-slimming-teeth-grinding-oxford" component={JawSlimming} />
-      <Route path="/treatments/weight-loss-consultation-oxford" component={WeightLossConsultation} />
       <Route path="/menopause-clinic-oxford" component={MenopauseClinic} />
       <Route path="/perimenopause-oxford" component={PerimenopauseOxford} />
       <Route path="/womens-health-oxford" component={WomensHealthOxford} />

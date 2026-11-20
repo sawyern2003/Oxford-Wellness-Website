@@ -1,6 +1,5 @@
 export type ProgrammeId =
   | "skin-health-regeneration"
-  | "weight-body-confidence"
   | "intimate-wellness";
 
 export interface LeadDetails {

@@ -15,7 +15,7 @@ export type CatalogueCategory =
   | "womens"
   | "other";
 
-export type ConsultationKey = "aesthetic-skin" | "menopause" | "weight" | "follow-up" | "plan";
+export type ConsultationKey = "aesthetic-skin" | "menopause" | "follow-up" | "plan";
 
 export interface CatalogueItem {
   id: string;
@@ -431,20 +431,13 @@ export const catalogue: CatalogueItem[] = [
     booking: "aesthetic-skin",
     detailUrl: "/treatments/chemical-peels-oxford",
   }),
-  fee({
-    id: "weight-loss-consultation",
-    name: "Weight Loss Consultation",
-    category: "body",
-    amount: "Price confirmed at booking", // TODO: Confirm actual price
-    booking: "weight",
-    detailUrl: "/treatments/weight-loss-consultation-oxford",
-  }),
+  // Weight-loss consultation fee hidden pending CQC registration — restore when ready.
   fee({
     id: "forma-plus",
     name: "Forma Plus — single session",
     category: "body",
     amount: "£225",
-    booking: "weight",
+    booking: "aesthetic-skin",
     detailUrl: "/treatments/forma-plus-body-contouring-oxford",
   }),
   fee({
@@ -452,7 +445,7 @@ export const catalogue: CatalogueItem[] = [
     name: "Forma Plus — course of 6",
     category: "body",
     amount: "£1,100",
-    booking: "weight",
+    booking: "aesthetic-skin",
     detailUrl: "/treatments/forma-plus-body-contouring-oxford",
   }),
   fee({
@@ -460,7 +453,7 @@ export const catalogue: CatalogueItem[] = [
     name: "InMode FX — single session",
     category: "body",
     amount: "£175",
-    booking: "weight",
+    booking: "aesthetic-skin",
     detailUrl: "/treatments/inmode-fx-skin-tightening-oxford",
   }),
   fee({
@@ -468,7 +461,7 @@ export const catalogue: CatalogueItem[] = [
     name: "InMode FX — course of 6",
     category: "body",
     amount: "£850",
-    booking: "weight",
+    booking: "aesthetic-skin",
     detailUrl: "/treatments/inmode-fx-skin-tightening-oxford",
   }),
   fee({
