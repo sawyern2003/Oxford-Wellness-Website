@@ -85,7 +85,7 @@ const data: TreatmentPageData = {
       heading: "What to expect at your consultation",
       paragraphs: [
         "Your initial consultation is an opportunity to discuss your concerns, goals, and suitability for treatment. Dr Taganova will assess your facial anatomy, skin quality, and medical history, then explain which treatments are appropriate and what results you can realistically expect.",
-        "There is no pressure to proceed with treatment on the day. Many patients prefer to think about their options and return for treatment at a later date. The consultation fee is redeemable against treatment if you proceed within six months.",
+        "There is no pressure to proceed with treatment on the day. Many patients prefer to think about their options and return for treatment at a later date.",
         "Treatment appointments typically last 30–60 minutes depending on the procedure. Most treatments require no downtime, though some temporary swelling, redness or bruising is normal. Dr Taganova provides detailed aftercare instructions and a follow-up appointment is included for most treatments.",
       ],
     },
@@ -105,7 +105,7 @@ const data: TreatmentPageData = {
     },
     {
       q: "How much do treatments cost in Oxford?",
-      a: "Anti-wrinkle injections start from £210 for one area. Profhilo is £350 per session. Morpheus8 face is £650 per session. A consultation is £95, redeemable against treatment. Prices are transparent and include follow-up appointments where applicable.",
+      a: "Anti-wrinkle injections start from £210 for one area. Profhilo is £350 per session. Morpheus8 face is £650 per session. A consultation is £95. Prices are transparent and include follow-up appointments where applicable.",
     },
     {
       q: "Will I look natural after treatment?",
@@ -121,7 +121,7 @@ const data: TreatmentPageData = {
     },
     {
       q: "How do I book a consultation?",
-      a: "You can book online via the Glowday booking system, call the clinic on 07739 309380, or email info@theoxfordwellnessdoctor.com. Consultations are £95 and redeemable against treatment if you proceed within six months.",
+      a: "You can book online via the Glowday booking system, call the clinic on 07739 309380, or email info@theoxfordwellnessdoctor.com. Consultations are £95.",
     },
   ],
   procedureSchema: {
