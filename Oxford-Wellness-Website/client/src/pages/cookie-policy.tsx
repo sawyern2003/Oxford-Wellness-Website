@@ -44,6 +44,7 @@ export default function CookiePolicy() {
                 <p className="text-sm">These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. We use this data to improve the site experience.</p>
                 <p className="text-sm mt-2"><strong>Provider:</strong> Google Analytics 4.</p>
                 <p className="text-sm mt-2"><strong>Data collected:</strong> Pages visited, time on site, geographic region (country/city level), device type, referral source. The analytics tag is not loaded unless you accept analytics cookies. Query strings are not sent, so names, email addresses, and information typed into forms are not included in the page address passed to Google Analytics.</p>
+                <p className="text-sm mt-2">With your consent, Google Ads tags may also be used to measure bookings and related conversions from our advertisements.</p>
               </div>
 
               <div className="bg-muted/40 rounded-2xl p-5">

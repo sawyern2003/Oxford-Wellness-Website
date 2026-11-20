@@ -8,11 +8,16 @@ import {
   trackSanitizedPageView,
   type AnalyticsConsent,
 } from "@/lib/analytics";
+import { googleAdsConfigured, initGoogleAds } from "@/lib/googleAds";
 
 export default function CookieConsent() {
   const [location] = useLocation();
   const [choice, setChoice] = useState<AnalyticsConsent | null>(() => readAnalyticsConsent());
   const [open, setOpen] = useState(() => readAnalyticsConsent() === null);
+
+  useEffect(() => {
+    if (googleAdsConfigured()) initGoogleAds();
+  }, []);
 
   useEffect(() => {
     const show = () => setOpen(true);
@@ -42,7 +47,7 @@ export default function CookieConsent() {
     >
       <div className="container-page flex flex-col gap-3 py-3 md:flex-row md:items-center md:justify-between md:py-4">
         <p className="max-w-2xl text-xs md:text-sm leading-relaxed text-muted-foreground">
-          Analytics cookies stay off unless you accept them.{" "}
+          Cookies for analytics and measuring bookings stay off unless you accept them.{" "}
           <Link href="/cookie-policy" className="text-primary underline decoration-primary/30 underline-offset-4 hover:text-secondary">
             Cookie policy
           </Link>
