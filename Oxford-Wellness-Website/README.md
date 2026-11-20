@@ -8,6 +8,9 @@ Copy `.env.example` to `.env` for local development. On Vercel, set variables un
 **Project → Settings → Environment Variables** (Production and Preview as needed).
 Vite embeds `VITE_*` values at **build** time — change them, then redeploy.
 
+Vite `root` is `client/`, so mode env files live there. Production and Vercel
+preview builds use **production** mode and load `client/.env.production`.
+
 | Variable | Required | Purpose |
 |---|---|---|
 | `PORT` | No | Dev/server port (default 3000) |
@@ -17,9 +20,16 @@ Vite embeds `VITE_*` values at **build** time — change them, then redeploy.
 | `VITE_GADS_WHATSAPP_LABEL` | No | Conversion label for WhatsApp clicks |
 | `VITE_GADS_TEL_LABEL` | No | Conversion label for `tel:` clicks |
 
+### Google Ads defaults
+
+Public Ads IDs are committed in `client/.env.production` so a merge alone enables
+tracking on production and Vercel preview builds. Optional `VITE_*` env vars in
+Vercel override those defaults without another commit. `.gitignore` ignores
+`.env` and `.env*.local` only — `.env.production` is tracked.
+
 ### Google Ads + Consent Mode v2
 
-When `VITE_GOOGLE_ADS_ID` is set:
+When `VITE_GOOGLE_ADS_ID` is set (from `.env.production` or an env override):
 
 1. `gtag.js` loads site-wide with Consent Mode defaults **denied**.
 2. The existing cookie banner Accept / Reject updates consent (`granted` / `denied`) and persists the choice.
