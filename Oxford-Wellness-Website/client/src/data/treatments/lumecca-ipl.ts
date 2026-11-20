@@ -19,6 +19,6 @@ export const lumeccaIPLData: TreatmentLandingPageData = {
     { q: "Who is not suitable for IPL?", a: "IPL is not suitable for very dark skin tones or tanned skin. A skin assessment is required before treatment." }
   ],
   pricing: [{ name: "Lumecca IPL — hands", price: "£150" }, { name: "Lumecca IPL — small area", price: "£150" }, { name: "Lumecca IPL — medium area", price: "£225" }, { name: "Lumecca IPL — full face", price: "£225" }, { name: "Lumecca IPL — face and neck", price: "£300" }],
-  consultation: { name: "Aesthetic & Skin Consultation", price: "£75" },
+  consultation: { name: "Aesthetic & Skin Consultation", price: "£95" },
   procedureSchema: { name: "Lumecca IPL Oxford", description: "Intense pulsed light treatment for pigmentation, rosacea, spider veins and skin rejuvenation. Delivered by GMC-registered Dr Inga Taganova in Oxford.", bodyLocation: "Face" }
 };

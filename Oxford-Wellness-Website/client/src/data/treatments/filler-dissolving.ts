@@ -19,6 +19,6 @@ export const fillerDissolvingData: TreatmentLandingPageData = {
     { q: "Can I have new filler after dissolving?", a: "Yes. Once swelling settles (usually 2 weeks), new filler can be placed." }
   ],
   pricing: [{ name: "Filler dissolving (hyaluronidase)", price: "From £150" }],
-  consultation: { name: "Aesthetic & Skin Consultation", price: "£75" },
+  consultation: { name: "Aesthetic & Skin Consultation", price: "£95" },
   procedureSchema: { name: "Filler Dissolving Oxford", description: "Hyaluronidase treatment for safe removal of unwanted dermal filler. Delivered by GMC-registered Dr Inga Taganova in Oxford.", bodyLocation: "Face" }
 };

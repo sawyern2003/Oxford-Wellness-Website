@@ -95,7 +95,7 @@ export const catalogue: CatalogueItem[] = [
     name: "Aesthetic & Skin Consultation",
     category: "consultations",
     description: "Assessment before aesthetic or skin treatment.",
-    amount: "£75",
+    amount: "£95",
     booking: "aesthetic-skin",
     detailUrl: "/pricing",
     consultationRequired: false,

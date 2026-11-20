@@ -80,7 +80,7 @@ export const dermalFillersData: TreatmentLandingPageData = {
   
   consultation: {
     name: "Aesthetic & Skin Consultation",
-    price: "£75"
+    price: "£95"
   },
   
   procedureSchema: {

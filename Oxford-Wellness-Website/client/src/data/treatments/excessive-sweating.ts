@@ -19,6 +19,6 @@ export const excessiveSweatingData: TreatmentLandingPageData = {
     { q: "Is it safe?", a: "Yes. This treatment has been used for hyperhidrosis for over 20 years and is safe when delivered by a qualified doctor." }
   ],
   pricing: [{ name: "Hyperhidrosis treatment (underarms)", price: "£425" }],
-  consultation: { name: "Aesthetic & Skin Consultation", price: "£75" },
+  consultation: { name: "Aesthetic & Skin Consultation", price: "£95" },
   procedureSchema: { name: "Excessive Sweating Treatment Oxford", description: "Prescription injections for hyperhidrosis and excessive underarm sweating. Delivered by GMC-registered Dr Inga Taganova in Oxford.", bodyLocation: "Underarm" }
 };

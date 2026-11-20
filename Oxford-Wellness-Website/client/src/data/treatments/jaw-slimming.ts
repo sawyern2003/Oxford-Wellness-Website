@@ -19,6 +19,6 @@ export const jawSlimmingData: TreatmentLandingPageData = {
     { q: "Will it affect my ability to chew?", a: "No. The treatment reduces bulk without affecting normal jaw function. You can chew and eat normally." }
   ],
   pricing: [{ name: "Jaw slimming (masseter) treatment", price: "£275" }],
-  consultation: { name: "Aesthetic & Skin Consultation", price: "£75" },
+  consultation: { name: "Aesthetic & Skin Consultation", price: "£95" },
   procedureSchema: { name: "Jaw Slimming Treatment Oxford", description: "Masseter muscle-relaxing injections for jaw slimming and bruxism. Delivered by GMC-registered Dr Inga Taganova in Oxford.", bodyLocation: "Jaw" }
 };
