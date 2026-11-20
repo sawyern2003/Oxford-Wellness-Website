@@ -3,8 +3,8 @@ import { TreatmentLandingPageData } from "@/components/treatments/TreatmentLandi
 export const sexualWellnessData: TreatmentLandingPageData = {
   slug: "sexual-wellness-oxford",
   h1: "Sexual Wellness & Intimate Health in Oxford",
-  title: "Sexual Wellness & Intimate Health Oxford | Dr Inga Taganova | GP",
-  metaDescription: "Discreet sexual wellness and intimate health care in Oxford. Expert treatment for dryness, discomfort, and intimate concerns from GP Dr Inga Taganova. Book confidentially.",
+  title: "Sexual Wellness & Intimate Health Oxford | Dr Inga Taganova",
+  metaDescription: "Discreet sexual wellness and intimate health care in Oxford. Expert treatment for dryness, discomfort, and intimate concerns from Dr Inga Taganova.",
   canonical: "https://www.theoxfordwellnessdoctor.com/sexual-wellness-oxford",
   
   priceLabel: "Intimate Health Consultation",
@@ -31,18 +31,18 @@ export const sexualWellnessData: TreatmentLandingPageData = {
       "Treatment options are explained, including Votiva FormaV and intimate wellness treatments.",
       "You will leave with a clear understanding of your options and a personalised treatment plan."
     ],
-    sessionsInfo: "All consultations are confidential. Dr Inga Taganova is a GP with a background in obstetrics and gynaecology."
+    sessionsInfo: "All consultations are confidential. Dr Inga Taganova is a lead clinician with a background in obstetrics and gynaecology."
   },
   
   downtime: {
     heading: "Treatment options",
-    description: "We offer Votiva FormaV (£350 single session, £950 course of 3) – a non-invasive radiofrequency treatment for intimate wellness – and intimate hyaluronic acid treatments. Suitability is decided during your consultation. Dr Inga Taganova can also provide specialist referrals if other treatments are clinically appropriate."
+    description: "We offer Forma V (£450 single session, £1,200 course of 3) – a non-invasive radiofrequency treatment for intimate wellness – and intimate hyaluronic acid treatments. Suitability is decided during your consultation. Dr Inga Taganova can also provide specialist referrals if other treatments are clinically appropriate."
   },
   
   trust: {
     heading: "Why choose The Oxford Wellness Doctor",
     items: [
-      "Doctor-led clinic: Dr Inga Taganova is a GMC-registered GP with a background in obstetrics and gynaecology",
+      "Doctor-led clinic: Dr Inga Taganova is a GMC-registered doctor with a background in obstetrics and gynaecology",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ",
       "more than two decades of medical experience",
       "Discreet, empathetic, and professional approach",
@@ -53,7 +53,7 @@ export const sexualWellnessData: TreatmentLandingPageData = {
   faqs: [
     {
       q: "Is intimate health treatment embarrassing to discuss?",
-      a: "Not at all. Dr Inga Taganova is a GP with a background in obstetrics and gynaecology who has has more than two decades of medical experience with women. She approaches these topics with sensitivity, professionalism, and complete discretion. You won't be judged – you'll be listened to and helped."
+      a: "Not at all. Dr Inga Taganova is a lead clinician with a background in obstetrics and gynaecology who has has more than two decades of medical experience with women. She approaches these topics with sensitivity, professionalism, and complete discretion. You won't be judged – you'll be listened to and helped."
     },
     {
       q: "What is Votiva FormaV?",
@@ -74,15 +74,15 @@ export const sexualWellnessData: TreatmentLandingPageData = {
   ],
   
   pricing: [
-    { name: "Intimate Health Consultation", price: "£150" },
-    { name: "Votiva FormaV — single session", price: "£350" },
-    { name: "Votiva FormaV — course of 3", price: "£950" },
+    { name: "Intimate Health Consultation (30 min)", price: "£150" },
+    { name: "Forma V — single session", price: "£450" },
+    { name: "Forma V — course of 3", price: "£1,200" },
     { name: "Intimate hyaluronic acid treatment", price: "Price on consultation" }
   ],
   
   procedureSchema: {
     name: "Sexual Wellness & Intimate Health Consultation",
-    description: "Discreet intimate health consultation with Dr Inga Taganova – GP with a background in obstetrics and gynaecology – in Oxford. Expert treatment for dryness, discomfort, and sexual wellness concerns.",
+    description: "Discreet intimate health consultation with Dr Inga Taganova – lead clinician with a background in obstetrics and gynaecology – in Oxford. Expert treatment for dryness, discomfort, and sexual wellness concerns.",
     bodyLocation: "Pelvis"
   }
 };

@@ -15,7 +15,7 @@ const data: TreatmentPageData = {
       heading: "What longevity medicine means here",
       paragraphs: [
         "Longevity care is not about promising to stop ageing or chasing unrealistic ideals. It is about understanding the systems that shape how you age – metabolism, hormones, inflammation, body composition, and skin health – and intervening thoughtfully where medical evidence supports genuine benefit.",
-        "As a GMC-registered GP, GP with a background in obstetrics and gynaecology, and GP with experience in menopause care, Dr Taganova brings particular depth for women in midlife, when metabolic and hormonal shifts often arrive together. Her background means she can address ageing from multiple angles: hormonal health, metabolic function, aesthetic changes, and the psychological impact of physical decline.",
+        "As a GMC-registered doctor and lead clinician with a background in obstetrics and gynaecology and experience in menopause care, Dr Taganova brings particular depth for women in midlife, when metabolic and hormonal shifts often arrive together. Her background means she can address ageing from multiple angles: hormonal health, metabolic function, aesthetic changes, and the psychological impact of physical decline.",
         "This is not a wellness clinic that makes vague promises about optimisation. It is a medical practice led by a doctor with over 20 years of clinical experience, who understands that good longevity medicine is grounded in physiology, individualised to your circumstances, and monitored properly.",
       ],
     },
@@ -65,7 +65,7 @@ const data: TreatmentPageData = {
       heading: "The clinic in central Oxford",
       paragraphs: [
         "The Oxford Wellness Doctor is located at Belsyre Court on Woodstock Road, in the heart of Oxford just north of the city centre. The clinic serves patients from across Oxford, North Oxford, Summertown, Jericho and the surrounding areas, with convenient access via car (on-street parking nearby) and public transport.",
-        "The clinic environment is calm, private and professional. Longevity consultations are unhurried, typically 45 minutes for an initial assessment, with time to discuss your health history, goals and concerns in detail. You will see Dr Taganova personally – not a nurse or junior practitioner.",
+        "The clinic environment is calm, private and professional. Longevity consultations are unhurried, typically 60 minutes for an initial assessment, with time to discuss your health history, goals and concerns in detail. You will see Dr Taganova personally – not a nurse or junior practitioner.",
       ],
     },
     {
@@ -78,9 +78,10 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
+    { name: "Longevity Consultation (60 min)", price: "£295" },
     { name: "Medical Weight Management Consultation — Initial", price: "£95" },
     { name: "Medical Weight Management — Follow-up", price: "£55" },
-    { name: "Vitamin B12 injection", price: "£35" },
+    { name: "Vitamin B12 injection", price: "£45" },
   ],
   faqs: [
     {

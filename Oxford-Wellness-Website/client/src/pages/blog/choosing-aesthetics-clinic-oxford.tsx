@@ -28,7 +28,7 @@ const data: BlogPostData = {
       heading: "Distinguish Medical Clinics from Beauty Salons",
       paragraphs: [
         "The aesthetics market in the UK includes everything from hospital-linked medical clinics to beauty salons offering dermal filler 'parties'. Understanding where on this spectrum a clinic sits is essential.",
-        "A medical-led aesthetics clinic should have: a clinical environment with appropriate infection control; qualified prescribers on-site or overseeing treatment; protocols for managing complications; access to emergency equipment including hyaluronidase; professional medical indemnity insurance.",
+        "A medical-led aesthetics clinic should have: a clinical environment with appropriate infection control; qualified prescribers on-site or overseeing treatment; protocols for managing complications; access to emergency equipment for dissolving filler if needed; professional medical indemnity insurance.",
         "A beauty salon offering aesthetic treatments may have none of these things - and you would have limited legal recourse if something went wrong.",
       ],
     },
@@ -41,7 +41,7 @@ const data: BlogPostData = {
         "'Where did you train in aesthetic medicine and how long did the training last?'",
         "'How many of this specific procedure have you performed?'",
         "'What do you do if there is a complication?'",
-        "'Do you have access to hyaluronidase?' (the enzyme used to dissolve filler in an emergency)",
+        "'Can you dissolve filler in an emergency if needed?'",
         "'Can I see examples of your work?'",
         "A practitioner who becomes defensive or evasive about these questions is telling you something important.",
       ],

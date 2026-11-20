@@ -9,7 +9,7 @@ const data: BlogPostData = {
   category: "Menopause & Women's Health",
   readTime: "6 min",
   datePublished: "2024-09-22",
-  intro: "If you have noticed that your skin has changed in your 40s or 50s - becoming drier, thinner, less plump, or more prone to lines - you are not imagining it. These changes are real, measurable, and directly linked to the hormonal shifts of the menopause transition. As a GP with a background in obstetrics and gynaecology who now practises aesthetic medicine, Dr Inga Taganova is in a position to explain what is actually happening to your skin during menopause - and, more importantly, what genuinely helps.",
+  intro: "If you have noticed that your skin has changed in your 40s or 50s - becoming drier, thinner, less plump, or more prone to lines - you are not imagining it. These changes are real, measurable, and directly linked to the hormonal shifts of the menopause transition. As a lead clinician with a background in obstetrics and gynaecology who now practises aesthetic medicine, Dr Inga Taganova is in a position to explain what is actually happening to your skin during menopause - and, more importantly, what genuinely helps.",
   sections: [
     {
       heading: "Why Skin Changes During Menopause",

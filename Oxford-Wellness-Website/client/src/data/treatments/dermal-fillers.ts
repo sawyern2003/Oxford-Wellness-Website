@@ -4,11 +4,11 @@ export const dermalFillersData: TreatmentLandingPageData = {
   slug: "dermal-fillers-oxford",
   h1: "Dermal Fillers in Oxford",
   title: "Dermal Fillers Oxford | Natural Volume Restoration | Expert Doctor",
-  metaDescription: "Expert dermal fillers in Oxford. Restore volume to cheeks, nasolabial folds, marionette lines. GMC doctor-led clinic. Natural results. Book your consultation today.",
+  metaDescription: "Expert dermal fillers in Oxford. Restore volume to cheeks, nasolabial folds, marionette lines. GMC doctor-led clinic. Natural results.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/dermal-fillers-oxford",
   
   priceLabel: "From",
-  priceValue: "£220",
+  priceValue: "£250",
   
   whoIsFor: {
     heading: "What can dermal fillers treat?",
@@ -40,7 +40,7 @@ export const dermalFillersData: TreatmentLandingPageData = {
   trust: {
     heading: "Why choose The Oxford Wellness Doctor",
     items: [
-      "Doctor-led clinic: all treatments performed by Dr Inga Taganova, a GMC-registered GP",
+      "Doctor-led clinic: all treatments performed by Dr Inga Taganova, a GMC-registered doctor",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ",
       "More than two decades of medical experience",
       "Conservative, patient-led approach focused on natural results",
@@ -63,7 +63,7 @@ export const dermalFillersData: TreatmentLandingPageData = {
     },
     {
       q: "Can dermal fillers be dissolved?",
-      a: "Yes. Hyaluronic acid fillers can be dissolved quickly and safely using an enzyme called hyaluronidase. This is one of the key reasons hyaluronic acid fillers are the gold standard – they are fully reversible."
+      a: "Yes. Hyaluronic acid fillers can be dissolved quickly and safely using a dissolving treatment. This is one of the key reasons hyaluronic acid fillers are the gold standard – they are fully reversible."
     },
     {
       q: "Will I look unnatural?",
@@ -72,7 +72,7 @@ export const dermalFillersData: TreatmentLandingPageData = {
   ],
   
   pricing: [
-    { name: "Dermal filler — 0.5ml", price: "£220" },
+    { name: "Dermal filler — 0.5ml", price: "£250" },
     { name: "Dermal filler — 1ml", price: "£320" },
     { name: "Lip filler — 0.7ml", price: "£320" },
     { name: "Dermal filler — 2ml", price: "£590" }
@@ -80,7 +80,7 @@ export const dermalFillersData: TreatmentLandingPageData = {
   
   consultation: {
     name: "Aesthetic & Skin Consultation (45 min)",
-    price: "£95"
+    price: "£75"
   },
   
   procedureSchema: {

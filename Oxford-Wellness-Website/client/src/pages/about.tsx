@@ -190,7 +190,7 @@ export default function About() {
 
             <div className="mt-8 max-w-[40rem] space-y-5">
               <p className={lead}>
-                Dr Inga Taganova is a practising GP with more than two decades of medical experience, a background in obstetrics and gynaecology and                 a longstanding interest in women&apos;s health.
+                Dr Inga Taganova is a practising doctor with more than two decades of medical experience, a background in obstetrics and gynaecology and                 a longstanding interest in women&apos;s health.
               </p>
               <p className={prose}>
                 She founded The Oxford Wellness Doctor to bring together medical expertise, aesthetic medicine and a holistic approach to wellbeing,                 helping patients feel their best, inside and out.

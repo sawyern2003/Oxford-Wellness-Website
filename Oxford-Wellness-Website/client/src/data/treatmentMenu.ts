@@ -194,7 +194,7 @@ export const treatmentMenuExtras: TreatmentLink[] = [
   },
   {
     name: "Medical form completion",
-    description: "GP completion and signature of medical forms and certificates.",
+    description: "Completion and signature of medical forms and certificates.",
     href: "/treatments/medical-form-completion-oxford",
   },
 ];

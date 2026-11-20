@@ -33,7 +33,7 @@ const data: BlogPostData = {
     {
       heading: "The Same Doctor, the Same Excellence",
       paragraphs: [
-        "What has not changed is what matters most: Dr Inga Taganova continues to see every patient personally. As a GMC-registered GP with a background in obstetrics and gynaecology and more than two decades of medical experience, Dr Inga brings exceptional depth of medical knowledge to every treatment and consultation.",
+        "What has not changed is what matters most: Dr Inga Taganova continues to see every patient personally. As a GMC-registered doctor with a background in obstetrics and gynaecology and more than two decades of medical experience, Dr Inga brings exceptional depth of medical knowledge to every treatment and consultation.",
         "Our treatments - anti-wrinkle injections, dermal fillers, Profhilo, Morpheus8, lip fillers, chemical peels, skin boosters, medical weight loss, and our specialist menopause clinic - are all available at the new clinic. The standard of care remains exactly as it has always been: thorough, honest, and patient-led.",
       ],
     },

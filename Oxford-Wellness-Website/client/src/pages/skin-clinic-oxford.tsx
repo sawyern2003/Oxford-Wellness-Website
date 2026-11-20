@@ -7,7 +7,7 @@ const data: TreatmentPageData = {
   canonical: "https://www.theoxfordwellnessdoctor.com/skin-clinic-oxford",
   h1: "Skin Clinic in Oxford",
   intro:
-    "The Oxford Wellness Doctor offers doctor-led aesthetic and medical skin treatments at our clinic on Woodstock Road in central Oxford. All treatments are performed personally by Dr Inga Taganova, a GMC-registered GP with advanced training in aesthetic medicine.",
+    "The Oxford Wellness Doctor offers doctor-led aesthetic and medical skin treatments at our clinic on Woodstock Road in central Oxford. All treatments are performed personally by Dr Inga Taganova, a GMC-registered doctor with advanced training in aesthetic medicine.",
   summary:
     "A medical approach to skin care and aesthetics: anti-wrinkle injections, dermal fillers, Profhilo, Morpheus8, skin boosters and medical skin treatments, delivered by a doctor in Oxford.",
   sections: [
@@ -91,21 +91,21 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Aesthetic & Skin Consultation (45 min)", price: "£95" },
-    { name: "Anti-Wrinkle Injections (1 area)", price: "£210" },
-    { name: "Anti-Wrinkle Injections (2 areas)", price: "£270" },
-    { name: "Anti-Wrinkle Injections (3 areas)", price: "£330" },
+    { name: "Aesthetic & Skin Consultation (45 min)", price: "£75" },
+    { name: "Anti-Wrinkle Injections (1 area)", price: "£230" },
+    { name: "Anti-Wrinkle Injections (2 areas)", price: "£295" },
+    { name: "Anti-Wrinkle Injections (3 areas)", price: "£350" },
     { name: "Profhilo (per session)", price: "£350" },
-    { name: "Morpheus8 Face (per session)", price: "£650" },
+    { name: "Morpheus8 Face (per session)", price: "£600" },
   ],
   faqs: [
     {
       q: "Why should I choose a doctor for aesthetic treatments?",
-      a: "Doctors have the medical training, anatomical knowledge and clinical experience to perform aesthetic treatments safely and manage complications if they arise. Non-medical practitioners often lack this training, which increases the risk of adverse events. Dr Taganova is a GMC-registered GP with advanced aesthetic qualifications, meaning you are in the safest possible hands.",
+      a: "Doctors have the medical training, anatomical knowledge and clinical experience to perform aesthetic treatments safely and manage complications if they arise. Non-medical practitioners often lack this training, which increases the risk of adverse events. Dr Taganova is a GMC-registered doctor with advanced aesthetic qualifications, meaning you are in the safest possible hands.",
     },
     {
       q: "How much do treatments cost in Oxford?",
-      a: "Anti-wrinkle injections start from £210 for one area. Profhilo is £350 per session. Morpheus8 face is £650 per session. A consultation is £95. Prices are transparent and include follow-up appointments where applicable.",
+      a: "Anti-wrinkle injections start from £230 for one area. Profhilo is £350 per session. Morpheus8 face is £600 per session. A consultation is £75. Prices are transparent and include follow-up appointments where applicable.",
     },
     {
       q: "Will I look natural after treatment?",
@@ -121,7 +121,7 @@ const data: TreatmentPageData = {
     },
     {
       q: "How do I book a consultation?",
-      a: "You can book online via the Glowday booking system, call the clinic on 07739 309380, or email info@theoxfordwellnessdoctor.com. Consultations are £95.",
+      a: "You can book online via the Glowday booking system, call the clinic on 07739 309380, or email info@theoxfordwellnessdoctor.com. Consultations are £75.",
     },
   ],
   procedureSchema: {

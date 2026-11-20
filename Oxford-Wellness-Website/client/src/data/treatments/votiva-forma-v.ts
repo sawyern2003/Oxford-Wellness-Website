@@ -4,11 +4,11 @@ export const votivaFormaVData: TreatmentLandingPageData = {
   slug: "votiva-forma-v-oxford",
   h1: "Votiva FormaV Intimate Wellness in Oxford",
   title: "Votiva FormaV Intimate Wellness Oxford | Non-Surgical RF Treatment",
-  metaDescription: "Votiva FormaV intimate wellness treatment in Oxford. Non-surgical radiofrequency for dryness, discomfort, and intimate health. GP-led clinic. Book consultation.",
+  metaDescription: "Votiva FormaV intimate wellness treatment in Oxford. Non-surgical radiofrequency for dryness, discomfort, and intimate health. Doctor-led clinic.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/votiva-forma-v-oxford",
   
   priceLabel: "Single session",
-  priceValue: "£350",
+  priceValue: "£450",
   
   whoIsFor: {
     heading: "What does Votiva FormaV help with?",
@@ -40,7 +40,7 @@ export const votivaFormaVData: TreatmentLandingPageData = {
   trust: {
     heading: "Why choose The Oxford Wellness Doctor",
     items: [
-      "Doctor-led clinic: Dr Inga Taganova is a GMC-registered GP with a background in obstetrics and gynaecology",
+      "Doctor-led clinic: Dr Inga Taganova is a GMC-registered doctor with a background in obstetrics and gynaecology",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ",
       "more than two decades of medical experience",
       "FDA-cleared, non-invasive treatment",
@@ -80,8 +80,8 @@ export const votivaFormaVData: TreatmentLandingPageData = {
   ],
   
   pricing: [
-    { name: "Votiva FormaV — single session", price: "£350" },
-    { name: "Votiva FormaV — course of 3", price: "£950" }
+    { name: "Forma V — single session", price: "£450" },
+    { name: "Forma V — course of 3", price: "£1,200" }
   ],
   
   consultation: {
@@ -91,7 +91,7 @@ export const votivaFormaVData: TreatmentLandingPageData = {
   
   procedureSchema: {
     name: "Votiva FormaV Intimate Wellness Treatment Oxford",
-    description: "Non-surgical radiofrequency intimate wellness treatment to help with dryness, discomfort, and symptoms related to hormonal changes. Delivered by GP Dr Inga Taganova with a background in obstetrics and gynaecology in Oxford.",
+    description: "Non-surgical radiofrequency intimate wellness treatment to help with dryness, discomfort, and symptoms related to hormonal changes. Delivered by Dr Inga Taganova with a background in obstetrics and gynaecology in Oxford.",
     bodyLocation: "Intimate area"
   }
 };

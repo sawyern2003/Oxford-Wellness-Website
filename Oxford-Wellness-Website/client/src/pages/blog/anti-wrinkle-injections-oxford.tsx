@@ -48,7 +48,7 @@ const data: BlogPostData = {
     {
       heading: "How the Treatment Works",
       paragraphs: [
-        "The active ingredient is a neurotoxin that temporarily blocks acetylcholine—the neurotransmitter that signals muscle contraction. When injected into a facial muscle, it prevents that muscle from contracting fully. The muscle still functions, but its activity is reduced.",
+        "The treatment temporarily blocks acetylcholine—the neurotransmitter that signals muscle contraction. When injected into a facial muscle, it prevents that muscle from contracting fully. The muscle still functions, but its activity is reduced.",
         "The degree of relaxation depends on the dose and placement. A light dose softens movement whilst preserving expression. A heavier dose produces more complete relaxation and a smoother result, but can look frozen if overdone. Skilled practitioners adjust the dose to match your anatomy, the strength of your muscles, and the degree of correction you want.",
       ],
     },

@@ -356,7 +356,7 @@ export default function BlogIndex() {
               <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-3">About the author</p>
               <h2 className="font-sans font-semibold text-3xl text-foreground tracking-tight mb-4">Dr Inga Taganova</h2>
               <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                Dr Inga Taganova is a practising GP with more than two decades of medical experience, a background in obstetrics and gynaecology and a longstanding interest in women&apos;s health. She is a qualified aesthetic medicine practitioner. All articles are written personally by Dr Inga and reflect current evidence-based clinical practice.
+                Dr Inga Taganova is a practising doctor with more than two decades of medical experience, a background in obstetrics and gynaecology and a longstanding interest in women&apos;s health. She is a qualified aesthetic medicine practitioner. All articles are written personally by Dr Inga and reflect current evidence-based clinical practice.
               </p>
               <Link
                 href="/about"

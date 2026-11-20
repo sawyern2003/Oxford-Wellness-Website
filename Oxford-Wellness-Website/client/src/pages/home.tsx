@@ -73,7 +73,7 @@ export default function Home() {
                 Meet Dr Inga
               </h2>
               <p className="text-[15px] text-muted-foreground leading-relaxed mb-4 max-w-xl">
-                A private GP with a background in obstetrics and gynaecology who takes time to understand what has changed – then builds a plan grounded in clinical judgement and natural-looking results.
+                A private lead clinician with a background in obstetrics and gynaecology who takes time to understand what has changed – then builds a plan grounded in clinical judgement and natural-looking results.
               </p>
               <p className="text-[15px] text-muted-foreground leading-relaxed mb-8 max-w-xl">
                 She sees every patient herself. Consultations and treatments take place at our new clinic at Belsyre Court, in the centre of Oxford.
