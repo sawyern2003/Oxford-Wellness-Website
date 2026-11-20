@@ -112,7 +112,7 @@ export const programmes: Programme[] = [
       "Anyone who wants sensitive, evidence-based guidance",
     ],
     doctorOverview:
-      "As a lead clinician with a background in obstetrics and gynaecology and experience in menopause care, Dr Inga approaches intimate wellness with clinical depth and complete discretion. Conversations are calm, private and never rushed.",
+      "As a GP with a background in obstetrics and gynaecology and GP with experience in menopause care, Dr Inga approaches intimate wellness with clinical depth and complete discretion. Conversations are calm, private and never rushed.",
     journey: [
       "Confidential online consultation",
       "Personalised intimate wellness plan",

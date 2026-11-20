@@ -4,7 +4,7 @@ export const menopauseClinicData: TreatmentLandingPageData = {
   slug: "menopause-clinic-oxford",
   h1: "Menopause Clinic in Oxford",
   title: "Menopause Clinic Oxford | Women's Health | Dr Inga Taganova",
-  metaDescription: "Private menopause clinic in Oxford. Expert menopause care from Dr Inga Taganova with a background in obstetrics and gynaecology.",
+  metaDescription: "Private menopause clinic in Oxford. Expert menopause care from GP Dr Inga Taganova with a background in obstetrics and gynaecology.",
   canonical: "https://www.theoxfordwellnessdoctor.com/menopause-clinic-oxford",
   
   priceLabel: "Initial consultation",
@@ -34,7 +34,7 @@ export const menopauseClinicData: TreatmentLandingPageData = {
       "Personalised treatment plan tailored to your needs.",
       "Follow-up appointments (£150) to monitor progress and adjust your plan."
     ],
-    sessionsInfo: "Dr Inga Taganova is a lead clinician with a background in obstetrics and gynaecology and more than two decades of medical experience."
+    sessionsInfo: "Dr Inga Taganova is a GP with a background in obstetrics and gynaecology and more than two decades of medical experience."
   },
   
   downtime: {
@@ -45,7 +45,7 @@ export const menopauseClinicData: TreatmentLandingPageData = {
   trust: {
     heading: "Why choose The Oxford Wellness Doctor",
     items: [
-      "Doctor-led clinic: Dr Inga Taganova is a GMC-registered doctor with a background in obstetrics and gynaecology",
+      "Doctor-led clinic: Dr Inga Taganova is a GMC-registered GP with a background in obstetrics and gynaecology",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ",
       "more than two decades of medical experience",
       "Comprehensive approach to menopause care",
@@ -83,7 +83,7 @@ export const menopauseClinicData: TreatmentLandingPageData = {
   
   procedureSchema: {
     name: "Menopause Clinic Oxford",
-    description: "Comprehensive menopause consultation with Dr Inga Taganova in Oxford. Expert assessment and treatment planning for menopause and perimenopause symptoms.",
+    description: "Comprehensive menopause consultation with GP Dr Inga Taganova in Oxford. Expert assessment and treatment planning for menopause and perimenopause symptoms.",
     bodyLocation: "Whole body"
   }
 };

@@ -241,7 +241,7 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/medical-form-completion-oxford": {
     treatmentName: "Medical Form Completion",
     summary:
-      "GMC-registered doctor completes, reviews, and signs medical forms and official certifications at a private Oxford appointment.",
+      "GMC-registered GP completes, reviews, and signs medical forms and official certifications at a private Oxford appointment.",
     highlights: [
       "Camp America and overseas programme forms",
       "Adoption medical reports",

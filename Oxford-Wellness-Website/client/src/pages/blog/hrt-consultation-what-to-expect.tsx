@@ -1,7 +1,7 @@
 import BlogPostTemplate, { BlogPostData } from "@/components/blog/BlogPostTemplate";
 
 const data: BlogPostData = {
-  title: "What to Expect at an HRT Consultation | Oxford Clinic Explains",
+  title: "What to Expect at an HRT Consultation | Oxford GP Explains",
   metaDescription: "What happens at a menopause and HRT consultation. Dr Inga Taganova explains the assessment process, questions asked, and how treatment decisions are made.",
   canonical: "https://www.theoxfordwellnessdoctor.com/blog/hrt-consultation-what-to-expect",
   h1: "What to Expect at an HRT Consultation",
@@ -132,7 +132,7 @@ const data: BlogPostData = {
     {
       heading: "Consultations at The Oxford Wellness Doctor",
       paragraphs: [
-        "Dr Inga Taganova is a GMC-registered doctor with a background in obstetrics and gynaecology. Consultations take place at Belsyre Court in Oxford and are designed to be calm, thorough, and collaborative.",
+        "Dr Inga Taganova is a GMC-registered GP with a background in obstetrics and gynaecology. Consultations take place at Belsyre Court in Oxford and are designed to be calm, thorough, and collaborative.",
         "If you decide to proceed with treatment, prescriptions are issued on the day where appropriate. Follow-up consultations can be arranged in person or remotely, depending on your preference and clinical need.",
       ],
     },

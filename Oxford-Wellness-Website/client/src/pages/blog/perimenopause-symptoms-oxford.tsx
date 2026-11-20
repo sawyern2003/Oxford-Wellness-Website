@@ -2,7 +2,7 @@ import BlogPostTemplate, { BlogPostData } from "@/components/blog/BlogPostTempla
 
 const data: BlogPostData = {
   title: "Perimenopause Symptoms: What to Expect and When to Seek Help | Oxford",
-  metaDescription: "Recognising perimenopause symptoms in your 40s. Dr Inga Taganova, lead clinician in Oxford with a background in obstetrics and gynaecology, explains the signs, timeline and when assessment helps.",
+  metaDescription: "Recognising perimenopause symptoms in your 40s. Dr Inga Taganova, a GP in Oxford with a background in obstetrics and gynaecology, explains the signs, timeline and when assessment helps.",
   canonical: "https://www.theoxfordwellnessdoctor.com/blog/perimenopause-symptoms-oxford",
   h1: "Perimenopause Symptoms: What to Expect and When to Seek Help",
   category: "Menopause",
@@ -123,7 +123,7 @@ const data: BlogPostData = {
     {
       heading: "The Oxford Wellness Doctor Approach",
       paragraphs: [
-        "At The Oxford Wellness Doctor, perimenopausal and menopausal women are assessed by Dr Inga Taganova—a GMC-registered doctor with a background in obstetrics and gynaecology. Consultations are unhurried and confidential.",
+        "At The Oxford Wellness Doctor, perimenopausal and menopausal women are assessed by Dr Inga Taganova—a GMC-registered GP with a background in obstetrics and gynaecology. Consultations are unhurried and confidential.",
         "The focus is on understanding your specific symptoms, your medical history, your preferences, and your concerns. Treatment recommendations are evidence-based, individualised, and clearly explained. Follow-up is built into the process so that your treatment can be adjusted as needed.",
         "You do not need a GP referral. You can book directly online or by phone.",
       ],

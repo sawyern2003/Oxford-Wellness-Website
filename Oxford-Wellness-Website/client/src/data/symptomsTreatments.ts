@@ -287,7 +287,7 @@ export const symptoms: Symptom[] = [
       {
         name: "Specialist menopause consultation",
         href: "/menopause-clinic-oxford",
-        why: "Examination by a lead clinician with a background in obstetrics and gynaecology, then cyclical tenderness managed within your wider plan.",
+        why: "Examination by a GP with a background in obstetrics and gynaecology, then cyclical tenderness managed within your wider plan.",
       },
       {
         name: "Women's health assessment",
@@ -380,7 +380,7 @@ export const treatmentApproaches: TreatmentApproach[] = [
     title: "Specialist Menopause Assessment",
     icon: "assessment",
     description:
-      "A 1-hour assessment with a lead clinician with a background in obstetrics and gynaecology and experience in menopause care. Where hormone therapy is clinically appropriate, Dr Inga confirms your suitability and arranges specialist prescribing.",
+      "A 1-hour assessment with a GP with a background in obstetrics and gynaecology and GP with experience in menopause care. Where hormone therapy is clinically appropriate, Dr Inga confirms your suitability and arranges specialist prescribing.",
   },
   {
     id: "non-hormonal",

@@ -70,7 +70,7 @@ const sections: Section[] = [
       },
       {
         name: "Medical Form Completion",
-        description: "Completion and signature of simple medical forms and certificates.",
+        description: "GP completion and signature of medical forms and certificates.",
         href: "/treatments/medical-form-completion-oxford",
         price: "£75",
       },

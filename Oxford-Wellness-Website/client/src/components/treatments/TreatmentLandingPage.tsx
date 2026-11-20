@@ -205,7 +205,7 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
               </div>
 
               <p className="text-base text-foreground mb-8 leading-relaxed">
-                Doctor-led by Dr Inga Taganova, lead clinician
+                Doctor-led by Dr Inga Taganova, GP
               </p>
 
               <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-6">

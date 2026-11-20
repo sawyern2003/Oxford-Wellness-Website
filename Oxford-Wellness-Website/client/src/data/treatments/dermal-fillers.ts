@@ -40,7 +40,7 @@ export const dermalFillersData: TreatmentLandingPageData = {
   trust: {
     heading: "Why choose The Oxford Wellness Doctor",
     items: [
-      "Doctor-led clinic: all treatments performed by Dr Inga Taganova, a GMC-registered doctor",
+      "Doctor-led clinic: all treatments performed by Dr Inga Taganova, a GMC-registered GP",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ",
       "More than two decades of medical experience",
       "Conservative, patient-led approach focused on natural results",

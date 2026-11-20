@@ -4,7 +4,7 @@ export const womensHealthData: TreatmentLandingPageData = {
   slug: "womens-health-oxford",
   h1: "Women's Health & Menopause in Oxford",
   title: "Women's Health & Menopause Clinic Oxford | Dr Inga Taganova",
-  metaDescription: "Expert women's health and menopause care in Oxford. Menopause, perimenopause, intimate health support with Dr Inga Taganova at Belsyre Court, Woodstock Road.",
+  metaDescription: "Expert women's health and menopause care in Oxford. Menopause, perimenopause, intimate health support with GP Dr Inga Taganova at Belsyre Court, Woodstock Road.",
   canonical: "https://www.theoxfordwellnessdoctor.com/womens-health-oxford",
   
   priceLabel: "Menopause & Women's Health Initial Consultation",
@@ -25,7 +25,7 @@ export const womensHealthData: TreatmentLandingPageData = {
   
   howItWorks: {
     heading: "Your women's health consultation",
-    intro: "Dr Inga Taganova is a lead clinician with a background in obstetrics and gynaecology who provides expert women's health consultations at her clinic in central Oxford. With more than two decades of medical experience, she understands that menopause and women's health transitions affect far more than hormones – they shape how you feel in your body, your skin, your mood, and your daily life.",
+    intro: "Dr Inga Taganova is a GP with a background in obstetrics and gynaecology who provides expert women's health consultations at her clinic in central Oxford. With more than two decades of medical experience, she understands that menopause and women's health transitions affect far more than hormones – they shape how you feel in your body, your skin, your mood, and your daily life.",
     steps: [
       "Full symptom assessment and medical history review. Dr Inga Taganova takes time to understand your experience.",
       "Discussion of all available treatment options, including lifestyle interventions, non-hormonal approaches, and specialist referrals if HRT is clinically appropriate.",
@@ -43,8 +43,8 @@ export const womensHealthData: TreatmentLandingPageData = {
   trust: {
     heading: "Why choose The Oxford Wellness Doctor for women's health",
     items: [
-      "Doctor-led clinic: Dr Inga Taganova is a GMC-registered doctor (GMC No. 4727817) with a background in obstetrics and gynaecology",
-      "more than two decades of medical experiencecare, including hospital gynaecology and general practice",
+      "Doctor-led clinic: Dr Inga Taganova is a GMC-registered GP (GMC No. 4727817) with a background in obstetrics and gynaecology",
+      "more than two decades of medical experiencecare, including hospital gynaecology and GP practice",
       "Trained in the UK, France, and Monaco with expertise in hormonal health and aesthetic medicine",
       "Comprehensive approach: medical assessment combined with aesthetic care for skin, body, and intimate health concerns",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ (central Oxford, near St Giles)",
@@ -64,7 +64,7 @@ export const womensHealthData: TreatmentLandingPageData = {
     },
     {
       q: "Can you prescribe HRT?",
-      a: "While we do not currently prescribe HRT at this clinic, Dr Inga Taganova can assess your suitability for hormone therapy and provide specialist referrals if HRT is clinically indicated. Her background as a doctor with training in obstetrics and gynaecology means she understands the nuances of hormone replacement, contraindications, different HRT formulations, and can guide you towards the right support for your individual circumstances."
+      a: "While we do not currently prescribe HRT at this clinic, Dr Inga Taganova can assess your suitability for hormone therapy and provide specialist referrals if HRT is clinically indicated. Her background as a GP with training in obstetrics and gynaecology means she understands the nuances of hormone replacement, contraindications, different HRT formulations, and can guide you towards the right support for your individual circumstances."
     },
     {
       q: "How much are follow-up appointments?",
@@ -104,7 +104,7 @@ export const womensHealthData: TreatmentLandingPageData = {
   
   procedureSchema: {
     name: "Women's Health & Menopause Consultation Oxford",
-    description: "Expert women's health consultation with Dr Inga Taganova in Oxford. Comprehensive support for menopause, perimenopause, intimate health and hormonal concerns.",
+    description: "Expert women's health consultation with GP Dr Inga Taganova in Oxford. Comprehensive support for menopause, perimenopause, intimate health and hormonal concerns.",
     bodyLocation: "Whole body"
   }
 };

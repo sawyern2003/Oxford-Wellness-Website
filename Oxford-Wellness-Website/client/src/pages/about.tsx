@@ -183,14 +183,14 @@ export default function About() {
             <h2 id="about-inga-heading" className={`mt-4 text-3xl md:text-[2.5rem] leading-tight ${display}`}>
               Dr Inga Taganova
             </h2>
-            <p className="mt-2 text-sm font-medium text-primary">Founder &amp; Lead Clinician</p>
+            <p className="mt-2 text-sm font-medium text-primary">Founder &amp; General Practitioner</p>
             <p className="mt-1 text-sm text-muted-foreground">
               MRCGP · Trained in Obstetrics &amp; Gynaecology · GMC No. 4727817
             </p>
 
             <div className="mt-8 max-w-[40rem] space-y-5">
               <p className={lead}>
-                Dr Inga Taganova is a practising doctor with more than two decades of medical experience, a background in obstetrics and gynaecology and                 a longstanding interest in women&apos;s health.
+                Dr Inga Taganova is a practising GP with more than two decades of medical experience, a background in obstetrics and gynaecology and                 a longstanding interest in women&apos;s health.
               </p>
               <p className={prose}>
                 She founded The Oxford Wellness Doctor to bring together medical expertise, aesthetic medicine and a holistic approach to wellbeing,                 helping patients feel their best, inside and out.
@@ -208,7 +208,7 @@ export default function About() {
             </figure>
 
             <p className={`mt-12 max-w-[40rem] ${prose}`}>
-              She continues to practise as a doctor alongside the clinic and sees every patient personally. Her approach recognises that how we look, how we feel and our overall health are closely connected.
+              She continues to practise as a GP alongside the clinic and sees every patient personally. Her approach recognises that how we look, how we feel and our overall health are closely connected.
             </p>
 
             <BioDisclosure title="Clinical interests" openOnDesktop className="mt-8">

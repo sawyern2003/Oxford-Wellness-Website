@@ -15,7 +15,7 @@ const data: TreatmentPageData = {
       heading: "What longevity medicine means here",
       paragraphs: [
         "Longevity care is not about promising to stop ageing or chasing unrealistic ideals. It is about understanding the systems that shape how you age – metabolism, hormones, inflammation, body composition, and skin health – and intervening thoughtfully where medical evidence supports genuine benefit.",
-        "As a GMC-registered doctor and lead clinician with a background in obstetrics and gynaecology and experience in menopause care, Dr Taganova brings particular depth for women in midlife, when metabolic and hormonal shifts often arrive together. Her background means she can address ageing from multiple angles: hormonal health, metabolic function, aesthetic changes, and the psychological impact of physical decline.",
+        "As a GMC-registered GP, GP with a background in obstetrics and gynaecology, and GP with experience in menopause care, Dr Taganova brings particular depth for women in midlife, when metabolic and hormonal shifts often arrive together. Her background means she can address ageing from multiple angles: hormonal health, metabolic function, aesthetic changes, and the psychological impact of physical decline.",
         "This is not a wellness clinic that makes vague promises about optimisation. It is a medical practice led by a doctor with over 20 years of clinical experience, who understands that good longevity medicine is grounded in physiology, individualised to your circumstances, and monitored properly.",
       ],
     },

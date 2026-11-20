@@ -2,7 +2,7 @@ import BlogPostTemplate, { BlogPostData } from "@/components/blog/BlogPostTempla
 
 const data: BlogPostData = {
   title: "Intimate Health Changes During Menopause: Symptoms and Treatment | Oxford",
-  metaDescription: "Vaginal dryness, discomfort and intimate changes during menopause. Dr Inga Taganova, lead clinician in Oxford with a background in obstetrics and gynaecology, explains genitourinary syndrome and effective treatments.",
+  metaDescription: "Vaginal dryness, discomfort and intimate changes during menopause. Dr Inga Taganova, a GP in Oxford with a background in obstetrics and gynaecology, explains genitourinary syndrome and effective treatments.",
   canonical: "https://www.theoxfordwellnessdoctor.com/blog/intimate-health-changes-menopause",
   h1: "Intimate Health Changes During Menopause: Symptoms and Treatment",
   category: "Intimate Health",
@@ -104,7 +104,7 @@ const data: BlogPostData = {
     {
       heading: "Consultations at The Oxford Wellness Doctor",
       paragraphs: [
-        "Dr Inga Taganova is a lead clinician with a background in obstetrics and gynaecology. Intimate health consultations are private, unhurried, and handled with complete discretion. The consultation takes place at Belsyre Court in Oxford in a calm, professional environment.",
+        "Dr Inga Taganova is a GP with a background in obstetrics and gynaecology. Intimate health consultations are private, unhurried, and handled with complete discretion. The consultation takes place at Belsyre Court in Oxford in a calm, professional environment.",
         "Treatment options—including vaginal oestrogen, radiofrequency therapy, and hyaluronic acid treatments—are discussed based on your symptoms, preferences, and medical history. If treatment is appropriate, it can often be started the same day.",
       ],
     },

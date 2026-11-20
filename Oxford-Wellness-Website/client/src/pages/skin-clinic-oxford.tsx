@@ -7,7 +7,7 @@ const data: TreatmentPageData = {
   canonical: "https://www.theoxfordwellnessdoctor.com/skin-clinic-oxford",
   h1: "Skin Clinic in Oxford",
   intro:
-    "The Oxford Wellness Doctor offers doctor-led aesthetic and medical skin treatments at our clinic on Woodstock Road in central Oxford. All treatments are performed personally by Dr Inga Taganova, a GMC-registered doctor with advanced training in aesthetic medicine.",
+    "The Oxford Wellness Doctor offers doctor-led aesthetic and medical skin treatments at our clinic on Woodstock Road in central Oxford. All treatments are performed personally by Dr Inga Taganova, a GMC-registered GP with advanced training in aesthetic medicine.",
   summary:
     "A medical approach to skin care and aesthetics: anti-wrinkle injections, dermal fillers, Profhilo, Morpheus8, skin boosters and medical skin treatments, delivered by a doctor in Oxford.",
   sections: [
@@ -101,7 +101,7 @@ const data: TreatmentPageData = {
   faqs: [
     {
       q: "Why should I choose a doctor for aesthetic treatments?",
-      a: "Doctors have the medical training, anatomical knowledge and clinical experience to perform aesthetic treatments safely and manage complications if they arise. Non-medical practitioners often lack this training, which increases the risk of adverse events. Dr Taganova is a GMC-registered doctor with advanced aesthetic qualifications, meaning you are in the safest possible hands.",
+      a: "Doctors have the medical training, anatomical knowledge and clinical experience to perform aesthetic treatments safely and manage complications if they arise. Non-medical practitioners often lack this training, which increases the risk of adverse events. Dr Taganova is a GMC-registered GP with advanced aesthetic qualifications, meaning you are in the safest possible hands.",
     },
     {
       q: "How much do treatments cost in Oxford?",
