@@ -4,11 +4,11 @@ export const antiWrinkleData: TreatmentLandingPageData = {
   slug: "anti-wrinkle-injections-oxford",
   h1: "Anti-Wrinkle Injections in Oxford",
   title: "Anti-Wrinkle Injections Oxford | Forehead, Frown & Crow's Feet | Expert Doctor",
-  metaDescription: "Expert anti-wrinkle injections in Oxford. Smooth forehead lines, frown lines & crow's feet. GMC doctor-led clinic. Natural results. Book consultation.",
+  metaDescription: "Expert anti-wrinkle injections in Oxford. Smooth forehead lines, frown lines & crow's feet. GMC doctor-led clinic. Natural results.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/anti-wrinkle-injections-oxford",
   
   priceLabel: "One area",
-  priceValue: "£210",
+  priceValue: "£230",
   
   whoIsFor: {
     heading: "What anti-wrinkle injections treat",
@@ -54,19 +54,19 @@ export const antiWrinkleData: TreatmentLandingPageData = {
     { q: "Does it hurt?", a: "Most patients report only mild discomfort. The needles are very fine, and the procedure is quick." },
     { q: "How long do results last?", a: "Results typically last 3–4 months. With regular treatments, some patients find results last slightly longer." },
     { q: "When will I see results?", a: "You'll notice improvement within 3–5 days, with full results visible at 2 weeks." },
-    { q: "How much do anti-wrinkle injections cost?", a: "One area is £210, two areas £270, and three areas £330. Common combinations are forehead + frown lines, or forehead + frown + crow's feet." }
+    { q: "How much do anti-wrinkle injections cost?", a: "One area is £230, two areas £295, and three areas £350. Common combinations are forehead + frown lines, or forehead + frown + crow's feet." }
   ],
   
   pricing: [
-    { name: "One area", price: "£210" },
-    { name: "Two areas", price: "£270" },
-    { name: "Three areas", price: "£330" },
-    { name: "Masseter / jaw treatment", price: "£275" }
+    { name: "One area", price: "£230" },
+    { name: "Two areas", price: "£295" },
+    { name: "Three areas", price: "£350" },
+    { name: "Masseter / jaw treatment", price: "£295" }
   ],
   
   consultation: {
     name: "Aesthetic & Skin Consultation (45 min)",
-    price: "£95"
+    price: "£75"
   },
   
   procedureSchema: {

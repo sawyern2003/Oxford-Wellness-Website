@@ -4,11 +4,11 @@ export const profhiloData: TreatmentLandingPageData = {
   slug: "profhilo-oxford",
   h1: "Profhilo in Oxford",
   title: "Profhilo Oxford | Skin Booster Treatment | The Oxford Wellness Doctor",
-  metaDescription: "Profhilo skin booster treatment in Oxford. Injectable hyaluronic acid for skin hydration, firmness & radiance. GMC doctor. Book your consultation.",
+  metaDescription: "Profhilo skin booster treatment in Oxford. Injectable hyaluronic acid for skin hydration, firmness & radiance. GMC doctor.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/profhilo-oxford",
   
   priceLabel: "Single session",
-  priceValue: "£295",
+  priceValue: "£350",
   
   whoIsFor: {
     heading: "Who is Profhilo for?",
@@ -71,13 +71,13 @@ export const profhiloData: TreatmentLandingPageData = {
   ],
   
   pricing: [
-    { name: "Profhilo — single session", price: "£295" },
-    { name: "Profhilo — course of 2", price: "£550" }
+    { name: "Profhilo — single session", price: "£350" },
+    { name: "Profhilo — course of 2", price: "£650" }
   ],
   
   consultation: {
     name: "Aesthetic & Skin Consultation (45 min)",
-    price: "£95"
+    price: "£75"
   },
   
   procedureSchema: {

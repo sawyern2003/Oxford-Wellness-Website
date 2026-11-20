@@ -4,7 +4,7 @@ export const lipFillersData: TreatmentLandingPageData = {
   slug: "lip-fillers-oxford",
   h1: "Lip Fillers in Oxford",
   title: "Lip Fillers Oxford | Natural Lip Enhancement | Expert Doctor",
-  metaDescription: "Expert lip fillers in Oxford. Natural lip enhancement with hyaluronic acid. GMC doctor-led clinic. Subtle, beautiful results. Book your consultation today.",
+  metaDescription: "Expert lip fillers in Oxford. Natural lip enhancement with hyaluronic acid. GMC doctor-led clinic. Subtle, beautiful results.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/lip-fillers-oxford",
   
   priceLabel: "Lip filler 0.7ml",
@@ -63,7 +63,7 @@ export const lipFillersData: TreatmentLandingPageData = {
     },
     {
       q: "Can lip filler be dissolved?",
-      a: "Yes. Hyaluronic acid lip filler can be dissolved quickly and safely using an enzyme called hyaluronidase. This is one of the key reasons hyaluronic acid fillers are the gold standard."
+      a: "Yes. Hyaluronic acid lip filler can be dissolved quickly and safely using a dissolving treatment. This is one of the key reasons hyaluronic acid fillers are the gold standard."
     },
     {
       q: "What if I don't like the result?",
@@ -77,7 +77,7 @@ export const lipFillersData: TreatmentLandingPageData = {
   
   consultation: {
     name: "Aesthetic & Skin Consultation (45 min)",
-    price: "£95"
+    price: "£75"
   },
   
   procedureSchema: {

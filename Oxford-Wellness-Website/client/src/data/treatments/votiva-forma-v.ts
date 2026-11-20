@@ -4,11 +4,11 @@ export const votivaFormaVData: TreatmentLandingPageData = {
   slug: "votiva-forma-v-oxford",
   h1: "Votiva FormaV Intimate Wellness in Oxford",
   title: "Votiva FormaV Intimate Wellness Oxford | Non-Surgical RF Treatment",
-  metaDescription: "Votiva FormaV intimate wellness treatment in Oxford. Non-surgical radiofrequency for dryness, discomfort, and intimate health. GP-led clinic. Book consultation.",
+  metaDescription: "Votiva FormaV intimate wellness treatment in Oxford. Non-surgical radiofrequency for dryness, discomfort, and intimate health. GP-led clinic.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/votiva-forma-v-oxford",
   
   priceLabel: "Single session",
-  priceValue: "£350",
+  priceValue: "£450",
   
   whoIsFor: {
     heading: "What does Votiva FormaV help with?",
@@ -80,8 +80,8 @@ export const votivaFormaVData: TreatmentLandingPageData = {
   ],
   
   pricing: [
-    { name: "Votiva FormaV — single session", price: "£350" },
-    { name: "Votiva FormaV — course of 3", price: "£950" }
+    { name: "Forma V — single session", price: "£450" },
+    { name: "Forma V — course of 3", price: "£1,200" }
   ],
   
   consultation: {

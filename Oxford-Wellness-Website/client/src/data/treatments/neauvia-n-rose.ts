@@ -4,7 +4,7 @@ export const neauviaNRoseData: TreatmentLandingPageData = {
   slug: "neauvia-n-rose-intimate-rejuvenation-oxford",
   h1: "Neauvia N Rose Intimate Health Treatment in Oxford",
   title: "Neauvia N Rose Intimate Health Oxford | Hyaluronic Acid Treatment",
-  metaDescription: "Intimate health treatment in Oxford with Neauvia N Rose. Medical-grade hyaluronic acid for dryness, discomfort, and intimate wellness. Book consultation.",
+  metaDescription: "Intimate health treatment in Oxford with Neauvia N Rose. Medical-grade hyaluronic acid for dryness, discomfort, and intimate wellness.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/neauvia-n-rose-intimate-rejuvenation-oxford",
   
   priceLabel: "Intimate hyaluronic acid treatment",

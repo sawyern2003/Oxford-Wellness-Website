@@ -56,7 +56,7 @@ const data: TreatmentPageData = {
       heading: "The clinic in central Oxford",
       paragraphs: [
         "The Oxford Wellness Doctor is located at Belsyre Court on Woodstock Road, in the heart of Oxford just north of the city centre. The clinic serves patients from across Oxford, North Oxford, Summertown, Jericho and the surrounding areas, with convenient access via car (on-street parking nearby) and public transport.",
-        "The clinic environment is calm, private and professional. Longevity consultations are unhurried, typically 45 minutes for an initial assessment, with time to discuss your health history, goals and concerns in detail. You will see Dr Taganova personally – not a nurse or junior practitioner.",
+        "The clinic environment is calm, private and professional. Longevity consultations are unhurried, typically 60 minutes for an initial assessment, with time to discuss your health history, goals and concerns in detail. You will see Dr Taganova personally – not a nurse or junior practitioner.",
       ],
     },
     {
@@ -69,7 +69,8 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Vitamin B12 injection", price: "£35" },
+    { name: "Longevity Consultation (60 min)", price: "£295" },
+    { name: "Vitamin B12 injection", price: "£45" },
   ],
   faqs: [
     {

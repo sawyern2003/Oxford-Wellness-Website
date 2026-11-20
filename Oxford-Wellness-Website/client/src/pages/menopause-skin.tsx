@@ -92,9 +92,9 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Menopause Skin Consultation", price: "£95" },
+    { name: "Aesthetic & Skin Consultation (45 min)", price: "£75" },
     { name: "Profhilo (per session)", price: "£350" },
-    { name: "Morpheus8 Face (per session)", price: "£650" },
+    { name: "Morpheus8 Face (per session)", price: "£600" },
     { name: "Polynucleotide Skin Boosters", price: "£350" },
   ],
   faqs: [

@@ -4,11 +4,11 @@ export const menopauseClinicData: TreatmentLandingPageData = {
   slug: "menopause-clinic-oxford",
   h1: "Menopause Clinic in Oxford",
   title: "Menopause Clinic Oxford | Women's Health | Dr Inga Taganova",
-  metaDescription: "Private menopause clinic in Oxford. Expert menopause care from GP Dr Inga Taganova with a background in obstetrics and gynaecology. Book your consultation.",
+  metaDescription: "Private menopause clinic in Oxford. Expert menopause care from GP Dr Inga Taganova with a background in obstetrics and gynaecology.",
   canonical: "https://www.theoxfordwellnessdoctor.com/menopause-clinic-oxford",
   
   priceLabel: "Initial consultation",
-  priceValue: "£195",
+  priceValue: "£275",
   
   whoIsFor: {
     heading: "Menopause symptoms we help with",
@@ -32,7 +32,7 @@ export const menopauseClinicData: TreatmentLandingPageData = {
       "Full symptom assessment and medical history review.",
       "Discussion of treatment options, including lifestyle interventions and specialist referrals.",
       "Personalised treatment plan tailored to your needs.",
-      "Follow-up appointments (£95) to monitor progress and adjust your plan."
+      "Follow-up appointments (£150) to monitor progress and adjust your plan."
     ],
     sessionsInfo: "Dr Inga Taganova is a GP with a background in obstetrics and gynaecology and more than two decades of medical experience."
   },
@@ -64,11 +64,11 @@ export const menopauseClinicData: TreatmentLandingPageData = {
     },
     {
       q: "How long is a menopause consultation?",
-      a: "Initial consultations are typically 1 hour, allowing time for a thorough assessment and discussion of your treatment options."
+      a: "Initial consultations are typically 60 minutes, allowing time for a thorough assessment and discussion of your treatment options."
     },
     {
       q: "What is the cost of a follow-up appointment?",
-      a: "Follow-up appointments are £95. These are used to monitor progress and adjust your treatment plan as needed."
+      a: "Follow-up appointments are £150. These are used to monitor progress and adjust your treatment plan as needed."
     },
     {
       q: "Can menopause affect my skin?",
@@ -77,8 +77,8 @@ export const menopauseClinicData: TreatmentLandingPageData = {
   ],
   
   pricing: [
-    { name: "Menopause & Women's Health Consultation — Initial (1 hour)", price: "£195" },
-    { name: "Menopause & Women's Health — Follow-up", price: "£95" }
+    { name: "Menopause & Women's Health Consultation — Initial (60 min)", price: "£275" },
+    { name: "Menopause & Women's Health — Follow-up (30 min)", price: "£150" }
   ],
   
   procedureSchema: {

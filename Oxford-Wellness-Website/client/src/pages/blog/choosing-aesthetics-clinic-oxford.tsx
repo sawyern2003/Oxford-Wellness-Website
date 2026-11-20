@@ -28,7 +28,7 @@ const data: BlogPostData = {
       heading: "Distinguish Medical Clinics from Beauty Salons",
       paragraphs: [
         "The aesthetics market in the UK includes everything from hospital-linked medical clinics to beauty salons offering dermal filler 'parties'. Understanding where on this spectrum a clinic sits is essential.",
-        "A medical-led aesthetics clinic should have: a clinical environment with appropriate infection control; qualified prescribers on-site or overseeing treatment; protocols for managing complications; access to emergency equipment including hyaluronidase; professional medical indemnity insurance.",
+        "A medical-led aesthetics clinic should have: a clinical environment with appropriate infection control; qualified prescribers on-site or overseeing treatment; protocols for managing complications; access to emergency equipment for dissolving filler if needed; professional medical indemnity insurance.",
         "A beauty salon offering aesthetic treatments may have none of these things - and you would have limited legal recourse if something went wrong.",
       ],
     },
@@ -41,7 +41,7 @@ const data: BlogPostData = {
         "'Where did you train in aesthetic medicine and how long did the training last?'",
         "'How many of this specific procedure have you performed?'",
         "'What do you do if there is a complication?'",
-        "'Do you have access to hyaluronidase?' (the enzyme used to dissolve filler in an emergency)",
+        "'Can you dissolve filler in an emergency if needed?'",
         "'Can I see examples of your work?'",
         "A practitioner who becomes defensive or evasive about these questions is telling you something important.",
       ],
@@ -92,7 +92,7 @@ const data: BlogPostData = {
       heading: "What Makes The Oxford Wellness Doctor Different",
       paragraphs: [
         "At The Oxford Wellness Doctor, every element of patient care is designed around the standards we believe every patient deserves—not the minimum regulatory requirement. Dr Inga Taganova is GMC-registered, medically trained across gynaecology, general practice, and aesthetic medicine, and brings more than two decades of medical experience to every patient interaction.",
-        "Every new patient receives a full consultation before any treatment. Hyaluronidase is always available. Treatments are only recommended where Dr Inga Taganova believes they will genuinely benefit the patient. And patients are never pressured - if she doesn't think a treatment is right for you, she will tell you honestly.",
+        "Every new patient receives a full consultation before any treatment. Filler dissolving is always available when needed. Treatments are only recommended where Dr Inga Taganova believes they will genuinely benefit the patient. And patients are never pressured - if she doesn't think a treatment is right for you, she will tell you honestly.",
       ],
     },
   ],

@@ -2,7 +2,7 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 
 const data: TreatmentPageData = {
   title: "Perimenopause Support Oxford | Women's Health GP | Dr Inga Taganova",
-  metaDescription: "Perimenopause support in Oxford from Dr Inga Taganova, GP with a background in obstetrics and gynaecology. Expert care for women in their 40s experiencing early menopause symptoms. Book consultation.",
+  metaDescription: "Perimenopause support in Oxford from Dr Inga Taganova, GP with a background in obstetrics and gynaecology. Expert care for women in their 40s experiencing early menopause symptoms.",
   canonical: "https://www.theoxfordwellnessdoctor.com/perimenopause-oxford",
   h1: "Perimenopause Support in Oxford - When Symptoms Start in Your 40s",
   intro: "Perimenopause is the transition phase leading to menopause, and for many women, it's the most symptom-heavy and disruptive period of their entire hormonal journey. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology, provides expert assessment and management for women experiencing perimenopause - often starting in their early-to-mid 40s, sometimes earlier.",
@@ -90,7 +90,7 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Initial Perimenopause Consultation (1 hour)", price: "Price on consultation" },
+    { name: "Initial Perimenopause Consultation (60 min)", price: "Price on consultation" },
     { name: "Follow-up Consultation (30 min)", price: "Price on consultation" },
     { name: "Combined Perimenopause & Skin Consultation", price: "Price on consultation" },
   ],
@@ -125,7 +125,7 @@ const data: TreatmentPageData = {
     },
     {
       q: "How do I book a perimenopause consultation?",
-      a: "You can book via the Glowday booking system linked from this website, or contact us directly by phone (07739 309380) or email (info@theoxfordwellnessdoctor.com). A Menopause & Women's Health Consultation, which covers perimenopause, is £195 initially and £95 for follow-up.",
+      a: "You can book via the Glowday booking system linked from this website, or contact us directly by phone (07739 309380) or email (info@theoxfordwellnessdoctor.com). A Menopause & Women's Health Consultation, which covers perimenopause, is £275 initially and £150 for follow-up.",
     },
   ],
   procedureSchema: {
