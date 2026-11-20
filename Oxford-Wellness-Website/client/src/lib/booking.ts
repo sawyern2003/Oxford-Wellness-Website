@@ -1,7 +1,7 @@
 export const BOOKING_HREF = "/book";
 
 export const CONSULTATION_LABELS: Record<string, string> = {
-  "aesthetic-skin": "Aesthetic & Skin Consultation",
+  "aesthetic-skin": "Aesthetic & Skin Consultation (45 min)",
   menopause: "Menopause & Women's Health Consultation",
   weight: "Medical Weight Management Consultation",
   "follow-up": "Medical Follow-up (general)",

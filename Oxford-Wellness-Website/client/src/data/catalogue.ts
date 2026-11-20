@@ -92,10 +92,10 @@ function fee(entry: {
 export const catalogue: CatalogueItem[] = [
   fee({
     id: "consult-aesthetic",
-    name: "Aesthetic & Skin Consultation",
+    name: "Aesthetic & Skin Consultation (45 min)",
     category: "consultations",
     description: "Assessment before aesthetic or skin treatment.",
-    amount: "£75",
+    amount: "£95",
     booking: "aesthetic-skin",
     detailUrl: "/pricing",
     consultationRequired: false,
@@ -103,7 +103,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "consult-menopause",
-    name: "Menopause & Women's Health Consultation — Initial",
+    name: "Menopause & Women's Health Consultation — Initial (1 hour)",
     category: "consultations",
     description: "Consultation for menopause, perimenopause and related women's health concerns.",
     amount: "£195",

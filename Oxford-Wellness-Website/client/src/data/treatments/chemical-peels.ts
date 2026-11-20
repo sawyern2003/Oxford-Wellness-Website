@@ -19,6 +19,6 @@ export const chemicalPeelsData: TreatmentLandingPageData = {
     { q: "How many peels do I need?", a: "Most patients benefit from 3–6 treatments spaced 2–4 weeks apart for optimal results." }
   ],
   pricing: [{ name: "Obagi Blue Peel Radiance", price: "£150" }, { name: "Perfect Peel", price: "Price on consultation" }],
-  consultation: { name: "Aesthetic & Skin Consultation", price: "£75" },
+  consultation: { name: "Aesthetic & Skin Consultation (45 min)", price: "£95" },
   procedureSchema: { name: "Chemical Peels Oxford", description: "Medical-grade chemical peels for acne, pigmentation, fine lines and texture improvement. Delivered by GMC-registered Dr Inga Taganova in Oxford.", bodyLocation: "Face" }
 };

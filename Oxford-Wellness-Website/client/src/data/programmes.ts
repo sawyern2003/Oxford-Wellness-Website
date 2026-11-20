@@ -188,7 +188,7 @@ export const programmes: Programme[] = [
       "Improved body confidence",
     ],
     timeline: "Typically 6–8 weeks for a course of treatments, then maintenance.",
-    investment: "From £75 consultation; treatment courses from £850",
+    investment: "From £95 consultation; treatment courses from £850",
     duration: "6–8 weeks + maintenance",
     includesSummary: "Consultation, body assessment, course of RF treatments, review",
     faqs: [

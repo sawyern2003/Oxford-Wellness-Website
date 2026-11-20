@@ -80,7 +80,7 @@ const data: TreatmentPageData = {
       heading: "What to expect at your consultation",
       paragraphs: [
         "Your menopause skin consultation begins with a discussion of your skin concerns, menopausal symptoms, medical history, and aesthetic goals. Dr Taganova will assess your skin quality, facial structure, and the extent of collagen loss and structural decline. She will explain which treatments are appropriate for your skin type and concerns, what results you can realistically expect, and how treatments can be integrated with your broader menopausal health plan.",
-        "There is no pressure to proceed with treatment immediately. Many patients prefer to consider their options and return for treatment at a later date. The consultation fee is redeemable against treatment if you proceed within six months.",
+        "There is no pressure to proceed with treatment immediately. Many patients prefer to consider their options and return for treatment at a later date.",
       ],
     },
     {

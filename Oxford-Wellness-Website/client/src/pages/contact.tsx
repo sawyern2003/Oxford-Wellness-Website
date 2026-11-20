@@ -35,7 +35,7 @@ export default function Contact() {
       : {
           title: "Contact The Oxford Wellness Doctor | Book Consultation Oxford",
           description:
-            "Book your women's health & medical aesthetics consultation in Oxford. Now at Belsyre Court. Call 07739 309380 or email. Open every day except Tuesday and Wednesday.",
+            "Book your women's health & medical aesthetics consultation in Oxford. Now at Belsyre Court. Call 07739 309380 or email. Open Monday, Thursday, Friday, Saturday, Sunday 9:00–19:00.",
           canonical: "https://www.theoxfordwellnessdoctor.com/contact",
         }
   );
@@ -281,7 +281,7 @@ export default function Contact() {
                   <Clock className="text-secondary mt-1" />
                   <div>
                     <h3 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-2">Hours</h3>
-                    <p className="text-muted-foreground text-sm">Open every day except Tuesday and Wednesday</p>
+                    <p className="text-muted-foreground text-sm">Monday, Thursday, Friday, Saturday, Sunday 9:00–19:00<br/>Closed Tuesday and Wednesday</p>
                   </div>
                 </div>
               </CardContent>
@@ -319,7 +319,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h2 className="font-sans font-semibold text-lg text-foreground tracking-tight">Hours</h2>
-                  <p className="mt-2 text-sm text-muted-foreground">Open every day except Tuesday and Wednesday</p>
+                  <p className="mt-2 text-sm text-muted-foreground">Monday, Thursday, Friday, Saturday, Sunday 9:00–19:00<br/>Closed Tuesday and Wednesday</p>
                 </div>
               </div>
             )

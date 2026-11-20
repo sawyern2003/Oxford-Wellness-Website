@@ -19,6 +19,6 @@ export const formaFaceliftData: TreatmentLandingPageData = {
     { q: "Can Forma be combined with other treatments?", a: "Yes. Forma pairs well with Profhilo, skin boosters, dermal fillers and anti-wrinkle injections for comprehensive facial rejuvenation." }
   ],
   pricing: [{ name: "Forma — single session", price: "£300" }, { name: "Forma — course of 6", price: "£1,200" }],
-  consultation: { name: "Aesthetic & Skin Consultation", price: "£75" },
+  consultation: { name: "Aesthetic & Skin Consultation (45 min)", price: "£95" },
   procedureSchema: { name: "Forma Facelift Oxford", description: "Non-surgical radiofrequency facelift for skin tightening and lifting. Delivered by GMC-registered Dr Inga Taganova in Oxford.", bodyLocation: "Face" }
 };

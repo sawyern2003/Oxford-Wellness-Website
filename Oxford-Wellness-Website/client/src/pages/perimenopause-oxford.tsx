@@ -90,7 +90,7 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Initial Perimenopause Consultation (45 min)", price: "Price on consultation" },
+    { name: "Initial Perimenopause Consultation (1 hour)", price: "Price on consultation" },
     { name: "Follow-up Consultation (30 min)", price: "Price on consultation" },
     { name: "Combined Perimenopause & Skin Consultation", price: "Price on consultation" },
   ],

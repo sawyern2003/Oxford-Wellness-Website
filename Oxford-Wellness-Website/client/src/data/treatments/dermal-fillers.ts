@@ -79,8 +79,8 @@ export const dermalFillersData: TreatmentLandingPageData = {
   ],
   
   consultation: {
-    name: "Aesthetic & Skin Consultation",
-    price: "£75"
+    name: "Aesthetic & Skin Consultation (45 min)",
+    price: "£95"
   },
   
   procedureSchema: {
