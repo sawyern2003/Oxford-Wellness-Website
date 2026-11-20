@@ -3,7 +3,7 @@ import { TreatmentLandingPageData } from "@/components/treatments/TreatmentLandi
 export const fillerDissolvingData: TreatmentLandingPageData = {
   slug: "filler-dissolving-oxford",
   h1: "Filler Dissolving in Oxford",
-  title: "Filler Dissolving Oxford | Hyaluronidase Treatment | Dr Inga Taganova",
+  title: "Filler Dissolving Oxford | Safe Filler Removal | Dr Inga Taganova",
   metaDescription: "Filler dissolving in Oxford — safe removal of unwanted, migrated, or overfilled dermal filler by a GMC-registered doctor.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/filler-dissolving-oxford",
   priceLabel: "",
@@ -15,10 +15,10 @@ export const fillerDissolvingData: TreatmentLandingPageData = {
   faqs: [
     { q: "Does filler dissolving hurt?", a: "You'll feel brief pinches during injection. Most patients tolerate this well. Ice packs help with comfort." },
     { q: "How quickly does filler dissolve?", a: "Filler begins breaking down within minutes. Full breakdown visible within 24–48 hours." },
-    { q: "Will all filler be removed?", a: "Hyaluronidase only dissolves hyaluronic acid-based fillers. Other filler types cannot be dissolved this way. Dr Inga Taganova will advise during consultation." },
+    { q: "Will all filler be removed?", a: "Filler dissolving only works on hyaluronic acid-based fillers. Other filler types cannot be dissolved this way. Dr Inga Taganova will advise during consultation." },
     { q: "Can I have new filler after dissolving?", a: "Yes. Once swelling settles (usually 2 weeks), new filler can be placed." }
   ],
   pricing: [{ name: "Filler dissolving", price: "£275" }],
   consultation: { name: "Aesthetic & Skin Consultation (45 min)", price: "£75" },
-  procedureSchema: { name: "Filler Dissolving Oxford", description: "Hyaluronidase treatment for safe removal of unwanted dermal filler. Delivered by GMC-registered Dr Inga Taganova in Oxford.", bodyLocation: "Face" }
+  procedureSchema: { name: "Filler Dissolving Oxford", description: "Filler dissolving for safe removal of unwanted dermal filler. Delivered by GMC-registered Dr Inga Taganova in Oxford.", bodyLocation: "Face" }
 };

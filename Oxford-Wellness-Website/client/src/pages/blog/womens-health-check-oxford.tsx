@@ -1,7 +1,7 @@
 import BlogPostTemplate, { BlogPostData } from "@/components/blog/BlogPostTemplate";
 
 const data: BlogPostData = {
-  title: "Women's Health Checks: What to Include and When | Oxford GP Advice",
+  title: "Women's Health Checks: What to Include and When | Oxford Doctor Advice",
   metaDescription: "Comprehensive women's health checks in Oxford. Dr Inga Taganova explains what screening and preventive care women need at different life stages.",
   canonical: "https://www.theoxfordwellnessdoctor.com/blog/womens-health-check-oxford",
   h1: "Women's Health Checks: What to Include and When",

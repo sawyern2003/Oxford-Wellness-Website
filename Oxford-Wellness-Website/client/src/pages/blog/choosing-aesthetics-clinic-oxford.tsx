@@ -92,7 +92,7 @@ const data: BlogPostData = {
       heading: "What Makes The Oxford Wellness Doctor Different",
       paragraphs: [
         "At The Oxford Wellness Doctor, every element of patient care is designed around the standards we believe every patient deserves—not the minimum regulatory requirement. Dr Inga Taganova is GMC-registered, medically trained across gynaecology, general practice, and aesthetic medicine, and brings more than two decades of medical experience to every patient interaction.",
-        "Every new patient receives a full consultation before any treatment. Hyaluronidase is always available. Treatments are only recommended where Dr Inga Taganova believes they will genuinely benefit the patient. And patients are never pressured - if she doesn't think a treatment is right for you, she will tell you honestly.",
+        "Every new patient receives a full consultation before any treatment. Filler dissolving is always available when needed. Treatments are only recommended where Dr Inga Taganova believes they will genuinely benefit the patient. And patients are never pressured - if she doesn't think a treatment is right for you, she will tell you honestly.",
       ],
     },
   ],

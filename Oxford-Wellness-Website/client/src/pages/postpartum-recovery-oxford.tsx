@@ -42,7 +42,7 @@ const data: TreatmentPageData = {
         "Her approach is sensitive, evidence-based, and non-judgmental. She recognizes that postpartum intimate health concerns are not cosmetic issues to be dismissed - they're real physical changes that affect quality of life, relationships, and self-esteem.",
       ],
       bullets: [
-        "lead clinician with a background in obstetrics and gynaecology",
+        "Lead clinician with a background in obstetrics and gynaecology",
         "Over 20 years of experience in women's health",
         "Specialist understanding of pelvic anatomy and postpartum changes",
         "GMC-registered doctor with an unblemished record",
@@ -124,7 +124,7 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Initial Post-Birth Recovery Consultation (45 min)", price: "Price on consultation" },
+    { name: "Post-Birth Recovery Consultation", price: "£195" },
     { name: "Neauvia N Rose Intimate Health Treatment", price: "Price on consultation" },
     { name: "Follow-up Consultation (30 min)", price: "Price on consultation" },
   ],

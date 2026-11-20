@@ -66,7 +66,7 @@ const posts: BlogPost[] = [
   {
     slug: "womens-health-check-oxford",
     title: "Women's Health Checks: What to Include and When",
-    excerpt: "Comprehensive women's health checks explained by an Oxford GP. What screening women need at different life stages.",
+    excerpt: "Comprehensive women's health checks explained by an Oxford doctor. What screening women need at different life stages.",
     category: "Women's Health",
     readTime: "8 min",
     href: "/blog/womens-health-check-oxford",
@@ -84,7 +84,7 @@ const posts: BlogPost[] = [
   {
     slug: "anti-wrinkle-injections-oxford",
     title: "Anti-Wrinkle Injections Explained: What They Treat and What to Expect",
-    excerpt: "Anti-wrinkle treatment explained by an Oxford GP. How they work, what they treat, results timeline, and natural-looking outcomes.",
+    excerpt: "Anti-wrinkle treatment explained by an Oxford doctor. How they work, what they treat, results timeline, and natural-looking outcomes.",
     category: "Skin",
     readTime: "8 min",
     href: "/blog/anti-wrinkle-injections-oxford",
@@ -102,7 +102,7 @@ const posts: BlogPost[] = [
   {
     slug: "postpartum-recovery-oxford",
     title: "Postpartum Recovery: Body Confidence and Intimate Health After Childbirth",
-    excerpt: "Postpartum recovery support from an Oxford GP. Body changes after childbirth and evidence-based treatments.",
+    excerpt: "Postpartum recovery support from an Oxford doctor. Body changes after childbirth and evidence-based treatments.",
     category: "Women's Health",
     readTime: "8 min",
     href: "/blog/postpartum-recovery-oxford",

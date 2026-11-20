@@ -183,7 +183,7 @@ export default function About() {
             <h2 id="about-inga-heading" className={`mt-4 text-3xl md:text-[2.5rem] leading-tight ${display}`}>
               Dr Inga Taganova
             </h2>
-            <p className="mt-2 text-sm font-medium text-primary">Founder &amp; General Practitioner</p>
+            <p className="mt-2 text-sm font-medium text-primary">Founder &amp; Lead Clinician</p>
             <p className="mt-1 text-sm text-muted-foreground">
               MRCGP · Trained in Obstetrics &amp; Gynaecology · GMC No. 4727817
             </p>
@@ -208,7 +208,7 @@ export default function About() {
             </figure>
 
             <p className={`mt-12 max-w-[40rem] ${prose}`}>
-              She continues to practise as a GP alongside the clinic and sees every patient personally. Her approach recognises that how we look, how we feel and our overall health are closely connected.
+              She continues to practise as a doctor alongside the clinic and sees every patient personally. Her approach recognises that how we look, how we feel and our overall health are closely connected.
             </p>
 
             <BioDisclosure title="Clinical interests" openOnDesktop className="mt-8">

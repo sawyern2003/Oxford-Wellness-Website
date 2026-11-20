@@ -3,7 +3,7 @@ import menopauseSkinImg from "@/assets/blog/menopause-skin-changes-oestrogen.png
 
 const data: BlogPostData = {
   title: "How Menopause Changes Your Skin, and What Helps",
-  metaDescription: "Menopause skin changes explained by Dr Inga Taganova. Treatments that actually work for aging skin during menopause - from a GP in Oxford.",
+  metaDescription: "Menopause skin changes explained by Dr Inga Taganova. Treatments that actually work for aging skin during menopause - from a doctor in Oxford.",
   canonical: "https://www.theoxfordwellnessdoctor.com/blog/menopause-skin-changes",
   h1: "How Menopause Changes Your Skin, and What Helps",
   category: "Menopause & Women's Health",
@@ -92,7 +92,7 @@ const data: BlogPostData = {
     {
       heading: "Dr Inga Taganova's Integrated Approach",
       paragraphs: [
-        "The Oxford Wellness Doctor is one of the very few clinics in Oxfordshire where you can receive HRT and aesthetic skin treatments from the same doctor, in the same appointment, guided by a GP who understands the deep connection between your hormones and your skin.",
+        "The Oxford Wellness Doctor is one of the very few clinics in Oxfordshire where you can receive HRT and aesthetic skin treatments from the same doctor, in the same appointment, guided by a clinician who understands the deep connection between your hormones and your skin.",
         "Rather than treating your fine lines and your menopause symptoms as entirely separate problems to be managed by different practitioners, Dr Inga Taganova takes an integrated view: addressing the hormonal root causes while also treating the structural and textural changes that have already occurred. For many of her patients, this combined approach produces transformative results.",
       ],
     },
