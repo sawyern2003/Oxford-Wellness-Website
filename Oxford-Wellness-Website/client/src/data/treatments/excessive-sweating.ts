@@ -4,10 +4,10 @@ export const excessiveSweatingData: TreatmentLandingPageData = {
   slug: "excessive-sweating-oxford",
   h1: "Excessive Sweating Treatment in Oxford",
   title: "Excessive Sweating Treatment Oxford | Hyperhidrosis | Stop Sweating",
-  metaDescription: "Effective excessive sweating treatment in Oxford. Prescription injections for underarms to stop hyperhidrosis. GMC-registered doctor. Book now.",
+  metaDescription: "Effective excessive sweating treatment in Oxford. Prescription injections for underarms to stop hyperhidrosis. GMC-registered doctor.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/excessive-sweating-oxford",
   priceLabel: "",
-  priceValue: "£425",
+  priceValue: "£450",
   whoIsFor: { heading: "Who is hyperhidrosis treatment for?", items: ["Excessive underarm sweating that affects daily life", "Sweating through clothing despite antiperspirant", "Anxiety or embarrassment due to sweating", "Hyperhidrosis diagnosed or suspected"] },
   howItWorks: { heading: "How it works", intro: "Prescription injections are placed into the underarm area to block the nerve signals that trigger sweat glands.", steps: ["Consultation to assess your sweating and suitability.", "Injections placed into the underarm area. Takes 15–20 minutes.", "Mild discomfort during injection. Ice pack applied for comfort."], sessionsInfo: "Results develop within 7–14 days. Sweating significantly reduced or stopped for 3–6 months. Maintenance treatments every 6–9 months." },
   downtime: { heading: "Downtime", description: "Minimal. Mild tenderness or small bumps at injection sites for a day or two. Avoid strenuous exercise for 24 hours. Return to work immediately." },
@@ -18,7 +18,7 @@ export const excessiveSweatingData: TreatmentLandingPageData = {
     { q: "How long do results last?", a: "3–6 months. Maintenance treatments every 6–9 months to maintain dryness." },
     { q: "Is it safe?", a: "Yes. This treatment has been used for hyperhidrosis for over 20 years and is safe when delivered by a qualified doctor." }
   ],
-  pricing: [{ name: "Hyperhidrosis treatment (underarms)", price: "£425" }],
-  consultation: { name: "Aesthetic & Skin Consultation (45 min)", price: "£95" },
+  pricing: [{ name: "Hyperhidrosis treatment (underarms)", price: "£450" }],
+  consultation: { name: "Aesthetic & Skin Consultation (45 min)", price: "£75" },
   procedureSchema: { name: "Excessive Sweating Treatment Oxford", description: "Prescription injections for hyperhidrosis and excessive underarm sweating. Delivered by GMC-registered Dr Inga Taganova in Oxford.", bodyLocation: "Underarm" }
 };

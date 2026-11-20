@@ -8,7 +8,7 @@ export const inmodeFXData: TreatmentLandingPageData = {
     "InMode FX radiofrequency treatment in Oxford for body skin firmness and the appearance of cellulite. Non-invasive, doctor-led care at Belsyre Court.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/inmode-fx-skin-tightening-oxford",
   priceLabel: "From",
-  priceValue: "£175",
+  priceValue: "£195",
   whoIsFor: {
     heading: "Who is InMode FX for?",
     items: [
@@ -65,8 +65,8 @@ export const inmodeFXData: TreatmentLandingPageData = {
     },
   ],
   pricing: [
-    { name: "InMode FX — single session", price: "£175" },
-    { name: "InMode FX — course of 6", price: "£850" },
+    { name: "InMode FX — single session", price: "£195" },
+    { name: "InMode FX — course of 6", price: "£995" },
   ],
   procedureSchema: {
     name: "InMode FX Skin Tightening Oxford",

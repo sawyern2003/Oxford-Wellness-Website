@@ -58,20 +58,6 @@ Professional medical aesthetics clinic website for The Oxford Wellness Doctor, l
 - Comprehensive descriptive alt text on every image (includes clinic name, location, treatment type, Dr. Taganova's name/GMC number where relevant)
 - Two `ImageObject` schema entries added to the @graph in index.html: hero image + Dr. Taganova portrait
 
-## Exact Pricing (Price Sheet – Phase 11)
-All prices corrected site-wide to match the official price sheet. No "from £X" used where an exact price exists.
-- Anti-Wrinkle: £190 (1 area), £250 (2 areas), £300 (3 areas); add-ons £50; Dimpled Chin £150
-- Jaw Slimming: £250 | Excessive Sweating (armpits): £500 | Filler Dissolving: £200
-- Dermal Filler (1.0ml): £300 | Lip Filler (0.7ml): £200
-- Profhilo / HA Skinbooster: £250 | Polynucleotide Skin Boosters: £350
-- Chemical Peels: Obagi Blue Peel Radiance £100, Perfect Peel £350
-- Morpheus8: Tummy £300, Eyes/Mouth £400, Face/Neck/Décolletage £650, Stretch Marks £800, Resurfacing add-on £300
-- Lumecca IPL: Photofacial (hands) £80, Small area £150, Medium area £223
-- Forma Facelift: £150 | Forma Plus Body: £500 | InMode FX: £150
-- Vitamin B12: £35 | Medical Form Completion: £50
-- Medical Weight Loss Consultation: £50; medication price at consultation
-- Neauvia N Rose: £350
-All treatment sub-pages, services.tsx, and pricing.tsx updated to reflect exact prices.
 
 ## Phase 10 Additions
 - **FloatingButtons** (`client/src/components/layout/FloatingButtons.tsx`) – global sticky CTA + WhatsApp buttons, appear after 300px scroll; expandable menu (Book Online + phone); WhatsApp links to wa.me/447739309380

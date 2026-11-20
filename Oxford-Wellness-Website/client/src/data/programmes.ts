@@ -132,7 +132,7 @@ export const programmes: Programme[] = [
       "Ongoing support within a trusted medical relationship",
     ],
     timeline: "Often 4–12 weeks depending on the treatments included.",
-    investment: "From £350",
+    investment: "From £450",
     duration: "4–12 weeks + review",
     includesSummary: "Consultation, discreet treatment plan, aftercare, review",
     faqs: [
@@ -188,7 +188,7 @@ export const programmes: Programme[] = [
       "Improved body confidence",
     ],
     timeline: "Typically 6–8 weeks for a course of treatments, then maintenance.",
-    investment: "From £95 consultation; treatment courses from £850",
+    investment: "From £75 consultation; treatment courses from £995",
     duration: "6–8 weeks + maintenance",
     includesSummary: "Consultation, body assessment, course of RF treatments, review",
     faqs: [

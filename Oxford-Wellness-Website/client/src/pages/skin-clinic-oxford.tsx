@@ -91,12 +91,12 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Aesthetic & Skin Consultation (45 min)", price: "£95" },
-    { name: "Anti-Wrinkle Injections (1 area)", price: "£210" },
-    { name: "Anti-Wrinkle Injections (2 areas)", price: "£270" },
-    { name: "Anti-Wrinkle Injections (3 areas)", price: "£330" },
+    { name: "Aesthetic & Skin Consultation (45 min)", price: "£75" },
+    { name: "Anti-Wrinkle Injections (1 area)", price: "£230" },
+    { name: "Anti-Wrinkle Injections (2 areas)", price: "£295" },
+    { name: "Anti-Wrinkle Injections (3 areas)", price: "£350" },
     { name: "Profhilo (per session)", price: "£350" },
-    { name: "Morpheus8 Face (per session)", price: "£650" },
+    { name: "Morpheus8 Face (per session)", price: "£600" },
   ],
   faqs: [
     {
@@ -105,7 +105,7 @@ const data: TreatmentPageData = {
     },
     {
       q: "How much do treatments cost in Oxford?",
-      a: "Anti-wrinkle injections start from £210 for one area. Profhilo is £350 per session. Morpheus8 face is £650 per session. A consultation is £95. Prices are transparent and include follow-up appointments where applicable.",
+      a: "Anti-wrinkle injections start from £230 for one area. Profhilo is £350 per session. Morpheus8 face is £600 per session. A consultation is £75. Prices are transparent and include follow-up appointments where applicable.",
     },
     {
       q: "Will I look natural after treatment?",
@@ -121,7 +121,7 @@ const data: TreatmentPageData = {
     },
     {
       q: "How do I book a consultation?",
-      a: "You can book online via the Glowday booking system, call the clinic on 07739 309380, or email info@theoxfordwellnessdoctor.com. Consultations are £95.",
+      a: "You can book online via the Glowday booking system, call the clinic on 07739 309380, or email info@theoxfordwellnessdoctor.com. Consultations are £75.",
     },
   ],
   procedureSchema: {

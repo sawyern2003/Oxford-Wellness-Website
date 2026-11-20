@@ -8,7 +8,7 @@ export const womensHealthData: TreatmentLandingPageData = {
   canonical: "https://www.theoxfordwellnessdoctor.com/womens-health-oxford",
   
   priceLabel: "Menopause & Women's Health Initial Consultation",
-  priceValue: "£195",
+  priceValue: "£275",
   
   whoIsFor: {
     heading: "Women's health concerns we help with",
@@ -30,7 +30,7 @@ export const womensHealthData: TreatmentLandingPageData = {
       "Full symptom assessment and medical history review. Dr Inga Taganova takes time to understand your experience.",
       "Discussion of all available treatment options, including lifestyle interventions, non-hormonal approaches, and specialist referrals if HRT is clinically appropriate.",
       "Personalised treatment plan that may combine medical approaches with aesthetic care for skin, intimate health, or body confidence concerns.",
-      "Follow-up appointments (£95) to review progress, adjust treatments, and provide ongoing support through your transition."
+      "Follow-up appointments (£150) to review progress, adjust treatments, and provide ongoing support through your transition."
     ],
     sessionsInfo: "Our clinic on Woodstock Road provides a calm, private space where women can discuss symptoms that are often dismissed elsewhere. Dr Inga Taganova's dual expertise in women's health and aesthetic medicine means she can address both the medical and physical manifestations of hormonal change."
   },
@@ -60,7 +60,7 @@ export const womensHealthData: TreatmentLandingPageData = {
     },
     {
       q: "What happens at a women's health consultation?",
-      a: "Your initial consultation is a comprehensive 1-hour appointment – not a rushed 10-minute assessment. Dr Inga Taganova will take a full medical and gynaecological history, discuss your current symptoms in detail, explore how they're affecting your daily life and relationships, assess whether they suggest perimenopause, menopause, or another cause, and create a personalised treatment plan. You will leave with a clear understanding of what is happening and a detailed plan for managing your symptoms."
+      a: "Your initial consultation is a comprehensive 60-minute appointment – not a rushed 10-minute assessment. Dr Inga Taganova will take a full medical and gynaecological history, discuss your current symptoms in detail, explore how they're affecting your daily life and relationships, assess whether they suggest perimenopause, menopause, or another cause, and create a personalised treatment plan. You will leave with a clear understanding of what is happening and a detailed plan for managing your symptoms."
     },
     {
       q: "Can you prescribe HRT?",
@@ -68,11 +68,11 @@ export const womensHealthData: TreatmentLandingPageData = {
     },
     {
       q: "How much are follow-up appointments?",
-      a: "Follow-up appointments for menopause and women's health are £95. These are used to monitor progress, review blood test results if arranged, adjust your treatment plan as needed, discuss any new symptoms, and provide ongoing support through your transition. Many women find that regular follow-ups every 3-6 months help them stay on track."
+      a: "Follow-up appointments for menopause and women's health are £150. These are used to monitor progress, review blood test results if arranged, adjust your treatment plan as needed, discuss any new symptoms, and provide ongoing support through your transition. Many women find that regular follow-ups every 3-6 months help them stay on track."
     },
     {
       q: "Can you help with intimate health concerns?",
-      a: "Yes. Dr Inga Taganova's background in obstetrics and gynaecology means she can address intimate health concerns including vaginal dryness, discomfort, painful intercourse, loss of sensation, and sexual wellness. These symptoms are common during and after menopause but are rarely discussed openly. We offer an Intimate Health Consultation at £150, and treatments including Votiva FormaV (£350 single session, £950 course of 3) and intimate hyaluronic acid treatments where clinically appropriate."
+      a: "Yes. Dr Inga Taganova's background in obstetrics and gynaecology means she can address intimate health concerns including vaginal dryness, discomfort, painful intercourse, loss of sensation, and sexual wellness. These symptoms are common during and after menopause but are rarely discussed openly. We offer an Intimate Health Consultation at £150, and treatments including Forma V (£450 single session, £1,200 course of 3) and intimate hyaluronic acid treatments where clinically appropriate."
     },
     {
       q: "Do I need blood tests?",
@@ -97,8 +97,8 @@ export const womensHealthData: TreatmentLandingPageData = {
   ],
   
   pricing: [
-    { name: "Menopause & Women's Health Consultation — Initial (1 hour)", price: "£195" },
-    { name: "Menopause & Women's Health — Follow-up", price: "£95" },
+    { name: "Menopause & Women's Health Consultation — Initial (60 min)", price: "£275" },
+    { name: "Menopause & Women's Health — Follow-up (30 min)", price: "£150" },
     { name: "Intimate Health Consultation", price: "£150" }
   ],
   

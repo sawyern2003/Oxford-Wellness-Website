@@ -4,11 +4,11 @@ export const morpheus8Data: TreatmentLandingPageData = {
   slug: "morpheus8-oxford",
   h1: "Morpheus8 in Oxford",
   title: "Morpheus8 Oxford | RF Microneedling | The Oxford Wellness Doctor",
-  metaDescription: "Morpheus8 radiofrequency microneedling in Oxford. Non-surgical skin tightening for face & body. Reduces wrinkles, scars & improves texture. Book consultation.",
+  metaDescription: "Morpheus8 radiofrequency microneedling in Oxford. Non-surgical skin tightening for face & body. Reduces wrinkles, scars & improves texture.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/morpheus8-oxford",
   
   priceLabel: "Full face treatment",
-  priceValue: "£550",
+  priceValue: "£450",
   
   whoIsFor: {
     heading: "Who is Morpheus8 for?",
@@ -71,17 +71,17 @@ export const morpheus8Data: TreatmentLandingPageData = {
   ],
   
   pricing: [
-    { name: "Morpheus8 — eyes or around mouth", price: "£400" },
-    { name: "Morpheus8 — full face", price: "£550" },
-    { name: "Morpheus8 — face and neck", price: "£700" },
-    { name: "Morpheus8 — face, neck and décolletage", price: "£800" },
+    { name: "Morpheus8 — eyes or around mouth", price: "£450" },
+    { name: "Morpheus8 — full face", price: "£600" },
+    { name: "Morpheus8 — face and neck", price: "£750" },
+    { name: "Morpheus8 — face, neck and décolletage", price: "£900" },
     { name: "Morpheus8 — tummy", price: "£800" },
-    { name: "Morpheus8 — stretch marks or large area", price: "£800" }
+    { name: "Morpheus8 — stretch marks or large area", price: "£900" }
   ],
   
   consultation: {
     name: "Aesthetic & Skin Consultation (45 min)",
-    price: "£95"
+    price: "£75"
   },
   
   procedureSchema: {
