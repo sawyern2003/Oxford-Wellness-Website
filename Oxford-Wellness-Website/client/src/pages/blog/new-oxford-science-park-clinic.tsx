@@ -55,7 +55,7 @@ const data: BlogPostData = {
       heading: "Getting Here",
       paragraphs: [
         "Our Oxford location offers convenient access from throughout the city. Street parking is available on Woodstock Road and surrounding streets. We recommend allowing a few extra minutes for parking if you're driving.",
-        "We know that ease of access matters. A 30-minute skin booster treatment or a 45-minute menopause consultation—our central Oxford location is easily reached by car, bus, bike, or on foot.",
+        "We know that ease of access matters. A 30-minute skin booster treatment or a 1-hour menopause consultation—our central Oxford location is easily reached by car, bus, bike, or on foot.",
       ],
     },
     {

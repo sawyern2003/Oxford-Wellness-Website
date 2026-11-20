@@ -64,7 +64,7 @@ export const menopauseClinicData: TreatmentLandingPageData = {
     },
     {
       q: "How long is a menopause consultation?",
-      a: "Initial consultations are typically 30–45 minutes, allowing time for a thorough assessment and discussion of your treatment options."
+      a: "Initial consultations are typically 1 hour, allowing time for a thorough assessment and discussion of your treatment options."
     },
     {
       q: "What is the cost of a follow-up appointment?",
@@ -77,7 +77,7 @@ export const menopauseClinicData: TreatmentLandingPageData = {
   ],
   
   pricing: [
-    { name: "Menopause & Women's Health Consultation — Initial", price: "£195" },
+    { name: "Menopause & Women's Health Consultation — Initial (1 hour)", price: "£195" },
     { name: "Menopause & Women's Health — Follow-up", price: "£95" }
   ],
   

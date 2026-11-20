@@ -91,7 +91,7 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Skin & Aesthetic Consultation", price: "£95" },
+    { name: "Aesthetic & Skin Consultation (45 min)", price: "£95" },
     { name: "Anti-Wrinkle Injections (1 area)", price: "£210" },
     { name: "Anti-Wrinkle Injections (2 areas)", price: "£270" },
     { name: "Anti-Wrinkle Injections (3 areas)", price: "£330" },

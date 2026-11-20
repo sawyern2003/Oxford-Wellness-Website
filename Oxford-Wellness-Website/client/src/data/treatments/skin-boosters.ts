@@ -62,7 +62,7 @@ export const skinBoostersData: TreatmentLandingPageData = {
   ],
   
   consultation: {
-    name: "Aesthetic & Skin Consultation",
+    name: "Aesthetic & Skin Consultation (45 min)",
     price: "£95"
   },
   

@@ -380,7 +380,7 @@ export const treatmentApproaches: TreatmentApproach[] = [
     title: "Specialist Menopause Assessment",
     icon: "assessment",
     description:
-      "A 45-minute assessment with a GP with a background in obstetrics and gynaecology and GP with experience in menopause care. Where hormone therapy is clinically appropriate, Dr Inga confirms your suitability and arranges specialist prescribing.",
+      "A 1-hour assessment with a GP with a background in obstetrics and gynaecology and GP with experience in menopause care. Where hormone therapy is clinically appropriate, Dr Inga confirms your suitability and arranges specialist prescribing.",
   },
   {
     id: "non-hormonal",

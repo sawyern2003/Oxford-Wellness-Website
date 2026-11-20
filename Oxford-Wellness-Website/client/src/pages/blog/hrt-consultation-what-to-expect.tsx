@@ -14,7 +14,7 @@ const data: BlogPostData = {
   },
   intro: "Many women delay booking a menopause consultation because they are unsure what to expect, whether they will be pressured into treatment, or whether their symptoms are 'bad enough' to warrant assessment. This article walks you through the process—what will be discussed, what questions you should ask, and how treatment decisions are actually made.",
   keyPoints: [
-    "Consultations typically last 30-45 minutes and are unhurried",
+    "Consultations typically last 1 hour and are unhurried",
     "You will be asked about your symptoms, medical history, and any concerns",
     "No one will pressure you into starting hormone therapy",
     "Treatment recommendations are individualised and evidence-based",

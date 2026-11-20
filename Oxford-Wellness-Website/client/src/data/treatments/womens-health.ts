@@ -60,7 +60,7 @@ export const womensHealthData: TreatmentLandingPageData = {
     },
     {
       q: "What happens at a women's health consultation?",
-      a: "Your initial consultation is a comprehensive 45-minute appointment – not a rushed 10-minute assessment. Dr Inga Taganova will take a full medical and gynaecological history, discuss your current symptoms in detail, explore how they're affecting your daily life and relationships, assess whether they suggest perimenopause, menopause, or another cause, and create a personalised treatment plan. You will leave with a clear understanding of what is happening and a detailed plan for managing your symptoms."
+      a: "Your initial consultation is a comprehensive 1-hour appointment – not a rushed 10-minute assessment. Dr Inga Taganova will take a full medical and gynaecological history, discuss your current symptoms in detail, explore how they're affecting your daily life and relationships, assess whether they suggest perimenopause, menopause, or another cause, and create a personalised treatment plan. You will leave with a clear understanding of what is happening and a detailed plan for managing your symptoms."
     },
     {
       q: "Can you prescribe HRT?",
@@ -97,7 +97,7 @@ export const womensHealthData: TreatmentLandingPageData = {
   ],
   
   pricing: [
-    { name: "Menopause & Women's Health Consultation — Initial", price: "£195" },
+    { name: "Menopause & Women's Health Consultation — Initial (1 hour)", price: "£195" },
     { name: "Menopause & Women's Health — Follow-up", price: "£95" },
     { name: "Intimate Health Consultation", price: "£150" }
   ],
