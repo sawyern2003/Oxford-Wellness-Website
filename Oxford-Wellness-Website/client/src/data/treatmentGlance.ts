@@ -295,19 +295,19 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/inmode-fx-skin-tightening-oxford": {
     treatmentName: "InMode FX",
     summary:
-      "Non-invasive RF body contouring reduces cellulite, targets stubborn fat, and firms loose skin with zero downtime.",
+      "Non-invasive radiofrequency treatment for body skin firmness and the appearance of cellulite, with little or no downtime.",
     highlights: [
-      "Cellulite and dimpled skin",
-      "Stubborn fat on abdomen and thighs",
-      "Loose or crepey skin",
-      "Post-pregnancy body changes",
-      "General body contouring",
+      "Appearance of cellulite and dimpled skin",
+      "Loose or less firm skin on the body",
+      "Crepey texture on abdomen, arms or thighs",
+      "Post-pregnancy skin quality concerns",
+      "Non-surgical body skin care",
     ],
     atAGlance: [
       { label: "Session time", value: "30–60 minutes", icon: "timer" },
-      { label: "Downtime", value: "None", icon: "briefcase" },
-      { label: "Results visible", value: "Peak 3–6 months after course", icon: "hourglass" },
-      { label: "Sessions needed", value: "6–8 weekly sessions", icon: "calendar" },
+      { label: "Downtime", value: "Little or none", icon: "briefcase" },
+      { label: "Changes develop", value: "Gradually over weeks", icon: "hourglass" },
+      { label: "Typical course", value: "Weekly sessions (often 6)", icon: "calendar" },
     ],
   },
   "/treatments/lumecca-ipl-oxford": {
