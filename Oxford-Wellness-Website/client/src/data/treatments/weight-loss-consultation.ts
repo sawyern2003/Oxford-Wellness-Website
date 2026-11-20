@@ -47,7 +47,7 @@ export const weightLossConsultationData: TreatmentLandingPageData = {
   trust: {
     heading: "Why Dr Inga's approach",
     items: [
-      "lead clinician with a background in obstetrics and gynaecology who understands how hormonal changes can affect weight during perimenopause and menopause",
+      "GP with a background in obstetrics and gynaecology who understands how hormonal changes can affect weight during perimenopause and menopause",
       "More than two decades of medical experience",
       "Evidence-based, realistic guidance focused on sustainable lifestyle and nutrition changes",
       "In-person consultations at our Oxford clinic",

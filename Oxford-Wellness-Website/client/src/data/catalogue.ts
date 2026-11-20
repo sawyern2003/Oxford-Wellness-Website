@@ -463,7 +463,7 @@ export const catalogue: CatalogueItem[] = [
     id: "weight-loss-consultation",
     name: "Weight Loss Consultation",
     category: "body",
-    amount: "£375", // TODO: Confirm actual price
+    amount: "Price confirmed at booking", // TODO: Confirm actual price
     booking: "weight",
     detailUrl: "/treatments/weight-loss-consultation-oxford",
   }),
