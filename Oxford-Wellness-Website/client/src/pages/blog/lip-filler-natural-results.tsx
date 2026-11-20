@@ -45,7 +45,7 @@ const data: BlogPostData = {
         "Evidence of specific training in facial aesthetics, not just a weekend course",
         "Experience specifically with lip treatments - ask to see a portfolio",
         "A willingness to discuss risks openly, including how they would manage complications",
-        "Access to hyaluronidase (the enzyme that dissolves filler) for emergency use",
+        "Access to emergency filler-dissolving treatment if needed",
         "A thorough pre-treatment consultation that assesses your specific lip anatomy",
       ],
     },

@@ -331,7 +331,7 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/filler-dissolving-oxford": {
     treatmentName: "Filler Dissolving",
     summary:
-      "Hyaluronidase safely dissolves unwanted or migrated hyaluronic acid filler under medical supervision.",
+      "Filler dissolving safely breaks down unwanted or migrated hyaluronic acid filler under medical supervision.",
     highlights: [
       "Overfilled or unnatural appearance",
       "Filler migration",

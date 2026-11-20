@@ -124,7 +124,7 @@ const data: TreatmentPageData = {
     },
   ],
   pricing: [
-    { name: "Initial Post-Birth Recovery Consultation (45 min)", price: "Price on consultation" },
+    { name: "Post-Birth Recovery Consultation", price: "£195" },
     { name: "Neauvia N Rose Intimate Health Treatment", price: "Price on consultation" },
     { name: "Follow-up Consultation (30 min)", price: "Price on consultation" },
   ],
