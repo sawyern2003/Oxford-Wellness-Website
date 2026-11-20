@@ -3,13 +3,13 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 const data: TreatmentPageData = {
   title: "Longevity Medicine Oxford | Metabolic Health & Healthy Ageing | Dr Taganova",
   metaDescription:
-    "Doctor-led longevity medicine in Oxford. Metabolic health, medical weight management, regenerative treatments and preventative care with Dr Inga Taganova at Belsyre Court, Woodstock Road.",
+    "Doctor-led longevity medicine in Oxford. Metabolic health, regenerative treatments and preventative care with Dr Inga Taganova at Belsyre Court, Woodstock Road.",
   canonical: "https://www.theoxfordwellnessdoctor.com/longevity-medicine-oxford",
   h1: "Longevity Medicine in Oxford",
   intro:
     "Longevity medicine at The Oxford Wellness Doctor focuses on how you feel and function as you age – metabolic health, energy, body composition, and regenerative skin care – guided personally by Dr Inga Taganova at our clinic on Woodstock Road in central Oxford.",
   summary:
-    "A calm, doctor-led approach to healthy ageing: metabolic assessment, medical weight management where appropriate, nutrient support, and regenerative treatments chosen for long-term wellbeing rather than quick fixes. Serving Oxford, North Oxford, Summertown, Jericho and the surrounding areas.",
+    "A calm, doctor-led approach to healthy ageing: metabolic assessment, nutrient support, and regenerative treatments chosen for long-term wellbeing rather than quick fixes. Serving Oxford, North Oxford, Summertown, Jericho and the surrounding areas.",
   sections: [
     {
       heading: "What longevity medicine means here",
@@ -29,21 +29,12 @@ const data: TreatmentPageData = {
     {
       heading: "What we can help with",
       bullets: [
-        "Medical weight management with evidence-based treatment where clinically appropriate",
         "Metabolic assessment and lifestyle guidance tailored to midlife hormonal changes",
         "Vitamin B12 and nutrient support for energy, mood and wellbeing",
         "Regenerative skin treatments that support collagen production and tissue quality",
         "Integrated menopause and midlife health planning",
         "Body composition and muscle mass preservation strategies",
         "Preventative planning for long-term metabolic and cardiovascular health",
-      ],
-    },
-    {
-      heading: "Medical weight management as part of longevity care",
-      paragraphs: [
-        "For some patients, medically supervised prescription weight management is an important part of restoring metabolic health, particularly when weight gain is linked to perimenopause, menopause, insulin resistance, or metabolic syndrome. Treatment options are considered carefully based on your medical history, current health markers, and realistic goals.",
-        "This is particularly relevant for women experiencing perimenopause or menopause-related weight change, where appetite regulation, insulin sensitivity, and body composition can shift despite consistent effort. Standard dieting advice often fails during this life stage because it does not address the underlying hormonal and metabolic changes.",
-        "Dr Taganova's approach is not to prescribe treatment as a quick fix. Medical weight management is always part of a broader metabolic and lifestyle plan, with regular monitoring, follow-up appointments, and adjustments based on your response. The goal is sustainable metabolic improvement, not rapid weight loss followed by rebound.",
       ],
     },
     {
@@ -79,22 +70,16 @@ const data: TreatmentPageData = {
   ],
   pricing: [
     { name: "Longevity Consultation (60 min)", price: "£295" },
-    { name: "Medical Weight Management Consultation — Initial", price: "£95" },
-    { name: "Medical Weight Management — Follow-up", price: "£55" },
     { name: "Vitamin B12 injection", price: "£45" },
   ],
   faqs: [
     {
       q: "What is longevity medicine?",
-      a: "Longevity medicine focuses on preserving healthspan – how well you function as you age – through metabolic care, preventative planning, and evidence-based interventions. At this clinic it includes medical weight management, nutrient support, regenerative skin treatments, and midlife women's health expertise.",
+      a: "Longevity medicine focuses on preserving healthspan – how well you function as you age – through metabolic care, preventative planning, and evidence-based interventions. At this clinic it includes nutrient support, regenerative skin treatments, and midlife women's health expertise.",
     },
     {
       q: "Is longevity medicine only for older patients?",
       a: "No. Many people begin longevity-focused care in their 40s and 50s, particularly during perimenopause and menopause, when metabolic and hormonal changes become more noticeable.",
-    },
-    {
-      q: "Do you offer medical weight management treatment?",
-      a: "Yes, where clinically appropriate. Medical weight management is doctor-supervised, with suitability assessed carefully and follow-up built into the plan. Treatment options are discussed during your consultation.",
     },
     {
       q: "How is this different from a standard aesthetics consultation?",
@@ -108,11 +93,10 @@ const data: TreatmentPageData = {
   procedureSchema: {
     name: "Longevity Medicine Consultation",
     description:
-      "Doctor-led longevity and metabolic health consultation with Dr. Inga Taganova in Oxford, covering healthy ageing, medical weight management, and regenerative care.",
+      "Doctor-led longevity and metabolic health consultation with Dr. Inga Taganova in Oxford, covering healthy ageing and regenerative care.",
     bodyLocation: "Whole body",
   },
   relatedLinks: [
-    { label: "Medical Weight Loss", href: "/treatments/medical-weight-loss-oxford" },
     { label: "Vitamin B12", href: "/treatments/vitamin-b12-injection-oxford" },
     { label: "Profhilo", href: "/treatments/profhilo-oxford" },
     { label: "Morpheus8", href: "/treatments/morpheus8-oxford" },

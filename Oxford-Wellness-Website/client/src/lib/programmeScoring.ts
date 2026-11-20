@@ -29,18 +29,15 @@ export function scoreQuiz(answers: QuizAnswers): RecommendationResult {
   const scores: Record<ProgrammeId, number> = {
     "skin-health-regeneration": 1,
     "intimate-wellness": 1,
-    "weight-body-confidence": 1,
   };
   const reasons: Record<ProgrammeId, string[]> = {
     "skin-health-regeneration": [],
     "intimate-wellness": [],
-    "weight-body-confidence": [],
   };
 
   for (const c of answers.primaryConcerns) {
-    if (c === "skin") add(scores, reasons, "skin-health-regeneration", 5, "Skin health is a primary concern");
-    if (c === "body" || c === "energy")
-      add(scores, reasons, "weight-body-confidence", 5, "Body confidence or midlife change is a priority");
+    if (c === "skin" || c === "body" || c === "energy")
+      add(scores, reasons, "skin-health-regeneration", 5, c === "skin" ? "Skin health is a primary concern" : "Body or midlife change is a priority");
     if (c === "intimate")
       add(scores, reasons, "intimate-wellness", 5, "Intimate wellbeing is a primary concern");
   }
@@ -52,7 +49,7 @@ export function scoreQuiz(answers: QuizAnswers): RecommendationResult {
 
   for (const c of answers.bodyConcerns) {
     if (NONE.has(c)) continue;
-    add(scores, reasons, "weight-body-confidence", 2, "Body or weight concerns selected");
+    add(scores, reasons, "skin-health-regeneration", 2, "Body concerns selected — discuss Forma Plus / InMode FX in consultation");
   }
 
   for (const c of answers.intimateConcerns) {
@@ -62,17 +59,15 @@ export function scoreQuiz(answers: QuizAnswers): RecommendationResult {
 
   if (answers.lifeStage === "perimenopause" || answers.lifeStage === "menopause") {
     add(scores, reasons, "skin-health-regeneration", 1, "Midlife stage often affects skin quality");
-    add(scores, reasons, "weight-body-confidence", 1, "Midlife stage often affects metabolism");
     add(scores, reasons, "intimate-wellness", 1, "Midlife stage can affect intimate comfort");
   }
   if (answers.lifeStage === "postpartum") {
     add(scores, reasons, "intimate-wellness", 2, "Postpartum stage selected");
-    add(scores, reasons, "weight-body-confidence", 1, "Postpartum body confidence support may help");
+    add(scores, reasons, "skin-health-regeneration", 1, "Postpartum skin and body support may help");
   }
 
   if (answers.goals.includes("long-term") || answers.goals.includes("guidance")) {
     add(scores, reasons, "skin-health-regeneration", 0.5, "Looking for guided, long-term care");
-    add(scores, reasons, "weight-body-confidence", 0.5, "Looking for guided, long-term care");
     add(scores, reasons, "intimate-wellness", 0.5, "Looking for guided, long-term care");
   }
 

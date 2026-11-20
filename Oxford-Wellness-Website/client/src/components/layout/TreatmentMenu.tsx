@@ -19,11 +19,11 @@ const treatmentThemes = [
     description: "Injectables, skin boosters and skin treatments carried out by Dr Inga.",
   },
   {
-    title: "Weight & Body",
+    title: "Body",
     href: "/treatments#body",
     image: weightBodyIllustration,
     alt: "Watercolour of a brass balance scale holding a pomegranate and a lemon",
-    description: "Doctor-led weight loss consultation and non-surgical body contouring for improved confidence and wellbeing.",
+    description: "Non-surgical body treatments for skin firming, texture and contour.",
   },
 ];
 

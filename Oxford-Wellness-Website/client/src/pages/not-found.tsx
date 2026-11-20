@@ -9,8 +9,8 @@ const quickLinks = [
   { label: "Lip Fillers", href: "/treatments/lip-fillers-oxford" },
   { label: "Profhilo", href: "/treatments/profhilo-oxford" },
   { label: "Morpheus8", href: "/treatments/morpheus8-oxford" },
-  { label: "Medical Weight Loss", href: "/treatments/medical-weight-loss-oxford" },
   { label: "Menopause Clinic", href: "/menopause-clinic-oxford" },
+  { label: "Forma Plus Body", href: "/treatments/forma-plus-body-contouring-oxford" },
   { label: "Pricing", href: "/pricing" },
   { label: "Blog & Guides", href: "/blog" },
 ];

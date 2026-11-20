@@ -12,7 +12,7 @@ export default function HowWeHelp() {
   useSEO({
     title: "How We Help | Personalised Treatment Journeys | The Oxford Wellness Doctor",
     description:
-      "Doctor-led programmes for skin health, body confidence and intimate wellness. Personalised journeys with Dr Inga Taganova in Oxford – not a treatment menu.",
+      "Doctor-led programmes for skin health and intimate wellness. Personalised journeys with Dr Inga Taganova in Oxford – not a treatment menu.",
     canonical: "https://www.theoxfordwellnessdoctor.com/how-we-help",
   });
 
@@ -24,7 +24,7 @@ export default function HowWeHelp() {
           <HowCanWeHelp heading="h1" />
         </FadeIn>
 
-        <div className="grid md:grid-cols-3 gap-5 mb-16">
+        <div className="grid md:grid-cols-2 gap-5 mb-16 max-w-4xl mx-auto">
           {programmes.map((p, i) => (
             <FadeIn key={p.id} delay={i * 0.06}>
               <Link

@@ -20,7 +20,6 @@ export const featuredTreatments = {
     { name: "Anti-Wrinkle", href: "/treatments/anti-wrinkle-injections-oxford" },
   ],
   body: [
-    { name: "Weight Loss Consultation", href: "/treatments/weight-loss-consultation-oxford" },
     { name: "Forma Plus", href: "/treatments/forma-plus-body-contouring-oxford" },
     { name: "InMode FX", href: "/treatments/inmode-fx-skin-tightening-oxford" },
   ],
@@ -127,11 +126,7 @@ export const relatedTreatments: Record<string, TreatmentLink[]> = {
     { name: "Women's Health Consultation", href: "/womens-health-oxford" },
   ],
 
-  // Weight & Body cross-links
-  "weight-loss-consultation-oxford": [
-    { name: "Forma Plus", href: "/treatments/forma-plus-body-contouring-oxford" },
-    { name: "Women's Health Consultation", href: "/womens-health-oxford" },
-  ],
+  // Body cross-links
   "forma-plus-body-contouring-oxford": [
     { name: "InMode FX", href: "/treatments/inmode-fx-skin-tightening-oxford" },
     { name: "Morpheus8", href: "/treatments/morpheus8-oxford" },

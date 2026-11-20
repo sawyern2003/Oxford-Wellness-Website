@@ -1,11 +1,12 @@
 import { useSEO } from "@/hooks/useSEO";
 import { useBreadcrumbSchema } from "@/hooks/useBreadcrumbSchema";
-import { CONSULTATION_LABELS, GLOWDAY_EMBED_SRC } from "@/lib/booking";
+import { CONSULTATION_LABELS, GLOWDAY_EMBED_SRC, resolveConsultationKey } from "@/lib/booking";
 
 export default function Book() {
-  const requested = typeof window !== 'undefined' 
-    ? new URLSearchParams(window.location.search).get("consultation")
-    : null;
+  const requested =
+    typeof window !== "undefined"
+      ? resolveConsultationKey(new URLSearchParams(window.location.search).get("consultation"))
+      : null;
   const consultationName = requested ? CONSULTATION_LABELS[requested] : null;
   useBreadcrumbSchema([{ name: "Book", path: "/book" }]);
   useSEO({
@@ -24,7 +25,7 @@ export default function Book() {
         <p className="text-[15px] text-foreground/75 max-w-2xl mb-8">
           {consultationName
             ? `Select ${consultationName} in the calendar if it is listed. Otherwise book the nearest general appointment and say what you need.`
-            : "Choose the consultation that matches your enquiry. Aesthetic, menopause and weight consultations are separate appointments."}
+            : "Choose the consultation that matches your enquiry. Aesthetic and menopause consultations are separate appointments."}
         </p>
         <div className="overflow-hidden border border-border bg-muted/30">
           <iframe

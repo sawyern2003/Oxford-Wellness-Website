@@ -9,12 +9,15 @@ import RevealSection from "@/components/animations/RevealSection";
 import ParallaxImage from "@/components/animations/ParallaxImage";
 import { useSEO } from "@/hooks/useSEO";
 import { useJsonLdSchema, createMedicalClinicSchema } from "@/hooks/useJsonLdSchema";
-import { programmes } from "@/data/programmes";
+import { programmes, archivedProgrammes } from "@/data/programmes";
 import { featuredTreatments } from "@/data/treatmentsNav";
 import PatientJourney from "@/components/home/PatientJourney";
 import SupplierLogos from "@/components/home/SupplierLogos";
 
-const programmeImage = (id: string) => programmes.find((item) => item.id === id)?.image ?? "";
+const programmeImage = (id: string) =>
+  programmes.find((item) => item.id === id)?.image ??
+  archivedProgrammes.find((item) => item.id === id)?.image ??
+  "";
 
 const serviceAreas = [
   {
@@ -30,10 +33,10 @@ const serviceAreas = [
     body: "Injectables, skin boosters and skin treatments carried out by Dr Inga.",
   },
   {
-    title: "Weight & Body",
+    title: "Body",
     href: "/treatments#body",
     image: programmeImage("weight-body-confidence"),
-    body: "Doctor-led weight loss consultation and non-surgical body contouring for improved confidence and wellbeing.",
+    body: "Non-surgical body treatments for skin firming, texture and contour — including Forma Plus and InMode FX.",
   },
 ];
 
