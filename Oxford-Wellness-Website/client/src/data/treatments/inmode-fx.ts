@@ -9,6 +9,12 @@ export const inmodeFXData: TreatmentLandingPageData = {
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/inmode-fx-skin-tightening-oxford",
   priceLabel: "From",
   priceValue: "£195",
+  conditionLink: {
+    before: "Looking for",
+    label: "cellulite treatment in Oxford",
+    href: "/treatments/cellulite-treatment-oxford",
+    after: "? Read our dedicated guide to assessment and treatment options.",
+  },
   whoIsFor: {
     heading: "Who is InMode FX for?",
     items: [

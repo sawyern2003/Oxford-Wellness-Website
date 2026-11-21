@@ -180,6 +180,12 @@ const sections: Section[] = [
         href: "/treatments/inmode-fx-skin-tightening-oxford",
         price: "from £195",
       },
+      {
+        name: "Cellulite treatment",
+        description: "Doctor-led assessment and treatment options for the appearance of cellulite.",
+        href: "/treatments/cellulite-treatment-oxford",
+        price: "consultation £75",
+      },
     ],
   },
 ];

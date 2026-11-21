@@ -53,6 +53,22 @@ export interface TreatmentLandingPageData {
     name: string;
     price: string;
   };
+
+  /** Override default `/book?treatment=…` booking href. */
+  bookingHref?: string;
+
+  /** Optional in-page link (e.g. condition page from a device page). */
+  conditionLink?: {
+    before: string;
+    label: string;
+    href: string;
+    after?: string;
+  };
+
+  medicalCondition?: {
+    name: string;
+    description: string;
+  };
   
   procedureSchema: {
     name: string;
@@ -118,7 +134,7 @@ function StickyBar({ slug, bookingUrl }: StickyBarProps) {
 }
 
 export default function TreatmentLandingPage({ data }: { data: TreatmentLandingPageData }) {
-  const bookingUrl = `/book?treatment=${data.slug}`;
+  const bookingUrl = data.bookingHref ?? `/book?treatment=${data.slug}`;
 
   useSEO({
     title: data.title,
@@ -141,37 +157,52 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
           { "@type": "ListItem", "position": 2, "name": data.procedureSchema.name, "item": data.canonical },
         ];
 
-    const schema = {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
+    const graph: Record<string, unknown>[] = [
+      {
+        "@type": "MedicalProcedure",
+        "name": data.procedureSchema.name,
+        "description": data.procedureSchema.description,
+        "procedureType": "TherapeuticProcedure",
+        "status": "ActiveNotRecruiting",
+        "bodyLocation": data.procedureSchema.bodyLocation || "Face",
+        "preparation": "Initial consultation with Dr. Inga Taganova at The Oxford Wellness Doctor, Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ.",
+        "followUp": "Two-week follow-up assessment included. Aftercare instructions provided.",
+        "performer": {
+          "@type": "Physician",
+          "name": "Dr Inga Taganova",
+          "identifier": { "@type": "PropertyValue", "name": "GMC Number", "value": "4727817" }
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": data.faqs.map((faq) => ({
+          "@type": "Question",
+          "name": faq.q,
+          "acceptedAnswer": { "@type": "Answer", "text": faq.a }
+        }))
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": breadcrumbItems,
+      },
+    ];
+
+    if (data.medicalCondition) {
+      graph.push({
+        "@type": "MedicalCondition",
+        "name": data.medicalCondition.name,
+        "description": data.medicalCondition.description,
+        "possibleTreatment": {
           "@type": "MedicalProcedure",
           "name": data.procedureSchema.name,
-          "description": data.procedureSchema.description,
-          "procedureType": "TherapeuticProcedure",
-          "status": "ActiveNotRecruiting",
-          "bodyLocation": data.procedureSchema.bodyLocation || "Face",
-          "preparation": "Initial consultation with Dr. Inga Taganova at The Oxford Wellness Doctor, Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ.",
-          "followUp": "Two-week follow-up assessment included. Aftercare instructions provided.",
-          "performer": {
-            "@type": "Physician",
-            "name": "Dr Inga Taganova",
-            "identifier": { "@type": "PropertyValue", "name": "GMC Number", "value": "4727817" }
-          }
+          "url": data.canonical,
         },
-        {
-          "@type": "FAQPage",
-          "mainEntity": data.faqs.map((faq) => ({
-            "@type": "Question",
-            "name": faq.q,
-            "acceptedAnswer": { "@type": "Answer", "text": faq.a }
-          }))
-        },
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": breadcrumbItems,
-        }
-      ]
+      });
+    }
+
+    const schema = {
+      "@context": "https://schema.org",
+      "@graph": graph,
     };
 
     let script = document.getElementById("treatment-landing-schema") as HTMLScriptElement | null;
@@ -275,6 +306,15 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
               {data.howItWorks.intro && (
                 <p className="text-base text-muted-foreground leading-relaxed mb-6">
                   {data.howItWorks.intro}
+                </p>
+              )}
+              {data.conditionLink && (
+                <p className="text-base text-muted-foreground leading-relaxed mb-6">
+                  {data.conditionLink.before}{" "}
+                  <Link href={data.conditionLink.href} className="text-primary underline underline-offset-4 hover:text-secondary">
+                    {data.conditionLink.label}
+                  </Link>
+                  {data.conditionLink.after ?? ""}
                 </p>
               )}
               <ol className="space-y-4 mb-6">
