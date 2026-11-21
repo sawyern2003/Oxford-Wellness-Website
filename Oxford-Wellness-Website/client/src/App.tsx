@@ -61,6 +61,7 @@ import MedicalFormCompletion from "@/pages/treatments/medical-form-completion";
 import FormaFacelift from "@/pages/treatments/forma-facelift";
 import FormaPlusBody from "@/pages/treatments/forma-plus-body";
 import InModeFX from "@/pages/treatments/inmode-fx";
+import CelluliteTreatment from "@/pages/treatments/cellulite";
 import LumeccaIPL from "@/pages/treatments/lumecca-ipl";
 import FillerDissolving from "@/pages/treatments/filler-dissolving";
 import JawSlimming from "@/pages/treatments/jaw-slimming";
@@ -113,6 +114,7 @@ function Router() {
       <Route path="/treatments/forma-facelift-oxford" component={FormaFacelift} />
       <Route path="/treatments/forma-plus-body-contouring-oxford" component={FormaPlusBody} />
       <Route path="/treatments/inmode-fx-skin-tightening-oxford" component={InModeFX} />
+      <Route path="/treatments/cellulite-treatment-oxford" component={CelluliteTreatment} />
       <Route path="/treatments/lumecca-ipl-oxford" component={LumeccaIPL} />
       <Route path="/treatments/filler-dissolving-oxford" component={FillerDissolving} />
       <Route path="/treatments/jaw-slimming-teeth-grinding-oxford" component={JawSlimming} />

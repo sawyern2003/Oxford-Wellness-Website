@@ -172,6 +172,11 @@ export const treatmentTypes: TreatmentType[] = [
         href: "/treatments/inmode-fx-skin-tightening-oxford",
       },
       {
+        name: "Cellulite treatment",
+        description: "Doctor-led assessment and treatment options for the appearance of cellulite.",
+        href: "/treatments/cellulite-treatment-oxford",
+      },
+      {
         name: "Vitamin B12 injection",
         description: "An intramuscular vitamin B12 injection, given in clinic after a short consultation.",
         href: "/treatments/vitamin-b12-injection-oxford",
@@ -229,6 +234,7 @@ export const treatmentMenuColumns: MenuGroup[][] = [
       items: [
         { name: "Forma Plus", href: "/treatments/forma-plus-body-contouring-oxford" },
         { name: "InMode FX", href: "/treatments/inmode-fx-skin-tightening-oxford" },
+        { name: "Cellulite treatment", href: "/treatments/cellulite-treatment-oxford" },
       ],
     },
   ],

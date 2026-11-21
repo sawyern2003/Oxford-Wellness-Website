@@ -130,6 +130,7 @@ const data: BlogPostData = {
     { label: "Weight Gain in Perimenopause: Medical Solutions", href: "/blog/weight-gain-perimenopause" },
   ],
   relatedTreatments: [
+    { label: "Cellulite Treatment Oxford", href: "/treatments/cellulite-treatment-oxford" },
     { label: "InMode FX Oxford", href: "/treatments/inmode-fx-skin-tightening-oxford" },
     { label: "Forma Plus Body Contouring", href: "/treatments/forma-plus-body-contouring-oxford" },
   ],

@@ -22,6 +22,7 @@ export const featuredTreatments = {
   body: [
     { name: "Forma Plus", href: "/treatments/forma-plus-body-contouring-oxford" },
     { name: "InMode FX", href: "/treatments/inmode-fx-skin-tightening-oxford" },
+    { name: "Cellulite treatment", href: "/treatments/cellulite-treatment-oxford" },
   ],
 };
 
@@ -34,9 +35,9 @@ export const relatedTreatments: Record<string, TreatmentLink[]> = {
     { name: "Skin Boosters", href: "/treatments/skin-boosters-oxford" },
   ],
   "morpheus8-oxford": [
+    { name: "Cellulite treatment", href: "/treatments/cellulite-treatment-oxford" },
     { name: "Profhilo", href: "/treatments/profhilo-oxford" },
     { name: "Forma Facelift", href: "/treatments/forma-facelift-oxford" },
-    { name: "Chemical Peels", href: "/treatments/chemical-peels-oxford" },
   ],
   "dermal-fillers-oxford": [
     { name: "Profhilo", href: "/treatments/profhilo-oxford" },
@@ -132,7 +133,13 @@ export const relatedTreatments: Record<string, TreatmentLink[]> = {
     { name: "Morpheus8", href: "/treatments/morpheus8-oxford" },
   ],
   "inmode-fx-skin-tightening-oxford": [
+    { name: "Cellulite treatment", href: "/treatments/cellulite-treatment-oxford" },
     { name: "Forma Plus", href: "/treatments/forma-plus-body-contouring-oxford" },
     { name: "Morpheus8", href: "/treatments/morpheus8-oxford" },
+  ],
+  "cellulite-treatment-oxford": [
+    { name: "InMode FX", href: "/treatments/inmode-fx-skin-tightening-oxford" },
+    { name: "Morpheus8", href: "/treatments/morpheus8-oxford" },
+    { name: "Forma Plus", href: "/treatments/forma-plus-body-contouring-oxford" },
   ],
 };

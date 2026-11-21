@@ -58,6 +58,7 @@ const ALL_SITEMAP_PAGES = [
   { path: "/treatments/forma-facelift-oxford", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },
   { path: "/treatments/forma-plus-body-contouring-oxford", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },
   { path: "/treatments/inmode-fx-skin-tightening-oxford", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },
+  { path: "/treatments/cellulite-treatment-oxford", priority: "0.9", changefreq: "monthly", lastmod: "2026-11-21" },
   { path: "/treatments/lumecca-ipl-oxford", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },
   { path: "/treatments/filler-dissolving-oxford", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },
   { path: "/treatments/jaw-slimming-teeth-grinding-oxford", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },
