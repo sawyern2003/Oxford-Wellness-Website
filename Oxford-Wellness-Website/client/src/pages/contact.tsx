@@ -7,10 +7,15 @@ import { useEffect, useState } from "react";
 import { useLocation } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
 import { useBreadcrumbSchema } from "@/hooks/useBreadcrumbSchema";
-import { useJsonLdSchema, createMedicalClinicSchema } from "@/hooks/useJsonLdSchema";
+import { useJsonLdSchema, createMedicalClinicSchema, createFAQPageSchema } from "@/hooks/useJsonLdSchema";
 import { isPainRoute } from "@/lib/brand";
 import JotformEmbed from "@/components/contact/JotformEmbed";
 import ParkingMap from "@/components/contact/ParkingMap";
+
+const PARKING_FAQ = {
+  q: "Is there parking?",
+  a: "There's no clinic car park, and the Belsyre Court courtyard is private. Free short-stay bays are available on Bevington Road (max 2 hours, right beside the clinic) and on Winchester Road nearby. Please always check the sign by the bay on the day, as rules vary and can change.",
+};
 
 export default function Contact() {
   const [location] = useLocation();
@@ -40,9 +45,12 @@ export default function Contact() {
         }
   );
 
-  if (!pain) {
-    useJsonLdSchema(createMedicalClinicSchema(), "medical-clinic-schema");
-  }
+  useJsonLdSchema(
+    pain
+      ? createFAQPageSchema([PARKING_FAQ])
+      : [createMedicalClinicSchema(), createFAQPageSchema([PARKING_FAQ])],
+    pain ? "contact-faq-schema" : "contact-page-schemas"
+  );
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -254,7 +262,7 @@ export default function Contact() {
                     <h3 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-2">Now at Belsyre Court</h3>
                     <p className="text-sm text-secondary font-medium mb-2">A new clinic in the centre of Oxford</p>
                     <p className="text-muted-foreground">
-                      Belsyre Court, 57 Woodstock Rd<br />
+                      Second floor, Belsyre Court, 57 Woodstock Road<br />
                       Oxford OX2 6HJ<br />
                       United Kingdom
                     </p>
@@ -301,7 +309,7 @@ export default function Contact() {
                 <div>
                   <h2 className="font-sans font-semibold text-lg text-foreground tracking-tight">The clinic</h2>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    Belsyre Court, 57 Woodstock Rd<br />
+                    Second floor, Belsyre Court, 57 Woodstock Road<br />
                     Oxford OX2 6HJ
                   </p>
                 </div>
@@ -325,6 +333,46 @@ export default function Contact() {
             )
           }
         />
+
+        <section className="max-w-6xl mx-auto mb-12" aria-labelledby="parking-heading">
+          <div className="max-w-2xl">
+            <h2 id="parking-heading" className="font-sans font-semibold text-2xl md:text-3xl text-foreground tracking-tight mb-4">
+              Parking
+            </h2>
+            <p className="text-[15px] text-muted-foreground leading-relaxed mb-5">
+              There's no clinic car park, and the Belsyre Court courtyard is private. The nearest street parking:
+            </p>
+            <ul className="space-y-4 mb-5">
+              <li className="text-[15px] text-muted-foreground leading-relaxed">
+                <span className="font-medium text-foreground">Bevington Road</span>, right beside Belsyre Court (2–4 min walk): free short-stay bays, max 2 hours, 8am–6.30pm. Some bays are permit-only.
+              </li>
+              <li className="text-[15px] text-muted-foreground leading-relaxed">
+                <span className="font-medium text-foreground">Winchester Road</span> (about 5 min walk north): free short-stay bays of 1, 2 or 3 hours depending on the bay, Mon–Sat 8am–6.30pm. Some bays are resident permit-only.
+              </li>
+            </ul>
+            <p className="text-[15px] text-muted-foreground leading-relaxed">
+              Short-stay bays need no ticket as long as you keep to the time limit. Please always check the sign by the bay on the day, as rules vary and can change.
+            </p>
+          </div>
+        </section>
+
+        <section className="max-w-6xl mx-auto mb-12" aria-labelledby="contact-faq-heading">
+          <div className="max-w-2xl">
+            <h2 id="contact-faq-heading" className="font-sans font-semibold text-2xl md:text-3xl text-foreground tracking-tight mb-6">
+              Frequently asked questions
+            </h2>
+            <div className="divide-y divide-border border-t border-border">
+              <div className="py-6">
+                <h3 className="font-sans font-medium text-base text-foreground leading-snug mb-3">
+                  {PARKING_FAQ.q}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {PARKING_FAQ.a}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <div className="max-w-6xl mx-auto mb-8 rounded-3xl bg-primary text-primary-foreground p-8 md:p-10">
           <h2 className="font-sans font-semibold text-2xl tracking-tight mb-3">
