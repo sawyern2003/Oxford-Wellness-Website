@@ -80,6 +80,9 @@ export default function Home() {
                 Meet Dr Inga
               </h2>
               <p className="text-[15px] text-muted-foreground leading-relaxed mb-4 max-w-xl">
+                From skin and intimate health to menopause and longevity, led by Dr Inga Taganova, GP.
+              </p>
+              <p className="text-[15px] text-muted-foreground leading-relaxed mb-4 max-w-xl">
                 A private GP with a background in obstetrics and gynaecology who takes time to understand what has changed – then builds a plan grounded in clinical judgement and natural-looking results.
               </p>
               <p className="text-[15px] text-muted-foreground leading-relaxed mb-8 max-w-xl">

@@ -46,13 +46,14 @@ export default function TypewriterPhrase({ phrases, className }: TypewriterPhras
   const longest = phrases.reduce((a, b) => (a.length >= b.length ? a : b), "");
 
   return (
-    <span className={className}>
-      <span className="invisible select-none" aria-hidden>
+    <span className={className} aria-live="off">
+      {/* Reserves width/height of the longest phrase so cycling never shifts layout. */}
+      <span className="invisible select-none whitespace-nowrap" aria-hidden="true">
         {longest}
       </span>
-      <span className="absolute inset-0">
+      <span className="absolute inset-0 whitespace-nowrap">
         {text}
-        <span className="type-caret" aria-hidden />
+        {!reduced ? <span className="type-caret" aria-hidden="true" /> : null}
       </span>
     </span>
   );

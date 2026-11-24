@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Phone, MessageCircle } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TypewriterPhrase from "@/components/animations/TypewriterPhrase";
 import cafeJpg from "@/assets/lifestyle-cafe.jpg";
@@ -37,24 +37,18 @@ export default function Hero() {
             transition={{ duration: 0.7 }}
             className="lg:col-span-5 order-1"
           >
-            <h1 className="font-sans font-semibold text-[2.15rem] sm:text-4xl md:text-[2.75rem] leading-[1.15] text-foreground tracking-tight mb-4">
+            <h1 className="font-sans font-semibold text-[2.15rem] sm:text-4xl md:text-[2.75rem] leading-[1.15] text-foreground tracking-tight mb-5">
               Feel like yourself again.
-              <span className="mt-3 block text-lg sm:text-xl md:text-2xl font-medium text-secondary leading-snug tracking-normal">
-                Doctor-led care for skin, body and women&apos;s health in Oxford.
+              <span className="mt-3 block text-lg sm:text-xl md:text-2xl font-medium text-foreground leading-snug tracking-normal">
+                Doctor-led care in Oxford for{" "}
+                <TypewriterPhrase
+                  phrases={heroPhrases}
+                  className="relative inline-block align-baseline text-primary underline decoration-primary/35 underline-offset-[0.18em]"
+                />
               </span>
             </h1>
-            <p className="font-sans font-medium text-lg text-secondary mb-5" aria-hidden="true">
-              Get care today for
-              <TypewriterPhrase
-                phrases={heroPhrases}
-                className="relative block"
-              />
-            </p>
-            <p className="text-[15px] text-muted-foreground leading-relaxed mb-6 max-w-md">
-              From skin and intimate health to menopause and longevity, led by Dr Inga Taganova, GP.
-            </p>
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-8 md:mb-0">
-              <Link href="/book">
+              <Link href="/book" className="js-book-cta">
                 <Button
                   data-testid="hero-book-consultation-btn"
                   className="bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium w-full sm:w-auto"
@@ -62,16 +56,6 @@ export default function Hero() {
                   Book consultation
                 </Button>
               </Link>
-              <a href="tel:+447739309380" className="js-call-cta">
-                <Button
-                  data-testid="hero-call-btn"
-                  variant="outline"
-                  className="rounded-full border-border px-7 h-11 text-sm font-medium bg-white w-full sm:w-auto"
-                >
-                  <Phone size={16} className="mr-2" />
-                  Call
-                </Button>
-              </a>
               <a
                 href={whatsappHref(CONSULTATION_WHATSAPP_MESSAGE)}
                 className="js-whatsapp-cta"
@@ -87,15 +71,6 @@ export default function Hero() {
                   WhatsApp
                 </Button>
               </a>
-              <Link href="/treatments">
-                <Button
-                  data-testid="hero-treatments-btn"
-                  variant="outline"
-                  className="rounded-full border-border px-7 h-11 text-sm font-medium bg-white w-full sm:w-auto"
-                >
-                  View treatments
-                </Button>
-              </Link>
             </div>
           </motion.div>
 
