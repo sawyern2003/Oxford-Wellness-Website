@@ -47,7 +47,7 @@ export function createMedicalClinicSchema() {
     "@context": "https://schema.org",
     "@type": ["MedicalClinic", "LocalBusiness"],
     "name": "The Oxford Wellness Doctor",
-    "description": "Doctor-led women's health, menopause, intimate health and longevity clinic in Oxford",
+    "description": "Doctor-led care for skin, body and women's health in Oxford, from intimate health to menopause and longevity, led by Dr Inga Taganova, GP.",
     "image": "https://www.theoxfordwellnessdoctor.com/images/clinic-exterior.jpg",
     "address": {
       "@type": "PostalAddress",

@@ -42,9 +42,9 @@ const serviceAreas = [
 
 export default function Home() {
   useSEO({
-    title: "Women's Health, Menopause & Longevity Clinic Oxford | The Oxford Wellness Doctor",
+    title: "The Oxford Wellness Doctor | Skin, Body & Women's Health in Oxford",
     description:
-      "Doctor-led women's health, menopause and longevity clinic in Oxford. Expert menopause care, intimate health and aesthetic treatments by Dr. Inga Taganova at The Oxford Wellness Doctor.",
+      "Doctor-led care for skin, body and women's health in Oxford, from intimate health to menopause and longevity, led by Dr Inga Taganova, GP. Book online.",
     canonical: "https://www.theoxfordwellnessdoctor.com/",
   });
 
