@@ -9,6 +9,7 @@ import { TreatmentMenuMobile, TreatmentMenuPanel } from "@/components/layout/Tre
 const wellnessNavLinks = [
   { name: "About", href: "/about" },
   { name: "Prices & Booking", href: "/pricing" },
+  { name: "Gift vouchers", href: "/gift-vouchers" },
   { name: "Journal", href: "/blog" },
 ];
 

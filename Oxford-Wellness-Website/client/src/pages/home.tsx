@@ -164,6 +164,32 @@ export default function Home() {
 
       <ClinicMoveNote />
 
+      {/* Gift vouchers — below hero, quiet mention */}
+      <RevealSection className="py-14 md:py-16 bg-white">
+        <div className="container-page">
+          <FadeIn className="max-w-xl mx-auto text-center">
+            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
+              For someone you care for
+            </p>
+            <h2 className="font-sans font-semibold text-2xl md:text-3xl text-foreground tracking-tight mb-4">
+              Gift vouchers
+            </h2>
+            <p className="text-[15px] text-muted-foreground leading-relaxed mb-7">
+              A consultation with Dr Inga, or credit towards any treatment — a considered gift from
+              The Oxford Wellness Doctor.
+            </p>
+            <Link href="/gift-vouchers">
+              <Button
+                variant="outline"
+                className="rounded-full border-border bg-white px-7 h-11 text-sm"
+              >
+                View gift vouchers
+              </Button>
+            </Link>
+          </FadeIn>
+        </div>
+      </RevealSection>
+
       {/* Final CTA */}
       <RevealSection className="py-16 md:py-20 bg-primary text-primary-foreground">
         <div className="container-page text-center">

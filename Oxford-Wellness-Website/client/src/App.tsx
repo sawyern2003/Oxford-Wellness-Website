@@ -83,6 +83,7 @@ const TermsAndConditions = lazy(() => import("@/pages/terms-and-conditions"));
 const ThankYou = lazy(() => import("@/pages/thank-you"));
 const CallPage = lazy(() => import("@/pages/call"));
 const Book = lazy(() => import("@/pages/book"));
+const GiftVouchers = lazy(() => import("@/pages/gift-vouchers"));
 const NotFound = lazy(() => import("@/pages/not-found"));
 const OxfordPainDoctorHome = lazy(() => import("@/pages/pain/home"));
 const PainBook = lazy(() => import("@/pages/pain/book"));
@@ -190,6 +191,7 @@ function Router() {
           {SHOW_PAIN_DOCTOR ? <NotFound /> : <Redirect to="/" />}
         </Route>
         <Route path="/contact" component={Contact} />
+        <Route path="/gift-vouchers" component={GiftVouchers} />
         <Route path="/recommended-skincare" component={RecommendedSkincare} />
         <Route path="/shop" component={Shop} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />

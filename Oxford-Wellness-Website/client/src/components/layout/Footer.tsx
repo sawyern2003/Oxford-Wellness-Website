@@ -108,6 +108,7 @@ export default function Footer() {
             <p className="text-xs font-medium tracking-wide uppercase text-muted-foreground mb-3">Clinic</p>
             <ul className="space-y-2 text-sm text-foreground/80">
               <li><Link href="/about" className="hover:text-secondary">About Dr Inga</Link></li>
+              <li><Link href="/gift-vouchers" className="hover:text-secondary">Gift vouchers</Link></li>
               <li><Link href="/blog" className="hover:text-secondary">Journal</Link></li>
               <li><Link href="/contact" className="hover:text-secondary">Contact</Link></li>
               <li><Link href="/privacy-policy" className="hover:text-secondary">Privacy</Link></li>

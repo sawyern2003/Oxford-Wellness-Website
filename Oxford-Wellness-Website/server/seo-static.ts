@@ -29,6 +29,7 @@ const ALL_SITEMAP_PAGES = [
   { path: "/oxford-pain-doctor/contact", priority: "0.8", changefreq: "monthly", lastmod: "2026-11-23" },
   { path: "/oxford-pain-doctor/book", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },
   { path: "/contact", priority: "0.9", changefreq: "monthly", lastmod: "2026-11-23" },
+  { path: "/gift-vouchers", priority: "0.85", changefreq: "monthly", lastmod: "2026-11-24" },
   { path: "/book", priority: "0.95", changefreq: "monthly", lastmod: "2024-11-10" },
   { path: "/pricing", priority: "0.9", changefreq: "monthly", lastmod: "2024-10-15" },
   { path: "/recommended-skincare", priority: "0.8", changefreq: "monthly", lastmod: "2024-09-15" },
