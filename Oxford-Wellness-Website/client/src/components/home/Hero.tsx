@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import TypewriterPhrase from "@/components/animations/TypewriterPhrase";
 import cafeJpg from "@/assets/lifestyle-cafe.jpg";
 import cafe640Avif from "@/assets/optimized/lifestyle-cafe-640.avif";
 import cafe640Webp from "@/assets/optimized/lifestyle-cafe-640.webp";
@@ -10,6 +11,16 @@ import cafe960Webp from "@/assets/optimized/lifestyle-cafe-960.webp";
 import cafe1024Avif from "@/assets/optimized/lifestyle-cafe-1024.avif";
 import cafe1024Webp from "@/assets/optimized/lifestyle-cafe-1024.webp";
 import { CONSULTATION_WHATSAPP_MESSAGE, whatsappHref } from "@/lib/whatsapp";
+
+const HERO_HEADLINE = "Feel like yourself again.";
+
+const heroPhrases = [
+  "symptoms of menopause",
+  "fatigue",
+  "skin changes",
+  "body confidence",
+  "intimate wellness",
+];
 
 const cafeAvifSrcSet = `${cafe640Avif} 640w, ${cafe960Avif} 960w, ${cafe1024Avif} 1024w`;
 const cafeWebpSrcSet = `${cafe640Webp} 640w, ${cafe960Webp} 960w, ${cafe1024Webp} 1024w`;
@@ -28,11 +39,22 @@ export default function Hero() {
             className="lg:col-span-5 order-1"
           >
             <h1 className="font-sans font-semibold text-[2.15rem] sm:text-4xl md:text-[2.75rem] leading-[1.15] text-foreground tracking-tight mb-4">
-              Feel like yourself again.
+              {/* Full headline for crawlers / screen readers; animated copy is aria-hidden. */}
+              <span className="sr-only">{HERO_HEADLINE}</span>
+              <span className="relative block" aria-hidden="true">
+                <TypewriterPhrase phrases={[HERO_HEADLINE]} once className="relative block" />
+              </span>
               <span className="mt-3 block text-lg sm:text-xl md:text-2xl font-medium text-secondary leading-snug tracking-normal">
                 Doctor-led care for skin, body and women&apos;s health in Oxford.
               </span>
             </h1>
+            <p className="font-sans font-medium text-lg text-secondary mb-5" aria-hidden="true">
+              Get care today for
+              <TypewriterPhrase
+                phrases={heroPhrases}
+                className="relative block"
+              />
+            </p>
             <p className="text-[15px] text-muted-foreground leading-relaxed mb-6 max-w-md">
               From skin and intimate health to menopause and longevity, led by Dr Inga Taganova, GP.
             </p>
