@@ -11,7 +11,7 @@ const services = [
   {
     icon: Syringe,
     title: "Injectables",
-    description: "Subtle, natural-looking enhancements using premium dermal fillers and anti-wrinkle treatments.",
+    description: "Subtle, natural-looking enhancements, including dermal fillers and doctor-led treatment for lines and wrinkles.",
   },
   {
     icon: HeartPulse,

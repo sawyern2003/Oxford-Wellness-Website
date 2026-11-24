@@ -60,7 +60,7 @@ Professional medical aesthetics clinic website for The Oxford Wellness Doctor, l
 
 
 ## Phase 10 Additions
-- **FloatingButtons** (`client/src/components/layout/FloatingButtons.tsx`) – global sticky CTA + WhatsApp buttons, appear after 300px scroll; expandable menu (Book Online + phone); WhatsApp links to wa.me/447739309380
+- **FloatingButtons** (`client/src/components/layout/FloatingButtons.tsx`) – global sticky CTA + WhatsApp buttons, appear after 300px scroll; expandable menu (Book Online + phone); WhatsApp links to wa.me/447861933979
 - **Trust badges strip** in Footer – GMC Registered (No. 4727817), Fully Insured, 20+ Years Clinical Experience – rendered above main footer grid (3 badges)
 - **New pages**: `/privacy-policy`, `/cookie-policy`, `/terms-and-conditions`, `/thank-you`, custom 404 (`not-found.tsx`) all styled to match brand
 - **Contact form**: GDPR consent checkbox added (required); submit button disabled until consent given; redirects to `/thank-you` on success

@@ -7,8 +7,8 @@ export const morpheus8Data: TreatmentLandingPageData = {
   metaDescription: "Morpheus8 radiofrequency microneedling in Oxford. Non-surgical skin tightening for face & body. Reduces wrinkles, scars & improves texture.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/morpheus8-oxford",
   
-  priceLabel: "Full face treatment",
-  priceValue: "£450",
+  priceLabel: "",
+  priceValue: "From £450",
   
   whoIsFor: {
     heading: "Who is Morpheus8 for?",
