@@ -76,11 +76,6 @@ function VoucherCard({ voucher, index }: { voucher: GiftVoucher; index: number }
             Buy
           </Button>
         </a>
-        {!external ? (
-          <p className="mt-3 text-xs text-muted-foreground text-center leading-relaxed">
-            Opens WhatsApp until the SumUp link is added
-          </p>
-        ) : null}
       </article>
     </FadeIn>
   );
