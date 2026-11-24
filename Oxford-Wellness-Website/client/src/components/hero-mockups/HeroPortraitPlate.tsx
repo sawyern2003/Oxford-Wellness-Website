@@ -2,68 +2,47 @@ import {
   BookConsultationButton,
   CareLine,
   DeskPortrait,
+  Headline,
   HERO_CAPTION,
-  HERO_HEADLINE,
-  HERO_SUBLINE,
+  Subline,
 } from "./shared";
 
 /**
  * 2 · Centred portrait plate
- * Magazine / gallery plate: headline above, framed photo centred with
- * white margins, subline and button beneath. Watercolour vignette
- * tucked behind one corner of the frame.
+ * Large gallery plate (~60–70vh on desktop). No botanical sprig.
  */
 export default function HeroPortraitPlate() {
   return (
     <>
-      <section className="bg-white pt-24 md:pt-28 pb-10 md:pb-14">
+      <section className="bg-white pt-20 md:pt-24 pb-8 md:pb-10 min-h-[100svh]">
         <div className="container-wide">
-          <div className="mx-auto max-w-3xl text-center mb-6 md:mb-8">
-            <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-[4.25rem] leading-[1.08] text-primary tracking-tight">
-              {HERO_HEADLINE}
-            </h1>
+          <div className="mx-auto max-w-3xl text-center mb-3 md:mb-4">
+            <Headline className="text-[2.25rem] sm:text-[2.75rem] lg:text-[3.75rem] leading-[1.08]" />
           </div>
 
-          <figure className="relative mx-auto w-full max-w-[20rem] lg:max-w-[22rem]">
-            <div
-              className="pointer-events-none absolute -left-10 -bottom-8 w-36 sm:w-44 opacity-40 z-0"
-              aria-hidden="true"
-            >
-              <img
-                src="/images/hero/botanical-480.webp"
-                alt=""
-                width={480}
-                height={317}
-                loading="lazy"
-                decoding="async"
-                className="w-full h-auto select-none"
+          <figure className="relative mx-auto w-full max-w-[17rem] sm:max-w-[20rem] lg:max-w-none lg:w-[min(38vw,24rem)]">
+            {/* ~60vh plate on desktop, capped so CTA clears 900px fold */}
+            <div className="relative h-[38vh] max-h-[320px] lg:h-[58vh] lg:max-h-[520px] bg-[#f3f0ea]">
+              <DeskPortrait
+                priority
+                sizes="(min-width: 1024px) min(38vw, 24rem), 80vw"
+                className="absolute inset-0 h-full w-full object-cover"
+                objectPosition="center 16%"
               />
             </div>
-            <div className="relative z-10 border border-primary/15 bg-white p-2">
-              <div className="relative aspect-[3/4] overflow-hidden bg-muted/20">
-                <DeskPortrait
-                  priority
-                  sizes="(min-width: 1024px) 22rem, 88vw"
-                  className="absolute inset-0 h-full w-full object-cover"
-                  objectPosition="center 14%"
-                />
-              </div>
-            </div>
-            <figcaption className="relative z-10 mt-3 text-center text-sm text-muted-foreground">
+            <figcaption className="mt-2 text-center text-sm text-muted-foreground">
               {HERO_CAPTION}
             </figcaption>
           </figure>
 
-          <div className="mx-auto max-w-md text-center mt-5 md:mt-6">
-            <p className="text-[15px] text-muted-foreground leading-relaxed mb-5">
-              {HERO_SUBLINE}
-            </p>
+          <div className="mx-auto max-w-md text-center mt-3 md:mt-4">
+            <Subline className="mb-3" />
             <BookConsultationButton />
           </div>
         </div>
       </section>
 
-      <section className="bg-white pb-14 md:pb-16" aria-label="Doctor-led care">
+      <section className="bg-white pt-20 md:pt-24 pb-14 md:pb-16" aria-label="Doctor-led care">
         <div className="container-wide">
           <CareLine className="mx-auto text-center sm:[&>span]:inline" />
         </div>

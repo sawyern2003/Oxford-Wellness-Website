@@ -47,8 +47,7 @@ function useNoIndex() {
 
 /**
  * Unlinked hero mockups for Nicholas's review.
- * Real Navbar / Footer / HomeRest; only the hero (+ care line) varies.
- * Not in the sitemap or prerender list.
+ * Prerendered (200) but noindex and excluded from the sitemap.
  */
 export default function HeroMockupPage() {
   const params = useParams<{ id?: string }>();
@@ -72,7 +71,7 @@ export default function HeroMockupPage() {
   return (
     <>
       <Hero />
-      <HomeRest />
+      <HomeRest showParksRoad={id !== "5"} />
     </>
   );
 }

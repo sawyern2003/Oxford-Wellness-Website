@@ -10,7 +10,19 @@ const SSR_DIR = path.resolve("dist/ssr");
 /** Served for URLs without a prerendered page; must stay free of page-specific content. */
 export const SPA_SHELL = "spa.html";
 
-type Head = { title: string; description: string; canonical?: string } | null;
+/**
+ * Prerender-only routes (200 HTML, not in the sitemap).
+ * Hero mockups for Nicholas — noindex via robots meta below.
+ */
+const PRERENDER_ONLY_PAGES = [
+  { path: "/hero-mockups/1" },
+  { path: "/hero-mockups/2" },
+  { path: "/hero-mockups/3" },
+  { path: "/hero-mockups/4" },
+  { path: "/hero-mockups/5" },
+];
+
+type Head = { title: string; description: string; canonical?: string; robots?: string } | null;
 type JsonLdScript = { id: string; json: string };
 type RenderFn = (url: string) => Promise<{ html: string; head: Head; jsonLd?: JsonLdScript[] }>;
 
@@ -42,6 +54,13 @@ function applyHead(template: string, pagePath: string, head: Head): string {
   html = setTag(html, /<meta property="og:description" content="[^"]*" \/>/, `<meta property="og:description" content="${description}" />`);
   html = setTag(html, /<meta name="twitter:title" content="[^"]*" \/>/, `<meta name="twitter:title" content="${title}" />`);
   html = setTag(html, /<meta name="twitter:description" content="[^"]*" \/>/, `<meta name="twitter:description" content="${description}" />`);
+  if (head.robots) {
+    html = setTag(
+      html,
+      /<meta name="robots" content="[^"]*" \/>/,
+      `<meta name="robots" content="${escapeAttr(head.robots)}" />`,
+    );
+  }
   return html;
 }
 
@@ -167,8 +186,13 @@ export async function prerender() {
 
   const preloadCache = new Map<string, string[]>();
 
+  const pagesToRender = [
+    ...SITEMAP_PAGES.map((p) => p.path),
+    ...PRERENDER_ONLY_PAGES.map((p) => p.path),
+  ];
+
   let count = 0;
-  for (const { path: pagePath } of SITEMAP_PAGES) {
+  for (const pagePath of pagesToRender) {
     let rendered: Awaited<ReturnType<RenderFn>>;
     try {
       rendered = await render(pagePath);
@@ -179,7 +203,12 @@ export async function prerender() {
     const { html: appHtml, head, jsonLd } = rendered;
     if (!head) console.warn(`  ${pagePath}: no useSEO metadata, kept default title`);
 
-    let page = applyHead(template, pagePath, head).replace(
+    const headWithRobots: Head =
+      pagePath.startsWith("/hero-mockups/")
+        ? { ...(head ?? { title: "Hero mockup", description: "Internal hero mockup." }), robots: "noindex, nofollow" }
+        : head;
+
+    let page = applyHead(template, pagePath, headWithRobots).replace(
       '<div id="root"></div>',
       `<div id="root">${resolveReactSuspenseSlots(appHtml)}</div>`,
     );
@@ -202,5 +231,5 @@ export async function prerender() {
   }
 
   await rm(SSR_DIR, { recursive: true, force: true });
-  console.log(`prerendered ${count} of ${SITEMAP_PAGES.length} pages`);
+  console.log(`prerendered ${count} of ${pagesToRender.length} pages`);
 }

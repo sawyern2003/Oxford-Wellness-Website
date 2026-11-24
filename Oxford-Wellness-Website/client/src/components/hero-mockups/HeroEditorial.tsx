@@ -1,51 +1,50 @@
 import {
+  BelsyreWash,
   BookConsultationButton,
   CareLine,
   DeskPortrait,
+  Headline,
   HERO_CAPTION,
-  HERO_HEADLINE,
-  HERO_SUBLINE,
+  Subline,
 } from "./shared";
 
 /**
  * 1 · Editorial split
- * Desktop: text left with air, tall photo right ~viewport height.
- * Mobile: photo first (~60vh), then text.
- * Watercolour large and soft behind the care line.
+ * Mobile: photo first (~48vh so CTA fits), then type + button on first screen.
+ * Desktop: text left, tall framed photo right; high-res srcset.
  */
 export default function HeroEditorial() {
   return (
     <>
-      <section className="bg-white pt-24 md:pt-28 pb-8 md:pb-16 overflow-hidden">
+      <section className="bg-white pt-20 md:pt-24 pb-8 md:pb-12 overflow-hidden min-h-[100svh]">
         <div className="container-wide">
-          <div className="grid lg:grid-cols-12 gap-8 lg:gap-20 lg:min-h-[calc(100vh-7rem)] lg:items-center">
+          <div className="grid lg:grid-cols-12 gap-5 lg:gap-16 lg:items-center lg:min-h-[calc(100vh-6.5rem)]">
             <div className="lg:col-span-6 order-1 lg:order-2">
               <figure>
-                <div className="relative h-[60vh] lg:h-[86vh] max-h-[860px] overflow-hidden rounded-[2px] bg-muted/20">
+                <div className="relative h-[42vh] max-h-[360px] sm:h-[46vh] sm:max-h-[420px] lg:h-[82vh] lg:max-h-[780px] overflow-hidden bg-[#f3f0ea]">
                   <DeskPortrait
                     priority
+                    sizes="(min-width: 1024px) min(42vw, 720px), 92vw"
                     className="absolute inset-0 h-full w-full object-cover"
-                    objectPosition="center 16%"
+                    objectPosition="center 18%"
                   />
                 </div>
-                <figcaption className="mt-3 text-sm text-muted-foreground lg:hidden">
+                <figcaption className="mt-2 text-sm text-muted-foreground lg:hidden">
                   {HERO_CAPTION}
                 </figcaption>
               </figure>
             </div>
 
             <div className="lg:col-span-6 order-2 lg:order-1 flex flex-col justify-center">
-              <div className="max-w-md lg:max-w-[32rem] lg:py-8">
-                <h1 className="text-[2.75rem] sm:text-[3rem] lg:text-[5rem] leading-[1.06] text-primary tracking-tight mb-6">
-                  {HERO_HEADLINE}
-                </h1>
-                <p className="text-[15px] sm:text-base text-muted-foreground leading-relaxed mb-6 max-w-sm">
-                  {HERO_SUBLINE}
-                </p>
-                <p className="hidden lg:block text-sm text-muted-foreground mb-10">
+              <div className="max-w-md lg:max-w-[30rem] lg:py-6">
+                <Headline className="text-[2.35rem] sm:text-[2.75rem] lg:text-[4.75rem] leading-[1.08] mb-4 lg:mb-6" />
+                <Subline className="mb-3 lg:mb-5 max-w-sm" />
+                <p className="hidden lg:block text-sm text-muted-foreground mb-8">
                   {HERO_CAPTION}
                 </p>
-                <BookConsultationButton />
+                <div className="mt-4 lg:mt-0 pb-2">
+                  <BookConsultationButton />
+                </div>
               </div>
             </div>
           </div>
@@ -53,25 +52,10 @@ export default function HeroEditorial() {
       </section>
 
       <section
-        className="relative bg-white pt-4 pb-14 md:pb-20 overflow-hidden"
+        className="relative bg-white pt-20 md:pt-24 pb-14 md:pb-20 overflow-hidden"
         aria-label="Doctor-led care"
       >
-        <div
-          className="pointer-events-none absolute -right-8 md:right-0 top-1/2 -translate-y-1/2 w-[min(72vw,520px)] opacity-[0.22]"
-          aria-hidden="true"
-        >
-          <img
-            src="/images/hero/botanical-720.webp"
-            srcSet="/images/hero/botanical-480.webp 480w, /images/hero/botanical-720.webp 720w"
-            sizes="(min-width: 768px) 520px, 72vw"
-            alt=""
-            width={720}
-            height={476}
-            loading="lazy"
-            decoding="async"
-            className="w-full h-auto select-none"
-          />
-        </div>
+        <BelsyreWash className="absolute -right-16 md:right-0 top-1/2 -translate-y-1/2 w-[min(70vw,480px)]" opacity={0.16} />
         <div className="container-wide relative">
           <CareLine />
         </div>

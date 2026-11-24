@@ -38,10 +38,14 @@ const serviceAreas = [
 ];
 
 /** Homepage sections below the hero (shared by hero mockup pages). */
-export default function HomeRest() {
+export default function HomeRest({
+  showParksRoad = true,
+}: {
+  showParksRoad?: boolean;
+}) {
   return (
     <>
-      <ParksRoadCycle />
+      {showParksRoad ? <ParksRoadCycle /> : null}
 
       <RevealSection className="py-16 md:py-24 bg-muted/60">
         <div className="container-wide">

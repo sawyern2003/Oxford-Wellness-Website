@@ -122,19 +122,21 @@
 :is(h1).text-5xl,
 :is(h1).md\:text-5xl,
 :is(h1).md\:text-\[2\.75rem\],
+:is(h1).text-\[2\.1rem\],
+:is(h1).text-\[2\.25rem\],
+:is(h1).text-\[2\.35rem\],
 :is(h1).text-\[2\.5rem\],
 :is(h1).text-\[2\.75rem\],
 :is(h1).text-\[3\.25rem\],
+:is(h1).sm\:text-\[2\.5rem\],
 :is(h1).sm\:text-\[2\.75rem\],
 :is(h1).sm\:text-\[3rem\],
-:is(h1).sm\:text-\[3\.25rem\],
-:is(h1).sm\:text-\[4\.5rem\],
-:is(h1).lg\:text-\[3\.75rem\],
-:is(h1).lg\:text-\[4\.5rem\],
+:is(h1).sm\:text-\[3\.75rem\],
+:is(h1).lg\:text-\[3\.25rem\],
+:is(h1).lg\:text-\[4rem\],
 :is(h1).lg\:text-\[4\.75rem\],
-:is(h1).lg\:text-\[5rem\],
-:is(h1).lg\:text-\[6\.5rem\],
-:is(h1).xl\:text-\[7\.25rem\] {
+:is(h1).lg\:text-\[5\.75rem\],
+:is(h1).xl\:text-\[6\.5rem\] {
   font-weight: 400 !important;
 }
 
