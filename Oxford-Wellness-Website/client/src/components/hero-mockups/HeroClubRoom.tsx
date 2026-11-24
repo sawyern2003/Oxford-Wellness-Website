@@ -20,7 +20,7 @@ export default function HeroClubRoom() {
             <div className="lg:col-span-5 order-2 lg:order-1 flex flex-col justify-center relative">
               <BelsyreWash
                 className="absolute -left-10 -bottom-8 w-[min(70vw,360px)] -z-0"
-                opacity={0.14}
+                opacity={0.06}
               />
               <div className="relative max-w-md">
                 <Headline className="text-[2.25rem] sm:text-[2.75rem] lg:text-[4rem] leading-[1.08] mb-4 lg:mb-5" />
