@@ -12,8 +12,10 @@ import CookieConsent from "@/components/analytics/CookieConsent";
 import CustomCursor from "@/components/ui/CustomCursor";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 import { cn } from "@/lib/utils";
+// Eager homepage: avoids Suspense fallback={null} blanking prerendered
+// content during hydrate (major CLS). Other routes stay lazy.
+import Home from "@/pages/home";
 
-const Home = lazy(() => import("@/pages/home"));
 const Services = lazy(() => import("@/pages/services"));
 const About = lazy(() => import("@/pages/about"));
 const Contact = lazy(() => import("@/pages/contact"));
@@ -90,10 +92,17 @@ const PainLibrary = lazy(() => import("@/pages/pain/library"));
 const PainLibraryArticle = lazy(() => import("@/pages/pain/library-article"));
 
 function Router() {
+  const [location] = useLocation();
+  // Homepage is eager and outside Suspense so SSR/prerender writes it into
+  // <main> directly (no React streaming placeholder). That lets hydrateRoot
+  // keep the prerendered layout instead of blanking large regions (CLS ~0.98).
+  if (location === "/" || location === "") {
+    return <Home />;
+  }
+
   return (
     <Suspense fallback={null}>
       <Switch>
-        <Route path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/how-we-help" component={HowWeHelp} />
         <Route path="/symptoms-and-treatments" component={SymptomsAndTreatments} />

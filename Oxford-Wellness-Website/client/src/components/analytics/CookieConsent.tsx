@@ -13,8 +13,17 @@ import { googleAdsConfigured, initGoogleAds } from "@/lib/googleAds";
 
 export default function CookieConsent() {
   const [location] = useLocation();
-  const [choice, setChoice] = useState<AnalyticsConsent | null>(() => readAnalyticsConsent());
-  const [open, setOpen] = useState(() => readAnalyticsConsent() === null);
+  // Start closed on SSR + first client paint so hydrateRoot matches prerendered
+  // HTML (localStorage is unavailable during prerender). Open after mount when
+  // the visitor has not chosen yet.
+  const [choice, setChoice] = useState<AnalyticsConsent | null>(null);
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const stored = readAnalyticsConsent();
+    setChoice(stored);
+    setOpen(stored === null);
+  }, []);
 
   useEffect(() => {
     if (googleAdsConfigured()) initGoogleAds();
