@@ -4,7 +4,7 @@ export const jawSlimmingData: TreatmentLandingPageData = {
   slug: "jaw-slimming-oxford",
   h1: "Jaw Slimming & Teeth Grinding Treatment in Oxford",
   title: "Jaw Slimming & Teeth Grinding Treatment Oxford | Masseter Injections | Dr Inga Taganova",
-  metaDescription: "Jaw slimming and bruxism treatment in Oxford - masseter muscle-relaxing injections to slim the jaw and relieve teeth grinding. GMC-registered doctor.",
+  metaDescription: "Jaw slimming and bruxism treatment in Oxford, masseter muscle-relaxing injections to slim the jaw and relieve teeth grinding. GMC-registered doctor.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/jaw-slimming-oxford",
   priceLabel: "",
   priceValue: "£295",

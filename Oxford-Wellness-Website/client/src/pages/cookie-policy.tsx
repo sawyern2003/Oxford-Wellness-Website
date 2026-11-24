@@ -7,7 +7,7 @@ export default function CookiePolicy() {
   useBreadcrumbSchema([{ name: "Cookie Policy", path: "/cookie-policy" }]);
   useSEO({
     title: "Cookie Policy | The Oxford Wellness Doctor",
-    description: "Cookie Policy for The Oxford Wellness Doctor - information about the cookies we use and how to manage your preferences.",
+    description: "Cookie Policy for The Oxford Wellness Doctor, information about the cookies we use and how to manage your preferences.",
     canonical: "https://www.theoxfordwellnessdoctor.com/cookie-policy",
   });
 
@@ -52,7 +52,7 @@ export default function CookiePolicy() {
                 <p className="text-sm">Our website embeds content from third-party services that may set their own cookies:</p>
                 <ul className="list-disc pl-5 mt-2 text-sm space-y-1">
                   <li><strong>Cliniko</strong>, embedded online booking diary on the Book pages. Subject to Cliniko's own cookie and privacy policies.</li>
-                  <li><strong>Google Maps</strong> - embedded map on the Contact page. Subject to Google's privacy policy.</li>
+                  <li><strong>Google Maps</strong>, embedded map on the Contact page. Subject to Google's privacy policy.</li>
                 </ul>
               </div>
             </div>

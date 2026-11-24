@@ -4,7 +4,7 @@ export const vitaminB12Data: TreatmentLandingPageData = {
   slug: "vitamin-b12-injection-oxford",
   h1: "Vitamin B12 Injection in Oxford",
   title: "Vitamin B12 Injection Oxford | Energy Boost Treatment | Dr Inga Taganova",
-  metaDescription: "Vitamin B12 injections in Oxford - a fast, effective energy boost administered by a GMC-registered doctor. Supports metabolism, immunity, and wellbeing.",
+  metaDescription: "Vitamin B12 injections in Oxford, a fast, effective energy boost administered by a GMC-registered doctor. Supports metabolism, immunity, and wellbeing.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/vitamin-b12-injection-oxford",
   priceLabel: "",
   priceValue: "£45",

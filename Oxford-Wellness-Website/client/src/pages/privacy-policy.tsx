@@ -5,7 +5,7 @@ export default function PrivacyPolicy() {
   useBreadcrumbSchema([{ name: "Privacy Policy", path: "/privacy-policy" }]);
   useSEO({
     title: "Privacy Policy | The Oxford Wellness Doctor",
-    description: "Privacy Policy for The Oxford Wellness Doctor - how we collect, use, and protect your personal data in accordance with UK GDPR.",
+    description: "Privacy Policy for The Oxford Wellness Doctor, how we collect, use, and protect your personal data in accordance with UK GDPR.",
     canonical: "https://www.theoxfordwellnessdoctor.com/privacy-policy",
   });
 

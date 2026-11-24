@@ -18,7 +18,7 @@ const quickLinks = [
 export default function NotFound() {
   useSEO({
     title: "Page Not Found | The Oxford Wellness Doctor",
-    description: "The page you're looking for doesn't exist. Find what you need at The Oxford Wellness Doctor - medical aesthetics and women's wellness in Oxford.",
+    description: "The page you're looking for doesn't exist. Find what you need at The Oxford Wellness Doctor, medical aesthetics and women's wellness in Oxford.",
   });
 
   useEffect(() => {

@@ -3,13 +3,13 @@ import morpheus8DeviceImg from "@/assets/blog/morpheus8-treatment-device.png";
 
 const data: BlogPostData = {
   title: "Morpheus8 Results: Day-by-Day Recovery and Timeline",
-  metaDescription: "What to expect after Morpheus8 treatment. Recovery timeline, results progression, before and after guidance - from Dr. Inga Taganova in Oxford.",
+  metaDescription: "What to expect after Morpheus8 treatment. Recovery timeline, results progression, before and after guidance, from Dr. Inga Taganova in Oxford.",
   canonical: "https://www.theoxfordwellnessdoctor.com/blog/morpheus8-results-timeline",
   h1: "Morpheus8 Results: Day-by-Day Recovery and Timeline",
   category: "Morpheus8",
   readTime: "5 min",
   datePublished: "2024-08-10",
-  intro: "Morpheus8 is one of the most effective non-surgical skin rejuvenation treatments available - combining radiofrequency energy with microneedling to stimulate deep dermal remodelling and collagen production. But it is also a treatment with a recovery period, and understanding what to expect after your session is essential for a smooth experience and optimal results. Dr. Inga Taganova walks you through the Morpheus8 recovery and results timeline in detail.",
+  intro: "Morpheus8 is one of the most effective non-surgical skin rejuvenation treatments available, combining radiofrequency energy with microneedling to stimulate deep dermal remodelling and collagen production. But it is also a treatment with a recovery period, and understanding what to expect after your session is essential for a smooth experience and optimal results. Dr. Inga Taganova walks you through the Morpheus8 recovery and results timeline in detail.",
   sections: [
     {
       heading: "What Happens During a Morpheus8 Treatment",
@@ -22,7 +22,7 @@ const data: BlogPostData = {
     {
       heading: "Days 1 to 3: Immediately After Treatment",
       paragraphs: [
-        "The period immediately following Morpheus8 is when the skin looks most dramatic - and when many patients are glad they planned some downtime. Expect:",
+        "The period immediately following Morpheus8 is when the skin looks most dramatic, and when many patients are glad they planned some downtime. Expect:",
       ],
       bullets: [
         "Redness: The face will appear flushed to sunburnt-level red immediately after treatment. This is a normal inflammatory response.",
@@ -39,7 +39,7 @@ const data: BlogPostData = {
         "As the initial inflammation settles, the skin enters its early healing phase. During the first week you can expect:",
       ],
       bullets: [
-        "Redness reducing progressively - by day 5 to 7, most patients look sunburnt rather than acutely treated",
+        "Redness reducing progressively, by day 5 to 7, most patients look sunburnt rather than acutely treated",
         "Skin may feel dry, tight, or slightly rough as the surface heals",
         "Some flaking or dry patches as the outermost skin cells shed",
         "Continued mild swelling in some patients",
@@ -54,16 +54,16 @@ const data: BlogPostData = {
       ],
       bullets: [
         "Redness fully resolved in most patients by day 10 to 14",
-        "Skin texture begins to improve - many patients notice a 'glow' starting to develop",
+        "Skin texture begins to improve, many patients notice a 'glow' starting to develop",
         "Pores may appear slightly tighter",
         "You can gradually reintroduce your regular skincare routine, including vitamin C and then retinol",
-        "Some patients notice temporary breakouts during this period - this is a normal part of the skin's healing response",
+        "Some patients notice temporary breakouts during this period, this is a normal part of the skin's healing response",
       ],
     },
     {
       heading: "Months 2 to 3: Results Emerging",
       paragraphs: [
-        "Morpheus8 results are progressive - the treatment works by stimulating your body's own collagen production, which takes time to build. By months 2 to 3, the results become increasingly visible:",
+        "Morpheus8 results are progressive, the treatment works by stimulating your body's own collagen production, which takes time to build. By months 2 to 3, the results become increasingly visible:",
       ],
       bullets: [
         "Improved skin texture and pore appearance",
@@ -90,10 +90,10 @@ const data: BlogPostData = {
     {
       heading: "How to Maximise Your Results",
       bullets: [
-        "Use SPF 30+ every day throughout the recovery and results phase - UV damage is the primary enemy of collagen",
+        "Use SPF 30+ every day throughout the recovery and results phase, UV damage is the primary enemy of collagen",
         "Stay well-hydrated and maintain a nutritious diet that supports collagen synthesis (vitamin C, protein, zinc)",
         "Follow Dr Inga Taganova's post-treatment skincare protocol precisely",
-        "Avoid smoking - it significantly impairs collagen production and wound healing",
+        "Avoid smoking, it significantly impairs collagen production and wound healing",
         "Consider combining Morpheus8 with Profhilo 6 to 8 weeks after treatment for skin quality enhancement",
         "Attend your follow-up appointment so Dr Inga Taganova can assess your results and plan any further treatment",
       ],

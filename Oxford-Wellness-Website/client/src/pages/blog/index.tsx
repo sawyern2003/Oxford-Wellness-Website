@@ -111,7 +111,7 @@ const posts: BlogPost[] = [
   {
     slug: "lip-filler-natural-results",
     title: "How to Get Natural-Looking Lip Fillers: A Doctor's Guide",
-    excerpt: "The philosophy behind subtle, beautiful lip enhancement - and the red flags that tell you to walk away from a clinic.",
+    excerpt: "The philosophy behind subtle, beautiful lip enhancement, and the red flags that tell you to walk away from a clinic.",
     category: "Skin",
     readTime: "5 min",
     href: "/blog/lip-filler-natural-results",
@@ -120,7 +120,7 @@ const posts: BlogPost[] = [
   {
     slug: "morpheus8-results-timeline",
     title: "Morpheus8 Results: Day-by-Day Recovery and Timeline",
-    excerpt: "What to expect in the days and weeks after Morpheus8 - with a realistic recovery timeline and tips for maximising results.",
+    excerpt: "What to expect in the days and weeks after Morpheus8, with a realistic recovery timeline and tips for maximising results.",
     category: "Skin",
     readTime: "5 min",
     href: "/blog/morpheus8-results-timeline",
@@ -183,7 +183,7 @@ const posts: BlogPost[] = [
   {
     slug: "choosing-aesthetics-clinic-oxford",
     title: "How to Choose an Aesthetics Clinic in Oxford: A Checklist",
-    excerpt: "A practical checklist of credentials, red flags, and questions to ask - from a GMC doctor who knows what good looks like.",
+    excerpt: "A practical checklist of credentials, red flags, and questions to ask, from a GMC doctor who knows what good looks like.",
     category: "Women's Health",
     readTime: "6 min",
     href: "/blog/choosing-aesthetics-clinic-oxford",

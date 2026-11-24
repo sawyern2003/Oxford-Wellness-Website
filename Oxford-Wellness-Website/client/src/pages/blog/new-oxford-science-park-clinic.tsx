@@ -9,11 +9,11 @@ const data: BlogPostData = {
   category: "Clinic News",
   readTime: "4 min",
   datePublished: "2024-08-10",
-  intro: "We are delighted to welcome patients to our clinic in Oxford. This location has been carefully chosen to provide the finest possible environment for medical aesthetics and women's wellness care - combining professional medical credentials with privacy, convenience, and a calm clinical atmosphere.",
+  intro: "We are delighted to welcome patients to our clinic in Oxford. This location has been carefully chosen to provide the finest possible environment for medical aesthetics and women's wellness care, combining professional medical credentials with privacy, convenience, and a calm clinical atmosphere.",
   sections: [
     {
       heading: "Our Oxford Clinic",
-      image: { src: scienceParkImg, alt: "The Oxford Wellness Doctor clinic in Oxford - a professional medical aesthetics and women's wellness clinic providing expert care", position: "full" as const },
+      image: { src: scienceParkImg, alt: "The Oxford Wellness Doctor clinic in Oxford, a professional medical aesthetics and women's wellness clinic providing expert care", position: "full" as const },
       paragraphs: [
         "Our clinic in Oxford provides the ideal setting for medical aesthetics and women's health care. We've chosen a location that offers both professionalism and privacy, where patients can receive expert care in a calm, discreet environment.",
         "This isn't just a convenient location. It is an environment that aligns perfectly with our philosophy: evidence-based, medically rigorous care delivered with warmth and precision. Every detail has been considered to ensure your comfort and privacy.",
@@ -22,19 +22,19 @@ const data: BlogPostData = {
     {
       heading: "Why This Location is Different",
       bullets: [
-        "Professional medical environment - purpose-designed for clinical excellence and patient care",
-        "Complete discretion - a private, calm setting where your visits remain entirely confidential",
-        "Peaceful atmosphere - a tranquil environment that promotes relaxation and wellbeing",
-        "Modern, sleek treatment rooms - purpose-designed for comfort, privacy, and clinical precision",
-        "Convenient parking - street parking available nearby for your convenience",
-        "Easy access from all Oxford areas - centrally located in Oxford, easily accessible from throughout the city",
+        "Professional medical environment, purpose-designed for clinical excellence and patient care",
+        "Complete discretion, a private, calm setting where your visits remain entirely confidential",
+        "Peaceful atmosphere, a tranquil environment that promotes relaxation and wellbeing",
+        "Modern, sleek treatment rooms, purpose-designed for comfort, privacy, and clinical precision",
+        "Convenient parking, street parking available nearby for your convenience",
+        "Easy access from all Oxford areas, centrally located in Oxford, easily accessible from throughout the city",
       ],
     },
     {
       heading: "The Same Doctor, the Same Excellence",
       paragraphs: [
         "What has not changed is what matters most: Dr Inga Taganova continues to see every patient personally. As a GMC-registered GP with a background in obstetrics and gynaecology and more than two decades of medical experience, Dr Inga brings exceptional depth of medical knowledge to every treatment and consultation.",
-        "Our treatments - anti-wrinkle injections, dermal fillers, Profhilo, Morpheus8, lip fillers, chemical peels, skin boosters, and our specialist menopause clinic - are all available at the new clinic. The standard of care remains exactly as it has always been: thorough, honest, and patient-led.",
+        "Our treatments, anti-wrinkle injections, dermal fillers, Profhilo, Morpheus8, lip fillers, chemical peels, skin boosters, and our specialist menopause clinic, are all available at the new clinic. The standard of care remains exactly as it has always been: thorough, honest, and patient-led.",
       ],
     },
     {
@@ -48,7 +48,7 @@ const data: BlogPostData = {
         "From Cowley (15 minutes): Head west towards city centre, follow signs to Woodstock Road via Headington",
         "From Abingdon (20 minutes): Head north on A4183, follow signs to Oxford city centre, then north to Woodstock Road",
         "By bus: Multiple routes serve Woodstock Road including the 500 and S3 services",
-        "By bike: Cycle-friendly route via central Oxford - Woodstock Road has good cycling infrastructure",
+        "By bike: Cycle-friendly route via central Oxford, Woodstock Road has good cycling infrastructure",
       ],
     },
     {

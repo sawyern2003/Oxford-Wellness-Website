@@ -10,14 +10,14 @@ const treatments = [
     description: "Holistic healthcare focused on hormonal balance, menopausal support, and preventive medicine for women at every stage of life.",
     href: "/treatments?filter=Wellness",
     image: womensWellnessImg,
-    alt: "Women's wellness and menopause clinic at The Oxford Wellness Doctor, Oxford - HRT, perimenopause support, and hormonal health care"
+    alt: "Women's wellness and menopause clinic at The Oxford Wellness Doctor, Oxford, HRT, perimenopause support, and hormonal health care"
   },
   {
     title: "Regenerative Medicine",
     description: "Cutting-edge therapies designed to stimulate your body's natural healing processes, restoring function and vitality from within.",
     href: "/treatments?filter=Regenerative Medicine",
     image: regenerativeImg,
-    alt: "Regenerative medicine treatments including Profhilo and skin boosters at The Oxford Wellness Doctor in Oxford - administered by GMC-registered Dr. Inga Taganova"
+    alt: "Regenerative medicine treatments including Profhilo and skin boosters at The Oxford Wellness Doctor in Oxford, administered by GMC-registered Dr. Inga Taganova"
   },
   {
     title: "Medical Aesthetics",

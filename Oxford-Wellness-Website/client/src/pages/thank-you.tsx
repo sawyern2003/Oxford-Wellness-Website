@@ -17,7 +17,7 @@ const nextSteps = [
   {
     step: "03",
     title: "Your Consultation",
-    desc: "At your initial consultation, Dr Inga Taganova will discuss your goals, medical history, and the most appropriate treatment options for you - with no obligation.",
+    desc: "At your initial consultation, Dr Inga Taganova will discuss your goals, medical history, and the most appropriate treatment options for you, with no obligation.",
   },
 ];
 

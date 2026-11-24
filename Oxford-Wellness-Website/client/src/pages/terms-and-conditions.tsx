@@ -6,7 +6,7 @@ export default function TermsAndConditions() {
   useBreadcrumbSchema([{ name: "Terms & Conditions", path: "/terms-and-conditions" }]);
   useSEO({
     title: "Terms & Conditions | The Oxford Wellness Doctor",
-    description: "Terms and Conditions for The Oxford Wellness Doctor - clinical services, booking, cancellation policy, and patient responsibilities.",
+    description: "Terms and Conditions for The Oxford Wellness Doctor, clinical services, booking, cancellation policy, and patient responsibilities.",
     canonical: "https://www.theoxfordwellnessdoctor.com/terms-and-conditions",
   });
 
@@ -90,7 +90,7 @@ export default function TermsAndConditions() {
 
           <section>
             <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">9. Intellectual Property</h2>
-            <p>All content on this website - including text, images, graphics, and branding - is the property of The Oxford Wellness Doctor and is protected by copyright. You may not reproduce, distribute, or otherwise use any content from this website without our prior written permission.</p>
+            <p>All content on this website, including text, images, graphics, and branding, is the property of The Oxford Wellness Doctor and is protected by copyright. You may not reproduce, distribute, or otherwise use any content from this website without our prior written permission.</p>
           </section>
 
           <section>
