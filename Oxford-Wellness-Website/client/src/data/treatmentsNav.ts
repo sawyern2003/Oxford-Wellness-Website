@@ -17,7 +17,7 @@ export const featuredTreatments = {
     { name: "Profhilo", href: "/treatments/profhilo-oxford" },
     { name: "Morpheus8", href: "/treatments/morpheus8-oxford" },
     { name: "Dermal Fillers", href: "/treatments/dermal-fillers-oxford" },
-    { name: "Anti-Wrinkle", href: "/treatments/anti-wrinkle-injections-oxford" },
+    { name: "Lines and Wrinkles", href: "/treatments/anti-wrinkle-injections-oxford" },
   ],
   body: [
     { name: "Forma Plus", href: "/treatments/forma-plus-body-contouring-oxford" },
