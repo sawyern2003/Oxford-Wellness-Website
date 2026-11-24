@@ -134,6 +134,21 @@ function isGlowdayHref(href: string): boolean {
   return /glowday/i.test(href);
 }
 
+/** Internal /book links (with or without query/hash), absolute or relative. */
+function isBookHref(href: string): boolean {
+  try {
+    const base =
+      typeof window !== "undefined"
+        ? window.location.origin
+        : "https://www.theoxfordwellnessdoctor.com";
+    const url = new URL(href, base);
+    const path = url.pathname.replace(/\/+$/, "") || "/";
+    return path === "/book";
+  } catch {
+    return /^\/book(\/|$|\?|#)/i.test(href);
+  }
+}
+
 function isWhatsAppHref(href: string): boolean {
   return /wa\.me|api\.whatsapp\.com|^whatsapp:/i.test(href);
 }
@@ -219,10 +234,14 @@ function installConversionClickListener() {
       const rawHref = anchor.getAttribute("href") || "";
       if (!rawHref) return;
 
-      if (isGlowdayHref(rawHref)) {
-        const withGclid = appendGclidToGlowdayUrl(rawHref);
-        if (withGclid !== rawHref) {
-          anchor.setAttribute("href", withGclid);
+      // Book conversion: Glowday anchors or internal /book CTAs (once per click).
+      // Cross-origin Glowday iframes cannot be tracked; /book clicks cover treatment→book journeys.
+      if (isGlowdayHref(rawHref) || isBookHref(rawHref)) {
+        if (isGlowdayHref(rawHref)) {
+          const withGclid = appendGclidToGlowdayUrl(rawHref);
+          if (withGclid !== rawHref) {
+            anchor.setAttribute("href", withGclid);
+          }
         }
         if (BOOK_LABEL) sendConversion(BOOK_LABEL);
         return;
