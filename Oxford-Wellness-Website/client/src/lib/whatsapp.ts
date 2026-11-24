@@ -1,4 +1,4 @@
-const WHATSAPP_BASE = "https://wa.me/447739309380";
+const WHATSAPP_BASE = "https://wa.me/447861933979";
 
 /** Build a WhatsApp deep link with pre-filled message text. */
 export function whatsappHref(message: string): string {
