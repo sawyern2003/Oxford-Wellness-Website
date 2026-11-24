@@ -11,6 +11,11 @@ import cafe1024Avif from "@/assets/optimized/lifestyle-cafe-1024.avif";
 import cafe1024Webp from "@/assets/optimized/lifestyle-cafe-1024.webp";
 import { CONSULTATION_WHATSAPP_MESSAGE, whatsappHref } from "@/lib/whatsapp";
 
+/** Easy-to-edit hero copy — keep phrasing changes here. */
+const HERO_HEADLINE = "Feel like yourself again.";
+const HERO_SUBLINE =
+  "A GP-led clinic where women are listened to, properly. Skin, body and women's health in Oxford.";
+const HERO_CARE_PREFIX = "Doctor-led care for";
 const heroPhrases = [
   "skin changes",
   "intimate wellness",
@@ -38,17 +43,21 @@ export default function Hero() {
           <div className="lg:col-span-6 order-1">
             <div className="max-w-xl lg:max-w-none">
               <h1 className="font-sans font-semibold text-[2.15rem] sm:text-4xl md:text-[2.75rem] leading-[1.15] text-foreground tracking-tight mb-3">
-                Feel like yourself again.
+                {HERO_HEADLINE}
               </h1>
               <p className="text-[15px] sm:text-base text-muted-foreground leading-relaxed mb-3 max-w-md">
-                A GP-led clinic where women are listened to, properly. Skin, body and women&apos;s
-                health in Oxford.
+                {HERO_SUBLINE}
               </p>
+              {/*
+                Below sm: phrase always on its own line (reserved height in
+                prerender) so the long 'symptoms of menopause' box never wraps
+                mid-sentence and shifts the CTAs. sm+: inline on one line.
+              */}
               <p className="font-medium text-base sm:text-lg text-foreground leading-snug mb-5">
-                Doctor-led care for{" "}
+                <span className="block sm:inline">{HERO_CARE_PREFIX} </span>
                 <TypewriterPhrase
                   phrases={heroPhrases}
-                  className="relative inline-block align-baseline text-accent-foreground"
+                  className="relative mt-0.5 block w-fit max-w-full text-brand-accent-text sm:mt-0 sm:inline-block sm:align-baseline"
                 />
               </p>
               <div className="flex flex-col sm:flex-row flex-wrap gap-3">
