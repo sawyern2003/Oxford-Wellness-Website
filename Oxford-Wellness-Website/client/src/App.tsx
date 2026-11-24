@@ -84,7 +84,6 @@ import {
   CallPage,
   Book,
   GiftVouchers,
-  FlourishCompare,
   NotFound,
   OxfordPainDoctorHome,
   PainBook,
@@ -194,7 +193,6 @@ function Router() {
         </Route>
         <Route path="/contact" component={Contact} />
         <Route path="/gift-vouchers" component={GiftVouchers} />
-        <Route path="/flourish-compare" component={FlourishCompare} />
         <Route path="/recommended-skincare" component={RecommendedSkincare} />
         <Route path="/shop" component={Shop} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
