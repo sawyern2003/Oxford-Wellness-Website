@@ -95,7 +95,7 @@ export default function Hero() {
                   <Link href="/book" className="js-book-cta inline-block">
                     <Button
                       data-testid="hero-book-consultation-btn"
-                      className="rounded bg-primary text-primary-foreground hover:bg-primary/90 shadow-none hover:shadow-none px-6 h-10 text-sm font-medium"
+                      className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90 shadow-none hover:shadow-none px-7 h-10 text-sm font-medium"
                     >
                       Book a consultation
                     </Button>
