@@ -1,4 +1,6 @@
 export const OPEN_COOKIE_SETTINGS_EVENT = "owd-open-cookie-settings";
+/** Fired whenever the cookie banner opens or closes so sticky CTAs can yield. */
+export const COOKIE_BANNER_CHANGE_EVENT = "owd-cookie-banner-change";
 
 export type AnalyticsConsent = "accepted" | "rejected";
 
@@ -28,4 +30,11 @@ export function writeAnalyticsConsent(value: AnalyticsConsent): boolean {
 export function openCookieSettings() {
   if (typeof window === "undefined") return;
   window.dispatchEvent(new Event(OPEN_COOKIE_SETTINGS_EVENT));
+}
+
+export function dispatchCookieBannerChange(open: boolean) {
+  if (typeof window === "undefined") return;
+  window.dispatchEvent(
+    new CustomEvent(COOKIE_BANNER_CHANGE_EVENT, { detail: { open } })
+  );
 }

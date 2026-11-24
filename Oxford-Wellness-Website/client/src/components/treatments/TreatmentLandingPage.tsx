@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useCookieBannerOpen } from "@/hooks/useCookieBannerOpen";
 import { useSEO } from "@/hooks/useSEO";
 import { treatmentWhatsAppMessage, whatsappHref } from "@/lib/whatsapp";
 import RelatedTreatments from "./RelatedTreatments";
@@ -77,6 +78,9 @@ interface StickyBarProps {
 }
 
 function StickyBar({ slug, bookingUrl, whatsappUrl }: StickyBarProps) {
+  const cookieBannerOpen = useCookieBannerOpen();
+  if (cookieBannerOpen) return null;
+
   return (
     <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-border shadow-lg z-[45] safe-area-pb">
       <div className="px-4 py-3 flex items-center gap-2">

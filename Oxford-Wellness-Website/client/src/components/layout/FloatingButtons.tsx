@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Phone, MessageCircle } from "lucide-react";
 import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
+import { useCookieBannerOpen } from "@/hooks/useCookieBannerOpen";
 import { isPainRoute, PAIN_BOOK_HREF } from "@/lib/brand";
 import { CONSULTATION_WHATSAPP_MESSAGE, whatsappHref } from "@/lib/whatsapp";
 
@@ -19,10 +20,12 @@ function hasTreatmentStickyBar(path: string): boolean {
 /**
  * Global conversion CTAs. Treatment landing pages already ship their own sticky bar;
  * elsewhere we show a mobile Book + Call + WhatsApp bar and a desktop floating Book.
+ * Hidden while the cookie banner is open so Reject/Accept stay usable.
  */
 export default function FloatingButtons() {
   const [visible, setVisible] = useState(false);
   const [location] = useLocation();
+  const cookieBannerOpen = useCookieBannerOpen();
   const pain = isPainRoute(location);
   const hasSticky = hasTreatmentStickyBar(location);
   const bookHref = pain ? PAIN_BOOK_HREF : "/book";
@@ -35,7 +38,7 @@ export default function FloatingButtons() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  if (!visible) return null;
+  if (cookieBannerOpen || !visible) return null;
 
   // Treatment pages: their StickyBar covers mobile; keep a desktop Book chip only.
   if (hasSticky) {
