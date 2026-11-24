@@ -11,7 +11,7 @@ export default function AIPreConsult() {
     canonical: "https://www.theoxfordwellnessdoctor.com/ai-consultation",
   });
   return (
-    <div className="pt-28 min-h-screen bg-white">
+    <div className="pt-28 min-h-screen bg-background">
       <div className="container mx-auto px-6 py-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

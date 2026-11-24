@@ -57,7 +57,7 @@ export default function FloatingButtons() {
     <>
       {/* Reserve space so content is not hidden behind the mobile sticky bar */}
       <div className="md:hidden h-16" aria-hidden="true" />
-      <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-border shadow-lg z-[45] safe-area-pb">
+      <div className="md:hidden fixed bottom-0 left-0 right-0 bg-background border-t border-border shadow-lg z-[45] safe-area-pb">
         <div className="px-4 py-3 flex items-center gap-2">
           <a href={bookHref} className="js-book-cta flex-1" aria-label="Book a consultation">
             <Button className="w-full bg-primary text-white hover:bg-primary/90 rounded-full h-10 text-sm font-medium">

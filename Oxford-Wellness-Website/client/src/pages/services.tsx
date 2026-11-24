@@ -216,7 +216,7 @@ export default function Services() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white pt-28">
+    <div className="min-h-screen bg-background pt-28">
       {/* Sticky Nav */}
       <div className="sticky top-[72px] z-30 border-b border-border bg-white/95 backdrop-blur-sm">
         <div className="container-page">

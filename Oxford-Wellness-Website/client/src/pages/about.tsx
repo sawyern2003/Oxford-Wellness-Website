@@ -140,7 +140,7 @@ export default function About() {
   });
 
   return (
-    <div className="bg-white">
+    <div className="bg-background">
       <section className="pt-28 pb-16 md:pt-32 md:pb-20" aria-labelledby="about-heading">
         <div className="container-wide grid items-center gap-8 lg:grid-cols-12 lg:gap-x-12">
           <div className="lg:col-span-7">

@@ -75,7 +75,7 @@ export default function PainLibraryArticle({ slug }: { slug: string }) {
   }
 
   return (
-    <div className="pt-28 min-h-screen bg-white">
+    <div className="pt-28 min-h-screen bg-background">
       <article className="py-12 md:py-16">
         <div className="container mx-auto px-6 max-w-3xl">
         <FadeIn>

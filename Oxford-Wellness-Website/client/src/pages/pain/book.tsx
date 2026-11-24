@@ -16,7 +16,7 @@ export default function PainBook() {
   });
 
   return (
-    <div className="pt-28 min-h-screen bg-white">
+    <div className="pt-28 min-h-screen bg-background">
       <div className="container mx-auto px-6 py-10 md:py-12 max-w-5xl">
         <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
           Appointments

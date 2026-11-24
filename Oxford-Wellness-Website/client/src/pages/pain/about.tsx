@@ -60,7 +60,7 @@ export default function AboutDrRichard() {
   }, []);
 
   return (
-    <div className="pt-28 min-h-screen bg-white">
+    <div className="pt-28 min-h-screen bg-background">
       <div className="container mx-auto px-6 py-12">
         <motion.div
           initial={{ opacity: 0 }}
@@ -111,7 +111,7 @@ export default function AboutDrRichard() {
                 <img
                   src={drRichard}
                   alt="Dr Richard Sawyer, Consultant in Anaesthesia and Pain Medicine"
-                  className="w-full aspect-[4/3] object-cover object-top rounded-2xl bg-white"
+                  
                   width="476"
                   height="357"
                 />

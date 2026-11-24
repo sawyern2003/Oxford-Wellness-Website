@@ -88,7 +88,7 @@ export default function GiftVouchers() {
   });
 
   return (
-    <div className="pt-28 min-h-screen bg-white">
+    <div className="pt-28 min-h-screen bg-background">
       <div className="container-page py-12 md:py-16">
         <FadeIn className="max-w-2xl mb-14 md:mb-16">
           <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">

@@ -20,8 +20,8 @@ export default function ProgrammePage({ programme }: { programme: Programme }) {
   });
 
   return (
-    <div className="pt-28 min-h-screen bg-white">
-      <RevealSection className="bg-white">
+    <div className="pt-28 min-h-screen bg-background">
+      <RevealSection className="bg-background">
         <div className="container mx-auto px-6 py-12 md:py-16 max-w-4xl">
           <FadeIn>
             <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
@@ -89,7 +89,7 @@ export default function ProgrammePage({ programme }: { programme: Programme }) {
         </div>
       </RevealSection>
 
-      <RevealSection className="py-14 md:py-16 bg-white">
+      <RevealSection className="py-14 md:py-16 bg-background">
         <div className="container mx-auto px-6 max-w-4xl">
           <FadeIn>
             <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-8">Treatment journey</h2>
@@ -131,7 +131,7 @@ export default function ProgrammePage({ programme }: { programme: Programme }) {
         </div>
       </RevealSection>
 
-      <RevealSection className="py-14 md:py-16 bg-white">
+      <RevealSection className="py-14 md:py-16 bg-background">
         <div className="container mx-auto px-6 max-w-4xl grid md:grid-cols-2 gap-10">
           <FadeIn>
             <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">Expected improvements</h2>

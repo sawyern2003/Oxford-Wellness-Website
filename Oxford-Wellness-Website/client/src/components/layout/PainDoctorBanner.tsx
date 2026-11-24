@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export default function PainDoctorBanner() {
   return (
-    <RevealSection className="py-16 md:py-24 bg-white">
+    <RevealSection className="py-16 md:py-24 bg-background">
       <div className="container-page">
         <FadeIn>
           <div className="hover-card theme-pain rounded-3xl bg-[hsl(8_42%_90%)] text-foreground p-8 md:p-12 grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">

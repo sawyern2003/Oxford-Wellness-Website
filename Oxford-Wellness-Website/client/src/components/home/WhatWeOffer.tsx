@@ -30,7 +30,7 @@ const treatments = [
 
 export default function WhatWeOffer() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <FadeIn className="max-w-2xl mb-16">
           <span className="block text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">Our Specialisms</span>

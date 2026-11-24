@@ -221,7 +221,7 @@ export default function BlogIndex() {
     : regularPosts.filter(p => p.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       {/* Hero */}
       <div className="pt-28 pb-12 px-6">
         <FadeIn>

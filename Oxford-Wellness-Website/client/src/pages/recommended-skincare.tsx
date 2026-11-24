@@ -86,7 +86,7 @@ export default function RecommendedSkincare() {
   });
 
   return (
-    <div className="pt-28 min-h-screen bg-white">
+    <div className="pt-28 min-h-screen bg-background">
       <div className="container mx-auto px-6 py-12 md:py-16 max-w-3xl">
         <FadeIn>
           <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-5 leading-snug">

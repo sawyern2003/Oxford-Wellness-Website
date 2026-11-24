@@ -117,7 +117,7 @@ export default function Home() {
               const treatmentLinks = i === 0 ? featuredTreatments.womensHealth : i === 1 ? featuredTreatments.skin : featuredTreatments.body;
               return (
                 <FadeIn key={area.href} delay={i * 0.07}>
-                  <div className="bg-white rounded-3xl overflow-hidden h-full flex flex-col">
+                  <div className="bg-card rounded-3xl overflow-hidden h-full flex flex-col">
                     <Link
                       href={area.href}
                       className="hover-card group block"

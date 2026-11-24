@@ -34,7 +34,7 @@ export default function NotFound() {
   }, []);
 
   return (
-    <div className="min-h-screen pt-28 bg-white">
+    <div className="min-h-screen pt-28 bg-background">
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-6 text-center max-w-2xl">
           <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">404</p>

@@ -17,7 +17,7 @@ export default function PainLibrary() {
   });
 
   return (
-    <div className="pt-28 min-h-screen bg-white">
+    <div className="pt-28 min-h-screen bg-background">
       <div className="container mx-auto px-6 max-w-3xl py-12 md:py-16">
         <FadeIn>
           <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">

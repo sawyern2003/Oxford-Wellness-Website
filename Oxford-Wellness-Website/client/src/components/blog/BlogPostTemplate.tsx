@@ -236,7 +236,7 @@ export default function BlogPostTemplate({ data }: { data: BlogPostData }) {
   }, [data]);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       {/* Hero Image - Full Width */}
       {data.heroImage && (
         <div className="relative w-full h-[400px] md:h-[480px] lg:h-[520px] max-h-[520px] overflow-hidden">

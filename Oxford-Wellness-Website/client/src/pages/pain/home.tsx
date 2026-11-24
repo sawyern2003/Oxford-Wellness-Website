@@ -89,7 +89,7 @@ export default function OxfordPainDoctorHome() {
   return (
     <>
       {/* Hero */}
-      <RevealSection className="pt-28 md:pt-36 pb-14 md:pb-20 bg-white">
+      <RevealSection className="pt-28 md:pt-36 pb-14 md:pb-20 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -126,7 +126,7 @@ export default function OxfordPainDoctorHome() {
       </RevealSection>
 
       {/* At a glance */}
-      <RevealSection className="pb-4 bg-white">
+      <RevealSection className="pb-4 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid sm:grid-cols-3 gap-px bg-border rounded-3xl overflow-hidden">
             {[
@@ -183,7 +183,7 @@ export default function OxfordPainDoctorHome() {
       </RevealSection>
 
       {/* Approach */}
-      <RevealSection className="py-16 md:py-24 bg-white">
+      <RevealSection className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
           <FadeIn className="max-w-xl mb-12">
             <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
@@ -250,7 +250,7 @@ export default function OxfordPainDoctorHome() {
       </RevealSection>
 
       {/* The plan */}
-      <RevealSection className="py-16 md:py-24 bg-white">
+      <RevealSection className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-14">
             <FadeIn>
@@ -326,7 +326,7 @@ export default function OxfordPainDoctorHome() {
       </RevealSection>
 
       {/* Pricing */}
-      <RevealSection className="py-16 md:py-24 bg-white">
+      <RevealSection className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
           <FadeIn className="mb-12">
             <h2 className="font-sans font-semibold text-3xl md:text-4xl text-foreground tracking-tight">
@@ -434,7 +434,7 @@ export default function OxfordPainDoctorHome() {
       </RevealSection>
 
       {/* Pain Library */}
-      <RevealSection className="py-16 md:py-24 bg-white">
+      <RevealSection className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
           <FadeIn className="max-w-2xl mb-10">
             <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">

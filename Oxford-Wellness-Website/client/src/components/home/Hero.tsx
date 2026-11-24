@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import TypewriterPhrase from "@/components/animations/TypewriterPhrase";
+import Flourish from "@/components/home/Flourish";
 import { heroImage } from "@/components/home/heroImage";
 import journeyBotanical320Avif from "@/assets/optimized/journey-botanical-320.avif";
 import journeyBotanical320Webp from "@/assets/optimized/journey-botanical-320.webp";
@@ -32,20 +33,20 @@ export default function Hero() {
   return (
     <>
       {/*
-        Mobile: no min-height so the care sprig can sit ~64–80px under the CTA.
-        Desktop: keep the tall editorial composition.
+        Mobile: no min-height — care sprig sits ~64–80px under the CTA.
+        Desktop: content-height hero (no 100svh) so CTA→sprig stays ~120–160px.
       */}
-      <section className="bg-background pt-20 md:pt-24 pb-0 md:pb-12 overflow-hidden md:min-h-[100svh]">
+      <section className="bg-background pt-20 md:pt-24 pb-0 md:pb-10 overflow-hidden">
         <div className="container-wide">
           {/*
             No framer-motion entrance: opacity/y initial states collapsed
             hero regions on hydrate and drove CLS. Prerender must match
             the final layout size.
           */}
-          <div className="grid lg:grid-cols-12 gap-5 lg:gap-16 lg:items-center lg:min-h-[calc(100vh-6.5rem)]">
+          <div className="grid lg:grid-cols-12 gap-5 lg:gap-16 lg:items-end">
             <div className="lg:col-span-6 order-1 lg:order-2">
               <figure>
-                <div className="relative h-[42vh] max-h-[360px] sm:h-[46vh] sm:max-h-[420px] lg:h-[82vh] lg:max-h-[780px] overflow-hidden bg-background">
+                <div className="relative h-[42vh] max-h-[360px] sm:h-[46vh] sm:max-h-[420px] lg:h-[68vh] lg:max-h-[640px] overflow-hidden bg-background">
                   <picture>
                     <source
                       type="image/avif"
@@ -79,8 +80,8 @@ export default function Hero() {
               </figure>
             </div>
 
-            <div className="lg:col-span-6 order-2 lg:order-1 flex flex-col justify-center">
-              <div className="max-w-md lg:max-w-[30rem] lg:py-6">
+            <div className="lg:col-span-6 order-2 lg:order-1 flex flex-col justify-center lg:justify-end">
+              <div className="max-w-md lg:max-w-[30rem] lg:pb-2">
                 <h1 className="text-primary tracking-tight text-balance text-[2.35rem] sm:text-[2.75rem] lg:text-[4.75rem] leading-[1.08] mb-4 lg:mb-6">
                   {HERO_HEADLINE}
                 </h1>
@@ -107,17 +108,19 @@ export default function Hero() {
       </section>
 
       {/*
-        Care line: centred Cormorant typewriter. Sprig + hairline above.
+        Care line: flourish → sprig → centred Cormorant typewriter.
+        Hairline dropped — redundant under the flourish.
         Mobile: prefix on line 1, cycling phrase on line 2 (both centred).
         Height reserved for the longest phrase — CLS stays 0.
       */}
       <section
-        className="bg-background pt-16 md:pt-28 pb-20 md:pb-28"
+        className="bg-background pt-16 md:pt-20 pb-20 md:pb-28"
         aria-label="Doctor-led care"
       >
         <div className="container-wide flex flex-col items-center text-center">
-          <div className="flex flex-col items-center mb-8 md:mb-10" aria-hidden="true">
-            <picture>
+          <div className="flex flex-col items-center mb-7 md:mb-9" aria-hidden="true">
+            <Flourish className="w-[160px] md:w-[clamp(200px,18vw,280px)] h-auto" />
+            <picture className="mt-4 md:mt-5">
               <source
                 type="image/avif"
                 srcSet={`${journeyBotanical320Avif} 320w, ${journeyBotanical480Avif} 480w`}
@@ -138,7 +141,6 @@ export default function Hero() {
                 className="w-[90px] sm:w-[110px] h-auto"
               />
             </picture>
-            <div className="mt-4 w-10 h-px bg-border" />
           </div>
 
           <p

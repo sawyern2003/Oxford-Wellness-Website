@@ -17,8 +17,8 @@ export default function HowWeHelp() {
   });
 
   return (
-    <div className="pt-28 min-h-screen bg-white">
-      <RevealSection className="bg-white">
+    <div className="pt-28 min-h-screen bg-background">
+      <RevealSection className="bg-background">
       <div className="container mx-auto px-6 py-12 md:py-16 max-w-6xl">
         <FadeIn className="mb-16">
           <HowCanWeHelp heading="h1" />

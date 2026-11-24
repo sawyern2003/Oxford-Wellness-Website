@@ -122,10 +122,9 @@
 
 :root {
   /*
-    Cream comparison theme (branch cursor/cream-bg-6f29).
+    Site cream theme.
     Page cream ≈ #faf6ef; card/surface ≈ #fffdf9.
     Navy (#293c56) and brand blue (#4376ad) unchanged.
-    Revert by restoring --background/--card to white (0 0% 100%).
   */
   --background: 40 52% 96%; /* #faf6ef soft cream */
   --foreground: 215 25% 18%;
@@ -163,17 +162,18 @@
 }
 
 /*
-  Hard-coded page/nav/card whites → cream surfaces.
+  Hard-coded page/nav whites → page cream (no full-width white bands).
+  Intentional lighter surfaces use bg-card (#fffdf9).
   Keep translucent whites on dark chrome (e.g. bg-white/10) untouched.
 */
 .bg-white {
-  background-color: hsl(var(--card)) !important;
+  background-color: hsl(var(--background)) !important;
 }
 .bg-white\/80 {
-  background-color: hsl(var(--card) / 0.8) !important;
+  background-color: hsl(var(--background) / 0.8) !important;
 }
 .bg-white\/95 {
-  background-color: hsl(var(--card) / 0.95) !important;
+  background-color: hsl(var(--background) / 0.95) !important;
 }
 
 /* Sister brand: The Oxford Pain Doctor – same structure, warmer red palette */

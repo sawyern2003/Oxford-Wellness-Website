@@ -46,7 +46,7 @@ export default function ThankYou() {
   });
 
   return (
-    <div className="min-h-screen pt-28 bg-white">
+    <div className="min-h-screen pt-28 bg-background">
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-6 text-center max-w-2xl">
           <CheckCircle className="w-14 h-14 text-secondary mx-auto mb-6" />

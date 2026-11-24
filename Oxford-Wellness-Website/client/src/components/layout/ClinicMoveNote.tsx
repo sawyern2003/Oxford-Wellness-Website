@@ -7,7 +7,7 @@ export default function ClinicMoveNote() {
     <section className="bg-muted/60 py-12 md:py-16">
       <div className="container-page">
         <FadeIn>
-          <div className="rounded-3xl bg-white px-6 py-8 md:px-10 md:py-10">
+          <div className="rounded-3xl bg-card px-6 py-8 md:px-10 md:py-10">
             <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] lg:gap-12">
               <div>
                 <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-secondary mb-4">

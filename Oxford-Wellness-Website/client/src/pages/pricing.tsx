@@ -15,7 +15,7 @@ export default function Pricing() {
   });
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       <div className="pt-28 pb-12 px-6">
         <FadeIn>
           <div className="max-w-3xl mx-auto">

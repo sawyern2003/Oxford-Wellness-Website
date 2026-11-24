@@ -12,7 +12,7 @@ export default function CookiePolicy() {
   });
 
   return (
-    <div className="pt-28 min-h-screen bg-white">
+    <div className="pt-28 min-h-screen bg-background">
       <div className="container mx-auto px-6 py-16 max-w-3xl">
         <div className="mb-12">
           <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">Legal</p>

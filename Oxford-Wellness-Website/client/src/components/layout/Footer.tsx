@@ -21,7 +21,7 @@ export default function Footer() {
 
   if (pain) {
     return (
-      <footer className="bg-white border-t border-border">
+      <footer className="bg-background border-t border-border">
         <div className="container-page py-14">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
             <div className="col-span-2 md:col-span-1">
@@ -74,7 +74,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-white border-t border-border">
+    <footer className="bg-background border-t border-border">
       <div className="container-page py-14">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
           <div className="col-span-2 md:col-span-1">

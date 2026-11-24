@@ -60,7 +60,7 @@ export default function PainHowWeHelp() {
   });
 
   return (
-    <div className="pt-28 min-h-screen bg-white">
+    <div className="pt-28 min-h-screen bg-background">
       <div className="container mx-auto px-6 py-12 md:py-16 max-w-6xl">
         <div id="approach" className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center mb-16">
           <FadeIn className="lg:col-span-6">
