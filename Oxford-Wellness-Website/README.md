@@ -19,6 +19,15 @@ preview builds use **production** mode and load `client/.env.production`.
 | `VITE_GADS_BOOK_LABEL` | No | Conversion label for Glowday / booking clicks |
 | `VITE_GADS_WHATSAPP_LABEL` | No | Conversion label for WhatsApp clicks |
 | `VITE_GADS_TEL_LABEL` | No | Conversion label for `tel:` clicks |
+| `SUMUP_API_KEY` | For gift vouchers | SumUp secret API key (`payments` / `checkouts.write` + `checkouts.read`) |
+| `SUMUP_MERCHANT_CODE` | For gift vouchers | SumUp merchant code |
+| `RESEND_API_KEY` | For gift vouchers | Resend API key for voucher + clinic emails |
+| `VOUCHER_FROM_EMAIL` | No | From address (default `vouchers@theoxfordwellnessdoctor.com`) |
+| `CLINIC_NOTIFY_EMAIL` | No | Clinic notify inbox (default `info@theoxfordwellnessdoctor.com`) |
+| `VOUCHER_SHEET_WEBHOOK_URL` | No | Optional Google Sheet / Apps Script webhook for voucher rows |
+| `SITE_URL` | No | Public site origin for SumUp redirect/return URLs (defaults to production host) |
+
+If `SUMUP_API_KEY` / `SUMUP_MERCHANT_CODE` are unset, `/gift-vouchers` Buy falls back to WhatsApp.
 
 ### Google Ads defaults
 

@@ -122,12 +122,21 @@ function consentAllowsAds(): boolean {
   return readAnalyticsConsent() === "accepted" && typeof window !== "undefined" && Boolean(window.gtag);
 }
 
-function sendConversion(label: string) {
+function sendConversion(label: string, value?: number, currency = "GBP") {
   if (!ADS_ID || !label || !consentAllowsAds()) return;
   window.gtag?.("event", "conversion", {
     send_to: `${ADS_ID}/${label}`,
     transport_type: "beacon",
+    ...(typeof value === "number" && Number.isFinite(value)
+      ? { value, currency }
+      : {}),
   });
+}
+
+/** Consent-gated Book conversion with purchase value (gift vouchers thank-you). */
+export function sendBookConversionWithValue(value: number, currency = "GBP") {
+  if (!BOOK_LABEL) return;
+  sendConversion(BOOK_LABEL, value, currency);
 }
 
 function isGlowdayHref(href: string): boolean {

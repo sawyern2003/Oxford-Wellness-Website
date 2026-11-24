@@ -79,6 +79,8 @@ const PrivacyPolicy = lazy(() => import("@/pages/privacy-policy"));
 const CookiePolicy = lazy(() => import("@/pages/cookie-policy"));
 const TermsAndConditions = lazy(() => import("@/pages/terms-and-conditions"));
 const ThankYou = lazy(() => import("@/pages/thank-you"));
+const GiftVouchers = lazy(() => import("@/pages/gift-vouchers"));
+const GiftVouchersThankYou = lazy(() => import("@/pages/gift-vouchers-thank-you"));
 const CallPage = lazy(() => import("@/pages/call"));
 const Book = lazy(() => import("@/pages/book"));
 const NotFound = lazy(() => import("@/pages/not-found"));
@@ -183,6 +185,8 @@ function Router() {
         <Route path="/contact" component={Contact} />
         <Route path="/recommended-skincare" component={RecommendedSkincare} />
         <Route path="/shop" component={Shop} />
+        <Route path="/gift-vouchers/thank-you" component={GiftVouchersThankYou} />
+        <Route path="/gift-vouchers" component={GiftVouchers} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/cookie-policy" component={CookiePolicy} />
         <Route path="/terms-and-conditions" component={TermsAndConditions} />

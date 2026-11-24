@@ -47,6 +47,7 @@
   
   --color-accent: hsl(var(--accent));
   --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-brand-accent-text: hsl(var(--brand-accent-text));
   
   --color-destructive: hsl(var(--destructive));
   --color-destructive-foreground: hsl(var(--destructive-foreground));
@@ -86,6 +87,7 @@
 
   --accent: 211 44% 94%;
   --accent-foreground: 211 40% 35%;
+  --brand-accent-text: 211 44% 47%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;

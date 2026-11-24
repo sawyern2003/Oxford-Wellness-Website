@@ -34,6 +34,7 @@ const ALL_SITEMAP_PAGES = [
   { path: "/recommended-skincare", priority: "0.8", changefreq: "monthly", lastmod: "2024-09-15" },
   { path: "/ai-consultation", priority: "0.7", changefreq: "monthly", lastmod: "2024-08-10" },
   { path: "/shop", priority: "0.5", changefreq: "monthly", lastmod: "2024-09-01" },
+  { path: "/gift-vouchers", priority: "0.9", changefreq: "weekly", lastmod: "2026-11-24" },
   { path: "/menopause-clinic-oxford", priority: "1.0", changefreq: "monthly", lastmod: "2024-11-10" },
   { path: "/perimenopause-oxford", priority: "1.0", changefreq: "monthly", lastmod: "2024-11-10" },
   { path: "/womens-health-oxford", priority: "1.0", changefreq: "monthly", lastmod: "2024-11-16" },
