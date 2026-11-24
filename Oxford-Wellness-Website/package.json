@@ -12,6 +12,7 @@
     "build": "tsx script/build.ts",
     "start": "NODE_ENV=production node dist/index.cjs",
     "check": "tsc",
+    "check:hero-assets": "tsx script/check-hero-assets.ts",
     "test": "vitest run",
     "db:push": "drizzle-kit push"
   },

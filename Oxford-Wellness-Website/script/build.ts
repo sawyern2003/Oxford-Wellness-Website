@@ -34,6 +34,10 @@ const allowlist = [
 ];
 
 async function buildAll() {
+  console.log("checking hero assets...");
+  const { checkHeroAssets } = await import("./check-hero-assets");
+  await checkHeroAssets();
+
   await rm("dist", { recursive: true, force: true });
 
   console.log("building client...");
