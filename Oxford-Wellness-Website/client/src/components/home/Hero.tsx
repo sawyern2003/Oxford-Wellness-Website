@@ -36,13 +36,17 @@ export default function Hero() {
         Desktop: content-height hero (no 100svh) so CTA→sprig stays ~120–160px.
       */}
       <section className="bg-background pt-20 md:pt-24 pb-0 md:pb-10 overflow-hidden">
-        <div className="container-wide">
+        {/*
+          Desktop/tablet: ~1100px centred band so text+portrait sit as one
+          balanced pair (not hugging the left of container-wide).
+        */}
+        <div className="mx-auto w-full max-w-[1100px] px-5 md:px-8 lg:px-10">
           {/*
             No framer-motion entrance: opacity/y initial states collapsed
             hero regions on hydrate and drove CLS. Prerender must match
             the final layout size.
           */}
-          <div className="grid lg:grid-cols-12 gap-5 lg:gap-16 lg:items-end">
+          <div className="grid lg:grid-cols-12 gap-5 lg:gap-8 lg:items-center">
             <div className="lg:col-span-6 order-1 lg:order-2">
               <figure>
                 <div className="relative h-[42vh] max-h-[360px] sm:h-[46vh] sm:max-h-[420px] lg:h-[68vh] lg:max-h-[640px] overflow-hidden bg-background">
@@ -79,8 +83,8 @@ export default function Hero() {
               </figure>
             </div>
 
-            <div className="lg:col-span-6 order-2 lg:order-1 flex flex-col justify-center lg:justify-end">
-              <div className="max-w-md lg:max-w-[30rem] lg:pb-2">
+            <div className="lg:col-span-6 order-2 lg:order-1 flex flex-col justify-center text-left">
+              <div className="max-w-md lg:max-w-[30rem]">
                 <h1 className="text-primary tracking-tight text-balance text-[2.35rem] sm:text-[2.75rem] lg:text-[4.75rem] leading-[1.08] mb-4 lg:mb-6">
                   {HERO_HEADLINE}
                 </h1>
