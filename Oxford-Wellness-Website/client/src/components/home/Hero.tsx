@@ -12,8 +12,6 @@ import cafe1024Avif from "@/assets/optimized/lifestyle-cafe-1024.avif";
 import cafe1024Webp from "@/assets/optimized/lifestyle-cafe-1024.webp";
 import { CONSULTATION_WHATSAPP_MESSAGE, whatsappHref } from "@/lib/whatsapp";
 
-const HERO_HEADLINE = "Feel like yourself again.";
-
 const heroPhrases = [
   "symptoms of menopause",
   "fatigue",
@@ -39,11 +37,7 @@ export default function Hero() {
             className="lg:col-span-5 order-1"
           >
             <h1 className="font-sans font-semibold text-[2.15rem] sm:text-4xl md:text-[2.75rem] leading-[1.15] text-foreground tracking-tight mb-4">
-              {/* Full headline for crawlers / screen readers; animated copy is aria-hidden. */}
-              <span className="sr-only">{HERO_HEADLINE}</span>
-              <span className="relative block" aria-hidden="true">
-                <TypewriterPhrase phrases={[HERO_HEADLINE]} once className="relative block" />
-              </span>
+              Feel like yourself again.
               <span className="mt-3 block text-lg sm:text-xl md:text-2xl font-medium text-secondary leading-snug tracking-normal">
                 Doctor-led care for skin, body and women&apos;s health in Oxford.
               </span>

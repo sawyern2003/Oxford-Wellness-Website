@@ -4,36 +4,18 @@ import { useReducedMotion } from "framer-motion";
 type TypewriterPhraseProps = {
   phrases: string[];
   className?: string;
-  /** Type the first phrase once, then leave it static (no delete / cycle). */
-  once?: boolean;
 };
 
-export default function TypewriterPhrase({ phrases, className, once = false }: TypewriterPhraseProps) {
+export default function TypewriterPhrase({ phrases, className }: TypewriterPhraseProps) {
   const reduced = useReducedMotion();
-  const first = phrases[0] ?? "";
   const [index, setIndex] = useState(0);
-  const [text, setText] = useState(() => (reduced || (!once && phrases.length < 2) ? first : ""));
+  const [text, setText] = useState(phrases[0] ?? "");
   const [deleting, setDeleting] = useState(false);
-  const done = once && text === first && first.length > 0;
 
   useEffect(() => {
-    if (reduced) {
-      setText(first);
+    if (reduced || phrases.length < 2) {
+      setText(phrases[0] ?? "");
       return;
-    }
-
-    // Legacy: single phrase with no once flag just shows the phrase.
-    if (!once && phrases.length < 2) {
-      setText(first);
-      return;
-    }
-
-    if (once) {
-      if (text === first) return;
-      const timer = window.setTimeout(() => {
-        setText(first.slice(0, text.length + 1));
-      }, 72);
-      return () => window.clearTimeout(timer);
     }
 
     const current = phrases[index];
@@ -59,11 +41,9 @@ export default function TypewriterPhrase({ phrases, className, once = false }: T
     }, delay);
 
     return () => window.clearTimeout(timer);
-  }, [deleting, first, index, once, phrases, reduced, text]);
+  }, [deleting, index, phrases, reduced, text]);
 
-  const longest = once
-    ? first
-    : phrases.reduce((a, b) => (a.length >= b.length ? a : b), "");
+  const longest = phrases.reduce((a, b) => (a.length >= b.length ? a : b), "");
 
   return (
     <span className={className}>
@@ -72,7 +52,7 @@ export default function TypewriterPhrase({ phrases, className, once = false }: T
       </span>
       <span className="absolute inset-0">
         {text}
-        {!done && !reduced ? <span className="type-caret" aria-hidden /> : null}
+        <span className="type-caret" aria-hidden />
       </span>
     </span>
   );
