@@ -37,11 +37,4 @@ export const heroImageAssetPaths = [
   "/images/hero/dr-inga-about-1280.avif",
   "/images/hero/dr-inga-about-1280.webp",
   "/images/hero/dr-inga-about-1280.jpg",
-  "/images/hero/belsyre-wc.jpg",
-  "/images/hero/belsyre-wc-720.avif",
-  "/images/hero/belsyre-wc-720.webp",
-  "/images/hero/belsyre-wc-1200.avif",
-  "/images/hero/belsyre-wc-1200.webp",
-  "/images/hero/belsyre-wc-1600.avif",
-  "/images/hero/belsyre-wc-1600.webp",
 ] as const;

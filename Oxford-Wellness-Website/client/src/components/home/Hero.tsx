@@ -1,15 +1,26 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import TypewriterPhrase from "@/components/animations/TypewriterPhrase";
 import { heroImage } from "@/components/home/heroImage";
+import journeyBotanical320Avif from "@/assets/optimized/journey-botanical-320.avif";
+import journeyBotanical320Webp from "@/assets/optimized/journey-botanical-320.webp";
+import journeyBotanical480Avif from "@/assets/optimized/journey-botanical-480.avif";
+import journeyBotanical480Webp from "@/assets/optimized/journey-botanical-480.webp";
 
 /** Easy-to-edit hero copy — keep phrasing changes here. */
 const HERO_HEADLINE = "Nothing in\u00a0isolation.";
 const HERO_SUBLINE =
   "Skin, intimate and women's health, considered together by one\u00a0doctor.";
 const HERO_CAPTION = "Dr Inga Taganova, GP";
-/** Static line immediately below the hero (not a heading — keeps a single H1). */
-const HERO_SUPPORT =
-  "For skin, intimate wellness, hormones, energy and the changes in\u00a0between.";
+const HERO_CARE_PREFIX = "Doctor-led care for";
+const heroPhrases = [
+  "skin changes",
+  "intimate wellness",
+  "body confidence",
+  "fatigue",
+  "hormone changes",
+  "symptoms of menopause",
+];
 
 /**
  * Editorial split hero (Nicholas-approved mockup #1).
@@ -90,47 +101,54 @@ export default function Hero() {
         </div>
       </section>
 
-      {/* Static support line — prerendered, no animation, no layout shift. */}
+      {/*
+        Care line: centred Cormorant typewriter. Sprig + hairline above.
+        First phrase is prerendered; height reserved for the longest phrase.
+      */}
       <section
-        className="relative bg-white pt-20 md:pt-24 pb-14 md:pb-20 overflow-hidden"
-        aria-label="Care focus"
+        className="bg-white pt-20 md:pt-28 pb-20 md:pb-28"
+        aria-label="Doctor-led care"
       >
-        <div
-          className="pointer-events-none select-none absolute -right-16 md:right-0 top-1/2 -translate-y-1/2 w-[min(70vw,480px)] opacity-[0.16]"
-          aria-hidden="true"
-        >
-          <picture>
-            <source
-              type="image/avif"
-              srcSet="/images/hero/belsyre-wc-720.avif 720w, /images/hero/belsyre-wc-1200.avif 1200w, /images/hero/belsyre-wc-1600.avif 1600w"
-              sizes="520px"
-            />
-            <source
-              type="image/webp"
-              srcSet="/images/hero/belsyre-wc-720.webp 720w, /images/hero/belsyre-wc-1200.webp 1200w, /images/hero/belsyre-wc-1600.webp 1600w"
-              sizes="520px"
-            />
-            <img
-              src="/images/hero/belsyre-wc.jpg"
-              alt=""
-              width={1024}
-              height={682}
-              loading="lazy"
-              decoding="async"
-              className="w-full h-auto"
-            />
-          </picture>
-        </div>
-        <div className="container-wide relative">
+        <div className="container-wide flex flex-col items-center text-center">
+          <div className="flex flex-col items-center mb-8 md:mb-10" aria-hidden="true">
+            <picture>
+              <source
+                type="image/avif"
+                srcSet={`${journeyBotanical320Avif} 320w, ${journeyBotanical480Avif} 480w`}
+                sizes="110px"
+              />
+              <source
+                type="image/webp"
+                srcSet={`${journeyBotanical320Webp} 320w, ${journeyBotanical480Webp} 480w`}
+                sizes="110px"
+              />
+              <img
+                src={journeyBotanical480Webp}
+                alt=""
+                width={480}
+                height={317}
+                loading="lazy"
+                decoding="async"
+                className="w-[90px] sm:w-[110px] h-auto"
+              />
+            </picture>
+            <div className="mt-4 w-10 h-px bg-border" />
+          </div>
+
           <p
-            className="text-primary text-balance max-w-3xl text-[1.35rem] sm:text-[1.6rem] md:text-[1.85rem] leading-snug"
+            className="text-primary text-balance max-w-4xl leading-[1.15] tracking-tight"
             style={{
               fontFamily:
                 '"Cormorant Garamond", "Cormorant Garamond Fallback", Georgia, serif',
               fontWeight: 400,
+              fontSize: "clamp(2rem, 5vw, 3.75rem)",
             }}
           >
-            {HERO_SUPPORT}
+            <span>{HERO_CARE_PREFIX} </span>
+            <TypewriterPhrase
+              phrases={heroPhrases}
+              className="relative inline-block max-w-full align-baseline text-brand-accent-text"
+            />
           </p>
         </div>
       </section>
