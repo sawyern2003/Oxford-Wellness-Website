@@ -11,7 +11,8 @@ type TypewriterPhraseProps = {
  * after a pause on the full phrase, it jumps straight to the first character
  * of the next phrase and types the rest.
  *
- * Reserves the longest phrase's box (wrapping allowed) so layout never shifts.
+ * Reserves the longest phrase's box so layout never shifts between words.
+ * Pair with whitespace-nowrap on className so every phrase stays one line.
  * Respects prefers-reduced-motion (static first phrase).
  * Prerender: initial state is phrases[0], matching the SSR HTML.
  */
@@ -50,11 +51,8 @@ export default function TypewriterPhrase({ phrases, className }: TypewriterPhras
 
   return (
     <span className={className} aria-live="off">
-      {/*
-        Invisible sizer: same wrap behaviour as the visible text, so height
-        stays fixed at every breakpoint (including 2-line wraps on mobile).
-      */}
-      <span className="invisible select-none" aria-hidden="true">
+      {/* Invisible sizer: longest phrase locks height; nowrap keeps one line. */}
+      <span className="invisible select-none whitespace-nowrap" aria-hidden="true">
         {longest}
       </span>
       <span className="absolute inset-0">

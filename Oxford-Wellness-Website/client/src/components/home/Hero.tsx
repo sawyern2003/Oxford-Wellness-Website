@@ -137,7 +137,8 @@ export default function Hero() {
         <div className="container-wide flex flex-col items-center text-center">
           <div className="flex flex-col items-center mb-7 md:mb-9" aria-hidden="true">
             <Flourish />
-            <picture className="mt-4 md:mt-5">
+            {/* Flourish → sprig: ~28px mobile / ~36px desktop */}
+            <picture className="mt-7 md:mt-9">
               <source
                 type="image/avif"
                 srcSet={`${journeyBotanical320Avif} 320w, ${journeyBotanical480Avif} 480w`}
@@ -160,19 +161,23 @@ export default function Hero() {
             </picture>
           </div>
 
+          {/*
+            Prefix on its own line; cycling phrase always one line (nowrap).
+            Font clamp sized so "symptoms of menopause" fits at 360px+.
+          */}
           <p
-            className="text-primary text-balance max-w-4xl leading-[1.15] tracking-tight flex flex-col items-center gap-1"
+            className="text-primary w-[min(100%,95vw)] max-w-none leading-[1.15] tracking-tight flex flex-col items-center gap-1"
             style={{
               fontFamily:
                 '"Cormorant Garamond", "Cormorant Garamond Fallback", Georgia, serif',
               fontWeight: 400,
-              fontSize: "clamp(2rem, 5vw, 3.75rem)",
+              fontSize: "clamp(1.55rem, 0.55rem + 4.4vw, 3.75rem)",
             }}
           >
             <span className="block">{HERO_CARE_PREFIX}</span>
             <TypewriterPhrase
               phrases={heroPhrases}
-              className="relative block max-w-full text-brand-accent-text"
+              className="relative block whitespace-nowrap text-brand-accent-text"
             />
           </p>
         </div>

@@ -1,6 +1,7 @@
 /**
  * Nicholas's hand-made flourish above the care-section sprig.
- * Mobile 160×34 (1x/2x); desktop 240×50 (1x/2x). Aspect ≈ 4.776:1.
+ * Display: 130×27 mobile / 190×40 desktop (aspect ≈ 4.776:1).
+ * Assets stay 160/320 and 240/480 for sharp 1x/2x.
  */
 export default function Flourish({ className = "" }: { className?: string }) {
   return (
@@ -22,13 +23,13 @@ export default function Flourish({ className = "" }: { className?: string }) {
       <img
         src="/images/flourish/flourish-160.png"
         srcSet="/images/flourish/flourish-160.png 1x, /images/flourish/flourish-320.png 2x"
-        width={240}
-        height={50}
+        width={190}
+        height={40}
         alt=""
         aria-hidden="true"
         loading="eager"
         decoding="async"
-        className="w-[160px] md:w-[240px] h-auto"
+        className="w-[130px] md:w-[190px] h-auto"
       />
     </picture>
   );
