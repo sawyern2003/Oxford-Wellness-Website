@@ -170,14 +170,14 @@ export default function Navbar() {
           ))}
           {pain ? (
             <Link href={PAIN_BOOK_HREF}>
-              <Button className="bg-secondary text-white hover:bg-secondary/90 rounded-full px-5 h-9 text-sm font-medium">
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-5 h-9 text-sm font-medium">
                 Book
               </Button>
             </Link>
           ) : (
             <Link href="/book">
               <Button
-                className="bg-secondary text-white hover:bg-secondary/90 rounded-full px-5 h-9 text-sm font-medium"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-5 h-9 text-sm font-medium"
               >
                 Book
               </Button>
@@ -227,14 +227,14 @@ export default function Navbar() {
           ))}
           {pain ? (
             <Link href={PAIN_BOOK_HREF}>
-              <Button className="w-full mt-4 rounded-full bg-secondary text-white text-sm font-medium">
+              <Button className="w-full mt-4 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90">
                 Book a consultation
               </Button>
             </Link>
           ) : (
             <Link href="/book">
               <Button
-                className="w-full mt-4 rounded-full bg-secondary text-white text-sm font-medium"
+                className="w-full mt-4 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90"
                 onClick={() => setIsOpen(false)}
               >
                 Book consultation

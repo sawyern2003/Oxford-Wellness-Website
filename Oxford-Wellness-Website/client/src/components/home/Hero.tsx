@@ -37,20 +37,20 @@ export default function Hero() {
         <div className="grid lg:grid-cols-12 gap-6 lg:gap-12 lg:items-center">
           <div className="lg:col-span-6 order-1">
             <div className="max-w-xl lg:max-w-none">
-              <h1 className="font-sans font-semibold text-[2.15rem] sm:text-4xl md:text-[2.75rem] leading-[1.15] text-foreground tracking-tight mb-5">
+              <h1 className="font-sans font-semibold text-[2.15rem] sm:text-4xl md:text-[2.75rem] leading-[1.15] text-foreground tracking-tight mb-3">
                 Feel like yourself again.
-                {/*
-                  Stable two-line subline (prefix / phrase) so the cycling
-                  word never leaves an empty underlined row. Colour accent only.
-                */}
-                <span className="mt-3 block text-lg sm:text-xl font-medium text-foreground leading-snug tracking-normal">
-                  <span className="block">Doctor-led care in Oxford for</span>
-                  <TypewriterPhrase
-                    phrases={heroPhrases}
-                    className="relative mt-1 block w-fit max-w-full text-primary"
-                  />
-                </span>
               </h1>
+              <p className="text-[15px] sm:text-base text-muted-foreground leading-relaxed mb-3 max-w-md">
+                A GP-led clinic where women are listened to, properly. Skin, body and women&apos;s
+                health in Oxford.
+              </p>
+              <p className="font-medium text-base sm:text-lg text-foreground leading-snug mb-5">
+                Doctor-led care for{" "}
+                <TypewriterPhrase
+                  phrases={heroPhrases}
+                  className="relative inline-block align-baseline text-accent-foreground"
+                />
+              </p>
               <div className="flex flex-col sm:flex-row flex-wrap gap-3">
                 <Link href="/book" className="js-book-cta">
                   <Button
