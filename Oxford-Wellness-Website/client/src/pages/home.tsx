@@ -164,7 +164,7 @@ export default function Home() {
 
       <ClinicMoveNote />
 
-      {/* Gift vouchers — below hero, quiet mention */}
+      {/* Gift vouchers: below hero, quiet mention */}
       <RevealSection className="py-14 md:py-16 bg-white">
         <div className="container-page">
           <FadeIn className="max-w-xl mx-auto text-center">
@@ -175,7 +175,7 @@ export default function Home() {
               Gift vouchers
             </h2>
             <p className="text-[15px] text-muted-foreground leading-relaxed mb-7">
-              A consultation with Dr Inga, or credit towards any treatment — a considered gift from
+              A consultation with Dr Inga, or credit towards any treatment: a considered gift from
               The Oxford Wellness Doctor.
             </p>
             <Link href="/gift-vouchers">

@@ -23,7 +23,7 @@ const HOW_IT_WORKS = [
   },
   {
     title: "Add a personal note",
-    body: `Include the recipient’s name and an optional short message in the SumUp payment note — or send them by WhatsApp or email to ${CLINIC_EMAIL}.`,
+    body: `Include the recipient’s name and an optional short message in the SumUp payment note, or send them by WhatsApp or email to ${CLINIC_EMAIL}.`,
   },
   {
     title: "We send the voucher",
@@ -102,7 +102,7 @@ export default function GiftVouchers() {
           </h1>
           <p className="text-[15px] md:text-base text-muted-foreground leading-relaxed mb-4">
             Skin, intimate and women’s health are rarely separate. A voucher from The Oxford Wellness
-            Doctor gives someone time with Dr Inga Taganova, GP — or credit they can put towards the
+            Doctor gives someone time with Dr Inga Taganova, GP, or credit they can put towards the
             care that fits them.
           </p>
           <p className="text-[15px] text-muted-foreground leading-relaxed">

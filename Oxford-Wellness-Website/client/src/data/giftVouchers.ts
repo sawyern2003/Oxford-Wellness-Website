@@ -6,7 +6,7 @@ import { whatsappHref } from "@/lib/whatsapp";
  * TODO (Nicholas):
  * 1. Set CONSULTATION_VOUCHER_PRICE once the consultation voucher fee is confirmed.
  * 2. Paste each SumUp payment-link URL into sumUpPaymentLink below.
- *    Leave null until the real link exists — the Buy button falls back to WhatsApp.
+ *    Leave null until the real link exists; the Buy button falls back to WhatsApp.
  * Do NOT invent SumUp URLs.
  */
 
@@ -18,6 +18,8 @@ export type GiftVoucherId = "consultation" | "gbp100" | "gbp250" | "gbp500";
 export interface GiftVoucher {
   id: GiftVoucherId;
   name: string;
+  /** Phrase after “Hello, I'd like to buy …” in the WhatsApp prefill. */
+  whatsappLabel: string;
   description: string;
   /** Fixed amount in GBP, or null when the price is still to be confirmed. */
   amountGbp: number | null;
@@ -32,8 +34,9 @@ export const GIFT_VOUCHERS: GiftVoucher[] = [
   {
     id: "consultation",
     name: "A consultation with Dr Inga",
+    whatsappLabel: "a consultation voucher with Dr Inga",
     description:
-      "A private consultation with Dr Inga Taganova — time to be heard, and a plan that considers skin, intimate health and women’s health together.",
+      "A private consultation with Dr Inga Taganova: time to be heard, and a plan that considers skin, intimate health and women’s health together.",
     amountGbp: CONSULTATION_VOUCHER_PRICE,
     // TODO: paste SumUp payment link for the consultation voucher
     sumUpPaymentLink: null,
@@ -41,6 +44,7 @@ export const GIFT_VOUCHERS: GiftVoucher[] = [
   {
     id: "gbp100",
     name: "£100 gift voucher",
+    whatsappLabel: "a £100 gift voucher",
     description: "Credit towards any consultation or treatment at The Oxford Wellness Doctor.",
     amountGbp: 100,
     // TODO: paste SumUp payment link for the £100 voucher
@@ -49,6 +53,7 @@ export const GIFT_VOUCHERS: GiftVoucher[] = [
   {
     id: "gbp250",
     name: "£250 gift voucher",
+    whatsappLabel: "a £250 gift voucher",
     description: "Credit towards any consultation or treatment at The Oxford Wellness Doctor.",
     amountGbp: 250,
     // TODO: paste SumUp payment link for the £250 voucher
@@ -57,6 +62,7 @@ export const GIFT_VOUCHERS: GiftVoucher[] = [
   {
     id: "gbp500",
     name: "£500 gift voucher",
+    whatsappLabel: "a £500 gift voucher",
     description: "Credit towards any consultation or treatment at The Oxford Wellness Doctor.",
     amountGbp: 500,
     // TODO: paste SumUp payment link for the £500 voucher
@@ -72,7 +78,7 @@ export function formatVoucherPrice(voucher: GiftVoucher): string {
 /** Buy destination: SumUp link when set, otherwise WhatsApp with a prefilled message. */
 export function giftVoucherBuyHref(voucher: GiftVoucher): string {
   if (voucher.sumUpPaymentLink) return voucher.sumUpPaymentLink;
-  return whatsappHref(`Hello, I'd like to buy a ${voucher.name} gift voucher`);
+  return whatsappHref(`Hello, I'd like to buy ${voucher.whatsappLabel}.`);
 }
 
 export function giftVoucherOpensExternally(voucher: GiftVoucher): boolean {
