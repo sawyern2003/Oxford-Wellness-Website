@@ -112,7 +112,7 @@ const data: BlogPostData = {
     heading: "Book a Consultation for Excessive Sweating",
     text: "Discuss treatment for hyperhidrosis with Dr Inga Taganova in Oxford.",
     buttonLabel: "Book a Consultation",
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
     buttonExternal: true,
   },
   relatedPosts: [

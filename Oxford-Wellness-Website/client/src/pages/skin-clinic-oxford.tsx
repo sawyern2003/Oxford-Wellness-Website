@@ -121,7 +121,7 @@ const data: TreatmentPageData = {
     },
     {
       q: "How do I book a consultation?",
-      a: "You can book online via the Glowday booking system, call the clinic on 07739 309380, or email info@theoxfordwellnessdoctor.com. Consultations are £75.",
+      a: "You can book online via the clinic diary, call the clinic on 07739 309380, or email info@theoxfordwellnessdoctor.com. Consultations are £75.",
     },
   ],
   procedureSchema: {

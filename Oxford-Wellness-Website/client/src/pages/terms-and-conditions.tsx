@@ -41,7 +41,7 @@ export default function TermsAndConditions() {
 
           <section>
             <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">4. Booking and Payment</h2>
-            <p>Appointments may be booked online via our Glowday booking page, by telephone, or by email. A booking is confirmed upon receipt of any deposit required or upon written confirmation from our clinic.</p>
+            <p>Appointments may be booked online via our Cliniko booking diary, by telephone, or by email. A booking is confirmed upon receipt of any deposit required or upon written confirmation from our clinic.</p>
             <ul className="list-disc pl-6 mt-3 space-y-1.5">
               <li>Payment is taken at the time of treatment unless otherwise agreed</li>
               <li>We accept all major credit and debit cards</li>

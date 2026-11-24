@@ -362,8 +362,8 @@ export default function BlogPostTemplate({ data }: { data: BlogPostData }) {
               className="bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-8 h-12 text-base font-medium shadow-lg"
               onClick={() => {
                 const href = data.cta.buttonHref || "/book";
-                if (href.includes("glowday.com") || href === "/book") {
-                  window.location.href = "/book";
+                if (href.includes("cliniko.com") || href === "/book" || href.startsWith("/book?")) {
+                  window.location.href = href.startsWith("http") ? "/book" : href;
                 } else if (data.cta.buttonExternal) {
                   window.open(href, "_blank");
                 } else {

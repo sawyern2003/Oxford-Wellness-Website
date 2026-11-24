@@ -90,7 +90,7 @@ const data: BlogPostData = {
     text: "Get a comprehensive assessment of the hormonal factors affecting your perimenopause symptoms, including metabolic changes.",
     buttonLabel: "Book a Consultation",
     buttonExternal: true,
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
   },
   relatedPosts: [
     { label: "How Menopause Affects Your Skin", href: "/blog/menopause-skin-changes" },

@@ -51,8 +51,7 @@ export default function CookiePolicy() {
                 <h3 className="font-semibold text-primary mb-2">Third-Party Cookies <span className="text-xs font-normal text-muted-foreground ml-1">(Requires Consent)</span></h3>
                 <p className="text-sm">Our website embeds content from third-party services that may set their own cookies:</p>
                 <ul className="list-disc pl-5 mt-2 text-sm space-y-1">
-                  <li><strong>Glowday</strong> - embedded booking widget on the Contact page. Subject to Glowday's own cookie and privacy policies.</li>
-                  <li><strong>Calendly</strong> - embedded booking calendar for The Oxford Pain Doctor. Subject to Calendly's own cookie and privacy policies.</li>
+                  <li><strong>Cliniko</strong> — embedded online booking diary on the Book pages. Subject to Cliniko's own cookie and privacy policies.</li>
                   <li><strong>Google Maps</strong> - embedded map on the Contact page. Subject to Google's privacy policy.</li>
                 </ul>
               </div>

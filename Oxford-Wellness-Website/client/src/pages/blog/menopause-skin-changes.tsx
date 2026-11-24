@@ -102,7 +102,7 @@ const data: BlogPostData = {
     text: "Discuss your skin concerns and menopausal symptoms with Dr Inga Taganova in a single, comprehensive appointment.",
     buttonLabel: "Book a Consultation",
     buttonExternal: true,
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
   },
   relatedPosts: [
     { label: "Weight Gain in Perimenopause: Medical Solutions That Actually Work", href: "/blog/weight-gain-perimenopause" },

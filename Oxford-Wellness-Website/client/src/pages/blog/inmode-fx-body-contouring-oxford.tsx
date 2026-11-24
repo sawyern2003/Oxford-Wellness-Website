@@ -122,7 +122,7 @@ const data: BlogPostData = {
     heading: "Book an InMode FX Body Treatment Consultation",
     text: "Discuss body skin tightening and cellulite treatment with Dr Inga Taganova in Oxford.",
     buttonLabel: "Book a Consultation",
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
     buttonExternal: true,
   },
   relatedPosts: [

@@ -83,7 +83,7 @@ const data: BlogPostData = {
     text: "Come in for a no-obligation consultation to discuss what natural lip enhancement looks like for your anatomy - with complete honesty.",
     buttonLabel: "Book a Consultation",
     buttonExternal: true,
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
   },
   relatedPosts: [
     { label: "How to Choose an Aesthetics Clinic in Oxford", href: "/blog/choosing-aesthetics-clinic-oxford" },

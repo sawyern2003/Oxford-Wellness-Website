@@ -70,7 +70,7 @@ const data: BlogPostData = {
     heading: "Book Your Consultation in Oxford",
     text: "Experience professional medical aesthetics in a calming, private environment. Ample free parking and easy access from all Oxford areas.",
     buttonLabel: "Book a Consultation",
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
     buttonExternal: true,
   },
   relatedPosts: [

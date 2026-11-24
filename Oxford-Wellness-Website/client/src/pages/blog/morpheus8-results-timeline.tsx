@@ -111,7 +111,7 @@ const data: BlogPostData = {
     text: "Discuss your skin concerns with Dr Inga Taganova and find out whether Morpheus8 is the right treatment for your goals.",
     buttonLabel: "Book a Morpheus8 Consultation",
     buttonExternal: true,
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
   },
   relatedPosts: [
     { label: "Best Aesthetic Treatments for Women Over 50", href: "/blog/aesthetic-treatments-over-50" },

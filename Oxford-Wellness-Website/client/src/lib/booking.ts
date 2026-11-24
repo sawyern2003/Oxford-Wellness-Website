@@ -1,4 +1,12 @@
-import { getBookingUrl, GLOWDAY_GENERAL, BOOKING_URLS } from "@/data/bookingUrls";
+import {
+  CLINIKO_EMBED_GENERAL,
+  CLINIKO_GENERAL,
+  CLINIKO_PAIN_BOOKING,
+  CLINIKO_PAIN_EMBED,
+  getBookingUrl,
+  getConsultationBookingUrl,
+  BOOKING_URLS,
+} from "@/data/bookingUrls";
 
 export const BOOKING_HREF = "/book";
 
@@ -16,10 +24,11 @@ export function resolveConsultationKey(raw: string | null): string | null {
   return raw in CONSULTATION_LABELS ? raw : null;
 }
 
-export const GLOWDAY_EMBED_SRC = GLOWDAY_GENERAL;
+/** General Cliniko diary (external link). */
+export const CLINIKO_BOOKING_URL = CLINIKO_GENERAL;
 
-export const PAIN_CALENDLY_URL =
-  "https://calendly.com/dr-richard-theoxfordwellnessdoctor";
+export const PAIN_CLINIKO_URL = CLINIKO_PAIN_BOOKING;
+export const PAIN_CLINIKO_EMBED_URL = CLINIKO_PAIN_EMBED;
 
 /** Human labels for ?treatment=<slug> booking pages. */
 export const TREATMENT_BOOKING_LABELS: Record<string, string> = {
@@ -31,7 +40,7 @@ export const TREATMENT_BOOKING_LABELS: Record<string, string> = {
   "menopause-clinic-oxford": "Menopause consultation",
   "womens-health-oxford": "Women's health consultation",
   "votiva-forma-v-oxford": "Forma V",
-  "neauvia-n-rose-intimate-rejuvenation-oxford": "Neauvia N Rose",
+  "neauvia-n-rose-intimate-rejuvenation-oxford": "Intimate health consultation",
   "anti-wrinkle-injections-oxford": "Lines and wrinkles consultation",
   "skin-boosters-oxford": "Skin boosters",
   "chemical-peels-oxford": "Chemical peels",
@@ -47,13 +56,16 @@ export const TREATMENT_BOOKING_LABELS: Record<string, string> = {
 };
 
 export type ResolvedBooking = {
-  glowdayUrl: string;
+  /** Cliniko URL for new-tab / link fallback (not embedded). */
+  bookingUrl: string;
+  /** Cliniko URL for iframe (embedded=true). */
+  embedUrl: string;
   heading: string;
   kind: "consultation" | "treatment" | "generic";
 };
 
 /**
- * Resolve /book query params to a Glowday URL and page heading.
+ * Resolve /book query params to a Cliniko URL and page heading.
  * Prefer ?consultation= when both are present; unknown treatment slugs fall back to the general diary.
  */
 export function resolveBookPage(search: string): ResolvedBooking {
@@ -61,7 +73,8 @@ export function resolveBookPage(search: string): ResolvedBooking {
   const consultationKey = resolveConsultationKey(params.get("consultation"));
   if (consultationKey) {
     return {
-      glowdayUrl: GLOWDAY_GENERAL,
+      bookingUrl: getConsultationBookingUrl(consultationKey, false),
+      embedUrl: getConsultationBookingUrl(consultationKey, true),
       heading: CONSULTATION_LABELS[consultationKey],
       kind: "consultation",
     };
@@ -70,14 +83,16 @@ export function resolveBookPage(search: string): ResolvedBooking {
   const treatmentSlug = params.get("treatment");
   if (treatmentSlug && treatmentSlug in BOOKING_URLS) {
     return {
-      glowdayUrl: getBookingUrl(treatmentSlug),
+      bookingUrl: getBookingUrl(treatmentSlug, false),
+      embedUrl: getBookingUrl(treatmentSlug, true),
       heading: TREATMENT_BOOKING_LABELS[treatmentSlug] ?? "Book an appointment",
       kind: "treatment",
     };
   }
 
   return {
-    glowdayUrl: GLOWDAY_GENERAL,
+    bookingUrl: CLINIKO_GENERAL,
+    embedUrl: CLINIKO_EMBED_GENERAL,
     heading: "Book an appointment",
     kind: "generic",
   };

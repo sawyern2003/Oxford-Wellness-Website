@@ -163,7 +163,7 @@ const data: TreatmentPageData = {
     },
     {
       q: "Do I need a referral from my GP or midwife?",
-      a: "No referral is needed. You can book directly via Glowday or contact us by phone (07739 309380) or email (info@theoxfordwellnessdoctor.com). Dr Inga Taganova will conduct a thorough assessment during your consultation.",
+      a: "No referral is needed. You can book online via the clinic diary or contact us by phone (07739 309380) or email (info@theoxfordwellnessdoctor.com). Dr Inga Taganova will conduct a thorough assessment during your consultation.",
     },
     {
       q: "Is the consultation confidential and discreet?",

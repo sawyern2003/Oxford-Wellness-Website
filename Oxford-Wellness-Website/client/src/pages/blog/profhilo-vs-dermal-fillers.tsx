@@ -92,7 +92,7 @@ const data: BlogPostData = {
     text: "Book a consultation and Dr Inga Taganova will give you an honest, personalised assessment - with no obligation to proceed.",
     buttonLabel: "Book a Consultation",
     buttonExternal: true,
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
   },
   relatedPosts: [
     { label: "How Menopause Affects Your Skin", href: "/blog/menopause-skin-changes" },

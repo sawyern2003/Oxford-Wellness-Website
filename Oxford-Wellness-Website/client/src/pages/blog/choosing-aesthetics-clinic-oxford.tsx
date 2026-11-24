@@ -70,7 +70,7 @@ const data: BlogPostData = {
     {
       heading: "Check Reviews - But Read Them Critically",
       paragraphs: [
-        "Patient reviews on Google, Trustpilot, and Glowday provide useful information - but read them with some critical awareness. Look for specificity (detailed, genuine accounts of the consultation and treatment experience) over generic praise. Patterns matter more than individual reviews. Consider the recency of reviews.",
+        "Patient reviews on Google and Trustpilot provide useful information - but read them with some critical awareness. Look for specificity (detailed, genuine accounts of the consultation and treatment experience) over generic praise. Patterns matter more than individual reviews. Consider the recency of reviews.",
         "Also look at how the clinic responds to any critical reviews. A professional response that addresses concerns directly is more reassuring than no response or a defensive reaction.",
       ],
     },
@@ -101,7 +101,7 @@ const data: BlogPostData = {
     text: "Book a consultation and see for yourself what genuinely patient-centred aesthetic medicine looks like.",
     buttonLabel: "Book a Consultation",
     buttonExternal: true,
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
   },
   relatedPosts: [
     { label: "How to Get Natural-Looking Lip Fillers: A Doctor's Guide", href: "/blog/lip-filler-natural-results" },

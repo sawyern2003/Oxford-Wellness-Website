@@ -131,7 +131,7 @@ const data: BlogPostData = {
     heading: "Book a Postpartum Recovery Consultation",
     text: "Discuss your postpartum concerns with Dr Inga Taganova in a compassionate, unhurried consultation.",
     buttonLabel: "Book a Consultation",
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
     buttonExternal: true,
   },
   relatedPosts: [

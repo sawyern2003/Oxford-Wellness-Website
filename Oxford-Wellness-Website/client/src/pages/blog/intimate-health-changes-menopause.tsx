@@ -113,7 +113,7 @@ const data: BlogPostData = {
     heading: "Book a Confidential Intimate Health Consultation",
     text: "Discuss your symptoms and treatment options in a private consultation with Dr Inga Taganova.",
     buttonLabel: "Book a Consultation",
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
     buttonExternal: true,
   },
   relatedPosts: [

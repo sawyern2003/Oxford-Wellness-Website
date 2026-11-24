@@ -133,7 +133,7 @@ const data: BlogPostData = {
     heading: "Book an Anti-Wrinkle Consultation",
     text: "Discuss anti-wrinkle treatment with Dr Inga Taganova in Oxford. Honest advice, natural results.",
     buttonLabel: "Book a Consultation",
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
     buttonExternal: true,
   },
   relatedPosts: [

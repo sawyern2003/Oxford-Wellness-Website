@@ -82,7 +82,7 @@ const data: BlogPostData = {
     text: "Come in for a comprehensive assessment with Dr Inga Taganova - a doctor who understands mature skin, the menopause, and the aesthetic treatments that work best for women over 50.",
     buttonLabel: "Book a Consultation",
     buttonExternal: true,
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
   },
   relatedPosts: [
     { label: "How Menopause Affects Your Skin", href: "/blog/menopause-skin-changes" },

@@ -130,11 +130,11 @@ function sendConversion(label: string) {
   });
 }
 
-function isGlowdayHref(href: string): boolean {
-  return /glowday/i.test(href);
+function isClinikoHref(href: string): boolean {
+  return /\.cliniko\.com/i.test(href);
 }
 
-/** Internal /book links (with or without query/hash), absolute or relative. */
+/** Internal /book links (with or without query/hash), absolute or relative — wellness or pain. */
 function isBookHref(href: string): boolean {
   try {
     const base =
@@ -143,9 +143,9 @@ function isBookHref(href: string): boolean {
         : "https://www.theoxfordwellnessdoctor.com";
     const url = new URL(href, base);
     const path = url.pathname.replace(/\/+$/, "") || "/";
-    return path === "/book";
+    return path === "/book" || path === "/oxford-pain-doctor/book";
   } catch {
-    return /^\/book(\/|$|\?|#)/i.test(href);
+    return /^\/(book|oxford-pain-doctor\/book)(\/|$|\?|#)/i.test(href);
   }
 }
 
@@ -202,9 +202,9 @@ function readStoredGclid(): string | null {
   }
 }
 
-/** Appends gclid to a Glowday URL when we have one and the URL does not already. */
-export function appendGclidToGlowdayUrl(href: string): string {
-  if (!isGlowdayHref(href)) return href;
+/** Appends gclid to a Cliniko URL when we have one and the URL does not already. */
+export function appendGclidToClinikoUrl(href: string): string {
+  if (!isClinikoHref(href)) return href;
   const gclid = readStoredGclid();
   if (!gclid) return href;
   try {
@@ -234,11 +234,11 @@ function installConversionClickListener() {
       const rawHref = anchor.getAttribute("href") || "";
       if (!rawHref) return;
 
-      // Book conversion: Glowday anchors or internal /book CTAs (once per click).
-      // Cross-origin Glowday iframes cannot be tracked; /book clicks cover treatment→book journeys.
-      if (isGlowdayHref(rawHref) || isBookHref(rawHref)) {
-        if (isGlowdayHref(rawHref)) {
-          const withGclid = appendGclidToGlowdayUrl(rawHref);
+      // Book conversion: Cliniko anchors or internal /book CTAs (once per click).
+      // Cross-origin Cliniko iframes cannot be tracked; /book clicks cover treatment→book journeys.
+      if (isClinikoHref(rawHref) || isBookHref(rawHref)) {
+        if (isClinikoHref(rawHref)) {
+          const withGclid = appendGclidToClinikoUrl(rawHref);
           if (withGclid !== rawHref) {
             anchor.setAttribute("href", withGclid);
           }

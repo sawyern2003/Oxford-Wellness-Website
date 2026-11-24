@@ -6,7 +6,12 @@ export default function Book() {
   const resolved =
     typeof window !== "undefined"
       ? resolveBookPage(window.location.search)
-      : { glowdayUrl: "", heading: "Book an appointment", kind: "generic" as const };
+      : {
+          bookingUrl: "",
+          embedUrl: "",
+          heading: "Book an appointment",
+          kind: "generic" as const,
+        };
 
   useBreadcrumbSchema([{ name: "Book", path: "/book" }]);
   useSEO({
@@ -16,7 +21,6 @@ export default function Book() {
     canonical: "https://www.theoxfordwellnessdoctor.com/book",
   });
 
-  const glowdayUrl = resolved.glowdayUrl;
   const isSpecific = resolved.kind !== "generic";
 
   return (
@@ -25,24 +29,40 @@ export default function Book() {
         <h1 className="font-sans font-semibold text-3xl md:text-4xl text-foreground tracking-tight mb-3">
           {resolved.heading}
         </h1>
-        <p className="text-[15px] text-foreground/75 max-w-2xl mb-8">
+        <p className="text-[15px] text-foreground/75 max-w-2xl mb-6">
           {isSpecific
-            ? `Select ${resolved.heading} in the calendar if it is listed. Otherwise book the nearest general appointment and say what you need.`
-            : "Choose the consultation that matches your enquiry. Aesthetic and menopause consultations are separate appointments."}
+            ? `The diary below is filtered to ${resolved.heading}. If you need a different appointment, choose another service in the calendar or open the full booking page.`
+            : "Choose the consultation or treatment that matches your enquiry. Aesthetic and menopause appointments are listed separately."}
         </p>
+
+        <div className="mb-6 md:hidden">
+          <a
+            href={resolved.bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="js-book-cta inline-flex w-full items-center justify-center rounded-full bg-primary px-7 h-12 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+          >
+            Book online
+          </a>
+          <p className="text-sm text-muted-foreground mt-3 text-center">
+            Opens the clinic diary in Cliniko. You can also use the calendar below.
+          </p>
+        </div>
+
         <div className="overflow-hidden border border-border bg-muted/30">
           <iframe
-            src={glowdayUrl}
-            title="Book a consultation with Dr Inga Taganova"
+            src={resolved.embedUrl}
+            title="Book with The Oxford Wellness Doctor"
             className="w-full h-[min(1400px,85vh)] min-h-[720px] border-0"
             allow="payment *; clipboard-write"
             referrerPolicy="no-referrer-when-downgrade"
+            loading="lazy"
           />
         </div>
         <p className="text-sm text-muted-foreground mt-4">
           If the calendar does not load,{" "}
           <a
-            href={glowdayUrl}
+            href={resolved.bookingUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="js-book-cta text-primary underline underline-offset-4"

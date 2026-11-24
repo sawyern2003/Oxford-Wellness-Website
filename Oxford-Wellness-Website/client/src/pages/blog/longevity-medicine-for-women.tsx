@@ -123,7 +123,7 @@ const data: BlogPostData = {
     heading: "Book a Longevity Medicine Consultation",
     text: "Discuss evidence-based strategies for healthy ageing with Dr Inga Taganova in Oxford.",
     buttonLabel: "Book a Consultation",
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
     buttonExternal: true,
   },
   relatedPosts: [
