@@ -123,13 +123,13 @@
 :root {
   /*
     Site cream theme.
-    Page cream ≈ #faf6ef; card/surface ≈ #fffdf9.
-    Navy (#293c56) and brand blue (#4376ad) unchanged.
+    Page cream ≈ #f5ecdc; card/surface ≈ #fffdf9.
+    Navy (#293c56) unchanged; brand-accent-text darkened for AA on cream.
   */
-  --background: 40 52% 96%; /* #faf6ef soft cream */
+  --background: 38 56% 91.2%; /* #f5ecdc warmer cream */
   --foreground: 215 25% 18%;
 
-  --card: 40 55% 99%; /* #fffdf9 warm white */
+  --card: 40 55% 99%; /* #fffdf9 warm white — intentional lift on cream */
   --card-foreground: 215 25% 18%;
 
   --popover: 40 55% 99%;
@@ -142,14 +142,14 @@
   --secondary-foreground: 0 0% 100%;
 
   /* Warm muted panel — sits on cream without cool grey clash */
-  --muted: 38 28% 93%;
+  --muted: 38 30% 88%;
   --muted-foreground: 215 14% 38%;
 
   /* Soft blue tint nudged warmer for cream */
   --accent: 211 32% 91%;
   --accent-foreground: 211 40% 32%;
-  /* Brand blue #4376ad — ≥4.5:1 on cream */
-  --brand-accent-text: 211 44% 45%;
+  /* Brand accent text — ≥4.5:1 on #f5ecdc */
+  --brand-accent-text: 211 44% 43%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
@@ -163,7 +163,7 @@
 
 /*
   Hard-coded page/nav whites → page cream (no full-width white bands).
-  Intentional lighter surfaces use bg-card (#fffdf9).
+  Intentional lighter surfaces use bg-card (#fffdf9) on the deeper cream.
   Keep translucent whites on dark chrome (e.g. bg-white/10) untouched.
 */
 .bg-white {

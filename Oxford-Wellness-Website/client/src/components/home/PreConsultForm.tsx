@@ -390,7 +390,7 @@ export default function PreConsultForm(props: Props) {
                         maxHeight: "85vh",
                         overflowY: "auto",
                         borderRadius: radius,
-                        background: "#faf6ef",
+                        background: "#f5ecdc",
                         border: `1px solid ${borderColor}`,
                         boxShadow: "0 20px 60px rgba(0, 0, 0, 0.18)",
                         padding: "18px 18px 16px",

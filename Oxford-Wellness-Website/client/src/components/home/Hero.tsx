@@ -137,8 +137,8 @@ export default function Hero() {
         <div className="container-wide flex flex-col items-center text-center">
           <div className="flex flex-col items-center mb-7 md:mb-9" aria-hidden="true">
             <Flourish />
-            {/* Flourish → sprig: ~28px mobile / ~36px desktop */}
-            <picture className="mt-7 md:mt-9">
+            {/* Flourish → sprig: ~48px mobile / ~72px desktop */}
+            <picture className="mt-12 md:mt-[4.5rem]">
               <source
                 type="image/avif"
                 srcSet={`${journeyBotanical320Avif} 320w, ${journeyBotanical480Avif} 480w`}
