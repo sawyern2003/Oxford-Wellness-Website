@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
+import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TypewriterPhrase from "@/components/animations/TypewriterPhrase";
 import cafeJpg from "@/assets/lifestyle-cafe.jpg";
@@ -9,6 +10,7 @@ import cafe960Avif from "@/assets/optimized/lifestyle-cafe-960.avif";
 import cafe960Webp from "@/assets/optimized/lifestyle-cafe-960.webp";
 import cafe1024Avif from "@/assets/optimized/lifestyle-cafe-1024.avif";
 import cafe1024Webp from "@/assets/optimized/lifestyle-cafe-1024.webp";
+import { CONSULTATION_WHATSAPP_MESSAGE, whatsappHref } from "@/lib/whatsapp";
 
 const heroPhrases = [
   "symptoms of menopause",
@@ -47,7 +49,7 @@ export default function Hero() {
             <p className="text-[15px] text-muted-foreground leading-relaxed mb-6 max-w-md">
               Private clinic at Belsyre Court, in the centre of Oxford.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 mb-8 md:mb-0">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-8 md:mb-0">
               <Link href="/book">
                 <Button
                   data-testid="hero-book-consultation-btn"
@@ -56,6 +58,31 @@ export default function Hero() {
                   Book consultation
                 </Button>
               </Link>
+              <a href="tel:+447739309380" className="js-call-cta">
+                <Button
+                  data-testid="hero-call-btn"
+                  variant="outline"
+                  className="rounded-full border-border px-7 h-11 text-sm font-medium bg-white w-full sm:w-auto"
+                >
+                  <Phone size={16} className="mr-2" />
+                  Call
+                </Button>
+              </a>
+              <a
+                href={whatsappHref(CONSULTATION_WHATSAPP_MESSAGE)}
+                className="js-whatsapp-cta"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  data-testid="hero-whatsapp-btn"
+                  variant="outline"
+                  className="rounded-full border-border px-7 h-11 text-sm font-medium bg-white w-full sm:w-auto"
+                >
+                  <MessageCircle size={16} className="mr-2" />
+                  WhatsApp
+                </Button>
+              </a>
               <Link href="/treatments">
                 <Button
                   data-testid="hero-treatments-btn"

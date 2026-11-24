@@ -27,7 +27,8 @@ export const menopauseClinicData: TreatmentLandingPageData = {
   
   howItWorks: {
     heading: "Your menopause consultation",
-    intro: "Dr Inga Taganova provides comprehensive menopause assessments and creates personalised treatment plans based on your symptoms, medical history, and preferences.",
+    intro:
+      "Dr Inga Taganova provides comprehensive menopause assessments and creates personalised treatment plans based on your symptoms, medical history, and preferences. While we do not currently prescribe HRT at this clinic, Dr Inga Taganova can assess your suitability for hormone therapy and provide specialist referrals if HRT is clinically indicated.",
     steps: [
       "Full symptom assessment and medical history review.",
       "Discussion of treatment options, including lifestyle interventions and specialist referrals.",
@@ -39,7 +40,7 @@ export const menopauseClinicData: TreatmentLandingPageData = {
   
   downtime: {
     heading: "Treatment approach",
-    description: "While we do not currently prescribe HRT at this clinic, Dr Inga Taganova can assess your suitability for hormone therapy and provide specialist referrals if HRT is clinically indicated. Our clinic focuses on holistic symptom management, lifestyle interventions, and complementary treatments that address the full spectrum of menopausal changes."
+    description: "Our clinic focuses on holistic symptom management, lifestyle interventions, and complementary treatments that address the full spectrum of menopausal changes."
   },
   
   trust: {

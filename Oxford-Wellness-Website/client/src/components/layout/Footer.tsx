@@ -100,7 +100,6 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-foreground/80">
               <li><Link href="/skin-clinic-oxford" className="hover:text-secondary">Skin Clinic</Link></li>
               <li><Link href="/menopause-skin" className="hover:text-secondary">Menopause Skin</Link></li>
-              <li><Link href="/treatments/anti-wrinkle-injections-oxford" className="hover:text-secondary">Anti-Wrinkle Injections</Link></li>
               <li><Link href="/treatments/profhilo-oxford" className="hover:text-secondary">Profhilo</Link></li>
               <li><Link href="/treatments/morpheus8-oxford" className="hover:text-secondary">Morpheus8</Link></li>
             </ul>

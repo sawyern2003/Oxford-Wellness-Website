@@ -1,11 +1,20 @@
-import { useEffect, useState } from "react";
-import { Link } from "wouter";
+import { useEffect } from "react";
 import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useSEO } from "@/hooks/useSEO";
-import { cn } from "@/lib/utils";
-import { readAnalyticsConsent } from "@/lib/analytics";
+import { treatmentWhatsAppMessage, whatsappHref } from "@/lib/whatsapp";
 import RelatedTreatments from "./RelatedTreatments";
+import doctorPortraitJpg from "@assets/dr-inga-taganova-portrait.jpg";
+import doctorPortrait160Avif from "@/assets/optimized/dr-inga-portrait-160.avif";
+import doctorPortrait160Webp from "@/assets/optimized/dr-inga-portrait-160.webp";
+import doctorPortrait192Avif from "@/assets/optimized/dr-inga-portrait-192.avif";
+import doctorPortrait192Webp from "@/assets/optimized/dr-inga-portrait-192.webp";
+import doctorPortrait240Avif from "@/assets/optimized/dr-inga-portrait-240.avif";
+import doctorPortrait240Webp from "@/assets/optimized/dr-inga-portrait-240.webp";
+
+const doctorPortraitAvifSrcSet = `${doctorPortrait160Avif} 160w, ${doctorPortrait192Avif} 192w, ${doctorPortrait240Avif} 240w`;
+const doctorPortraitWebpSrcSet = `${doctorPortrait160Webp} 160w, ${doctorPortrait192Webp} 192w, ${doctorPortrait240Webp} 240w`;
+const doctorPortraitSizes = "(min-width: 640px) 96px, 80px";
 
 export interface TreatmentLandingPageData {
   slug: string;
@@ -64,19 +73,10 @@ export interface TreatmentLandingPageData {
 interface StickyBarProps {
   slug: string;
   bookingUrl: string;
+  whatsappUrl: string;
 }
 
-function StickyBar({ slug, bookingUrl }: StickyBarProps) {
-  const [cookieConsentGiven, setCookieConsentGiven] = useState(() => readAnalyticsConsent() !== null);
-
-  useEffect(() => {
-    const checkConsent = () => setCookieConsentGiven(readAnalyticsConsent() !== null);
-    const interval = setInterval(checkConsent, 500);
-    return () => clearInterval(interval);
-  }, []);
-
-  if (!cookieConsentGiven) return null;
-
+function StickyBar({ slug, bookingUrl, whatsappUrl }: StickyBarProps) {
   return (
     <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-border shadow-lg z-[45] safe-area-pb">
       <div className="px-4 py-3 flex items-center gap-2">
@@ -101,7 +101,7 @@ function StickyBar({ slug, bookingUrl }: StickyBarProps) {
           </Button>
         </a>
         <a
-          href="https://wa.me/447739309380"
+          href={whatsappUrl}
           id="whatsapp-cta-sticky"
           className="js-whatsapp-cta"
           data-treatment={slug}
@@ -119,6 +119,8 @@ function StickyBar({ slug, bookingUrl }: StickyBarProps) {
 
 export default function TreatmentLandingPage({ data }: { data: TreatmentLandingPageData }) {
   const bookingUrl = `/book?treatment=${data.slug}`;
+  const treatmentName = data.procedureSchema.name.replace(/\s+Oxford$/i, "").trim() || data.h1;
+  const whatsappUrl = whatsappHref(treatmentWhatsAppMessage(treatmentName));
 
   useSEO({
     title: data.title,
@@ -199,50 +201,67 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
                 <p className="text-3xl font-semibold text-primary mb-2">
                   {data.priceValue}
                 </p>
-                <p className="text-sm text-muted-foreground">
-                  {data.priceLabel}
-                </p>
+                {data.priceLabel ? (
+                  <p className="text-sm text-muted-foreground">
+                    {data.priceLabel}
+                  </p>
+                ) : null}
               </div>
 
-              <p className="text-base text-foreground mb-8 leading-relaxed">
+              <p className="text-base text-foreground mb-6 leading-relaxed">
                 Doctor-led by Dr Inga Taganova, GP
               </p>
 
-              <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-6">
-                <a
-                  href={bookingUrl}
-                  id="book-cta-hero"
-                  className="js-book-cta"
-                  data-treatment={data.slug}
-                >
-                  <Button className="bg-primary text-white hover:bg-primary/90 rounded-full px-7 h-11 text-sm font-medium w-full sm:w-auto">
-                    Book consultation
-                  </Button>
-                </a>
-                <a
-                  href="tel:+447739309380"
-                  id="call-cta-hero"
-                  className="js-call-cta"
-                  data-treatment={data.slug}
-                >
-                  <Button variant="outline" className="rounded-full px-6 h-11 text-sm font-medium w-full sm:w-auto">
-                    <Phone size={16} className="mr-2" />
-                    Call 07739 309380
-                  </Button>
-                </a>
-                <a
-                  href="https://wa.me/447739309380"
-                  id="whatsapp-cta-hero"
-                  className="js-whatsapp-cta"
-                  data-treatment={data.slug}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button variant="outline" className="rounded-full px-6 h-11 text-sm font-medium w-full sm:w-auto">
-                    <MessageCircle size={16} className="mr-2" />
-                    WhatsApp
-                  </Button>
-                </a>
+              <div className="flex flex-col sm:flex-row sm:items-end gap-5 mb-8">
+                <picture>
+                  <source type="image/avif" srcSet={doctorPortraitAvifSrcSet} sizes={doctorPortraitSizes} />
+                  <source type="image/webp" srcSet={doctorPortraitWebpSrcSet} sizes={doctorPortraitSizes} />
+                  <img
+                    src={doctorPortraitJpg}
+                    alt="Dr Inga Taganova, GP at The Oxford Wellness Doctor"
+                    width={96}
+                    height={120}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-20 h-24 sm:w-24 sm:h-[7.5rem] object-cover object-center rounded-2xl flex-shrink-0"
+                  />
+                </picture>
+                <div className="flex flex-col sm:flex-row sm:items-center gap-3 flex-1">
+                  <a
+                    href={bookingUrl}
+                    id="book-cta-hero"
+                    className="js-book-cta"
+                    data-treatment={data.slug}
+                  >
+                    <Button className="bg-primary text-white hover:bg-primary/90 rounded-full px-7 h-11 text-sm font-medium w-full sm:w-auto">
+                      Book consultation
+                    </Button>
+                  </a>
+                  <a
+                    href="tel:+447739309380"
+                    id="call-cta-hero"
+                    className="js-call-cta"
+                    data-treatment={data.slug}
+                  >
+                    <Button variant="outline" className="rounded-full px-6 h-11 text-sm font-medium w-full sm:w-auto">
+                      <Phone size={16} className="mr-2" />
+                      Call 07739 309380
+                    </Button>
+                  </a>
+                  <a
+                    href={whatsappUrl}
+                    id="whatsapp-cta-hero"
+                    className="js-whatsapp-cta"
+                    data-treatment={data.slug}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="outline" className="rounded-full px-6 h-11 text-sm font-medium w-full sm:w-auto">
+                      <MessageCircle size={16} className="mr-2" />
+                      WhatsApp
+                    </Button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -412,7 +431,7 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
                   </Button>
                 </a>
                 <a
-                  href="https://wa.me/447739309380"
+                  href={whatsappUrl}
                   id="whatsapp-cta-footer"
                   className="js-whatsapp-cta"
                   data-treatment={data.slug}
@@ -432,7 +451,7 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
 
       <RelatedTreatments currentSlug={data.slug} />
 
-      <StickyBar slug={data.slug} bookingUrl={bookingUrl} />
+      <StickyBar slug={data.slug} bookingUrl={bookingUrl} whatsappUrl={whatsappUrl} />
     </>
   );
 }

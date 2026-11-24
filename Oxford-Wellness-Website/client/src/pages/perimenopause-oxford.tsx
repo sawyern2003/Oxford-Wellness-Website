@@ -5,7 +5,7 @@ const data: TreatmentPageData = {
   metaDescription: "Perimenopause support in Oxford from Dr Inga Taganova, GP with a background in obstetrics and gynaecology. Expert care for women in their 40s experiencing early menopause symptoms.",
   canonical: "https://www.theoxfordwellnessdoctor.com/perimenopause-oxford",
   h1: "Perimenopause Support in Oxford - When Symptoms Start in Your 40s",
-  intro: "Perimenopause is the transition phase leading to menopause, and for many women, it's the most symptom-heavy and disruptive period of their entire hormonal journey. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology, provides expert assessment and management for women experiencing perimenopause - often starting in their early-to-mid 40s, sometimes earlier.",
+  intro: "Perimenopause is the transition phase leading to menopause, and for many women, it's the most symptom-heavy and disruptive period of their entire hormonal journey. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology, provides expert assessment and management for women experiencing perimenopause - often starting in their early-to-mid 40s, sometimes earlier. While we do not currently prescribe HRT at this clinic, Dr Inga Taganova can assess your suitability for hormone therapy and provide specialist referrals if HRT is clinically indicated.",
   sections: [
     {
       heading: "What Is Perimenopause?",
@@ -55,7 +55,7 @@ const data: TreatmentPageData = {
     {
       heading: "Treatment and Management Options",
       paragraphs: [
-        "Dr Inga Taganova provides comprehensive perimenopause assessments and creates personalized management plans. While we do not currently prescribe HRT at this clinic, Dr Inga Taganova can assess your suitability for hormone therapy and provide specialist referrals if HRT is clinically indicated.",
+        "Dr Inga Taganova provides comprehensive perimenopause assessments and creates personalized management plans.",
         "Our approach focuses on holistic symptom management, lifestyle interventions, and complementary treatments that address the full spectrum of perimenopausal changes.",
       ],
       bullets: [
