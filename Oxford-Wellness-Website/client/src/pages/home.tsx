@@ -42,9 +42,9 @@ const serviceAreas = [
 
 export default function Home() {
   useSEO({
-    title: "The Oxford Wellness Doctor | Skin, Body & Women's Health in Oxford",
+    title: "The Oxford Wellness Doctor | Skin, Intimate & Women's Health in Oxford",
     description:
-      "Doctor-led care for skin, body and women's health in Oxford, from intimate health to menopause and longevity, led by Dr Inga Taganova, GP. Book online.",
+      "Skin, intimate and women's health, considered together by one doctor. Dr Inga Taganova, GP, at Belsyre Court, Oxford. Book online.",
     canonical: "https://www.theoxfordwellnessdoctor.com/",
   });
 

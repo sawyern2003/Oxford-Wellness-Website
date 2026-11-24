@@ -12,9 +12,9 @@ import cafe1024Webp from "@/assets/optimized/lifestyle-cafe-1024.webp";
 import { CONSULTATION_WHATSAPP_MESSAGE, whatsappHref } from "@/lib/whatsapp";
 
 /** Easy-to-edit hero copy — keep phrasing changes here. */
-const HERO_HEADLINE = "Feel like yourself again.";
+const HERO_HEADLINE = "Nothing in isolation.";
 const HERO_SUBLINE =
-  "A GP-led clinic where women are listened to, properly. Skin, body and women's health in Oxford.";
+  "Skin, intimate and women's health, considered together by one doctor. Dr Inga Taganova, Belsyre Court, Oxford.";
 const HERO_CARE_PREFIX = "Doctor-led care for";
 const heroPhrases = [
   "skin changes",
