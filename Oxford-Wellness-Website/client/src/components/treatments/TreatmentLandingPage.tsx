@@ -4,7 +4,17 @@ import { Button } from "@/components/ui/button";
 import { useSEO } from "@/hooks/useSEO";
 import { treatmentWhatsAppMessage, whatsappHref } from "@/lib/whatsapp";
 import RelatedTreatments from "./RelatedTreatments";
-import doctorPortrait from "@assets/dr-inga-taganova-portrait.jpg";
+import doctorPortraitJpg from "@assets/dr-inga-taganova-portrait.jpg";
+import doctorPortrait160Avif from "@/assets/optimized/dr-inga-portrait-160.avif";
+import doctorPortrait160Webp from "@/assets/optimized/dr-inga-portrait-160.webp";
+import doctorPortrait192Avif from "@/assets/optimized/dr-inga-portrait-192.avif";
+import doctorPortrait192Webp from "@/assets/optimized/dr-inga-portrait-192.webp";
+import doctorPortrait240Avif from "@/assets/optimized/dr-inga-portrait-240.avif";
+import doctorPortrait240Webp from "@/assets/optimized/dr-inga-portrait-240.webp";
+
+const doctorPortraitAvifSrcSet = `${doctorPortrait160Avif} 160w, ${doctorPortrait192Avif} 192w, ${doctorPortrait240Avif} 240w`;
+const doctorPortraitWebpSrcSet = `${doctorPortrait160Webp} 160w, ${doctorPortrait192Webp} 192w, ${doctorPortrait240Webp} 240w`;
+const doctorPortraitSizes = "(min-width: 640px) 96px, 80px";
 
 export interface TreatmentLandingPageData {
   slug: string;
@@ -203,15 +213,19 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
               </p>
 
               <div className="flex flex-col sm:flex-row sm:items-end gap-5 mb-8">
-                <img
-                  src={doctorPortrait}
-                  alt="Dr Inga Taganova, GP at The Oxford Wellness Doctor"
-                  width={96}
-                  height={120}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-20 h-24 sm:w-24 sm:h-[7.5rem] object-cover object-center rounded-2xl flex-shrink-0"
-                />
+                <picture>
+                  <source type="image/avif" srcSet={doctorPortraitAvifSrcSet} sizes={doctorPortraitSizes} />
+                  <source type="image/webp" srcSet={doctorPortraitWebpSrcSet} sizes={doctorPortraitSizes} />
+                  <img
+                    src={doctorPortraitJpg}
+                    alt="Dr Inga Taganova, GP at The Oxford Wellness Doctor"
+                    width={96}
+                    height={120}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-20 h-24 sm:w-24 sm:h-[7.5rem] object-cover object-center rounded-2xl flex-shrink-0"
+                  />
+                </picture>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3 flex-1">
                   <a
                     href={bookingUrl}

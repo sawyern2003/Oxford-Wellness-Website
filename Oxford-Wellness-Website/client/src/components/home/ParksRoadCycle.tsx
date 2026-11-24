@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { motion, useMotionValue, useReducedMotion, useScroll, useTransform, type MotionValue } from "framer-motion";
 
 /**
@@ -53,13 +53,48 @@ export const MOBILE_ROAD_PATH: RoadPoint[] = [
 ];
 
 const CYCLIST_FRAMES = [
-  "/cyclist-frame-1.webp",
-  "/cyclist-frame-2.webp",
-  "/cyclist-frame-3.webp",
-  "/cyclist-frame-4.webp",
-  "/cyclist-frame-5.webp",
-  "/cyclist-frame-6.webp",
+  {
+    avif: "/cyclist-frame-1.avif",
+    webp: "/cyclist-frame-1.webp",
+    avifSm: "/cyclist-frame-1-sm.avif",
+    webpSm: "/cyclist-frame-1-sm.webp",
+  },
+  {
+    avif: "/cyclist-frame-2.avif",
+    webp: "/cyclist-frame-2.webp",
+    avifSm: "/cyclist-frame-2-sm.avif",
+    webpSm: "/cyclist-frame-2-sm.webp",
+  },
+  {
+    avif: "/cyclist-frame-3.avif",
+    webp: "/cyclist-frame-3.webp",
+    avifSm: "/cyclist-frame-3-sm.avif",
+    webpSm: "/cyclist-frame-3-sm.webp",
+  },
+  {
+    avif: "/cyclist-frame-4.avif",
+    webp: "/cyclist-frame-4.webp",
+    avifSm: "/cyclist-frame-4-sm.avif",
+    webpSm: "/cyclist-frame-4-sm.webp",
+  },
+  {
+    avif: "/cyclist-frame-5.avif",
+    webp: "/cyclist-frame-5.webp",
+    avifSm: "/cyclist-frame-5-sm.avif",
+    webpSm: "/cyclist-frame-5-sm.webp",
+  },
+  {
+    avif: "/cyclist-frame-6.avif",
+    webp: "/cyclist-frame-6.webp",
+    avifSm: "/cyclist-frame-6-sm.avif",
+    webpSm: "/cyclist-frame-6-sm.webp",
+  },
 ] as const;
+
+const PARKS_BG_AVIF =
+  "/parks-road-background-900.avif 900w, /parks-road-background-1400.avif 1400w, /parks-road-background-2171.avif 2171w";
+const PARKS_BG_WEBP =
+  "/parks-road-background-900.webp 900w, /parks-road-background-1400.webp 1400w, /parks-road-background-2171.webp 2171w";
 
 const SCENE_RATIO = "2171 / 724";
 
@@ -93,27 +128,40 @@ function frameForDistance(progress: number) {
 }
 
 function CyclistFrame({
-  src,
+  sources,
   index,
   frameIndex,
+  compact,
 }: {
-  src: string;
+  sources: (typeof CYCLIST_FRAMES)[number];
   index: number;
   frameIndex: MotionValue<number>;
+  compact: boolean;
 }) {
   const opacity = useTransform(frameIndex, (current) => (current === index ? 1 : 0));
+  const webp = compact ? sources.webpSm : sources.webp;
+  const avif = compact ? sources.avifSm : sources.avif;
 
   return (
-    <motion.img
-      src={src}
-      alt=""
-      width={FRAME_WIDTH}
-      height={FRAME_HEIGHT}
-      draggable={false}
-      decoding="async"
-      className="absolute inset-0 h-full w-full max-w-none select-none"
+    <motion.div
+      className="absolute inset-0 h-full w-full"
       style={{ opacity }}
-    />
+    >
+      <picture>
+        <source type="image/avif" srcSet={avif} />
+        <source type="image/webp" srcSet={webp} />
+        <img
+          src={webp}
+          alt=""
+          width={FRAME_WIDTH}
+          height={FRAME_HEIGHT}
+          draggable={false}
+          decoding="async"
+          loading="lazy"
+          className="absolute inset-0 h-full w-full max-w-none select-none"
+        />
+      </picture>
+    </motion.div>
   );
 }
 
@@ -129,6 +177,10 @@ export default function ParksRoadCycle() {
   const layoutMode = useMotionValue(0);
   const reduced = useReducedMotion() ?? false;
   reducedRef.current = reduced;
+  const [compact, setCompact] = useState(
+    () => typeof window !== "undefined" && window.matchMedia(MOBILE_BREAKPOINT).matches,
+  );
+  const [framesReady, setFramesReady] = useState(false);
 
   const { scrollYProgress } = useScroll({
     target: sceneRef,
@@ -161,10 +213,34 @@ export default function ParksRoadCycle() {
   });
 
   useEffect(() => {
-    CYCLIST_FRAMES.forEach((src) => {
-      const image = new Image();
-      image.src = src;
-    });
+    const mobileQuery = window.matchMedia(MOBILE_BREAKPOINT);
+    const syncCompact = () => setCompact(mobileQuery.matches);
+    syncCompact();
+    mobileQuery.addEventListener("change", syncCompact);
+    return () => mobileQuery.removeEventListener("change", syncCompact);
+  }, []);
+
+  // Mount the pedal strip only once the scene is near the viewport (poster shows until then).
+  useEffect(() => {
+    const scene = sceneRef.current;
+    if (!scene) return;
+
+    if (typeof IntersectionObserver === "undefined") {
+      setFramesReady(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setFramesReady(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px 0px" },
+    );
+    observer.observe(scene);
+    return () => observer.disconnect();
   }, []);
 
   useLayoutEffect(() => {
@@ -192,6 +268,8 @@ export default function ParksRoadCycle() {
     };
   }, [boxHeight, boxWidth, layoutMode, stageHeight, stageWidth]);
 
+  const showAnimatedFrames = framesReady && !reduced;
+
   return (
     <section ref={sceneRef} className="parks-road-scene relative bg-white" aria-hidden="true">
       <style>{`
@@ -214,15 +292,20 @@ export default function ParksRoadCycle() {
 
       <div className="parks-road-frame sticky top-16 md:top-20 flex items-center overflow-x-clip">
         <div ref={stageRef} className="parks-road-stage relative w-full overflow-hidden">
-          <img
-            src="/parks-road-background.webp"
-            alt=""
-            width={2171}
-            height={724}
-            draggable={false}
-            loading="lazy"
-            className="absolute inset-0 h-full w-full object-cover object-[68%_center] md:object-center"
-          />
+          <picture>
+            <source type="image/avif" srcSet={PARKS_BG_AVIF} sizes="100vw" />
+            <source type="image/webp" srcSet={PARKS_BG_WEBP} sizes="100vw" />
+            <img
+              src="/parks-road-background-1400.webp"
+              alt=""
+              width={2171}
+              height={724}
+              draggable={false}
+              loading="lazy"
+              decoding="async"
+              className="absolute inset-0 h-full w-full object-cover object-[68%_center] md:object-center"
+            />
+          </picture>
           <motion.div
             ref={cyclistRef}
             className="pointer-events-none absolute left-0 top-0 z-10 [width:var(--cyclist-w)]"
@@ -234,9 +317,39 @@ export default function ParksRoadCycle() {
               transformOrigin: "center bottom",
             }}
           >
-            {CYCLIST_FRAMES.map((src, index) => (
-              <CyclistFrame key={src} src={src} index={index} frameIndex={frameIndex} />
-            ))}
+            {/* Poster / reduced-motion: first frame only until (or instead of) the pedal strip. */}
+            <picture>
+              <source
+                type="image/avif"
+                srcSet={compact ? CYCLIST_FRAMES[0].avifSm : CYCLIST_FRAMES[0].avif}
+              />
+              <source
+                type="image/webp"
+                srcSet={compact ? CYCLIST_FRAMES[0].webpSm : CYCLIST_FRAMES[0].webp}
+              />
+              <img
+                src={compact ? CYCLIST_FRAMES[0].webpSm : CYCLIST_FRAMES[0].webp}
+                alt=""
+                width={FRAME_WIDTH}
+                height={FRAME_HEIGHT}
+                draggable={false}
+                decoding="async"
+                loading="lazy"
+                className="absolute inset-0 h-full w-full max-w-none select-none"
+                style={{ opacity: showAnimatedFrames ? 0 : 1 }}
+              />
+            </picture>
+            {showAnimatedFrames
+              ? CYCLIST_FRAMES.map((sources, index) => (
+                  <CyclistFrame
+                    key={sources.webp}
+                    sources={sources}
+                    index={index}
+                    frameIndex={frameIndex}
+                    compact={compact}
+                  />
+                ))
+              : null}
           </motion.div>
         </div>
       </div>

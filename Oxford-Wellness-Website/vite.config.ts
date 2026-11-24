@@ -13,6 +13,22 @@ export default defineConfig({
     tailwindcss(),
     metaImagesPlugin(),
     {
+      name: "preload-main-font",
+      transformIndexHtml: {
+        order: "post",
+        handler(html, ctx) {
+          if (!ctx.bundle) return html;
+          const fontAsset = Object.keys(ctx.bundle).find((file) =>
+            /montserrat-latin-600-normal.*\.woff2$/i.test(file),
+          );
+          if (!fontAsset) return html;
+          const href = fontAsset.startsWith("/") ? fontAsset : `/${fontAsset}`;
+          const preload = `<link rel="preload" href="${href}" as="font" type="font/woff2" crossorigin />`;
+          return html.replace("</head>", `    ${preload}\n  </head>`);
+        },
+      },
+    },
+    {
       name: "belsyre-qr-redirect",
       configureServer(server) {
         server.middlewares.use((req, res, next) => {

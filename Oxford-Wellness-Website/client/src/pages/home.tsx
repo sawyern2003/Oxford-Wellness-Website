@@ -64,6 +64,10 @@ export default function Home() {
                 <img
                   src={leadPractitioner}
                   alt="Dr Inga Taganova"
+                  width={768}
+                  height={1024}
+                  loading="lazy"
+                  decoding="async"
                   className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                 />
               </div>

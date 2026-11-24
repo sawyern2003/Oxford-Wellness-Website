@@ -3,7 +3,13 @@ import { Link } from "wouter";
 import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import TypewriterPhrase from "@/components/animations/TypewriterPhrase";
-import imgCafe from "@/assets/lifestyle-cafe.jpg";
+import cafeJpg from "@/assets/lifestyle-cafe.jpg";
+import cafe640Avif from "@/assets/optimized/lifestyle-cafe-640.avif";
+import cafe640Webp from "@/assets/optimized/lifestyle-cafe-640.webp";
+import cafe960Avif from "@/assets/optimized/lifestyle-cafe-960.avif";
+import cafe960Webp from "@/assets/optimized/lifestyle-cafe-960.webp";
+import cafe1024Avif from "@/assets/optimized/lifestyle-cafe-1024.avif";
+import cafe1024Webp from "@/assets/optimized/lifestyle-cafe-1024.webp";
 import { CONSULTATION_WHATSAPP_MESSAGE, whatsappHref } from "@/lib/whatsapp";
 
 const heroPhrases = [
@@ -13,6 +19,11 @@ const heroPhrases = [
   "body confidence",
   "intimate wellness",
 ];
+
+const cafeAvifSrcSet = `${cafe640Avif} 640w, ${cafe960Avif} 960w, ${cafe1024Avif} 1024w`;
+const cafeWebpSrcSet = `${cafe640Webp} 640w, ${cafe960Webp} 960w, ${cafe1024Webp} 1024w`;
+/** Matches the hero collage column (~7/12 of container-wide). */
+const cafeSizes = "(min-width: 1024px) 42vw, 92vw";
 
 export default function Hero() {
   return (
@@ -98,15 +109,20 @@ export default function Hero() {
                 <div className="col-span-5 aspect-[4/5]" />
               </div>
               <div className="absolute inset-0 flex items-center">
-                <img
-                  src={imgCafe}
-                  alt=""
-                  width={1024}
-                  height={682}
-                  className="h-auto w-full rounded-3xl"
-                  fetchPriority="high"
-                  loading="eager"
-                />
+                <picture>
+                  <source type="image/avif" srcSet={cafeAvifSrcSet} sizes={cafeSizes} />
+                  <source type="image/webp" srcSet={cafeWebpSrcSet} sizes={cafeSizes} />
+                  <img
+                    src={cafeJpg}
+                    alt=""
+                    width={1024}
+                    height={682}
+                    className="h-auto w-full rounded-3xl"
+                    fetchPriority="high"
+                    loading="eager"
+                    decoding="async"
+                  />
+                </picture>
               </div>
             </div>
           </motion.div>
