@@ -10,16 +10,14 @@ import {
 
 /**
  * 3 · Full-bleed photo with overlapping white text panel
- * Photo runs under the nav (no white band). Context crop, framed edge,
- * warm tone. Panel holds headline + CTA fully on first screen.
+ * Soft warm-grey edge so the white studio does not melt into the page.
  */
 export default function HeroFullBleed() {
   return (
     <>
       <section className="bg-white pb-0 overflow-hidden min-h-[100svh]">
         <div className="relative">
-          {/* Full-bleed: starts at top; nav overlays on white logo area */}
-          <div className="relative h-[58vh] min-h-[420px] max-h-[640px] md:h-[78vh] md:max-h-[820px] w-full overflow-hidden bg-[#ebe7e0]">
+          <div className="relative h-[58vh] min-h-[420px] max-h-[640px] md:h-[78vh] md:max-h-[820px] w-full overflow-hidden bg-[#e8e2d8]">
             <DeskPortrait
               priority
               framed={false}
@@ -27,15 +25,20 @@ export default function HeroFullBleed() {
               className="absolute inset-0 h-full w-full object-cover"
               objectPosition="62% 22%"
             />
-            {/* Defined edge / soft vignette so white studio doesn't dissolve */}
+            {/* Soft warm-grey edge / vignette — top and sides especially */}
             <div
               className="pointer-events-none absolute inset-0"
               style={{
-                boxShadow: "inset 0 0 0 1px hsl(215 35% 25% / 0.12), inset 0 0 80px hsl(30 20% 40% / 0.08)",
+                background: `
+                  linear-gradient(to bottom, hsl(35 18% 82% / 0.45) 0%, transparent 14%),
+                  linear-gradient(to right, hsl(35 16% 78% / 0.28) 0%, transparent 10%),
+                  linear-gradient(to left, hsl(35 16% 78% / 0.32) 0%, transparent 12%),
+                  radial-gradient(ellipse at center, transparent 55%, hsl(30 14% 55% / 0.16) 100%)
+                `,
+                boxShadow: "inset 0 0 0 1px hsl(215 28% 28% / 0.1)",
               }}
               aria-hidden="true"
             />
-            <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white/70 to-transparent" aria-hidden="true" />
           </div>
 
           <div className="relative z-10 -mt-40 sm:-mt-44 md:-mt-48 container-wide pb-8 md:pb-12">

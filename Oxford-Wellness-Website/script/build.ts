@@ -34,6 +34,10 @@ const allowlist = [
 ];
 
 async function buildAll() {
+  console.log("checking hero-mockup assets...");
+  const { checkHeroMockupAssets } = await import("./check-hero-mockup-assets");
+  await checkHeroMockupAssets();
+
   await rm("dist", { recursive: true, force: true });
 
   console.log("building client...");

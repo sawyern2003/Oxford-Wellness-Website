@@ -9,8 +9,7 @@ import {
 
 /**
  * 5 · Club room
- * Belsyre watercolour as the wall; framed darker desk portrait with mat;
- * caption on a solid white label card. Light wash only (≤15%).
+ * Belsyre watercolour wall; warmer framed portrait with a deep mat.
  */
 export default function HeroClubRoom() {
   return (
@@ -50,15 +49,22 @@ export default function HeroClubRoom() {
                       decoding="async"
                     />
                   </picture>
-                  {/* ≤10% white wash */}
                   <div className="absolute inset-0 bg-white/[0.08]" aria-hidden="true" />
 
                   <figure className="absolute inset-0 flex flex-col items-center justify-center px-4 py-5 sm:px-8 sm:py-8">
                     <div className="w-[52%] sm:w-[46%] max-w-[260px]">
-                      {/* Frame + mat */}
-                      <div className="bg-[#1f2a3a] p-[3px] sm:p-[4px]">
-                        <div className="bg-[#f4f1ea] p-2 sm:p-2.5">
-                          <div className="relative aspect-[3/4] overflow-hidden bg-[#2a3340]">
+                      {/* Deep navy frame + warm mat — reads as a hung portrait */}
+                      <div
+                        className="p-[5px] sm:p-[6px]"
+                        style={{
+                          background:
+                            "linear-gradient(145deg, #2a3548 0%, #161d28 45%, #3a4558 100%)",
+                          boxShadow:
+                            "0 10px 28px -12px rgba(22, 29, 40, 0.55), inset 0 0 0 1px rgba(255,255,255,0.08)",
+                        }}
+                      >
+                        <div className="bg-[#ebe4d6] p-3 sm:p-3.5">
+                          <div className="relative aspect-[3/4] overflow-hidden bg-[#2a3340] ring-1 ring-[#1a2230]/40">
                             <DeskPortrait
                               priority
                               framed={false}
@@ -66,13 +72,13 @@ export default function HeroClubRoom() {
                               sizes="260px"
                               className="absolute inset-0 h-full w-full object-cover"
                               objectPosition="center 14%"
+                              styleFilter="sepia(0.12) saturate(1.08) brightness(0.98)"
                             />
                           </div>
                         </div>
                       </div>
                     </div>
-                    {/* Solid white label card — never clipped */}
-                    <figcaption className="mt-3 bg-white px-3 py-1.5 text-[11px] sm:text-xs text-primary tracking-wide ring-1 ring-primary/15">
+                    <figcaption className="mt-3 bg-white px-3 py-1.5 text-[11px] sm:text-xs text-primary tracking-wide ring-1 ring-primary/15 shadow-sm">
                       {HERO_CAPTION}
                     </figcaption>
                   </figure>

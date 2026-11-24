@@ -75,6 +75,7 @@ export function DeskPortrait({
   objectPosition = "center 20%",
   framed = true,
   variant = "desk",
+  styleFilter = warmFilter,
 }: {
   className?: string;
   sizes?: string;
@@ -82,6 +83,7 @@ export function DeskPortrait({
   objectPosition?: string;
   framed?: boolean;
   variant?: "desk" | "club";
+  styleFilter?: string;
 }) {
   const avif = variant === "club" ? CLUB_AVIF : DESK_AVIF;
   const webp = variant === "club" ? CLUB_WEBP : DESK_WEBP;
@@ -103,7 +105,7 @@ export function DeskPortrait({
         width={width}
         height={height}
         className={imgClass}
-        style={{ objectPosition, filter: warmFilter }}
+        style={{ objectPosition, filter: styleFilter }}
         fetchPriority={priority ? "high" : undefined}
         loading={priority ? "eager" : "lazy"}
         decoding="async"
@@ -181,12 +183,12 @@ export function BelsyreWash({
       <picture>
         <source
           type="image/avif"
-          srcSet="/images/hero/belsyre-wc-720.avif 720w, /images/hero/belsyre-wc-1200.avif 1200w"
+          srcSet="/images/hero/belsyre-wc-720.avif 720w, /images/hero/belsyre-wc-1200.avif 1200w, /images/hero/belsyre-wc-1600.avif 1600w"
           sizes="520px"
         />
         <source
           type="image/webp"
-          srcSet="/images/hero/belsyre-wc-720.webp 720w, /images/hero/belsyre-wc-1200.webp 1200w"
+          srcSet="/images/hero/belsyre-wc-720.webp 720w, /images/hero/belsyre-wc-1200.webp 1200w, /images/hero/belsyre-wc-1600.webp 1600w"
           sizes="520px"
         />
         <img
