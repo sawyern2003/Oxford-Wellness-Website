@@ -119,7 +119,7 @@ export default function Hero() {
       >
         <div className="container-wide flex flex-col items-center text-center">
           <div className="flex flex-col items-center mb-7 md:mb-9" aria-hidden="true">
-            <Flourish className="w-[160px] md:w-[clamp(200px,18vw,280px)] h-auto" />
+            <Flourish />
             <picture className="mt-4 md:mt-5">
               <source
                 type="image/avif"
