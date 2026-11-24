@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -23,88 +22,85 @@ const heroPhrases = [
 
 const cafeAvifSrcSet = `${cafe640Avif} 640w, ${cafe960Avif} 960w, ${cafe1024Avif} 1024w`;
 const cafeWebpSrcSet = `${cafe640Webp} 640w, ${cafe960Webp} 960w, ${cafe1024Webp} 1024w`;
-/** Matches the hero collage column (~7/12 of container-wide). */
-const cafeSizes = "(min-width: 1024px) 42vw, 92vw";
+/** Image column ~half of container-wide at lg+. */
+const cafeSizes = "(min-width: 1024px) 46vw, 92vw";
 
 export default function Hero() {
   return (
-    <section className="pt-24 md:pt-32 pb-12 md:pb-24 bg-white overflow-hidden">
+    <section className="pt-24 md:pt-32 pb-10 md:pb-20 bg-white overflow-hidden">
       <div className="container-wide">
-        <div className="grid lg:grid-cols-12 gap-8 lg:gap-14 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="lg:col-span-5 order-1"
-          >
-            <h1 className="font-sans font-semibold text-[2.15rem] sm:text-4xl md:text-[2.75rem] leading-[1.15] text-foreground tracking-tight mb-5">
-              Feel like yourself again.
-              <span className="mt-3 block text-lg sm:text-xl md:text-2xl font-medium text-foreground leading-snug tracking-normal">
-                Doctor-led care in Oxford for{" "}
-                <TypewriterPhrase
-                  phrases={heroPhrases}
-                  className="relative inline-block align-baseline text-primary underline decoration-primary/35 underline-offset-[0.18em]"
-                />
-              </span>
-            </h1>
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-8 md:mb-0">
-              <Link href="/book" className="js-book-cta">
-                <Button
-                  data-testid="hero-book-consultation-btn"
-                  className="bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium w-full sm:w-auto"
-                >
-                  Book consultation
-                </Button>
-              </Link>
-              <a
-                href={whatsappHref(CONSULTATION_WHATSAPP_MESSAGE)}
-                className="js-whatsapp-cta"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  data-testid="hero-whatsapp-btn"
-                  variant="outline"
-                  className="rounded-full border-border px-7 h-11 text-sm font-medium bg-white w-full sm:w-auto"
-                >
-                  <MessageCircle size={16} className="mr-2" />
-                  WhatsApp
-                </Button>
-              </a>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-            className="lg:col-span-7 order-2"
-          >
-            <div className="relative">
-              {/* Holds the previous collage box: two 4/5 frames in a 5/12 column, same gaps. */}
-              <div className="grid grid-cols-12 gap-3 md:gap-4" aria-hidden="true">
-                <div className="col-span-5 aspect-[4/5]" />
-                <div className="col-span-7 row-span-2 min-h-[280px] md:min-h-[420px]" />
-                <div className="col-span-5 aspect-[4/5]" />
-              </div>
-              <div className="absolute inset-0 flex items-center">
-                <picture>
-                  <source type="image/avif" srcSet={cafeAvifSrcSet} sizes={cafeSizes} />
-                  <source type="image/webp" srcSet={cafeWebpSrcSet} sizes={cafeSizes} />
-                  <img
-                    src={cafeJpg}
-                    alt=""
-                    width={1024}
-                    height={682}
-                    className="h-auto w-full rounded-3xl"
-                    fetchPriority="high"
-                    loading="eager"
-                    decoding="async"
+        {/*
+          No framer-motion entrance here: opacity/y initial states were
+          collapsing large hero regions on hydration and driving CLS.
+          Prerendered HTML must match the final layout size.
+        */}
+        <div className="grid lg:grid-cols-12 gap-6 lg:gap-12 lg:items-center">
+          <div className="lg:col-span-6 order-1">
+            <div className="max-w-xl lg:max-w-none">
+              <h1 className="font-sans font-semibold text-[2.15rem] sm:text-4xl md:text-[2.75rem] leading-[1.15] text-foreground tracking-tight mb-5">
+                Feel like yourself again.
+                {/*
+                  Stable two-line subline (prefix / phrase) so the cycling
+                  word never leaves an empty underlined row. Colour accent only.
+                */}
+                <span className="mt-3 block text-lg sm:text-xl font-medium text-foreground leading-snug tracking-normal">
+                  <span className="block">Doctor-led care in Oxford for</span>
+                  <TypewriterPhrase
+                    phrases={heroPhrases}
+                    className="relative mt-1 block w-fit max-w-full text-primary"
                   />
-                </picture>
+                </span>
+              </h1>
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3">
+                <Link href="/book" className="js-book-cta">
+                  <Button
+                    data-testid="hero-book-consultation-btn"
+                    className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-7 h-11 text-sm font-medium w-full sm:w-auto"
+                  >
+                    Book consultation
+                  </Button>
+                </Link>
+                <a
+                  href={whatsappHref(CONSULTATION_WHATSAPP_MESSAGE)}
+                  className="js-whatsapp-cta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    data-testid="hero-whatsapp-btn"
+                    variant="outline"
+                    className="rounded-full border-border px-7 h-11 text-sm font-medium bg-white w-full sm:w-auto"
+                  >
+                    <MessageCircle size={16} className="mr-2" />
+                    WhatsApp
+                  </Button>
+                </a>
               </div>
             </div>
-          </motion.div>
+          </div>
+
+          <div className="lg:col-span-6 order-2">
+            {/*
+              Image in normal flow at its intrinsic aspect ratio.
+              The old absolute collage spacer was much taller than the photo
+              and created the large empty gap under the CTAs on mobile, plus
+              unstable 0×0 CLS regions during hydration.
+            */}
+            <picture>
+              <source type="image/avif" srcSet={cafeAvifSrcSet} sizes={cafeSizes} />
+              <source type="image/webp" srcSet={cafeWebpSrcSet} sizes={cafeSizes} />
+              <img
+                src={cafeJpg}
+                alt=""
+                width={1024}
+                height={682}
+                className="h-auto w-full rounded-3xl"
+                fetchPriority="high"
+                loading="eager"
+                decoding="async"
+              />
+            </picture>
+          </div>
         </div>
       </div>
     </section>
