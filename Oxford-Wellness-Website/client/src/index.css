@@ -121,37 +121,59 @@
 }
 
 :root {
-  --background: 0 0% 100%;
+  /*
+    Cream comparison theme (branch cursor/cream-bg-6f29).
+    Page cream ≈ #faf6ef; card/surface ≈ #fffdf9.
+    Navy (#293c56) and brand blue (#4376ad) unchanged.
+    Revert by restoring --background/--card to white (0 0% 100%).
+  */
+  --background: 40 52% 96%; /* #faf6ef soft cream */
   --foreground: 215 25% 18%;
 
-  --card: 0 0% 100%;
+  --card: 40 55% 99%; /* #fffdf9 warm white */
   --card-foreground: 215 25% 18%;
 
-  --popover: 0 0% 100%;
+  --popover: 40 55% 99%;
   --popover-foreground: 215 25% 18%;
 
-  --primary: 215 35% 25%;
+  --primary: 215 35% 25%; /* #293c56 */
   --primary-foreground: 0 0% 100%;
 
   --secondary: 211 44% 65%;
   --secondary-foreground: 0 0% 100%;
 
-  --muted: 210 20% 97%;
-  --muted-foreground: 215 12% 42%;
+  /* Warm muted panel — sits on cream without cool grey clash */
+  --muted: 38 28% 93%;
+  --muted-foreground: 215 14% 38%;
 
-  --accent: 211 44% 94%;
-  --accent-foreground: 211 40% 35%;
-  /* Brighter brand blue for accent text (secondary family, dark enough for 4.5:1 on white). */
-  --brand-accent-text: 211 44% 47%;
+  /* Soft blue tint nudged warmer for cream */
+  --accent: 211 32% 91%;
+  --accent-foreground: 211 40% 32%;
+  /* Brand blue #4376ad — ≥4.5:1 on cream */
+  --brand-accent-text: 211 44% 45%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 215 20% 90%;
-  --input: 215 20% 90%;
+  --border: 35 18% 86%;
+  --input: 35 18% 86%;
   --ring: 211 44% 65%;
 
   --radius: 1rem;
+}
+
+/*
+  Hard-coded page/nav/card whites → cream surfaces.
+  Keep translucent whites on dark chrome (e.g. bg-white/10) untouched.
+*/
+.bg-white {
+  background-color: hsl(var(--card)) !important;
+}
+.bg-white\/80 {
+  background-color: hsl(var(--card) / 0.8) !important;
+}
+.bg-white\/95 {
+  background-color: hsl(var(--card) / 0.95) !important;
 }
 
 /* Sister brand: The Oxford Pain Doctor – same structure, warmer red palette */

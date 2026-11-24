@@ -26,6 +26,7 @@ const heroPhrases = [
  * Editorial split hero (Nicholas-approved mockup #1).
  * Photo first on mobile; text left / photo right on desktop.
  * WhatsApp is the floating button only — nothing in the hero.
+ * Cream branch: mix-blend-multiply blends the alpha watercolour into cream.
  */
 export default function Hero() {
   return (
@@ -61,7 +62,7 @@ export default function Hero() {
                       alt={heroImage.alt}
                       width={heroImage.width}
                       height={heroImage.height}
-                      className="absolute inset-0 h-full w-full"
+                      className="absolute inset-0 h-full w-full mix-blend-multiply"
                       style={{
                         objectFit: heroImage.objectFit,
                         objectPosition: heroImage.objectPosition,
