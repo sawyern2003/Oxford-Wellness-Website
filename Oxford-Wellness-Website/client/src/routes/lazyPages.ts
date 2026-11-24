@@ -69,6 +69,7 @@ export const ThankYou = createLazyRoute(() => import("@/pages/thank-you"));
 export const CallPage = createLazyRoute(() => import("@/pages/call"));
 export const Book = createLazyRoute(() => import("@/pages/book"));
 export const GiftVouchers = createLazyRoute(() => import("@/pages/gift-vouchers"));
+export const HeroMockup = createLazyRoute(() => import("@/pages/hero-mockup"));
 export const NotFound = createLazyRoute(() => import("@/pages/not-found"));
 export const OxfordPainDoctorHome = createLazyRoute(() => import("@/pages/pain/home"));
 export const PainBook = createLazyRoute(() => import("@/pages/pain/book"));
@@ -159,6 +160,7 @@ function pageForPath(pathname: string): LazyPage | null {
   const path = pathname.replace(/\/+$/, "") || "/";
   if (path === "/") return null;
   if (EXACT_PAGES[path]) return EXACT_PAGES[path];
+  if (/^\/hero-mockups\/[1-5]$/.test(path)) return HeroMockup;
   if (path.startsWith("/oxford-pain-doctor/library/")) return PainLibraryArticle;
   return NotFound;
 }

@@ -37,6 +37,14 @@
   src: url("/fonts/cormorant-garamond-latin-500-normal.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/fonts/cormorant-garamond-latin-400-italic.woff2") format("woff2");
+}
+
 @plugin "tailwindcss-animate";
 
 @custom-variant dark (&:is(.dark *));
@@ -113,7 +121,20 @@
 :is(h1).text-4xl,
 :is(h1).text-5xl,
 :is(h1).md\:text-5xl,
-:is(h1).md\:text-\[2\.75rem\] {
+:is(h1).md\:text-\[2\.75rem\],
+:is(h1).text-\[2\.5rem\],
+:is(h1).text-\[2\.75rem\],
+:is(h1).text-\[3\.25rem\],
+:is(h1).sm\:text-\[2\.75rem\],
+:is(h1).sm\:text-\[3rem\],
+:is(h1).sm\:text-\[3\.25rem\],
+:is(h1).sm\:text-\[4\.5rem\],
+:is(h1).lg\:text-\[3\.75rem\],
+:is(h1).lg\:text-\[4\.5rem\],
+:is(h1).lg\:text-\[4\.75rem\],
+:is(h1).lg\:text-\[5rem\],
+:is(h1).lg\:text-\[6\.5rem\],
+:is(h1).xl\:text-\[7\.25rem\] {
   font-weight: 400 !important;
 }
 

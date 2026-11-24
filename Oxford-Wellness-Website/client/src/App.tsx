@@ -84,6 +84,7 @@ import {
   CallPage,
   Book,
   GiftVouchers,
+  HeroMockup,
   NotFound,
   OxfordPainDoctorHome,
   PainBook,
@@ -193,6 +194,7 @@ function Router() {
         </Route>
         <Route path="/contact" component={Contact} />
         <Route path="/gift-vouchers" component={GiftVouchers} />
+        <Route path="/hero-mockups/:id" component={HeroMockup} />
         <Route path="/recommended-skincare" component={RecommendedSkincare} />
         <Route path="/shop" component={Shop} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />

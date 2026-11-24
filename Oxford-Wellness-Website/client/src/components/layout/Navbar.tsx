@@ -105,8 +105,8 @@ export default function Navbar() {
     <header
       ref={headerRef}
       className={cn(
-        "fixed top-0 w-full z-50 transition-all duration-300",
-        scrolled || helpOpen ? "bg-white/95 backdrop-blur-md border-b border-border/80 py-3" : "bg-white/80 py-4"
+        "fixed top-0 w-full z-50 transition-all duration-300 bg-white",
+        scrolled || helpOpen ? "border-b border-border/80 py-3" : "py-4"
       )}
     >
       <div className="container-page flex items-center justify-between gap-4">
@@ -171,14 +171,14 @@ export default function Navbar() {
           ))}
           {pain ? (
             <Link href={PAIN_BOOK_HREF}>
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-5 h-9 text-sm font-medium">
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded px-5 h-9 text-sm font-medium shadow-none">
                 Book
               </Button>
             </Link>
           ) : (
             <Link href="/book">
               <Button
-                className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-5 h-9 text-sm font-medium"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 rounded px-5 h-9 text-sm font-medium shadow-none"
               >
                 Book
               </Button>
@@ -228,17 +228,17 @@ export default function Navbar() {
           ))}
           {pain ? (
             <Link href={PAIN_BOOK_HREF}>
-              <Button className="w-full mt-4 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90">
+              <Button className="w-full mt-4 rounded bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 shadow-none">
                 Book a consultation
               </Button>
             </Link>
           ) : (
             <Link href="/book">
               <Button
-                className="w-full mt-4 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90"
+                className="w-full mt-4 rounded bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 shadow-none"
                 onClick={() => setIsOpen(false)}
               >
-                Book consultation
+                Book a consultation
               </Button>
             </Link>
           )}
