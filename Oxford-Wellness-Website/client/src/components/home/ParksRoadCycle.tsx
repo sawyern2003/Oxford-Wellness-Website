@@ -271,7 +271,7 @@ export default function ParksRoadCycle() {
   const showAnimatedFrames = framesReady && !reduced;
 
   return (
-    <section ref={sceneRef} className="parks-road-scene relative bg-white" aria-hidden="true">
+    <section ref={sceneRef} className="parks-road-scene relative bg-background" aria-hidden="true">
       <style>{`
         .parks-road-scene { height: ${PARKS_ROAD.scrollHeightMobile}; }
         .parks-road-frame { height: ${PARKS_ROAD.frameHeightMobile}; }

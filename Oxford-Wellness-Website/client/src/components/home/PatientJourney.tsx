@@ -216,7 +216,7 @@ export default function PatientJourney() {
   const lineClip = useTransform(drawn, (value) => `inset(0px 0px ${(1 - value) * 100}% 0px)`);
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-background">
       <div className="container-wide">
         <div className="max-w-xl mb-14 md:mb-28">
           <h2 className="font-sans font-semibold text-3xl md:text-4xl text-foreground tracking-tight">

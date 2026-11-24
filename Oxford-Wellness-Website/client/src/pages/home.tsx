@@ -165,7 +165,7 @@ export default function Home() {
       <ClinicMoveNote />
 
       {/* Gift vouchers: below hero, quiet mention */}
-      <RevealSection className="py-14 md:py-16 bg-white">
+      <RevealSection className="py-14 md:py-16 bg-background">
         <div className="container-page">
           <FadeIn className="max-w-xl mx-auto text-center">
             <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">

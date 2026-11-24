@@ -30,7 +30,11 @@ const heroPhrases = [
 export default function Hero() {
   return (
     <>
-      <section className="bg-white pt-20 md:pt-24 pb-8 md:pb-12 overflow-hidden min-h-[100svh]">
+      {/*
+        Mobile: no min-height so the care sprig can sit ~64–80px under the CTA.
+        Desktop: keep the tall editorial composition.
+      */}
+      <section className="bg-background pt-20 md:pt-24 pb-0 md:pb-12 overflow-hidden md:min-h-[100svh]">
         <div className="container-wide">
           {/*
             No framer-motion entrance: opacity/y initial states collapsed
@@ -40,7 +44,7 @@ export default function Hero() {
           <div className="grid lg:grid-cols-12 gap-5 lg:gap-16 lg:items-center lg:min-h-[calc(100vh-6.5rem)]">
             <div className="lg:col-span-6 order-1 lg:order-2">
               <figure>
-                <div className="relative h-[42vh] max-h-[360px] sm:h-[46vh] sm:max-h-[420px] lg:h-[82vh] lg:max-h-[780px] overflow-hidden bg-white">
+                <div className="relative h-[42vh] max-h-[360px] sm:h-[46vh] sm:max-h-[420px] lg:h-[82vh] lg:max-h-[780px] overflow-hidden bg-background">
                   <picture>
                     <source
                       type="image/avif"
@@ -103,10 +107,11 @@ export default function Hero() {
 
       {/*
         Care line: centred Cormorant typewriter. Sprig + hairline above.
-        First phrase is prerendered; height reserved for the longest phrase.
+        Mobile: prefix on line 1, cycling phrase on line 2 (both centred).
+        Height reserved for the longest phrase — CLS stays 0.
       */}
       <section
-        className="bg-white pt-20 md:pt-28 pb-20 md:pb-28"
+        className="bg-background pt-16 md:pt-28 pb-20 md:pb-28"
         aria-label="Doctor-led care"
       >
         <div className="container-wide flex flex-col items-center text-center">
@@ -136,7 +141,7 @@ export default function Hero() {
           </div>
 
           <p
-            className="text-primary text-balance max-w-4xl leading-[1.15] tracking-tight"
+            className="text-primary text-balance max-w-4xl leading-[1.15] tracking-tight flex flex-col items-center gap-1"
             style={{
               fontFamily:
                 '"Cormorant Garamond", "Cormorant Garamond Fallback", Georgia, serif',
@@ -144,10 +149,10 @@ export default function Hero() {
               fontSize: "clamp(2rem, 5vw, 3.75rem)",
             }}
           >
-            <span>{HERO_CARE_PREFIX} </span>
+            <span className="block">{HERO_CARE_PREFIX}</span>
             <TypewriterPhrase
               phrases={heroPhrases}
-              className="relative inline-block max-w-full align-baseline text-brand-accent-text"
+              className="relative block max-w-full text-brand-accent-text"
             />
           </p>
         </div>

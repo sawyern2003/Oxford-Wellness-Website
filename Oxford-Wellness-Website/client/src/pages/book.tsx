@@ -1,17 +1,30 @@
+import { useEffect, useState } from "react";
+import { useSearch } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
 import { useBreadcrumbSchema } from "@/hooks/useBreadcrumbSchema";
-import { resolveBookPage } from "@/lib/booking";
+import { resolveBookPage, type ResolvedBooking } from "@/lib/booking";
+
+/**
+ * Resolve Cliniko URLs without reading `window` during render.
+ * SSR / first paint always use the generic diary (matches prerender of /book).
+ * After mount, re-resolve from the live query string so ?treatment= / ?consultation=
+ * deep links work on SPA navigation and cold loads without a #418 mismatch.
+ */
+function useResolvedBooking(): ResolvedBooking {
+  const search = useSearch();
+  const [resolved, setResolved] = useState<ResolvedBooking>(() =>
+    resolveBookPage(""),
+  );
+
+  useEffect(() => {
+    setResolved(resolveBookPage(search ? `?${search}` : ""));
+  }, [search]);
+
+  return resolved;
+}
 
 export default function Book() {
-  const resolved =
-    typeof window !== "undefined"
-      ? resolveBookPage(window.location.search)
-      : {
-          bookingUrl: "",
-          embedUrl: "",
-          heading: "Book an appointment",
-          kind: "generic" as const,
-        };
+  const resolved = useResolvedBooking();
 
   useBreadcrumbSchema([{ name: "Book", path: "/book" }]);
   useSEO({
@@ -24,7 +37,7 @@ export default function Book() {
   const isSpecific = resolved.kind !== "generic";
 
   return (
-    <div className="pt-28 min-h-screen bg-white">
+    <div className="pt-28 min-h-screen bg-background">
       <div className="container mx-auto px-6 py-10 md:py-12 max-w-5xl">
         <h1 className="font-sans font-semibold text-3xl md:text-4xl text-foreground tracking-tight mb-3">
           {resolved.heading}

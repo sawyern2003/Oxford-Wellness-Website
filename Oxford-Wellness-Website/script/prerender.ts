@@ -93,6 +93,24 @@ function injectModulePreloads(html: string, hrefs: string[]): string {
   return html.replace("</head>", `    ${tags}\n  </head>`);
 }
 
+/** Homepage-only LCP preload (keep in sync with heroImage.ts). */
+const HOME_HERO_LCP_PRELOAD = `<link
+      rel="preload"
+      as="image"
+      type="image/avif"
+      imagesrcset="/images/hero/dr-inga-about-640.avif 640w, /images/hero/dr-inga-about-960.avif 960w, /images/hero/dr-inga-about-1280.avif 1280w"
+      imagesizes="(min-width: 1024px) min(42vw, 720px), 92vw"
+      fetchpriority="high"
+    />`;
+
+function injectHomeHeroPreload(html: string, pagePath: string): string {
+  if (pagePath !== "/") return html;
+  if (html.includes('rel="preload"') && html.includes("imagesrcset=") && html.includes("dr-inga-about-")) {
+    return html;
+  }
+  return html.replace("</head>", `    ${HOME_HERO_LCP_PRELOAD}\n  </head>`);
+}
+
 function injectJsonLd(html: string, scripts: JsonLdScript[] | undefined): string {
   if (!scripts?.length) return html;
   const tags = scripts
@@ -183,6 +201,7 @@ export async function prerender() {
       '<div id="root"></div>',
       `<div id="root">${resolveReactSuspenseSlots(appHtml)}</div>`,
     );
+    page = injectHomeHeroPreload(page, pagePath);
     page = injectJsonLd(page, jsonLd);
 
     const hints = ROUTE_CHUNK_HINTS[pagePath];

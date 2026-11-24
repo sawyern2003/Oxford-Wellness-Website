@@ -43,15 +43,7 @@
       crossorigin
     />
 
-    <!-- LCP: homepage hero portrait (keep in sync with heroImage.ts). -->
-    <link
-      rel="preload"
-      as="image"
-      type="image/avif"
-      imagesrcset="/images/hero/dr-inga-about-640.avif 640w, /images/hero/dr-inga-about-960.avif 960w, /images/hero/dr-inga-about-1280.avif 1280w"
-      imagesizes="(min-width: 1024px) min(42vw, 720px), 92vw"
-      fetchpriority="high"
-    />
+    <!-- Homepage LCP hero preload is injected only for / during prerender. -->
 
     <!-- Structured Data: LocalBusiness + Physician -->
     <script type="application/ld+json">
