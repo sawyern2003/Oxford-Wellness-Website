@@ -155,7 +155,7 @@ function JourneyStep({
         >
           <h3 className="font-sans font-semibold text-xl md:text-2xl text-foreground tracking-tight leading-snug mb-2">
             <span className={cn("transition-colors duration-500", lit ? "text-primary" : "text-muted-foreground")}>
-              {String(index + 1).padStart(2, "0")} –{" "}
+              {String(index + 1).padStart(2, "0")}
             </span>
             {title}
           </h3>

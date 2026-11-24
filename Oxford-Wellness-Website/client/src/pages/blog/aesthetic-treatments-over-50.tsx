@@ -57,7 +57,7 @@ const data: BlogPostData = {
     {
       heading: "Morpheus8 for Skin Tightening",
       paragraphs: [
-        "For women with significant skin laxity - particularly along the jawline, neck, and lower face - Morpheus8 offers a level of skin tightening that injectables cannot achieve. Its deep radiofrequency energy contracts existing collagen (producing immediate tightening) and stimulates new collagen formation (producing progressive improvement over 3–6 months).",
+        "For women with significant skin laxity - particularly along the jawline, neck, and lower face - Morpheus8 offers a level of skin tightening that injectables cannot achieve. Its deep radiofrequency energy contracts existing collagen (producing immediate tightening) and stimulates new collagen formation (producing progressive improvement over 3 to 6 months).",
         "Morpheus8 is particularly well-suited to women in their 50s who are experiencing the early stages of jowl formation and neck laxity. The treatment produces measurable improvement in skin laxity without the downtime and risks of surgical alternatives.",
         "A course of 3 Morpheus8 treatments is typically recommended for optimal results, with maintenance once yearly thereafter.",
       ],

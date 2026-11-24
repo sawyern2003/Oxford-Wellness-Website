@@ -60,7 +60,7 @@ const data: BlogPostData = {
       heading: "A Gradual Enhancement Approach",
       paragraphs: [
         "For first-time lip filler patients, Dr Inga Taganova strongly advocates a conservative, graduated approach: start with less than you think you want, assess the result after 2 weeks when the swelling has fully settled, and decide whether you would like more at your next appointment.",
-        "This approach protects you from the over-filled outcome that most patients dread. It also gives both you and Dr Inga Taganova the information you need to refine the treatment plan for future sessions. Most first-time patients are treated with 0.5–1ml of filler - sometimes less.",
+        "This approach protects you from the over-filled outcome that most patients dread. It also gives both you and Dr Inga Taganova the information you need to refine the treatment plan for future sessions. Most first-time patients are treated with 0.5 to 1ml of filler - sometimes less.",
       ],
     },
     {
@@ -73,7 +73,7 @@ const data: BlogPostData = {
     {
       heading: "Maintenance: How Often Do Lip Fillers Need Topping Up?",
       paragraphs: [
-        "Lip fillers are metabolised more quickly than fillers in other areas of the face - partly because the lips are highly mobile and metabolically active. Most patients find their lip filler lasts 6–9 months, with some patients maintaining results for up to 12 months.",
+        "Lip fillers are metabolised more quickly than fillers in other areas of the face - partly because the lips are highly mobile and metabolically active. Most patients find their lip filler lasts 6 to 9 months, with some patients maintaining results for up to 12 months.",
         "With repeat treatments over time, some patients find they need less filler to maintain their result, as repeated treatment can improve the lip's own structure. Dr Inga Taganova will advise the optimal treatment interval based on your individual response.",
       ],
     },

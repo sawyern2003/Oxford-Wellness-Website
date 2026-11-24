@@ -12,7 +12,7 @@ const data: BlogPostData = {
     src: "/blog-jaw-slimming-treatment-oxford.webp",
     alt: "Grey-haired woman in profile drinking coffee by a window",
   },
-  intro: "Jaw treatment with anti-wrinkle injections serves two distinct purposes: slimming an overly prominent or square jawline for aesthetic reasons, and treating bruxism—chronic teeth grinding or jaw clenching that causes pain, headaches, and dental damage. Both concerns are addressed with the same technique, injecting the masseter muscles to reduce their size and activity.",
+  intro: "Jaw treatment with anti-wrinkle injections serves two distinct purposes: slimming an overly prominent or square jawline for aesthetic reasons, and treating bruxism, chronic teeth grinding or jaw clenching that causes pain, headaches, and dental damage. Both concerns are addressed with the same technique, injecting the masseter muscles to reduce their size and activity.",
   keyPoints: [
     "Masseter treatment reduces the bulk of overactive jaw muscles",
     "It can slim a square jawline or treat teeth grinding and jaw pain",
@@ -24,21 +24,21 @@ const data: BlogPostData = {
     {
       heading: "What the Masseter Muscles Are",
       paragraphs: [
-        "The masseter muscles are the powerful muscles that run from your cheekbone to your lower jaw. They are primarily responsible for chewing. In some people, these muscles become hypertrophied—enlarged and overdeveloped—due to chronic clenching, grinding, or simply genetic tendency.",
+        "The masseter muscles are the powerful muscles that run from your cheekbone to your lower jaw. They are primarily responsible for chewing. In some people, these muscles become hypertrophied, enlarged and overdeveloped, due to chronic clenching, grinding, or simply genetic tendency.",
         "Enlarged masseters create a square, heavy jawline. They can also cause jaw tension, headaches, and dental problems. Treating the masseters with anti-wrinkle injections relaxes and gradually reduces the muscle bulk, softening the jawline and reducing symptoms associated with overactivity.",
       ],
     },
     {
       heading: "Jaw Slimming for Aesthetic Reasons",
       paragraphs: [
-        "Some women have a naturally square or wide lower face due to prominent masseter muscles. This can create a masculine appearance or make the face look bottom-heavy. Masseter reduction creates a more oval, tapered jawline—a shape often perceived as more feminine and elegant.",
-        "The effect is subtle. You will not suddenly have a different face. But the lower face becomes softer, more refined, and better balanced with the rest of your features. The change is gradual, which most patients find reassuring—no one will notice a dramatic overnight transformation.",
+        "Some women have a naturally square or wide lower face due to prominent masseter muscles. This can create a masculine appearance or make the face look bottom-heavy. Masseter reduction creates a more oval, tapered jawline, a shape often perceived as more feminine and elegant.",
+        "The effect is subtle. You will not suddenly have a different face. But the lower face becomes softer, more refined, and better balanced with the rest of your features. The change is gradual, which most patients find reassuring, no one will notice a dramatic overnight transformation.",
       ],
     },
     {
       heading: "Treatment for Teeth Grinding and Jaw Clenching",
       paragraphs: [
-        "Bruxism—chronic teeth grinding or jaw clenching—affects around 10% of adults. It often occurs during sleep and can be severe enough to cause headaches, jaw pain, tooth wear, broken dental work, and temporomandibular joint (TMJ) problems.",
+        "Bruxism, chronic teeth grinding or jaw clenching, affects around 10% of adults. It often occurs during sleep and can be severe enough to cause headaches, jaw pain, tooth wear, broken dental work, and temporomandibular joint (TMJ) problems.",
         "Stress is a common trigger, but many people clench or grind without being aware of it. Dentists often notice the signs: worn tooth enamel, fractured teeth, or enlarged jaw muscles.",
         "Masseter injections reduce the force with which you clench or grind. The muscles still function normally for eating and speaking, but the excessive, unconscious activity that causes damage and discomfort is significantly reduced. Many patients report less jaw pain, fewer headaches, and feedback from their dentist that tooth wear has improved.",
       ],
@@ -53,7 +53,7 @@ const data: BlogPostData = {
     {
       heading: "What to Expect: Timeline and Results",
       paragraphs: [
-        "The injections themselves take around ten to fifteen minutes. There is minimal discomfort—most people describe a brief pinch or pressure. No anaesthetic is needed, and you can return to normal activities immediately.",
+        "The injections themselves take around ten to fifteen minutes. There is minimal discomfort, most people describe a brief pinch or pressure. No anaesthetic is needed, and you can return to normal activities immediately.",
         "Results begin to appear around two to four weeks after treatment, with maximum effect at six to eight weeks. For jaw slimming, you will notice the lower face becoming narrower and more tapered. For bruxism, jaw tension and related symptoms typically improve within a few weeks.",
         "The effect lasts four to six months on average. After that, the muscle gradually regains its original size and activity. Repeat treatments are needed to maintain results. Many people find that with repeated treatments, the muscle shrinks more substantially and results last longer.",
       ],
@@ -83,14 +83,14 @@ const data: BlogPostData = {
     {
       heading: "Aftercare",
       paragraphs: [
-        "Aftercare for masseter treatment is straightforward. Avoid rubbing or massaging the treated area for the rest of the day. You can resume normal activities, including exercise, immediately—though it is sensible to avoid very intense jaw use (such as chewing gum excessively) for a day or two.",
+        "Aftercare for masseter treatment is straightforward. Avoid rubbing or massaging the treated area for the rest of the day. You can resume normal activities, including exercise, immediately, though it is sensible to avoid very intense jaw use (such as chewing gum excessively) for a day or two.",
         "You will be asked to return for a review two to four weeks after treatment to assess the result and determine whether any adjustment is needed.",
       ],
     },
     {
       heading: "How It Differs from Other Anti-Wrinkle Treatments",
       paragraphs: [
-        "Masseter treatment uses the same product as anti-wrinkle injections for the forehead or around the eyes, but the technique is different. The masseters are large, powerful muscles that require higher doses and careful placement. The aim is not to freeze the muscle entirely—you still need to chew—but to reduce excessive activity and bulk.",
+        "Masseter treatment uses the same product as anti-wrinkle injections for the forehead or around the eyes, but the technique is different. The masseters are large, powerful muscles that require higher doses and careful placement. The aim is not to freeze the muscle entirely, you still need to chew, but to reduce excessive activity and bulk.",
         "Because the masseter is a large muscle and the dose is higher, the treatment is slightly more expensive than treating smaller areas such as crow's feet.",
       ],
     },

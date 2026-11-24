@@ -15,8 +15,8 @@ export default function CookiePolicy() {
     <div className="pt-28 min-h-screen bg-background">
       <div className="container mx-auto px-6 py-16 max-w-3xl">
         <div className="mb-12">
-          <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">Legal</p>
-          <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-4">Cookie Policy</h1>
+          <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">Legal</p>
+          <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-4">Cookie policy</h1>
           <p className="text-sm text-muted-foreground">Last updated: October 2026</p>
         </div>
 
@@ -51,7 +51,7 @@ export default function CookiePolicy() {
                 <h3 className="font-semibold text-primary mb-2">Third-Party Cookies <span className="text-xs font-normal text-muted-foreground ml-1">(Requires Consent)</span></h3>
                 <p className="text-sm">Our website embeds content from third-party services that may set their own cookies:</p>
                 <ul className="list-disc pl-5 mt-2 text-sm space-y-1">
-                  <li><strong>Cliniko</strong> — embedded online booking diary on the Book pages. Subject to Cliniko's own cookie and privacy policies.</li>
+                  <li><strong>Cliniko</strong>, embedded online booking diary on the Book pages. Subject to Cliniko's own cookie and privacy policies.</li>
                   <li><strong>Google Maps</strong> - embedded map on the Contact page. Subject to Google's privacy policy.</li>
                 </ul>
               </div>
@@ -103,7 +103,7 @@ export default function CookiePolicy() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-border text-sm text-muted-foreground">
-          <p>Related: <Link href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</Link> · <Link href="/terms-and-conditions" className="text-primary hover:underline">Terms & Conditions</Link></p>
+          <p>Related: <Link href="/privacy-policy" className="text-primary hover:underline">Privacy policy</Link> · <Link href="/terms-and-conditions" className="text-primary hover:underline">Terms & conditions</Link></p>
         </div>
       </div>
     </div>

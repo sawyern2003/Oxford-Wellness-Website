@@ -103,7 +103,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "consult-menopause",
-    name: "Menopause & Women's Health Consultation — Initial (60 min)",
+    name: "Menopause & Women's Health Consultation, Initial (60 min)",
     category: "consultations",
     description: "Consultation for menopause, perimenopause and related women's health concerns.",
     amount: "£275",
@@ -115,7 +115,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "consult-menopause-follow-up",
-    name: "Menopause & Women's Health — Follow-up (30 min)",
+    name: "Menopause & Women's Health, Follow-up (30 min)",
     category: "consultations",
     description: "Review of an existing menopause or women's health plan.",
     amount: "£150",
@@ -194,7 +194,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "toxin-chin",
-    name: "Dimpled chin — standalone",
+    name: "Dimpled chin, standalone",
     category: "anti-wrinkle",
     amount: "£150",
     booking: "aesthetic-skin",
@@ -202,7 +202,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "toxin-bunny",
-    name: "Bunny lines — as an addition",
+    name: "Bunny lines, as an addition",
     category: "anti-wrinkle",
     amount: "£50",
     booking: "aesthetic-skin",
@@ -210,7 +210,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "toxin-chin-addon",
-    name: "Dimpled chin — as an addition",
+    name: "Dimpled chin, as an addition",
     category: "anti-wrinkle",
     amount: "£50",
     booking: "aesthetic-skin",
@@ -218,7 +218,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "toxin-mouth-addon",
-    name: "Downturned mouth — as an addition",
+    name: "Downturned mouth, as an addition",
     category: "anti-wrinkle",
     amount: "£50",
     booking: "aesthetic-skin",
@@ -242,7 +242,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "filler-05",
-    name: "Dermal filler — 0.5ml",
+    name: "Dermal filler, 0.5ml",
     category: "fillers",
     amount: "£250",
     booking: "aesthetic-skin",
@@ -250,7 +250,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "filler-1ml",
-    name: "Dermal filler — 1ml",
+    name: "Dermal filler, 1ml",
     category: "fillers",
     amount: "£320",
     booking: "aesthetic-skin",
@@ -259,7 +259,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "filler-2ml",
-    name: "Dermal filler — 2ml",
+    name: "Dermal filler, 2ml",
     category: "fillers",
     amount: "£590",
     booking: "aesthetic-skin",
@@ -268,7 +268,7 @@ export const catalogue: CatalogueItem[] = [
   // £320 keeps the existing 0.7ml volume. Confirm this figure against the product used in clinic.
   fee({
     id: "lip-07",
-    name: "Lip filler — 0.7ml",
+    name: "Lip filler, 0.7ml",
     category: "fillers",
     amount: "£320",
     booking: "aesthetic-skin",
@@ -292,7 +292,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "polynucleotides",
-    name: "Polynucleotides — single session",
+    name: "Polynucleotides, single session",
     category: "fillers",
     amount: "£350",
     booking: "aesthetic-skin",
@@ -300,7 +300,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "polynucleotides-course",
-    name: "Polynucleotides — course of 3",
+    name: "Polynucleotides, course of 3",
     category: "fillers",
     amount: "£900",
     booking: "aesthetic-skin",
@@ -308,7 +308,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "profhilo",
-    name: "Profhilo — single session",
+    name: "Profhilo, single session",
     category: "fillers",
     amount: "£350",
     booking: "aesthetic-skin",
@@ -316,7 +316,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "profhilo-course",
-    name: "Profhilo — course of 2",
+    name: "Profhilo, course of 2",
     category: "fillers",
     amount: "£650",
     booking: "aesthetic-skin",
@@ -324,7 +324,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "morpheus-eyes",
-    name: "Morpheus8 — eyes or around mouth",
+    name: "Morpheus8, eyes or around mouth",
     category: "skin",
     amount: "£450",
     booking: "aesthetic-skin",
@@ -332,7 +332,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "morpheus-full-face",
-    name: "Morpheus8 — full face",
+    name: "Morpheus8, full face",
     category: "skin",
     amount: "£600",
     booking: "aesthetic-skin",
@@ -341,7 +341,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "morpheus-face-neck",
-    name: "Morpheus8 — face and neck",
+    name: "Morpheus8, face and neck",
     category: "skin",
     amount: "£750",
     booking: "aesthetic-skin",
@@ -349,7 +349,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "morpheus-face",
-    name: "Morpheus8 — face, neck and décolletage",
+    name: "Morpheus8, face, neck and décolletage",
     category: "skin",
     amount: "£900",
     booking: "aesthetic-skin",
@@ -357,7 +357,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "morpheus-tummy",
-    name: "Morpheus8 — tummy",
+    name: "Morpheus8, tummy",
     category: "skin",
     amount: "£800",
     booking: "aesthetic-skin",
@@ -365,7 +365,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "morpheus-large",
-    name: "Morpheus8 — stretch marks or large area",
+    name: "Morpheus8, stretch marks or large area",
     category: "skin",
     amount: "£900",
     booking: "aesthetic-skin",
@@ -373,7 +373,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "morpheus-addon",
-    name: "Morpheus8 resurfacing — as an addition",
+    name: "Morpheus8 resurfacing, as an addition",
     category: "skin",
     amount: null,
     booking: "aesthetic-skin",
@@ -381,7 +381,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "lumecca-hands",
-    name: "Lumecca IPL — hands",
+    name: "Lumecca IPL, hands",
     category: "skin",
     amount: "£150",
     booking: "aesthetic-skin",
@@ -389,7 +389,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "lumecca-small",
-    name: "Lumecca IPL — small area",
+    name: "Lumecca IPL, small area",
     category: "skin",
     amount: "£175",
     booking: "aesthetic-skin",
@@ -397,7 +397,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "lumecca-medium",
-    name: "Lumecca IPL — medium area",
+    name: "Lumecca IPL, medium area",
     category: "skin",
     amount: "£225",
     booking: "aesthetic-skin",
@@ -405,7 +405,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "lumecca-face",
-    name: "Lumecca IPL — full face",
+    name: "Lumecca IPL, full face",
     category: "skin",
     amount: "£275",
     booking: "aesthetic-skin",
@@ -413,7 +413,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "lumecca-face-neck",
-    name: "Lumecca IPL — face and neck",
+    name: "Lumecca IPL, face and neck",
     category: "skin",
     amount: "£325",
     booking: "aesthetic-skin",
@@ -429,7 +429,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "forma-face",
-    name: "Forma — face, single session",
+    name: "Forma, face, single session",
     category: "skin",
     amount: "£195",
     booking: "aesthetic-skin",
@@ -437,7 +437,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "forma-face-course",
-    name: "Forma — face, course of 6",
+    name: "Forma, face, course of 6",
     category: "skin",
     amount: "£995",
     booking: "aesthetic-skin",
@@ -462,7 +462,7 @@ export const catalogue: CatalogueItem[] = [
   // Weight-loss consultation fee hidden pending CQC registration — restore when ready.
   fee({
     id: "forma-plus",
-    name: "Forma Plus — single session",
+    name: "Forma Plus, single session",
     category: "body",
     amount: "£250",
     booking: "aesthetic-skin",
@@ -470,7 +470,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "forma-plus-course",
-    name: "Forma Plus — course of 6",
+    name: "Forma Plus, course of 6",
     category: "body",
     amount: "£1,250",
     booking: "aesthetic-skin",
@@ -478,7 +478,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "inmode-fx",
-    name: "InMode FX — single session",
+    name: "InMode FX, single session",
     category: "body",
     amount: "£195",
     booking: "aesthetic-skin",
@@ -486,7 +486,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "inmode-fx-course",
-    name: "InMode FX — course of 6",
+    name: "InMode FX, course of 6",
     category: "body",
     amount: "£995",
     booking: "aesthetic-skin",
@@ -494,7 +494,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "forma-v",
-    name: "Forma V — single session",
+    name: "Forma V, single session",
     category: "womens",
     description: "Intimate treatment. Suitability is decided in consultation.",
     amount: "£450",
@@ -503,7 +503,7 @@ export const catalogue: CatalogueItem[] = [
   }),
   fee({
     id: "forma-v-course",
-    name: "Forma V — course of 3",
+    name: "Forma V, course of 3",
     category: "womens",
     description: "Intimate treatment. Suitability is decided in consultation.",
     amount: "£1,200",

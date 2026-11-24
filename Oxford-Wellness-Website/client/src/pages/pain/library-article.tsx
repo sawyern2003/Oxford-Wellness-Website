@@ -85,8 +85,8 @@ export default function PainLibraryArticle({ slug }: { slug: string }) {
           >
             ← All articles
           </Link>
-          <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
-            Pain Library · {readingTime(article)}
+          <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">
+            Pain library · {readingTime(article)}
           </p>
           <h1 className="font-sans font-semibold text-3xl md:text-5xl text-foreground tracking-tight mb-5 leading-snug">
             {article.title}

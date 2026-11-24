@@ -13,8 +13,8 @@ export default function PrivacyPolicy() {
     <div className="pt-28 min-h-screen bg-background">
       <div className="container mx-auto px-6 py-16 max-w-4xl">
         <div className="mb-12 text-center">
-          <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">Legal</p>
-          <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-4">Privacy Policy</h1>
+          <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">Legal</p>
+          <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-4">Privacy policy</h1>
           <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
             How we handle information submitted through the pre-consultation service.
           </p>

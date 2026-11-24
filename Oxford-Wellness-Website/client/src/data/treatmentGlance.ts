@@ -25,7 +25,7 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/anti-wrinkle-injections-oxford": {
     treatmentName: "Anti-Wrinkle Injections",
     summary:
-      "Prescription muscle-relaxing injections smooth dynamic lines – forehead, frown, and crow's feet – with natural-looking results from a GMC-registered doctor.",
+      "Prescription muscle-relaxing injections smooth dynamic lines, forehead, frown, and crow's feet, with natural-looking results from a GMC-registered doctor.",
     highlights: [
       "Forehead lines",
       "Frown lines between the brows",
@@ -34,16 +34,16 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
       "Brow lift and lip lines",
     ],
     atAGlance: [
-      { label: "Session time", value: "15–20 minutes", icon: "syringe" },
+      { label: "Session time", value: "15 to 20 minutes", icon: "syringe" },
       { label: "Downtime", value: "None", icon: "briefcase" },
-      { label: "Results visible", value: "3–7 days; full at 14 days", icon: "hourglass" },
-      { label: "Results last", value: "3–4 months", icon: "calendar" },
+      { label: "Results visible", value: "3 to 7 days; full at 14 days", icon: "hourglass" },
+      { label: "Results last", value: "3 to 4 months", icon: "calendar" },
     ],
   },
   "/treatments/dermal-fillers-oxford": {
     treatmentName: "Dermal Fillers",
     summary:
-      "Hyaluronic acid fillers restore lost volume, soften deep lines, and contour the face – delivered with a conservative, natural-looking approach.",
+      "Hyaluronic acid fillers restore lost volume, soften deep lines, and contour the face, delivered with a conservative, natural-looking approach.",
     highlights: [
       "Cheek volume and contour",
       "Nasolabial and marionette lines",
@@ -52,16 +52,16 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
       "Temple hollowing",
     ],
     atAGlance: [
-      { label: "Session time", value: "30–45 minutes", icon: "timer" },
-      { label: "Downtime", value: "Mild swelling 3–5 days", icon: "bed" },
-      { label: "Results visible", value: "Immediate; settles in 2–4 weeks", icon: "hourglass" },
-      { label: "Results last", value: "6–18 months", icon: "calendar" },
+      { label: "Session time", value: "30 to 45 minutes", icon: "timer" },
+      { label: "Downtime", value: "Mild swelling 3 to 5 days", icon: "bed" },
+      { label: "Results visible", value: "Immediate; settles in 2 to 4 weeks", icon: "hourglass" },
+      { label: "Results last", value: "6 to 18 months", icon: "calendar" },
     ],
   },
   "/treatments/lip-fillers-oxford": {
     treatmentName: "Lip Fillers",
     summary:
-      "Premium hyaluronic acid adds subtle volume, definition, and hydration – never an overfilled look.",
+      "Premium hyaluronic acid adds subtle volume, definition, and hydration, never an overfilled look.",
     highlights: [
       "Natural volume and fullness",
       "Cupid's bow and border definition",
@@ -71,15 +71,15 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
     ],
     atAGlance: [
       { label: "Session time", value: "Approx. 30 minutes", icon: "timer" },
-      { label: "Downtime", value: "Swelling 24–48 hours", icon: "bed" },
+      { label: "Downtime", value: "Swelling 24 to 48 hours", icon: "bed" },
       { label: "Results visible", value: "Immediate; final at 2 weeks", icon: "hourglass" },
-      { label: "Results last", value: "6–12 months", icon: "calendar" },
+      { label: "Results last", value: "6 to 12 months", icon: "calendar" },
     ],
   },
   "/treatments/profhilo-oxford": {
     treatmentName: "Profhilo",
     summary:
-      "Pure hyaluronic acid bio-remodels skin from within – stimulating collagen and elastin for lasting hydration, firmness, and radiance.",
+      "Pure hyaluronic acid bio-remodels skin from within, stimulating collagen and elastin for lasting hydration, firmness, and radiance.",
     highlights: [
       "Skin laxity and loss of firmness",
       "Fine lines from dehydration",
@@ -88,16 +88,16 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
       "Ageing hands",
     ],
     atAGlance: [
-      { label: "Session time", value: "15–20 minutes", icon: "timer" },
+      { label: "Session time", value: "15 to 20 minutes", icon: "timer" },
       { label: "Downtime", value: "None", icon: "briefcase" },
-      { label: "Results visible", value: "2–4 weeks; peak after 2nd session", icon: "hourglass" },
+      { label: "Results visible", value: "2 to 4 weeks; peak after 2nd session", icon: "hourglass" },
       { label: "Sessions needed", value: "2 sessions, 4 weeks apart", icon: "calendar" },
     ],
   },
   "/treatments/morpheus8-oxford": {
     treatmentName: "Morpheus8",
     summary:
-      "RF microneedling tightens skin, reduces wrinkles and scars, and remodels collagen deep in the tissue – without surgery.",
+      "RF microneedling tightens skin, reduces wrinkles and scars, and remodels collagen deep in the tissue, without surgery.",
     highlights: [
       "Loose skin on face, neck, and jowls",
       "Deep wrinkles and folds",
@@ -106,10 +106,10 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
       "Stretch marks and body laxity",
     ],
     atAGlance: [
-      { label: "Session time", value: "30–60 minutes", icon: "timer" },
-      { label: "Downtime", value: "Redness 2–5 days", icon: "bed" },
-      { label: "Results visible", value: "3–6 months", icon: "hourglass" },
-      { label: "Sessions needed", value: "3 sessions, 4–6 weeks apart", icon: "calendar" },
+      { label: "Session time", value: "30 to 60 minutes", icon: "timer" },
+      { label: "Downtime", value: "Redness 2 to 5 days", icon: "bed" },
+      { label: "Results visible", value: "3 to 6 months", icon: "hourglass" },
+      { label: "Sessions needed", value: "3 sessions, 4 to 6 weeks apart", icon: "calendar" },
     ],
   },
   "/treatments/medical-weight-loss-oxford": {
@@ -144,14 +144,14 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
     atAGlance: [
       { label: "Session time", value: "Approx. 30 minutes", icon: "timer" },
       { label: "Downtime", value: "Minimal", icon: "briefcase" },
-      { label: "Results visible", value: "5–7 days; full at 2 weeks", icon: "hourglass" },
-      { label: "Results last", value: "6–9 months", icon: "calendar" },
+      { label: "Results visible", value: "5 to 7 days; full at 2 weeks", icon: "hourglass" },
+      { label: "Results last", value: "6 to 9 months", icon: "calendar" },
     ],
   },
   "/treatments/chemical-peels-oxford": {
     treatmentName: "Chemical Peels",
     summary:
-      "Medical-grade peels resurface skin to improve acne, pigmentation, fine lines, and dullness – applied by a GMC doctor.",
+      "Medical-grade peels resurface skin to improve acne, pigmentation, fine lines, and dullness, applied by a GMC doctor.",
     highlights: [
       "Acne and breakouts",
       "Hyperpigmentation and sun damage",
@@ -160,16 +160,16 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
       "Rough texture and enlarged pores",
     ],
     atAGlance: [
-      { label: "Session time", value: "15–30 minutes", icon: "timer" },
-      { label: "Downtime", value: "2–7 days (peel depth dependent)", icon: "bed" },
+      { label: "Session time", value: "15 to 30 minutes", icon: "timer" },
+      { label: "Downtime", value: "2 to 7 days (peel depth dependent)", icon: "bed" },
       { label: "Results visible", value: "After peeling completes", icon: "hourglass" },
-      { label: "Sessions needed", value: "3–6 peels, 4 weeks apart", icon: "calendar" },
+      { label: "Sessions needed", value: "3 to 6 peels, 4 weeks apart", icon: "calendar" },
     ],
   },
   "/treatments/skin-boosters-oxford": {
     treatmentName: "Skin Boosters",
     summary:
-      "Injectable hyaluronic acid deeply hydrates skin, improving elasticity, glow, and texture – without adding volume.",
+      "Injectable hyaluronic acid deeply hydrates skin, improving elasticity, glow, and texture, without adding volume.",
     highlights: [
       "Dehydrated, dull skin",
       "Fine surface lines",
@@ -178,16 +178,16 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
       "Face, neck, décolletage, and hands",
     ],
     atAGlance: [
-      { label: "Session time", value: "20–30 minutes", icon: "timer" },
-      { label: "Downtime", value: "Marks resolve in 24–48 hours", icon: "bed" },
+      { label: "Session time", value: "20 to 30 minutes", icon: "timer" },
+      { label: "Downtime", value: "Marks resolve in 24 to 48 hours", icon: "bed" },
       { label: "Results visible", value: "Builds over initial course", icon: "hourglass" },
-      { label: "Sessions needed", value: "2–3 sessions, 3–4 weeks apart", icon: "calendar" },
+      { label: "Sessions needed", value: "2 to 3 sessions, 3 to 4 weeks apart", icon: "calendar" },
     ],
   },
   "/treatments/neauvia-n-rose-intimate-rejuvenation-oxford": {
     treatmentName: "Neauvia N Rose",
     summary:
-      "Medical-grade hyaluronic acid restores hydration, comfort, and tissue integrity in the intimate area – especially for menopause-related changes.",
+      "Medical-grade hyaluronic acid restores hydration, comfort, and tissue integrity in the intimate area, especially for menopause-related changes.",
     highlights: [
       "Vaginal dryness and discomfort",
       "Reduced sensitivity during intimacy",
@@ -196,10 +196,10 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
       "Vulvovaginal atrophy",
     ],
     atAGlance: [
-      { label: "Session time", value: "30–45 minutes", icon: "timer" },
+      { label: "Session time", value: "30 to 45 minutes", icon: "timer" },
       { label: "Downtime", value: "Minimal", icon: "bed" },
       { label: "Results visible", value: "Within days", icon: "hourglass" },
-      { label: "Results last", value: "9–12 months", icon: "calendar" },
+      { label: "Results last", value: "9 to 12 months", icon: "calendar" },
     ],
   },
   "/treatments/votiva-forma-v-oxford": {
@@ -214,16 +214,16 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
       "Menopause-related tissue thinning",
     ],
     atAGlance: [
-      { label: "Session time", value: "20–30 minutes", icon: "timer" },
+      { label: "Session time", value: "20 to 30 minutes", icon: "timer" },
       { label: "Downtime", value: "None", icon: "briefcase" },
-      { label: "Results visible", value: "8–12 weeks", icon: "hourglass" },
+      { label: "Results visible", value: "8 to 12 weeks", icon: "hourglass" },
       { label: "Sessions needed", value: "3 sessions, 4 weeks apart", icon: "calendar" },
     ],
   },
   "/treatments/vitamin-b12-injection-oxford": {
     treatmentName: "Vitamin B12 Injection",
     summary:
-      "Intramuscular B12 bypasses digestion for fast absorption – boosting energy, mood, immunity, and metabolic function.",
+      "Intramuscular B12 bypasses digestion for fast absorption, boosting energy, mood, immunity, and metabolic function.",
     highlights: [
       "Persistent fatigue",
       "Brain fog and poor concentration",
@@ -232,9 +232,9 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
       "Vegan/vegetarian diets; menopausal fatigue",
     ],
     atAGlance: [
-      { label: "Session time", value: "10–15 minutes", icon: "timer" },
+      { label: "Session time", value: "10 to 15 minutes", icon: "timer" },
       { label: "Downtime", value: "None", icon: "briefcase" },
-      { label: "Results visible", value: "24–48 hours for many", icon: "hourglass" },
+      { label: "Results visible", value: "24 to 48 hours for many", icon: "hourglass" },
       { label: "Maintenance", value: "Monthly typical", icon: "calendar" },
     ],
   },
@@ -253,13 +253,13 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
       { label: "Session time", value: "30 minutes", icon: "timer" },
       { label: "Downtime", value: "None", icon: "briefcase" },
       { label: "Outcome", value: "Forms completed at appointment", icon: "clipboard" },
-      { label: "Availability", value: "Fri 4–8pm; Sat 9am–1pm", icon: "calendar" },
+      { label: "Availability", value: "Fri 4 to 8pm; Sat 9am–1pm", icon: "calendar" },
     ],
   },
   "/treatments/forma-facelift-oxford": {
     treatmentName: "Forma Facelift",
     summary:
-      "Non-invasive radiofrequency tightens and lifts facial skin with zero downtime – immediate firmness plus long-term collagen stimulation.",
+      "Non-invasive radiofrequency tightens and lifts facial skin with zero downtime, immediate firmness plus long-term collagen stimulation.",
     highlights: [
       "Forehead lifting",
       "Cheeks and mid-face",
@@ -270,14 +270,14 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
     atAGlance: [
       { label: "Session time", value: "Approx. 45 minutes", icon: "timer" },
       { label: "Downtime", value: "None", icon: "briefcase" },
-      { label: "Results visible", value: "Immediate; builds over 3–6 months", icon: "hourglass" },
-      { label: "Sessions needed", value: "6–8 weekly sessions", icon: "calendar" },
+      { label: "Results visible", value: "Immediate; builds over 3 to 6 months", icon: "hourglass" },
+      { label: "Sessions needed", value: "6 to 8 weekly sessions", icon: "calendar" },
     ],
   },
   "/treatments/forma-plus-body-contouring-oxford": {
     treatmentName: "Forma Plus Body",
     summary:
-      "Non-invasive radiofrequency firms loose body skin on arms, abdomen, thighs, and knees – with zero downtime.",
+      "Non-invasive radiofrequency firms loose body skin on arms, abdomen, thighs, and knees, with zero downtime.",
     highlights: [
       "Inner arm laxity",
       "Abdominal skin post-pregnancy",
@@ -286,10 +286,10 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
       "Buttocks and bra-line tightening",
     ],
     atAGlance: [
-      { label: "Session time", value: "30–60 minutes", icon: "timer" },
+      { label: "Session time", value: "30 to 60 minutes", icon: "timer" },
       { label: "Downtime", value: "None", icon: "briefcase" },
       { label: "Results visible", value: "Progressive over months", icon: "hourglass" },
-      { label: "Sessions needed", value: "6–8 sessions", icon: "calendar" },
+      { label: "Sessions needed", value: "6 to 8 sessions", icon: "calendar" },
     ],
   },
   "/treatments/inmode-fx-skin-tightening-oxford": {
@@ -304,7 +304,7 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
       "Non-surgical body skin care",
     ],
     atAGlance: [
-      { label: "Session time", value: "30–60 minutes", icon: "timer" },
+      { label: "Session time", value: "30 to 60 minutes", icon: "timer" },
       { label: "Downtime", value: "Little or none", icon: "briefcase" },
       { label: "Changes develop", value: "Gradually over weeks", icon: "hourglass" },
       { label: "Typical course", value: "Weekly sessions (often 6)", icon: "calendar" },
@@ -324,8 +324,8 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
     atAGlance: [
       { label: "Session time", value: "Under 30 minutes (face)", icon: "timer" },
       { label: "Downtime", value: "Redness settles within hours", icon: "bed" },
-      { label: "Results visible", value: "1–2 sessions for many concerns", icon: "hourglass" },
-      { label: "Sessions needed", value: "3–5 for complex cases", icon: "calendar" },
+      { label: "Results visible", value: "1 to 2 sessions for many concerns", icon: "hourglass" },
+      { label: "Sessions needed", value: "3 to 5 for complex cases", icon: "calendar" },
     ],
   },
   "/treatments/filler-dissolving-oxford": {
@@ -341,15 +341,15 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
     ],
     atAGlance: [
       { label: "Session time", value: "Patch test + treatment", icon: "timer" },
-      { label: "Downtime", value: "Swelling 24–48 hours", icon: "bed" },
-      { label: "Results visible", value: "24–48 hours", icon: "hourglass" },
-      { label: "Before new filler", value: "Wait 4–6 weeks", icon: "calendar" },
+      { label: "Downtime", value: "Swelling 24 to 48 hours", icon: "bed" },
+      { label: "Results visible", value: "24 to 48 hours", icon: "hourglass" },
+      { label: "Before new filler", value: "Wait 4 to 6 weeks", icon: "calendar" },
     ],
   },
   "/treatments/jaw-slimming-teeth-grinding-oxford": {
     treatmentName: "Jaw Slimming & Teeth Grinding",
     summary:
-      "Masseter muscle-relaxing injections slim a wide jawline and relieve teeth grinding – quick, minimally invasive, progressive results.",
+      "Masseter muscle-relaxing injections slim a wide jawline and relieve teeth grinding, quick, minimally invasive, progressive results.",
     highlights: [
       "Wide or square jawline",
       "Teeth grinding (bruxism)",
@@ -358,10 +358,10 @@ const GLANCE_DATA: Record<string, TreatmentGlance> = {
       "Cosmetic and therapeutic benefits",
     ],
     atAGlance: [
-      { label: "Session time", value: "15–30 minutes", icon: "timer" },
+      { label: "Session time", value: "15 to 30 minutes", icon: "timer" },
       { label: "Downtime", value: "None", icon: "briefcase" },
-      { label: "Results visible", value: "4–6 weeks (slimming)", icon: "hourglass" },
-      { label: "Results last", value: "4–6 months", icon: "calendar" },
+      { label: "Results visible", value: "4 to 6 weeks (slimming)", icon: "hourglass" },
+      { label: "Results last", value: "4 to 6 months", icon: "calendar" },
     ],
   },
 };

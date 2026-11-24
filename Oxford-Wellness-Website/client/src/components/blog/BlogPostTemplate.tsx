@@ -133,7 +133,7 @@ function SectionContent({ section }: { section: BlogSection }) {
               <thead>
                 <tr className="bg-primary text-primary-foreground">
                   {section.tableHeaders.map((h) => (
-                    <th key={h} className="text-left px-4 py-2 font-medium text-xs uppercase tracking-wider border border-border/30">{h}</th>
+                    <th key={h} className="text-left px-4 py-2 font-medium text-xs tracking-normal border border-border/30">{h}</th>
                   ))}
                 </tr>
               </thead>
@@ -268,7 +268,7 @@ export default function BlogPostTemplate({ data }: { data: BlogPostData }) {
             <span className="text-primary">{data.category}</span>
           </nav>
           
-          <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
+          <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">
             {data.category}
           </p>
           <h1 className="font-sans font-semibold text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 tracking-tight text-foreground">
@@ -307,7 +307,7 @@ export default function BlogPostTemplate({ data }: { data: BlogPostData }) {
         {data.keyPoints && data.keyPoints.length > 0 && (
           <FadeIn>
             <div className="my-10 p-8 bg-muted/30 border border-border/50 rounded-2xl">
-              <h3 className="font-sans font-semibold text-sm uppercase tracking-wider text-foreground mb-4">Key Points</h3>
+              <h3 className="font-sans font-semibold text-sm tracking-normal text-foreground mb-4">Key points</h3>
               <ul className="space-y-3">
                 {data.keyPoints.map((point, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
@@ -380,7 +380,7 @@ export default function BlogPostTemplate({ data }: { data: BlogPostData }) {
         {data.relatedTreatments && data.relatedTreatments.length > 0 && (
           <FadeIn>
             <div className="mt-10 p-8 bg-muted/30 border border-border/50 rounded-2xl">
-              <h3 className="font-sans font-semibold text-sm uppercase tracking-wider text-foreground mb-4">Related Treatments</h3>
+              <h3 className="font-sans font-semibold text-sm tracking-normal text-foreground mb-4">Related treatments</h3>
               <ul className="space-y-3">
                 {data.relatedTreatments.map((t) => (
                   <li key={t.href}>

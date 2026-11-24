@@ -42,7 +42,7 @@ function VoucherCard({ voucher, index }: { voucher: GiftVoucher; index: number }
   return (
     <FadeIn delay={index * 0.06} className="h-full">
       <article className="h-full flex flex-col rounded-3xl bg-muted/40 p-7 md:p-8">
-        <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-3">
+        <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-3">
           Gift voucher
         </p>
         <h2 className="text-3xl md:text-4xl text-foreground tracking-tight mb-3">
@@ -91,7 +91,7 @@ export default function GiftVouchers() {
     <div className="pt-28 min-h-screen bg-background">
       <div className="container-page py-12 md:py-16">
         <FadeIn className="max-w-2xl mb-14 md:mb-16">
-          <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
+          <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">
             A gift of care
           </p>
           <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-5 leading-snug">
@@ -115,7 +115,7 @@ export default function GiftVouchers() {
         </div>
 
         <FadeIn className="max-w-2xl mb-16 md:mb-20">
-          <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
+          <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">
             How it works
           </p>
           <h2 className="font-sans font-semibold text-2xl md:text-3xl text-foreground tracking-tight mb-8">

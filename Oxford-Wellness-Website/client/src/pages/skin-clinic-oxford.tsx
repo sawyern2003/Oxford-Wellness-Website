@@ -21,7 +21,7 @@ const data: TreatmentPageData = {
     {
       heading: "Who the skin clinic is for",
       paragraphs: [
-        "Our skin clinic is for anyone seeking expert medical aesthetic treatments in a professional, doctor-led environment. You might be noticing early signs of ageing and want preventative care. You might be experiencing menopausal skin changes – thinning, dryness, loss of firmness – that require more than over-the-counter skincare. Or you might simply want the reassurance of seeing a doctor rather than a non-medical aesthetician.",
+        "Our skin clinic is for anyone seeking expert medical aesthetic treatments in a professional, doctor-led environment. You might be noticing early signs of ageing and want preventative care. You might be experiencing menopausal skin changes, thinning, dryness, loss of firmness, that require more than over-the-counter skincare. Or you might simply want the reassurance of seeing a doctor rather than a non-medical aesthetician.",
         "Many patients come because they value medical expertise. They want honest advice about what will work, realistic expectations, and treatments performed by someone who understands facial anatomy, medical safety, and how to achieve natural-looking results.",
       ],
     },
@@ -48,14 +48,14 @@ const data: TreatmentPageData = {
     {
       heading: "Anti-wrinkle injections",
       paragraphs: [
-        "Anti-wrinkle injections use prescription medicine to temporarily relax the muscles that cause dynamic lines – forehead lines, frown lines between the brows, and crow's feet around the eyes. Results appear within 3–7 days, reach full effect at 2 weeks, and typically last 3–4 months.",
+        "Anti-wrinkle injections use prescription medicine to temporarily relax the muscles that cause dynamic lines, forehead lines, frown lines between the brows, and crow's feet around the eyes. Results appear within 3 to 7 days, reach full effect at 2 weeks, and typically last 3 to 4 months.",
         "Dr Taganova's technique produces subtle, natural-looking results. The goal is not a frozen face, but a refreshed appearance that reflects how you feel rather than how old you are. Many patients find that colleagues and friends notice they look well-rested, without being able to identify what has changed.",
       ],
     },
     {
       heading: "Dermal fillers",
       paragraphs: [
-        "Dermal fillers restore volume loss and enhance facial contours. They are used for lip enhancement, cheek augmentation, under-eye hollowing, nasolabial folds, and jawline contouring. Results are immediate and typically last 9–18 months depending on the product used and area treated.",
+        "Dermal fillers restore volume loss and enhance facial contours. They are used for lip enhancement, cheek augmentation, under-eye hollowing, nasolabial folds, and jawline contouring. Results are immediate and typically last 9 to 18 months depending on the product used and area treated.",
         "Fillers are medical devices that require precise placement, anatomical knowledge, and an understanding of facial proportions. Dr Taganova's approach is conservative and natural. She will not overfill or create an artificial appearance. Her goal is facial balance and harmony, not Instagram trends.",
       ],
     },
@@ -63,7 +63,7 @@ const data: TreatmentPageData = {
       heading: "Profhilo for skin quality",
       paragraphs: [
         "Profhilo is a bio-remodelling treatment that uses ultra-pure hyaluronic acid to stimulate collagen and elastin production from within the skin. It is particularly effective for menopausal skin changes, crepiness, loss of firmness, and overall skin quality decline.",
-        "Two treatments are given four weeks apart. Results develop gradually over 8–12 weeks as the skin rebuilds its structural support. Profhilo is not a filler – it does not add volume or change facial shape. It improves skin quality, hydration and firmness in a natural, gradual way.",
+        "Two treatments are given four weeks apart. Results develop gradually over 8 to 12 weeks as the skin rebuilds its structural support. Profhilo is not a filler, it does not add volume or change facial shape. It improves skin quality, hydration and firmness in a natural, gradual way.",
         "Many patients describe Profhilo as the treatment that made them look like a healthier version of themselves, rather than a different person. It is one of the most requested treatments at the clinic, particularly for women in their 40s, 50s and 60s.",
       ],
     },
@@ -71,14 +71,14 @@ const data: TreatmentPageData = {
       heading: "Morpheus8 skin tightening",
       paragraphs: [
         "Morpheus8 combines microneedling with radiofrequency energy to tighten skin, reduce wrinkles, and improve texture. It works by creating controlled micro-injuries in the deeper layers of the skin, triggering collagen remodelling and skin tightening over the following months.",
-        "Morpheus8 is effective for sagging skin, jowls, neck laxity, acne scarring, and overall skin rejuvenation. Results develop gradually over 3–6 months as new collagen is produced. Most patients benefit from a course of 2–3 treatments spaced 4–6 weeks apart.",
+        "Morpheus8 is effective for sagging skin, jowls, neck laxity, acne scarring, and overall skin rejuvenation. Results develop gradually over 3 to 6 months as new collagen is produced. Most patients benefit from a course of 2 to 3 treatments spaced 4 to 6 weeks apart.",
       ],
     },
     {
       heading: "The clinic in central Oxford",
       paragraphs: [
         "The Oxford Wellness Doctor is located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ. We are in the heart of Oxford, easily accessible from North Oxford, Summertown, Jericho and the surrounding areas. On-street parking is available nearby, and the clinic is well-served by local bus routes.",
-        "The clinic environment is calm, discreet and professional. Consultations are private and unhurried. You will see Dr Taganova personally for every appointment – consultation, treatment, and follow-up.",
+        "The clinic environment is calm, discreet and professional. Consultations are private and unhurried. You will see Dr Taganova personally for every appointment, consultation, treatment, and follow-up.",
       ],
     },
     {
@@ -86,7 +86,7 @@ const data: TreatmentPageData = {
       paragraphs: [
         "Your initial consultation is an opportunity to discuss your concerns, goals, and suitability for treatment. Dr Taganova will assess your facial anatomy, skin quality, and medical history, then explain which treatments are appropriate and what results you can realistically expect.",
         "There is no pressure to proceed with treatment on the day. Many patients prefer to think about their options and return for treatment at a later date.",
-        "Treatment appointments typically last 30–60 minutes depending on the procedure. Most treatments require no downtime, though some temporary swelling, redness or bruising is normal. Dr Taganova provides detailed aftercare instructions and a follow-up appointment is included for most treatments.",
+        "Treatment appointments typically last 30 to 60 minutes depending on the procedure. Most treatments require no downtime, though some temporary swelling, redness or bruising is normal. Dr Taganova provides detailed aftercare instructions and a follow-up appointment is included for most treatments.",
       ],
     },
   ],
@@ -113,7 +113,7 @@ const data: TreatmentPageData = {
     },
     {
       q: "Is there any downtime after treatment?",
-      a: "Most treatments require no downtime. Anti-wrinkle injections and dermal fillers may cause minor swelling or bruising that resolves within a few days. Profhilo typically causes no downtime. Morpheus8 causes temporary redness and mild swelling for 2–3 days.",
+      a: "Most treatments require no downtime. Anti-wrinkle injections and dermal fillers may cause minor swelling or bruising that resolves within a few days. Profhilo typically causes no downtime. Morpheus8 causes temporary redness and mild swelling for 2 to 3 days.",
     },
     {
       q: "Where is the skin clinic located?",

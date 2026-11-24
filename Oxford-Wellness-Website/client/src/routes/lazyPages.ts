@@ -69,6 +69,7 @@ export const ThankYou = createLazyRoute(() => import("@/pages/thank-you"));
 export const CallPage = createLazyRoute(() => import("@/pages/call"));
 export const Book = createLazyRoute(() => import("@/pages/book"));
 export const GiftVouchers = createLazyRoute(() => import("@/pages/gift-vouchers"));
+export const FlourishCompare = createLazyRoute(() => import("@/pages/flourish-compare"));
 export const NotFound = createLazyRoute(() => import("@/pages/not-found"));
 export const OxfordPainDoctorHome = createLazyRoute(() => import("@/pages/pain/home"));
 export const PainBook = createLazyRoute(() => import("@/pages/pain/book"));
@@ -147,6 +148,7 @@ const EXACT_PAGES: Record<string, LazyPage> = {
   "/oxford-pain-doctor/book": PainBook,
   "/contact": Contact,
   "/gift-vouchers": GiftVouchers,
+  "/flourish-compare": FlourishCompare,
   "/recommended-skincare": RecommendedSkincare,
   "/shop": Shop,
   "/privacy-policy": PrivacyPolicy,

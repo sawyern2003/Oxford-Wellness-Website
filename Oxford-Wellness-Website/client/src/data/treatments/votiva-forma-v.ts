@@ -27,14 +27,14 @@ export const votivaFormaVData: TreatmentLandingPageData = {
     steps: [
       "Private consultation to assess your symptoms and suitability.",
       "Non-invasive RF treatment using an internal handpiece. Most patients feel only mild warmth.",
-      "Return to normal activities immediately. Avoid sexual intercourse for 2–3 days."
+      "Return to normal activities immediately. Avoid sexual intercourse for 2 to 3 days."
     ],
-    sessionsInfo: "A course of 3 treatments, 4 weeks apart, is recommended. Some hydration improvement may be noticed early; significant results develop over 8–12 weeks as collagen remodels. Results typically last 12–18 months."
+    sessionsInfo: "A course of 3 treatments, 4 weeks apart, is recommended. Some hydration improvement may be noticed early; significant results develop over 8 to 12 weeks as collagen remodels. Results typically last 12 to 18 months."
   },
   
   downtime: {
     heading: "Downtime",
-    description: "No downtime. Return to normal activities immediately. Avoid sexual intercourse for 2–3 days. No anaesthetic needed – the treatment is comfortable and takes 20–30 minutes."
+    description: "No downtime. Return to normal activities immediately. Avoid sexual intercourse for 2 to 3 days. No anaesthetic needed, the treatment is comfortable and takes 20 to 30 minutes."
   },
   
   trust: {
@@ -71,7 +71,7 @@ export const votivaFormaVData: TreatmentLandingPageData = {
     },
     {
       q: "How long do results last?",
-      a: "Results typically last 12–18 months. Many women schedule annual maintenance treatments after completing the initial course."
+      a: "Results typically last 12 to 18 months. Many women schedule annual maintenance treatments after completing the initial course."
     },
     {
       q: "Can Votiva be combined with other treatments?",
@@ -80,8 +80,8 @@ export const votivaFormaVData: TreatmentLandingPageData = {
   ],
   
   pricing: [
-    { name: "Forma V — single session", price: "£450" },
-    { name: "Forma V — course of 3", price: "£1,200" }
+    { name: "Forma V, single session", price: "£450" },
+    { name: "Forma V, course of 3", price: "£1,200" }
   ],
   
   consultation: {

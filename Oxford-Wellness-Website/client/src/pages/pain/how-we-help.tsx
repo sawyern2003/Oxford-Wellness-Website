@@ -55,7 +55,7 @@ export default function PainHowWeHelp() {
   useSEO({
     title: "Our Approach to Pain | The Oxford Pain Doctor",
     description:
-      "Evidence-led, whole-person pain medicine with Dr Richard Sawyer in Oxford – specialist assessment, a personalised Pain Care Plan, and the right combination of care.",
+      "Evidence-led, whole-person pain medicine with Dr Richard Sawyer in Oxford, specialist assessment, a personalised Pain Care Plan, and the right combination of care.",
     canonical: "https://www.theoxfordwellnessdoctor.com/oxford-pain-doctor/how-we-help",
   });
 
@@ -64,7 +64,7 @@ export default function PainHowWeHelp() {
       <div className="container mx-auto px-6 py-12 md:py-16 max-w-6xl">
         <div id="approach" className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center mb-16">
           <FadeIn className="lg:col-span-6">
-            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
+            <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">
               Our approach
             </p>
             <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-5 leading-snug">

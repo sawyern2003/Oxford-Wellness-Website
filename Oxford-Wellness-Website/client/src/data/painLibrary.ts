@@ -46,7 +46,7 @@ export const painLibraryArticles: PainLibraryArticle[] = [
     slug: "biopsychosocial-approach",
     title: "What is a biopsychosocial approach to pain?",
     excerpt:
-      "Persistent pain is rarely explained by a scan alone. A biopsychosocial approach looks at the body, the nervous system and daily life together – without suggesting the pain is imagined.",
+      "Persistent pain is rarely explained by a scan alone. A biopsychosocial approach looks at the body, the nervous system and daily life together, without suggesting the pain is imagined.",
     metaDescription:
       "What a biopsychosocial approach to chronic pain means: how medical, physical and life factors are considered together in specialist pain care in Oxford.",
     intro:
@@ -63,7 +63,7 @@ export const painLibraryArticles: PainLibraryArticle[] = [
         heading: "What this looks like in clinic",
         paragraphs: [
           "Assessment still starts with the medical picture: history, examination, previous investigations and treatments. The difference is the next question. Instead of asking only “where should we inject?”, the consultation asks what combination of medical, physical and life factors is most relevant now.",
-          "That might lead to a medication review, a movement plan, sleep advice, or a procedure – or a clear explanation that a procedure is unlikely to help. The point is selection, not a longer list of options.",
+          "That might lead to a medication review, a movement plan, sleep advice, or a procedure, or a clear explanation that a procedure is unlikely to help. The point is selection, not a longer list of options.",
         ],
       },
       {
@@ -81,9 +81,9 @@ export const painLibraryArticles: PainLibraryArticle[] = [
     excerpt:
       "Movement is often part of recovery from persistent pain, but it has to be individualised. “Just exercise more” is not a treatment plan.",
     metaDescription:
-      "How exercise can help chronic pain when it is graded and individualised – and why generic advice to move more often fails.",
+      "How exercise can help chronic pain when it is graded and individualised, and why generic advice to move more often fails.",
     intro:
-      "People with persistent pain are often told to exercise. Some have been told they are not doing enough. Others have tried, flared, and concluded that movement makes everything worse. Both experiences are common. Exercise can help chronic pain – when the type, dose and support match the person.",
+      "People with persistent pain are often told to exercise. Some have been told they are not doing enough. Others have tried, flared, and concluded that movement makes everything worse. Both experiences are common. Exercise can help chronic pain, when the type, dose and support match the person.",
     sections: [
       {
         heading: "Why movement can help",
@@ -96,14 +96,14 @@ export const painLibraryArticles: PainLibraryArticle[] = [
         heading: "Why “just exercise” often fails",
         paragraphs: [
           "Advice that ignores fear of flare-ups, previous injury, current capacity or competing demands at home and work is likely to fail. People then blame themselves, or decide that exercise “doesn’t work for me”.",
-          "The better questions are: which type of movement, at what intensity, how often, and with what support if symptoms rise. Walking, strengthening, hydrotherapy or guided physiotherapy may all be reasonable – for the right person at the right time.",
+          "The better questions are: which type of movement, at what intensity, how often, and with what support if symptoms rise. Walking, strengthening, hydrotherapy or guided physiotherapy may all be reasonable, for the right person at the right time.",
         ],
       },
       {
         heading: "Where it sits in a Pain Care Plan",
         paragraphs: [
           "Exercise may sit alongside medication review, sleep advice or a procedure. It is one tool, not a moral instruction and not a replacement for medical assessment.",
-          "If movement is recommended after a consultation with Dr Sawyer, it should be specific enough to follow – and honest about the fact that flare-ups can still happen while capacity is being rebuilt.",
+          "If movement is recommended after a consultation with Dr Sawyer, it should be specific enough to follow, and honest about the fact that flare-ups can still happen while capacity is being rebuilt.",
         ],
       },
     ],
@@ -114,7 +114,7 @@ export const painLibraryArticles: PainLibraryArticle[] = [
     excerpt:
       "Poor sleep and high stress do not invent pain. They can amplify how strongly it is felt and how hard it is to recover.",
     metaDescription:
-      "How sleep, stress and mood affect chronic pain – the physiology behind flare-ups, and why these factors belong in a specialist pain plan.",
+      "How sleep, stress and mood affect chronic pain, the physiology behind flare-ups, and why these factors belong in a specialist pain plan.",
     intro:
       "Patients often notice that pain is worse after a bad night, a difficult week at work, or a period of low mood. That observation is well founded. The systems that process pain also process sleep, threat and emotion. Understanding the link does not mean the pain is psychological. It means the plan should take the whole picture seriously.",
     sections: [
@@ -129,7 +129,7 @@ export const painLibraryArticles: PainLibraryArticle[] = [
         heading: "What belongs in the care plan",
         paragraphs: [
           "Addressing sleep or mood is not a substitute for diagnosing a treatable cause. It is part of understanding why pain may persist after tissues have had time to heal, or why two people with similar scans feel so differently.",
-          "Where these factors are relevant, they belong in the plan in the same way as medication or rehabilitation – named plainly, without implying that the pain is imaginary.",
+          "Where these factors are relevant, they belong in the plan in the same way as medication or rehabilitation, named plainly, without implying that the pain is imaginary.",
         ],
       },
       {
@@ -147,7 +147,7 @@ export const painLibraryArticles: PainLibraryArticle[] = [
     excerpt:
       "A written plan after specialist assessment: what appears to be driving the pain, what is worth trying, and what is unlikely to help.",
     metaDescription:
-      "What an integrative Pain Care Plan includes after assessment with a pain consultant – priorities, next steps, and when procedures are considered.",
+      "What an integrative Pain Care Plan includes after assessment with a pain consultant, priorities, next steps, and when procedures are considered.",
     intro:
       "Most people who come to a chronic pain clinic have already tried several things. An integrative Pain Care Plan is not a bundle of extra treatments. It is a consultant-led summary of what appears to be driving your pain, what you want to be able to do again, and which approaches have the best case for being useful next.",
     sections: [
@@ -155,7 +155,7 @@ export const painLibraryArticles: PainLibraryArticle[] = [
         heading: "What the plan contains",
         paragraphs: [
           "After assessment, you should leave with a clear written view. That typically covers the likely working diagnosis, the factors that seem to be maintaining the pain, and a short list of next steps in order of usefulness.",
-          "Those steps may include medical management, movement, education, psychological or behavioural support, sleep and lifestyle advice, and – where the rationale is clear – a procedure. Not every element is used for every person.",
+          "Those steps may include medical management, movement, education, psychological or behavioural support, sleep and lifestyle advice, and, where the rationale is clear, a procedure. Not every element is used for every person.",
         ],
       },
       {
@@ -180,7 +180,7 @@ export const painLibraryArticles: PainLibraryArticle[] = [
     excerpt:
       "Mind-body approaches can help some people with persistent pain. They are adjuncts to medical care, not alternatives to it.",
     metaDescription:
-      "What the evidence says about mindfulness, meditation and yoga for chronic pain – when they may help, and when they should not replace medical treatment.",
+      "What the evidence says about mindfulness, meditation and yoga for chronic pain, when they may help, and when they should not replace medical treatment.",
     intro:
       "Mindfulness, meditation and yoga are widely discussed for persistent pain. Some people find them genuinely useful. Others have been offered them instead of a proper assessment. The evidence sits between those two extremes: modest benefit for some presentations, and no substitute for diagnosis or indicated medical treatment.",
     sections: [
@@ -188,7 +188,7 @@ export const painLibraryArticles: PainLibraryArticle[] = [
         heading: "Where they can help",
         paragraphs: [
           "These approaches have an evidence base in some persistent pain presentations, particularly where tension, fear of movement, sleep disturbance or a high sense of threat are part of the picture. Effects are usually modest and vary between individuals.",
-          "They work, when they work, by changing how the nervous system responds to symptoms – not by pretending the pain is not there. Breath, attention and gentle movement can reduce secondary muscle guarding and make pacing easier.",
+          "They work, when they work, by changing how the nervous system responds to symptoms, not by pretending the pain is not there. Breath, attention and gentle movement can reduce secondary muscle guarding and make pacing easier.",
         ],
       },
       {
@@ -201,7 +201,7 @@ export const painLibraryArticles: PainLibraryArticle[] = [
       {
         heading: "How they appear in this clinic",
         paragraphs: [
-          "If mindfulness, yoga or related practices appear in a Pain Care Plan, it is because they are relevant to that person – not because they are fashionable, and not as a way of avoiding a medical decision.",
+          "If mindfulness, yoga or related practices appear in a Pain Care Plan, it is because they are relevant to that person, not because they are fashionable, and not as a way of avoiding a medical decision.",
           "The first step remains specialist assessment. Adjuncts are added after that, not instead of it.",
         ],
       },
@@ -227,7 +227,7 @@ export const painLibraryArticles: PainLibraryArticle[] = [
       {
         heading: "When they are less useful",
         paragraphs: [
-          "Injections are less helpful – and sometimes unhelpful – when they are repeated without a diagnosis, used as a substitute for rehabilitation, or offered because “this is what we do next”. Temporary relief that does not alter the care plan is not a success.",
+          "Injections are less helpful, and sometimes unhelpful, when they are repeated without a diagnosis, used as a substitute for rehabilitation, or offered because “this is what we do next”. Temporary relief that does not alter the care plan is not a success.",
           "They are also the wrong first move when the main drivers are sleep, deconditioning, medication problems or a picture that has never been properly assessed.",
         ],
       },
@@ -235,7 +235,7 @@ export const painLibraryArticles: PainLibraryArticle[] = [
         heading: "How decisions are made here",
         paragraphs: [
           "At The Oxford Pain Doctor, a procedure is considered after assessment, against the rest of the care plan. If it is unlikely to change function, that is said plainly.",
-          "Where a procedure is recommended, it is one part of a written plan – not the whole of it.",
+          "Where a procedure is recommended, it is one part of a written plan, not the whole of it.",
         ],
       },
     ],
@@ -248,7 +248,7 @@ export const painLibraryArticles: PainLibraryArticle[] = [
     metaDescription:
       "What nerve pain (neuropathic pain) feels like, why it persists after injury has healed, and how specialist assessment guides treatment.",
     intro:
-      "Nerve pain – neuropathic pain – is often described as burning, shooting, electric or strangely located. It can follow surgery, injury or disease of the nervous system. It does not always settle when the original wound has healed, because the problem is in pain signalling, not only in a joint or disc.",
+      "Nerve pain, neuropathic pain, is often described as burning, shooting, electric or strangely located. It can follow surgery, injury or disease of the nervous system. It does not always settle when the original wound has healed, because the problem is in pain signalling, not only in a joint or disc.",
     sections: [
       {
         heading: "How nerve pain differs",
@@ -261,7 +261,7 @@ export const painLibraryArticles: PainLibraryArticle[] = [
         heading: "What assessment is looking for",
         paragraphs: [
           "A specialist assessment is used to distinguish neuropathic pain from other persistent pain. History and examination still come first. Investigations are used when they will change the plan, not as a routine extra.",
-          "The aim is to avoid building a plan on the wrong assumption – for example treating a disc finding that is not the source of the symptoms, or missing nerve involvement altogether.",
+          "The aim is to avoid building a plan on the wrong assumption, for example treating a disc finding that is not the source of the symptoms, or missing nerve involvement altogether.",
         ],
       },
       {

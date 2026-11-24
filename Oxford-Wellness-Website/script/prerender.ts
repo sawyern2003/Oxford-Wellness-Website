@@ -7,6 +7,9 @@ import { SITE_URL, SITEMAP_PAGES } from "../server/seo-static";
 const PUBLIC_DIR = path.resolve("dist/public");
 const SSR_DIR = path.resolve("dist/ssr");
 
+/** Prerendered but not in the sitemap (internal / noindex pages). */
+const EXTRA_PRERENDER_PATHS = ["/flourish-compare"] as const;
+
 /** Served for URLs without a prerendered page; must stay free of page-specific content. */
 export const SPA_SHELL = "spa.html";
 
@@ -185,8 +188,13 @@ export async function prerender() {
 
   const preloadCache = new Map<string, string[]>();
 
+  const prerenderPaths = [
+    ...SITEMAP_PAGES.map((p) => p.path),
+    ...EXTRA_PRERENDER_PATHS,
+  ];
+
   let count = 0;
-  for (const { path: pagePath } of SITEMAP_PAGES) {
+  for (const pagePath of prerenderPaths) {
     let rendered: Awaited<ReturnType<RenderFn>>;
     try {
       rendered = await render(pagePath);
@@ -203,6 +211,12 @@ export async function prerender() {
     );
     page = injectHomeHeroPreload(page, pagePath);
     page = injectJsonLd(page, jsonLd);
+    if ((EXTRA_PRERENDER_PATHS as readonly string[]).includes(pagePath)) {
+      page = page.replace(
+        "</head>",
+        '    <meta name="robots" content="noindex, nofollow" />\n  </head>',
+      );
+    }
 
     const hints = ROUTE_CHUNK_HINTS[pagePath];
     if (hints) {
@@ -214,12 +228,12 @@ export async function prerender() {
       page = injectModulePreloads(page, hrefs);
     }
 
-    const outFile = path.join(PUBLIC_DIR, pagePath, "index.html");
+    const outFile = path.join(PUBLIC_DIR, pagePath === "/" ? "" : pagePath, "index.html");
     await mkdir(path.dirname(outFile), { recursive: true });
     await writeFile(outFile, page);
     count++;
   }
 
   await rm(SSR_DIR, { recursive: true, force: true });
-  console.log(`prerendered ${count} of ${SITEMAP_PAGES.length} pages`);
+  console.log(`prerendered ${count} of ${prerenderPaths.length} pages`);
 }

@@ -397,7 +397,7 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
                                 <thead>
                                   <tr className="bg-primary text-primary-foreground">
                                     {section.tableHeaders.map((h, j) => (
-                                      <th key={j} className="px-3 py-2 text-left font-medium uppercase tracking-wider text-xs">{h}</th>
+                                      <th key={j} className="px-3 py-2 text-left font-medium tracking-normal text-xs">{h}</th>
                                     ))}
                                   </tr>
                                 </thead>

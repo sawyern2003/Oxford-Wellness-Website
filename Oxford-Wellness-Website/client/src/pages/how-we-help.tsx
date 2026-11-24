@@ -12,7 +12,7 @@ export default function HowWeHelp() {
   useSEO({
     title: "How We Help | Personalised Treatment Journeys | The Oxford Wellness Doctor",
     description:
-      "Doctor-led programmes for skin health and intimate wellness. Personalised journeys with Dr Inga Taganova in Oxford – not a treatment menu.",
+      "Doctor-led programmes for skin health and intimate wellness. Personalised journeys with Dr Inga Taganova in Oxford, not a treatment menu.",
     canonical: "https://www.theoxfordwellnessdoctor.com/how-we-help",
   });
 

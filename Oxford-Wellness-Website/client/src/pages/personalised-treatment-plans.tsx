@@ -18,7 +18,7 @@ export default function PersonalisedTreatmentPlans() {
   return (
     <div className="pt-28 min-h-screen bg-background">
       <div className="container mx-auto px-6 py-12 md:py-16 max-w-3xl">
-        <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
+        <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">
           After a consultation
         </p>
         <h1 className="font-sans font-semibold text-4xl md:text-5xl tracking-tight text-foreground mb-8 leading-snug">

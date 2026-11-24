@@ -8,14 +8,14 @@ import { TreatmentMenuMobile, TreatmentMenuPanel } from "@/components/layout/Tre
 
 const wellnessNavLinks = [
   { name: "About", href: "/about" },
-  { name: "Prices & Booking", href: "/pricing" },
+  { name: "Prices & booking", href: "/pricing" },
   { name: "Gift vouchers", href: "/gift-vouchers" },
   { name: "Journal", href: "/blog" },
 ];
 
 const painNavLinks = [
   { name: "About", href: "/oxford-pain-doctor/about" },
-  { name: "How We Help", href: "/oxford-pain-doctor/how-we-help" },
+  { name: "How we help", href: "/oxford-pain-doctor/how-we-help" },
   { name: "Library", href: "/oxford-pain-doctor/library" },
   { name: "Contact", href: PAIN_CONTACT_HREF },
   { name: "Wellness", href: "/" },

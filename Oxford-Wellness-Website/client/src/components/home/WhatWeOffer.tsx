@@ -33,8 +33,8 @@ export default function WhatWeOffer() {
     <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <FadeIn className="max-w-2xl mb-16">
-          <span className="block text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">Our Specialisms</span>
-          <h2 className="font-sans font-semibold text-3xl md:text-4xl text-foreground tracking-tight">What We Offer</h2>
+          <span className="block text-[11px] font-medium tracking-normal text-muted-foreground mb-4">Our specialisms</span>
+          <h2 className="font-sans font-semibold text-3xl md:text-4xl text-foreground tracking-tight">What we offer</h2>
         </FadeIn>
 
         <div className="grid md:grid-cols-3 gap-12">

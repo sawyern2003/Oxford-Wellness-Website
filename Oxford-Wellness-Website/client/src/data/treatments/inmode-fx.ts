@@ -25,7 +25,7 @@ export const inmodeFXData: TreatmentLandingPageData = {
       "InMode FX uses radiofrequency energy with gentle suction to warm deeper layers of tissue. The aim is to support collagen remodelling so skin can feel firmer and the look of cellulite may soften over a course of sessions.",
     steps: [
       "Consultation to assess your concerns and whether FX is suitable for the areas you have in mind.",
-      "The handpiece delivers controlled RF energy with light suction. Most people describe a comfortable warmth. Sessions typically take 30–60 minutes per area.",
+      "The handpiece delivers controlled RF energy with light suction. Most people describe a comfortable warmth. Sessions typically take 30 to 60 minutes per area.",
       "There are no needles and no anaesthetic. Skin may feel warm during and shortly after treatment.",
     ],
     sessionsInfo:
@@ -49,7 +49,7 @@ export const inmodeFXData: TreatmentLandingPageData = {
   faqs: [
     {
       q: "Does InMode FX hurt?",
-      a: "Most patients find it comfortable — a warm, massage-like sensation. There are no needles and no anaesthetic.",
+      a: "Most patients find it comfortable, a warm, massage-like sensation. There are no needles and no anaesthetic.",
     },
     {
       q: "How many sessions do I need?",
@@ -61,12 +61,12 @@ export const inmodeFXData: TreatmentLandingPageData = {
     },
     {
       q: "Which areas can be treated?",
-      a: "Common areas include the abdomen, flanks, thighs, buttocks, arms and knees — wherever looser skin or the appearance of cellulite is a concern.",
+      a: "Common areas include the abdomen, flanks, thighs, buttocks, arms and knees, wherever looser skin or the appearance of cellulite is a concern.",
     },
   ],
   pricing: [
-    { name: "InMode FX — single session", price: "£195" },
-    { name: "InMode FX — course of 6", price: "£995" },
+    { name: "InMode FX, single session", price: "£195" },
+    { name: "InMode FX, course of 6", price: "£995" },
   ],
   procedureSchema: {
     name: "InMode FX Skin Tightening Oxford",

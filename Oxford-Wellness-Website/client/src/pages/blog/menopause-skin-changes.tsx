@@ -50,7 +50,7 @@ const data: BlogPostData = {
       heading: "How HRT Can Help Your Skin",
       paragraphs: [
         "Hormone replacement therapy addresses many menopausal skin changes by restoring oestrogen levels. Studies have consistently shown that women taking HRT have measurably greater skin thickness, higher collagen density, and better skin hydration than women of the same age who are not taking HRT.",
-        "Body-identical oestrogen - delivered via patch or gel to avoid first-pass liver metabolism - is the preferred approach. It is not a cosmetic treatment; it is a medical treatment that has skin benefits as a welcome secondary effect. Most women who start HRT report visible improvement in skin quality within 3–6 months.",
+        "Body-identical oestrogen - delivered via patch or gel to avoid first-pass liver metabolism - is the preferred approach. It is not a cosmetic treatment; it is a medical treatment that has skin benefits as a welcome secondary effect. Most women who start HRT report visible improvement in skin quality within 3 to 6 months.",
         "It is important to note that HRT does not reverse all skin ageing, and its skin benefits are greatest when started early in the menopause transition. For women who are already several years post-menopausal, the skin benefits of HRT may be more limited - which is where targeted aesthetic treatments become particularly valuable.",
       ],
     },
@@ -72,7 +72,7 @@ const data: BlogPostData = {
       paragraphs: [
         "Of all the aesthetic treatments available, Profhilo is perhaps the most naturally suited to the skin of menopausal women. Unlike traditional fillers that add volume in specific areas, Profhilo spreads through the tissue and stimulates the fibroblasts - the same cells that oestrogen was previously activating - to produce new collagen and elastin.",
         "The results are a visible improvement in skin quality: better hydration, improved texture, increased 'springiness', and a more youthful radiance. Because it stimulates your own biology rather than replacing it, the results look and feel completely natural.",
-        "A standard Profhilo course consists of two treatments one month apart, with results lasting 6–9 months. Many of Dr Inga Taganova's menopausal patients combine Profhilo with HRT and find the combination produces results significantly better than either treatment alone.",
+        "A standard Profhilo course consists of two treatments one month apart, with results lasting 6 to 9 months. Many of Dr Inga Taganova's menopausal patients combine Profhilo with HRT and find the combination produces results significantly better than either treatment alone.",
       ],
     },
     {

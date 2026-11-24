@@ -226,7 +226,7 @@ export default function BlogIndex() {
       <div className="pt-28 pb-12 px-6">
         <FadeIn>
           <div className="max-w-7xl mx-auto">
-            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">The Journal</p>
+            <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">The journal</p>
             <h1 className="font-sans font-semibold text-5xl md:text-6xl lg:text-7xl mb-6 text-foreground tracking-tight leading-[1.1]">
               Doctor&apos;s Notes
             </h1>
@@ -263,7 +263,7 @@ export default function BlogIndex() {
               )}
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12 lg:p-16">
-                <span className="inline-block bg-white/95 text-foreground text-[10px] px-3 py-1.5 rounded-full font-medium mb-4 uppercase tracking-wider">
+                <span className="inline-block bg-white/95 text-foreground text-[10px] px-3 py-1.5 rounded-full font-medium mb-4 tracking-normal">
                   {featuredPost.category}
                 </span>
                 <h2 className="font-sans font-semibold text-3xl md:text-4xl lg:text-5xl text-white mb-4 tracking-tight leading-tight max-w-4xl group-hover:text-secondary transition-colors">
@@ -329,7 +329,7 @@ export default function BlogIndex() {
                     <div className="absolute inset-0 bg-gradient-to-br from-muted/40 to-muted/60 group-hover:opacity-75 transition-opacity"></div>
                   )}
                   <div className="absolute top-4 left-4">
-                    <span className="bg-white/95 text-foreground text-[10px] px-3 py-1.5 rounded-full font-medium uppercase tracking-wider">
+                    <span className="bg-white/95 text-foreground text-[10px] px-3 py-1.5 rounded-full font-medium tracking-normal">
                       {post.category}
                     </span>
                   </div>
@@ -353,7 +353,7 @@ export default function BlogIndex() {
         <FadeIn>
           <div className="mt-20 rounded-3xl bg-muted/30 p-8 md:p-12 border border-border/50">
             <div className="max-w-3xl mx-auto text-center">
-              <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-3">About the author</p>
+              <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-3">About the author</p>
               <h2 className="font-sans font-semibold text-3xl text-foreground tracking-tight mb-4">Dr Inga Taganova</h2>
               <p className="text-sm text-muted-foreground leading-relaxed mb-6">
                 Dr Inga Taganova is a practising GP with more than two decades of medical experience, a background in obstetrics and gynaecology and a longstanding interest in women&apos;s health. She is a qualified aesthetic medicine practitioner. All articles are written personally by Dr Inga and reflect current evidence-based clinical practice.

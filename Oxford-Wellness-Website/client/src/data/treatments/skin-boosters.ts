@@ -26,10 +26,10 @@ export const skinBoostersData: TreatmentLandingPageData = {
     intro: "Skin boosters inject hyaluronic acid or polynucleotides into the skin to deeply hydrate and stimulate collagen production.",
     steps: [
       "Consultation to assess your skin and treatment plan.",
-      "Small injections placed across the treatment area. Takes 20–30 minutes.",
-      "Minimal downtime. Results improve over 2–4 weeks as hydration builds."
+      "Small injections placed across the treatment area. Takes 20 to 30 minutes.",
+      "Minimal downtime. Results improve over 2 to 4 weeks as hydration builds."
     ],
-    sessionsInfo: "Most patients benefit from 2–3 sessions spaced 2–4 weeks apart. Results last 4–6 months."
+    sessionsInfo: "Most patients benefit from 2 to 3 sessions spaced 2 to 4 weeks apart. Results last 4 to 6 months."
   },
   
   downtime: {
@@ -51,14 +51,14 @@ export const skinBoostersData: TreatmentLandingPageData = {
   faqs: [
     { q: "What's the difference between skin boosters and fillers?", a: "Fillers add volume and structure. Skin boosters hydrate and improve skin quality from within. They work differently and address different concerns." },
     { q: "Do skin boosters hurt?", a: "Mild discomfort during injection. Most patients tolerate it well. Numbing cream can be applied if needed." },
-    { q: "How many treatments do I need?", a: "2–3 sessions spaced 2–4 weeks apart is typical. Maintenance treatments every 4–6 months help sustain results." },
+    { q: "How many treatments do I need?", a: "2 to 3 sessions spaced 2 to 4 weeks apart is typical. Maintenance treatments every 4 to 6 months help sustain results." },
     { q: "What are polynucleotides?", a: "Polynucleotides are a newer generation of skin booster that stimulate collagen and elastin production. They're particularly effective for skin regeneration and quality improvement." }
   ],
   
   pricing: [
     { name: "Hyaluronic acid skin booster", price: "£250" },
-    { name: "Polynucleotides — single session", price: "£350" },
-    { name: "Polynucleotides — course of 3", price: "£900" }
+    { name: "Polynucleotides, single session", price: "£350" },
+    { name: "Polynucleotides, course of 3", price: "£900" }
   ],
   
   consultation: {

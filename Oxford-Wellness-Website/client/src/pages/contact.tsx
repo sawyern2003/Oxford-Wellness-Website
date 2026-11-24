@@ -40,7 +40,7 @@ export default function Contact() {
       : {
           title: "Contact The Oxford Wellness Doctor | Book Consultation Oxford",
           description:
-            "Book your women's health & medical aesthetics consultation in Oxford. Now at Belsyre Court. Call 07739 309380 or email. Open Monday, Thursday, Friday, Saturday, Sunday 9:00–19:00.",
+            "Book your women's health & medical aesthetics consultation in Oxford. Now at Belsyre Court. Call 07739 309380 or email. Open Monday, Thursday, Friday, Saturday, Sunday 9:00 to 19:00.",
           canonical: "https://www.theoxfordwellnessdoctor.com/contact",
         }
   );
@@ -289,7 +289,7 @@ export default function Contact() {
                   <Clock className="text-secondary mt-1" />
                   <div>
                     <h3 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-2">Hours</h3>
-                    <p className="text-muted-foreground text-sm">Monday, Thursday, Friday, Saturday, Sunday 9:00–19:00<br/>Closed Tuesday and Wednesday</p>
+                    <p className="text-muted-foreground text-sm">Monday, Thursday, Friday, Saturday, Sunday 9:00 to 19:00<br/>Closed Tuesday and Wednesday</p>
                   </div>
                 </div>
               </CardContent>
@@ -327,7 +327,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h2 className="font-sans font-semibold text-lg text-foreground tracking-tight">Hours</h2>
-                  <p className="mt-2 text-sm text-muted-foreground">Monday, Thursday, Friday, Saturday, Sunday 9:00–19:00<br/>Closed Tuesday and Wednesday</p>
+                  <p className="mt-2 text-sm text-muted-foreground">Monday, Thursday, Friday, Saturday, Sunday 9:00 to 19:00<br/>Closed Tuesday and Wednesday</p>
                 </div>
               </div>
             )
@@ -344,10 +344,10 @@ export default function Contact() {
             </p>
             <ul className="space-y-4 mb-5">
               <li className="text-[15px] text-muted-foreground leading-relaxed">
-                <span className="font-medium text-foreground">Bevington Road</span>, right beside Belsyre Court (2–4 min walk): free short-stay bays, max 2 hours, 8am–6.30pm. Some bays are permit-only.
+                <span className="font-medium text-foreground">Bevington Road</span>, right beside Belsyre Court (2 to 4 min walk): free short-stay bays, max 2 hours, 8am–6.30pm. Some bays are permit-only.
               </li>
               <li className="text-[15px] text-muted-foreground leading-relaxed">
-                <span className="font-medium text-foreground">Winchester Road</span> (about 5 min walk north): free short-stay bays of 1, 2 or 3 hours depending on the bay, Mon–Sat 8am–6.30pm. Some bays are resident permit-only.
+                <span className="font-medium text-foreground">Winchester Road</span> (about 5 min walk north): free short-stay bays of 1, 2 or 3 hours depending on the bay, Mon to Sat 8am–6.30pm. Some bays are resident permit-only.
               </li>
             </ul>
             <p className="text-[15px] text-muted-foreground leading-relaxed">

@@ -12,7 +12,7 @@ const data: TreatmentPageData = {
       paragraphs: [
         "Perimenopause literally means 'around menopause' - the years leading up to your final menstrual period when your hormones begin to fluctuate. It typically begins in your 40s but can start in your late 30s for some women.",
         "During perimenopause, oestrogen levels don't simply decline gradually - they swing wildly up and down. This hormonal chaos is what causes the wide range of symptoms that can feel overwhelming, confusing, and sometimes frightening if you don't understand what's happening.",
-        "The duration varies enormously. Some women experience perimenopause for 2–3 years; others endure it for a decade or more. The transition officially ends when you've gone 12 consecutive months without a period - at which point you're considered to have reached menopause.",
+        "The duration varies enormously. Some women experience perimenopause for 2 to 3 years; others endure it for a decade or more. The transition officially ends when you've gone 12 consecutive months without a period - at which point you're considered to have reached menopause.",
       ],
     },
     {
@@ -97,11 +97,11 @@ const data: TreatmentPageData = {
   faqs: [
     {
       q: "At what age does perimenopause typically start?",
-      a: "Perimenopause typically begins in the mid-40s, though it can start earlier (late 30s) or later (early 50s). The average age is around 45–47. If you're experiencing symptoms in your early 40s or younger, it's still worth getting assessed.",
+      a: "Perimenopause typically begins in the mid-40s, though it can start earlier (late 30s) or later (early 50s). The average age is around 45 to 47. If you're experiencing symptoms in your early 40s or younger, it's still worth getting assessed.",
     },
     {
       q: "How long does perimenopause last?",
-      a: "The duration varies enormously - anywhere from 2 to 10+ years. On average, perimenopause lasts 4–6 years, but some women have a shorter or longer transition. It ends when you've gone 12 consecutive months without a period.",
+      a: "The duration varies enormously - anywhere from 2 to 10+ years. On average, perimenopause lasts 4 to 6 years, but some women have a shorter or longer transition. It ends when you've gone 12 consecutive months without a period.",
     },
     {
       q: "Can I still get pregnant during perimenopause?",

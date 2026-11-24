@@ -60,7 +60,7 @@ const data: TreatmentPageData = {
       heading: "Neauvia N Rose Intimate Health Treatment",
       paragraphs: [
         "Neauvia N Rose is a medical-grade hyaluronic acid treatment specifically designed for intimate health. It restores hydration, volume, and elasticity to intimate tissue that has been affected by childbirth - addressing dryness and discomfort.",
-        "The treatment is performed in-clinic and takes 30–45 minutes. It's minimally invasive, with immediate results and continued improvement over the following weeks as the hyaluronic acid stimulates natural collagen production.",
+        "The treatment is performed in-clinic and takes 30 to 45 minutes. It's minimally invasive, with immediate results and continued improvement over the following weeks as the hyaluronic acid stimulates natural collagen production.",
       ],
       bullets: [
         "May help with symptoms such as dryness or discomfort",
@@ -68,7 +68,7 @@ const data: TreatmentPageData = {
         "Enhances sensation during intimacy",
         "Improves tissue thickness and elasticity",
         "Minimal downtime (abstinence from sex for a few days recommended)",
-        "Results last 9–12 months on average",
+        "Results last 9 to 12 months on average",
       ],
     },
     {
@@ -88,7 +88,7 @@ const data: TreatmentPageData = {
     {
       heading: "Frequently Asked Questions About Timing",
       paragraphs: [
-        "Many women wonder when it's safe to consider intimate health treatment after childbirth. Generally, we recommend waiting at least 6–12 months after delivery to allow natural healing and hormonal stabilization. If you're breastfeeding, treatment is often most effective after you've stopped, as breastfeeding naturally suppresses oestrogen and affects tissue quality.",
+        "Many women wonder when it's safe to consider intimate health treatment after childbirth. Generally, we recommend waiting at least 6 to 12 months after delivery to allow natural healing and hormonal stabilization. If you're breastfeeding, treatment is often most effective after you've stopped, as breastfeeding naturally suppresses oestrogen and affects tissue quality.",
         "Dr Inga Taganova will assess your individual circumstances during your consultation and advise on the optimal timing for treatment.",
       ],
     },
@@ -131,7 +131,7 @@ const data: TreatmentPageData = {
   faqs: [
     {
       q: "How long after giving birth should I wait before considering intimate health treatment?",
-      a: "We generally recommend waiting at least 6–12 months after delivery to allow natural healing and hormonal stabilization. If you're breastfeeding, treatment is often most effective after you've stopped, as breastfeeding suppresses oestrogen and affects tissue quality. Dr Inga Taganova will assess your individual circumstances during consultation.",
+      a: "We generally recommend waiting at least 6 to 12 months after delivery to allow natural healing and hormonal stabilization. If you're breastfeeding, treatment is often most effective after you've stopped, as breastfeeding suppresses oestrogen and affects tissue quality. Dr Inga Taganova will assess your individual circumstances during consultation.",
     },
     {
       q: "Can intimate health treatment help with stress incontinence?",
@@ -139,11 +139,11 @@ const data: TreatmentPageData = {
     },
     {
       q: "Will intimate health treatment affect future pregnancies?",
-      a: "Neauvia N Rose is a temporary treatment (lasting 9–12 months) and does not permanently alter intimate anatomy. It will not affect your ability to conceive or deliver vaginally in the future. However, subsequent pregnancies and deliveries may create new changes that require additional treatment.",
+      a: "Neauvia N Rose is a temporary treatment (lasting 9 to 12 months) and does not permanently alter intimate anatomy. It will not affect your ability to conceive or deliver vaginally in the future. However, subsequent pregnancies and deliveries may create new changes that require additional treatment.",
     },
     {
       q: "Is the treatment painful?",
-      a: "Most patients report minimal discomfort during the treatment. A topical numbing cream can be applied beforehand if needed. The procedure takes 30–45 minutes and involves small injections of hyaluronic acid into the vaginal tissue. Any mild tenderness typically resolves within 24–48 hours.",
+      a: "Most patients report minimal discomfort during the treatment. A topical numbing cream can be applied beforehand if needed. The procedure takes 30 to 45 minutes and involves small injections of hyaluronic acid into the vaginal tissue. Any mild tenderness typically resolves within 24 to 48 hours.",
     },
     {
       q: "Can I have intimate health treatment if I had a caesarean section?",
@@ -155,7 +155,7 @@ const data: TreatmentPageData = {
     },
     {
       q: "How long do results last?",
-      a: "Results typically last 9–12 months, though this varies by individual. Many women notice immediate improvement in hydration and comfort, with continued improvement over the following weeks as collagen production is stimulated. Repeat treatments can be performed to maintain results.",
+      a: "Results typically last 9 to 12 months, though this varies by individual. Many women notice immediate improvement in hydration and comfort, with continued improvement over the following weeks as collagen production is stimulated. Repeat treatments can be performed to maintain results.",
     },
     {
       q: "Can you help with scarring from episiotomy or tearing?",

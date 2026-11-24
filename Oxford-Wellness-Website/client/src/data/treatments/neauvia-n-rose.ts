@@ -27,15 +27,15 @@ export const neauviaNRoseData: TreatmentLandingPageData = {
     intro: "Neauvia N Rose is medical-grade hyaluronic acid specifically designed for intimate health. It restores hydration, comfort, and tissue integrity.",
     steps: [
       "Private consultation and medical history review with Dr Inga Taganova.",
-      "Topical anaesthetic applied. Treatment takes 30–45 minutes with mild, brief discomfort.",
-      "Minimal downtime – abstain from sexual activity for a few days. Hydration improves within days."
+      "Topical anaesthetic applied. Treatment takes 30 to 45 minutes with mild, brief discomfort.",
+      "Minimal downtime, abstain from sexual activity for a few days. Hydration improves within days."
     ],
-    sessionsInfo: "Results typically last 9–12 months. A second session may be recommended for optimal outcomes, particularly for more advanced symptoms."
+    sessionsInfo: "Results typically last 9 to 12 months. A second session may be recommended for optimal outcomes, particularly for more advanced symptoms."
   },
   
   downtime: {
     heading: "Downtime",
-    description: "Minimal downtime. You can return to normal activities immediately, though sexual abstinence is recommended for 3–5 days to allow the tissue to settle. Any mild tenderness or swelling typically resolves within 24–48 hours."
+    description: "Minimal downtime. You can return to normal activities immediately, though sexual abstinence is recommended for 3 to 5 days to allow the tissue to settle. Any mild tenderness or swelling typically resolves within 24 to 48 hours."
   },
   
   trust: {
@@ -56,23 +56,23 @@ export const neauviaNRoseData: TreatmentLandingPageData = {
     },
     {
       q: "How long does the treatment take?",
-      a: "The appointment typically takes 30–45 minutes in total, including consultation and aftercare advice."
+      a: "The appointment typically takes 30 to 45 minutes in total, including consultation and aftercare advice."
     },
     {
       q: "How long do results last?",
-      a: "Results typically last 9–12 months, though this varies by individual. Many women notice immediate improvement in hydration and comfort, with continued improvement over the following weeks as collagen production is stimulated."
+      a: "Results typically last 9 to 12 months, though this varies by individual. Many women notice immediate improvement in hydration and comfort, with continued improvement over the following weeks as collagen production is stimulated."
     },
     {
       q: "Is there any downtime?",
-      a: "Downtime is minimal. We recommend abstaining from sexual activity for 3–5 days post-treatment. Most daily activities can be resumed immediately."
+      a: "Downtime is minimal. We recommend abstaining from sexual activity for 3 to 5 days post-treatment. Most daily activities can be resumed immediately."
     },
     {
       q: "Is it suitable for women who are not menopausal?",
-      a: "Yes. Vaginal dryness and discomfort can affect women of any age – not just those experiencing menopause. Neauvia N Rose is suitable for any woman experiencing intimate health concerns, regardless of age."
+      a: "Yes. Vaginal dryness and discomfort can affect women of any age, not just those experiencing menopause. Neauvia N Rose is suitable for any woman experiencing intimate health concerns, regardless of age."
     },
     {
       q: "Can this be combined with HRT?",
-      a: "Yes – many patients benefit from both HRT for systemic symptoms and local intimate health treatments. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology, can advise on the most appropriate combined approach."
+      a: "Yes, many patients benefit from both HRT for systemic symptoms and local intimate health treatments. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology, can advise on the most appropriate combined approach."
     }
   ],
   

@@ -78,8 +78,8 @@ export const menopauseClinicData: TreatmentLandingPageData = {
   ],
   
   pricing: [
-    { name: "Menopause & Women's Health Consultation — Initial (60 min)", price: "£275" },
-    { name: "Menopause & Women's Health — Follow-up (30 min)", price: "£150" }
+    { name: "Menopause & Women's Health Consultation, Initial (60 min)", price: "£275" },
+    { name: "Menopause & Women's Health, Follow-up (30 min)", price: "£150" }
   ],
   
   procedureSchema: {

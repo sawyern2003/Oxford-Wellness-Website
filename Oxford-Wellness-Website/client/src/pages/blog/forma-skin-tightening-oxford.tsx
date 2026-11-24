@@ -12,7 +12,7 @@ const data: BlogPostData = {
     src: "/blog-forma-skin-tightening-oxford.webp",
     alt: "Close-up of woman's neck and collarbone in natural light",
   },
-  intro: "Skin laxity—the gradual loosening and sagging of facial skin—is one of the most visible signs of ageing. For many years, the only effective solution was surgical facelift. Now, radiofrequency treatments such as Forma offer a non-surgical alternative that tightens and firms the skin with no downtime, no incisions, and results that develop gradually and naturally.",
+  intro: "Skin laxity, the gradual loosening and sagging of facial skin, is one of the most visible signs of ageing. For many years, the only effective solution was surgical facelift. Now, radiofrequency treatments such as Forma offer a non-surgical alternative that tightens and firms the skin with no downtime, no incisions, and results that develop gradually and naturally.",
   keyPoints: [
     "Forma uses radiofrequency energy to heat deep skin layers and stimulate collagen",
     "It treats mild to moderate skin laxity on the face and neck",
@@ -44,7 +44,7 @@ const data: BlogPostData = {
     {
       heading: "How Forma Works",
       paragraphs: [
-        "Radiofrequency energy heats the dermal collagen to around 40-42°C. At this temperature, existing collagen fibres contract and tighten immediately. Over the following weeks and months, the heat also stimulates fibroblasts—the cells that produce collagen—to generate new collagen.",
+        "Radiofrequency energy heats the dermal collagen to around 40-42°C. At this temperature, existing collagen fibres contract and tighten immediately. Over the following weeks and months, the heat also stimulates fibroblasts, the cells that produce collagen, to generate new collagen.",
         "The body's natural healing response gradually remodels the collagen structure, resulting in firmer, tighter, more youthful-looking skin. The effect is cumulative, meaning results continue to improve with each treatment and for several months after the course is completed.",
       ],
     },
@@ -52,7 +52,7 @@ const data: BlogPostData = {
       heading: "The Treatment Experience",
       paragraphs: [
         "Forma treatment is comfortable and relaxing. A conductive gel is applied to the skin, and the radiofrequency handpiece is moved over the treatment area in slow, overlapping passes. The handpiece has built-in temperature monitoring to ensure the skin reaches the optimal temperature safely.",
-        "You will feel a deep warmth as the tissue heats, but it should not be painful. Most people find the sensation pleasant—similar to a hot stone massage. If the heat becomes uncomfortable, the practitioner can adjust the settings.",
+        "You will feel a deep warmth as the tissue heats, but it should not be painful. Most people find the sensation pleasant, similar to a hot stone massage. If the heat becomes uncomfortable, the practitioner can adjust the settings.",
         "Treatment of the full face and neck typically takes 30 to 40 minutes. There is no anaesthetic required, and you can return to normal activities immediately.",
       ],
     },

@@ -6,7 +6,7 @@ function LogoRow({ hidden }: { hidden?: boolean }) {
     <ul className="flex shrink-0 items-center">
       {row.map((name, index) => (
         <li key={`${hidden ? "copy" : "live"}-${name}-${index}`} className="px-10 md:px-14">
-          <span className="whitespace-nowrap font-sans text-lg font-medium tracking-[0.14em] text-primary/70 uppercase">
+          <span className="whitespace-nowrap font-sans text-lg font-medium tracking-normal text-primary/70">
             {name}
           </span>
         </li>

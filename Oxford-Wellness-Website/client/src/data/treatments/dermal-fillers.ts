@@ -26,15 +26,15 @@ export const dermalFillersData: TreatmentLandingPageData = {
     intro: "Dermal fillers use hyaluronic acid to restore lost volume, smooth deep lines, and contour the face.",
     steps: [
       "Facial assessment and tailored plan using premium, fully reversible HA fillers (Juvederm, Restylane, Teosyal).",
-      "Topical anaesthetic cream applied. Treatment takes 30–45 minutes.",
-      "Results immediate. Final result visible in 2–4 weeks once swelling settles."
+      "Topical anaesthetic cream applied. Treatment takes 30 to 45 minutes.",
+      "Results immediate. Final result visible in 2 to 4 weeks once swelling settles."
     ],
-    sessionsInfo: "Longevity depends on the area treated and the product used. Cheek and jawline filler typically lasts 12–18 months."
+    sessionsInfo: "Longevity depends on the area treated and the product used. Cheek and jawline filler typically lasts 12 to 18 months."
   },
   
   downtime: {
     heading: "Downtime",
-    description: "Most patients experience minimal downtime. Mild swelling and bruising may occur for 3–5 days. Avoid strenuous exercise, alcohol, and excessive heat for 24 hours after treatment. Make-up can usually be worn the next day."
+    description: "Most patients experience minimal downtime. Mild swelling and bruising may occur for 3 to 5 days. Avoid strenuous exercise, alcohol, and excessive heat for 24 hours after treatment. Make-up can usually be worn the next day."
   },
   
   trust: {
@@ -51,7 +51,7 @@ export const dermalFillersData: TreatmentLandingPageData = {
   faqs: [
     {
       q: "How long do dermal fillers last?",
-      a: "Longevity depends on the area treated and the product used. Cheek and jawline filler typically lasts 12–18 months; lip and tear trough filler lasts 6–12 months. Your metabolism and lifestyle also affect duration."
+      a: "Longevity depends on the area treated and the product used. Cheek and jawline filler typically lasts 12 to 18 months; lip and tear trough filler lasts 6 to 12 months. Your metabolism and lifestyle also affect duration."
     },
     {
       q: "Do dermal fillers hurt?",
@@ -59,11 +59,11 @@ export const dermalFillersData: TreatmentLandingPageData = {
     },
     {
       q: "What's the difference between dermal fillers and anti-wrinkle injections?",
-      a: "Anti-wrinkle injections relax muscles to smooth dynamic lines. Dermal fillers add volume and structure using hyaluronic acid. The two treatments work differently and are often complementary – Dr Inga Taganova will advise on the best approach for your concerns."
+      a: "Anti-wrinkle injections relax muscles to smooth dynamic lines. Dermal fillers add volume and structure using hyaluronic acid. The two treatments work differently and are often complementary, Dr Inga Taganova will advise on the best approach for your concerns."
     },
     {
       q: "Can dermal fillers be dissolved?",
-      a: "Yes. Hyaluronic acid fillers can be dissolved quickly and safely using a dissolving treatment. This is one of the key reasons hyaluronic acid fillers are the gold standard – they are fully reversible."
+      a: "Yes. Hyaluronic acid fillers can be dissolved quickly and safely using a dissolving treatment. This is one of the key reasons hyaluronic acid fillers are the gold standard, they are fully reversible."
     },
     {
       q: "Will I look unnatural?",
@@ -72,10 +72,10 @@ export const dermalFillersData: TreatmentLandingPageData = {
   ],
   
   pricing: [
-    { name: "Dermal filler — 0.5ml", price: "£250" },
-    { name: "Dermal filler — 1ml", price: "£320" },
-    { name: "Lip filler — 0.7ml", price: "£320" },
-    { name: "Dermal filler — 2ml", price: "£590" }
+    { name: "Dermal filler, 0.5ml", price: "£250" },
+    { name: "Dermal filler, 1ml", price: "£320" },
+    { name: "Lip filler, 0.7ml", price: "£320" },
+    { name: "Dermal filler, 2ml", price: "£590" }
   ],
   
   consultation: {

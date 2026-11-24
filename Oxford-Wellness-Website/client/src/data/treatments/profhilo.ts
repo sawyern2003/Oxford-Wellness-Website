@@ -26,10 +26,10 @@ export const profhiloData: TreatmentLandingPageData = {
     intro: "Profhilo is pure hyaluronic acid that bio-remodels skin from within, stimulating collagen and elastin production.",
     steps: [
       "Five injection points per side of the face using the BAP technique.",
-      "Takes 15–20 minutes per session, no downtime.",
+      "Takes 15 to 20 minutes per session, no downtime.",
       "Two sessions required, four weeks apart."
     ],
-    sessionsInfo: "Improvements visible from 2–4 weeks. Peak results appear 4–6 weeks after the second session. Results typically last around 6 months."
+    sessionsInfo: "Improvements visible from 2 to 4 weeks. Peak results appear 4 to 6 weeks after the second session. Results typically last around 6 months."
   },
   
   downtime: {
@@ -71,8 +71,8 @@ export const profhiloData: TreatmentLandingPageData = {
   ],
   
   pricing: [
-    { name: "Profhilo — single session", price: "£350" },
-    { name: "Profhilo — course of 2", price: "£650" }
+    { name: "Profhilo, single session", price: "£350" },
+    { name: "Profhilo, course of 2", price: "£650" }
   ],
   
   consultation: {

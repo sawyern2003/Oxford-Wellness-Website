@@ -36,7 +36,7 @@ const serviceAreas = [
     title: "Body",
     href: "/treatments#body",
     image: programmeImage("weight-body-confidence"),
-    body: "Non-surgical body treatments for skin firming, texture and contour — including Forma Plus and InMode FX.",
+    body: "Non-surgical body treatments for skin firming, texture and contour, including Forma Plus and InMode FX.",
   },
 ];
 
@@ -73,7 +73,7 @@ export default function Home() {
               </div>
             </FadeIn>
             <FadeIn delay={0.08} className="lg:col-span-7">
-              <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
+              <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">
                 Your doctor
               </p>
               <h2 className="font-sans font-semibold text-3xl md:text-4xl text-foreground tracking-tight mb-5">
@@ -83,7 +83,7 @@ export default function Home() {
                 From skin and intimate health to menopause and longevity, led by Dr Inga Taganova, GP.
               </p>
               <p className="text-[15px] text-muted-foreground leading-relaxed mb-4 max-w-xl">
-                A private GP with a background in obstetrics and gynaecology who takes time to understand what has changed – then builds a plan grounded in clinical judgement and natural-looking results.
+                A private GP with a background in obstetrics and gynaecology who takes time to understand what has changed, then builds a plan grounded in clinical judgement and natural-looking results.
               </p>
               <p className="text-[15px] text-muted-foreground leading-relaxed mb-8 max-w-xl">
                 She sees every patient herself. Consultations and treatments take place at our new clinic at Belsyre Court, in the centre of Oxford.
@@ -104,7 +104,7 @@ export default function Home() {
       <RevealSection className="py-16 md:py-24 bg-muted/60">
         <div className="container-wide">
           <FadeIn className="max-w-xl mb-12">
-            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
+            <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">
               How we can help
             </p>
             <h2 className="font-sans font-semibold text-3xl md:text-4xl text-foreground tracking-tight">
@@ -168,7 +168,7 @@ export default function Home() {
       <RevealSection className="py-14 md:py-16 bg-background">
         <div className="container-page">
           <FadeIn className="max-w-xl mx-auto text-center">
-            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
+            <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">
               For someone you care for
             </p>
             <h2 className="font-sans font-semibold text-2xl md:text-3xl text-foreground tracking-tight mb-4">
