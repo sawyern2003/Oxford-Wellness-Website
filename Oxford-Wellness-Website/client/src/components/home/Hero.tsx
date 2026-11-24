@@ -1,5 +1,4 @@
 import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
 import TypewriterPhrase from "@/components/animations/TypewriterPhrase";
 import Flourish from "@/components/home/Flourish";
 import { heroImage } from "@/components/home/heroImage";
@@ -92,13 +91,31 @@ export default function Hero() {
                   {HERO_CAPTION}
                 </p>
                 <div className="mt-4 lg:mt-0 pb-2">
-                  <Link href="/book" className="js-book-cta inline-block">
-                    <Button
-                      data-testid="hero-book-consultation-btn"
-                      className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90 shadow-none hover:shadow-none px-7 h-10 text-sm font-medium"
+                  <Link
+                    href="/book"
+                    data-testid="hero-book-consultation-btn"
+                    className="js-book-cta hero-book-link inline-flex items-center gap-2 min-h-11 text-sm font-medium text-[#293c56] rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  >
+                    <span className="hero-book-link__label">Book a consultation</span>
+                    <svg
+                      className="hero-book-link__arrow"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      focusable="false"
                     >
-                      Book a consultation
-                    </Button>
+                      <path
+                        d="M2.5 7h9M8 3.5 11.5 7 8 10.5"
+                        stroke="currentColor"
+                        strokeWidth="1.15"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        opacity="0.55"
+                      />
+                    </svg>
                   </Link>
                 </div>
               </div>

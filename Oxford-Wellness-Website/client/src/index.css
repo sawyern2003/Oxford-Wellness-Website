@@ -369,6 +369,58 @@
   }
 }
 
+/*
+  Hero CTA text-link variant (branch cursor/hero-cta-link-6f29).
+  Navy label, 1px underline ~6px below, light arrow; hover redraws the
+  underline L→R and nudges the arrow. Static under prefers-reduced-motion.
+*/
+.hero-book-link__label {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.hero-book-link__label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+.hero-book-link__arrow {
+  flex-shrink: 0;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .hero-book-link__arrow {
+    transition: transform 0.3s ease;
+  }
+
+  .hero-book-link:hover .hero-book-link__label::after,
+  .hero-book-link:focus-visible .hero-book-link__label::after {
+    animation: hero-book-underline-draw 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .hero-book-link:hover .hero-book-link__arrow,
+  .hero-book-link:focus-visible .hero-book-link__arrow {
+    transform: translateX(3px);
+  }
+}
+
+@keyframes hero-book-underline-draw {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
 /* Desktop cursor: a solid dot that opens to a soft ring over links and buttons */
 html.has-custom-cursor,
 html.has-custom-cursor * {
