@@ -1,7 +1,6 @@
 import FadeIn from "@/components/animations/FadeIn";
 import { Button } from "@/components/ui/button";
 import {
-  formatVoucherPrice,
   giftVoucherBuyHref,
   giftVoucherOpensExternally,
   GIFT_VOUCHERS,
@@ -38,26 +37,24 @@ const HOW_IT_WORKS = [
 function VoucherCard({ voucher, index }: { voucher: GiftVoucher; index: number }) {
   const href = giftVoucherBuyHref(voucher);
   const external = giftVoucherOpensExternally(voucher);
-  const priceLabel = formatVoucherPrice(voucher);
   const pricePending = voucher.amountGbp == null;
 
   return (
-    <FadeIn delay={index * 0.06}>
+    <FadeIn delay={index * 0.06} className="h-full">
       <article className="h-full flex flex-col rounded-3xl bg-muted/40 p-7 md:p-8">
         <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-3">
           Gift voucher
         </p>
-        <h2 className="font-sans font-semibold text-xl md:text-2xl text-foreground tracking-tight mb-3">
+        <h2 className="text-3xl md:text-4xl text-foreground tracking-tight mb-3">
           {voucher.name}
         </h2>
         <p
-          className={
-            pricePending
-              ? "text-sm font-medium text-muted-foreground mb-4"
-              : "font-sans font-semibold text-2xl text-primary tracking-tight mb-4"
-          }
+          className={`text-sm font-medium mb-4 min-h-[1.25rem] ${
+            pricePending ? "text-muted-foreground" : "text-transparent select-none"
+          }`}
+          aria-hidden={!pricePending}
         >
-          {priceLabel}
+          {pricePending ? "Price to be confirmed" : "\u00a0"}
         </p>
         <p className="text-[15px] text-muted-foreground leading-relaxed mb-8 flex-1">
           {voucher.description}
@@ -65,11 +62,11 @@ function VoucherCard({ voucher, index }: { voucher: GiftVoucher; index: number }
         <a
           href={href}
           {...(external
-            ? { className: "block" }
+            ? { className: "block mt-auto" }
             : {
                 target: "_blank",
                 rel: "noopener noreferrer",
-                className: "js-whatsapp-cta block",
+                className: "js-whatsapp-cta block mt-auto",
               })}
         >
           <Button className="w-full rounded-full bg-primary text-primary-foreground hover:bg-primary/90 h-11 text-sm font-medium">
@@ -86,7 +83,7 @@ export default function GiftVouchers() {
   useSEO({
     title: "Gift Vouchers | The Oxford Wellness Doctor",
     description:
-      "Gift a consultation with Dr Inga Taganova, or credit towards any treatment at The Oxford Wellness Doctor in Oxford. A considered present for someone you care for.",
+      "Gift a consultation with Dr Inga Taganova, or credit towards consultations and treatments at The Oxford Wellness Doctor in Oxford.",
     canonical: "https://www.theoxfordwellnessdoctor.com/gift-vouchers",
   });
 
@@ -111,7 +108,7 @@ export default function GiftVouchers() {
           </p>
         </FadeIn>
 
-        <div className="grid sm:grid-cols-2 gap-5 md:gap-6 mb-20 md:mb-24">
+        <div className="grid sm:grid-cols-2 gap-5 md:gap-6 mb-20 md:mb-24 items-stretch">
           {GIFT_VOUCHERS.map((voucher, index) => (
             <VoucherCard key={voucher.id} voucher={voucher} index={index} />
           ))}
@@ -150,6 +147,7 @@ export default function GiftVouchers() {
             <li>Transferable</li>
             <li>Non-refundable</li>
             <li>Cannot be exchanged for cash</li>
+            <li>Valid for consultations and treatments only, not for medicines.</li>
           </ul>
         </FadeIn>
 

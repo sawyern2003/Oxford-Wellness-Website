@@ -175,7 +175,7 @@ export default function Home() {
               Gift vouchers
             </h2>
             <p className="text-[15px] text-muted-foreground leading-relaxed mb-7">
-              A consultation with Dr Inga, or credit towards any treatment: a considered gift from
+              A consultation with Dr Inga, or credit towards consultations and treatments at
               The Oxford Wellness Doctor.
             </p>
             <Link href="/gift-vouchers">
