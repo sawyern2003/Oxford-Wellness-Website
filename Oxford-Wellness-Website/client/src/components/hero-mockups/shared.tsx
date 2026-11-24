@@ -20,27 +20,22 @@ export const carePhrases = [
   "symptoms of menopause",
 ];
 
-export const DESK_AVIF =
-  "/images/hero/dr-inga-desk-640.avif 640w, /images/hero/dr-inga-desk-960.avif 960w, /images/hero/dr-inga-desk-1280.avif 1280w, /images/hero/dr-inga-desk-1600.avif 1600w, /images/hero/dr-inga-desk-2000.avif 2000w";
-export const DESK_WEBP =
-  "/images/hero/dr-inga-desk-640.webp 640w, /images/hero/dr-inga-desk-960.webp 960w, /images/hero/dr-inga-desk-1280.webp 1280w, /images/hero/dr-inga-desk-1600.webp 1600w, /images/hero/dr-inga-desk-2000.webp 2000w";
-export const DESK_FALLBACK = "/images/hero/dr-inga-desk.jpg";
-export const DESK_W = 1043;
-export const DESK_H = 1332;
+/** About-page watercolour of Dr Inga (not the white-studio desk photo). */
+export const INGA_AVIF =
+  "/images/hero/dr-inga-about-640.avif 640w, /images/hero/dr-inga-about-960.avif 960w, /images/hero/dr-inga-about-1280.avif 1280w";
+export const INGA_WEBP =
+  "/images/hero/dr-inga-about-640.webp 640w, /images/hero/dr-inga-about-960.webp 960w, /images/hero/dr-inga-about-1280.webp 1280w";
+export const INGA_FALLBACK = "/images/hero/dr-inga-about.jpg";
+export const INGA_W = 545;
+export const INGA_H = 819;
 
 export const WIDE_AVIF =
-  "/images/hero/dr-inga-desk-wide-800.avif 800w, /images/hero/dr-inga-desk-wide-1200.avif 1200w, /images/hero/dr-inga-desk-wide-1600.avif 1600w, /images/hero/dr-inga-desk-wide-2000.avif 2000w";
+  "/images/hero/dr-inga-about-wide-800.avif 800w, /images/hero/dr-inga-about-wide-1200.avif 1200w";
 export const WIDE_WEBP =
-  "/images/hero/dr-inga-desk-wide-800.webp 800w, /images/hero/dr-inga-desk-wide-1200.webp 1200w, /images/hero/dr-inga-desk-wide-1600.webp 1600w, /images/hero/dr-inga-desk-wide-2000.webp 2000w";
-export const WIDE_FALLBACK = "/images/hero/dr-inga-desk-wide.jpg";
-export const WIDE_W = 1086;
-export const WIDE_H = 673;
-
-export const CLUB_AVIF =
-  "/images/hero/dr-inga-desk-club-480.avif 480w, /images/hero/dr-inga-desk-club-720.avif 720w, /images/hero/dr-inga-desk-club-960.avif 960w, /images/hero/dr-inga-desk-club-1200.avif 1200w";
-export const CLUB_WEBP =
-  "/images/hero/dr-inga-desk-club-480.webp 480w, /images/hero/dr-inga-desk-club-720.webp 720w, /images/hero/dr-inga-desk-club-960.webp 960w, /images/hero/dr-inga-desk-club-1200.webp 1200w";
-export const CLUB_FALLBACK = "/images/hero/dr-inga-desk-club.jpg";
+  "/images/hero/dr-inga-about-wide-800.webp 800w, /images/hero/dr-inga-about-wide-1200.webp 1200w";
+export const WIDE_FALLBACK = "/images/hero/dr-inga-about-wide.jpg";
+export const WIDE_W = 545;
+export const WIDE_H = 393;
 
 /** Quiet solid navy CTA — modest radius, no pill, no shadow. */
 export function BookConsultationButton({
@@ -62,65 +57,39 @@ export function BookConsultationButton({
   );
 }
 
-const warmFilter = "sepia(0.06) saturate(1.04) brightness(1.01)";
-
 /**
- * Framed desk portrait — hairline navy edge + faint warm panel so the
- * white studio backdrop does not dissolve into the page.
+ * About watercolour — no frame, mat, border, or shadow.
+ * Prefer object-contain so the painted face is never cropped off.
  */
-export function DeskPortrait({
+export function IngaPortrait({
   className,
   sizes = "(min-width: 1024px) 42vw, 92vw",
   priority = false,
-  objectPosition = "center 20%",
-  framed = true,
-  variant = "desk",
-  styleFilter = warmFilter,
+  objectPosition = "center 18%",
+  objectFit = "contain",
 }: {
   className?: string;
   sizes?: string;
   priority?: boolean;
   objectPosition?: string;
-  framed?: boolean;
-  variant?: "desk" | "club";
-  styleFilter?: string;
+  objectFit?: "contain" | "cover";
 }) {
-  const avif = variant === "club" ? CLUB_AVIF : DESK_AVIF;
-  const webp = variant === "club" ? CLUB_WEBP : DESK_WEBP;
-  const fallback = variant === "club" ? CLUB_FALLBACK : DESK_FALLBACK;
-  const width = variant === "club" ? 825 : DESK_W;
-  const height = variant === "club" ? 958 : DESK_H;
-
-  const imgClass = framed
-    ? "absolute inset-0 h-full w-full object-cover"
-    : className;
-
-  const img = (
+  return (
     <picture>
-      <source type="image/avif" srcSet={avif} sizes={sizes} />
-      <source type="image/webp" srcSet={webp} sizes={sizes} />
+      <source type="image/avif" srcSet={INGA_AVIF} sizes={sizes} />
+      <source type="image/webp" srcSet={INGA_WEBP} sizes={sizes} />
       <img
-        src={fallback}
+        src={INGA_FALLBACK}
         alt="Dr Inga Taganova"
-        width={width}
-        height={height}
-        className={imgClass}
-        style={{ objectPosition, filter: styleFilter }}
+        width={INGA_W}
+        height={INGA_H}
+        className={className}
+        style={{ objectPosition, objectFit }}
         fetchPriority={priority ? "high" : undefined}
         loading={priority ? "eager" : "lazy"}
         decoding="async"
       />
     </picture>
-  );
-
-  if (!framed) return img;
-
-  return (
-    <div className={className ?? "absolute inset-0"}>
-      <div className="absolute inset-0 bg-[#e8e2d8] p-[4px] ring-1 ring-primary/40">
-        <div className="relative h-full w-full overflow-hidden bg-[#e4dfd6]">{img}</div>
-      </div>
-    </div>
   );
 }
 
@@ -143,7 +112,6 @@ export function WidePortrait({
         width={WIDE_W}
         height={WIDE_H}
         className={className}
-        style={{ filter: warmFilter }}
         fetchPriority={priority ? "high" : undefined}
         loading={priority ? "eager" : "lazy"}
         decoding="async"

@@ -1,15 +1,14 @@
 import {
   BookConsultationButton,
   CareLine,
-  DeskPortrait,
   Headline,
   HERO_CAPTION,
+  IngaPortrait,
   Subline,
 } from "./shared";
 
 /**
- * 2 · Centred portrait plate
- * Large gallery plate (~65vh on desktop), CTA ≥60px above a 900px fold.
+ * 2 · Centred portrait — About watercolour, no frame/plate border.
  */
 export default function HeroPortraitPlate() {
   return (
@@ -21,16 +20,13 @@ export default function HeroPortraitPlate() {
           </div>
 
           <figure className="relative mx-auto w-full max-w-[17rem] sm:max-w-[20rem] lg:max-w-none lg:w-[min(40vw,26rem)]">
-            {/*
-              ~65vh on tall viewports; on a 900px fold the max-height keeps
-              the CTA bottom ≥60px above the fold (see fold check).
-            */}
-            <div className="relative h-[38vh] max-h-[320px] lg:h-[65vh] lg:max-h-[min(65vh,calc(100vh-23.5rem))] bg-[#f3f0ea]">
-              <DeskPortrait
+            <div className="relative h-[38vh] max-h-[320px] lg:h-[65vh] lg:max-h-[min(65vh,calc(100vh-23.5rem))] bg-white">
+              <IngaPortrait
                 priority
                 sizes="(min-width: 1024px) min(40vw, 26rem), 80vw"
-                className="absolute inset-0 h-full w-full object-cover"
-                objectPosition="center 16%"
+                className="absolute inset-0 h-full w-full"
+                objectPosition="center 10%"
+                objectFit="contain"
               />
             </div>
             <figcaption className="mt-1.5 text-center text-sm text-muted-foreground">

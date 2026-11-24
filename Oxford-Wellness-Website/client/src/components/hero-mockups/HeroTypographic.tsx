@@ -9,8 +9,7 @@ import {
 } from "./shared";
 
 /**
- * 4 · Typographic
- * Type owns the first screen; photo peeks just below the button (no large gap).
+ * 4 · Typographic — photo peek with no boxed outline.
  */
 export default function HeroTypographic() {
   return (
@@ -40,16 +39,15 @@ export default function HeroTypographic() {
           </div>
         </div>
 
-        {/* Tight under the button on mobile; mt-auto only from md up */}
         <div className="container-wide pt-5 md:pt-8 pb-0 md:mt-auto">
           <div className="w-10 h-px bg-primary/25 mb-2.5" aria-hidden="true" />
           <p className="text-sm text-muted-foreground mb-2.5">{HERO_CAPTION}</p>
           <figure>
-            <div className="relative w-full overflow-hidden bg-[#e8e2d8] ring-1 ring-primary/35 h-[16vh] min-h-[110px] md:h-[38vh] md:min-h-[300px] md:max-h-[400px]">
+            <div className="relative w-full overflow-hidden bg-white h-[16vh] min-h-[110px] md:h-[38vh] md:min-h-[300px] md:max-h-[400px]">
               <WidePortrait
                 priority
                 sizes="(min-width: 1024px) min(1200px, 92vw), 92vw"
-                className="absolute inset-0 h-full w-full object-cover object-[center_8%] md:object-[center_20%]"
+                className="absolute inset-0 h-full w-full object-cover object-[center_18%] md:object-[center_28%]"
               />
             </div>
           </figure>

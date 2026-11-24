@@ -2,16 +2,14 @@ import {
   BelsyreWash,
   BookConsultationButton,
   CareLine,
-  DeskPortrait,
   Headline,
   HERO_CAPTION,
+  IngaPortrait,
   Subline,
 } from "./shared";
 
 /**
- * 1 · Editorial split
- * Mobile: photo first (~48vh so CTA fits), then type + button on first screen.
- * Desktop: text left, tall framed photo right; high-res srcset.
+ * 1 · Editorial split — About watercolour, no frame.
  */
 export default function HeroEditorial() {
   return (
@@ -21,12 +19,13 @@ export default function HeroEditorial() {
           <div className="grid lg:grid-cols-12 gap-5 lg:gap-16 lg:items-center lg:min-h-[calc(100vh-6.5rem)]">
             <div className="lg:col-span-6 order-1 lg:order-2">
               <figure>
-                <div className="relative h-[42vh] max-h-[360px] sm:h-[46vh] sm:max-h-[420px] lg:h-[82vh] lg:max-h-[780px] overflow-hidden bg-[#f3f0ea]">
-                  <DeskPortrait
+                <div className="relative h-[42vh] max-h-[360px] sm:h-[46vh] sm:max-h-[420px] lg:h-[82vh] lg:max-h-[780px] overflow-hidden bg-white">
+                  <IngaPortrait
                     priority
                     sizes="(min-width: 1024px) min(42vw, 720px), 92vw"
-                    className="absolute inset-0 h-full w-full object-cover"
-                    objectPosition="center 18%"
+                    className="absolute inset-0 h-full w-full"
+                    objectPosition="center 12%"
+                    objectFit="contain"
                   />
                 </div>
                 <figcaption className="mt-2 text-sm text-muted-foreground lg:hidden">
