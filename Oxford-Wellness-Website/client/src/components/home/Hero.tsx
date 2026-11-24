@@ -13,11 +13,12 @@ import cafe1024Webp from "@/assets/optimized/lifestyle-cafe-1024.webp";
 import { CONSULTATION_WHATSAPP_MESSAGE, whatsappHref } from "@/lib/whatsapp";
 
 const heroPhrases = [
-  "symptoms of menopause",
-  "fatigue",
   "skin changes",
-  "body confidence",
   "intimate wellness",
+  "body confidence",
+  "fatigue",
+  "hormone changes",
+  "symptoms of menopause",
 ];
 
 const cafeAvifSrcSet = `${cafe640Avif} 640w, ${cafe960Avif} 960w, ${cafe1024Avif} 1024w`;
