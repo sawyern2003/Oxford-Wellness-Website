@@ -32,16 +32,6 @@ export interface GiftVoucher {
 
 export const GIFT_VOUCHERS: GiftVoucher[] = [
   {
-    id: "consultation",
-    name: "A consultation with Dr Inga",
-    whatsappLabel: "a consultation voucher with Dr Inga",
-    description:
-      "A private consultation with Dr Inga Taganova: time to be heard, and a plan that considers skin, intimate health and women’s health together.",
-    amountGbp: CONSULTATION_VOUCHER_PRICE,
-    // TODO: paste SumUp payment link for the consultation voucher
-    sumUpPaymentLink: null,
-  },
-  {
     id: "gbp100",
     name: "£100 gift voucher",
     whatsappLabel: "a £100 gift voucher",
@@ -66,6 +56,16 @@ export const GIFT_VOUCHERS: GiftVoucher[] = [
     description: "Credit towards any consultation or treatment at The Oxford Wellness Doctor.",
     amountGbp: 500,
     // TODO: paste SumUp payment link for the £500 voucher
+    sumUpPaymentLink: null,
+  },
+  {
+    id: "consultation",
+    name: "A consultation with Dr Inga",
+    whatsappLabel: "a consultation voucher with Dr Inga",
+    description:
+      "A private consultation with Dr Inga Taganova: time to be heard, and a plan that considers skin, intimate health and women’s health together.",
+    amountGbp: CONSULTATION_VOUCHER_PRICE,
+    // TODO: paste SumUp payment link for the consultation voucher
     sumUpPaymentLink: null,
   },
 ];

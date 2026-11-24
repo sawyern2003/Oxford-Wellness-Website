@@ -72,7 +72,7 @@ function VoucherCard({ voucher, index }: { voucher: GiftVoucher; index: number }
                 className: "js-whatsapp-cta block",
               })}
         >
-          <Button className="w-full rounded-full bg-secondary text-secondary-foreground hover:bg-secondary/90 h-11 text-sm font-medium">
+          <Button className="w-full rounded-full bg-primary text-primary-foreground hover:bg-primary/90 h-11 text-sm font-medium">
             Buy
           </Button>
         </a>
