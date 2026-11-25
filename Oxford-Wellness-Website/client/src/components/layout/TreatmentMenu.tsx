@@ -79,14 +79,22 @@ export function TreatmentMenuPanel({ onNavigate }: { onNavigate: (href: string) 
             </Link>
           ))}
         </div>
-        <div className="mt-6 text-center">
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-center">
+          <Link
+            href="/concerns"
+            role="menuitem"
+            onClick={() => onNavigate("/concerns")}
+            className="text-sm text-muted-foreground hover:text-primary transition-colors"
+          >
+            Concerns we help with
+          </Link>
           <Link
             href="/treatments"
             role="menuitem"
             onClick={() => onNavigate("/treatments")}
             className="text-sm text-muted-foreground hover:text-primary transition-colors"
           >
-            View all treatments →
+            View all treatments
           </Link>
         </div>
       </div>
@@ -125,11 +133,18 @@ export function TreatmentMenuMobile({ onNavigate }: { onNavigate: (href: string)
         ))}
       </div>
       <Link
-        href="/treatments"
-        onClick={() => onNavigate("/treatments")}
+        href="/concerns"
+        onClick={() => onNavigate("/concerns")}
         className="block rounded-md py-2 pl-3 text-sm text-muted-foreground hover:bg-accent hover:text-primary transition-colors mt-2"
       >
-        View all treatments →
+        Concerns we help with
+      </Link>
+      <Link
+        href="/treatments"
+        onClick={() => onNavigate("/treatments")}
+        className="block rounded-md py-2 pl-3 text-sm text-muted-foreground hover:bg-accent hover:text-primary transition-colors"
+      >
+        View all treatments
       </Link>
     </div>
   );

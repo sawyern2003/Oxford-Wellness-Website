@@ -2,76 +2,96 @@ import { TreatmentLandingPageData } from "@/components/treatments/TreatmentLandi
 
 export const antiWrinkleData: TreatmentLandingPageData = {
   slug: "anti-wrinkle-injections-oxford",
-  h1: "Anti-Wrinkle Injections in Oxford",
-  title: "Anti-Wrinkle Injections Oxford | Forehead, Frown & Crow's Feet | Expert Doctor",
-  metaDescription: "Expert anti-wrinkle injections in Oxford. Smooth forehead lines, frown lines & crow's feet. GMC doctor-led clinic. Natural results.",
+  h1: "Lines and wrinkles consultation in Oxford",
+  title: "Lines and Wrinkles Consultation in Oxford | The Oxford Wellness Doctor",
+  metaDescription:
+    "Consultation for expression lines in Oxford with Dr Inga Taganova, GP. Forehead lines, frown lines and crow's feet assessed in clinic.",
   canonical: "https://www.theoxfordwellnessdoctor.com/treatments/anti-wrinkle-injections-oxford",
-  
-  priceLabel: "One area",
+
+  priceLabel: "From",
   priceValue: "£230",
-  
+
   whoIsFor: {
-    heading: "What anti-wrinkle injections treat",
+    heading: "Who it is for",
     items: [
       "Forehead lines",
       "Frown lines between the eyebrows",
       "Crow's feet around the eyes",
-      "Bunny lines on the nose",
-      "Dimpled chin",
-      "Downturned mouth corners"
-    ]
-  },
-  
-  howItWorks: {
-    heading: "How it works",
-    intro: "Anti-wrinkle injections use a purified protein to relax the muscles that cause expression lines.",
-    steps: [
-      "Consultation to assess your concerns and treatment areas.",
-      "Small injections placed precisely into the target muscles. Takes 10 to 15 minutes.",
-      "Results visible in 3 to 5 days, reaching full effect at 2 weeks."
+      "Lines across the nose bridge",
+      "A dimpled chin",
+      "Downturned mouth corners",
     ],
-    sessionsInfo: "Results typically last 3 to 4 months. Many patients schedule maintenance treatments 3 to 4 times per year."
   },
-  
+
+  howItWorks: {
+    heading: "What happens at your appointment",
+    intro:
+      "Dr Inga Taganova, GP, assesses the expression lines that bother you and explains what may help. Any treatment is discussed only after that assessment, without product or brand names on this page.",
+    steps: [
+      "Consultation to review your concerns and the areas you would like to discuss.",
+      "If treatment proceeds, small injections are placed carefully into the target muscles. This usually takes 10 to 15 minutes.",
+      "Change is often visible in 3 to 5 days, with fuller effect around 2 weeks.",
+    ],
+    sessionsInfo:
+      "Results typically last 3 to 4 months. Many people schedule maintenance appointments a few times a year.",
+  },
+
   downtime: {
-    heading: "Downtime",
-    description: "No downtime. You can return to normal activities immediately. Avoid lying flat for 4 hours and strenuous exercise for 24 hours. Mild bruising at injection sites may occur but is uncommon."
+    heading: "What to expect afterwards",
+    description:
+      "No downtime. You can return to normal activities straight away. Avoid lying flat for 4 hours and strenuous exercise for 24 hours. Mild bruising at injection sites can occur but is uncommon.",
   },
-  
+
   trust: {
-    heading: "Why choose The Oxford Wellness Doctor",
+    heading: "How it fits with other care",
     items: [
       "Doctor-led clinic: all treatments performed by Dr Inga Taganova, a GMC-registered GP",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ",
       "More than two decades of medical experience",
-      "Natural-looking results, no frozen or overdone appearance",
-      "Calm, private consultation rooms"
-    ]
+      "A natural-looking result that keeps facial movement",
+      "Calm, private consultation rooms",
+    ],
   },
-  
+
   faqs: [
-    { q: "Will I look frozen?", a: "No. Dr Inga Taganova uses a conservative approach to preserve natural facial movement while smoothing lines. The goal is to look refreshed, not frozen." },
-    { q: "Does it hurt?", a: "Most patients report only mild discomfort. The needles are very fine, and the procedure is quick." },
-    { q: "How long do results last?", a: "Results typically last 3 to 4 months. With regular treatments, some patients find results last slightly longer." },
-    { q: "When will I see results?", a: "You'll notice improvement within 3 to 5 days, with full results visible at 2 weeks." },
-    { q: "How much do anti-wrinkle injections cost?", a: "One area is £230, two areas £295, and three areas £350. Common combinations are forehead + frown lines, or forehead + frown + crow's feet." }
+    {
+      q: "Will I look frozen?",
+      a: "No. Dr Inga Taganova uses a careful approach to soften lines while keeping natural facial movement. The aim is a refreshed look, not a frozen one.",
+    },
+    {
+      q: "Does it hurt?",
+      a: "Most people report only mild discomfort. The needles are fine, and the procedure is quick.",
+    },
+    {
+      q: "How long do results last?",
+      a: "Results typically last 3 to 4 months. With regular appointments, some people find the effect lasts a little longer.",
+    },
+    {
+      q: "When will I see results?",
+      a: "You will usually notice change within 3 to 5 days, with fuller results at about 2 weeks.",
+    },
+    {
+      q: "How much does treatment cost?",
+      a: "One area is £230, two areas £295, and three areas £350. Common combinations are forehead and frown lines, or forehead, frown and crow's feet.",
+    },
   ],
-  
+
   pricing: [
     { name: "One area", price: "£230" },
     { name: "Two areas", price: "£295" },
     { name: "Three areas", price: "£350" },
-    { name: "Masseter / jaw treatment", price: "£295" }
+    { name: "Masseter / jaw treatment", price: "£295" },
   ],
-  
+
   consultation: {
     name: "Aesthetic & Skin Consultation (45 min)",
-    price: "£75"
+    price: "£75",
   },
-  
+
   procedureSchema: {
-    name: "Anti-Wrinkle Injections Oxford",
-    description: "Anti-wrinkle injections to smooth forehead lines, frown lines, and crow's feet. Delivered by GMC-registered Dr Inga Taganova in Oxford.",
-    bodyLocation: "Face"
-  }
+    name: "Lines and wrinkles consultation",
+    description:
+      "Consultation and treatment for expression lines such as forehead lines, frown lines and crow's feet with Dr Inga Taganova, GP, in Oxford.",
+    bodyLocation: "Face",
+  },
 };

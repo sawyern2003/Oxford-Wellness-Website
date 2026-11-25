@@ -25,7 +25,7 @@ export const dermalFillersData: TreatmentLandingPageData = {
     heading: "How it works",
     intro: "Dermal fillers use hyaluronic acid to restore lost volume, smooth deep lines, and contour the face.",
     steps: [
-      "Facial assessment and tailored plan using premium, fully reversible HA fillers (Juvederm, Restylane, Teosyal).",
+      "Facial assessment and a plan for your face using premium, fully reversible HA fillers (Juvederm, Restylane, Teosyal).",
       "Topical anaesthetic cream applied. Treatment takes 30 to 45 minutes.",
       "Results immediate. Final result visible in 2 to 4 weeks once swelling settles."
     ],
@@ -58,8 +58,8 @@ export const dermalFillersData: TreatmentLandingPageData = {
       a: "Most patients find treatment comfortable. A topical anaesthetic cream is applied beforehand, and the filler products contain lidocaine (a local anaesthetic). Most patients report only mild pressure or a slight pinching sensation."
     },
     {
-      q: "What's the difference between dermal fillers and anti-wrinkle injections?",
-      a: "Anti-wrinkle injections relax muscles to smooth dynamic lines. Dermal fillers add volume and structure using hyaluronic acid. The two treatments work differently and are often complementary, Dr Inga Taganova will advise on the best approach for your concerns."
+      q: "What's the difference between dermal fillers and expression-line treatment?",
+      a: "Expression-line treatment relaxes muscles to smooth dynamic lines. Dermal fillers add volume and structure using hyaluronic acid. The two treatments work differently and are often complementary, Dr Inga Taganova will advise on the best approach for your concerns."
     },
     {
       q: "Can dermal fillers be dissolved?",

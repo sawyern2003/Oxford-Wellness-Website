@@ -8,6 +8,8 @@ export const AIPreConsult = createLazyRoute(() => import("@/pages/ai-pre-consult
 export const Shop = createLazyRoute(() => import("@/pages/shop"));
 export const RecommendedSkincare = createLazyRoute(() => import("@/pages/recommended-skincare"));
 export const HowWeHelp = createLazyRoute(() => import("@/pages/how-we-help"));
+export const ConcernsHub = createLazyRoute(() => import("@/pages/concerns/index"));
+export const ConcernDetail = createLazyRoute(() => import("@/pages/concerns/concern"));
 export const SymptomsAndTreatments = createLazyRoute(() => import("@/pages/symptoms-and-treatments"));
 export const ProgrammeFinder = createLazyRoute(() => import("@/pages/programme-finder"));
 export const SkinHealthProgramme = createLazyRoute(() => import("@/pages/programmes/skin-health-regeneration"));
@@ -81,6 +83,7 @@ export const PainLibraryArticle = createLazyRoute(() => import("@/pages/pain/lib
 const EXACT_PAGES: Record<string, LazyPage> = {
   "/about": About,
   "/how-we-help": HowWeHelp,
+  "/concerns": ConcernsHub,
   "/symptoms-and-treatments": SymptomsAndTreatments,
   "/programme-finder": ProgrammeFinder,
   "/programmes/skin-health-regeneration": SkinHealthProgramme,
@@ -160,6 +163,7 @@ function pageForPath(pathname: string): LazyPage | null {
   if (path === "/") return null;
   if (EXACT_PAGES[path]) return EXACT_PAGES[path];
   if (path.startsWith("/oxford-pain-doctor/library/")) return PainLibraryArticle;
+  if (path.startsWith("/concerns/")) return ConcernDetail;
   return NotFound;
 }
 

@@ -38,7 +38,7 @@ export interface CatalogueItem {
 
 export const CATEGORY_LABELS: Record<CatalogueCategory, string> = {
   consultations: "Consultations",
-  "anti-wrinkle": "Anti-wrinkle treatments",
+  "anti-wrinkle": "Lines and wrinkles",
   fillers: "Dermal fillers and skin boosters",
   skin: "Advanced skin treatments",
   body: "Body treatments",

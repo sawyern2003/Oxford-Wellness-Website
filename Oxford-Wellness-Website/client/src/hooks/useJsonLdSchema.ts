@@ -1,20 +1,31 @@
 import { useEffect } from "react";
+import { ssrJsonLdScripts } from "@/hooks/useBreadcrumbSchema";
 
 export function useJsonLdSchema(schema: object | object[], id = "json-ld-schema") {
+  const schemas = Array.isArray(schema) ? schema : [schema];
+  const serialized = JSON.stringify(schemas);
+
+  if (typeof document === "undefined") {
+    schemas.forEach((schemaObj, index) => {
+      const schemaId = schemas.length > 1 ? `${id}-${index}` : id;
+      const json = JSON.stringify(schemaObj);
+      ssrJsonLdScripts.current = ssrJsonLdScripts.current.filter((s) => s.id !== schemaId);
+      ssrJsonLdScripts.current.push({ id: schemaId, json });
+    });
+  }
+
   useEffect(() => {
-    const schemas = Array.isArray(schema) ? schema : [schema];
-    
     schemas.forEach((schemaObj, index) => {
       const schemaId = schemas.length > 1 ? `${id}-${index}` : id;
       let script = document.getElementById(schemaId) as HTMLScriptElement | null;
-      
+
       if (!script) {
         script = document.createElement("script");
         script.id = schemaId;
         script.type = "application/ld+json";
         document.head.appendChild(script);
       }
-      
+
       script.textContent = JSON.stringify(schemaObj);
     });
 
@@ -24,7 +35,7 @@ export function useJsonLdSchema(schema: object | object[], id = "json-ld-schema"
         document.getElementById(schemaId)?.remove();
       });
     };
-  }, [JSON.stringify(schema), id]);
+  }, [serialized, id]);
 }
 
 export function createFAQPageSchema(faqs: { q: string; a: string }[]) {

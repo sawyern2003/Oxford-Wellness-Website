@@ -4,7 +4,7 @@ export const menopauseClinicData: TreatmentLandingPageData = {
   slug: "menopause-clinic-oxford",
   h1: "Menopause Clinic in Oxford",
   title: "Menopause Clinic Oxford | Women's Health | Dr Inga Taganova",
-  metaDescription: "Private menopause clinic in Oxford. Expert menopause care from GP Dr Inga Taganova with a background in obstetrics and gynaecology.",
+  metaDescription: "Private menopause clinic in Oxford. Expert menopause care from GP Dr Inga Taganova with a long background in women's health.",
   canonical: "https://www.theoxfordwellnessdoctor.com/menopause-clinic-oxford",
   
   priceLabel: "Initial consultation",
@@ -35,7 +35,7 @@ export const menopauseClinicData: TreatmentLandingPageData = {
       "Personalised treatment plan tailored to your needs.",
       "Follow-up appointments (£150) to monitor progress and adjust your plan."
     ],
-    sessionsInfo: "Dr Inga Taganova is a GP with a background in obstetrics and gynaecology and more than two decades of medical experience."
+    sessionsInfo: "Dr Inga Taganova is a GP with a long background in women's health and more than two decades of medical experience."
   },
   
   downtime: {
@@ -46,7 +46,7 @@ export const menopauseClinicData: TreatmentLandingPageData = {
   trust: {
     heading: "Why choose The Oxford Wellness Doctor",
     items: [
-      "Doctor-led clinic: Dr Inga Taganova is a GMC-registered GP with a background in obstetrics and gynaecology",
+      "Doctor-led clinic: Dr Inga Taganova is a GMC-registered GP with a long background in women's health",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ",
       "more than two decades of medical experience",
       "Comprehensive approach to menopause care",

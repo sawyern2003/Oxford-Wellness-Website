@@ -2,7 +2,7 @@ import BlogPostTemplate, { BlogPostData } from "@/components/blog/BlogPostTempla
 
 const data: BlogPostData = {
   title: "Postpartum Recovery: Body Confidence and Intimate Health After Childbirth | Oxford",
-  metaDescription: "Postpartum recovery support in Oxford. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology, explains body changes after childbirth and evidence-based treatments that help.",
+  metaDescription: "Postpartum recovery support in Oxford. Dr Inga Taganova, a GP with a long background in women's health, explains body changes after childbirth and evidence-based treatments that help.",
   canonical: "https://www.theoxfordwellnessdoctor.com/blog/postpartum-recovery-oxford",
   h1: "Postpartum Recovery: Body Confidence and Intimate Health After Childbirth",
   category: "Women's Health",
@@ -12,7 +12,7 @@ const data: BlogPostData = {
     src: "/blog-postpartum-recovery-oxford.webp",
     alt: "Young mother resting peacefully with newborn in white bedding",
   },
-  intro: "The physical changes of pregnancy and childbirth are profound. Your body has grown and birthed a child, an extraordinary feat. But the aftermath can be challenging. Many women feel unprepared for the recovery period, the persistent changes to their body, and the loss of confidence that can follow. As a GP with a background in obstetrics and gynaecology, I see women months and sometimes years after childbirth, still struggling with concerns they assumed would resolve on their own.",
+  intro: "The physical changes of pregnancy and childbirth are profound. Your body has grown and birthed a child, an extraordinary feat. But the aftermath can be challenging. Many women feel unprepared for the recovery period, the persistent changes to their body, and the loss of confidence that can follow. As a GP with a long background in women's health, I see women months and sometimes years after childbirth, still struggling with concerns they assumed would resolve on their own.",
   keyPoints: [
     "Physical recovery after childbirth takes months, not weeks",
     "Common concerns include abdominal laxity, pelvic floor weakness, intimate discomfort, and scarring",
@@ -121,7 +121,7 @@ const data: BlogPostData = {
     {
       heading: "Postpartum Support at The Oxford Wellness Doctor",
       paragraphs: [
-        "Dr Inga Taganova is a GP with a background in obstetrics and gynaecology and more than two decades of medical experience. Postpartum consultations are unhurried, compassionate, and evidence-based.",
+        "Dr Inga Taganova is a GP with a long background in women's health and more than two decades of medical experience. Postpartum consultations are unhurried, compassionate, and evidence-based.",
         "The focus is on understanding your specific concerns, assessing what has changed, and providing realistic options. Pelvic floor rehabilitation is always the foundation. Aesthetic or medical interventions are considered only when appropriate, safe, and desired.",
         "Consultations take place at Belsyre Court in Oxford. You do not need a GP referral.",
       ],

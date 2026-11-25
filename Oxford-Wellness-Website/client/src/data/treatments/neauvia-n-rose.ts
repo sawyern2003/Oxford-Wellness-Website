@@ -41,7 +41,7 @@ export const neauviaNRoseData: TreatmentLandingPageData = {
   trust: {
     heading: "Why choose The Oxford Wellness Doctor",
     items: [
-      "Doctor-led clinic: Dr Inga Taganova is a GMC-registered GP with a background in obstetrics and gynaecology",
+      "Doctor-led clinic: Dr Inga Taganova is a GMC-registered GP with a long background in women's health",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ",
       "more than two decades of medical experience",
       "Discreet, empathetic, and professional approach to intimate health concerns",
@@ -71,8 +71,8 @@ export const neauviaNRoseData: TreatmentLandingPageData = {
       a: "Yes. Vaginal dryness and discomfort can affect women of any age, not just those experiencing menopause. Neauvia N Rose is suitable for any woman experiencing intimate health concerns, regardless of age."
     },
     {
-      q: "Can this be combined with HRT?",
-      a: "Yes, many patients benefit from both HRT for systemic symptoms and local intimate health treatments. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology, can advise on the most appropriate combined approach."
+      q: "Can this be combined with other menopause care?",
+      a: "Yes. Dr Inga will talk through how it fits alongside any care you already have from your own GP."
     }
   ],
   
@@ -87,7 +87,7 @@ export const neauviaNRoseData: TreatmentLandingPageData = {
   
   procedureSchema: {
     name: "Neauvia N Rose Intimate Health Treatment Oxford",
-    description: "Injectable hyaluronic acid treatment to restore hydration, comfort, and tissue integrity to the intimate area. Delivered by GMC-registered Dr Inga Taganova, GP with a background in obstetrics and gynaecology, in Oxford.",
+    description: "Injectable hyaluronic acid treatment to restore hydration, comfort, and tissue integrity to the intimate area. Delivered by GMC-registered Dr Inga Taganova, GP with a long background in women's health, in Oxford.",
     bodyLocation: "Intimate area"
   }
 };

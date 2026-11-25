@@ -91,7 +91,7 @@ const data: BlogPostData = {
         "Forma is often combined with other treatments for comprehensive facial rejuvenation. It works well alongside:",
       ],
       bullets: [
-        "Anti-wrinkle injections to treat dynamic lines",
+        "Treatment for dynamic expression lines",
         "Dermal fillers to restore volume in the mid-face and temples",
         "Morpheus8 for more intensive collagen remodelling and textural improvement",
         "IPL or chemical peels to address pigmentation and tone",

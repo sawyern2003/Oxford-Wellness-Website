@@ -2,7 +2,7 @@ import BlogPostTemplate, { BlogPostData } from "@/components/blog/BlogPostTempla
 
 const data: BlogPostData = {
   title: "Jaw Slimming and Teeth Grinding Treatment | Oxford Doctor Explains",
-  metaDescription: "Anti-wrinkle treatment for masseter reduction and teeth grinding in Oxford. Dr Inga Taganova explains how jaw slimming works, results, and suitability.",
+  metaDescription: "Clinic treatment for masseter reduction and teeth grinding in Oxford. Dr Inga Taganova explains how jaw slimming works, results, and suitability.",
   canonical: "https://www.theoxfordwellnessdoctor.com/blog/jaw-slimming-treatment-oxford",
   h1: "Jaw Slimming and Teeth Grinding Treatment",
   category: "Skin",
@@ -12,7 +12,7 @@ const data: BlogPostData = {
     src: "/blog-jaw-slimming-treatment-oxford.webp",
     alt: "Grey-haired woman in profile drinking coffee by a window",
   },
-  intro: "Jaw treatment with anti-wrinkle injections serves two distinct purposes: slimming an overly prominent or square jawline for aesthetic reasons, and treating bruxism, chronic teeth grinding or jaw clenching that causes pain, headaches, and dental damage. Both concerns are addressed with the same technique, injecting the masseter muscles to reduce their size and activity.",
+  intro: "Jaw treatment with clinic injections serves two distinct purposes: slimming an overly prominent or square jawline for aesthetic reasons, and treating bruxism, chronic teeth grinding or jaw clenching that causes pain, headaches, and dental damage. Both concerns are addressed with the same technique, injecting the masseter muscles to reduce their size and activity.",
   keyPoints: [
     "Masseter treatment reduces the bulk of overactive jaw muscles",
     "It can slim a square jawline or treat teeth grinding and jaw pain",
@@ -25,7 +25,7 @@ const data: BlogPostData = {
       heading: "What the Masseter Muscles Are",
       paragraphs: [
         "The masseter muscles are the powerful muscles that run from your cheekbone to your lower jaw. They are primarily responsible for chewing. In some people, these muscles become hypertrophied, enlarged and overdeveloped, due to chronic clenching, grinding, or simply genetic tendency.",
-        "Enlarged masseters create a square, heavy jawline. They can also cause jaw tension, headaches, and dental problems. Treating the masseters with anti-wrinkle injections relaxes and gradually reduces the muscle bulk, softening the jawline and reducing symptoms associated with overactivity.",
+        "Enlarged masseters create a square, heavy jawline. They can also cause jaw tension, headaches, and dental problems. Treating the masseters with clinic injections relaxes and gradually reduces the muscle bulk, softening the jawline and reducing symptoms associated with overactivity.",
       ],
     },
     {
@@ -46,7 +46,7 @@ const data: BlogPostData = {
     {
       heading: "How the Treatment Works",
       paragraphs: [
-        "The treatment uses the same anti-wrinkle product commonly used for forehead lines and crow's feet. However, the technique, dose, and placement are different. Multiple small injections are made into each masseter muscle, distributed across the muscle bulk.",
+        "The treatment uses the same injectable approach commonly used for forehead lines and crow's feet. However, the technique, dose, and placement are different. Multiple small injections are made into each masseter muscle, distributed across the muscle bulk.",
         "The product blocks the nerve signals that cause the muscle to contract. Over the following weeks, the muscle gradually reduces in size due to reduced activity. The effect is not immediate. You will not wake up the next day with a slimmer jawline. Results develop over four to eight weeks.",
       ],
     },
@@ -88,9 +88,9 @@ const data: BlogPostData = {
       ],
     },
     {
-      heading: "How It Differs from Other Anti-Wrinkle Treatments",
+      heading: "How It Differs from Other Expression-Line Treatments",
       paragraphs: [
-        "Masseter treatment uses the same product as anti-wrinkle injections for the forehead or around the eyes, but the technique is different. The masseters are large, powerful muscles that require higher doses and careful placement. The aim is not to freeze the muscle entirely, you still need to chew, but to reduce excessive activity and bulk.",
+        "Masseter treatment uses the same product as expression-line treatment for the forehead or around the eyes, but the technique is different. The masseters are large, powerful muscles that require higher doses and careful placement. The aim is not to freeze the muscle entirely, you still need to chew, but to reduce excessive activity and bulk.",
         "Because the masseter is a large muscle and the dose is higher, the treatment is slightly more expensive than treating smaller areas such as crow's feet.",
       ],
     },
@@ -122,7 +122,7 @@ const data: BlogPostData = {
   ],
   relatedTreatments: [
     { label: "Jaw Treatment Oxford", href: "/treatments/jaw-slimming-teeth-grinding-oxford" },
-    { label: "Anti-Wrinkle Injections", href: "/treatments/anti-wrinkle-injections-oxford" },
+    { label: "Lines and wrinkles consultation", href: "/treatments/anti-wrinkle-injections-oxford" },
   ],
 };
 

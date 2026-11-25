@@ -9,7 +9,7 @@ const data: BlogPostData = {
   category: "Age-Appropriate Aesthetics",
   readTime: "6 min",
   datePublished: "2024-08-10",
-  intro: "Aesthetic medicine for women in their 50s and beyond requires a fundamentally different approach to treating younger patients. The skin changes of post-menopause are driven by specific hormonal and structural factors, and the most effective treatment plans address these underlying causes as well as the visible signs. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology and expertise in both women's health and aesthetic medicine, explains which treatments work best for mature skin, and why the integrated approach she offers at The Oxford Wellness Doctor produces results that neither aesthetics nor medicine alone can achieve.",
+  intro: "Aesthetic medicine for women in their 50s and beyond requires a fundamentally different approach to treating younger patients. The skin changes of post-menopause are driven by specific hormonal and structural factors, and the most effective treatment plans address these underlying causes as well as the visible signs. Dr Inga Taganova, a GP with a long background in women's health and expertise in both women's health and aesthetic medicine, explains which treatments work best for mature skin, and why the integrated approach she offers at The Oxford Wellness Doctor produces results that neither aesthetics nor medicine alone can achieve.",
   heroImage: {
     src: over50Img,
     alt: "Midlife woman in cream suit and glasses with confident expression",
@@ -32,10 +32,10 @@ const data: BlogPostData = {
       ],
     },
     {
-      heading: "Anti-Wrinkle Injections Over 50",
+      heading: "Lines and wrinkles treatment over 50",
       paragraphs: [
-        "Anti-wrinkle injections remain effective for women over 50, but the approach needs to be adjusted for post-menopausal skin. Older skin is thinner and loses elasticity more rapidly, which means the distribution and dosing of treatment needs to reflect the patient's specific anatomy rather than a standard template.",
-        "Dr Inga Taganova's approach for mature patients prioritises softening of expression lines rather than elimination, preserving natural facial movement and avoiding the 'frozen' look that can paradoxically age older patients. Areas particularly well-suited to anti-wrinkle treatment in mature patients include forehead lines, frown lines, crow's feet, neck lines (Nefertiti lift), and the brow lift technique.",
+        "Treatment for expression lines remains effective for women over 50, but the approach needs to be adjusted for post-menopausal skin. Older skin is thinner and loses elasticity more rapidly, which means the distribution and dosing of treatment needs to reflect the patient's specific anatomy rather than a standard template.",
+        "Dr Inga Taganova's approach for mature patients prioritises softening of expression lines rather than elimination, preserving natural facial movement and avoiding the 'frozen' look that can paradoxically age older patients. Areas particularly well-suited to treatment for expression lines in mature patients include forehead lines, frown lines, crow's feet, neck lines (Nefertiti lift), and the brow lift technique.",
       ],
     },
     {
@@ -50,7 +50,7 @@ const data: BlogPostData = {
       heading: "Profhilo for Skin Quality",
       paragraphs: [
         "Profhilo is one of the treatments Dr Inga Taganova most frequently recommends for women over 50, and for good reason. Its mechanism of action (stimulating fibroblasts to produce collagen and elastin) directly addresses the same biological processes that oestrogen decline has impaired.",
-        "For post-menopausal patients, Profhilo produces a visible improvement in skin quality that fillers and anti-wrinkle treatments cannot achieve: better hydration, improved texture, more radiance, and increased elasticity. The results look like your skin at its best, not like someone else's skin.",
+        "For post-menopausal patients, Profhilo produces a visible improvement in skin quality that fillers and expression-line treatments cannot achieve: better hydration, improved texture, more radiance, and increased elasticity. The results look like your skin at its best, not like someone else's skin.",
         "A course of two Profhilo treatments (one month apart) is recommended as an excellent starting point for women over 50 who are new to aesthetic treatment, before considering other interventions.",
       ],
     },
@@ -65,7 +65,7 @@ const data: BlogPostData = {
     {
       heading: "Combining Treatments: The Integrated Approach",
       paragraphs: [
-        "The most effective aesthetic treatment for women over 50 is rarely a single intervention. Dr Inga Taganova typically develops a treatment plan that addresses skin quality (Profhilo), structural volume (dermal fillers), expression lines (anti-wrinkle injections), and skin laxity (Morpheus8) in a coordinated sequence.",
+        "The most effective aesthetic treatment for women over 50 is rarely a single intervention. Dr Inga Taganova typically develops a treatment plan that addresses skin quality (Profhilo), structural volume (dermal fillers), expression lines (lines and wrinkles consultation), and skin laxity (Morpheus8) in a coordinated sequence.",
         "This does not mean doing everything at once, in fact, the graduated approach, starting with skin quality and foundation restoration before adding detail treatments, consistently produces the most natural and impressive results.",
       ],
     },

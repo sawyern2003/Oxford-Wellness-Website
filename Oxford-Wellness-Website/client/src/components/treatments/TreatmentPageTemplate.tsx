@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ChevronDown,
@@ -18,8 +18,11 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import FadeIn from "@/components/animations/FadeIn";
 import { useSEO } from "@/hooks/useSEO";
+import { useBreadcrumbSchema } from "@/hooks/useBreadcrumbSchema";
+import { useJsonLdSchema, createFAQPageSchema } from "@/hooks/useJsonLdSchema";
 import { getTreatmentGlance, type AtAGlanceItem, type AtAGlanceIcon } from "@/data/treatmentGlance";
 import { itemsForPath, publicPrice } from "@/data/catalogue";
+import { formatTreatmentFromFee } from "@/lib/treatmentFees";
 import RelatedTreatments from "./RelatedTreatments";
 
 export interface PricingItem {
@@ -158,18 +161,29 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
   const glance = getTreatmentGlance(data.canonical);
   const detailPath = data.canonical.replace("https://www.theoxfordwellnessdoctor.com", "");
   const cataloguePrices = itemsForPath(detailPath);
-  const priceRows = cataloguePrices.length
-    ? cataloguePrices.map((item) => ({ name: item.name, price: publicPrice(item) }))
-    : [{ name: data.treatmentName ?? data.h1, price: "Price on consultation" }];
+  const feeCandidates = cataloguePrices.filter(
+    (item) => item.featured || !/as an addition/i.test(item.name)
+  );
+  const fromPriceLabel = formatTreatmentFromFee([
+    ...(feeCandidates.length ? feeCandidates : cataloguePrices).map((item) => publicPrice(item)),
+    ...data.pricing.map((row) => row.price),
+  ]);
   const bookingHref = cataloguePrices[0]?.bookingUrl ?? "/book";
   const treatmentName = data.treatmentName ?? glance?.treatmentName ?? data.h1.split(" in Oxford")[0];
   const summary = data.summary ?? glance?.summary ?? data.intro;
   const atAGlance = data.atAGlance ?? glance?.atAGlance ?? [];
   const highlights = (data.highlights ?? glance?.highlights ?? extractHighlights(data.sections)).slice(0, 5);
   const procedureSteps = extractProcedureSteps(data.sections);
+  const afterwards =
+    data.sections.find((s) => /after|recovery|downtime|afterwards/i.test(s.heading))?.paragraphs?.[0] ??
+    null;
+  const fitsWithCare =
+    data.sections.find((s) => /fit|together|combine|plan|other care|alongside/i.test(s.heading)) ??
+    null;
   const displayFaqs = filterFaqs(data.faqs);
   const detailSections = filterSections(data.sections);
   const [detailsOpen, setDetailsOpen] = useState(false);
+  const isTreatmentSub = detailPath.startsWith("/treatments/");
 
   useSEO({
     title: data.title,
@@ -177,64 +191,20 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
     canonical: data.canonical,
   });
 
-  useEffect(() => {
-    const BASE = "https://www.theoxfordwellnessdoctor.com";
-    const path = data.canonical.replace(BASE, "");
-    const isTreatmentSub = path.startsWith("/treatments/");
-    const breadcrumbItems = isTreatmentSub
+  useBreadcrumbSchema(
+    isTreatmentSub
       ? [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": `${BASE}/` },
-          { "@type": "ListItem", "position": 2, "name": "Treatments", "item": `${BASE}/treatments` },
-          { "@type": "ListItem", "position": 3, "name": data.procedureSchema.name, "item": data.canonical },
+          { name: "Treatments", path: "/treatments" },
+          { name: treatmentName, path: detailPath },
         ]
-      : [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": `${BASE}/` },
-          { "@type": "ListItem", "position": 2, "name": data.procedureSchema.name, "item": data.canonical },
-        ];
+      : [{ name: treatmentName, path: detailPath }],
+    `treatment-template-breadcrumb-${detailPath.replace(/\W+/g, "-")}`
+  );
 
-    const schema = {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "MedicalProcedure",
-          "name": data.procedureSchema.name,
-          "description": data.procedureSchema.description,
-          "procedureType": "TherapeuticProcedure",
-          "status": "ActiveNotRecruiting",
-          "bodyLocation": data.procedureSchema.bodyLocation || "Face",
-          "preparation": "Initial consultation with Dr. Inga Taganova at The Oxford Wellness Doctor, Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ.",
-          "followUp": "Two-week follow-up assessment included. Aftercare instructions provided.",
-          "performer": {
-            "@type": "Physician",
-            "name": "Dr Inga Taganova",
-            "identifier": { "@type": "PropertyValue", "name": "GMC Number", "value": "4727817" }
-          }
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": data.faqs.map((faq) => ({
-            "@type": "Question",
-            "name": faq.q,
-            "acceptedAnswer": { "@type": "Answer", "text": faq.a }
-          }))
-        },
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": breadcrumbItems,
-        }
-      ]
-    };
-
-    let script = document.getElementById("treatment-schema") as HTMLScriptElement | null;
-    if (!script) {
-      script = document.createElement("script");
-      script.id = "treatment-schema";
-      script.type = "application/ld+json";
-      document.head.appendChild(script);
-    }
-    script.textContent = JSON.stringify(schema);
-    return () => { document.getElementById("treatment-schema")?.remove(); };
-  }, [data]);
+  useJsonLdSchema(
+    createFAQPageSchema(data.faqs),
+    `treatment-template-faq-${detailPath.replace(/\W+/g, "-")}`
+  );
 
   return (
     <div className="pt-28 min-h-screen bg-background">
@@ -286,7 +256,7 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
           <div className="grid md:grid-cols-2 gap-10">
             {highlights.length > 0 && (
               <FadeIn direction="up">
-                <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-4">What it treats</h2>
+                <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-4">Who it is for</h2>
                 <ul className="space-y-2.5">
                   {highlights.map((item, i) => (
                     <li key={i} className="flex items-start gap-2.5 text-sm text-muted-foreground">
@@ -300,7 +270,7 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
 
             {procedureSteps.length > 0 && (
               <FadeIn direction="up" delay={0.05}>
-                <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-4">What to expect</h2>
+                <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-4">What happens at your appointment</h2>
                 <ol className="space-y-3">
                   {procedureSteps.map((step, i) => (
                     <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed">
@@ -312,32 +282,52 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
               </FadeIn>
             )}
           </div>
+
+          {(afterwards || fitsWithCare) && (
+            <div className="grid md:grid-cols-2 gap-10 mt-10">
+              {afterwards ? (
+                <FadeIn direction="up">
+                  <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-4">What to expect afterwards</h2>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{afterwards}</p>
+                </FadeIn>
+              ) : null}
+              {fitsWithCare ? (
+                <FadeIn direction="up" delay={0.05}>
+                  <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-4">How it fits with other care</h2>
+                  {fitsWithCare.paragraphs?.map((p, i) => (
+                    <p key={i} className="text-sm text-muted-foreground leading-relaxed mb-2">{p}</p>
+                  ))}
+                  {fitsWithCare.bullets ? (
+                    <ul className="space-y-2.5">
+                      {fitsWithCare.bullets.slice(0, 4).map((item, i) => (
+                        <li key={i} className="flex items-start gap-2.5 text-sm text-muted-foreground">
+                          <span className="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0 mt-2" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+                </FadeIn>
+              ) : null}
+            </div>
+          )}
         </div>
       </section>
 
-      {priceRows.length > 0 && (
-        <section className="py-12 bg-muted/50">
-          <div className="container mx-auto px-6 max-w-4xl">
-            <FadeIn direction="up">
-              <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-6">Pricing</h2>
-              <div className="border-t border-border">
-                {priceRows.map((item) => (
-                  <div key={item.name} className="flex justify-between items-baseline gap-4 py-3 border-b border-border">
-                    <p className="text-[15px] text-foreground">{item.name}</p>
-                    <p className="text-[15px] text-foreground tabular-nums whitespace-nowrap">{item.price}</p>
-                  </div>
-                ))}
-              </div>
-              <p className="text-sm text-foreground/70 mt-4">
-                Fees are confirmed before treatment. A consultation is booked separately.
-              </p>
-              <Link href="/pricing" className="inline-flex items-center gap-1 text-sm text-secondary hover:text-primary mt-3 transition-colors">
-                View all pricing <ArrowRight size={12} />
-              </Link>
-            </FadeIn>
-          </div>
-        </section>
-      )}
+      <section className="py-12 bg-muted/50">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <FadeIn direction="up">
+            <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-3">Fees</h2>
+            <p className="text-2xl font-semibold text-primary tabular-nums">{fromPriceLabel}</p>
+            <p className="text-sm text-foreground/70 mt-3">
+              Fees are confirmed before treatment. A consultation is booked separately.
+            </p>
+            <Link href="/pricing" className="inline-flex items-center gap-1 text-sm text-secondary hover:text-primary mt-3 transition-colors">
+              View prices <ArrowRight size={12} />
+            </Link>
+          </FadeIn>
+        </div>
+      </section>
 
       {displayFaqs.length > 0 && (
         <section className="py-14 md:py-16 bg-background">
