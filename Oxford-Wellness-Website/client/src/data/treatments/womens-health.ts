@@ -25,7 +25,7 @@ export const womensHealthData: TreatmentLandingPageData = {
   
   howItWorks: {
     heading: "Your women's health consultation",
-    intro: "Dr Inga Taganova is a GP with a background in obstetrics and gynaecology who provides expert women's health consultations at her clinic in central Oxford. With more than two decades of medical experience, she understands that menopause and women's health transitions affect far more than hormones – they shape how you feel in your body, your skin, your mood, and your daily life.",
+    intro: "Dr Inga Taganova is a GP with a background in obstetrics and gynaecology who provides expert women's health consultations at her clinic in central Oxford. With more than two decades of medical experience, she understands that menopause and women's health transitions affect far more than hormones, they shape how you feel in your body, your skin, your mood, and your daily life.",
     steps: [
       "Full symptom assessment and medical history review. Dr Inga Taganova takes time to understand your experience.",
       "Discussion of all available treatment options, including lifestyle interventions, non-hormonal approaches, and specialist referrals if HRT is clinically appropriate.",
@@ -37,7 +37,7 @@ export const womensHealthData: TreatmentLandingPageData = {
   
   downtime: {
     heading: "Integrated women's health and aesthetic care",
-    description: "Declining oestrogen affects skin collagen, tissue hydration, intimate health, and body composition. Many women find that their menopause symptoms include physical changes that impact confidence and wellbeing – skin that looks thinner and duller, loss of facial volume, vaginal dryness affecting intimacy, and changes in body shape. Dr Inga Taganova's dual expertise is valuable here: she can address both medical symptoms (hot flushes, mood changes, sleep disturbances) and aesthetic concerns (skin thinning, volume loss, intimate dryness) in an integrated treatment plan. This holistic approach is rare – most women are told to see their GP for medical symptoms and a cosmetic practitioner for aesthetic concerns, with no coordination between the two. At this clinic, medical and aesthetic care are integrated, so you feel supported across all aspects of your health during the menopause transition."
+    description: "Declining oestrogen affects skin collagen, tissue hydration, intimate health, and body composition. Many women find that their menopause symptoms include physical changes that impact confidence and wellbeing, skin that looks thinner and duller, loss of facial volume, vaginal dryness affecting intimacy, and changes in body shape. Dr Inga Taganova's dual expertise is valuable here: she can address both medical symptoms (hot flushes, mood changes, sleep disturbances) and aesthetic concerns (skin thinning, volume loss, intimate dryness) in an integrated treatment plan. This holistic approach is rare, most women are told to see their GP for medical symptoms and a cosmetic practitioner for aesthetic concerns, with no coordination between the two. At this clinic, medical and aesthetic care are integrated, so you feel supported across all aspects of your health during the menopause transition."
   },
   
   trust: {
@@ -60,7 +60,7 @@ export const womensHealthData: TreatmentLandingPageData = {
     },
     {
       q: "What happens at a women's health consultation?",
-      a: "Your initial consultation is a comprehensive 60-minute appointment – not a rushed 10-minute assessment. Dr Inga Taganova will take a full medical and gynaecological history, discuss your current symptoms in detail, explore how they're affecting your daily life and relationships, assess whether they suggest perimenopause, menopause, or another cause, and create a personalised treatment plan. You will leave with a clear understanding of what is happening and a detailed plan for managing your symptoms."
+      a: "Your initial consultation is a comprehensive 60-minute appointment, not a rushed 10-minute assessment. Dr Inga Taganova will take a full medical and gynaecological history, discuss your current symptoms in detail, explore how they're affecting your daily life and relationships, assess whether they suggest perimenopause, menopause, or another cause, and create a personalised treatment plan. You will leave with a clear understanding of what is happening and a detailed plan for managing your symptoms."
     },
     {
       q: "Can you prescribe HRT?",
@@ -92,13 +92,13 @@ export const womensHealthData: TreatmentLandingPageData = {
     },
     {
       q: "Where is the clinic located and how do I get there?",
-      a: "The clinic is at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ – in central Oxford, near St Giles and a short walk from the city centre. The building is easily accessible by bus (multiple routes along Woodstock Road), bike (racks available nearby), or car. Limited street parking is available on Woodstock Road and surrounding streets. The clinic entrance is clearly marked and reception is on the ground floor."
+      a: "The clinic is at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ, in central Oxford, near St Giles and a short walk from the city centre. The building is easily accessible by bus (multiple routes along Woodstock Road), bike (racks available nearby), or car. Limited street parking is available on Woodstock Road and surrounding streets. The clinic entrance is clearly marked and reception is on the ground floor."
     }
   ],
   
   pricing: [
-    { name: "Menopause & Women's Health Consultation — Initial (60 min)", price: "£275" },
-    { name: "Menopause & Women's Health — Follow-up (30 min)", price: "£150" },
+    { name: "Menopause & Women's Health Consultation, Initial (60 min)", price: "£275" },
+    { name: "Menopause & Women's Health, Follow-up (30 min)", price: "£150" },
     { name: "Intimate Health Consultation", price: "£150" }
   ],
   

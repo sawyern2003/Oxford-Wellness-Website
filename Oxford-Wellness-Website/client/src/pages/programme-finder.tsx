@@ -88,11 +88,11 @@ function OptionCard({
 }
 
 export default function ProgrammeFinder() {
-  useBreadcrumbSchema([{ name: "Programme Finder", path: "/programme-finder" }]);
+  useBreadcrumbSchema([{ name: "Programme finder", path: "/programme-finder" }]);
   useSEO({
-    title: "Programme Finder | Personalised Journeys | The Oxford Wellness Doctor",
+    title: "Programme finder | Personalised Journeys | The Oxford Wellness Doctor",
     description:
-      "Describe what has changed and find a personalised treatment programme. Educational guidance only – suitability confirmed in consultation with Dr Inga Taganova.",
+      "Describe what has changed and find a personalised treatment programme. Educational guidance only, suitability confirmed in consultation with Dr Inga Taganova.",
     canonical: "https://www.theoxfordwellnessdoctor.com/programme-finder",
   });
 
@@ -185,8 +185,8 @@ export default function ProgrammeFinder() {
           <FadeIn>
             {stepIndex === 0 && (
               <div className="mb-8">
-                <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-3">
-                  Programme Finder
+                <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-3">
+                  Programme finder
                 </p>
                 <h1 className="font-sans font-semibold text-3xl md:text-[2rem] text-foreground tracking-tight leading-snug mb-3">
                   Start with what has{" "}
@@ -379,7 +379,7 @@ export default function ProgrammeFinder() {
               </div>
 
               <div className="rounded-2xl bg-white p-5 md:p-6 shadow-[0_2px_12px_rgba(33,55,84,0.06)]">
-                <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-2">
+                <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-2">
                   Your programme
                 </p>
                 <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-3">

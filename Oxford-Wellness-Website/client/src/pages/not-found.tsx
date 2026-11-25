@@ -18,7 +18,7 @@ const quickLinks = [
 export default function NotFound() {
   useSEO({
     title: "Page Not Found | The Oxford Wellness Doctor",
-    description: "The page you're looking for doesn't exist. Find what you need at The Oxford Wellness Doctor - medical aesthetics and women's wellness in Oxford.",
+    description: "The page you're looking for doesn't exist. Find what you need at The Oxford Wellness Doctor, medical aesthetics and women's wellness in Oxford.",
   });
 
   useEffect(() => {
@@ -34,10 +34,10 @@ export default function NotFound() {
   }, []);
 
   return (
-    <div className="min-h-screen pt-28 bg-white">
+    <div className="min-h-screen pt-28 bg-background">
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-6 text-center max-w-2xl">
-          <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">404</p>
+          <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">404</p>
           <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-6">Page not found</h1>
           <p className="text-muted-foreground text-[15px] leading-relaxed mb-8">
             We can&apos;t find the page you were looking for. It may have been moved or renamed. Let us help you find what you need.
@@ -67,7 +67,7 @@ export default function NotFound() {
       <section className="py-16 bg-muted/50">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center mb-10">
-            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-3">Browse</p>
+            <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-3">Browse</p>
             <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight">Popular pages</h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -87,7 +87,7 @@ export default function NotFound() {
       </section>
 
       <section className="py-12 bg-primary text-primary-foreground text-center">
-        <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-primary-foreground/60 mb-4">Need help?</p>
+        <p className="text-[11px] font-medium tracking-normal text-primary-foreground/60 mb-4">Need help?</p>
         <h2 className="font-sans font-semibold text-2xl tracking-tight mb-6">Get in touch directly</h2>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <a

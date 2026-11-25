@@ -8,16 +8,16 @@ const morning = [
   {
     name: "Vitamin C Brightening Concentrate",
     brand: "SkinCeuticals",
-    why: "Supports antioxidant defence and brightness – useful alongside regenerative skin programmes.",
+    why: "Supports antioxidant defence and brightness, useful alongside regenerative skin programmes.",
     who: "Women addressing dullness, uneven tone or midlife skin change.",
-    how: "4–5 drops to dry face and neck each morning before moisturiser and SPF.",
+    how: "4 to 5 drops to dry face and neck each morning before moisturiser and SPF.",
     programmes: "Skin Health & Regeneration",
   },
   {
     name: "SPF 50+ Mineral Sunscreen",
     brand: "EltaMD",
     why: "Essential protection after peels, IPL and collagen-stimulating treatments.",
-    who: "All patients – especially during active treatment journeys.",
+    who: "All patients, especially during active treatment journeys.",
     how: "Apply liberally each morning; reapply with outdoor exposure.",
     programmes: "All programmes with in-clinic treatments",
   },
@@ -35,9 +35,9 @@ const evening = [
   {
     name: "Advanced Retinol Night Serum",
     brand: "SkinCeuticals",
-    why: "Supports overnight renewal as part of a long-term skin quality plan – introduced carefully.",
+    why: "Supports overnight renewal as part of a long-term skin quality plan, introduced carefully.",
     who: "Suitable patients under doctor guidance; not for immediate post-procedure use.",
-    how: "2–3 drops in the evening as advised. Always pair with morning SPF.",
+    how: "2 to 3 drops in the evening as advised. Always pair with morning SPF.",
     programmes: "Skin Health & Regeneration",
   },
 ];
@@ -81,19 +81,19 @@ export default function RecommendedSkincare() {
   useSEO({
     title: "Recommended Skincare | Doctor's Home Care | The Oxford Wellness Doctor",
     description:
-      "Curated clinical skincare recommendations from Dr Inga Taganova – designed to support personalised treatment programmes, not a generic online shop.",
+      "Curated clinical skincare recommendations from Dr Inga Taganova, designed to support personalised treatment programmes, not a generic online shop.",
     canonical: "https://www.theoxfordwellnessdoctor.com/recommended-skincare",
   });
 
   return (
-    <div className="pt-28 min-h-screen bg-white">
+    <div className="pt-28 min-h-screen bg-background">
       <div className="container mx-auto px-6 py-12 md:py-16 max-w-3xl">
         <FadeIn>
           <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-5 leading-snug">
             Recommended skincare
           </h1>
           <p className="text-base text-muted-foreground leading-relaxed mb-4">
-            These are curated clinical recommendations to support your treatment journey – not a beauty storefront.
+            These are curated clinical recommendations to support your treatment journey, not a beauty storefront.
           </p>
           <p className="text-[15px] text-muted-foreground leading-relaxed mb-12">
             Products are suggested in the context of programmes and in-clinic care. Dr Inga will advise what is appropriate for you during consultation.

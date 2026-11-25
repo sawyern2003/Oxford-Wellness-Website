@@ -36,7 +36,7 @@ export const sexualWellnessData: TreatmentLandingPageData = {
   
   downtime: {
     heading: "Treatment options",
-    description: "We offer Forma V (£450 single session, £1,200 course of 3) – a non-invasive radiofrequency treatment for intimate wellness – and intimate hyaluronic acid treatments. Suitability is decided during your consultation. Dr Inga Taganova can also provide specialist referrals if other treatments are clinically appropriate."
+    description: "We offer Forma V (£450 single session, £1,200 course of 3), a non-invasive radiofrequency treatment for intimate wellness, and intimate hyaluronic acid treatments. Suitability is decided during your consultation. Dr Inga Taganova can also provide specialist referrals if other treatments are clinically appropriate."
   },
   
   trust: {
@@ -53,7 +53,7 @@ export const sexualWellnessData: TreatmentLandingPageData = {
   faqs: [
     {
       q: "Is intimate health treatment embarrassing to discuss?",
-      a: "Not at all. Dr Inga Taganova is a GP with a background in obstetrics and gynaecology who has has more than two decades of medical experience with women. She approaches these topics with sensitivity, professionalism, and complete discretion. You won't be judged – you'll be listened to and helped."
+      a: "Not at all. Dr Inga Taganova is a GP with a background in obstetrics and gynaecology who has has more than two decades of medical experience with women. She approaches these topics with sensitivity, professionalism, and complete discretion. You won't be judged, you'll be listened to and helped."
     },
     {
       q: "What is Votiva FormaV?",
@@ -61,7 +61,7 @@ export const sexualWellnessData: TreatmentLandingPageData = {
     },
     {
       q: "Is there downtime after intimate treatments?",
-      a: "Downtime is minimal. You can return to normal activities immediately, though sexual abstinence is recommended for 3–5 days to allow the tissue to settle. Any mild tenderness typically resolves within 24–48 hours."
+      a: "Downtime is minimal. You can return to normal activities immediately, though sexual abstinence is recommended for 3 to 5 days to allow the tissue to settle. Any mild tenderness typically resolves within 24 to 48 hours."
     },
     {
       q: "Can intimate wellness treatments help with urinary symptoms?",
@@ -75,14 +75,14 @@ export const sexualWellnessData: TreatmentLandingPageData = {
   
   pricing: [
     { name: "Intimate Health Consultation (30 min)", price: "£150" },
-    { name: "Forma V — single session", price: "£450" },
-    { name: "Forma V — course of 3", price: "£1,200" },
+    { name: "Forma V, single session", price: "£450" },
+    { name: "Forma V, course of 3", price: "£1,200" },
     { name: "Intimate hyaluronic acid treatment", price: "Price on consultation" }
   ],
   
   procedureSchema: {
     name: "Sexual Wellness & Intimate Health Consultation",
-    description: "Discreet intimate health consultation with Dr Inga Taganova – GP with a background in obstetrics and gynaecology – in Oxford. Expert treatment for dryness, discomfort, and sexual wellness concerns.",
+    description: "Discreet intimate health consultation with Dr Inga Taganova, GP with a background in obstetrics and gynaecology, in Oxford. Expert treatment for dryness, discomfort, and sexual wellness concerns.",
     bodyLocation: "Pelvis"
   }
 };

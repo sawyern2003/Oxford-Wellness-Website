@@ -39,7 +39,7 @@ export const quizSteps: QuizStep[] = [
     id: "intro",
     title: "Find your programme",
     subtitle:
-      "Tell us what has changed. We will suggest a starting programme – educational guidance only. Final suitability is confirmed during consultation.",
+      "Tell us what has changed. We will suggest a starting programme, educational guidance only. Final suitability is confirmed during consultation.",
   },
   {
     id: "primaryConcerns",
@@ -56,7 +56,7 @@ export const quizSteps: QuizStep[] = [
   {
     id: "skinConcerns",
     title: "Any skin concerns?",
-    subtitle: "Optional – select any that feel relevant.",
+    subtitle: "Optional, select any that feel relevant.",
     multi: true,
     options: [
       { id: "texture", label: "Texture or dullness" },

@@ -12,7 +12,7 @@ const data: BlogPostData = {
     src: "/blog-hrt-consultation-what-to-expect.webp",
     alt: "Woman in camel knit sweater holding a mug by a window",
   },
-  intro: "Many women delay booking a menopause consultation because they are unsure what to expect, whether they will be pressured into treatment, or whether their symptoms are 'bad enough' to warrant assessment. This article walks you through the process—what will be discussed, what questions you should ask, and how treatment decisions are actually made.",
+  intro: "Many women delay booking a menopause consultation because they are unsure what to expect, whether they will be pressured into treatment, or whether their symptoms are 'bad enough' to warrant assessment. This article walks you through the process, what will be discussed, what questions you should ask, and how treatment decisions are actually made.",
   keyPoints: [
     "Consultations typically last 1 hour and are unhurried",
     "You will be asked about your symptoms, medical history, and any concerns",
@@ -32,8 +32,8 @@ const data: BlogPostData = {
     {
       heading: "What Happens During the Consultation",
       paragraphs: [
-        "A good menopause consultation is unhurried and conversational. You should not feel rushed. The clinician will begin by asking about your symptoms—what you have noticed, when they started, how they affect your daily life. This is not a checklist exercise. The aim is to understand your experience, not simply to tick boxes.",
-        "You will be asked about your menstrual pattern. Are your periods still regular? Have they become heavier, lighter, or more erratic? When was your last period? If you have gone more than twelve months without a period, you have reached menopause. If your periods are irregular but still occurring, you are in perimenopause. This distinction matters because it affects treatment choices—particularly whether you need progesterone alongside oestrogen.",
+        "A good menopause consultation is unhurried and conversational. You should not feel rushed. The clinician will begin by asking about your symptoms, what you have noticed, when they started, how they affect your daily life. This is not a checklist exercise. The aim is to understand your experience, not simply to tick boxes.",
+        "You will be asked about your menstrual pattern. Are your periods still regular? Have they become heavier, lighter, or more erratic? When was your last period? If you have gone more than twelve months without a period, you have reached menopause. If your periods are irregular but still occurring, you are in perimenopause. This distinction matters because it affects treatment choices, particularly whether you need progesterone alongside oestrogen.",
       ],
     },
     {
@@ -54,7 +54,7 @@ const data: BlogPostData = {
     {
       heading: "Symptom Assessment",
       paragraphs: [
-        "The clinician will explore each symptom cluster. How frequent are your hot flushes? Do night sweats wake you? How is your sleep quality overall? Has your mood changed? Are you experiencing anxiety, low mood, or irritability? Have you noticed cognitive changes—difficulty concentrating, memory lapses, brain fog?",
+        "The clinician will explore each symptom cluster. How frequent are your hot flushes? Do night sweats wake you? How is your sleep quality overall? Has your mood changed? Are you experiencing anxiety, low mood, or irritability? Have you noticed cognitive changes, difficulty concentrating, memory lapses, brain fog?",
         "Physical symptoms matter too. Joint pain, headaches, palpitations, vaginal dryness, reduced libido, and urinary symptoms are all relevant. Some women find these symptoms more disruptive than vasomotor ones.",
         "You may be asked to rate the severity or impact of symptoms on a scale. This is not to minimise your experience but to help measure change once treatment starts.",
       ],
@@ -62,7 +62,7 @@ const data: BlogPostData = {
     {
       heading: "Examination",
       paragraphs: [
-        "A full physical examination is not always required at a first menopause consultation. Weight, height and blood pressure are usually checked. If you have specific concerns—for example, unexplained bleeding or pelvic symptoms—a gynaecological examination may be offered. But a routine internal examination is not necessary simply to prescribe HRT.",
+        "A full physical examination is not always required at a first menopause consultation. Weight, height and blood pressure are usually checked. If you have specific concerns, for example, unexplained bleeding or pelvic symptoms, a gynaecological examination may be offered. But a routine internal examination is not necessary simply to prescribe HRT.",
         "Some clinics offer additional assessments such as bone density scans or cardiovascular risk scoring, but these are not mandatory for most women starting standard HRT.",
       ],
     },
@@ -83,14 +83,14 @@ const data: BlogPostData = {
       heading: "Types of Hormone Therapy",
       paragraphs: [
         "If HRT is suitable, the clinician will explain the different types. Oestrogen is the core component and is what treats most menopausal symptoms. It can be given as a patch, gel, or tablet. Patches and gels are usually preferred because they avoid first-pass liver metabolism and have a better safety profile for blood clots and stroke.",
-        "If you still have a womb—meaning you have not had a hysterectomy—you will also need progesterone to protect the lining of the womb from unopposed oestrogen. Progesterone can be given as a daily tablet or via a hormone-releasing intrauterine system, which many women already use for contraception.",
+        "If you still have a womb, meaning you have not had a hysterectomy, you will also need progesterone to protect the lining of the womb from unopposed oestrogen. Progesterone can be given as a daily tablet or via a hormone-releasing intrauterine system, which many women already use for contraception.",
         "If you have had a hysterectomy, you only need oestrogen. No progesterone is required.",
       ],
     },
     {
       heading: "Discussing Risks and Benefits",
       paragraphs: [
-        "A responsible clinician will explain both the benefits and the risks. The benefits for most women—improved symptoms, better quality of life, protection of bone and cardiovascular health—are substantial. The risks, for most women starting HRT under sixty or within ten years of menopause, are very small.",
+        "A responsible clinician will explain both the benefits and the risks. The benefits for most women, improved symptoms, better quality of life, protection of bone and cardiovascular health, are substantial. The risks, for most women starting HRT under sixty or within ten years of menopause, are very small.",
         "You should be told about the slight increase in breast cancer risk with long-term combined HRT, the difference between oestrogen-only and combined HRT, and the fact that transdermal oestrogen (patches or gel) does not increase the risk of blood clots the way oral oestrogen does.",
         "The clinician should also explain that the risk-benefit balance is highly individual. For a healthy fifty-year-old woman with troublesome symptoms, the benefits almost always outweigh the risks. For a woman with a strong personal history of breast cancer or blood clots, the calculation is different.",
       ],
@@ -98,7 +98,7 @@ const data: BlogPostData = {
     {
       heading: "Contraception",
       paragraphs: [
-        "If you are perimenopausal—still having periods—you can still get pregnant, and HRT is not contraception. If you need contraception, this will be discussed. A hormone-releasing intrauterine system can provide both contraception and the progesterone component of HRT, which is often a convenient solution.",
+        "If you are perimenopausal, still having periods, you can still get pregnant, and HRT is not contraception. If you need contraception, this will be discussed. A hormone-releasing intrauterine system can provide both contraception and the progesterone component of HRT, which is often a convenient solution.",
       ],
     },
     {
@@ -141,7 +141,7 @@ const data: BlogPostData = {
     heading: "Book a Menopause Consultation",
     text: "Discuss your symptoms, concerns and treatment options in a confidential consultation with Dr Inga Taganova.",
     buttonLabel: "Book Now",
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
     buttonExternal: true,
   },
   relatedPosts: [

@@ -12,7 +12,7 @@ const data: BlogPostData = {
     src: "/blog-womens-health-check-oxford.webp",
     alt: "Midlife blonde woman in white shirt with thoughtful expression",
   },
-  intro: "Preventive healthcare is consistently underprioritised by women. Between work, family, and the dozens of small tasks that somehow become your responsibility, your own health screening slips down the list. Many women only see a doctor when something is wrong. But regular health checks catch problems early—when they are easier to treat—and provide reassurance when results are normal.",
+  intro: "Preventive healthcare is consistently underprioritised by women. Between work, family, and the dozens of small tasks that somehow become your responsibility, your own health screening slips down the list. Many women only see a doctor when something is wrong. But regular health checks catch problems early, when they are easier to treat, and provide reassurance when results are normal.",
   keyPoints: [
     "Routine health checks should start in your twenties and continue throughout life",
     "Different screening tests are recommended at different ages",
@@ -25,7 +25,7 @@ const data: BlogPostData = {
       heading: "Why Preventive Health Checks Matter",
       paragraphs: [
         "Screening is not about looking for problems where none exist. It is about detecting conditions early, when intervention is most effective. Cervical screening detects precancerous changes that can be treated before cancer develops. Blood pressure monitoring catches hypertension before it causes stroke or kidney disease. Cholesterol testing identifies cardiovascular risk that can be managed with lifestyle change or medication.",
-        "Women are statistically more likely than men to delay seeking medical advice. We are also more likely to minimise symptoms, to assume we are overreacting, or to prioritise others' health over our own. Regular check-ups shift the focus from reactive care—treating illness once it has declared itself—to proactive prevention.",
+        "Women are statistically more likely than men to delay seeking medical advice. We are also more likely to minimise symptoms, to assume we are overreacting, or to prioritise others' health over our own. Regular check-ups shift the focus from reactive care, treating illness once it has declared itself, to proactive prevention.",
       ],
     },
     {
@@ -45,7 +45,7 @@ const data: BlogPostData = {
       heading: "Cervical Screening",
       paragraphs: [
         "In the UK, cervical screening (smear tests) starts at twenty-five and is recommended every three years until age fifty, then every five years until sixty-five. The test detects abnormal cells caused by persistent HPV infection that could, if left untreated, develop into cervical cancer.",
-        "Many women put off cervical screening because they find it uncomfortable or embarrassing. It is brief—usually under a minute—and early detection saves lives. If you have missed your screening invitation, book a catch-up appointment.",
+        "Many women put off cervical screening because they find it uncomfortable or embarrassing. It is brief, usually under a minute, and early detection saves lives. If you have missed your screening invitation, book a catch-up appointment.",
       ],
     },
     {
@@ -58,7 +58,7 @@ const data: BlogPostData = {
     {
       heading: "Breast Awareness",
       paragraphs: [
-        "Routine mammography does not start until fifty in the UK, but breast awareness should begin much earlier. Know what is normal for you. Check your breasts regularly—there is no prescribed method, just familiarity with how they usually look and feel. If you notice a lump, thickening, change in shape, nipple discharge, or skin changes, have it assessed promptly.",
+        "Routine mammography does not start until fifty in the UK, but breast awareness should begin much earlier. Know what is normal for you. Check your breasts regularly, there is no prescribed method, just familiarity with how they usually look and feel. If you notice a lump, thickening, change in shape, nipple discharge, or skin changes, have it assessed promptly.",
       ],
     },
     {
@@ -71,7 +71,7 @@ const data: BlogPostData = {
       heading: "Blood Pressure and Cardiovascular Risk",
       paragraphs: [
         "Blood pressure checks become more important. Hypertension is common from midlife onwards and is a major modifiable risk factor for stroke and heart disease. Have your blood pressure checked annually if you are over forty or have risk factors.",
-        "A full cardiovascular risk assessment—including cholesterol, blood glucose, BMI, and family history—is recommended. If your risk is elevated, lifestyle modification and sometimes medication can reduce it substantially.",
+        "A full cardiovascular risk assessment, including cholesterol, blood glucose, BMI, and family history, is recommended. If your risk is elevated, lifestyle modification and sometimes medication can reduce it substantially.",
       ],
     },
     {
@@ -84,14 +84,14 @@ const data: BlogPostData = {
     {
       heading: "Perimenopause and Menopause Assessment",
       paragraphs: [
-        "If you are in your mid-to-late forties and noticing changes—irregular periods, sleep disturbance, mood changes, hot flushes—consider a menopause assessment. Symptoms can begin years before your periods stop, and effective treatment exists.",
+        "If you are in your mid-to-late forties and noticing changes, irregular periods, sleep disturbance, mood changes, hot flushes, consider a menopause assessment. Symptoms can begin years before your periods stop, and effective treatment exists.",
         "Bone density scanning (DEXA scan) is not routine for all women but should be considered if you have risk factors for osteoporosis: early menopause, long-term steroid use, low body weight, smoking, or a strong family history of fractures.",
       ],
     },
     {
       heading: "Breast Screening",
       paragraphs: [
-        "NHS breast screening (mammography) begins at fifty and is offered every three years. If you have a strong family history of breast cancer—particularly if relatives were diagnosed young—you may be eligible for earlier or more frequent screening. Discuss this with your GP.",
+        "NHS breast screening (mammography) begins at fifty and is offered every three years. If you have a strong family history of breast cancer, particularly if relatives were diagnosed young, you may be eligible for earlier or more frequent screening. Discuss this with your GP.",
       ],
     },
     {
@@ -103,13 +103,13 @@ const data: BlogPostData = {
     {
       heading: "Ongoing Cardiovascular and Metabolic Monitoring",
       paragraphs: [
-        "Blood pressure, cholesterol and glucose should be checked regularly—at least annually if you have risk factors, every few years if results are consistently normal. Cardiovascular disease is the leading cause of death in postmenopausal women, and much of that risk is preventable.",
+        "Blood pressure, cholesterol and glucose should be checked regularly, at least annually if you have risk factors, every few years if results are consistently normal. Cardiovascular disease is the leading cause of death in postmenopausal women, and much of that risk is preventable.",
       ],
     },
     {
       heading: "Bone Health",
       paragraphs: [
-        "Osteoporosis risk increases significantly after menopause due to declining oestrogen. A DEXA scan measures bone density and fracture risk. If osteoporosis is detected, treatment—including HRT, calcium, vitamin D, and sometimes bisphosphonates—can reduce fracture risk substantially.",
+        "Osteoporosis risk increases significantly after menopause due to declining oestrogen. A DEXA scan measures bone density and fracture risk. If osteoporosis is detected, treatment, including HRT, calcium, vitamin D, and sometimes bisphosphonates, can reduce fracture risk substantially.",
       ],
     },
     {
@@ -152,7 +152,7 @@ const data: BlogPostData = {
       heading: "Health Checks at The Oxford Wellness Doctor",
       paragraphs: [
         "Dr Inga Taganova offers comprehensive women's health assessments at Belsyre Court in Oxford. Consultations are unhurried and cover your full medical history, current symptoms, and preventive health needs. Blood tests can be arranged on the same day, and results are reviewed in a follow-up consultation with clear, actionable recommendations.",
-        "Because Dr Inga Taganova specialises in women's health and menopause, the assessment includes discussion of hormonal health, menopause status, and age-appropriate screening—areas that are often rushed or overlooked in standard NHS consultations.",
+        "Because Dr Inga Taganova specialises in women's health and menopause, the assessment includes discussion of hormonal health, menopause status, and age-appropriate screening, areas that are often rushed or overlooked in standard NHS consultations.",
       ],
     },
   ],
@@ -160,7 +160,7 @@ const data: BlogPostData = {
     heading: "Book a Women's Health Check",
     text: "Comprehensive health assessment with Dr Inga Taganova at Belsyre Court, Oxford.",
     buttonLabel: "Book a Consultation",
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
     buttonExternal: true,
   },
   relatedPosts: [

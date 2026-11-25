@@ -49,7 +49,7 @@ export function scoreQuiz(answers: QuizAnswers): RecommendationResult {
 
   for (const c of answers.bodyConcerns) {
     if (NONE.has(c)) continue;
-    add(scores, reasons, "skin-health-regeneration", 2, "Body concerns selected — discuss Forma Plus / InMode FX in consultation");
+    add(scores, reasons, "skin-health-regeneration", 2, "Body concerns selected, discuss Forma Plus / InMode FX in consultation");
   }
 
   for (const c of answers.intimateConcerns) {

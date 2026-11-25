@@ -12,7 +12,7 @@ const data: BlogPostData = {
     src: "/blog-chemical-peels-oxford.webp",
     alt: "Stack of folded beige towels on white stool",
   },
-  intro: "Chemical peels have been used for decades to improve skin texture, reduce pigmentation, and stimulate collagen production. When performed correctly with medical-grade products, they can produce significant and lasting improvement in skin quality—particularly for sun damage, uneven tone, fine lines, and mild acne scarring.",
+  intro: "Chemical peels have been used for decades to improve skin texture, reduce pigmentation, and stimulate collagen production. When performed correctly with medical-grade products, they can produce significant and lasting improvement in skin quality, particularly for sun damage, uneven tone, fine lines, and mild acne scarring.",
   keyPoints: [
     "Chemical peels use controlled skin exfoliation to improve texture and tone",
     "Depth of peel varies from superficial to medium, depending on the concern",
@@ -52,7 +52,7 @@ const data: BlogPostData = {
       heading: "Superficial Peels",
       paragraphs: [
         "Superficial peels use mild acids such as glycolic acid, lactic acid, or salicylic acid to gently exfoliate the outermost layer of skin. They cause minimal discomfort and little to no visible peeling. You may notice slight redness and flaking for a day or two, but there is no significant downtime.",
-        "Superficial peels improve radiance, smooth texture, and provide a fresher appearance. They are often done in a series—typically four to six treatments spaced two to four weeks apart—for cumulative benefit.",
+        "Superficial peels improve radiance, smooth texture, and provide a fresher appearance. They are often done in a series, typically four to six treatments spaced two to four weeks apart, for cumulative benefit.",
       ],
     },
     {
@@ -60,7 +60,7 @@ const data: BlogPostData = {
       paragraphs: [
         "Medium peels use stronger acids such as trichloroacetic acid (TCA) at higher concentrations. They penetrate deeper into the skin, producing more significant exfoliation and stimulating collagen production.",
         "Medium peels cause visible peeling and redness for several days. The skin may look tight, dry, and flaky as it sheds. Results are more dramatic than superficial peels and can include noticeable improvement in pigmentation, texture, and fine lines.",
-        "Fewer treatments are needed—often one to three sessions, spaced several weeks apart—but the recovery period is longer.",
+        "Fewer treatments are needed, often one to three sessions, spaced several weeks apart, but the recovery period is longer.",
       ],
     },
     {
@@ -81,7 +81,7 @@ const data: BlogPostData = {
     {
       heading: "The Treatment Process",
       paragraphs: [
-        "The skin is thoroughly cleansed and degreased. The peel solution is then applied evenly to the treatment area. You may feel tingling, warmth, or a mild stinging sensation as the peel works. The solution is left on for a specified time—ranging from a few minutes to longer, depending on the peel type—and then neutralised or removed.",
+        "The skin is thoroughly cleansed and degreased. The peel solution is then applied evenly to the treatment area. You may feel tingling, warmth, or a mild stinging sensation as the peel works. The solution is left on for a specified time, ranging from a few minutes to longer, depending on the peel type, and then neutralised or removed.",
         "A superficial peel typically takes 20 to 30 minutes. A medium peel may take slightly longer. There is no anaesthetic required for most peels, though a fan or cool compress can make the experience more comfortable.",
       ],
     },
@@ -111,7 +111,7 @@ const data: BlogPostData = {
       paragraphs: [
         "Results develop as the skin heals. For superficial peels, you will notice fresher, smoother skin within a week. For medium peels, the full result becomes apparent over several weeks as new collagen is produced and the skin continues to improve.",
         "A single medium peel can produce noticeable improvement, but a series of treatments often gives the best result. Superficial peels are typically done in a course of four to six.",
-        "Maintenance peels can be done periodically—every few months or seasonally—to keep the skin looking its best. Good skincare, sun protection, and retinoid use help prolong the results.",
+        "Maintenance peels can be done periodically, every few months or seasonally, to keep the skin looking its best. Good skincare, sun protection, and retinoid use help prolong the results.",
       ],
     },
     {
@@ -133,7 +133,7 @@ const data: BlogPostData = {
     heading: "Book a Chemical Peel Consultation",
     text: "Discuss chemical peel options with Dr Inga Taganova in Oxford.",
     buttonLabel: "Book a Consultation",
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
     buttonExternal: true,
   },
   relatedPosts: [

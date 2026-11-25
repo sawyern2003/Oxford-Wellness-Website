@@ -6,16 +6,16 @@ export default function TermsAndConditions() {
   useBreadcrumbSchema([{ name: "Terms & Conditions", path: "/terms-and-conditions" }]);
   useSEO({
     title: "Terms & Conditions | The Oxford Wellness Doctor",
-    description: "Terms and Conditions for The Oxford Wellness Doctor - clinical services, booking, cancellation policy, and patient responsibilities.",
+    description: "Terms and Conditions for The Oxford Wellness Doctor, clinical services, booking, cancellation policy, and patient responsibilities.",
     canonical: "https://www.theoxfordwellnessdoctor.com/terms-and-conditions",
   });
 
   return (
-    <div className="pt-28 min-h-screen bg-white">
+    <div className="pt-28 min-h-screen bg-background">
       <div className="container mx-auto px-6 py-16 max-w-3xl">
         <div className="mb-12">
-          <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">Legal</p>
-          <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-4">Terms & Conditions</h1>
+          <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">Legal</p>
+          <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-4">Terms & conditions</h1>
           <p className="text-sm text-muted-foreground">Last updated: January 2025</p>
         </div>
 
@@ -41,7 +41,7 @@ export default function TermsAndConditions() {
 
           <section>
             <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">4. Booking and Payment</h2>
-            <p>Appointments may be booked online via our Glowday booking page, by telephone, or by email. A booking is confirmed upon receipt of any deposit required or upon written confirmation from our clinic.</p>
+            <p>Appointments may be booked online via our Cliniko booking diary, by telephone, or by email. A booking is confirmed upon receipt of any deposit required or upon written confirmation from our clinic.</p>
             <ul className="list-disc pl-6 mt-3 space-y-1.5">
               <li>Payment is taken at the time of treatment unless otherwise agreed</li>
               <li>We accept all major credit and debit cards</li>
@@ -56,7 +56,7 @@ export default function TermsAndConditions() {
             <p>We understand that circumstances can change. Our cancellation policy is as follows:</p>
             <ul className="list-disc pl-6 mt-3 space-y-1.5">
               <li><strong>48+ hours notice:</strong> Cancellation or rescheduling is accepted at no charge</li>
-              <li><strong>24–48 hours notice:</strong> A cancellation fee of 50% of the treatment cost may be charged</li>
+              <li><strong>24 to 48 hours notice:</strong> A cancellation fee of 50% of the treatment cost may be charged</li>
               <li><strong>Less than 24 hours notice or non-attendance:</strong> The full treatment fee may be charged</li>
               <li>Deposits are non-refundable for cancellations made with less than 48 hours notice</li>
             </ul>
@@ -90,7 +90,7 @@ export default function TermsAndConditions() {
 
           <section>
             <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">9. Intellectual Property</h2>
-            <p>All content on this website - including text, images, graphics, and branding - is the property of The Oxford Wellness Doctor and is protected by copyright. You may not reproduce, distribute, or otherwise use any content from this website without our prior written permission.</p>
+            <p>All content on this website, including text, images, graphics, and branding, is the property of The Oxford Wellness Doctor and is protected by copyright. You may not reproduce, distribute, or otherwise use any content from this website without our prior written permission.</p>
           </section>
 
           <section>
@@ -111,7 +111,7 @@ export default function TermsAndConditions() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-border text-sm text-muted-foreground">
-          <p>Related: <Link href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</Link> · <Link href="/cookie-policy" className="text-primary hover:underline">Cookie Policy</Link></p>
+          <p>Related: <Link href="/privacy-policy" className="text-primary hover:underline">Privacy policy</Link> · <Link href="/cookie-policy" className="text-primary hover:underline">Cookie policy</Link></p>
         </div>
       </div>
     </div>

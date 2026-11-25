@@ -12,13 +12,13 @@ export default function HowWeHelp() {
   useSEO({
     title: "How We Help | Personalised Treatment Journeys | The Oxford Wellness Doctor",
     description:
-      "Doctor-led programmes for skin health and intimate wellness. Personalised journeys with Dr Inga Taganova in Oxford – not a treatment menu.",
+      "Doctor-led programmes for skin health and intimate wellness. Personalised journeys with Dr Inga Taganova in Oxford, not a treatment menu.",
     canonical: "https://www.theoxfordwellnessdoctor.com/how-we-help",
   });
 
   return (
-    <div className="pt-28 min-h-screen bg-white">
-      <RevealSection className="bg-white">
+    <div className="pt-28 min-h-screen bg-background">
+      <RevealSection className="bg-background">
       <div className="container mx-auto px-6 py-12 md:py-16 max-w-6xl">
         <FadeIn className="mb-16">
           <HowCanWeHelp heading="h1" />

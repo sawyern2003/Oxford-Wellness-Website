@@ -12,7 +12,7 @@ const data: BlogPostData = {
     src: "/blog-lumecca-ipl-oxford.webp",
     alt: "White flowers arranged in a clear glass vase",
   },
-  intro: "Sun damage, pigmentation, redness, and broken capillaries are amongst the most common skin concerns I see in women over forty. They are also amongst the most treatable. Lumecca IPL—intense pulsed light—is one of the most effective technologies for improving these concerns, often producing dramatic results with minimal downtime.",
+  intro: "Sun damage, pigmentation, redness, and broken capillaries are amongst the most common skin concerns I see in women over forty. They are also amongst the most treatable. Lumecca IPL, intense pulsed light, is one of the most effective technologies for improving these concerns, often producing dramatic results with minimal downtime.",
   keyPoints: [
     "IPL targets pigment and redness using precise wavelengths of light",
     "It treats sun damage, age spots, rosacea, broken capillaries, and uneven tone",
@@ -62,7 +62,7 @@ const data: BlogPostData = {
       heading: "The Treatment Process",
       paragraphs: [
         "Before treatment, your skin is cleansed and a cooling gel is applied. Protective eyewear is worn to shield your eyes from the bright flashes of light.",
-        "The IPL handpiece is placed against the skin and pulses of light are delivered across the treatment area. Each pulse feels like a quick snap or flick against the skin—mildly uncomfortable but tolerable. Treatment of the full face typically takes 15 to 20 minutes.",
+        "The IPL handpiece is placed against the skin and pulses of light are delivered across the treatment area. Each pulse feels like a quick snap or flick against the skin, mildly uncomfortable but tolerable. Treatment of the full face typically takes 15 to 20 minutes.",
         "After treatment, the gel is removed and a soothing cream or cold compress is applied. There is no need for anaesthetic, and you can return to normal activities immediately.",
       ],
     },
@@ -70,7 +70,7 @@ const data: BlogPostData = {
       heading: "What to Expect After Treatment",
       paragraphs: [
         "Immediately after IPL, your skin will be red and may feel warm, similar to mild sunburn. This usually settles within a few hours. You can apply makeup the next day if needed.",
-        "Pigmented lesions will darken over the first few days—they may look like small coffee grounds or tiny scabs. This is expected and means the treatment is working. The pigment will flake off over the next one to two weeks, revealing clearer skin beneath. Do not pick at the darkened spots; let them shed naturally.",
+        "Pigmented lesions will darken over the first few days, they may look like small coffee grounds or tiny scabs. This is expected and means the treatment is working. The pigment will flake off over the next one to two weeks, revealing clearer skin beneath. Do not pick at the darkened spots; let them shed naturally.",
         "Vascular lesions (redness and broken capillaries) fade more gradually over two to four weeks as the damaged vessels are cleared by the body.",
       ],
     },
@@ -85,7 +85,7 @@ const data: BlogPostData = {
         "Use high-SPF sunscreen (50+) daily, even indoors",
         "Avoid hot showers, saunas, swimming pools, and strenuous exercise for 48 hours",
         "Keep the skin well moisturised with gentle, fragrance-free products",
-        "Do not pick or scrub at darkened pigment—let it shed naturally",
+        "Do not pick or scrub at darkened pigment, let it shed naturally",
       ],
     },
     {
@@ -129,7 +129,7 @@ const data: BlogPostData = {
     heading: "Book a Lumecca IPL Consultation",
     text: "Discuss pigmentation and redness treatment with Dr Inga Taganova in Oxford.",
     buttonLabel: "Book a Consultation",
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
     buttonExternal: true,
   },
   relatedPosts: [

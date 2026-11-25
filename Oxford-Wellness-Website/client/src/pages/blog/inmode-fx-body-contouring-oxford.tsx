@@ -12,7 +12,7 @@ const data: BlogPostData = {
     src: "/blog-inmode-fx-body-contouring-oxford.webp",
     alt: "Midlife woman in silk slip sitting at a vanity",
   },
-  intro: "Loose skin and cellulite on the abdomen, arms, and thighs are common concerns after weight loss, pregnancy, or simply as a result of ageing. InMode FX is a non-surgical radiofrequency treatment that tightens and firms the skin on the body, improves the appearance of cellulite, and enhances overall skin quality—all without incisions, downtime, or significant discomfort.",
+  intro: "Loose skin and cellulite on the abdomen, arms, and thighs are common concerns after weight loss, pregnancy, or simply as a result of ageing. InMode FX is a non-surgical radiofrequency treatment that tightens and firms the skin on the body, improves the appearance of cellulite, and enhances overall skin quality, all without incisions, downtime, or significant discomfort.",
   keyPoints: [
     "InMode FX uses radiofrequency to tighten loose skin on the body",
     "It treats the abdomen, arms, thighs, and other areas with laxity or cellulite",
@@ -75,7 +75,7 @@ const data: BlogPostData = {
       paragraphs: [
         "Results are gradual and natural. Most people begin to notice improvement around four to six weeks after starting treatment, with continued improvement over three to six months as collagen remodelling continues.",
         "The skin becomes firmer, smoother, and more toned. Cellulite appears less pronounced. The overall contour improves, though the change is subtle rather than dramatic.",
-        "Results can last a year or more with good skincare, weight stability, and maintenance treatments. Results are not permanent—skin will continue to age—but they can be sustained with periodic touch-ups.",
+        "Results can last a year or more with good skincare, weight stability, and maintenance treatments. Results are not permanent, skin will continue to age, but they can be sustained with periodic touch-ups.",
       ],
     },
     {
@@ -107,7 +107,7 @@ const data: BlogPostData = {
       heading: "Realistic Expectations",
       paragraphs: [
         "FX produces gradual, natural improvement in skin quality and firmness. It is not a substitute for surgery. If you have severe skin laxity or large amounts of excess skin, surgical body contouring (abdominoplasty, brachioplasty) will produce more dramatic results.",
-        "FX is best thought of as a maintenance and optimisation treatment—improving what is already reasonably good or preserving what you have achieved through diet and exercise.",
+        "FX is best thought of as a maintenance and optimisation treatment, improving what is already reasonably good or preserving what you have achieved through diet and exercise.",
       ],
     },
     {
@@ -122,7 +122,7 @@ const data: BlogPostData = {
     heading: "Book an InMode FX Body Treatment Consultation",
     text: "Discuss body skin tightening and cellulite treatment with Dr Inga Taganova in Oxford.",
     buttonLabel: "Book a Consultation",
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
     buttonExternal: true,
   },
   relatedPosts: [

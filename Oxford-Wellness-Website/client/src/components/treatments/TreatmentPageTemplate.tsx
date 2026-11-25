@@ -237,8 +237,8 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
   }, [data]);
 
   return (
-    <div className="pt-28 min-h-screen bg-white">
-      <section className="bg-white">
+    <div className="pt-28 min-h-screen bg-background">
+      <section className="bg-background">
         <div className="container mx-auto px-6 py-12 md:py-16 max-w-4xl">
           <FadeIn direction="up">
             <nav className="text-sm text-muted-foreground mb-5 flex items-center gap-2">
@@ -281,7 +281,7 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
         </section>
       )}
 
-      <section className="py-14 md:py-16 bg-white">
+      <section className="py-14 md:py-16 bg-background">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="grid md:grid-cols-2 gap-10">
             {highlights.length > 0 && (
@@ -340,7 +340,7 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
       )}
 
       {displayFaqs.length > 0 && (
-        <section className="py-14 md:py-16 bg-white">
+        <section className="py-14 md:py-16 bg-background">
           <div className="container mx-auto px-6 max-w-4xl">
             <FadeIn direction="up">
               <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-6">Common questions</h2>
@@ -397,7 +397,7 @@ export default function TreatmentPageTemplate({ data }: { data: TreatmentPageDat
                                 <thead>
                                   <tr className="bg-primary text-primary-foreground">
                                     {section.tableHeaders.map((h, j) => (
-                                      <th key={j} className="px-3 py-2 text-left font-medium uppercase tracking-wider text-xs">{h}</th>
+                                      <th key={j} className="px-3 py-2 text-left font-medium tracking-normal text-xs">{h}</th>
                                     ))}
                                   </tr>
                                 </thead>

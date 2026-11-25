@@ -10,14 +10,14 @@ const treatments = [
     description: "Holistic healthcare focused on hormonal balance, menopausal support, and preventive medicine for women at every stage of life.",
     href: "/treatments?filter=Wellness",
     image: womensWellnessImg,
-    alt: "Women's wellness and menopause clinic at The Oxford Wellness Doctor, Oxford - HRT, perimenopause support, and hormonal health care"
+    alt: "Women's wellness and menopause clinic at The Oxford Wellness Doctor, Oxford, HRT, perimenopause support, and hormonal health care"
   },
   {
     title: "Regenerative Medicine",
     description: "Cutting-edge therapies designed to stimulate your body's natural healing processes, restoring function and vitality from within.",
     href: "/treatments?filter=Regenerative Medicine",
     image: regenerativeImg,
-    alt: "Regenerative medicine treatments including Profhilo and skin boosters at The Oxford Wellness Doctor in Oxford - administered by GMC-registered Dr. Inga Taganova"
+    alt: "Regenerative medicine treatments including Profhilo and skin boosters at The Oxford Wellness Doctor in Oxford, administered by GMC-registered Dr. Inga Taganova"
   },
   {
     title: "Medical Aesthetics",
@@ -30,11 +30,11 @@ const treatments = [
 
 export default function WhatWeOffer() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <FadeIn className="max-w-2xl mb-16">
-          <span className="block text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">Our Specialisms</span>
-          <h2 className="font-sans font-semibold text-3xl md:text-4xl text-foreground tracking-tight">What We Offer</h2>
+          <span className="block text-[11px] font-medium tracking-normal text-muted-foreground mb-4">Our specialisms</span>
+          <h2 className="font-sans font-semibold text-3xl md:text-4xl text-foreground tracking-tight">What we offer</h2>
         </FadeIn>
 
         <div className="grid md:grid-cols-3 gap-12">

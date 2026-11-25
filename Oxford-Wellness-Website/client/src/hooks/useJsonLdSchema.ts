@@ -47,7 +47,7 @@ export function createMedicalClinicSchema() {
     "@context": "https://schema.org",
     "@type": ["MedicalClinic", "LocalBusiness"],
     "name": "The Oxford Wellness Doctor",
-    "description": "Doctor-led women's health, menopause, intimate health and longevity clinic in Oxford",
+    "description": "Skin, intimate and women's health, considered together by one doctor. Dr Inga Taganova, GP, at Belsyre Court, Oxford.",
     "image": "https://www.theoxfordwellnessdoctor.com/images/clinic-exterior.jpg",
     "address": {
       "@type": "PostalAddress",

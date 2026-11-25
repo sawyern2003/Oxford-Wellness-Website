@@ -3,6 +3,17 @@
   "buildCommand": "npm run build",
   "installCommand": "npm install",
   "outputDirectory": "dist/public",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "frame-src 'self' https://*.cliniko.com https://www.google.com https://maps.google.com; object-src 'none'; base-uri 'self'"
+        }
+      ]
+    }
+  ],
   "routes": [
     { "src": "^/belsyre/?$", "dest": "/api/belsyre" },
     { "src": "/robots.txt", "dest": "/api/robots" },

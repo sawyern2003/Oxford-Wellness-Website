@@ -27,7 +27,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="font-sans font-semibold text-3xl text-foreground tracking-tight mb-4">Curated Treatments</h2>

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useCookieBannerOpen } from "@/hooks/useCookieBannerOpen";
 import { useSEO } from "@/hooks/useSEO";
 import { treatmentWhatsAppMessage, whatsappHref } from "@/lib/whatsapp";
 import RelatedTreatments from "./RelatedTreatments";
@@ -77,8 +78,11 @@ interface StickyBarProps {
 }
 
 function StickyBar({ slug, bookingUrl, whatsappUrl }: StickyBarProps) {
+  const cookieBannerOpen = useCookieBannerOpen();
+  if (cookieBannerOpen) return null;
+
   return (
-    <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-border shadow-lg z-[45] safe-area-pb">
+    <div className="md:hidden fixed bottom-0 left-0 right-0 bg-background border-t border-border shadow-lg z-[45] safe-area-pb">
       <div className="px-4 py-3 flex items-center gap-2">
         <a
           href={bookingUrl}
@@ -189,8 +193,8 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
 
   return (
     <>
-      <div className="pt-28 min-h-screen bg-white pb-24 md:pb-8">
-        <section className="bg-white">
+      <div className="pt-28 min-h-screen bg-background pb-24 md:pb-8">
+        <section className="bg-background">
           <div className="container mx-auto px-6 py-12 md:py-16 max-w-4xl">
             <div>
               <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-6 leading-snug">
@@ -285,7 +289,7 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
           </div>
         </section>
 
-        <section className="py-14 md:py-16 bg-white">
+        <section className="py-14 md:py-16 bg-background">
           <div className="container mx-auto px-6 max-w-4xl">
             <div>
               <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-6">
@@ -328,7 +332,7 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
           </div>
         </section>
 
-        <section className="py-14 md:py-16 bg-white">
+        <section className="py-14 md:py-16 bg-background">
           <div className="container mx-auto px-6 max-w-4xl">
             <div>
               <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-6">
@@ -377,7 +381,7 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
           </div>
         </section>
 
-        <section className="py-14 md:py-16 bg-white">
+        <section className="py-14 md:py-16 bg-background">
           <div className="container mx-auto px-6 max-w-4xl">
             <div>
               <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-6">

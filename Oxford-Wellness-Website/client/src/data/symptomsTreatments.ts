@@ -29,7 +29,7 @@ export const symptoms: Symptom[] = [
     label: "Hot flushes",
     icon: "hot-flushes",
     whatsHappening:
-      "Falling and fluctuating oestrogen narrows the range of temperature your brain treats as comfortable, so a small rise triggers a full cooling response – flushing, sweating and a racing heart.",
+      "Falling and fluctuating oestrogen narrows the range of temperature your brain treats as comfortable, so a small rise triggers a full cooling response, flushing, sweating and a racing heart.",
     recommended: [
       {
         name: "Specialist menopause consultation",
@@ -42,14 +42,14 @@ export const symptoms: Symptom[] = [
         why: "For flushes that start while you are still having periods, where a single blood test is rarely conclusive.",
       },
     ],
-    note: "Where HRT is indicated, Dr Inga confirms your suitability and arranges specialist prescribing – we do not currently prescribe hormone therapy in clinic.",
+    note: "Where HRT is indicated, Dr Inga confirms your suitability and arranges specialist prescribing, we do not currently prescribe hormone therapy in clinic.",
   },
   {
     id: "night-sweats",
     label: "Night sweats & sleep",
     icon: "night-sweats",
     whatsHappening:
-      "Night sweats interrupt the deep sleep stages your body uses to recover. Broken sleep then raises cortisol, which worsens mood, appetite and brain fog the next day – so the cycle reinforces itself.",
+      "Night sweats interrupt the deep sleep stages your body uses to recover. Broken sleep then raises cortisol, which worsens mood, appetite and brain fog the next day, so the cycle reinforces itself.",
     recommended: [
       {
         name: "Specialist menopause consultation",
@@ -131,7 +131,7 @@ export const symptoms: Symptom[] = [
       {
         name: "Vitamin B12 injection",
         href: "/treatments/vitamin-b12-injection-oxford",
-        why: "Intramuscular B12 bypasses digestion; many women notice a difference within 24–48 hours.",
+        why: "Intramuscular B12 bypasses digestion; many women notice a difference within 24 to 48 hours.",
       },
       {
         name: "Specialist menopause consultation",
@@ -150,7 +150,7 @@ export const symptoms: Symptom[] = [
     label: "Weight changes",
     icon: "weight",
     whatsHappening:
-      "Falling oestrogen shifts where the body stores fat – from hips and thighs towards the abdomen – while muscle mass and insulin sensitivity decline. The same diet and exercise that worked at 35 stops working at 48.",
+      "Falling oestrogen shifts where the body stores fat, from hips and thighs towards the abdomen, while muscle mass and insulin sensitivity decline. The same diet and exercise that worked at 35 stops working at 48.",
     recommended: [
       {
         name: "Menopause & women's health consultation",
@@ -174,7 +174,7 @@ export const symptoms: Symptom[] = [
     label: "Joint & muscle pain",
     icon: "joint-pain",
     whatsHappening:
-      "Oestrogen has an anti-inflammatory role and supports cartilage and connective tissue. Its decline can bring stiffness – worst in the morning – and aching in the hands, shoulders, hips and knees.",
+      "Oestrogen has an anti-inflammatory role and supports cartilage and connective tissue. Its decline can bring stiffness, worst in the morning, and aching in the hands, shoulders, hips and knees.",
     recommended: [
       {
         name: "Specialist menopause consultation",
@@ -194,12 +194,12 @@ export const symptoms: Symptom[] = [
     label: "Vaginal dryness & irritation",
     icon: "vaginal-dryness",
     whatsHappening:
-      "Vaginal and vulval tissue is highly oestrogen-dependent. As levels fall the tissue thins, loses elasticity and produces less natural lubrication – causing dryness, itching, stinging and sensitivity.",
+      "Vaginal and vulval tissue is highly oestrogen-dependent. As levels fall the tissue thins, loses elasticity and produces less natural lubrication, causing dryness, itching, stinging and sensitivity.",
     recommended: [
       {
         name: "Neauvia N Rose",
         href: "/treatments/neauvia-n-rose-intimate-rejuvenation-oxford",
-        why: "Medical-grade hyaluronic acid rehydrates the tissue directly; results last 9–12 months.",
+        why: "Medical-grade hyaluronic acid rehydrates the tissue directly; results last 9 to 12 months.",
       },
       {
         name: "Votiva Forma V",
@@ -282,7 +282,7 @@ export const symptoms: Symptom[] = [
     label: "Breast tenderness",
     icon: "breast-tenderness",
     whatsHappening:
-      "Fluctuating oestrogen and progesterone in perimenopause can make breasts feel swollen, heavy or sore – often unpredictably, and sometimes more intensely than at any point previously.",
+      "Fluctuating oestrogen and progesterone in perimenopause can make breasts feel swollen, heavy or sore, often unpredictably, and sometimes more intensely than at any point previously.",
     recommended: [
       {
         name: "Specialist menopause consultation",
@@ -307,7 +307,7 @@ export const symptoms: Symptom[] = [
       {
         name: "Profhilo",
         href: "/treatments/profhilo-oxford",
-        why: "Bio-remodelling hyaluronic acid stimulates collagen and elastin – particularly suited to menopausal skin.",
+        why: "Bio-remodelling hyaluronic acid stimulates collagen and elastin, particularly suited to menopausal skin.",
       },
       {
         name: "Morpheus8",
@@ -394,7 +394,7 @@ export const treatmentApproaches: TreatmentApproach[] = [
     title: "Nutrition & Metabolic Health",
     icon: "nutrition",
     description:
-      "Protein, fibre, insulin sensitivity, bone and cardiovascular protection – nutrition guidance built for the decades after menopause rather than a short-term diet.",
+      "Protein, fibre, insulin sensitivity, bone and cardiovascular protection, nutrition guidance built for the decades after menopause rather than a short-term diet.",
   },
   {
     id: "movement-sleep",
@@ -408,20 +408,20 @@ export const treatmentApproaches: TreatmentApproach[] = [
     title: "Intimate & Vaginal Health",
     icon: "intimate",
     description:
-      "Discreet, doctor-led care for dryness, discomfort and laxity – including regenerative hyaluronic acid and non-surgical radiofrequency, delivered personally by Dr Inga.",
+      "Discreet, doctor-led care for dryness, discomfort and laxity, including regenerative hyaluronic acid and non-surgical radiofrequency, delivered personally by Dr Inga.",
   },
   {
     id: "skin-health",
     title: "Skin Health & Collagen Support",
     icon: "skin",
     description:
-      "Treatments chosen for hormonally ageing skin – bio-remodelling, radiofrequency microneedling, injectable hydration and pigmentation care – sequenced over months.",
+      "Treatments chosen for hormonally ageing skin, bio-remodelling, radiofrequency microneedling, injectable hydration and pigmentation care, sequenced over months.",
   },
   {
     id: "testing",
     title: "Testing & Nutrient Support",
     icon: "testing",
     description:
-      "Where clinically indicated we arrange blood tests – thyroid, ferritin, B12, vitamin D and hormone levels – and treat what we find.",
+      "Where clinically indicated we arrange blood tests, thyroid, ferritin, B12, vitamin D and hormone levels, and treat what we find.",
   },
 ];

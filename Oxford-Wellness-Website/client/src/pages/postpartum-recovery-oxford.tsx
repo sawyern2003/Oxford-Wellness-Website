@@ -5,12 +5,12 @@ const data: TreatmentPageData = {
   metaDescription: "Post-birth recovery and intimate health in Oxford. Expert care for postpartum concerns, pelvic floor support, and physical recovery after childbirth from Dr Inga Taganova, GP with a background in obstetrics and gynaecology.",
   canonical: "https://www.theoxfordwellnessdoctor.com/postpartum-recovery-oxford",
   h1: "Post-Birth Recovery & Intimate Health in Oxford",
-  intro: "Childbirth changes your body in profound ways - and many of these changes affect intimate health, pelvic floor function, and physical confidence. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology and more than two decades of medical experience, provides expert post-birth recovery care, including intimate health treatments and support for the physical effects of pregnancy and childbirth that are rarely discussed openly but deeply felt.",
+  intro: "Childbirth changes your body in profound ways, and many of these changes affect intimate health, pelvic floor function, and physical confidence. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology and more than two decades of medical experience, provides expert post-birth recovery care, including intimate health treatments and support for the physical effects of pregnancy and childbirth that are rarely discussed openly but deeply felt.",
   sections: [
     {
       heading: "Common Postpartum Changes",
       paragraphs: [
-        "After giving birth - whether vaginally or by caesarean - many women experience lasting changes to their intimate area, pelvic floor, and body. These changes are normal, common, and often treatable, yet they're rarely discussed with the detail and sensitivity they deserve.",
+        "After giving birth, whether vaginally or by caesarean, many women experience lasting changes to their intimate area, pelvic floor, and body. These changes are normal, common, and often treatable, yet they're rarely discussed with the detail and sensitivity they deserve.",
       ],
       bullets: [
         "Vaginal laxity or loss of tightness",
@@ -31,7 +31,7 @@ const data: TreatmentPageData = {
       heading: "Why These Changes Happen",
       paragraphs: [
         "Pregnancy and childbirth place enormous physical demands on the pelvic floor, vaginal tissues, and surrounding structures. During vaginal delivery, the pelvic floor muscles and vaginal tissue stretch significantly to accommodate the baby's passage. Even with caesarean births, the weight and pressure of pregnancy affect pelvic floor tone.",
-        "Hormonal changes during pregnancy and breastfeeding - particularly declining oestrogen - also affect tissue elasticity, hydration, and collagen production. These changes can persist long after birth, especially if you're breastfeeding, which naturally suppresses oestrogen levels.",
+        "Hormonal changes during pregnancy and breastfeeding, particularly declining oestrogen, also affect tissue elasticity, hydration, and collagen production. These changes can persist long after birth, especially if you're breastfeeding, which naturally suppresses oestrogen levels.",
         "The result is that many women experience lasting changes to intimate anatomy and function. While some recovery happens naturally in the months following birth, many changes persist and may worsen over time without intervention.",
       ],
     },
@@ -39,7 +39,7 @@ const data: TreatmentPageData = {
       heading: "Why Dr Inga Taganova's Background Matters",
       paragraphs: [
         "Dr Taganova's background in obstetrics and gynaecology means she understands postpartum recovery at a level that most aesthetic practitioners simply cannot. She has spent years working with women's reproductive anatomy, pelvic floor function, and the physical effects of childbirth.",
-        "Her approach is sensitive, evidence-based, and non-judgmental. She recognizes that postpartum intimate health concerns are not cosmetic issues to be dismissed - they're real physical changes that affect quality of life, relationships, and self-esteem.",
+        "Her approach is sensitive, evidence-based, and non-judgmental. She recognizes that postpartum intimate health concerns are not cosmetic issues to be dismissed, they're real physical changes that affect quality of life, relationships, and self-esteem.",
       ],
       bullets: [
         "GP with a background in obstetrics and gynaecology",
@@ -59,8 +59,8 @@ const data: TreatmentPageData = {
     {
       heading: "Neauvia N Rose Intimate Health Treatment",
       paragraphs: [
-        "Neauvia N Rose is a medical-grade hyaluronic acid treatment specifically designed for intimate health. It restores hydration, volume, and elasticity to intimate tissue that has been affected by childbirth - addressing dryness and discomfort.",
-        "The treatment is performed in-clinic and takes 30–45 minutes. It's minimally invasive, with immediate results and continued improvement over the following weeks as the hyaluronic acid stimulates natural collagen production.",
+        "Neauvia N Rose is a medical-grade hyaluronic acid treatment specifically designed for intimate health. It restores hydration, volume, and elasticity to intimate tissue that has been affected by childbirth, addressing dryness and discomfort.",
+        "The treatment is performed in-clinic and takes 30 to 45 minutes. It's minimally invasive, with immediate results and continued improvement over the following weeks as the hyaluronic acid stimulates natural collagen production.",
       ],
       bullets: [
         "May help with symptoms such as dryness or discomfort",
@@ -68,7 +68,7 @@ const data: TreatmentPageData = {
         "Enhances sensation during intimacy",
         "Improves tissue thickness and elasticity",
         "Minimal downtime (abstinence from sex for a few days recommended)",
-        "Results last 9–12 months on average",
+        "Results last 9 to 12 months on average",
       ],
     },
     {
@@ -82,13 +82,13 @@ const data: TreatmentPageData = {
       heading: "When to Seek Treatment",
       paragraphs: [
         "There's no 'right' time to seek help after childbirth. Some women want to address concerns as soon as they've finished breastfeeding; others wait months or years. What matters is that you feel ready and that your symptoms are affecting your quality of life.",
-        "You don't need to accept discomfort, dryness, or loss of confidence as permanent. Effective treatments are available, and seeking help is a sign of self-care - not vanity.",
+        "You don't need to accept discomfort, dryness, or loss of confidence as permanent. Effective treatments are available, and seeking help is a sign of self-care, not vanity.",
       ],
     },
     {
       heading: "Frequently Asked Questions About Timing",
       paragraphs: [
-        "Many women wonder when it's safe to consider intimate health treatment after childbirth. Generally, we recommend waiting at least 6–12 months after delivery to allow natural healing and hormonal stabilization. If you're breastfeeding, treatment is often most effective after you've stopped, as breastfeeding naturally suppresses oestrogen and affects tissue quality.",
+        "Many women wonder when it's safe to consider intimate health treatment after childbirth. Generally, we recommend waiting at least 6 to 12 months after delivery to allow natural healing and hormonal stabilization. If you're breastfeeding, treatment is often most effective after you've stopped, as breastfeeding naturally suppresses oestrogen and affects tissue quality.",
         "Dr Inga Taganova will assess your individual circumstances during your consultation and advise on the optimal timing for treatment.",
       ],
     },
@@ -118,7 +118,7 @@ const data: TreatmentPageData = {
     {
       heading: "Beyond the Physical: Emotional Recovery",
       paragraphs: [
-        "Dr Inga Taganova understands that postpartum changes affect more than physical function - they affect self-esteem, relationships, and emotional wellbeing. Many women feel embarrassed or isolated by these concerns, but they're common, treatable, and nothing to be ashamed of.",
+        "Dr Inga Taganova understands that postpartum changes affect more than physical function, they affect self-esteem, relationships, and emotional wellbeing. Many women feel embarrassed or isolated by these concerns, but they're common, treatable, and nothing to be ashamed of.",
         "Addressing intimate health concerns is an important part of postpartum recovery and self-care. You deserve to feel comfortable, confident, and pain-free in your body.",
       ],
     },
@@ -131,7 +131,7 @@ const data: TreatmentPageData = {
   faqs: [
     {
       q: "How long after giving birth should I wait before considering intimate health treatment?",
-      a: "We generally recommend waiting at least 6–12 months after delivery to allow natural healing and hormonal stabilization. If you're breastfeeding, treatment is often most effective after you've stopped, as breastfeeding suppresses oestrogen and affects tissue quality. Dr Inga Taganova will assess your individual circumstances during consultation.",
+      a: "We generally recommend waiting at least 6 to 12 months after delivery to allow natural healing and hormonal stabilization. If you're breastfeeding, treatment is often most effective after you've stopped, as breastfeeding suppresses oestrogen and affects tissue quality. Dr Inga Taganova will assess your individual circumstances during consultation.",
     },
     {
       q: "Can intimate health treatment help with stress incontinence?",
@@ -139,11 +139,11 @@ const data: TreatmentPageData = {
     },
     {
       q: "Will intimate health treatment affect future pregnancies?",
-      a: "Neauvia N Rose is a temporary treatment (lasting 9–12 months) and does not permanently alter intimate anatomy. It will not affect your ability to conceive or deliver vaginally in the future. However, subsequent pregnancies and deliveries may create new changes that require additional treatment.",
+      a: "Neauvia N Rose is a temporary treatment (lasting 9 to 12 months) and does not permanently alter intimate anatomy. It will not affect your ability to conceive or deliver vaginally in the future. However, subsequent pregnancies and deliveries may create new changes that require additional treatment.",
     },
     {
       q: "Is the treatment painful?",
-      a: "Most patients report minimal discomfort during the treatment. A topical numbing cream can be applied beforehand if needed. The procedure takes 30–45 minutes and involves small injections of hyaluronic acid into the vaginal tissue. Any mild tenderness typically resolves within 24–48 hours.",
+      a: "Most patients report minimal discomfort during the treatment. A topical numbing cream can be applied beforehand if needed. The procedure takes 30 to 45 minutes and involves small injections of hyaluronic acid into the vaginal tissue. Any mild tenderness typically resolves within 24 to 48 hours.",
     },
     {
       q: "Can I have intimate health treatment if I had a caesarean section?",
@@ -151,11 +151,11 @@ const data: TreatmentPageData = {
     },
     {
       q: "Will my partner notice any changes?",
-      a: "Partners often notice improved comfort during intimacy for both parties. The treatment restores natural tissue quality without creating an artificial appearance or feel. The goal is to restore what childbirth has changed - not to create something unnatural.",
+      a: "Partners often notice improved comfort during intimacy for both parties. The treatment restores natural tissue quality without creating an artificial appearance or feel. The goal is to restore what childbirth has changed, not to create something unnatural.",
     },
     {
       q: "How long do results last?",
-      a: "Results typically last 9–12 months, though this varies by individual. Many women notice immediate improvement in hydration and comfort, with continued improvement over the following weeks as collagen production is stimulated. Repeat treatments can be performed to maintain results.",
+      a: "Results typically last 9 to 12 months, though this varies by individual. Many women notice immediate improvement in hydration and comfort, with continued improvement over the following weeks as collagen production is stimulated. Repeat treatments can be performed to maintain results.",
     },
     {
       q: "Can you help with scarring from episiotomy or tearing?",
@@ -163,16 +163,16 @@ const data: TreatmentPageData = {
     },
     {
       q: "Do I need a referral from my GP or midwife?",
-      a: "No referral is needed. You can book directly via Glowday or contact us by phone (07739 309380) or email (info@theoxfordwellnessdoctor.com). Dr Inga Taganova will conduct a thorough assessment during your consultation.",
+      a: "No referral is needed. You can book online via the clinic diary or contact us by phone (07739 309380) or email (info@theoxfordwellnessdoctor.com). Dr Inga Taganova will conduct a thorough assessment during your consultation.",
     },
     {
       q: "Is the consultation confidential and discreet?",
-      a: "Absolutely. All consultations are completely confidential and conducted in a private, professional environment. Dr Inga Taganova's approach is sensitive, respectful, and non-judgmental. You won't feel embarrassed or dismissed - you'll feel heard and helped.",
+      a: "Absolutely. All consultations are completely confidential and conducted in a private, professional environment. Dr Inga Taganova's approach is sensitive, respectful, and non-judgmental. You won't feel embarrassed or dismissed, you'll feel heard and helped.",
     },
   ],
   procedureSchema: {
     name: "Post-Birth Recovery & Intimate Health Consultation",
-    description: "Expert post-birth recovery consultation with Dr Inga Taganova - GP with a background in obstetrics and gynaecology - in Oxford. Expert treatment for postpartum intimate health concerns and pelvic floor support.",
+    description: "Expert post-birth recovery consultation with Dr Inga Taganova, GP with a background in obstetrics and gynaecology, in Oxford. Expert treatment for postpartum intimate health concerns and pelvic floor support.",
   },
   relatedLinks: [
     { label: "Women's Health Hub", href: "/womens-health-oxford" },

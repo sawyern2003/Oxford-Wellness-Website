@@ -37,7 +37,7 @@ Do not position The Oxford Wellness Doctor as a hormone-prescribing or HRT servi
 
 Current clinic: Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ. Any Science Park address is historical. Do not surface it as the current clinic location.
 
-In-clinic care is at Belsyre Court. Public contact routes include phone 07739 309380, info@theoxfordwellnessdoctor.com, the contact form, and `/book`. The site’s published online booking link is Glowday (`Oxford-Wellness-Website/client/src/lib/booking.ts`).
+In-clinic care is at Belsyre Court. Public contact routes include phone 07739 309380, info@theoxfordwellnessdoctor.com, the contact form, and `/book`. The site’s published online booking link is Cliniko (`Oxford-Wellness-Website/client/src/lib/booking.ts`).
 
 The live interface still uses programme routes (Programme Finder and three programme pages) and a treatment catalog. Those pages are the current implementation, not proof that every patient needs a programme.
 

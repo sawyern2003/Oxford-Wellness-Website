@@ -25,16 +25,16 @@ export const morpheus8Data: TreatmentLandingPageData = {
     heading: "How it works",
     intro: "Morpheus8 combines microneedling with radiofrequency energy to remodel collagen deep in the tissue.",
     steps: [
-      "Numbing cream applied 45–60 minutes before treatment.",
-      "RF microneedling across the treatment area over 30–60 minutes.",
-      "Redness for 2–5 days; most patients return to work in 3–5 days."
+      "Numbing cream applied 45 to 60 minutes before treatment.",
+      "RF microneedling across the treatment area over 30 to 60 minutes.",
+      "Redness for 2 to 5 days; most patients return to work in 3 to 5 days."
     ],
-    sessionsInfo: "Most patients benefit from a course of three sessions, spaced 4–6 weeks apart. Results develop over 3–6 months as collagen regenerates."
+    sessionsInfo: "Most patients benefit from a course of three sessions, spaced 4 to 6 weeks apart. Results develop over 3 to 6 months as collagen regenerates."
   },
   
   downtime: {
     heading: "Downtime",
-    description: "Redness and mild swelling for 2–5 days is typical. Most patients return to work within 3–5 days. Avoiding sun exposure and wearing SPF is essential during recovery. Make-up can usually be worn after 24–48 hours."
+    description: "Redness and mild swelling for 2 to 5 days is typical. Most patients return to work within 3 to 5 days. Avoiding sun exposure and wearing SPF is essential during recovery. Make-up can usually be worn after 24 to 48 hours."
   },
   
   trust: {
@@ -54,29 +54,29 @@ export const morpheus8Data: TreatmentLandingPageData = {
     },
     {
       q: "Does Morpheus8 hurt?",
-      a: "A numbing cream is applied 45–60 minutes before treatment. Most patients describe a warm prickling sensation during the procedure, which is well-tolerated. Dr Inga Taganova adjusts intensity based on your comfort."
+      a: "A numbing cream is applied 45 to 60 minutes before treatment. Most patients describe a warm prickling sensation during the procedure, which is well-tolerated. Dr Inga Taganova adjusts intensity based on your comfort."
     },
     {
       q: "How many Morpheus8 treatments do I need?",
-      a: "A course of three sessions, spaced 4–6 weeks apart, is recommended for optimal results. Some patients achieve their goals in one or two sessions – Dr Inga Taganova will advise during your consultation."
+      a: "A course of three sessions, spaced 4 to 6 weeks apart, is recommended for optimal results. Some patients achieve their goals in one or two sessions, Dr Inga Taganova will advise during your consultation."
     },
     {
       q: "How long do Morpheus8 results last?",
-      a: "Results continue to improve over 3–6 months as collagen regenerates. The effects typically last 12+ months, with annual maintenance sessions recommended."
+      a: "Results continue to improve over 3 to 6 months as collagen regenerates. The effects typically last 12+ months, with annual maintenance sessions recommended."
     },
     {
       q: "Can Morpheus8 be combined with other treatments?",
-      a: "Yes – Morpheus8 pairs very well with skin booster injections, Profhilo, and anti-wrinkle injections. Dr Inga Taganova will create a combined treatment plan for the best possible outcomes."
+      a: "Yes, Morpheus8 pairs very well with skin booster injections, Profhilo, and anti-wrinkle injections. Dr Inga Taganova will create a combined treatment plan for the best possible outcomes."
     }
   ],
   
   pricing: [
-    { name: "Morpheus8 — eyes or around mouth", price: "£450" },
-    { name: "Morpheus8 — full face", price: "£600" },
-    { name: "Morpheus8 — face and neck", price: "£750" },
-    { name: "Morpheus8 — face, neck and décolletage", price: "£900" },
-    { name: "Morpheus8 — tummy", price: "£800" },
-    { name: "Morpheus8 — stretch marks or large area", price: "£900" }
+    { name: "Morpheus8, eyes or around mouth", price: "£450" },
+    { name: "Morpheus8, full face", price: "£600" },
+    { name: "Morpheus8, face and neck", price: "£750" },
+    { name: "Morpheus8, face, neck and décolletage", price: "£900" },
+    { name: "Morpheus8, tummy", price: "£800" },
+    { name: "Morpheus8, stretch marks or large area", price: "£900" }
   ],
   
   consultation: {

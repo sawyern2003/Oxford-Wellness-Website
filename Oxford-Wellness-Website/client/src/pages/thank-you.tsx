@@ -17,7 +17,7 @@ const nextSteps = [
   {
     step: "03",
     title: "Your Consultation",
-    desc: "At your initial consultation, Dr Inga Taganova will discuss your goals, medical history, and the most appropriate treatment options for you - with no obligation.",
+    desc: "At your initial consultation, Dr Inga Taganova will discuss your goals, medical history, and the most appropriate treatment options for you, with no obligation.",
   },
 ];
 
@@ -46,12 +46,12 @@ export default function ThankYou() {
   });
 
   return (
-    <div className="min-h-screen pt-28 bg-white">
+    <div className="min-h-screen pt-28 bg-background">
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-6 text-center max-w-2xl">
           <CheckCircle className="w-14 h-14 text-secondary mx-auto mb-6" />
-          <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">Enquiry received</p>
-          <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-6">Thank You</h1>
+          <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">Enquiry received</p>
+          <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-6">Thank you</h1>
           <p className="text-muted-foreground text-[15px] leading-relaxed">
             Your message has been received. Dr Taganova&apos;s team will be in touch with you shortly. We look forward to welcoming you to The Oxford Wellness Doctor.
           </p>
@@ -61,7 +61,7 @@ export default function ThankYou() {
       <section className="pb-16">
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="text-center mb-10">
-            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-3">Your journey</p>
+            <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-3">Your journey</p>
             <h2 className="font-sans font-semibold text-3xl text-foreground tracking-tight">What happens next</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-5">
@@ -101,7 +101,7 @@ export default function ThankYou() {
       <section className="py-16">
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="text-center mb-10">
-            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-3">Expert insights</p>
+            <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-3">Expert insights</p>
             <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight">Read while you wait</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-5">
@@ -124,8 +124,8 @@ export default function ThankYou() {
       </section>
 
       <section className="py-14 bg-primary text-primary-foreground text-center">
-        <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-primary-foreground/60 mb-4">Or book directly</p>
-        <h2 className="font-sans font-semibold text-2xl tracking-tight mb-6">Book online via Glowday</h2>
+        <p className="text-[11px] font-medium tracking-normal text-primary-foreground/60 mb-4">Or book directly</p>
+        <h2 className="font-sans font-semibold text-2xl tracking-tight mb-6">Book online</h2>
         <Button
           className="bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-8 h-11 text-sm font-medium"
           onClick={() => window.location.assign("/book")}

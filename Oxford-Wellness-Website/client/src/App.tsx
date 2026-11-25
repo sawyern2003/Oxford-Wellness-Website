@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
 import { Switch, Route, useLocation, Redirect } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
@@ -12,88 +12,99 @@ import CookieConsent from "@/components/analytics/CookieConsent";
 import CustomCursor from "@/components/ui/CustomCursor";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 import { cn } from "@/lib/utils";
-
-const Home = lazy(() => import("@/pages/home"));
-const Services = lazy(() => import("@/pages/services"));
-const About = lazy(() => import("@/pages/about"));
-const Contact = lazy(() => import("@/pages/contact"));
-const AIPreConsult = lazy(() => import("@/pages/ai-pre-consult"));
-const Shop = lazy(() => import("@/pages/shop"));
-const RecommendedSkincare = lazy(() => import("@/pages/recommended-skincare"));
-const HowWeHelp = lazy(() => import("@/pages/how-we-help"));
-const SymptomsAndTreatments = lazy(() => import("@/pages/symptoms-and-treatments"));
-const ProgrammeFinder = lazy(() => import("@/pages/programme-finder"));
-const SkinHealthProgramme = lazy(() => import("@/pages/programmes/skin-health-regeneration"));
-const IntimateWellnessProgramme = lazy(() => import("@/pages/programmes/intimate-wellness"));
-const Pricing = lazy(() => import("@/pages/pricing"));
-const PersonalisedTreatmentPlans = lazy(() => import("@/pages/personalised-treatment-plans"));
-const MenopauseClinic = lazy(() => import("@/pages/menopause-clinic"));
-const PerimenopauseOxford = lazy(() => import("@/pages/perimenopause-oxford"));
-const WomensHealthOxford = lazy(() => import("@/pages/womens-health-oxford"));
-const LongevityMedicineOxford = lazy(() => import("@/pages/longevity-medicine-oxford"));
-const SexualWellnessOxford = lazy(() => import("@/pages/sexual-wellness-oxford"));
-const PostpartumRecoveryOxford = lazy(() => import("@/pages/postpartum-recovery-oxford"));
-const SkinClinicOxford = lazy(() => import("@/pages/skin-clinic-oxford"));
-const MenopauseSkin = lazy(() => import("@/pages/menopause-skin"));
-const BlogIndex = lazy(() => import("@/pages/blog/index"));
-const BlogMenopauseSkin = lazy(() => import("@/pages/blog/menopause-skin-changes"));
-const BlogProfhiloVsFillers = lazy(() => import("@/pages/blog/profhilo-vs-dermal-fillers"));
-const BlogLipFillerNatural = lazy(() => import("@/pages/blog/lip-filler-natural-results"));
-const BlogMorpheus8Timeline = lazy(() => import("@/pages/blog/morpheus8-results-timeline"));
-const BlogWeightGainPeri = lazy(() => import("@/pages/blog/weight-gain-perimenopause"));
-const BlogChoosingClinic = lazy(() => import("@/pages/blog/choosing-aesthetics-clinic-oxford"));
-const BlogOver50 = lazy(() => import("@/pages/blog/aesthetic-treatments-over-50"));
-const BlogSciencePark = lazy(() => import("@/pages/blog/new-oxford-science-park-clinic"));
-const BlogPerimenopauseSymptoms = lazy(() => import("@/pages/blog/perimenopause-symptoms-oxford"));
-const BlogHRTConsultation = lazy(() => import("@/pages/blog/hrt-consultation-what-to-expect"));
-const BlogIntimateHealth = lazy(() => import("@/pages/blog/intimate-health-changes-menopause"));
-const BlogWomensHealthCheck = lazy(() => import("@/pages/blog/womens-health-check-oxford"));
-const BlogLongevityMedicine = lazy(() => import("@/pages/blog/longevity-medicine-for-women"));
-const BlogJawSlimming = lazy(() => import("@/pages/blog/jaw-slimming-treatment-oxford"));
-const BlogExcessiveSweating = lazy(() => import("@/pages/blog/excessive-sweating-treatment-oxford"));
-const BlogChemicalPeels = lazy(() => import("@/pages/blog/chemical-peels-oxford"));
-const BlogLumeccaIPL = lazy(() => import("@/pages/blog/lumecca-ipl-oxford"));
-const BlogFormaSkinTightening = lazy(() => import("@/pages/blog/forma-skin-tightening-oxford"));
-const BlogInModeFX = lazy(() => import("@/pages/blog/inmode-fx-body-contouring-oxford"));
-const BlogAntiWrinkleInjections = lazy(() => import("@/pages/blog/anti-wrinkle-injections-oxford"));
-const BlogPostpartumRecovery = lazy(() => import("@/pages/blog/postpartum-recovery-oxford"));
-const AntiWrinkle = lazy(() => import("@/pages/treatments/anti-wrinkle"));
-const DermalFillers = lazy(() => import("@/pages/treatments/dermal-fillers"));
-const LipFillers = lazy(() => import("@/pages/treatments/lip-fillers"));
-const Profhilo = lazy(() => import("@/pages/treatments/profhilo"));
-const Morpheus8 = lazy(() => import("@/pages/treatments/morpheus8"));
-const ExcessiveSweating = lazy(() => import("@/pages/treatments/excessive-sweating"));
-const ChemicalPeels = lazy(() => import("@/pages/treatments/chemical-peels"));
-const SkinBoosters = lazy(() => import("@/pages/treatments/skin-boosters"));
-const NeauviaNRose = lazy(() => import("@/pages/treatments/neauvia-n-rose"));
-const VotivaFormaV = lazy(() => import("@/pages/treatments/votiva-forma-v"));
-const VitaminB12 = lazy(() => import("@/pages/treatments/vitamin-b12"));
-const MedicalFormCompletion = lazy(() => import("@/pages/treatments/medical-form-completion"));
-const FormaFacelift = lazy(() => import("@/pages/treatments/forma-facelift"));
-const FormaPlusBody = lazy(() => import("@/pages/treatments/forma-plus-body"));
-const InModeFX = lazy(() => import("@/pages/treatments/inmode-fx"));
-const LumeccaIPL = lazy(() => import("@/pages/treatments/lumecca-ipl"));
-const FillerDissolving = lazy(() => import("@/pages/treatments/filler-dissolving"));
-const JawSlimming = lazy(() => import("@/pages/treatments/jaw-slimming"));
-const PrivacyPolicy = lazy(() => import("@/pages/privacy-policy"));
-const CookiePolicy = lazy(() => import("@/pages/cookie-policy"));
-const TermsAndConditions = lazy(() => import("@/pages/terms-and-conditions"));
-const ThankYou = lazy(() => import("@/pages/thank-you"));
-const CallPage = lazy(() => import("@/pages/call"));
-const Book = lazy(() => import("@/pages/book"));
-const NotFound = lazy(() => import("@/pages/not-found"));
-const OxfordPainDoctorHome = lazy(() => import("@/pages/pain/home"));
-const PainBook = lazy(() => import("@/pages/pain/book"));
-const AboutDrRichard = lazy(() => import("@/pages/pain/about"));
-const PainHowWeHelp = lazy(() => import("@/pages/pain/how-we-help"));
-const PainLibrary = lazy(() => import("@/pages/pain/library"));
-const PainLibraryArticle = lazy(() => import("@/pages/pain/library-article"));
+// Eager homepage: avoids Suspense fallback={null} blanking prerendered
+// content during hydrate (major CLS). Other routes stay lazy + preloaded in main.tsx.
+import Home from "@/pages/home";
+import {
+  Services,
+  About,
+  Contact,
+  AIPreConsult,
+  Shop,
+  RecommendedSkincare,
+  HowWeHelp,
+  SymptomsAndTreatments,
+  ProgrammeFinder,
+  SkinHealthProgramme,
+  IntimateWellnessProgramme,
+  Pricing,
+  PersonalisedTreatmentPlans,
+  MenopauseClinic,
+  PerimenopauseOxford,
+  WomensHealthOxford,
+  LongevityMedicineOxford,
+  SexualWellnessOxford,
+  PostpartumRecoveryOxford,
+  SkinClinicOxford,
+  MenopauseSkin,
+  BlogIndex,
+  BlogMenopauseSkin,
+  BlogProfhiloVsFillers,
+  BlogLipFillerNatural,
+  BlogMorpheus8Timeline,
+  BlogWeightGainPeri,
+  BlogChoosingClinic,
+  BlogOver50,
+  BlogSciencePark,
+  BlogPerimenopauseSymptoms,
+  BlogHRTConsultation,
+  BlogIntimateHealth,
+  BlogWomensHealthCheck,
+  BlogLongevityMedicine,
+  BlogJawSlimming,
+  BlogExcessiveSweating,
+  BlogChemicalPeels,
+  BlogLumeccaIPL,
+  BlogFormaSkinTightening,
+  BlogInModeFX,
+  BlogAntiWrinkleInjections,
+  BlogPostpartumRecovery,
+  AntiWrinkle,
+  DermalFillers,
+  LipFillers,
+  Profhilo,
+  Morpheus8,
+  ExcessiveSweating,
+  ChemicalPeels,
+  SkinBoosters,
+  NeauviaNRose,
+  VotivaFormaV,
+  VitaminB12,
+  MedicalFormCompletion,
+  FormaFacelift,
+  FormaPlusBody,
+  InModeFX,
+  LumeccaIPL,
+  FillerDissolving,
+  JawSlimming,
+  PrivacyPolicy,
+  CookiePolicy,
+  TermsAndConditions,
+  ThankYou,
+  CallPage,
+  Book,
+  GiftVouchers,
+  NotFound,
+  OxfordPainDoctorHome,
+  PainBook,
+  AboutDrRichard,
+  PainHowWeHelp,
+  PainLibrary,
+  PainLibraryArticle,
+  isPathPreloaded,
+} from "@/routes/lazyPages";
 
 function Router() {
-  return (
-    <Suspense fallback={null}>
+  const [location] = useLocation();
+  // Homepage is eager and outside Suspense so SSR/prerender writes it into
+  // <main> directly (no React streaming placeholder). That lets hydrateRoot
+  // keep the prerendered layout instead of blanking large regions (CLS ~0.98).
+  if (location === "/" || location === "") {
+    return <Home />;
+  }
+
+  const routes = (
       <Switch>
-        <Route path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/how-we-help" component={HowWeHelp} />
         <Route path="/symptoms-and-treatments" component={SymptomsAndTreatments} />
@@ -181,6 +192,7 @@ function Router() {
           {SHOW_PAIN_DOCTOR ? <NotFound /> : <Redirect to="/" />}
         </Route>
         <Route path="/contact" component={Contact} />
+        <Route path="/gift-vouchers" component={GiftVouchers} />
         <Route path="/recommended-skincare" component={RecommendedSkincare} />
         <Route path="/shop" component={Shop} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
@@ -189,8 +201,14 @@ function Router() {
         <Route path="/thank-you" component={ThankYou} />
         <Route component={NotFound} />
       </Switch>
-    </Suspense>
   );
+
+  // After preloadPath (SSR + first hydrate) skip Suspense so markup matches
+  // the inlined prerender HTML (no streaming boundary comments → no #418).
+  if (isPathPreloaded(location)) {
+    return routes;
+  }
+  return <Suspense fallback={null}>{routes}</Suspense>;
 }
 
 function App() {

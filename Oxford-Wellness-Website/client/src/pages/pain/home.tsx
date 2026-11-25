@@ -59,7 +59,7 @@ export default function OxfordPainDoctorHome() {
   useSEO({
     title: "Consultant-Led Pain Medicine Oxford | The Oxford Pain Doctor",
     description:
-      "Specialist assessment and a personalised Pain Care Plan with Dr Richard Sawyer in Oxford – evidence-led, whole-person care for persistent and chronic pain.",
+      "Specialist assessment and a personalised Pain Care Plan with Dr Richard Sawyer in Oxford, evidence-led, whole-person care for persistent and chronic pain.",
     canonical: "https://www.theoxfordwellnessdoctor.com/oxford-pain-doctor",
   });
 
@@ -89,14 +89,14 @@ export default function OxfordPainDoctorHome() {
   return (
     <>
       {/* Hero */}
-      <RevealSection className="pt-28 md:pt-36 pb-14 md:pb-20 bg-white">
+      <RevealSection className="pt-28 md:pt-36 pb-14 md:pb-20 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-5">
+            <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-5">
               The Oxford Pain Doctor
             </p>
             <h1 className="font-sans font-semibold text-[2.15rem] sm:text-4xl md:text-[3rem] leading-[1.15] text-foreground tracking-tight mb-5 max-w-3xl">
@@ -126,7 +126,7 @@ export default function OxfordPainDoctorHome() {
       </RevealSection>
 
       {/* At a glance */}
-      <RevealSection className="pb-4 bg-white">
+      <RevealSection className="pb-4 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid sm:grid-cols-3 gap-px bg-border rounded-3xl overflow-hidden">
             {[
@@ -150,14 +150,14 @@ export default function OxfordPainDoctorHome() {
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             <FadeIn className="lg:col-span-7">
-              <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
+              <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">
                 Your consultant
               </p>
               <h2 className="font-sans font-semibold text-3xl md:text-4xl text-foreground tracking-tight leading-snug mb-6">
                 Over 30 years in pain medicine
               </h2>
               <blockquote className="font-sans text-lg md:text-xl text-foreground leading-relaxed tracking-tight mb-8 max-w-lg">
-                &ldquo;My role is not simply to offer a procedure. It is to understand why pain is persisting – and which approaches have the best evidence of helping.&rdquo;
+                &ldquo;My role is not simply to offer a procedure. It is to understand why pain is persisting, and which approaches have the best evidence of helping.&rdquo;
               </blockquote>
               <Link href="/oxford-pain-doctor/about">
                 <Button variant="outline" className="rounded-full border-border bg-white px-7 h-11 text-sm">
@@ -183,10 +183,10 @@ export default function OxfordPainDoctorHome() {
       </RevealSection>
 
       {/* Approach */}
-      <RevealSection className="py-16 md:py-24 bg-white">
+      <RevealSection className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
           <FadeIn className="max-w-xl mb-12">
-            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
+            <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">
               Our approach
             </p>
             <h2 className="font-sans font-semibold text-3xl md:text-4xl text-foreground tracking-tight leading-snug mb-5">
@@ -250,11 +250,11 @@ export default function OxfordPainDoctorHome() {
       </RevealSection>
 
       {/* The plan */}
-      <RevealSection className="py-16 md:py-24 bg-white">
+      <RevealSection className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-14">
             <FadeIn>
-              <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
+              <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">
                 What we do
               </p>
               <h2 className="font-sans font-semibold text-3xl md:text-4xl text-foreground tracking-tight leading-snug mb-5">
@@ -326,7 +326,7 @@ export default function OxfordPainDoctorHome() {
       </RevealSection>
 
       {/* Pricing */}
-      <RevealSection className="py-16 md:py-24 bg-white">
+      <RevealSection className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
           <FadeIn className="mb-12">
             <h2 className="font-sans font-semibold text-3xl md:text-4xl text-foreground tracking-tight">
@@ -390,7 +390,7 @@ export default function OxfordPainDoctorHome() {
               <div className="bg-muted/60 rounded-3xl p-6 md:p-7 h-full flex items-center justify-between gap-4">
                 <div>
                   <h3 className="font-sans font-semibold text-base text-foreground tracking-tight mb-1">
-                    The Oxford Pain Programme
+                    The Oxford pain programme
                   </h3>
                   <p className="text-sm text-muted-foreground">A structured, coordinated pathway.</p>
                 </div>
@@ -407,13 +407,13 @@ export default function OxfordPainDoctorHome() {
         </div>
       </RevealSection>
 
-      {/* The Oxford Pain Programme */}
+      {/* The Oxford pain programme */}
       <RevealSection className="py-16 md:py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
             <FadeIn className="lg:col-span-6">
-              <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-primary-foreground/60 mb-4">
-                The Oxford Pain Programme
+              <p className="text-[11px] font-medium tracking-normal text-primary-foreground/60 mb-4">
+                The Oxford pain programme
               </p>
               <h2 className="font-sans font-semibold text-3xl md:text-4xl tracking-tight leading-snug">
                 More than a series of appointments
@@ -421,9 +421,9 @@ export default function OxfordPainDoctorHome() {
             </FadeIn>
             <FadeIn delay={0.08} className="lg:col-span-6">
               <p className="text-primary-foreground/80 text-[15px] leading-relaxed mb-8">
-                A structured, consultant-led pathway for pain that has started to affect work, sleep, movement and everyday life – built around what you want to get back to.
+                A structured, consultant-led pathway for pain that has started to affect work, sleep, movement and everyday life, built around what you want to get back to.
               </p>
-              <Link href={`${PAIN_CONTACT_HREF}?subject=${encodeURIComponent("The Oxford Pain Programme")}`}>
+              <Link href={`${PAIN_CONTACT_HREF}?subject=${encodeURIComponent("The Oxford pain programme")}`}>
                 <Button className="rounded-full bg-white text-primary hover:bg-white/90 px-8 h-11 text-sm font-medium">
                   Ask about the Programme
                 </Button>
@@ -434,17 +434,17 @@ export default function OxfordPainDoctorHome() {
       </RevealSection>
 
       {/* Pain Library */}
-      <RevealSection className="py-16 md:py-24 bg-white">
+      <RevealSection className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6 max-w-6xl">
           <FadeIn className="max-w-2xl mb-10">
-            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
+            <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">
               Learn
             </p>
             <h2 className="font-sans font-semibold text-3xl md:text-4xl text-foreground tracking-tight mb-4">
               The Oxford Pain Library
             </h2>
             <p className="text-[15px] text-muted-foreground leading-relaxed">
-              Original articles on persistent pain – written here for patients, not as a list of links elsewhere.
+              Original articles on persistent pain, written here for patients, not as a list of links elsewhere.
             </p>
           </FadeIn>
 

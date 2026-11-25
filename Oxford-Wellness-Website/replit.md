@@ -17,7 +17,7 @@ Professional medical aesthetics clinic website for The Oxford Wellness Doctor, l
 - Pricing (`/pricing`) - Transparent pricing tables for all treatments by category
 - Blog (`/blog`) - Hub page + 10 long-form posts (menopause skin changes, anti-wrinkle treatment guide, Oxford Science Park clinic, etc.)
 - Pre-Consultation (`/ai-consultation`) - AI-powered pre-consultation tool
-- Contact (`/contact`) - Contact form (SendGrid), info, Glowday booking iframe
+- Contact (`/contact`) - Contact form (SendGrid), info, Cliniko booking iframe
 
 ## Contact Details
 - Address: John Eccles House, Robert Robinson Avenue, Oxford Science Park, Littlemore, Oxford OX4 4GP
@@ -71,7 +71,7 @@ Professional medical aesthetics clinic website for The Oxford Wellness Doctor, l
 ## Important Notes
 - SendGrid requires verified sender identity for info@theoxfordwellnessdoctor.com
 - Navigation order: Home, About, Treatments, Pre-Consultation, Shop, Contact, Book Now
-- "Book Now" button links to Glowday booking
+- "Book Now" button links to Cliniko booking
 - Navy/blue color palette with serif typography
 - No database needed - site is primarily informational with email-only contact form
 

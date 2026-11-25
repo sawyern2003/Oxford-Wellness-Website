@@ -1,133 +1,191 @@
-import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Phone, MessageCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import TypewriterPhrase from "@/components/animations/TypewriterPhrase";
-import cafeJpg from "@/assets/lifestyle-cafe.jpg";
-import cafe640Avif from "@/assets/optimized/lifestyle-cafe-640.avif";
-import cafe640Webp from "@/assets/optimized/lifestyle-cafe-640.webp";
-import cafe960Avif from "@/assets/optimized/lifestyle-cafe-960.avif";
-import cafe960Webp from "@/assets/optimized/lifestyle-cafe-960.webp";
-import cafe1024Avif from "@/assets/optimized/lifestyle-cafe-1024.avif";
-import cafe1024Webp from "@/assets/optimized/lifestyle-cafe-1024.webp";
-import { CONSULTATION_WHATSAPP_MESSAGE, whatsappHref } from "@/lib/whatsapp";
+import Flourish from "@/components/home/Flourish";
+import { heroImage } from "@/components/home/heroImage";
+import journeyBotanical320Avif from "@/assets/optimized/journey-botanical-320.avif";
+import journeyBotanical320Webp from "@/assets/optimized/journey-botanical-320.webp";
+import journeyBotanical480Avif from "@/assets/optimized/journey-botanical-480.avif";
+import journeyBotanical480Webp from "@/assets/optimized/journey-botanical-480.webp";
 
+/** Easy-to-edit hero copy — keep phrasing changes here. */
+const HERO_HEADLINE = "Nothing in\u00a0isolation.";
+const HERO_SUBLINE =
+  "Skin, intimate and women's health, considered together by one\u00a0doctor.";
+const HERO_CAPTION = "Dr Inga Taganova, GP";
+const HERO_CARE_PREFIX = "Doctor-led care for";
 const heroPhrases = [
-  "symptoms of menopause",
-  "fatigue",
   "skin changes",
-  "body confidence",
   "intimate wellness",
+  "body confidence",
+  "fatigue",
+  "hormone changes",
+  "symptoms of menopause",
 ];
 
-const cafeAvifSrcSet = `${cafe640Avif} 640w, ${cafe960Avif} 960w, ${cafe1024Avif} 1024w`;
-const cafeWebpSrcSet = `${cafe640Webp} 640w, ${cafe960Webp} 960w, ${cafe1024Webp} 1024w`;
-/** Matches the hero collage column (~7/12 of container-wide). */
-const cafeSizes = "(min-width: 1024px) 42vw, 92vw";
-
+/**
+ * Editorial split hero (Nicholas-approved mockup #1).
+ * Photo first on mobile; text left / photo right on desktop.
+ * WhatsApp is the floating button only — nothing in the hero.
+ * Cream branch: mix-blend-multiply blends the alpha watercolour into cream.
+ */
 export default function Hero() {
   return (
-    <section className="pt-24 md:pt-32 pb-12 md:pb-24 bg-white overflow-hidden">
-      <div className="container-wide">
-        <div className="grid lg:grid-cols-12 gap-8 lg:gap-14 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="lg:col-span-5 order-1"
-          >
-            <h1 className="font-sans font-semibold text-[2.15rem] sm:text-4xl md:text-[2.75rem] leading-[1.15] text-foreground tracking-tight mb-4">
-              Doctor-led women's health, menopause and longevity care in Oxford
-            </h1>
-            <p className="font-sans font-medium text-lg text-secondary mb-5" aria-hidden="true">
-              Get care today for
-              <TypewriterPhrase
-                phrases={heroPhrases}
-                className="relative block"
-              />
-            </p>
-            <p className="text-[15px] text-muted-foreground leading-relaxed mb-6 max-w-md">
-              Private clinic at Belsyre Court, in the centre of Oxford.
-            </p>
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3 mb-8 md:mb-0">
-              <Link href="/book">
-                <Button
-                  data-testid="hero-book-consultation-btn"
-                  className="bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-7 h-11 text-sm font-medium w-full sm:w-auto"
-                >
-                  Book consultation
-                </Button>
-              </Link>
-              <a href="tel:+447739309380" className="js-call-cta">
-                <Button
-                  data-testid="hero-call-btn"
-                  variant="outline"
-                  className="rounded-full border-border px-7 h-11 text-sm font-medium bg-white w-full sm:w-auto"
-                >
-                  <Phone size={16} className="mr-2" />
-                  Call
-                </Button>
-              </a>
-              <a
-                href={whatsappHref(CONSULTATION_WHATSAPP_MESSAGE)}
-                className="js-whatsapp-cta"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  data-testid="hero-whatsapp-btn"
-                  variant="outline"
-                  className="rounded-full border-border px-7 h-11 text-sm font-medium bg-white w-full sm:w-auto"
-                >
-                  <MessageCircle size={16} className="mr-2" />
-                  WhatsApp
-                </Button>
-              </a>
-              <Link href="/treatments">
-                <Button
-                  data-testid="hero-treatments-btn"
-                  variant="outline"
-                  className="rounded-full border-border px-7 h-11 text-sm font-medium bg-white w-full sm:w-auto"
-                >
-                  View treatments
-                </Button>
-              </Link>
+    <>
+      {/*
+        Mobile: no min-height — care sprig sits ~64–80px under the CTA.
+        Desktop: content-height hero (no 100svh) so CTA→sprig stays ~120–160px.
+      */}
+      <section className="bg-background pt-20 md:pt-24 pb-0 md:pb-10 overflow-hidden">
+        {/*
+          Desktop/tablet: ~1100px centred band so text+portrait sit as one
+          balanced pair (not hugging the left of container-wide).
+        */}
+        <div className="mx-auto w-full max-w-[1100px] px-5 md:px-8 lg:px-10">
+          {/*
+            No framer-motion entrance: opacity/y initial states collapsed
+            hero regions on hydrate and drove CLS. Prerender must match
+            the final layout size.
+          */}
+          <div className="grid lg:grid-cols-12 gap-5 lg:gap-8 lg:items-center">
+            <div className="lg:col-span-6 order-1 lg:order-2">
+              <figure>
+                <div className="relative h-[42vh] max-h-[360px] sm:h-[46vh] sm:max-h-[420px] lg:h-[68vh] lg:max-h-[640px] overflow-hidden bg-background">
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcSet={heroImage.avifSrcSet}
+                      sizes={heroImage.sizes}
+                    />
+                    <source
+                      type="image/webp"
+                      srcSet={heroImage.webpSrcSet}
+                      sizes={heroImage.sizes}
+                    />
+                    <img
+                      src={heroImage.src}
+                      alt={heroImage.alt}
+                      width={heroImage.width}
+                      height={heroImage.height}
+                      className="absolute inset-0 h-full w-full mix-blend-multiply"
+                      style={{
+                        objectFit: heroImage.objectFit,
+                        objectPosition: heroImage.objectPosition,
+                      }}
+                      fetchPriority="high"
+                      loading="eager"
+                      decoding="async"
+                    />
+                  </picture>
+                </div>
+                <figcaption className="mt-2 text-sm text-muted-foreground lg:hidden">
+                  {HERO_CAPTION}
+                </figcaption>
+              </figure>
             </div>
-          </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-            className="lg:col-span-7 order-2"
-          >
-            <div className="relative">
-              {/* Holds the previous collage box: two 4/5 frames in a 5/12 column, same gaps. */}
-              <div className="grid grid-cols-12 gap-3 md:gap-4" aria-hidden="true">
-                <div className="col-span-5 aspect-[4/5]" />
-                <div className="col-span-7 row-span-2 min-h-[280px] md:min-h-[420px]" />
-                <div className="col-span-5 aspect-[4/5]" />
-              </div>
-              <div className="absolute inset-0 flex items-center">
-                <picture>
-                  <source type="image/avif" srcSet={cafeAvifSrcSet} sizes={cafeSizes} />
-                  <source type="image/webp" srcSet={cafeWebpSrcSet} sizes={cafeSizes} />
-                  <img
-                    src={cafeJpg}
-                    alt=""
-                    width={1024}
-                    height={682}
-                    className="h-auto w-full rounded-3xl"
-                    fetchPriority="high"
-                    loading="eager"
-                    decoding="async"
-                  />
-                </picture>
+            <div className="lg:col-span-6 order-2 lg:order-1 flex flex-col justify-center text-left">
+              <div className="max-w-md lg:max-w-[30rem]">
+                <h1 className="text-primary tracking-tight text-balance text-[2.35rem] sm:text-[2.75rem] lg:text-[4.75rem] leading-[1.08] mb-4 lg:mb-6">
+                  {HERO_HEADLINE}
+                </h1>
+                <p className="text-[15px] sm:text-base text-muted-foreground leading-relaxed text-pretty mb-3 lg:mb-5 max-w-sm">
+                  {HERO_SUBLINE}
+                </p>
+                <p className="hidden lg:block text-sm text-muted-foreground mb-8">
+                  {HERO_CAPTION}
+                </p>
+                <div className="mt-4 lg:mt-0 pb-2">
+                  <Link
+                    href="/book"
+                    data-testid="hero-book-consultation-btn"
+                    className="js-book-cta hero-book-link inline-flex items-center gap-2 min-h-11 text-sm font-medium text-[#293c56] rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  >
+                    <span className="hero-book-link__label">Book a consultation</span>
+                    <svg
+                      className="hero-book-link__arrow"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M2.5 7h9M8 3.5 11.5 7 8 10.5"
+                        stroke="currentColor"
+                        strokeWidth="1.15"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        opacity="0.55"
+                      />
+                    </svg>
+                  </Link>
+                </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/*
+        Care line: flourish → sprig → centred Cormorant typewriter.
+        Hairline dropped — redundant under the flourish.
+        Mobile: prefix on line 1, cycling phrase on line 2 (both centred).
+        Height reserved for the longest phrase — CLS stays 0.
+      */}
+      <section
+        className="bg-background pt-16 md:pt-20 pb-20 md:pb-28"
+        aria-label="Doctor-led care"
+      >
+        <div className="container-wide flex flex-col items-center text-center">
+          <div className="flex flex-col items-center mb-7 md:mb-9" aria-hidden="true">
+            <Flourish />
+            {/* Flourish → sprig: ~48px mobile / ~72px desktop */}
+            <picture className="mt-12 md:mt-[4.5rem]">
+              <source
+                type="image/avif"
+                srcSet={`${journeyBotanical320Avif} 320w, ${journeyBotanical480Avif} 480w`}
+                sizes="110px"
+              />
+              <source
+                type="image/webp"
+                srcSet={`${journeyBotanical320Webp} 320w, ${journeyBotanical480Webp} 480w`}
+                sizes="110px"
+              />
+              <img
+                src={journeyBotanical480Webp}
+                alt=""
+                width={480}
+                height={317}
+                loading="lazy"
+                decoding="async"
+                className="w-[90px] sm:w-[110px] h-auto"
+              />
+            </picture>
+          </div>
+
+          {/*
+            Prefix on its own line; cycling phrase always one line (nowrap).
+            Font clamp sized so "symptoms of menopause" fits at 360px+.
+          */}
+          <p
+            className="text-primary w-[min(100%,95vw)] max-w-none leading-[1.15] tracking-tight flex flex-col items-center gap-1"
+            style={{
+              fontFamily:
+                '"Cormorant Garamond", "Cormorant Garamond Fallback", Georgia, serif',
+              fontWeight: 400,
+              fontSize: "clamp(1.55rem, 0.55rem + 4.4vw, 3.75rem)",
+            }}
+          >
+            <span className="block">{HERO_CARE_PREFIX}</span>
+            <TypewriterPhrase
+              phrases={heroPhrases}
+              className="relative block whitespace-nowrap text-brand-accent-text"
+            />
+          </p>
+        </div>
+      </section>
+    </>
   );
 }

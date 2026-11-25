@@ -216,7 +216,7 @@ export default function Services() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white pt-28">
+    <div className="min-h-screen bg-background pt-28">
       {/* Sticky Nav */}
       <div className="sticky top-[72px] z-30 border-b border-border bg-white/95 backdrop-blur-sm">
         <div className="container-page">
@@ -241,7 +241,7 @@ export default function Services() {
       {/* Header */}
       <div className="container-page py-12 md:py-16">
         <div className="mb-4 max-w-2xl">
-          <p className="mb-4 text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
+          <p className="mb-4 text-[11px] font-medium tracking-normal text-muted-foreground">
             The clinic
           </p>
           <h1 className="mb-4 font-sans text-4xl font-semibold leading-snug tracking-tight text-foreground md:text-5xl">

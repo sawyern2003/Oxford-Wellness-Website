@@ -12,7 +12,7 @@ const data: BlogPostData = {
     src: "/blog-excessive-sweating-treatment-oxford.webp",
     alt: "Cream silk blouse detail at the shoulder in natural light",
   },
-  intro: "Excessive underarm sweating—medically termed axillary hyperhidrosis—is more than an inconvenience. It is socially isolating, professionally limiting, and profoundly affects confidence. Many people who sweat excessively have tried every antiperspirant on the market with little effect. Anti-wrinkle injections offer a highly effective, well-tolerated solution that stops excessive sweating for months at a time.",
+  intro: "Excessive underarm sweating, medically termed axillary hyperhidrosis, is more than an inconvenience. It is socially isolating, professionally limiting, and profoundly affects confidence. Many people who sweat excessively have tried every antiperspirant on the market with little effect. Anti-wrinkle injections offer a highly effective, well-tolerated solution that stops excessive sweating for months at a time.",
   keyPoints: [
     "Hyperhidrosis affects around 3% of adults and is often underdiagnosed",
     "Anti-wrinkle treatment blocks the nerve signals that trigger sweat glands",
@@ -39,22 +39,22 @@ const data: BlogPostData = {
     {
       heading: "How Anti-Wrinkle Treatment Works for Sweating",
       paragraphs: [
-        "Anti-wrinkle injections block the release of acetylcholine—a neurotransmitter that activates sweat glands. When injected into the underarm area, the treatment prevents the nerves from signalling the sweat glands to produce sweat. The glands remain intact; they simply stop responding to the nerve signal.",
-        "The effect is localised to the treated area. Sweating elsewhere on your body is not affected. You will still sweat normally when exercising or in hot weather—just not excessively from your underarms.",
+        "Anti-wrinkle injections block the release of acetylcholine, a neurotransmitter that activates sweat glands. When injected into the underarm area, the treatment prevents the nerves from signalling the sweat glands to produce sweat. The glands remain intact; they simply stop responding to the nerve signal.",
+        "The effect is localised to the treated area. Sweating elsewhere on your body is not affected. You will still sweat normally when exercising or in hot weather, just not excessively from your underarms.",
       ],
     },
     {
       heading: "The Treatment Process",
       paragraphs: [
         "Treatment begins with marking the area to be injected. This is usually done by applying iodine and starch to the underarm skin, which turns dark blue in areas where sweating is active. This ensures the injections are placed precisely where they are needed.",
-        "Multiple small injections—typically 15 to 20 per underarm—are made just under the skin in a grid pattern across the treatment area. The injections are superficial and relatively quick, though some discomfort is normal. A topical numbing cream can be applied beforehand if you prefer.",
+        "Multiple small injections, typically 15 to 20 per underarm, are made just under the skin in a grid pattern across the treatment area. The injections are superficial and relatively quick, though some discomfort is normal. A topical numbing cream can be applied beforehand if you prefer.",
         "The entire process takes around 30 to 45 minutes, including preparation and marking. You can return to normal activities immediately. There is no downtime.",
       ],
     },
     {
       heading: "What to Expect: Results and Duration",
       paragraphs: [
-        "Results begin within a few days and reach maximum effect within one to two weeks. Most people notice a dramatic reduction in underarm sweating—often complete dryness. The relief is immediate and, for many patients, life-changing.",
+        "Results begin within a few days and reach maximum effect within one to two weeks. Most people notice a dramatic reduction in underarm sweating, often complete dryness. The relief is immediate and, for many patients, life-changing.",
         "The effect typically lasts four to seven months, though individual variation is significant. Some people find it lasts closer to six or seven months; others need retreatment sooner. Repeat treatments are straightforward and can be scheduled before the effect wears off completely.",
       ],
     },
@@ -95,7 +95,7 @@ const data: BlogPostData = {
     {
       heading: "Alternatives to Anti-Wrinkle Treatment",
       paragraphs: [
-        "For people who do not respond to anti-wrinkle injections or who prefer other options, alternatives exist. Iontophoresis—a device that uses electrical current to temporarily block sweat glands—can be effective but requires regular sessions. Oral anticholinergic medications reduce sweating but often cause side effects such as dry mouth and blurred vision.",
+        "For people who do not respond to anti-wrinkle injections or who prefer other options, alternatives exist. Iontophoresis, a device that uses electrical current to temporarily block sweat glands, can be effective but requires regular sessions. Oral anticholinergic medications reduce sweating but often cause side effects such as dry mouth and blurred vision.",
         "Surgical options, such as sympathectomy or sweat gland removal, are available for severe cases but carry risks and are usually considered a last resort.",
         "For most people with axillary hyperhidrosis, anti-wrinkle treatment is the most effective, least invasive, and best-tolerated option.",
       ],
@@ -112,7 +112,7 @@ const data: BlogPostData = {
     heading: "Book a Consultation for Excessive Sweating",
     text: "Discuss treatment for hyperhidrosis with Dr Inga Taganova in Oxford.",
     buttonLabel: "Book a Consultation",
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
     buttonExternal: true,
   },
   relatedPosts: [

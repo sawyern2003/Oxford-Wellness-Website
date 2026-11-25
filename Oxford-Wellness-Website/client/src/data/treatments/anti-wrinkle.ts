@@ -27,10 +27,10 @@ export const antiWrinkleData: TreatmentLandingPageData = {
     intro: "Anti-wrinkle injections use a purified protein to relax the muscles that cause expression lines.",
     steps: [
       "Consultation to assess your concerns and treatment areas.",
-      "Small injections placed precisely into the target muscles. Takes 10–15 minutes.",
-      "Results visible in 3–5 days, reaching full effect at 2 weeks."
+      "Small injections placed precisely into the target muscles. Takes 10 to 15 minutes.",
+      "Results visible in 3 to 5 days, reaching full effect at 2 weeks."
     ],
-    sessionsInfo: "Results typically last 3–4 months. Many patients schedule maintenance treatments 3–4 times per year."
+    sessionsInfo: "Results typically last 3 to 4 months. Many patients schedule maintenance treatments 3 to 4 times per year."
   },
   
   downtime: {
@@ -44,7 +44,7 @@ export const antiWrinkleData: TreatmentLandingPageData = {
       "Doctor-led clinic: all treatments performed by Dr Inga Taganova, a GMC-registered GP",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ",
       "More than two decades of medical experience",
-      "Natural-looking results – no frozen or overdone appearance",
+      "Natural-looking results, no frozen or overdone appearance",
       "Calm, private consultation rooms"
     ]
   },
@@ -52,8 +52,8 @@ export const antiWrinkleData: TreatmentLandingPageData = {
   faqs: [
     { q: "Will I look frozen?", a: "No. Dr Inga Taganova uses a conservative approach to preserve natural facial movement while smoothing lines. The goal is to look refreshed, not frozen." },
     { q: "Does it hurt?", a: "Most patients report only mild discomfort. The needles are very fine, and the procedure is quick." },
-    { q: "How long do results last?", a: "Results typically last 3–4 months. With regular treatments, some patients find results last slightly longer." },
-    { q: "When will I see results?", a: "You'll notice improvement within 3–5 days, with full results visible at 2 weeks." },
+    { q: "How long do results last?", a: "Results typically last 3 to 4 months. With regular treatments, some patients find results last slightly longer." },
+    { q: "When will I see results?", a: "You'll notice improvement within 3 to 5 days, with full results visible at 2 weeks." },
     { q: "How much do anti-wrinkle injections cost?", a: "One area is £230, two areas £295, and three areas £350. Common combinations are forehead + frown lines, or forehead + frown + crow's feet." }
   ],
   

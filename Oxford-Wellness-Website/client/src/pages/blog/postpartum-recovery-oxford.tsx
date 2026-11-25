@@ -12,7 +12,7 @@ const data: BlogPostData = {
     src: "/blog-postpartum-recovery-oxford.webp",
     alt: "Young mother resting peacefully with newborn in white bedding",
   },
-  intro: "The physical changes of pregnancy and childbirth are profound. Your body has grown and birthed a child—an extraordinary feat. But the aftermath can be challenging. Many women feel unprepared for the recovery period, the persistent changes to their body, and the loss of confidence that can follow. As a GP with a background in obstetrics and gynaecology, I see women months and sometimes years after childbirth, still struggling with concerns they assumed would resolve on their own.",
+  intro: "The physical changes of pregnancy and childbirth are profound. Your body has grown and birthed a child, an extraordinary feat. But the aftermath can be challenging. Many women feel unprepared for the recovery period, the persistent changes to their body, and the loss of confidence that can follow. As a GP with a background in obstetrics and gynaecology, I see women months and sometimes years after childbirth, still struggling with concerns they assumed would resolve on their own.",
   keyPoints: [
     "Physical recovery after childbirth takes months, not weeks",
     "Common concerns include abdominal laxity, pelvic floor weakness, intimate discomfort, and scarring",
@@ -24,7 +24,7 @@ const data: BlogPostData = {
     {
       heading: "Physical Changes After Childbirth",
       paragraphs: [
-        "Pregnancy stretches the abdominal muscles, the pelvic floor, and the skin. Childbirth—whether vaginal or by caesarean section—adds trauma, surgical intervention, or both. The uterus shrinks back to near its pre-pregnancy size within six weeks, but other structures do not bounce back so readily.",
+        "Pregnancy stretches the abdominal muscles, the pelvic floor, and the skin. Childbirth, whether vaginal or by caesarean section, adds trauma, surgical intervention, or both. The uterus shrinks back to near its pre-pregnancy size within six weeks, but other structures do not bounce back so readily.",
         "The abdominal wall may remain separated (diastasis recti). The pelvic floor muscles may be weakened or damaged. Scarring from tears or episiotomy can cause discomfort. Caesarean scars may be painful, numb, or unsightly. Breasts change with breastfeeding and may not return to their previous size or shape.",
         "These are normal consequences of pregnancy and birth. They are not signs of failure. But normal does not mean they must be tolerated indefinitely if they affect your quality of life.",
       ],
@@ -32,9 +32,9 @@ const data: BlogPostData = {
     {
       heading: "How Long Does Postpartum Recovery Take",
       paragraphs: [
-        "The immediate postpartum period—the first six weeks—is when the most dramatic recovery occurs. Bleeding stops, the uterus shrinks, and acute birth injuries begin to heal. But full recovery takes far longer.",
+        "The immediate postpartum period, the first six weeks, is when the most dramatic recovery occurs. Bleeding stops, the uterus shrinks, and acute birth injuries begin to heal. But full recovery takes far longer.",
         "Pelvic floor strength can take six to twelve months to return, and for some women it never fully recovers without targeted rehabilitation. Abdominal separation may improve over the first year but often persists. Scars mature over many months. Breasts settle after weaning, but their shape and volume may be permanently altered.",
-        "The six-week postnatal check is not a finish line. It is a checkpoint. If you are still experiencing significant symptoms—pain, leaking, discomfort, or distress about your body—that warrants further assessment, not reassurance that 'it takes time'.",
+        "The six-week postnatal check is not a finish line. It is a checkpoint. If you are still experiencing significant symptoms, pain, leaking, discomfort, or distress about your body, that warrants further assessment, not reassurance that 'it takes time'.",
       ],
     },
     {
@@ -58,7 +58,7 @@ const data: BlogPostData = {
       paragraphs: [
         "Tears, episiotomy, and vaginal stretching during childbirth can cause persistent discomfort. Some women experience pain during intercourse (dyspareunia), sensitivity, or tightness at the site of old scarring. Others describe a feeling of looseness or reduced sensation.",
         "Scar tissue can be massaged and stretched to improve comfort and flexibility. Pelvic floor physiotherapy helps. If discomfort persists, further assessment by a women's health physiotherapist or GP is warranted.",
-        "Treatments such as hyaluronic acid or radiofrequency therapy may help with symptoms such as dryness or discomfort. These are not cosmetic vanity treatments—they address real concerns that affect quality of life and intimacy.",
+        "Treatments such as hyaluronic acid or radiofrequency therapy may help with symptoms such as dryness or discomfort. These are not cosmetic vanity treatments, they address real concerns that affect quality of life and intimacy.",
       ],
     },
     {
@@ -73,7 +73,7 @@ const data: BlogPostData = {
       paragraphs: [
         "Many women struggle with their changed body after childbirth. The abdominal skin may be loose, stretched, or marked with striae (stretch marks). Breasts may be deflated or asymmetrical after breastfeeding. Weight gained during pregnancy may be difficult to lose, particularly with the sleep deprivation and demands of caring for a newborn.",
         "These concerns are valid. They do not make you vain or ungrateful. Your body has done something extraordinary, and you are allowed to mourn the parts of yourself that have changed.",
-        "Some changes are permanent and must be accepted. But others can be improved with targeted intervention—when the time is right, and when you are ready.",
+        "Some changes are permanent and must be accepted. But others can be improved with targeted intervention, when the time is right, and when you are ready.",
       ],
     },
     {
@@ -131,7 +131,7 @@ const data: BlogPostData = {
     heading: "Book a Postpartum Recovery Consultation",
     text: "Discuss your postpartum concerns with Dr Inga Taganova in a compassionate, unhurried consultation.",
     buttonLabel: "Book a Consultation",
-    buttonHref: "https://www.glowday.com/clinic/the-oxford-wellness-doctor",
+    buttonHref: "/book",
     buttonExternal: true,
   },
   relatedPosts: [

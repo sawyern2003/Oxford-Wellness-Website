@@ -20,11 +20,11 @@ export default function ProgrammePage({ programme }: { programme: Programme }) {
   });
 
   return (
-    <div className="pt-28 min-h-screen bg-white">
-      <RevealSection className="bg-white">
+    <div className="pt-28 min-h-screen bg-background">
+      <RevealSection className="bg-background">
         <div className="container mx-auto px-6 py-12 md:py-16 max-w-4xl">
           <FadeIn>
-            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
+            <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">
               {programme.problemLabel}
             </p>
             <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-5 leading-snug">
@@ -89,7 +89,7 @@ export default function ProgrammePage({ programme }: { programme: Programme }) {
         </div>
       </RevealSection>
 
-      <RevealSection className="py-14 md:py-16 bg-white">
+      <RevealSection className="py-14 md:py-16 bg-background">
         <div className="container mx-auto px-6 max-w-4xl">
           <FadeIn>
             <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-8">Treatment journey</h2>
@@ -114,7 +114,7 @@ export default function ProgrammePage({ programme }: { programme: Programme }) {
               Treatments commonly included
             </h2>
             <p className="text-sm text-muted-foreground mb-6">
-              These appear as part of the journey when clinically appropriate – not as isolated products.
+              These appear as part of the journey when clinically appropriate, not as isolated products.
             </p>
             <div className="flex flex-wrap gap-2">
               {programme.treatmentsIncluded.map((t) => (
@@ -131,7 +131,7 @@ export default function ProgrammePage({ programme }: { programme: Programme }) {
         </div>
       </RevealSection>
 
-      <RevealSection className="py-14 md:py-16 bg-white">
+      <RevealSection className="py-14 md:py-16 bg-background">
         <div className="container mx-auto px-6 max-w-4xl grid md:grid-cols-2 gap-10">
           <FadeIn>
             <h2 className="font-sans font-semibold text-xl text-foreground tracking-tight mb-4">Expected improvements</h2>
@@ -184,7 +184,7 @@ export default function ProgrammePage({ programme }: { programme: Programme }) {
           <FadeIn>
             <h2 className="font-sans font-semibold text-2xl md:text-3xl tracking-tight mb-3">Book a consultation</h2>
             <p className="text-primary-foreground/75 text-[15px] mb-6 max-w-xl">
-              Begin with a conversation. Your journey is confirmed with Dr Inga – not chosen from a menu.
+              Begin with a conversation. Your journey is confirmed with Dr Inga, not chosen from a menu.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button

@@ -6,13 +6,36 @@
 @import "@fontsource/montserrat/latin-400.css";
 @import "@fontsource/montserrat/latin-500.css";
 @import "@fontsource/montserrat/latin-600.css";
-@import "@fontsource/cormorant-garamond/latin-300.css";
-@import "@fontsource/cormorant-garamond/latin-400.css";
-@import "@fontsource/cormorant-garamond/latin-400-italic.css";
-@import "@fontsource/cormorant-garamond/latin-500.css";
-@import "@fontsource/cormorant-garamond/latin-600.css";
-@import "@fontsource/cormorant-garamond/latin-700.css";
 @import "@fontsource/la-belle-aurore/latin-400.css";
+
+/*
+  Cormorant Garamond for headings only (latin woff2 in /fonts).
+  Metric-matched Times fallback keeps line boxes stable during font-display: swap.
+*/
+@font-face {
+  font-family: "Cormorant Garamond Fallback";
+  src: local("Times New Roman"), local("Times");
+  size-adjust: 118%;
+  ascent-override: 88%;
+  descent-override: 24%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/fonts/cormorant-garamond-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url("/fonts/cormorant-garamond-latin-500-normal.woff2") format("woff2");
+}
 
 @plugin "tailwindcss-animate";
 
@@ -20,7 +43,7 @@
 
 @theme inline {
   --font-sans: 'Montserrat', sans-serif;
-  --font-serif: 'Cormorant Garamond', serif;
+  --font-serif: 'Cormorant Garamond', 'Cormorant Garamond Fallback', Georgia, serif;
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -47,6 +70,7 @@
   
   --color-accent: hsl(var(--accent));
   --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-brand-accent-text: hsl(var(--brand-accent-text));
   
   --color-destructive: hsl(var(--destructive));
   --color-destructive-foreground: hsl(var(--destructive-foreground));
@@ -65,36 +89,91 @@
   paint-order: stroke fill;
 }
 
+/*
+  Sitewide headings: Cormorant Garamond (sentence case).
+  !important beats Tailwind font-sans / font-semibold utilities on h1–h3
+  without editing every page. Body text stays Montserrat.
+*/
+:is(h1, h2, h3) {
+  font-family: var(--font-serif) !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.015em;
+  text-transform: none;
+}
+
+:is(h1) {
+  line-height: 1.18;
+}
+
+:is(h2, h3) {
+  line-height: 1.25;
+}
+
+/* Very large display titles can sit a touch lighter. */
+:is(h1).text-4xl,
+:is(h1).text-5xl,
+:is(h1).text-\[2\.35rem\],
+:is(h1).sm\:text-\[2\.75rem\],
+:is(h1).lg\:text-\[4\.75rem\],
+:is(h1).md\:text-5xl,
+:is(h1).md\:text-\[2\.75rem\] {
+  font-weight: 400 !important;
+}
+
 :root {
-  --background: 0 0% 100%;
+  /*
+    Site cream theme.
+    Page cream ≈ #f5ecdc; card/surface ≈ #fffdf9.
+    Navy (#293c56) unchanged; brand-accent-text darkened for AA on cream.
+  */
+  --background: 38 56% 91.2%; /* #f5ecdc warmer cream */
   --foreground: 215 25% 18%;
 
-  --card: 0 0% 100%;
+  --card: 40 55% 99%; /* #fffdf9 warm white — intentional lift on cream */
   --card-foreground: 215 25% 18%;
 
-  --popover: 0 0% 100%;
+  --popover: 40 55% 99%;
   --popover-foreground: 215 25% 18%;
 
-  --primary: 215 35% 25%;
+  --primary: 215 35% 25%; /* #293c56 */
   --primary-foreground: 0 0% 100%;
 
   --secondary: 211 44% 65%;
   --secondary-foreground: 0 0% 100%;
 
-  --muted: 210 20% 97%;
-  --muted-foreground: 215 12% 42%;
+  /* Warm muted panel — sits on cream without cool grey clash */
+  --muted: 38 30% 88%;
+  --muted-foreground: 215 14% 38%;
 
-  --accent: 211 44% 94%;
-  --accent-foreground: 211 40% 35%;
+  /* Soft blue tint nudged warmer for cream */
+  --accent: 211 32% 91%;
+  --accent-foreground: 211 40% 32%;
+  /* Brand accent text — ≥4.5:1 on #f5ecdc */
+  --brand-accent-text: 211 44% 43%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 215 20% 90%;
-  --input: 215 20% 90%;
+  --border: 35 18% 86%;
+  --input: 35 18% 86%;
   --ring: 211 44% 65%;
 
   --radius: 1rem;
+}
+
+/*
+  Hard-coded page/nav whites → page cream (no full-width white bands).
+  Intentional lighter surfaces use bg-card (#fffdf9) on the deeper cream.
+  Keep translucent whites on dark chrome (e.g. bg-white/10) untouched.
+*/
+.bg-white {
+  background-color: hsl(var(--background)) !important;
+}
+.bg-white\/80 {
+  background-color: hsl(var(--background) / 0.8) !important;
+}
+.bg-white\/95 {
+  background-color: hsl(var(--background) / 0.95) !important;
 }
 
 /* Sister brand: The Oxford Pain Doctor – same structure, warmer red palette */
@@ -115,6 +194,7 @@
 
   --accent: 8 50% 94%;
   --accent-foreground: 355 35% 32%;
+  --brand-accent-text: 4 55% 45%;
 
   --border: 12 18% 90%;
   --input: 12 18% 90%;
@@ -142,6 +222,7 @@
 
   --accent: 215 35% 20%;
   --accent-foreground: 211 44% 95%;
+  --brand-accent-text: 211 44% 72%;
 
   --destructive: 0 62% 30%;
   --destructive-foreground: 0 0% 98%;
@@ -285,6 +366,58 @@
 
   button.rounded-full:hover {
     transform: translateY(-2px);
+  }
+}
+
+/*
+  Hero CTA text-link variant (branch cursor/hero-cta-link-6f29).
+  Navy label, 1px underline ~6px below, light arrow; hover redraws the
+  underline L→R and nudges the arrow. Static under prefers-reduced-motion.
+*/
+.hero-book-link__label {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.hero-book-link__label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+.hero-book-link__arrow {
+  flex-shrink: 0;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .hero-book-link__arrow {
+    transition: transform 0.3s ease;
+  }
+
+  .hero-book-link:hover .hero-book-link__label::after,
+  .hero-book-link:focus-visible .hero-book-link__label::after {
+    animation: hero-book-underline-draw 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .hero-book-link:hover .hero-book-link__arrow,
+  .hero-book-link:focus-visible .hero-book-link__arrow {
+    transform: translateX(3px);
+  }
+}
+
+@keyframes hero-book-underline-draw {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
   }
 }
 

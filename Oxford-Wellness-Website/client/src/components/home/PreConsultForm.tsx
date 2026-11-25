@@ -23,7 +23,7 @@ export default function PreConsultForm(props: Props) {
         primaryColor = "#83a5cb",
         borderColor = "#DDDDDD",
         radius = 10,
-        bookingUrl = "https://www.glowday.com/clinic/the-oxford-wellness-doctor/inga-taganova",
+        bookingUrl = "/book",
     } = props
 
     const [name, setName] = React.useState("")
@@ -390,7 +390,7 @@ export default function PreConsultForm(props: Props) {
                         maxHeight: "85vh",
                         overflowY: "auto",
                         borderRadius: radius,
-                        background: "#ffffff",
+                        background: "#f5ecdc",
                         border: `1px solid ${borderColor}`,
                         boxShadow: "0 20px 60px rgba(0, 0, 0, 0.18)",
                         padding: "18px 18px 16px",

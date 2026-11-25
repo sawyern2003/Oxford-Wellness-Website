@@ -33,7 +33,7 @@ export default function AskDrInga() {
     <section className="border-t border-border py-16 md:py-20" aria-labelledby="about-speak-heading">
       <div className="container-wide grid items-center gap-12 lg:grid-cols-12 lg:gap-x-16">
         <div className="max-w-[34rem] lg:col-span-5">
-          <p className="mb-4 text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground">
+          <p className="mb-4 text-[11px] font-medium tracking-normal text-muted-foreground">
             Meet Dr Inga
           </p>
           <h2

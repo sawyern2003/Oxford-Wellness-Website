@@ -11,7 +11,8 @@ const SSR_DIR = path.resolve("dist/ssr");
 export const SPA_SHELL = "spa.html";
 
 type Head = { title: string; description: string; canonical?: string } | null;
-type RenderFn = (url: string) => Promise<{ html: string; head: Head }>;
+type JsonLdScript = { id: string; json: string };
+type RenderFn = (url: string) => Promise<{ html: string; head: Head; jsonLd?: JsonLdScript[] }>;
 
 function escapeAttr(value: string): string {
   return value
@@ -92,6 +93,76 @@ function injectModulePreloads(html: string, hrefs: string[]): string {
   return html.replace("</head>", `    ${tags}\n  </head>`);
 }
 
+/** Homepage-only LCP preload (keep in sync with heroImage.ts). */
+const HOME_HERO_LCP_PRELOAD = `<link
+      rel="preload"
+      as="image"
+      type="image/avif"
+      imagesrcset="/images/hero/dr-inga-about-640.avif 640w, /images/hero/dr-inga-about-960.avif 960w, /images/hero/dr-inga-about-1280.avif 1280w"
+      imagesizes="(min-width: 1024px) min(42vw, 720px), 92vw"
+      fetchpriority="high"
+    />`;
+
+function injectHomeHeroPreload(html: string, pagePath: string): string {
+  if (pagePath !== "/") return html;
+  if (html.includes('rel="preload"') && html.includes("imagesrcset=") && html.includes("dr-inga-about-")) {
+    return html;
+  }
+  return html.replace("</head>", `    ${HOME_HERO_LCP_PRELOAD}\n  </head>`);
+}
+
+function injectJsonLd(html: string, scripts: JsonLdScript[] | undefined): string {
+  if (!scripts?.length) return html;
+  const tags = scripts
+    .map((s) => {
+      // Prevent </script> breakouts in JSON text nodes.
+      const safe = s.json.replace(/</g, "\\u003c");
+      return `<script id="${escapeAttr(s.id)}" type="application/ld+json">${safe}</script>`;
+    })
+    .join("\n    ");
+  return html.replace("</head>", `    ${tags}\n  </head>`);
+}
+
+/**
+ * React SSR streams lazy/Suspense content into hidden #S:N slots and swaps
+ * them in via requestAnimationFrame ($RC). On a static host that first paint
+ * is an empty <main>, then content pops in (CLS ~2). Inline the slots so the
+ * prerendered HTML already has the page in place.
+ */
+function resolveReactSuspenseSlots(html: string): string {
+  let result = html;
+  const calls = [...result.matchAll(/\$RC\("B:(\d+)","S:\1"\)/g)];
+  for (const call of calls) {
+    const id = call[1];
+    const hiddenRe = new RegExp(
+      `<div hidden id="S:${id}">([\\s\\S]*?)</div>`,
+    );
+    const hidden = result.match(hiddenRe);
+    if (!hidden) continue;
+    const content = hidden[1];
+    const placeholderRe = new RegExp(
+      `<!--\\$\\?--><template id="B:${id}"></template><!--/\\$-->`,
+    );
+    if (!placeholderRe.test(result)) continue;
+    result = result.replace(placeholderRe, () => content);
+    result = result.replace(hiddenRe, "");
+  }
+  // Drop the streaming bootstrap once deferred slots are gone (content is inline).
+  if (!/id="S:\d+"/.test(result) && !/<template id="B:\d+">/.test(result)) {
+    result = result.replace(
+      /<script>\$RB=\[[\s\S]*?\$RC\("B:\d+","S:\d+"\)<\/script>/g,
+      "",
+    );
+  }
+  // Strip any remaining React streaming comment markers.
+  result = result
+    .replace(/<!--\$\??-->/g, "")
+    .replace(/<!--\/\$-->/g, "")
+    .replace(/<!--\$~-->/g, "")
+    .replace(/<!--\$!-->/g, "");
+  return result;
+}
+
 export async function prerender() {
   await viteBuild({
     build: {
@@ -123,13 +194,15 @@ export async function prerender() {
       console.warn(`  ${pagePath}: skipped, renders client-side only (${(err as Error).message})`);
       continue;
     }
-    const { html: appHtml, head } = rendered;
+    const { html: appHtml, head, jsonLd } = rendered;
     if (!head) console.warn(`  ${pagePath}: no useSEO metadata, kept default title`);
 
     let page = applyHead(template, pagePath, head).replace(
       '<div id="root"></div>',
-      `<div id="root">${appHtml}</div>`,
+      `<div id="root">${resolveReactSuspenseSlots(appHtml)}</div>`,
     );
+    page = injectHomeHeroPreload(page, pagePath);
+    page = injectJsonLd(page, jsonLd);
 
     const hints = ROUTE_CHUNK_HINTS[pagePath];
     if (hints) {

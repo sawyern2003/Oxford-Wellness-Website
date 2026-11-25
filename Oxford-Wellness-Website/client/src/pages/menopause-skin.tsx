@@ -7,16 +7,16 @@ const data: TreatmentPageData = {
   canonical: "https://www.theoxfordwellnessdoctor.com/menopause-skin",
   h1: "Menopause Skin Treatments in Oxford",
   intro:
-    "Menopause causes profound changes in skin quality – thinning, dryness, loss of elasticity and collagen decline. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology and aesthetic medicine specialist, understands these changes at a hormonal level and offers targeted treatments at our Oxford clinic on Woodstock Road.",
+    "Menopause causes profound changes in skin quality, thinning, dryness, loss of elasticity and collagen decline. Dr Inga Taganova, a GP with a background in obstetrics and gynaecology and aesthetic medicine specialist, understands these changes at a hormonal level and offers targeted treatments at our Oxford clinic on Woodstock Road.",
   summary:
     "Doctor-led menopause skin treatments in Oxford: Profhilo, Morpheus8, skin boosters and aesthetic treatments designed specifically for hormonally-driven skin changes during perimenopause and menopause.",
   sections: [
     {
       heading: "Why menopause affects your skin",
       paragraphs: [
-        "Oestrogen plays a critical role in maintaining skin collagen, hydration, thickness and elasticity. During perimenopause and menopause, oestrogen levels decline sharply, causing skin to lose up to 30% of its collagen in the first five years after menopause. This is not ageing alone – it is a hormonally-driven structural change that accelerates skin ageing dramatically.",
+        "Oestrogen plays a critical role in maintaining skin collagen, hydration, thickness and elasticity. During perimenopause and menopause, oestrogen levels decline sharply, causing skin to lose up to 30% of its collagen in the first five years after menopause. This is not ageing alone, it is a hormonally-driven structural change that accelerates skin ageing dramatically.",
         "The effects are visible and measurable: skin becomes thinner, drier, less elastic, more prone to wrinkles, and slower to heal. Fine lines deepen. The skin loses its plumpness and glow. Pores become more prominent. Many women describe their skin as looking 'tired' or 'deflated' even when they feel well.",
-        "These changes are real, predictable, and directly linked to declining oestrogen. They are not a failure of skincare or lifestyle – they are physiological consequences of hormonal transition. Understanding this distinction is important, because it explains why standard anti-ageing skincare often fails to address menopausal skin changes.",
+        "These changes are real, predictable, and directly linked to declining oestrogen. They are not a failure of skincare or lifestyle, they are physiological consequences of hormonal transition. Understanding this distinction is important, because it explains why standard anti-ageing skincare often fails to address menopausal skin changes.",
       ],
     },
     {
@@ -50,16 +50,16 @@ const data: TreatmentPageData = {
       heading: "Profhilo for menopause skin",
       paragraphs: [
         "Profhilo is particularly well-suited to menopausal skin. It uses ultra-pure hyaluronic acid to stimulate collagen and elastin production from within the dermis, restoring the structural support that oestrogen decline has depleted. It improves hydration, firmness, skin quality and overall radiance without adding volume or changing facial shape.",
-        "Two treatments are given four weeks apart. Results develop gradually over 8–12 weeks as the skin rebuilds its collagen network. Many women describe Profhilo as the treatment that made them look like themselves again – not younger, necessarily, but healthier, more rested, and more like the version of themselves they recognise.",
+        "Two treatments are given four weeks apart. Results develop gradually over 8 to 12 weeks as the skin rebuilds its collagen network. Many women describe Profhilo as the treatment that made them look like themselves again, not younger, necessarily, but healthier, more rested, and more like the version of themselves they recognise.",
         "Profhilo is one of the most requested treatments for menopause skin at our Oxford clinic. It is particularly effective for women in their late 40s, 50s and 60s who are experiencing rapid skin quality decline linked to perimenopause or menopause.",
       ],
     },
     {
       heading: "Morpheus8 for skin tightening",
       paragraphs: [
-        "Morpheus8 combines microneedling with radiofrequency energy to tighten skin, stimulate collagen production, and improve texture and tone. It is particularly effective for sagging skin, jowls, neck laxity, and loss of jawline definition – all common menopause skin concerns.",
-        "The treatment works by creating controlled micro-injuries in the deeper layers of the skin, triggering the body's natural healing response and collagen remodelling. Results develop gradually over 3–6 months as new collagen is produced. Most patients benefit from a course of 2–3 treatments spaced 4–6 weeks apart.",
-        "Morpheus8 is more intensive than Profhilo and requires 2–3 days of downtime for redness and mild swelling. However, the results are more dramatic, particularly for significant skin laxity or textural concerns.",
+        "Morpheus8 combines microneedling with radiofrequency energy to tighten skin, stimulate collagen production, and improve texture and tone. It is particularly effective for sagging skin, jowls, neck laxity, and loss of jawline definition, all common menopause skin concerns.",
+        "The treatment works by creating controlled micro-injuries in the deeper layers of the skin, triggering the body's natural healing response and collagen remodelling. Results develop gradually over 3 to 6 months as new collagen is produced. Most patients benefit from a course of 2 to 3 treatments spaced 4 to 6 weeks apart.",
+        "Morpheus8 is more intensive than Profhilo and requires 2 to 3 days of downtime for redness and mild swelling. However, the results are more dramatic, particularly for significant skin laxity or textural concerns.",
       ],
     },
     {
@@ -73,7 +73,7 @@ const data: TreatmentPageData = {
       heading: "Combining menopause skin treatments with hormone support",
       paragraphs: [
         "Aesthetic treatments for menopause skin produce excellent results, but they work best when combined with appropriate hormone support where clinically indicated. Dr Taganova can assess your suitability for HRT (hormone replacement therapy) and provide specialist referrals if hormone therapy would benefit your skin and overall menopausal health.",
-        "Her dual expertise – gynaecology and aesthetic medicine – means she can create an integrated treatment plan that addresses the hormonal root cause alongside the visible symptoms. This produces better, longer-lasting results than aesthetic treatments alone.",
+        "Her dual expertise, gynaecology and aesthetic medicine, means she can create an integrated treatment plan that addresses the hormonal root cause alongside the visible symptoms. This produces better, longer-lasting results than aesthetic treatments alone.",
       ],
     },
     {
@@ -100,7 +100,7 @@ const data: TreatmentPageData = {
   faqs: [
     {
       q: "Why does menopause cause such dramatic skin changes?",
-      a: "Oestrogen is essential for maintaining skin collagen, hydration, thickness and elasticity. When oestrogen levels decline during menopause, skin can lose up to 30% of its collagen in the first five years. This causes rapid thinning, dryness, loss of firmness, and accelerated wrinkling – changes that are far more pronounced than normal ageing.",
+      a: "Oestrogen is essential for maintaining skin collagen, hydration, thickness and elasticity. When oestrogen levels decline during menopause, skin can lose up to 30% of its collagen in the first five years. This causes rapid thinning, dryness, loss of firmness, and accelerated wrinkling, changes that are far more pronounced than normal ageing.",
     },
     {
       q: "Will HRT improve my skin?",
@@ -112,11 +112,11 @@ const data: TreatmentPageData = {
     },
     {
       q: "How long do results last?",
-      a: "Profhilo results typically last 6–9 months, after which maintenance treatments are recommended every 6–12 months. Morpheus8 results develop over 3–6 months and can last 1–2 years with ongoing collagen remodelling. Both treatments produce cumulative improvements with repeat sessions.",
+      a: "Profhilo results typically last 6 to 9 months, after which maintenance treatments are recommended every 6 to 12 months. Morpheus8 results develop over 3 to 6 months and can last 1 to 2 years with ongoing collagen remodelling. Both treatments produce cumulative improvements with repeat sessions.",
     },
     {
       q: "Is there downtime after treatment?",
-      a: "Profhilo typically requires no downtime, though minor swelling or bruising may occur at injection sites. Morpheus8 causes temporary redness and mild swelling for 2–3 days. Most patients return to work the next day after Profhilo and within 3–4 days after Morpheus8.",
+      a: "Profhilo typically requires no downtime, though minor swelling or bruising may occur at injection sites. Morpheus8 causes temporary redness and mild swelling for 2 to 3 days. Most patients return to work the next day after Profhilo and within 3 to 4 days after Morpheus8.",
     },
     {
       q: "Where is the clinic located in Oxford?",

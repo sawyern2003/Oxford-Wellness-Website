@@ -44,7 +44,7 @@ export const programmes: Programme[] = [
       "A personalised journey for skin quality, collagen support, pigmentation and hydration.",
     image: imgSkin,
     overview:
-      "For women noticing changes in skin texture, firmness, pigmentation or hydration – often in midlife. This programme focuses on restoring skin health through a carefully sequenced journey, not a single treatment.",
+      "For women noticing changes in skin texture, firmness, pigmentation or hydration, often in midlife. This programme focuses on restoring skin health through a carefully sequenced journey, not a single treatment.",
     whoFor: [
       "Women noticing midlife skin changes",
       "Those concerned about collagen loss, dullness or pigmentation",
@@ -52,7 +52,7 @@ export const programmes: Programme[] = [
       "Anyone seeking doctor-led guidance rather than a treatment menu",
     ],
     doctorOverview:
-      "Dr Inga assesses your skin in the context of your health, hormones and goals. Recommendations are evidence-based and paced to support lasting skin quality – never rushed or overtreated.",
+      "Dr Inga assesses your skin in the context of your health, hormones and goals. Recommendations are evidence-based and paced to support lasting skin quality, never rushed or overtreated.",
     journey: [
       "Online consultation to understand your concerns and history",
       "Personalised skin health plan with clear sequencing",
@@ -75,9 +75,9 @@ export const programmes: Programme[] = [
       "More even tone where pigmentation is addressed",
       "A refreshed appearance that still looks like you",
     ],
-    timeline: "Typically 8–16 weeks for an initial journey, then maintenance as advised.",
+    timeline: "Typically 8 to 16 weeks for an initial journey, then maintenance as advised.",
     investment: "From £450",
-    duration: "8–16 weeks + maintenance",
+    duration: "8 to 16 weeks + maintenance",
     includesSummary: "Consultation, sequenced treatments, home-care guidance, review",
     faqs: [
       {
@@ -86,7 +86,7 @@ export const programmes: Programme[] = [
       },
       {
         q: "Will I look overdone?",
-        a: "The aim is natural confidence – skin that looks healthier and more like you. Dr Inga prioritises subtle, evidence-based outcomes.",
+        a: "The aim is natural confidence, skin that looks healthier and more like you. Dr Inga prioritises subtle, evidence-based outcomes.",
       },
       {
         q: "Where do treatments take place?",
@@ -104,7 +104,7 @@ export const programmes: Programme[] = [
       "Discreet, doctor-led care for intimate comfort, confidence and midlife changes.",
     image: imgIntimate,
     overview:
-      "For women experiencing intimate dryness, discomfort or loss of confidence – often related to menopause, childbirth or ageing. Care is private, clinical and unhurried.",
+      "For women experiencing intimate dryness, discomfort or loss of confidence, often related to menopause, childbirth or ageing. Care is private, clinical and unhurried.",
     whoFor: [
       "Women with intimate dryness or discomfort",
       "Those navigating menopause or postpartum changes",
@@ -131,9 +131,9 @@ export const programmes: Programme[] = [
       "Clear understanding of options and expectations",
       "Ongoing support within a trusted medical relationship",
     ],
-    timeline: "Often 4–12 weeks depending on the treatments included.",
+    timeline: "Often 4 to 12 weeks depending on the treatments included.",
     investment: "From £450",
-    duration: "4–12 weeks + review",
+    duration: "4 to 12 weeks + review",
     includesSummary: "Consultation, discreet treatment plan, aftercare, review",
     faqs: [
       {
@@ -191,9 +191,9 @@ export const archivedProgrammes: Programme[] = [
       "Reduced appearance of cellulite",
       "Improved body confidence",
     ],
-    timeline: "Typically 6–8 weeks for a course of treatments, then maintenance.",
+    timeline: "Typically 6 to 8 weeks for a course of treatments, then maintenance.",
     investment: "From £75 consultation; treatment courses from £995",
-    duration: "6–8 weeks + maintenance",
+    duration: "6 to 8 weeks + maintenance",
     includesSummary: "Consultation, body assessment, course of RF treatments, review",
     faqs: [
       {

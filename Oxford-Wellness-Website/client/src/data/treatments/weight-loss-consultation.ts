@@ -2,7 +2,7 @@ import { TreatmentLandingPageData } from "@/components/treatments/TreatmentLandi
 
 export const weightLossConsultationData: TreatmentLandingPageData = {
   slug: "weight-loss-consultation",
-  bookingUrl: "https://oxfordwellnessdoctor.glowday.com/offer/category/womens-health",
+  bookingUrl: "/book",
   h1: "Weight Loss Consultation in Oxford",
   title: "Weight Loss Consultation Oxford | The Oxford Wellness Doctor",
   metaDescription:

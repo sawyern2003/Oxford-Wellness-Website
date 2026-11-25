@@ -21,7 +21,7 @@ export default function Footer() {
 
   if (pain) {
     return (
-      <footer className="bg-white border-t border-border">
+      <footer className="bg-background border-t border-border">
         <div className="container-page py-14">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
             <div className="col-span-2 md:col-span-1">
@@ -33,16 +33,16 @@ export default function Footer() {
               </p>
             </div>
             <div>
-              <p className="text-xs font-medium tracking-wide uppercase text-muted-foreground mb-3">Care</p>
+              <p className="text-xs font-medium tracking-normal text-muted-foreground mb-3">Care</p>
               <ul className="space-y-2 text-sm text-foreground/80">
-                <li><Link href="/oxford-pain-doctor/how-we-help" className="hover:text-secondary">How We Help</Link></li>
+                <li><Link href="/oxford-pain-doctor/how-we-help" className="hover:text-secondary">How we help</Link></li>
                 <li><Link href="/oxford-pain-doctor/library" className="hover:text-secondary">Pain Library</Link></li>
                 <li><Link href="/oxford-pain-doctor/about" className="hover:text-secondary">About Dr Richard</Link></li>
                 <li><Link href={PAIN_CONTACT_HREF} className="hover:text-secondary">Contact</Link></li>
               </ul>
             </div>
             <div>
-              <p className="text-xs font-medium tracking-wide uppercase text-muted-foreground mb-3">Also here</p>
+              <p className="text-xs font-medium tracking-normal text-muted-foreground mb-3">Also here</p>
               <ul className="space-y-2 text-sm text-foreground/80">
                 <li><Link href="/" className="hover:text-secondary">The Oxford Wellness Doctor</Link></li>
                 <li><Link href="/about" className="hover:text-secondary">About Dr Inga</Link></li>
@@ -50,7 +50,7 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <p className="text-xs font-medium tracking-wide uppercase text-muted-foreground mb-3">Visit</p>
+              <p className="text-xs font-medium tracking-normal text-muted-foreground mb-3">Visit</p>
               <p className="text-sm text-foreground/80 leading-relaxed">
                 Belsyre Court<br />
                 57 Woodstock Rd<br />
@@ -74,7 +74,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-white border-t border-border">
+    <footer className="bg-background border-t border-border">
       <div className="container-page py-14">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
           <div className="col-span-2 md:col-span-1">
@@ -82,32 +82,33 @@ export default function Footer() {
               The Oxford Wellness Doctor
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-[16rem]">
-              Private midlife care with Dr Inga Taganova – skin, body confidence and intimate wellness in Oxford.
+              Private midlife care with Dr Inga Taganova, skin, body confidence and intimate wellness in Oxford.
             </p>
           </div>
           <div>
-            <p className="text-xs font-medium tracking-wide uppercase text-muted-foreground mb-3">Women's Health</p>
+            <p className="text-xs font-medium tracking-normal text-muted-foreground mb-3">Women's health</p>
             <ul className="space-y-2 text-sm text-foreground/80">
-              <li><Link href="/menopause-clinic-oxford" className="hover:text-secondary">Menopause Clinic</Link></li>
+              <li><Link href="/menopause-clinic-oxford" className="hover:text-secondary">Menopause clinic</Link></li>
               <li><Link href="/perimenopause-oxford" className="hover:text-secondary">Perimenopause</Link></li>
-              <li><Link href="/womens-health-oxford" className="hover:text-secondary">Women's Health</Link></li>
-              <li><Link href="/sexual-wellness-oxford" className="hover:text-secondary">Intimate Health</Link></li>
-              <li><Link href="/longevity-medicine-oxford" className="hover:text-secondary">Longevity Medicine</Link></li>
+              <li><Link href="/womens-health-oxford" className="hover:text-secondary">Women's health</Link></li>
+              <li><Link href="/sexual-wellness-oxford" className="hover:text-secondary">Intimate health</Link></li>
+              <li><Link href="/longevity-medicine-oxford" className="hover:text-secondary">Longevity medicine</Link></li>
             </ul>
           </div>
           <div>
-            <p className="text-xs font-medium tracking-wide uppercase text-muted-foreground mb-3">Skin & Aesthetics</p>
+            <p className="text-xs font-medium tracking-normal text-muted-foreground mb-3">Skin & aesthetics</p>
             <ul className="space-y-2 text-sm text-foreground/80">
-              <li><Link href="/skin-clinic-oxford" className="hover:text-secondary">Skin Clinic</Link></li>
-              <li><Link href="/menopause-skin" className="hover:text-secondary">Menopause Skin</Link></li>
+              <li><Link href="/skin-clinic-oxford" className="hover:text-secondary">Skin clinic</Link></li>
+              <li><Link href="/menopause-skin" className="hover:text-secondary">Menopause skin</Link></li>
               <li><Link href="/treatments/profhilo-oxford" className="hover:text-secondary">Profhilo</Link></li>
               <li><Link href="/treatments/morpheus8-oxford" className="hover:text-secondary">Morpheus8</Link></li>
             </ul>
           </div>
           <div>
-            <p className="text-xs font-medium tracking-wide uppercase text-muted-foreground mb-3">Clinic</p>
+            <p className="text-xs font-medium tracking-normal text-muted-foreground mb-3">Clinic</p>
             <ul className="space-y-2 text-sm text-foreground/80">
               <li><Link href="/about" className="hover:text-secondary">About Dr Inga</Link></li>
+              <li><Link href="/gift-vouchers" className="hover:text-secondary">Gift vouchers</Link></li>
               <li><Link href="/blog" className="hover:text-secondary">Journal</Link></li>
               <li><Link href="/contact" className="hover:text-secondary">Contact</Link></li>
               <li><Link href="/privacy-policy" className="hover:text-secondary">Privacy</Link></li>
@@ -117,7 +118,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <p className="text-xs font-medium tracking-wide uppercase text-muted-foreground mb-3">Visit</p>
+            <p className="text-xs font-medium tracking-normal text-muted-foreground mb-3">Visit</p>
             <p className="text-sm text-foreground/80 leading-relaxed">
               Belsyre Court<br />
               57 Woodstock Rd<br />

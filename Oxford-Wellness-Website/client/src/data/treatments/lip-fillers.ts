@@ -26,15 +26,15 @@ export const lipFillersData: TreatmentLandingPageData = {
     intro: "Lip filler uses hyaluronic acid to add volume, shape, and hydration to the lips. Dr Inga Taganova uses a conservative approach focused on natural-looking results.",
     steps: [
       "Consultation to discuss your goals and assess lip anatomy.",
-      "Topical anaesthetic cream applied. Treatment takes 20–30 minutes using a fine needle or cannula.",
-      "Results immediate, though some swelling for 2–3 days is normal. Final result visible within 2 weeks."
+      "Topical anaesthetic cream applied. Treatment takes 20 to 30 minutes using a fine needle or cannula.",
+      "Results immediate, though some swelling for 2 to 3 days is normal. Final result visible within 2 weeks."
     ],
-    sessionsInfo: "Results typically last 6–12 months. Some patients return for top-ups; others prefer to let the filler gradually dissolve and reassess."
+    sessionsInfo: "Results typically last 6 to 12 months. Some patients return for top-ups; others prefer to let the filler gradually dissolve and reassess."
   },
   
   downtime: {
     heading: "Downtime",
-    description: "Mild swelling and bruising are common for 2–5 days. Most patients return to work immediately. Avoid strenuous exercise, alcohol, and excessive heat for 24 hours. Swelling peaks at 24–48 hours, then subsides gradually."
+    description: "Mild swelling and bruising are common for 2 to 5 days. Most patients return to work immediately. Avoid strenuous exercise, alcohol, and excessive heat for 24 hours. Swelling peaks at 24 to 48 hours, then subsides gradually."
   },
   
   trust: {
@@ -43,7 +43,7 @@ export const lipFillersData: TreatmentLandingPageData = {
       "Doctor-led clinic: all treatments performed by Dr Inga Taganova, a GMC-registered GP",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ",
       "More than two decades of medical experience",
-      "Conservative, natural-looking approach – no overfilled or unnatural results",
+      "Conservative, natural-looking approach, no overfilled or unnatural results",
       "Premium, fully reversible hyaluronic acid fillers"
     ]
   },
@@ -59,7 +59,7 @@ export const lipFillersData: TreatmentLandingPageData = {
     },
     {
       q: "How long do lip fillers last?",
-      a: "Lip filler typically lasts 6–12 months. The lips are a mobile area with high blood flow, so filler breaks down more quickly here than in other areas of the face."
+      a: "Lip filler typically lasts 6 to 12 months. The lips are a mobile area with high blood flow, so filler breaks down more quickly here than in other areas of the face."
     },
     {
       q: "Can lip filler be dissolved?",
@@ -72,7 +72,7 @@ export const lipFillersData: TreatmentLandingPageData = {
   ],
   
   pricing: [
-    { name: "Lip filler — 0.7ml", price: "£320" }
+    { name: "Lip filler, 0.7ml", price: "£320" }
   ],
   
   consultation: {

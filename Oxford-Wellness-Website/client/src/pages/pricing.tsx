@@ -15,11 +15,11 @@ export default function Pricing() {
   });
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       <div className="pt-28 pb-12 px-6">
         <FadeIn>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-4">
+            <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-4">
               Fees
             </p>
             <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-4">

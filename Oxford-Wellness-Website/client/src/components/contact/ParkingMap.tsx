@@ -66,7 +66,7 @@ export default function ParkingMap({ companion }: { companion?: ReactNode }) {
           Getting here
         </h2>
         <p className="text-sm text-muted-foreground leading-relaxed max-w-[65ch]">
-          Belsyre Court is on Woodstock Road. There is no clinic car park – use the streets around it.
+          Belsyre Court is on Woodstock Road. There is no clinic car park, use the streets around it.
         </p>
       </div>
 

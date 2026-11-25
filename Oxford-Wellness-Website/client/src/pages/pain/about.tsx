@@ -10,10 +10,10 @@ import drRichard from "@/assets/pain/dr-richard-sawyer.jpg";
 
 const timeline = [
   { year: "1989", text: "MB BCh, University of the Witwatersrand, Johannesburg" },
-  { year: "1997", text: "FRCA – Fellow of the Royal College of Anaesthetists" },
+  { year: "1997", text: "FRCA, Fellow of the Royal College of Anaesthetists" },
   { year: "2002", text: "Consultant in Plymouth; later Clinical Lead in Pain Medicine" },
   { year: "2005", text: "Fellowship of Interventional Pain Practice (World Institute of Pain)" },
-  { year: "2008", text: "FFPMRCA – Faculty of Pain Medicine" },
+  { year: "2008", text: "FFPMRCA, Faculty of Pain Medicine" },
   { year: "2013", text: "Consultant, Oxford University Hospitals" },
   { year: "2019", text: "LLM, Masters in Medical Law" },
 ];
@@ -60,7 +60,7 @@ export default function AboutDrRichard() {
   }, []);
 
   return (
-    <div className="pt-28 min-h-screen bg-white">
+    <div className="pt-28 min-h-screen bg-background">
       <div className="container mx-auto px-6 py-12">
         <motion.div
           initial={{ opacity: 0 }}
@@ -68,7 +68,7 @@ export default function AboutDrRichard() {
           transition={{ duration: 0.8 }}
           className="max-w-6xl mx-auto"
         >
-          <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-muted-foreground mb-5">
+          <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-5">
             Your consultant
           </p>
           <h1 className="font-sans font-semibold text-4xl md:text-5xl text-foreground tracking-tight mb-12 max-w-2xl leading-snug">
@@ -93,7 +93,7 @@ export default function AboutDrRichard() {
               className="lg:col-span-7 space-y-6 text-muted-foreground text-[15px] md:text-base leading-relaxed"
             >
               <p className="text-2xl text-foreground font-sans font-semibold tracking-tight leading-snug">
-                Understanding why pain persists – before deciding what to do about it.
+                Understanding why pain persists, before deciding what to do about it.
               </p>
               <p>
                 Dr Richard Sawyer is a Consultant in Anaesthesia and Pain Medicine at Oxford University Hospitals, and has been a member of the International Association for the Study of Pain for over 30 years.
@@ -102,7 +102,7 @@ export default function AboutDrRichard() {
                 Consultations take place at Belsyre Court on Woodstock Road, and are with Dr Sawyer personally.
               </p>
               <blockquote className="font-sans text-xl text-foreground leading-relaxed tracking-tight pt-2">
-                &ldquo;My role is not simply to offer a procedure. It is to understand why pain is persisting – and which approaches have the best evidence of helping.&rdquo;
+                &ldquo;My role is not simply to offer a procedure. It is to understand why pain is persisting, and which approaches have the best evidence of helping.&rdquo;
               </blockquote>
             </FadeIn>
 
@@ -111,7 +111,7 @@ export default function AboutDrRichard() {
                 <img
                   src={drRichard}
                   alt="Dr Richard Sawyer, Consultant in Anaesthesia and Pain Medicine"
-                  className="w-full aspect-[4/3] object-cover object-top rounded-2xl bg-white"
+                  
                   width="476"
                   height="357"
                 />
