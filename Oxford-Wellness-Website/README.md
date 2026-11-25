@@ -19,6 +19,7 @@ preview builds use **production** mode and load `client/.env.production`.
 | `VITE_GADS_BOOK_LABEL` | No | Conversion label for Cliniko / booking clicks |
 | `VITE_GADS_WHATSAPP_LABEL` | No | Conversion label for WhatsApp clicks |
 | `VITE_GADS_TEL_LABEL` | No | Conversion label for `tel:` clicks |
+| `VITE_GADS_BOOKING_COMPLETED_LABEL` | No | Conversion label when Cliniko posts booking confirmed. Empty = Ads no-op; GA4 still fires. |
 
 ### Google Ads defaults
 
@@ -34,7 +35,8 @@ When `VITE_GOOGLE_ADS_ID` is set (from `.env.production` or an env override):
 1. `gtag.js` loads site-wide with Consent Mode defaults **denied**.
 2. The existing cookie banner Accept / Reject updates consent (`granted` / `denied`) and persists the choice.
 3. Conversions fire only after Accept, for Cliniko links (primary), WhatsApp, and phone clicks.
-4. `gclid` / `gbraid` / `wbraid` from the landing URL are stored and, after consent, appended to Cliniko links when missing.
+4. When Cliniko posts `cliniko-bookings-page:confirmed`, a booking-completed Ads conversion fires if `VITE_GADS_BOOKING_COMPLETED_LABEL` is set, and a GA4 `booking_completed` event fires after Accept (no patient data).
+5. `gclid` / `gbraid` / `wbraid` from the landing URL are stored and, after consent, appended to Cliniko links when missing.
 
 ## Scripts
 
