@@ -48,7 +48,7 @@ export default function WhatsAppFab() {
       aria-label="Message The Oxford Wellness Doctor on WhatsApp"
       data-testid="whatsapp-fab"
       className={cn(
-        "whatsapp-fab group js-whatsapp-cta fixed z-40",
+        "whatsapp-fab group js-whatsapp-cta fixed z-40 overflow-visible",
         "flex h-[52px] w-[52px] md:h-14 md:w-14 items-center justify-center",
         "rounded-full bg-[#293c56] text-[#f5ecdc]",
         "shadow-[0_8px_24px_rgba(41,60,86,0.22)]",
@@ -59,14 +59,15 @@ export default function WhatsAppFab() {
       )}
     >
       <WhatsAppGlyph className="h-[26px] w-[26px] md:h-7 md:w-7" />
+      {/* Label sits above the FAB (never to the left) so it cannot cover Book. */}
       <span
         className={cn(
-          "pointer-events-none absolute right-full mr-3 hidden md:inline-flex",
+          "pointer-events-none absolute bottom-full right-0 mb-2 hidden md:inline-flex",
           "whitespace-nowrap rounded-full bg-[#293c56] px-3.5 py-2",
           "text-xs font-medium text-[#f5ecdc] shadow-[0_6px_18px_rgba(41,60,86,0.18)]",
-          "opacity-0 translate-x-1 transition-[opacity,transform] duration-200 ease-out",
-          "group-hover:opacity-100 group-hover:translate-x-0",
-          "group-focus-visible:opacity-100 group-focus-visible:translate-x-0",
+          "opacity-0 translate-y-1 transition-[opacity,transform] duration-200 ease-out",
+          "group-hover:opacity-100 group-hover:translate-y-0",
+          "group-focus-visible:opacity-100 group-focus-visible:translate-y-0",
           "motion-reduce:transition-none"
         )}
       >

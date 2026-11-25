@@ -54,13 +54,13 @@ export default function FloatingButtons() {
   if (cookieBannerOpen || !visible) return null;
 
   // Treatment pages: their StickyBar covers mobile; keep a desktop Book chip
-  // to the left of the WhatsApp FAB (56px + 12px gap).
+  // to the left of the WhatsApp FAB (56px + 16px gap → right-24).
   if (hasSticky) {
     return (
       <a
         href={bookHref}
         aria-label="Book a consultation"
-        className="js-book-cta hidden md:inline-flex fixed bottom-6 right-[5.75rem] z-40 items-center rounded-full bg-primary text-white px-5 py-3 text-sm font-medium shadow-md hover:bg-primary/90 transition-colors"
+        className="js-book-cta hidden md:inline-flex fixed bottom-6 right-24 z-40 items-center rounded-full bg-primary text-white px-5 py-3 text-sm font-medium shadow-md hover:bg-primary/90 transition-colors"
       >
         Book
       </a>
@@ -85,10 +85,11 @@ export default function FloatingButtons() {
           </a>
         </div>
       </div>
+      {/* right-24 = 96px: FAB (56) + 16px gap + 24px edge inset */}
       <a
         href={bookHref}
         aria-label="Book a consultation"
-        className="js-book-cta hidden md:inline-flex fixed bottom-6 right-[5.75rem] z-40 items-center rounded-full bg-primary text-white px-5 py-3 text-sm font-medium shadow-md hover:bg-primary/90 transition-colors"
+        className="js-book-cta hidden md:inline-flex fixed bottom-6 right-24 z-40 items-center rounded-full bg-primary text-white px-5 py-3 text-sm font-medium shadow-md hover:bg-primary/90 transition-colors"
       >
         Book
       </a>
