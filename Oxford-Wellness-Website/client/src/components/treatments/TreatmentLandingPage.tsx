@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "wouter";
 import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useCookieBannerOpen } from "@/hooks/useCookieBannerOpen";
@@ -203,13 +204,18 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
 
               <div className="mb-6">
                 <p className="text-3xl font-semibold text-primary mb-2">
-                  {data.priceValue}
+                  {data.priceLabel && !/^from$/i.test(data.priceLabel.trim())
+                    ? `${data.priceLabel} ${data.priceValue}`
+                    : data.priceValue.toLowerCase().startsWith("from")
+                      ? data.priceValue
+                      : `From ${data.priceValue}`}
                 </p>
-                {data.priceLabel ? (
-                  <p className="text-sm text-muted-foreground">
-                    {data.priceLabel}
-                  </p>
-                ) : null}
+                <Link
+                  href="/pricing"
+                  className="text-sm font-medium text-primary underline underline-offset-4"
+                >
+                  View prices
+                </Link>
               </div>
 
               <p className="text-base text-foreground mb-6 leading-relaxed">
@@ -275,7 +281,7 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
           <div className="container mx-auto px-6 max-w-4xl">
             <div>
               <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-6">
-                {data.whoIsFor.heading}
+                Who it is for
               </h2>
               <ul className="space-y-3">
                 {data.whoIsFor.items.map((item, i) => (
@@ -293,7 +299,7 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
           <div className="container mx-auto px-6 max-w-4xl">
             <div>
               <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-6">
-                {data.howItWorks.heading}
+                What happens at your appointment
               </h2>
               {data.howItWorks.intro && (
                 <p className="text-base text-muted-foreground leading-relaxed mb-6">
@@ -323,7 +329,7 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
           <div className="container mx-auto px-6 max-w-4xl">
             <div>
               <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-4">
-                {data.downtime.heading}
+                What to expect afterwards
               </h2>
               <p className="text-base text-muted-foreground leading-relaxed">
                 {data.downtime.description}
@@ -336,7 +342,7 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
           <div className="container mx-auto px-6 max-w-4xl">
             <div>
               <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-6">
-                {data.trust.heading}
+                How it fits with other care
               </h2>
               <ul className="space-y-3">
                 {data.trust.items.map((item, i) => (
@@ -346,37 +352,6 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
                   </li>
                 ))}
               </ul>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-12 bg-muted/50">
-          <div className="container mx-auto px-6 max-w-4xl">
-            <div>
-              <h2 className="font-sans font-semibold text-2xl text-foreground tracking-tight mb-6">
-                Pricing
-              </h2>
-              <div className="border-t border-border">
-                {data.consultation && (
-                  <div className="flex justify-between items-baseline gap-4 py-3 border-b border-border">
-                    <p className="text-[15px] text-foreground">{data.consultation.name}</p>
-                    <p className="text-[15px] text-foreground tabular-nums whitespace-nowrap font-medium">
-                      {data.consultation.price}
-                    </p>
-                  </div>
-                )}
-                {data.pricing.map((item, i) => (
-                  <div key={i} className="flex justify-between items-baseline gap-4 py-3 border-b border-border">
-                    <p className="text-[15px] text-foreground">{item.name}</p>
-                    <p className="text-[15px] text-foreground tabular-nums whitespace-nowrap">
-                      {item.price}
-                    </p>
-                  </div>
-                ))}
-              </div>
-              <p className="text-sm text-foreground/70 mt-4">
-                Fees are confirmed before treatment. A consultation is booked separately.
-              </p>
             </div>
           </div>
         </section>

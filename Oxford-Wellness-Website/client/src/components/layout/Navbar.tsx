@@ -33,6 +33,7 @@ export default function Navbar() {
   const helpActive =
     !pain &&
     (location.startsWith("/treatments") ||
+      location.startsWith("/concerns") ||
       location.startsWith("/personalised-treatment-plans") ||
       location.startsWith("/womens-health") ||
       location.startsWith("/menopause-clinic") ||

@@ -3,195 +3,19 @@ import { Button } from "@/components/ui/button";
 import { useSEO } from "@/hooks/useSEO";
 import { useBreadcrumbSchema } from "@/hooks/useBreadcrumbSchema";
 import { useEffect, useState } from "react";
-
-interface TreatmentCard {
-  name: string;
-  description: string;
-  href: string;
-  price?: string;
-}
-
-interface Section {
-  id: string;
-  title: string;
-  intro: string;
-  treatments: TreatmentCard[];
-  bg: string;
-}
-
-const sections: Section[] = [
-  {
-    id: "womens-health",
-    title: "Women's Health & Menopause",
-    intro: "Comprehensive menopause care, intimate health consultations, and related treatments. What is suitable is discussed and decided in consultation.",
-    bg: "bg-white",
-    treatments: [
-      {
-        name: "Menopause Consultation",
-        description: "Assessment of your symptoms and guidance on treatment options, including whether HRT is appropriate.",
-        href: "/menopause-clinic-oxford",
-        price: "£275",
-      },
-      {
-        name: "Perimenopause Consultation",
-        description: "Consultation for women in their 40s experiencing irregular periods, mood changes, or other early symptoms.",
-        href: "/perimenopause-oxford",
-        price: "£275",
-      },
-      {
-        name: "Women's Health Consultation",
-        description: "Comprehensive women's health consultations addressing hormonal and wellbeing concerns.",
-        href: "/womens-health-oxford",
-        price: "£275",
-      },
-      {
-        name: "Intimate Health Consultation",
-        description: "Confidential consultation for vaginal dryness, discomfort and changes in intimate wellbeing.",
-        href: "/sexual-wellness-oxford",
-        price: "£150",
-      },
-      {
-        name: "Forma V",
-        description: "Treatment for intimate comfort. Whether it is appropriate is decided after assessment.",
-        href: "/treatments/votiva-forma-v-oxford",
-        price: "from £450",
-      },
-      {
-        name: "Neauvia N Rose",
-        description: "Intimate hyaluronic acid treatment. Availability and suitability confirmed at consultation.",
-        href: "/treatments/neauvia-n-rose-intimate-rejuvenation-oxford",
-        price: "Price on consultation",
-      },
-      {
-        name: "Vitamin B12 Injection",
-        description: "Intramuscular vitamin B12 injection, given in clinic after a short consultation.",
-        href: "/treatments/vitamin-b12-injection-oxford",
-        price: "£45",
-      },
-      {
-        name: "Medical Form Completion",
-        description: "GP completion and signature of medical forms and certificates.",
-        href: "/treatments/medical-form-completion-oxford",
-        price: "£75",
-      },
-    ],
-  },
-  {
-    id: "skin",
-    title: "Skin & Aesthetics",
-    intro: "Expert aesthetic treatments to address lines, volume loss, skin quality, and texture concerns. Every treatment is tailored to your individual needs.",
-    bg: "bg-secondary/5",
-    treatments: [
-      {
-        name: "Anti-Wrinkle Injections",
-        description: "Treatment to soften lines such as forehead lines, frown lines and crow's feet.",
-        href: "/treatments/anti-wrinkle-injections-oxford",
-        price: "from £230",
-      },
-      {
-        name: "Dermal Fillers",
-        description: "Hyaluronic acid used to restore volume in selected areas of the face.",
-        href: "/treatments/dermal-fillers-oxford",
-        price: "from £250",
-      },
-      {
-        name: "Lip Fillers",
-        description: "Hyaluronic acid used to add definition or volume to the lips.",
-        href: "/treatments/lip-fillers-oxford",
-        price: "from £320",
-      },
-      {
-        name: "Filler Dissolving",
-        description: "Removal of hyaluronic acid filler when a previous treatment needs to be adjusted.",
-        href: "/treatments/filler-dissolving-oxford",
-        price: "£275",
-      },
-      {
-        name: "Jaw Treatment",
-        description: "Treatment of the jaw muscles, including for teeth grinding, after assessment.",
-        href: "/treatments/jaw-slimming-teeth-grinding-oxford",
-        price: "£295",
-      },
-      {
-        name: "Profhilo",
-        description: "Injectable hyaluronic acid that bio-remodels skin, stimulating collagen and elastin production.",
-        href: "/treatments/profhilo-oxford",
-        price: "from £350",
-      },
-      {
-        name: "HA Skin Booster",
-        description: "Hyaluronic acid injectable used to support skin hydration and quality.",
-        href: "/treatments/skin-boosters-oxford",
-        price: "£250",
-      },
-      {
-        name: "Polynucleotides",
-        description: "Injectable treatment used to support skin quality and regeneration.",
-        href: "/treatments/skin-boosters-oxford",
-        price: "from £350",
-      },
-      {
-        name: "Morpheus8",
-        description: "Radiofrequency microneedling used to improve skin texture, firmness and certain scars.",
-        href: "/treatments/morpheus8-oxford",
-        price: "from £450",
-      },
-      {
-        name: "Forma Facelift",
-        description: "Radiofrequency treatment used to firm and smooth the skin of the face.",
-        href: "/treatments/forma-facelift-oxford",
-        price: "from £195",
-      },
-      {
-        name: "Lumecca IPL",
-        description: "Intense pulsed light used for pigmentation, redness and sun-related skin changes.",
-        href: "/treatments/lumecca-ipl-oxford",
-        price: "from £175",
-      },
-      {
-        name: "Chemical Peels",
-        description: "Medical-grade peels used to improve texture, pigmentation and the look of fine lines.",
-        href: "/treatments/chemical-peels-oxford",
-        price: "from £125",
-      },
-      {
-        name: "Excessive Sweating Treatment",
-        description: "Underarm treatment for excessive sweating, where it is clinically suitable.",
-        href: "/treatments/excessive-sweating-treatment-oxford",
-        price: "£450",
-      },
-    ],
-  },
-  {
-    id: "body",
-    title: "Body",
-    intro: "Non-surgical body treatments for skin firming, texture and contour.",
-    bg: "bg-white",
-    treatments: [
-      {
-        name: "Forma Plus",
-        description: "Radiofrequency body treatment used to firm skin on areas such as the abdomen and arms.",
-        href: "/treatments/forma-plus-body-contouring-oxford",
-        price: "from £250",
-      },
-      {
-        name: "InMode FX",
-        description: "Body treatment used for skin tightening and the appearance of cellulite.",
-        href: "/treatments/inmode-fx-skin-tightening-oxford",
-        price: "from £195",
-      },
-    ],
-  },
-];
+import {
+  treatmentsGuideIntro,
+  treatmentsGuideSections,
+} from "@/data/treatmentsGuide";
 
 export default function Services() {
-  const [activeSection, setActiveSection] = useState("womens-health");
+  const [activeSection, setActiveSection] = useState(treatmentsGuideSections[0]?.id ?? "");
 
   useBreadcrumbSchema([{ name: "Treatments", path: "/treatments" }]);
   useSEO({
     title: "Treatments | The Oxford Wellness Doctor",
     description:
-      "Women's health, skin and aesthetics, and body care with Dr Inga Taganova at Belsyre Court, Oxford.",
+      "An editorial guide to women's health, intimate care, longevity, skin treatments and chronic pain care with The Oxford Wellness Doctor in Oxford.",
     canonical: "https://www.theoxfordwellnessdoctor.com/treatments",
   });
 
@@ -207,7 +31,7 @@ export default function Services() {
       { rootMargin: "-20% 0px -70% 0px" }
     );
 
-    sections.forEach((section) => {
+    treatmentsGuideSections.forEach((section) => {
       const el = document.getElementById(section.id);
       if (el) observer.observe(el);
     });
@@ -217,11 +41,10 @@ export default function Services() {
 
   return (
     <div className="min-h-screen bg-background pt-28">
-      {/* Sticky Nav */}
-      <div className="sticky top-[72px] z-30 border-b border-border bg-white/95 backdrop-blur-sm">
+      <div className="sticky top-[72px] z-30 border-b border-border bg-background/95 backdrop-blur-sm">
         <div className="container-page">
-          <nav className="flex gap-6 overflow-x-auto py-3 text-sm md:gap-8 md:py-4">
-            {sections.map((section) => (
+          <nav className="flex gap-6 overflow-x-auto py-3 text-sm md:gap-8 md:py-4" aria-label="Treatment areas">
+            {treatmentsGuideSections.map((section) => (
               <a
                 key={section.id}
                 href={`#${section.id}`}
@@ -238,7 +61,6 @@ export default function Services() {
         </div>
       </div>
 
-      {/* Header */}
       <div className="container-page py-12 md:py-16">
         <div className="mb-4 max-w-2xl">
           <p className="mb-4 text-[11px] font-medium tracking-normal text-muted-foreground">
@@ -248,105 +70,114 @@ export default function Services() {
             Treatments
           </h1>
           <p className="max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-            Expert women's health, aesthetic and body treatments in Oxford. All consultations and treatments
-            are carried out by Dr Inga Taganova.
+            {treatmentsGuideIntro}
+          </p>
+          <p className="mt-5 text-[15px] text-muted-foreground">
+            Looking for fees?{" "}
+            <Link
+              href="/pricing"
+              className="text-primary underline decoration-primary/30 underline-offset-4 hover:text-secondary"
+            >
+              View the prices page
+            </Link>
+            .
+          </p>
+          <p className="mt-3 text-[15px] text-muted-foreground">
+            Not sure where to start?{" "}
+            <Link
+              href="/concerns"
+              className="text-primary underline decoration-primary/30 underline-offset-4 hover:text-secondary"
+            >
+              Browse how we can help by concern
+            </Link>
+            .
           </p>
         </div>
       </div>
 
-      {/* Sections */}
-      {sections.map((section) => (
+      {treatmentsGuideSections.map((section) => (
         <section
           key={section.id}
           id={section.id}
-          className={`scroll-mt-[140px] py-12 md:py-16 ${section.bg}`}
+          className="scroll-mt-[140px] border-t border-border/60 py-12 md:py-16"
         >
-          {/* Keep #weight anchor for backwards compatibility */}
-          {section.id === "body" && <span id="weight" className="absolute" />}
-          
+          {section.id === "aesthetics-skin" ? <span id="skin" className="absolute" /> : null}
+          {section.id === "aesthetics-skin" ? <span id="body" className="absolute" /> : null}
+          {section.id === "aesthetics-skin" ? <span id="weight" className="absolute" /> : null}
+
           <div className="container-page">
-            <div className="mb-10 max-w-2xl md:mb-12">
-              <h2 className="mb-4 font-sans text-3xl font-semibold leading-snug tracking-tight text-foreground md:text-4xl">
-                {section.title}
-              </h2>
-              <p className="text-[15px] leading-relaxed text-muted-foreground">
-                {section.intro}
-              </p>
+            <div className="mb-10 grid items-end gap-8 md:mb-12 md:grid-cols-12">
+              <div className="md:col-span-7 max-w-2xl">
+                <h2 className="mb-4 font-sans text-3xl font-semibold leading-snug tracking-tight text-foreground md:text-4xl">
+                  {section.title}
+                </h2>
+                <p className="text-[15px] leading-relaxed text-muted-foreground">
+                  {section.intro}
+                </p>
+              </div>
+              <div className="md:col-span-5">
+                <div className="overflow-hidden bg-background">
+                  <img
+                    src={section.image}
+                    alt={section.imageAlt}
+                    width={640}
+                    height={480}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-auto w-full max-h-56 object-contain object-right md:max-h-64"
+                  />
+                </div>
+              </div>
             </div>
 
-            <div className="grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              {section.treatments.map((treatment) => (
-                <Link key={treatment.href} href={treatment.href}>
-                  <div className="group">
-                    <h3 className="font-sans text-lg font-semibold tracking-tight text-foreground transition-colors group-hover:text-primary">
-                      {treatment.name}
-                    </h3>
-                    {treatment.price && (
-                      <p className="mt-1 text-sm text-muted-foreground">{treatment.price}</p>
-                    )}
-                    <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">
-                      {treatment.description}
-                    </p>
-                  </div>
-                </Link>
+            <ul className="grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+              {section.items.map((item) => (
+                <li key={item.href} className="border-t border-border pt-5">
+                  <h3 className="font-sans text-lg font-semibold tracking-tight text-foreground">
+                    {item.name}
+                  </h3>
+                  <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">
+                    <span className="text-foreground/80">Who it is for.</span> {item.whoFor}
+                  </p>
+                  <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">
+                    <span className="text-foreground/80">What it helps with.</span> {item.helpsWith}
+                  </p>
+                  <Link
+                    href={item.href}
+                    className="mt-4 inline-flex text-sm font-medium text-primary underline decoration-primary/30 underline-offset-4 hover:text-secondary"
+                  >
+                    Read more
+                  </Link>
+                </li>
               ))}
-            </div>
-
-            {/* Additional links for specific sections */}
-            {section.id === "womens-health" && (
-              <div className="mt-8 border-t border-border pt-8">
-                <p className="text-sm text-muted-foreground">
-                  Also see:{" "}
-                  <Link
-                    href="/longevity-medicine-oxford"
-                    className="text-primary underline decoration-primary/30 underline-offset-4 hover:text-secondary"
-                  >
-                    Longevity Medicine
-                  </Link>
-                </p>
-              </div>
-            )}
-
-            {section.id === "skin" && (
-              <div className="mt-8 border-t border-border pt-8">
-                <p className="text-sm text-muted-foreground">
-                  Related:{" "}
-                  <Link
-                    href="/menopause-skin"
-                    className="text-primary underline decoration-primary/30 underline-offset-4 hover:text-secondary"
-                  >
-                    Menopause & Skin
-                  </Link>
-                  {" · "}
-                  <Link
-                    href="/skin-clinic-oxford"
-                    className="text-primary underline decoration-primary/30 underline-offset-4 hover:text-secondary"
-                  >
-                    Skin Clinic Oxford
-                  </Link>
-                </p>
-              </div>
-            )}
+            </ul>
           </div>
         </section>
       ))}
 
-      {/* Personalised Treatment Plans */}
-      <section className="scroll-mt-28 bg-secondary/5 py-12 md:py-16">
+      <section className="scroll-mt-28 border-t border-border/60 bg-muted/40 py-12 md:py-16">
         <div className="container-page max-w-2xl">
           <h2 className="font-sans text-3xl font-semibold leading-snug tracking-tight text-foreground md:text-4xl">
-            Personalised Treatment Plans
+            Personalised treatment plans
           </h2>
           <p className="mt-4 max-w-[62ch] text-[15px] leading-relaxed text-muted-foreground">
-            Some concerns benefit from a coordinated approach rather than a single treatment. Following
-            consultation, Dr Inga can recommend a personalised treatment plan based on your needs, preferences
-            and clinical suitability.
+            Some concerns benefit from a coordinated approach rather than a single treatment. After
+            consultation, Dr Inga can recommend a personalised plan based on your needs and clinical
+            suitability.
           </p>
-          <Link href="/personalised-treatment-plans" className="mt-6 inline-block">
-            <Button className="h-11 rounded-full bg-primary px-7 text-sm font-medium text-white hover:bg-primary/90">
-              Discuss a treatment plan
-            </Button>
-          </Link>
+          <div className="mt-6 flex flex-wrap items-center gap-4">
+            <Link href="/personalised-treatment-plans">
+              <Button className="h-11 rounded-full bg-primary px-7 text-sm font-medium text-white hover:bg-primary/90">
+                Discuss a treatment plan
+              </Button>
+            </Link>
+            <Link
+              href="/pricing"
+              className="text-sm font-medium text-primary underline underline-offset-4"
+            >
+              View prices
+            </Link>
+          </div>
         </div>
       </section>
     </div>

@@ -23,6 +23,8 @@ import {
   Shop,
   RecommendedSkincare,
   HowWeHelp,
+  ConcernsHub,
+  ConcernDetail,
   SymptomsAndTreatments,
   ProgrammeFinder,
   SkinHealthProgramme,
@@ -107,6 +109,10 @@ function Router() {
       <Switch>
         <Route path="/about" component={About} />
         <Route path="/how-we-help" component={HowWeHelp} />
+        <Route path="/concerns/:slug">
+          {(params) => <ConcernDetail slug={params.slug} />}
+        </Route>
+        <Route path="/concerns" component={ConcernsHub} />
         <Route path="/symptoms-and-treatments" component={SymptomsAndTreatments} />
         <Route path="/programme-finder" component={ProgrammeFinder} />
         <Route path="/programmes/skin-health-regeneration" component={SkinHealthProgramme} />
