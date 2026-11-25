@@ -26,9 +26,9 @@ function setMobileStickyCta(active: boolean) {
 }
 
 /**
- * Global conversion CTAs. Treatment landing pages already ship their own sticky bar;
- * elsewhere we show a mobile Book + Call bar and a desktop floating Book.
- * WhatsApp lives in WhatsAppFab (bottom-right). Hidden while the cookie banner is open.
+ * Mobile Book + Call sticky bar after scroll. Treatment landing pages ship
+ * their own sticky bar. Desktop WhatsApp lives in WhatsAppFab alone.
+ * Hidden while the cookie banner is open.
  */
 export default function FloatingButtons() {
   const [visible, setVisible] = useState(false);
@@ -51,21 +51,7 @@ export default function FloatingButtons() {
     return () => setMobileStickyCta(false);
   }, [showMobileBar]);
 
-  if (cookieBannerOpen || !visible) return null;
-
-  // Treatment pages: their StickyBar covers mobile; keep a desktop Book chip
-  // to the left of the WhatsApp FAB (56px + 16px gap → right-24).
-  if (hasSticky) {
-    return (
-      <a
-        href={bookHref}
-        aria-label="Book a consultation"
-        className="js-book-cta hidden md:inline-flex fixed bottom-6 right-24 z-40 items-center rounded-full bg-primary text-white px-5 py-3 text-sm font-medium shadow-md hover:bg-primary/90 transition-colors"
-      >
-        Book
-      </a>
-    );
-  }
+  if (!showMobileBar) return null;
 
   return (
     <>
@@ -85,14 +71,6 @@ export default function FloatingButtons() {
           </a>
         </div>
       </div>
-      {/* right-24 = 96px: FAB (56) + 16px gap + 24px edge inset */}
-      <a
-        href={bookHref}
-        aria-label="Book a consultation"
-        className="js-book-cta hidden md:inline-flex fixed bottom-6 right-24 z-40 items-center rounded-full bg-primary text-white px-5 py-3 text-sm font-medium shadow-md hover:bg-primary/90 transition-colors"
-      >
-        Book
-      </a>
     </>
   );
 }
