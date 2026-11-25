@@ -33,7 +33,7 @@ export const treatmentIllustrations = {
     src: null,
   },
   "anti-wrinkle": {
-    treatment: "Anti-wrinkle injections",
+    treatment: "Lines and wrinkles consultation",
     file: "skin-anti-wrinkle.png",
     src: null,
   },

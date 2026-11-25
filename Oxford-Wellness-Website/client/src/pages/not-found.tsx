@@ -5,7 +5,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { useEffect } from "react";
 
 const quickLinks = [
-  { label: "Anti-Wrinkle Injections", href: "/treatments/anti-wrinkle-injections-oxford" },
+  { label: "Lines and wrinkles consultation", href: "/treatments/anti-wrinkle-injections-oxford" },
   { label: "Lip Fillers", href: "/treatments/lip-fillers-oxford" },
   { label: "Profhilo", href: "/treatments/profhilo-oxford" },
   { label: "Morpheus8", href: "/treatments/morpheus8-oxford" },

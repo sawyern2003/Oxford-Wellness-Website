@@ -83,8 +83,8 @@ const posts: BlogPost[] = [
   },
   {
     slug: "anti-wrinkle-injections-oxford",
-    title: "Anti-Wrinkle Injections Explained: What They Treat and What to Expect",
-    excerpt: "Anti-wrinkle treatment explained by an Oxford GP. How they work, what they treat, results timeline, and natural-looking outcomes.",
+    title: "Lines and Wrinkles Consultation: What It Treats and What to Expect",
+    excerpt: "Lines and wrinkles consultation explained by an Oxford GP. How it works, what it treats, results timeline, and natural-looking outcomes.",
     category: "Skin",
     readTime: "8 min",
     href: "/blog/anti-wrinkle-injections-oxford",
@@ -129,7 +129,7 @@ const posts: BlogPost[] = [
   {
     slug: "jaw-slimming-treatment-oxford",
     title: "Jaw Slimming and Teeth Grinding Treatment",
-    excerpt: "Anti-wrinkle treatment for masseter reduction and teeth grinding. How jaw slimming works, results, and suitability.",
+    excerpt: "Clinic treatment for masseter reduction and teeth grinding. How jaw slimming works, results, and suitability.",
     category: "Skin",
     readTime: "7 min",
     href: "/blog/jaw-slimming-treatment-oxford",
@@ -137,8 +137,8 @@ const posts: BlogPost[] = [
   },
   {
     slug: "excessive-sweating-treatment-oxford",
-    title: "Excessive Sweating Treatment: How Anti-Wrinkle Injections Work",
-    excerpt: "Treatment for excessive underarm sweating in Oxford. How anti-wrinkle injections stop hyperhidrosis and what to expect.",
+    title: "Excessive Sweating Treatment: How Clinic Injections Work",
+    excerpt: "Treatment for excessive underarm sweating in Oxford. How clinic injections can reduce hyperhidrosis and what to expect.",
     category: "Skin",
     readTime: "6 min",
     href: "/blog/excessive-sweating-treatment-oxford",
@@ -356,7 +356,7 @@ export default function BlogIndex() {
               <p className="text-[11px] font-medium tracking-normal text-muted-foreground mb-3">About the author</p>
               <h2 className="font-sans font-semibold text-3xl text-foreground tracking-tight mb-4">Dr Inga Taganova</h2>
               <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                Dr Inga Taganova is a practising GP with more than two decades of medical experience, a background in obstetrics and gynaecology and a longstanding interest in women&apos;s health. She is a qualified aesthetic medicine practitioner. All articles are written personally by Dr Inga and reflect current evidence-based clinical practice.
+                Dr Inga Taganova is a practising GP with more than two decades of medical experience, a long background in women's health and a longstanding interest in women&apos;s health. She is a qualified aesthetic medicine practitioner. All articles are written personally by Dr Inga and reflect current evidence-based clinical practice.
               </p>
               <Link
                 href="/about"

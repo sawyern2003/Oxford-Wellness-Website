@@ -16,7 +16,7 @@ export const formaFaceliftData: TreatmentLandingPageData = {
     { q: "Does Forma hurt?", a: "No. The treatment is comfortable and relaxing. You'll feel controlled warmth as the handpiece glides over your skin. No pain, no needles, no anaesthetic." },
     { q: "How many sessions do I need?", a: "4 to 6 weekly sessions for optimal results. Dr Inga Taganova will tailor a plan during consultation." },
     { q: "When will I see results?", a: "Some patients notice subtle improvement after 1 to 2 sessions. Best results develop gradually over 2 to 3 months as collagen remodels." },
-    { q: "Can Forma be combined with other treatments?", a: "Yes. Forma pairs well with Profhilo, skin boosters, dermal fillers and anti-wrinkle injections for comprehensive facial rejuvenation." }
+    { q: "Can Forma be combined with other treatments?", a: "Yes. Forma pairs well with Profhilo, skin boosters, dermal fillers and expression-line treatment for comprehensive facial rejuvenation." }
   ],
   pricing: [{ name: "Forma, face, single session", price: "£195" }, { name: "Forma, face, course of 6", price: "£995" }],
   consultation: { name: "Aesthetic & Skin Consultation (45 min)", price: "£75" },

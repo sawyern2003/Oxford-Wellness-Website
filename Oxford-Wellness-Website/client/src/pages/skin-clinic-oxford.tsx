@@ -3,13 +3,13 @@ import TreatmentPageTemplate, { TreatmentPageData } from "@/components/treatment
 const data: TreatmentPageData = {
   title: "Skin Clinic Oxford | Doctor-Led Skin Treatments | Dr Inga Taganova",
   metaDescription:
-    "Doctor-led skin clinic in Oxford. Anti-wrinkle injections, dermal fillers, Profhilo, Morpheus8 and medical skin treatments by GMC-registered Dr Inga Taganova at Belsyre Court, Woodstock Road.",
+    "Doctor-led skin clinic in Oxford. Lines and wrinkles consultation, dermal fillers, Profhilo, Morpheus8 and medical skin treatments by GMC-registered Dr Inga Taganova at Belsyre Court, Woodstock Road.",
   canonical: "https://www.theoxfordwellnessdoctor.com/skin-clinic-oxford",
   h1: "Skin Clinic in Oxford",
   intro:
     "The Oxford Wellness Doctor offers doctor-led aesthetic and medical skin treatments at our clinic on Woodstock Road in central Oxford. All treatments are performed personally by Dr Inga Taganova, a GMC-registered GP with advanced training in aesthetic medicine.",
   summary:
-    "A medical approach to skin care and aesthetics: anti-wrinkle injections, dermal fillers, Profhilo, Morpheus8, skin boosters and medical skin treatments, delivered by a doctor in Oxford.",
+    "A medical approach to skin care and aesthetics: lines and wrinkles consultation, dermal fillers, Profhilo, Morpheus8, skin boosters and medical skin treatments, delivered by a doctor in Oxford.",
   sections: [
     {
       heading: "Doctor-led skin treatments in Oxford",
@@ -28,7 +28,7 @@ const data: TreatmentPageData = {
     {
       heading: "Treatments available",
       bullets: [
-        "Anti-wrinkle injections for forehead lines, frown lines and crow's feet",
+        "Lines and wrinkles consultation for forehead lines, frown lines and crow's feet",
         "Dermal fillers for lips, cheeks, under-eyes and facial contouring",
         "Profhilo bio-remodelling for skin quality and hydration",
         "Morpheus8 radiofrequency microneedling for skin tightening and rejuvenation",
@@ -46,9 +46,9 @@ const data: TreatmentPageData = {
       ],
     },
     {
-      heading: "Anti-wrinkle injections",
+      heading: "Lines and wrinkles consultation",
       paragraphs: [
-        "Anti-wrinkle injections use prescription medicine to temporarily relax the muscles that cause dynamic lines, forehead lines, frown lines between the brows, and crow's feet around the eyes. Results appear within 3 to 7 days, reach full effect at 2 weeks, and typically last 3 to 4 months.",
+        "Treatment for expression lines can temporarily relax the muscles that cause dynamic lines, forehead lines, frown lines between the brows, and crow's feet around the eyes. Results appear within 3 to 7 days, reach full effect at 2 weeks, and typically last 3 to 4 months.",
         "Dr Taganova's technique produces subtle, natural-looking results. The goal is not a frozen face, but a refreshed appearance that reflects how you feel rather than how old you are. Many patients find that colleagues and friends notice they look well-rested, without being able to identify what has changed.",
       ],
     },
@@ -92,9 +92,9 @@ const data: TreatmentPageData = {
   ],
   pricing: [
     { name: "Aesthetic & Skin Consultation (45 min)", price: "£75" },
-    { name: "Anti-Wrinkle Injections (1 area)", price: "£230" },
-    { name: "Anti-Wrinkle Injections (2 areas)", price: "£295" },
-    { name: "Anti-Wrinkle Injections (3 areas)", price: "£350" },
+    { name: "Lines and wrinkles treatment (1 area)", price: "£230" },
+    { name: "Lines and wrinkles treatment (2 areas)", price: "£295" },
+    { name: "Lines and wrinkles treatment (3 areas)", price: "£350" },
     { name: "Profhilo (per session)", price: "£350" },
     { name: "Morpheus8 Face (per session)", price: "£600" },
   ],
@@ -105,7 +105,7 @@ const data: TreatmentPageData = {
     },
     {
       q: "How much do treatments cost in Oxford?",
-      a: "Anti-wrinkle injections start from £230 for one area. Profhilo is £350 per session. Morpheus8 face is £600 per session. A consultation is £75. Prices are transparent and include follow-up appointments where applicable.",
+      a: "Lines and wrinkles treatment starts from £230 for one area. Profhilo is £350 per session. Morpheus8 face is £600 per session. A consultation is £75. Prices are transparent and include follow-up appointments where applicable.",
     },
     {
       q: "Will I look natural after treatment?",
@@ -113,7 +113,7 @@ const data: TreatmentPageData = {
     },
     {
       q: "Is there any downtime after treatment?",
-      a: "Most treatments require no downtime. Anti-wrinkle injections and dermal fillers may cause minor swelling or bruising that resolves within a few days. Profhilo typically causes no downtime. Morpheus8 causes temporary redness and mild swelling for 2 to 3 days.",
+      a: "Most treatments require no downtime. Lines and wrinkles treatment and dermal fillers may cause minor swelling or bruising that resolves within a few days. Profhilo typically causes no downtime. Morpheus8 causes temporary redness and mild swelling for 2 to 3 days.",
     },
     {
       q: "Where is the skin clinic located?",
@@ -127,11 +127,11 @@ const data: TreatmentPageData = {
   procedureSchema: {
     name: "Skin Clinic Consultation Oxford",
     description:
-      "Doctor-led skin and aesthetic consultation in Oxford with GMC-registered Dr Inga Taganova, covering anti-wrinkle injections, dermal fillers, Profhilo, Morpheus8 and medical skin treatments.",
+      "Doctor-led skin and aesthetic consultation in Oxford with GMC-registered Dr Inga Taganova, covering lines and wrinkles consultation, dermal fillers, Profhilo, Morpheus8 and medical skin treatments.",
     bodyLocation: "Face",
   },
   relatedLinks: [
-    { label: "Anti-Wrinkle Injections", href: "/treatments/anti-wrinkle-injections-oxford" },
+    { label: "Lines and wrinkles consultation", href: "/treatments/anti-wrinkle-injections-oxford" },
     { label: "Dermal Fillers", href: "/treatments/dermal-fillers-oxford" },
     { label: "Profhilo", href: "/treatments/profhilo-oxford" },
     { label: "Morpheus8", href: "/treatments/morpheus8-oxford" },

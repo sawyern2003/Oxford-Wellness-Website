@@ -9,7 +9,7 @@ const data: BlogPostData = {
   category: "Menopause & Women's Health",
   readTime: "6 min",
   datePublished: "2024-09-22",
-  intro: "If you have noticed that your skin has changed in your 40s or 50s, becoming drier, thinner, less plump, or more prone to lines, you are not imagining it. These changes are real, measurable, and directly linked to the hormonal shifts of the menopause transition. As a GP with a background in obstetrics and gynaecology who now practises aesthetic medicine, Dr Inga Taganova is in a position to explain what is actually happening to your skin during menopause, and, more importantly, what genuinely helps.",
+  intro: "If you have noticed that your skin has changed in your 40s or 50s, becoming drier, thinner, less plump, or more prone to lines, you are not imagining it. These changes are real, measurable, and directly linked to the hormonal shifts of the menopause transition. As a GP with a long background in women's health who now practises aesthetic medicine, Dr Inga Taganova is in a position to explain what is actually happening to your skin during menopause, and, more importantly, what genuinely helps.",
   sections: [
     {
       heading: "Why Skin Changes During Menopause",
@@ -61,7 +61,7 @@ const data: BlogPostData = {
       ],
       bullets: [
         "Profhilo: An ultra-pure hyaluronic acid treatment that stimulates collagen and elastin production from within the dermis. Particularly well-suited to the skin quality changes of menopause, improving texture, radiance, and elasticity rather than adding volume. Dr Inga Taganova frequently recommends Profhilo as the first aesthetic treatment for menopausal patients.",
-        "Anti-wrinkle injections: Address the dynamic lines (forehead, frown, crow's feet) that become more pronounced as skin loses elasticity. Can be combined with HRT for maximum effect.",
+        "Lines and wrinkles treatment: Address the dynamic lines (forehead, frown, crow's feet) that become more pronounced as skin loses elasticity. Can be combined with HRT for maximum effect.",
         "Dermal fillers: Restore the volume lost from the mid-face and temples, structural changes that HRT cannot reverse.",
         "Morpheus8: Radiofrequency microneedling that stimulates deep dermal remodelling and collagen production, particularly effective for skin laxity along the jawline and neck.",
         "Skin boosters: Microinjections of hyaluronic acid that provide direct hydration and stimulate collagen, ideal for very dry, thinned menopausal skin.",

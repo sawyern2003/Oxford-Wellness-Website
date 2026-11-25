@@ -130,9 +130,9 @@ export const treatmentsGuideSections: GuideSection[] = [
     imageAlt: "Watercolour of olive leaves and a blush flower",
     items: [
       {
-        name: "Expression line treatment",
+        name: "Lines and wrinkles consultation",
         whoFor: "People bothered by forehead lines, frown lines or crow's feet.",
-        helpsWith: "Softening of selected expression lines after assessment.",
+        helpsWith: "A doctor-led assessment of expression lines, with treatment discussed only after consultation.",
         href: "/treatments/anti-wrinkle-injections-oxford",
       },
       {

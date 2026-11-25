@@ -23,9 +23,9 @@ export interface TreatmentGlance {
 
 const GLANCE_DATA: Record<string, TreatmentGlance> = {
   "/treatments/anti-wrinkle-injections-oxford": {
-    treatmentName: "Anti-Wrinkle Injections",
+    treatmentName: "Lines and wrinkles consultation",
     summary:
-      "Prescription muscle-relaxing injections smooth dynamic lines, forehead, frown, and crow's feet, with natural-looking results from a GMC-registered doctor.",
+      "A doctor-led consultation for expression lines such as forehead, frown and crow's feet, with natural-looking results from a GMC-registered GP.",
     highlights: [
       "Forehead lines",
       "Frown lines between the brows",

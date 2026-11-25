@@ -62,7 +62,7 @@ const data: BlogPostData = {
     {
       heading: "Examination",
       paragraphs: [
-        "A full physical examination is not always required at a first menopause consultation. Weight, height and blood pressure are usually checked. If you have specific concerns, for example, unexplained bleeding or pelvic symptoms, a gynaecological examination may be offered. But a routine internal examination is not necessary simply to prescribe HRT.",
+        "A full physical examination is not always required at a first menopause consultation. Weight, height and blood pressure are usually checked. If you have specific concerns, for example, unexplained bleeding or pelvic symptoms, a pelvic examination may be offered. But a routine internal examination is not necessary simply to prescribe HRT.",
         "Some clinics offer additional assessments such as bone density scans or cardiovascular risk scoring, but these are not mandatory for most women starting standard HRT.",
       ],
     },
@@ -132,7 +132,7 @@ const data: BlogPostData = {
     {
       heading: "Consultations at The Oxford Wellness Doctor",
       paragraphs: [
-        "Dr Inga Taganova is a GMC-registered GP with a background in obstetrics and gynaecology. Consultations take place at Belsyre Court in Oxford and are designed to be calm, thorough, and collaborative.",
+        "Dr Inga Taganova is a GMC-registered GP with a long background in women's health. Consultations take place at Belsyre Court in Oxford and are designed to be calm, thorough, and collaborative.",
         "If you decide to proceed with treatment, prescriptions are issued on the day where appropriate. Follow-up consultations can be arranged in person or remotely, depending on your preference and clinical need.",
       ],
     },

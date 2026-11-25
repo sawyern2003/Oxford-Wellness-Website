@@ -4,6 +4,9 @@ import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useCookieBannerOpen } from "@/hooks/useCookieBannerOpen";
 import { useSEO } from "@/hooks/useSEO";
+import { useBreadcrumbSchema } from "@/hooks/useBreadcrumbSchema";
+import { useJsonLdSchema, createFAQPageSchema } from "@/hooks/useJsonLdSchema";
+import { formatTreatmentFromFee } from "@/lib/treatmentFees";
 import { treatmentWhatsAppMessage, whatsappHref } from "@/lib/whatsapp";
 import RelatedTreatments from "./RelatedTreatments";
 import doctorPortraitJpg from "@assets/dr-inga-taganova-portrait.jpg";
@@ -126,6 +129,10 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
   const bookingUrl = `/book?treatment=${data.slug}`;
   const treatmentName = data.procedureSchema.name.replace(/\s+Oxford$/i, "").trim() || data.h1;
   const whatsappUrl = whatsappHref(treatmentWhatsAppMessage(treatmentName));
+  const path = data.canonical.replace("https://www.theoxfordwellnessdoctor.com", "");
+  const isTreatmentSub = path.startsWith("/treatments/");
+  // Use the page's stated starting fee (priceValue), not add-on rows.
+  const fromFee = formatTreatmentFromFee([data.priceValue]);
 
   useSEO({
     title: data.title,
@@ -133,64 +140,17 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
     canonical: data.canonical,
   });
 
-  useEffect(() => {
-    const BASE = "https://www.theoxfordwellnessdoctor.com";
-    const path = data.canonical.replace(BASE, "");
-    const isTreatmentSub = path.startsWith("/treatments/");
-    const breadcrumbItems = isTreatmentSub
+  useBreadcrumbSchema(
+    isTreatmentSub
       ? [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": `${BASE}/` },
-          { "@type": "ListItem", "position": 2, "name": "Treatments", "item": `${BASE}/treatments` },
-          { "@type": "ListItem", "position": 3, "name": data.procedureSchema.name, "item": data.canonical },
+          { name: "Treatments", path: "/treatments" },
+          { name: treatmentName, path },
         ]
-      : [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": `${BASE}/` },
-          { "@type": "ListItem", "position": 2, "name": data.procedureSchema.name, "item": data.canonical },
-        ];
+      : [{ name: treatmentName, path }],
+    `treatment-breadcrumb-${data.slug}`
+  );
 
-    const schema = {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "MedicalProcedure",
-          "name": data.procedureSchema.name,
-          "description": data.procedureSchema.description,
-          "procedureType": "TherapeuticProcedure",
-          "status": "ActiveNotRecruiting",
-          "bodyLocation": data.procedureSchema.bodyLocation || "Face",
-          "preparation": "Initial consultation with Dr. Inga Taganova at The Oxford Wellness Doctor, Belsyre Court, 57 Woodstock Rd, Oxford OX2 6HJ.",
-          "followUp": "Two-week follow-up assessment included. Aftercare instructions provided.",
-          "performer": {
-            "@type": "Physician",
-            "name": "Dr Inga Taganova",
-            "identifier": { "@type": "PropertyValue", "name": "GMC Number", "value": "4727817" }
-          }
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": data.faqs.map((faq) => ({
-            "@type": "Question",
-            "name": faq.q,
-            "acceptedAnswer": { "@type": "Answer", "text": faq.a }
-          }))
-        },
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": breadcrumbItems,
-        }
-      ]
-    };
-
-    let script = document.getElementById("treatment-landing-schema") as HTMLScriptElement | null;
-    if (!script) {
-      script = document.createElement("script");
-      script.id = "treatment-landing-schema";
-      script.type = "application/ld+json";
-      document.head.appendChild(script);
-    }
-    script.textContent = JSON.stringify(schema);
-    return () => { document.getElementById("treatment-landing-schema")?.remove(); };
-  }, [data]);
+  useJsonLdSchema(createFAQPageSchema(data.faqs), `treatment-faq-${data.slug}`);
 
   return (
     <>
@@ -203,13 +163,7 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
               </h1>
 
               <div className="mb-6">
-                <p className="text-3xl font-semibold text-primary mb-2">
-                  {data.priceLabel && !/^from$/i.test(data.priceLabel.trim())
-                    ? `${data.priceLabel} ${data.priceValue}`
-                    : data.priceValue.toLowerCase().startsWith("from")
-                      ? data.priceValue
-                      : `From ${data.priceValue}`}
-                </p>
+                <p className="text-3xl font-semibold text-primary mb-2">{fromFee}</p>
                 <Link
                   href="/pricing"
                   className="text-sm font-medium text-primary underline underline-offset-4"

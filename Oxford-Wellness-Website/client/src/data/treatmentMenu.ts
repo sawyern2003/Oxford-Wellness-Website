@@ -57,14 +57,14 @@ export const treatmentTypes: TreatmentType[] = [
   },
   {
     id: "anti-wrinkle",
-    title: "Anti-wrinkle treatments",
+    title: "Lines and wrinkles",
     intro:
       "Treatment to soften lines such as forehead lines, frown lines and crow's feet, and related treatment of the jaw and underarms after assessment.",
     image: antiWrinkle,
     imageAlt: "Watercolour of a blue flax flower and a fern",
     items: [
       {
-        name: "Anti-wrinkle injections",
+        name: "Lines and wrinkles consultation",
         description: "Treatment to soften lines such as forehead lines, frown lines and crow's feet.",
         href: "/treatments/anti-wrinkle-injections-oxford",
       },
@@ -236,7 +236,7 @@ export const treatmentMenuColumns: MenuGroup[][] = [
     {
       title: "Injectables",
       items: [
-        { name: "Anti-wrinkle treatments", href: "/treatments/anti-wrinkle-injections-oxford" },
+        { name: "Lines and wrinkles consultation", href: "/treatments/anti-wrinkle-injections-oxford" },
         { name: "Dermal fillers", href: "/treatments/dermal-fillers-oxford" },
         { name: "Lip fillers", href: "/treatments/lip-fillers-oxford" },
         { name: "Filler dissolving", href: "/treatments/filler-dissolving-oxford" },

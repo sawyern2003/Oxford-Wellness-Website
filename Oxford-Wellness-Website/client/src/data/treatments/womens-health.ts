@@ -25,7 +25,7 @@ export const womensHealthData: TreatmentLandingPageData = {
   
   howItWorks: {
     heading: "Your women's health consultation",
-    intro: "Dr Inga Taganova is a GP with a background in obstetrics and gynaecology who provides expert women's health consultations at her clinic in central Oxford. With more than two decades of medical experience, she understands that menopause and women's health transitions affect far more than hormones, they shape how you feel in your body, your skin, your mood, and your daily life.",
+    intro: "Dr Inga Taganova is a GP with a long background in women's health who provides expert women's health consultations at her clinic in central Oxford. With more than two decades of medical experience, she understands that menopause and women's health transitions affect far more than hormones, they shape how you feel in your body, your skin, your mood, and your daily life.",
     steps: [
       "Full symptom assessment and medical history review. Dr Inga Taganova takes time to understand your experience.",
       "Discussion of all available treatment options, including lifestyle interventions, non-hormonal approaches, and specialist referrals if HRT is clinically appropriate.",
@@ -43,8 +43,8 @@ export const womensHealthData: TreatmentLandingPageData = {
   trust: {
     heading: "Why choose The Oxford Wellness Doctor for women's health",
     items: [
-      "Doctor-led clinic: Dr Inga Taganova is a GMC-registered GP (GMC No. 4727817) with a background in obstetrics and gynaecology",
-      "more than two decades of medical experiencecare, including hospital gynaecology and GP practice",
+      "Doctor-led clinic: Dr Inga Taganova is a GMC-registered GP (GMC No. 4727817) with a long background in women's health",
+      "more than two decades of medical experiencecare, including hospital women's health and GP practice",
       "Trained in the UK, France, and Monaco with expertise in hormonal health and aesthetic medicine",
       "Comprehensive approach: medical assessment combined with aesthetic care for skin, body, and intimate health concerns",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ (central Oxford, near St Giles)",
@@ -56,15 +56,15 @@ export const womensHealthData: TreatmentLandingPageData = {
   faqs: [
     {
       q: "What women's health concerns can you help with?",
-      a: "We provide expert care for menopause and perimenopause symptoms (hot flushes, night sweats, mood changes, brain fog), intimate health concerns (vaginal dryness, discomfort, loss of libido), hormonal changes, sleep disturbances, skin and hair changes related to hormonal decline, joint aches, fatigue, and palpitations. Dr Inga Taganova's background in obstetrics and gynaecology means she can address the full spectrum of women's health concerns that arise during midlife transitions."
+      a: "We provide expert care for menopause and perimenopause symptoms (hot flushes, night sweats, mood changes, brain fog), intimate health concerns (vaginal dryness, discomfort, loss of libido), hormonal changes, sleep disturbances, skin and hair changes related to hormonal decline, joint aches, fatigue, and palpitations. Dr Inga Taganova's long background in women's health means she can address the full spectrum of women's health concerns that arise during midlife transitions."
     },
     {
       q: "What happens at a women's health consultation?",
-      a: "Your initial consultation is a comprehensive 60-minute appointment, not a rushed 10-minute assessment. Dr Inga Taganova will take a full medical and gynaecological history, discuss your current symptoms in detail, explore how they're affecting your daily life and relationships, assess whether they suggest perimenopause, menopause, or another cause, and create a personalised treatment plan. You will leave with a clear understanding of what is happening and a detailed plan for managing your symptoms."
+      a: "Your initial consultation is a comprehensive 60-minute appointment, not a rushed 10-minute assessment. Dr Inga Taganova will take a full medical and women's health history, discuss your current symptoms in detail, explore how they're affecting your daily life and relationships, assess whether they suggest perimenopause, menopause, or another cause, and create a personalised treatment plan. You will leave with a clear understanding of what is happening and a detailed plan for managing your symptoms."
     },
     {
       q: "Can you prescribe HRT?",
-      a: "While we do not currently prescribe HRT at this clinic, Dr Inga Taganova can assess your suitability for hormone therapy and provide specialist referrals if HRT is clinically indicated. Her background as a GP with training in obstetrics and gynaecology means she understands the nuances of hormone replacement, contraindications, different HRT formulations, and can guide you towards the right support for your individual circumstances."
+      a: "While we do not currently prescribe HRT at this clinic, Dr Inga Taganova can assess your suitability for hormone therapy and provide specialist referrals if HRT is clinically indicated. Her background as a GP with training in women's health means she understands the nuances of hormone replacement, contraindications, different HRT formulations, and can guide you towards the right support for your individual circumstances."
     },
     {
       q: "How much are follow-up appointments?",
@@ -72,7 +72,7 @@ export const womensHealthData: TreatmentLandingPageData = {
     },
     {
       q: "Can you help with intimate health concerns?",
-      a: "Yes. Dr Inga Taganova's background in obstetrics and gynaecology means she can address intimate health concerns including vaginal dryness, discomfort, painful intercourse, loss of sensation, and sexual wellness. These symptoms are common during and after menopause but are rarely discussed openly. We offer an Intimate Health Consultation at £150, and treatments including Forma V (£450 single session, £1,200 course of 3) and intimate hyaluronic acid treatments where clinically appropriate."
+      a: "Yes. Dr Inga Taganova's long background in women's health means she can address intimate health concerns including vaginal dryness, discomfort, painful intercourse, loss of sensation, and sexual wellness. These symptoms are common during and after menopause but are rarely discussed openly. We offer an Intimate Health Consultation at £150, and treatments including Forma V (£450 single session, £1,200 course of 3) and intimate hyaluronic acid treatments where clinically appropriate."
     },
     {
       q: "Do I need blood tests?",

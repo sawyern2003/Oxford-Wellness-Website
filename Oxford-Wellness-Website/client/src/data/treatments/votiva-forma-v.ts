@@ -40,7 +40,7 @@ export const votivaFormaVData: TreatmentLandingPageData = {
   trust: {
     heading: "Why choose The Oxford Wellness Doctor",
     items: [
-      "Doctor-led clinic: Dr Inga Taganova is a GMC-registered GP with a background in obstetrics and gynaecology",
+      "Doctor-led clinic: Dr Inga Taganova is a GMC-registered GP with a long background in women's health",
       "Located at Belsyre Court, 57 Woodstock Road, Oxford OX2 6HJ",
       "more than two decades of medical experience",
       "FDA-cleared, non-invasive treatment",
@@ -91,7 +91,7 @@ export const votivaFormaVData: TreatmentLandingPageData = {
   
   procedureSchema: {
     name: "Votiva FormaV Intimate Wellness Treatment Oxford",
-    description: "Non-surgical radiofrequency intimate wellness treatment to help with dryness, discomfort, and symptoms related to hormonal changes. Delivered by GP Dr Inga Taganova with a background in obstetrics and gynaecology in Oxford.",
+    description: "Non-surgical radiofrequency intimate wellness treatment to help with dryness, discomfort, and symptoms related to hormonal changes. Delivered by GP Dr Inga Taganova with a long background in women's health in Oxford.",
     bodyLocation: "Intimate area"
   }
 };

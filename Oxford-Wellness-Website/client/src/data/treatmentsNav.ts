@@ -63,7 +63,7 @@ export const relatedTreatments: Record<string, TreatmentLink[]> = {
     { name: "Lip Fillers", href: "/treatments/lip-fillers-oxford" },
   ],
   "jaw-slimming-teeth-grinding-oxford": [
-    { name: "Anti-Wrinkle Injections", href: "/treatments/anti-wrinkle-injections-oxford" },
+    { name: "Lines and wrinkles consultation", href: "/treatments/anti-wrinkle-injections-oxford" },
     { name: "Excessive Sweating", href: "/treatments/excessive-sweating-treatment-oxford" },
   ],
   "forma-facelift-oxford": [
@@ -82,7 +82,7 @@ export const relatedTreatments: Record<string, TreatmentLink[]> = {
     { name: "Profhilo", href: "/treatments/profhilo-oxford" },
   ],
   "excessive-sweating-treatment-oxford": [
-    { name: "Anti-Wrinkle Injections", href: "/treatments/anti-wrinkle-injections-oxford" },
+    { name: "Lines and wrinkles consultation", href: "/treatments/anti-wrinkle-injections-oxford" },
     { name: "Jaw Treatment", href: "/treatments/jaw-slimming-teeth-grinding-oxford" },
   ],
 

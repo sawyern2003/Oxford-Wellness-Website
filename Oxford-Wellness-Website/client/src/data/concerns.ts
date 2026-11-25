@@ -257,7 +257,7 @@ export const concerns: ConcernPageData[] = [
     ],
     consultationHeading: "How a consultation helps",
     consultationBody: [
-      "This is an in-person advice consultation with Dr Inga Taganova, GP. It focuses on listening to your history, discussing midlife body change, and offering practical guidance tailored to you.",
+      "This is an in-person advice consultation with Dr Inga Taganova, GP. It focuses on listening to your history, discussing midlife body change, and practical advice that fits your day-to-day life.",
       "There are no blood tests and no diagnosis in this appointment. It is advice only. If other clinic pathways may be relevant later, that can be discussed without pressure.",
     ],
     relatedHeading: "Related consultations",

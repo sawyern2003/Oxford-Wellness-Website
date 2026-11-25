@@ -66,7 +66,7 @@ export const programmes: Programme[] = [
       { name: "Morpheus8", href: "/treatments/morpheus8-oxford" },
       { name: "Lumecca IPL", href: "/treatments/lumecca-ipl-oxford" },
       { name: "Chemical Peels", href: "/treatments/chemical-peels-oxford" },
-      { name: "Anti-Wrinkle Injections", href: "/treatments/anti-wrinkle-injections-oxford" },
+      { name: "Lines and wrinkles consultation", href: "/treatments/anti-wrinkle-injections-oxford" },
       { name: "Recommended Skincare", href: "/recommended-skincare" },
     ],
     expectedImprovements: [
@@ -112,7 +112,7 @@ export const programmes: Programme[] = [
       "Anyone who wants sensitive, evidence-based guidance",
     ],
     doctorOverview:
-      "As a GP with a background in obstetrics and gynaecology and GP with experience in menopause care, Dr Inga approaches intimate wellness with clinical depth and complete discretion. Conversations are calm, private and never rushed.",
+      "As a GP with a long background in women's health and GP with experience in menopause care, Dr Inga approaches intimate wellness with clinical depth and complete discretion. Conversations are calm, private and never rushed.",
     journey: [
       "Confidential online consultation",
       "Personalised intimate wellness plan",

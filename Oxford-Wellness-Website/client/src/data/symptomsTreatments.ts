@@ -209,7 +209,7 @@ export const symptoms: Symptom[] = [
       {
         name: "Specialist menopause consultation",
         href: "/menopause-clinic-oxford",
-        why: "Gynaecological assessment of the tissue, and discussion of local oestrogen options.",
+        why: "Clinical assessment of the tissue, and discussion of local oestrogen options.",
       },
     ],
   },
@@ -275,7 +275,7 @@ export const symptoms: Symptom[] = [
         why: "Where pelvic floor weakness dates from childbirth rather than menopause alone.",
       },
     ],
-    note: "Recurrent infection and moderate or severe incontinence are referred to urogynaecology.",
+    note: "Recurrent infection and moderate or severe incontinence are referred to a specialist women's health team.",
   },
   {
     id: "breast-tenderness",
@@ -287,7 +287,7 @@ export const symptoms: Symptom[] = [
       {
         name: "Specialist menopause consultation",
         href: "/menopause-clinic-oxford",
-        why: "Examination by a GP with a background in obstetrics and gynaecology, then cyclical tenderness managed within your wider plan.",
+        why: "Examination by a GP with a long background in women's health, then cyclical tenderness managed within your wider plan.",
       },
       {
         name: "Women's health assessment",
@@ -336,7 +336,7 @@ export const symptoms: Symptom[] = [
       {
         name: "Perimenopause assessment",
         href: "/perimenopause-oxford",
-        why: "A full gynaecological history, and clarity on which bleeding patterns need investigating.",
+        why: "A full women's health history, and clarity on which bleeding patterns need investigating.",
       },
       {
         name: "Specialist menopause consultation",
@@ -380,7 +380,7 @@ export const treatmentApproaches: TreatmentApproach[] = [
     title: "Specialist Menopause Assessment",
     icon: "assessment",
     description:
-      "A 1-hour assessment with a GP with a background in obstetrics and gynaecology and GP with experience in menopause care. Where hormone therapy is clinically appropriate, Dr Inga confirms your suitability and arranges specialist prescribing.",
+      "A 1-hour assessment with a GP with a long background in women's health and GP with experience in menopause care. Where hormone therapy is clinically appropriate, Dr Inga confirms your suitability and arranges specialist prescribing.",
   },
   {
     id: "non-hormonal",

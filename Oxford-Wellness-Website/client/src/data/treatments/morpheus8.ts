@@ -66,7 +66,7 @@ export const morpheus8Data: TreatmentLandingPageData = {
     },
     {
       q: "Can Morpheus8 be combined with other treatments?",
-      a: "Yes, Morpheus8 pairs very well with skin booster injections, Profhilo, and anti-wrinkle injections. Dr Inga Taganova will create a combined treatment plan for the best possible outcomes."
+      a: "Yes, Morpheus8 pairs very well with skin booster injections and Profhilo. Dr Inga Taganova will create a combined treatment plan for the best possible outcomes."
     }
   ],
   
