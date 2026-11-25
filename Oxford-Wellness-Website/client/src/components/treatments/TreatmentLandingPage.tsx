@@ -74,11 +74,22 @@ export interface TreatmentLandingPageData {
 interface StickyBarProps {
   slug: string;
   bookingUrl: string;
-  whatsappUrl: string;
 }
 
-function StickyBar({ slug, bookingUrl, whatsappUrl }: StickyBarProps) {
+function StickyBar({ slug, bookingUrl }: StickyBarProps) {
   const cookieBannerOpen = useCookieBannerOpen();
+
+  useEffect(() => {
+    if (cookieBannerOpen) {
+      delete document.documentElement.dataset.mobileStickyCta;
+      return;
+    }
+    document.documentElement.dataset.mobileStickyCta = "";
+    return () => {
+      delete document.documentElement.dataset.mobileStickyCta;
+    };
+  }, [cookieBannerOpen]);
+
   if (cookieBannerOpen) return null;
 
   return (
@@ -102,18 +113,6 @@ function StickyBar({ slug, bookingUrl, whatsappUrl }: StickyBarProps) {
         >
           <Button variant="outline" size="icon" className="h-10 w-10 rounded-full flex-shrink-0">
             <Phone size={18} />
-          </Button>
-        </a>
-        <a
-          href={whatsappUrl}
-          id="whatsapp-cta-sticky"
-          className="js-whatsapp-cta"
-          data-treatment={slug}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button variant="outline" size="icon" className="h-10 w-10 rounded-full flex-shrink-0">
-            <MessageCircle size={18} />
           </Button>
         </a>
       </div>
@@ -455,7 +454,7 @@ export default function TreatmentLandingPage({ data }: { data: TreatmentLandingP
 
       <RelatedTreatments currentSlug={data.slug} />
 
-      <StickyBar slug={data.slug} bookingUrl={bookingUrl} whatsappUrl={whatsappUrl} />
+      <StickyBar slug={data.slug} bookingUrl={bookingUrl} />
     </>
   );
 }

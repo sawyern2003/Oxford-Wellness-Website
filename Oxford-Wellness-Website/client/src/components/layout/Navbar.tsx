@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { isPainRoute, PAIN_BOOK_HREF, PAIN_CONTACT_HREF } from "@/lib/brand";
+import { dispatchMobileNavChange } from "@/lib/mobile-nav";
 import { TreatmentMenuMobile, TreatmentMenuPanel } from "@/components/layout/TreatmentMenu";
 
 const wellnessNavLinks = [
@@ -50,6 +51,11 @@ export default function Navbar() {
     setIsOpen(false);
     setHelpOpen(false);
   }, [location]);
+
+  useEffect(() => {
+    dispatchMobileNavChange(isOpen);
+    return () => dispatchMobileNavChange(false);
+  }, [isOpen]);
 
   const clearHelpClose = () => {
     if (helpCloseTimer.current !== null) {

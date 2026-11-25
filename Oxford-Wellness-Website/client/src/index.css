@@ -488,3 +488,22 @@ html.has-custom-cursor :is(input:not([type="checkbox"]):not([type="radio"]):not(
   }
 }
 
+/* Floating WhatsApp FAB — fixed offsets; lifts above mobile sticky CTAs */
+.whatsapp-fab {
+  right: 1rem;
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+}
+
+@media (min-width: 768px) {
+  .whatsapp-fab {
+    right: 1.5rem;
+    bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  html[data-mobile-sticky-cta] .whatsapp-fab {
+    bottom: calc(4.25rem + 1rem + env(safe-area-inset-bottom, 0px));
+  }
+}
+

@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone } from "lucide-react";
 import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { useCookieBannerOpen } from "@/hooks/useCookieBannerOpen";
 import { isPainRoute, PAIN_BOOK_HREF } from "@/lib/brand";
-import { CONSULTATION_WHATSAPP_MESSAGE, whatsappHref } from "@/lib/whatsapp";
 
 const STICKY_BAR_ROUTES = [
   "/treatments/",
@@ -17,10 +16,19 @@ function hasTreatmentStickyBar(path: string): boolean {
   return STICKY_BAR_ROUTES.some((route) => path.startsWith(route));
 }
 
+function setMobileStickyCta(active: boolean) {
+  if (typeof document === "undefined") return;
+  if (active) {
+    document.documentElement.dataset.mobileStickyCta = "";
+  } else {
+    delete document.documentElement.dataset.mobileStickyCta;
+  }
+}
+
 /**
- * Global conversion CTAs. Treatment landing pages already ship their own sticky bar;
- * elsewhere we show a mobile Book + Call + WhatsApp bar and a desktop floating Book.
- * Hidden while the cookie banner is open so Reject/Accept stay usable.
+ * Mobile Book + Call sticky bar after scroll. Treatment landing pages ship
+ * their own sticky bar. Desktop WhatsApp lives in WhatsAppFab alone.
+ * Hidden while the cookie banner is open.
  */
 export default function FloatingButtons() {
   const [visible, setVisible] = useState(false);
@@ -29,7 +37,7 @@ export default function FloatingButtons() {
   const pain = isPainRoute(location);
   const hasSticky = hasTreatmentStickyBar(location);
   const bookHref = pain ? PAIN_BOOK_HREF : "/book";
-  const whatsappUrl = whatsappHref(CONSULTATION_WHATSAPP_MESSAGE);
+  const showMobileBar = visible && !cookieBannerOpen && !hasSticky;
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 300);
@@ -38,20 +46,12 @@ export default function FloatingButtons() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  if (cookieBannerOpen || !visible) return null;
+  useEffect(() => {
+    setMobileStickyCta(showMobileBar);
+    return () => setMobileStickyCta(false);
+  }, [showMobileBar]);
 
-  // Treatment pages: their StickyBar covers mobile; keep a desktop Book chip only.
-  if (hasSticky) {
-    return (
-      <a
-        href={bookHref}
-        aria-label="Book a consultation"
-        className="js-book-cta hidden md:inline-flex fixed bottom-6 right-6 z-50 items-center rounded-full bg-primary text-white px-5 py-3 text-sm font-medium shadow-md hover:bg-primary/90 transition-colors"
-      >
-        Book
-      </a>
-    );
-  }
+  if (!showMobileBar) return null;
 
   return (
     <>
@@ -69,26 +69,8 @@ export default function FloatingButtons() {
               <Phone size={18} />
             </Button>
           </a>
-          <a
-            href={whatsappUrl}
-            className="js-whatsapp-cta"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="WhatsApp the clinic"
-          >
-            <Button variant="outline" size="icon" className="h-10 w-10 rounded-full flex-shrink-0">
-              <MessageCircle size={18} />
-            </Button>
-          </a>
         </div>
       </div>
-      <a
-        href={bookHref}
-        aria-label="Book a consultation"
-        className="js-book-cta hidden md:inline-flex fixed bottom-6 right-6 z-50 items-center rounded-full bg-primary text-white px-5 py-3 text-sm font-medium shadow-md hover:bg-primary/90 transition-colors"
-      >
-        Book
-      </a>
     </>
   );
 }

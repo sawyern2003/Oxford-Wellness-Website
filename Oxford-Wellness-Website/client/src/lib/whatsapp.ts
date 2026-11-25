@@ -10,4 +10,4 @@ export function treatmentWhatsAppMessage(treatmentName: string): string {
 }
 
 export const CONSULTATION_WHATSAPP_MESSAGE =
-  "Hi, I'd like to ask about a consultation";
+  "Hello, I'd like to ask about a consultation.";
