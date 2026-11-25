@@ -5,11 +5,19 @@
  */
 
 import { readAnalyticsConsent, type AnalyticsConsent } from "@/lib/consent";
+import { isClinikoOrigin } from "@/lib/clinikoEmbed";
+
+/** Same property as analytics.ts — kept local to avoid a circular import. */
+const GA_MEASUREMENT_ID = "G-WLVKNL5BG9";
 
 const ADS_ID = (import.meta.env.VITE_GOOGLE_ADS_ID as string | undefined)?.trim() || "";
 const BOOK_LABEL = (import.meta.env.VITE_GADS_BOOK_LABEL as string | undefined)?.trim() || "";
 const WHATSAPP_LABEL = (import.meta.env.VITE_GADS_WHATSAPP_LABEL as string | undefined)?.trim() || "";
 const TEL_LABEL = (import.meta.env.VITE_GADS_TEL_LABEL as string | undefined)?.trim() || "";
+const BOOKING_COMPLETED_LABEL =
+  (import.meta.env.VITE_GADS_BOOKING_COMPLETED_LABEL as string | undefined)?.trim() || "";
+
+const CLINIKO_BOOKING_CONFIRMED = "cliniko-bookings-page:confirmed";
 
 const GCLID_COOKIE = "owd_gclid";
 const GCLID_SESSION = "owd_gclid";
@@ -116,6 +124,7 @@ export function initGoogleAds() {
 
   captureClickIdsFromUrl();
   installConversionClickListener();
+  installBookingCompletedListener();
 }
 
 function consentAllowsAds(): boolean {
@@ -218,7 +227,41 @@ export function appendGclidToClinikoUrl(href: string): string {
 }
 
 let listenerInstalled = false;
+let bookingCompletedListenerInstalled = false;
+let bookingCompletedFired = false;
 let adsInitialized = false;
+
+/**
+ * Cliniko posts `cliniko-bookings-page:confirmed` when a booking succeeds.
+ * Fires once per page load. Ads conversion is a no-op until the label is set.
+ * GA4 `booking_completed` still fires when analytics consent is accepted.
+ * No value, transaction id, or patient data is sent.
+ */
+function installBookingCompletedListener() {
+  if (typeof window === "undefined" || bookingCompletedListenerInstalled) return;
+  bookingCompletedListenerInstalled = true;
+
+  window.addEventListener("message", (event: MessageEvent) => {
+    if (!isClinikoOrigin(event.origin)) return;
+    if (event.data !== CLINIKO_BOOKING_CONFIRMED) return;
+    if (bookingCompletedFired) return;
+    bookingCompletedFired = true;
+
+    if (BOOKING_COMPLETED_LABEL) {
+      sendConversion(BOOKING_COMPLETED_LABEL);
+    }
+
+    if (readAnalyticsConsent() === "accepted" && typeof window.gtag === "function") {
+      const path = window.location.pathname;
+      const clinic = path.startsWith("/oxford-pain-doctor") ? "pain" : "wellness";
+      window.gtag("event", "booking_completed", {
+        send_to: GA_MEASUREMENT_ID,
+        booking_system: "cliniko",
+        clinic,
+      });
+    }
+  });
+}
 
 function installConversionClickListener() {
   if (typeof document === "undefined" || listenerInstalled) return;
