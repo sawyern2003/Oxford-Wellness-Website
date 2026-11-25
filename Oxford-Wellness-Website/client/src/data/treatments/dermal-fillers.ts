@@ -25,7 +25,7 @@ export const dermalFillersData: TreatmentLandingPageData = {
     heading: "How it works",
     intro: "Dermal fillers use hyaluronic acid to restore lost volume, smooth deep lines, and contour the face.",
     steps: [
-      "Facial assessment and tailored plan using premium, fully reversible HA fillers (Juvederm, Restylane, Teosyal).",
+      "Facial assessment and a plan for your face using premium, fully reversible HA fillers (Juvederm, Restylane, Teosyal).",
       "Topical anaesthetic cream applied. Treatment takes 30 to 45 minutes.",
       "Results immediate. Final result visible in 2 to 4 weeks once swelling settles."
     ],

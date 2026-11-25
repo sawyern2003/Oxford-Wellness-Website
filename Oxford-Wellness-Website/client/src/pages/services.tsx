@@ -88,7 +88,7 @@ export default function Services() {
               href="/concerns"
               className="text-primary underline decoration-primary/30 underline-offset-4 hover:text-secondary"
             >
-              Browse how we can help by concern
+              Browse concerns we help with
             </Link>
             .
           </p>

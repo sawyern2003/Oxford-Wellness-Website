@@ -88,7 +88,7 @@ export default function Footer() {
           <div>
             <p className="text-xs font-medium tracking-normal text-muted-foreground mb-3">Women's health</p>
             <ul className="space-y-2 text-sm text-foreground/80">
-              <li><Link href="/concerns" className="hover:text-secondary">How we can help</Link></li>
+              <li><Link href="/concerns" className="hover:text-secondary">Concerns we help with</Link></li>
               <li><Link href="/menopause-clinic-oxford" className="hover:text-secondary">Menopause clinic</Link></li>
               <li><Link href="/perimenopause-oxford" className="hover:text-secondary">Perimenopause</Link></li>
               <li><Link href="/womens-health-oxford" className="hover:text-secondary">Women's health</Link></li>

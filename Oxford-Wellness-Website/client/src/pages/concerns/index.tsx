@@ -5,9 +5,9 @@ import { useBreadcrumbSchema } from "@/hooks/useBreadcrumbSchema";
 import { concerns, concernsHubIntro } from "@/data/concerns";
 
 export default function ConcernsHub() {
-  useBreadcrumbSchema([{ name: "How we can help", path: "/concerns" }]);
+  useBreadcrumbSchema([{ name: "Concerns we help with", path: "/concerns" }]);
   useSEO({
-    title: "How We Can Help | The Oxford Wellness Doctor",
+    title: "Concerns We Help With | The Oxford Wellness Doctor",
     description:
       "Common midlife concerns, from hot flushes and sleep to intimate comfort and skin change, with doctor-led guidance from Dr Inga Taganova, GP, in Oxford.",
     canonical: "https://www.theoxfordwellnessdoctor.com/concerns",
@@ -20,7 +20,7 @@ export default function ConcernsHub() {
           Guidance
         </p>
         <h1 className="mb-4 font-sans text-4xl font-semibold leading-snug tracking-tight text-foreground md:text-5xl">
-          How we can help
+          Concerns we help with
         </h1>
         <p className="text-[15px] leading-relaxed text-muted-foreground mb-6">
           {concernsHubIntro}

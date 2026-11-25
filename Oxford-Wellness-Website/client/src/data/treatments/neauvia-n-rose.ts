@@ -71,8 +71,8 @@ export const neauviaNRoseData: TreatmentLandingPageData = {
       a: "Yes. Vaginal dryness and discomfort can affect women of any age, not just those experiencing menopause. Neauvia N Rose is suitable for any woman experiencing intimate health concerns, regardless of age."
     },
     {
-      q: "Can this be combined with HRT?",
-      a: "Yes, many patients benefit from both HRT for systemic symptoms and local intimate health treatments. Dr Inga Taganova, a GP with a long background in women's health, can advise on the most appropriate combined approach."
+      q: "Can this be combined with other menopause care?",
+      a: "Yes. Dr Inga will talk through how it fits alongside any care you already have from your own GP."
     }
   ],
   

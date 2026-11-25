@@ -86,7 +86,7 @@ export function TreatmentMenuPanel({ onNavigate }: { onNavigate: (href: string) 
             onClick={() => onNavigate("/concerns")}
             className="text-sm text-muted-foreground hover:text-primary transition-colors"
           >
-            How we can help
+            Concerns we help with
           </Link>
           <Link
             href="/treatments"
@@ -137,7 +137,7 @@ export function TreatmentMenuMobile({ onNavigate }: { onNavigate: (href: string)
         onClick={() => onNavigate("/concerns")}
         className="block rounded-md py-2 pl-3 text-sm text-muted-foreground hover:bg-accent hover:text-primary transition-colors mt-2"
       >
-        How we can help
+        Concerns we help with
       </Link>
       <Link
         href="/treatments"

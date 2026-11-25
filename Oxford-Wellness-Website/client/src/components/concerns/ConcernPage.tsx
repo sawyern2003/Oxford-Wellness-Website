@@ -13,7 +13,7 @@ export default function ConcernPage({ data }: { data: ConcernPageData }) {
   const path = `/concerns/${data.slug}`;
 
   useBreadcrumbSchema([
-    { name: "How we can help", path: "/concerns" },
+    { name: "Concerns we help with", path: "/concerns" },
     { name: data.name, path },
   ]);
 
@@ -30,7 +30,7 @@ export default function ConcernPage({ data }: { data: ConcernPageData }) {
       <section className="container-page py-12 md:py-16 max-w-3xl">
         <nav className="text-sm text-muted-foreground mb-5 flex items-center gap-2">
           <Link href="/concerns" className="hover:text-secondary transition-colors">
-            How we can help
+            Concerns we help with
           </Link>
           <span>/</span>
           <span>{data.name}</span>
