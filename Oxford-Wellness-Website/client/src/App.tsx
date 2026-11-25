@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import FloatingButtons from "@/components/layout/FloatingButtons";
+import WhatsAppFab from "@/components/layout/WhatsAppFab";
 import PainDoctorBanner from "@/components/layout/PainDoctorBanner";
 import { isPainRoute, PAIN_BOOK_HREF, SHOW_PAIN_DOCTOR } from "@/lib/brand";
 import CookieConsent from "@/components/analytics/CookieConsent";
@@ -233,6 +234,7 @@ function App() {
         {SHOW_PAIN_DOCTOR && !isCallPage && !pain && !isBookPage ? <PainDoctorBanner /> : null}
         {!isCallPage ? <Footer /> : null}
         {!isCallPage && !isBookPage ? <FloatingButtons /> : null}
+        {!isCallPage && !isBookPage ? <WhatsAppFab /> : null}
         <CookieConsent />
         <Toaster />
         <CustomCursor />
